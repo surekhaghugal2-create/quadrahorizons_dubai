@@ -93,6 +93,12 @@
     <div class="award">Award 3</div>
     <div class="award">Award 4</div>
   </div>
+   <div class="awards-grid">
+    <div class="award">Award 1</div>
+    <div class="award">Award 2</div>
+    <div class="award">Award 3</div>
+    <div class="award">Award 4</div>
+  </div>
 </section>
 
 <!-- PROJECTS -->
