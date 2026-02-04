@@ -65,7 +65,8 @@
     <h1>MERCEDES-BENZ PLACES</h1>
     <span class="divider"></span>
     <p>BINGHATTI COLLECTION</p>
-    <p>Audi collection</p>
+    <p>Properties COLLECTION</p>
+  
     <button class="btn-outline">DISCOVER THE COLLECTION</button>
   </div>
 </section>
