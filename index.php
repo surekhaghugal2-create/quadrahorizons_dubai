@@ -31,7 +31,7 @@
       <li>Home</li>
       <li>Mercedes-Benz Places</li>
       <li>Premium</li>
-      <li>Search Properties</li>
+      <li><a href="<?= basename($_SERVER['PHP_SELF']) === 'readyproject.php' ? '#' : 'readyproject.php' ?>">Ready Project</a></li>
       <li>Find a Boutique</li>
     </ul>
 
