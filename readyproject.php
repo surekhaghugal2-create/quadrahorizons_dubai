@@ -42,9 +42,9 @@
         <button class="yellow-btn">Show More</button>
     </div>
     <div class="choose-images">
-        <img src="images/property1.jpg">
-        <img src="images/property2.jpg">
-        <img src="images/property3.jpg">
+        <img src="image/1.jpg">
+        <img src="image/2.jpg">
+        <img src="image/3.jpg">
     </div>
 </section>
 
@@ -147,9 +147,7 @@
 </section>
 
 
-<footer>
-    <p>© <?php echo date("Y"); ?> Real Estate Company</p>
-</footer>
+
 
 </body>
 </html>
