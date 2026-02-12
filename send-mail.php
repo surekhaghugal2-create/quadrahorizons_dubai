@@ -1,25 +1,30 @@
 <?php
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
+if ($_SERVER["REQUEST_METHOD"] === "POST") {
 
-    $name    = $_POST['name'];
-    $email   = $_POST['email'];
-    $mobile  = $_POST['mobile'];   // ✅ NEW
-    $message = $_POST['message'];
+    $name   = htmlspecialchars($_POST['name']);
+    $email  = htmlspecialchars($_POST['email']);
+    $code   = htmlspecialchars($_POST['code']);
+    $mobile = htmlspecialchars($_POST['mobile']);
 
-    $to = "surekhaghugal2@gmail.com";  // 🔴 CHANGE THIS
-    $subject = "New Contact Form Message";
+    $to = "surekhaghugal2@gmail.com"; // your Gmail
+    $subject = "New Express Interest Form";
 
-    $body  = "Name: $name\n";
-    $body .= "Email: $email\n";
-    $body .= "Mobile: $mobile\n\n";
-    $body .= "Message:\n$message";
+    $message = "
+    New enquiry received:
 
-    $headers = "From: $email";
+    Name: $name
+    Email: $email
+    Mobile: $code $mobile
+    ";
 
-    if (mail($to, $subject, $body, $headers)) {
+    $headers  = "From: Quadra Horizon <no-reply@localhost>\r\n";
+    $headers .= "Reply-To: $email\r\n";
+    $headers .= "Content-Type: text/plain; charset=UTF-8";
+
+    if (mail($to, $subject, $message, $headers)) {
         echo "<script>alert('Email sent successfully'); window.location='index.php';</script>";
     } else {
-        echo "<script>alert('Email failed'); window.history.back();</script>";
+        echo "<script>alert('Email sending failed'); window.history.back();</script>";
     }
 }
 ?>

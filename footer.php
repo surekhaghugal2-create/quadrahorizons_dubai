@@ -22,7 +22,7 @@
             </div>
 
             <div class="f-right">
-                <form class="f-form">
+                <!-- <form class="f-form">
                     <div class="form-group">
                         <label>NAME</label>
                         <input type="text" class="f-input" placeholder="Your Name">
@@ -45,7 +45,37 @@
                     </div>
 
                     <button type="button" class="f-btn">MEET OUR BRAND AMBASSADOR</button>
-                </form>
+                </form> -->
+                <form class="f-form" action="send-mail.php" method="POST">
+
+    <div class="form-group">
+        <label>NAME</label>
+        <input type="text" name="name" class="f-input" placeholder="Your Name" required>
+    </div>
+
+    <div class="form-row">
+        <div class="form-group small">
+            <label>CODE</label>
+            <input type="text" name="code" class="f-input" value="+971" required>
+        </div>
+
+        <div class="form-group large">
+            <label>MOBILE</label>
+            <input type="text" name="mobile" class="f-input" placeholder="50 123 4567" required>
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label>EMAIL</label>
+        <input type="email" name="email" class="f-input" placeholder="name@example.com" required>
+    </div>
+
+    <button type="submit" class="f-btn">
+        MEET OUR BRAND AMBASSADOR
+    </button>
+
+</form>
+
             </div>
         </div>
 
