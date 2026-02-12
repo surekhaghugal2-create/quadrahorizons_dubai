@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Quadra Horizons – Events</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- GOOGLE FONT -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="css\event.css">
+  <link rel="stylesheet" href="css/header.css">
+  <link rel="stylesheet" href="css/footer.css">
+</head>
+
+<body>
+
+<?php include "header.php"; ?>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-content">
+    <h1>
+      Sell Your Property in Dubai<br>
+      2026 | Residential & Commercial
+    </h1>
+  </div>
+</section>
+
+<!-- EVENT + INSIGHTS -->
+<section class="section-bg">
+
+  <h2 class="section-title">Event Highlights</h2>
+
+  <div class="event-grid">
+    <div class="event-card">
+      <img src="image/1.jpg" alt="">
+      <p>While ready to move in properties are very attractive,</p>
+    </div>
+
+    <div class="event-card">
+      <img src="image/1.jpg" alt="">
+      <p>While ready to move in properties are very attractive,</p>
+    </div>
+
+    <div class="event-card">
+      <img src="image/1.jpg" alt="">
+      <p>While ready to move in properties are very attractive,</p>
+    </div>
+  </div>
+
+  <h2 class="section-title">Latest Insights</h2>
+
+  <div class="insights-grid">
+    <div class="insight-card">
+      <img src="image/1.jpg" alt="">
+    </div>
+
+    <div class="insight-card">
+      <img src="image/1.jpg" alt="">
+    </div>
+  </div>
+
+</section>
+
+<?php include "footer.php"; ?>
+
+</body>
+</html>

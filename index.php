@@ -239,7 +239,7 @@
 
 <section class="partners-section reveal">
     <video autoplay muted loop playsinline class="partners-video">
-        <source src="video/Website_Background_Line_Motion_Video.mp4" type="video/mp4">
+        <source src="video/GettyImages-1278650679.mp4" type="video/mp4">
     </video>
     <div class="partners-content">
         <h2 class="partners-title">Partner Brands</h2>

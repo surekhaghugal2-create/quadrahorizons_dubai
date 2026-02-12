@@ -1,0 +1,193 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #000;
+  font-family: Arial, sans-serif;
+  color: #fff;
+}
+
+
+
+/* ================= HERO ================= */
+.hero {
+  position: relative;
+  height: 100vh;
+  background-image: url("../image/4.avif") ;
+}
+
+.hero::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.6);
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  padding-left: 100px;
+}
+
+.hero h1 {
+  font-family: "Playfair Display", serif;
+  font-size: 56px;
+  line-height: 1.2;
+}
+
+/* ================= BACKGROUND ================= */
+.section-bg {
+  background:
+    repeating-linear-gradient(
+      135deg,
+      rgba(255,255,255,0.04),
+      rgba(255,255,255,0.04) 1px,
+      transparent 1px,
+      transparent 18px
+    ),
+    linear-gradient(180deg, #050d17, #000);
+  padding: 120px 80px;
+}
+
+/* ================= TITLES ================= */
+.section-title {
+  font-family: "Playfair Display", serif;
+  font-size: 52px;
+  text-align: center;
+  margin-bottom: 70px;
+}
+
+/* ================= EVENT HIGHLIGHTS ================= */
+.event-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 50px;
+  margin-bottom: 140px;
+}
+
+.event-card {
+  text-align: center;
+}
+
+.event-card img {
+  width: 100%;
+  border: 2px solid #c9a44c;
+  padding: 6px;
+}
+
+.event-card p {
+  margin-top: 18px;
+  font-size: 14px;
+  color: #ddd;
+}
+
+/* ================= INSIGHTS ================= */
+.insights-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 70px;
+}
+
+.insight-card {
+  border: 2px solid #c9a44c;
+  padding: 8px;
+}
+
+.insight-card img {
+  width: 100%;
+  display: block;
+}
+
+/* ================= EXPRESS ================= */
+.express {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  min-height: 500px;
+}
+
+.express-left {
+  padding: 100px;
+}
+
+.express-left h2 {
+  font-family: "Playfair Display", serif;
+  font-size: 42px;
+}
+
+.express-left p {
+  margin-top: 10px;
+  font-size: 14px;
+  color: #ccc;
+}
+
+.express-right {
+  background: url("image/form-bg.jpg") center/cover no-repeat;
+  position: relative;
+}
+
+.express-right::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.6);
+}
+
+.form-box {
+  position: relative;
+  z-index: 2;
+  padding: 100px;
+}
+
+.form-box input {
+  width: 100%;
+  margin-bottom: 20px;
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid #777;
+  padding: 10px;
+  color: #fff;
+}
+
+.form-box button {
+  width: 100%;
+  padding: 14px;
+  background: #fff;
+  color: #000;
+  border: none;
+  cursor: pointer;
+}
+
+/* FOOTER */
+.footer {
+  padding: 20px;
+  text-align: center;
+  font-size: 12px;
+  opacity: 0.6;
+}
+
+/* ================= RESPONSIVE ================= */
+@media (max-width: 992px) {
+  .hero-content {
+    padding: 40px;
+  }
+
+  .hero h1 {
+    font-size: 36px;
+  }
+
+  .event-grid,
+  .insights-grid,
+  .express {
+    grid-template-columns: 1fr;
+  }
+
+  .section-bg {
+    padding: 80px 30px;
+  }
+}
