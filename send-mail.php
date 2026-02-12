@@ -1,30 +1,45 @@
 <?php
+use PHPMailer\PHPMailer\PHPMailer;
+use PHPMailer\PHPMailer\Exception;
+
+require 'PHPMailer/src/Exception.php';
+require 'PHPMailer/src/PHPMailer.php';
+require 'PHPMailer/src/SMTP.php';
+
 if ($_SERVER["REQUEST_METHOD"] === "POST") {
 
-    $name   = htmlspecialchars($_POST['name']);
-    $email  = htmlspecialchars($_POST['email']);
-    $code   = htmlspecialchars($_POST['code']);
-    $mobile = htmlspecialchars($_POST['mobile']);
+    $name   = $_POST['name'];
+    $email  = $_POST['email'];
+    $code   = $_POST['code'];
+    $mobile = $_POST['mobile'];
 
-    $to = "surekhaghugal2@gmail.com"; // your Gmail
-    $subject = "New Express Interest Form";
+    $mail = new PHPMailer(true);
 
-    $message = "
-    New enquiry received:
+    try {
+        $mail->isSMTP();
+        $mail->Host       = 'smtp.gmail.com';
+        $mail->SMTPAuth   = true;
+        $mail->Username   = 'surekhaghugal2@gmail.com'; // YOUR GMAIL
+        $mail->Password   = 'YOUR_APP_PASSWORD';        // 🔴 NOT Gmail password
+        $mail->SMTPSecure = 'tls';
+        $mail->Port       = 587;
 
-    Name: $name
-    Email: $email
-    Mobile: $code $mobile
-    ";
+        $mail->setFrom('surekhaghugal2@gmail.com', 'Quadra Horizon');
+        $mail->addAddress('surekhaghugal2@gmail.com');
 
-    $headers  = "From: Quadra Horizon <no-reply@localhost>\r\n";
-    $headers .= "Reply-To: $email\r\n";
-    $headers .= "Content-Type: text/plain; charset=UTF-8";
+        $mail->isHTML(true);
+        $mail->Subject = 'New Express Interest Form';
+        $mail->Body = "
+            <b>Name:</b> $name <br>
+            <b>Email:</b> $email <br>
+            <b>Mobile:</b> $code $mobile
+        ";
 
-    if (mail($to, $subject, $message, $headers)) {
+        $mail->send();
         echo "<script>alert('Email sent successfully'); window.location='index.php';</script>";
-    } else {
-        echo "<script>alert('Email sending failed'); window.history.back();</script>";
+
+    } catch (Exception $e) {
+        echo "<script>alert('Mailer Error'); window.history.back();</script>";
     }
 }
 ?>
