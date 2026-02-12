@@ -149,3 +149,25 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
 });
+
+
+//footer animation
+document.addEventListener('DOMContentLoaded', () => {
+    
+    // --- FOOTER CURTAIN REVEAL ---
+    const footer = document.querySelector('.binghatti-footer');
+
+    // Observer: Watches if the footer is visible on screen
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            // If 20% of footer is visible, lift the curtain
+            if (entry.isIntersecting) {
+                footer.classList.add('lift-curtain');
+            }
+        });
+    }, { threshold: 0.2 });
+
+    if (footer) {
+        observer.observe(footer);
+    }
+});

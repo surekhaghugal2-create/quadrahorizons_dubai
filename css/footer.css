@@ -1,156 +1,139 @@
-
 /* =========================================
-   11. SCROLL REVEAL UTILITY
+   LUXURY FOOTER (Binghatti Style)
    ========================================= */
-.reveal {
-    opacity: 0;
-    transform: translateY(60px);
-    transition: all 1s cubic-bezier(0.5, 0, 0, 1);
-}
 
-.reveal.active {
-    opacity: 1;
-    transform: translateY(0);
-}
-
-/* =========================================
-   12. RESPONSIVE
-   ========================================= */
-@media (max-width: 992px) {
-
-    .properties-grid,
-    .partners-grid,
-    .awards-grid-img,
-    .team-grid,
-    .events-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .hero-text-center h1 {
-        font-size: 50px;
-    }
-
-    .sell-section {
-        flex-direction: column;
-    }
-
-    .sell-text {
-        padding: 0;
-        margin-bottom: 40px;
-    }
-
-    .sell-images {
-        width: 100%;
-        height: 300px;
-    }
-
-    .parallax-text {
-        font-size: 50px;
-        letter-spacing: 5px;
-    }
-}
-
-
-/* =========================================
-   BINGHATTI STYLE ANIMATION (Curtain Lift)
-   ========================================= */
-/* FOOTER */
 .binghatti-footer {
-    padding: 100px 5%;
+    position: relative;
+    height: 750px; /* Fixed height ensures curtain covers everything */
+    background-color: #05080f; /* Deep Dark Background */
+    color: #fff;
+    overflow: hidden; /* Hides content that slides out */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* --- 1. THE CURTAIN (Cover Panel) --- */
+.cover-panel {
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    z-index: 20; /* Sits on top */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #000;
+    /* Smooth Slide Up Animation */
+    transition: transform 1.5s cubic-bezier(0.77, 0, 0.175, 1);
+}
+
+/* The Trigger Class (Added by JS) */
+.binghatti-footer.lift-curtain .cover-panel {
+    transform: translateY(-100%); /* Slides UP completely */
+}
+
+/* Background Image for Curtain */
+.cover-bg {
+    position: absolute; inset: 0;
+    background: url('https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1920&q=80') center/cover no-repeat;
+    filter: grayscale(100%) brightness(0.4); /* Dark & Moody */
+    z-index: 0;
+}
+
+.cover-text h2 {
+    position: relative; z-index: 1;
+    font-family: 'Playfair Display', serif;
+    font-size: 80px; color: #fff; text-align: center;
+    line-height: 1.1; letter-spacing: 2px;
+}
+
+/* --- 2. CONTENT LAYER --- */
+.footer-content {
+    position: relative;
+    z-index: 1; /* Under the curtain */
+    width: 100%;
+    padding: 0 5%;
 }
 
 .content-container {
     max-width: 1200px;
-    margin: auto;
+    margin: 0 auto;
     display: flex;
+    justify-content: space-between;
     gap: 80px;
+    align-items: flex-start;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+    padding-bottom: 50px;
+    margin-bottom: 30px;
 }
 
-/* LEFT */
-.f-left h2 {
-    font-size: 50px;
-    line-height: 1;
+/* Left Side Styling */
+.f-left { flex: 1; }
+
+.f-heading h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 50px; line-height: 1.1; color: #fff;
+    margin: 0 0 40px;
+}
+.f-heading span {
+    display: block; color: #D4AF37; /* Gold */ font-style: italic;
 }
 
-.f-left span {
+.f-links a {
     display: block;
-    font-weight: 300;
-    color: #c9a84e;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 11px; letter-spacing: 2px;
+    color: #888; text-decoration: none;
+    margin-bottom: 15px; transition: 0.3s;
 }
+.f-links a:hover { color: #fff; padding-left: 5px; }
 
-.f-left a {
-    display: block;
-    margin-top: 20px;
-    font-size: 12px;
-    color: #777;
-    text-decoration: none;
-}
+/* Right Side Styling (Form) */
+.f-right { flex: 1; max-width: 500px; }
 
-/* FORM */
-.f-right {
-    max-width: 500px;
-    width: 100%;
-}
-
-.f-form {
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
-}
+.f-form { display: flex; flex-direction: column; gap: 25px; }
 
 .form-group label {
-    font-size: 17px;
-    color: #777;
-    margin-bottom: 10px;
-    display: block;
+    display: block; font-family: 'Work Sans', sans-serif;
+    font-size: 10px; letter-spacing: 1px; color: #666;
+    margin-bottom: 8px; font-weight: 700;
 }
 
 .f-input {
-    width: 100%;
-    background: transparent;
-    border: none;
-    border-bottom: 1.5px solid #222;
-    padding: 12px 0;
-    font-size: 16px;
-    color: #fff;
+    width: 100%; background: transparent;
+    border: none; border-bottom: 1px solid #333;
+    color: #fff; padding: 10px 0;
+    font-family: 'Playfair Display', serif; font-size: 16px;
+    outline: none; transition: 0.3s;
 }
+.f-input:focus { border-bottom-color: #D4AF37; }
 
-.f-input:focus {
-    outline: none;
-    border-bottom-color: #c9a84e;
-}
+.form-row { display: flex; gap: 20px; }
+.form-group.small { flex: 1; }
+.form-group.large { flex: 3; }
 
-.form-row {
-    display: flex;
-    gap: 20px;
-}
-
-.small {
-    width: 80px;
-}
-
-.large {
-    flex: 1;
-}
-
-/* BUTTON */
 .f-btn {
-    padding: 18px;
-    border: 1px solid #444;
-    background: transparent;
-    color: #fff;
-    letter-spacing: 2px;
-    cursor: pointer;
+    width: 100%; background: transparent;
+    border: 1px solid #444; color: #fff;
+    padding: 20px; text-align: center;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 11px; letter-spacing: 2px; font-weight: 700;
+    cursor: pointer; transition: 0.3s; margin-top: 10px;
+}
+.f-btn:hover { background: #D4AF37; border-color: #D4AF37; color: #000; }
+
+/* --- COPYRIGHT (Centered) --- */
+.copyright {
+    text-align: center;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 11px; letter-spacing: 2px; color: #555;
+    text-transform: uppercase;
 }
 
-.f-btn:hover {
-    background: #c9a84e;
-    color: #000;
-}
-
-/* RESPONSIVE */
-@media(max-width: 768px) {
-    .content-container {
-        flex-direction: column;
-    }
+/* Mobile */
+@media (max-width: 900px) {
+    .binghatti-footer { height: auto; padding: 80px 0; }
+    .content-container { flex-direction: column; gap: 50px; }
+    .cover-text h2 { font-size: 40px; }
+    .f-heading h2 { font-size: 40px; }
 }
