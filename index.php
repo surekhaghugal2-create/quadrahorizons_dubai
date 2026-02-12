@@ -15,7 +15,6 @@
     <span>BINGHATTI</span>
   </div>
   <div class="header-icons">
-    🔍
     <label for="menu-toggle">☰</label>
   </div>
 </header>
