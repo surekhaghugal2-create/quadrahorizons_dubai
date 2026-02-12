@@ -1151,114 +1151,42 @@ body.hovering .cursor-outline {
 /* =========================================
    BINGHATTI STYLE ANIMATION (Curtain Lift)
    ========================================= */
-
+/* FOOTER */
 .binghatti-footer {
-    position: relative;
-    height: 750px;
-    background: #000;
-    overflow: hidden;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-/* --- 1. COVER PANEL --- */
-.cover-panel {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 20;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: #000;
-    transition: transform 1.2s cubic-bezier(0.77, 0, 0.175, 1);
-}
-
-.binghatti-footer.lift-curtain .cover-panel {
-    transform: translateY(-100%);
-}
-
-.cover-bg {
-    position: absolute;
-    inset: 0;
-    background: url('https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1920&q=80') center/cover no-repeat;
-    filter: grayscale(100%) brightness(0.5);
-    z-index: 0;
-}
-
-.cover-text h2 {
-    position: relative;
-    z-index: 1;
-    font-family: 'Playfair Display', serif;
-    /* Heading */
-    font-size: 80px;
-    color: #fff;
-    text-align: center;
-    line-height: 1.1;
-    letter-spacing: 2px;
-}
-
-/* --- 2. CONTENT LAYER --- */
-.footer-content {
-    position: relative;
-    z-index: 1;
-    width: 100%;
-    padding: 0 5%;
+    padding: 100px 5%;
 }
 
 .content-container {
-    display: flex;
-    justify-content: space-between;
     max-width: 1200px;
-    margin: 0 auto;
+    margin: auto;
+    display: flex;
     gap: 80px;
-    align-items: flex-start;
 }
 
-/* Left Side Styling */
-.f-left {
-    flex: 1;
-    padding-top: 10px;
-}
-
-.f-heading h2 {
-    font-family: 'Work Sans', sans-serif;
-    /* CHANGED: Clean Bold Font */
+/* LEFT */
+.f-left h2 {
     font-size: 50px;
-    font-weight: 700;
     line-height: 1;
-    color: #fff;
-    margin-bottom: 40px;
 }
 
-.f-heading span {
+.f-left span {
+    display: block;
     font-weight: 300;
-    display: block;
-    color: var(--gold);
+    color: #c9a84e;
 }
 
-.f-links a {
-    font-family: 'Work Sans', sans-serif;
+.f-left a {
     display: block;
-    font-size: 11px;
-    letter-spacing: 2px;
-    margin-bottom: 15px;
-    color: #888;
+    margin-top: 20px;
+    font-size: 12px;
+    color: #777;
     text-decoration: none;
-    transition: 0.3s;
 }
 
-.f-links a:hover {
-    color: #fff;
-}
-
-/* Right Side Styling (Form) */
+/* FORM */
 .f-right {
-    flex: 1;
     max-width: 500px;
+    width: 100%;
 }
 
 .f-form {
@@ -1268,30 +1196,25 @@ body.hovering .cursor-outline {
 }
 
 .form-group label {
-    font-family: 'Work Sans', sans-serif;
+    font-size: 17px;
+    color: #777;
+    margin-bottom: 10px;
     display: block;
-    font-size: 10px;
-    letter-spacing: 2px;
-    color: #555;
-    margin-bottom: 8px;
-    font-weight: 700;
 }
 
 .f-input {
-    font-family: 'Work Sans', sans-serif;
     width: 100%;
     background: transparent;
     border: none;
-    border-bottom: 1px solid #333;
+    border-bottom: 1.5px solid #222;
+    padding: 12px 0;
+    font-size: 16px;
     color: #fff;
-    padding: 10px 0;
-    font-size: 14px;
-    outline: none;
-    transition: 0.3s;
 }
 
 .f-input:focus {
-    border-bottom-color: var(--gold);
+    outline: none;
+    border-bottom-color: #c9a84e;
 }
 
 .form-row {
@@ -1299,47 +1222,32 @@ body.hovering .cursor-outline {
     gap: 20px;
 }
 
-.form-group.small {
-    flex: 0 0 70px;
+.small {
+    width: 80px;
 }
 
-.form-group.large {
+.large {
     flex: 1;
 }
 
+/* BUTTON */
 .f-btn {
-    font-family: 'Work Sans', sans-serif;
-    margin-top: 20px;
-    background: transparent;
+    padding: 18px;
     border: 1px solid #444;
+    background: transparent;
     color: #fff;
-    padding: 20px;
-    text-align: center;
-    font-size: 11px;
     letter-spacing: 2px;
     cursor: pointer;
-    width: 100%;
-    transition: 0.3s;
 }
 
 .f-btn:hover {
-    background: var(--gold);
-    border-color: var(--gold);
+    background: #c9a84e;
     color: #000;
 }
 
-/* Mobile */
-@media (max-width: 768px) {
+/* RESPONSIVE */
+@media(max-width: 768px) {
     .content-container {
         flex-direction: column;
-        gap: 40px;
-    }
-
-    .cover-text h2 {
-        font-size: 40px;
-    }
-
-    .f-heading h2 {
-        font-size: 40px;
     }
 }
