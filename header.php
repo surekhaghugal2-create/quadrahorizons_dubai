@@ -9,6 +9,8 @@
 
 
   <link rel="stylesheet" href="css/styles.css">
+   <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/footer.css">
   <link rel="stylesheet" href="css/off-plan-projects.css">
   <link rel="stylesheet" href="css/about-style.css">
   <link rel="stylesheet" href="css/contact.css">

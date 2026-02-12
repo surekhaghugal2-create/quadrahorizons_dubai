@@ -178,64 +178,7 @@
 
 
 </section>
-<!-- 
-<div class="section-header reveal">
-    <h2>Curated Masterpieces</h2>
-    <p>A selection of the most exclusive addresses in the UAE.</p>
-</div>
 
-<div class="properties-grid">
-    <div class="prop-card tilt-effect reveal">
-        <div class="prop-img">
-            <img src="https://images.unsplash.com/photo-1613490493576-7fde63acd811?auto=format&fit=crop&w=600&q=80" alt="Prop">
-            <div class="card-overlay"></div>
-        </div>
-        <div class="prop-body">
-            <div class="prop-top">
-                <span class="badge">EXCLUSIVE</span>
-                <div class="prop-title">Mercedes-Benz Places</div>
-            </div>
-            <div class="prop-desc">Starting AED 2.5M | Downtown Dubai</div>
-            <div class="btn-row">
-                <button class="prop-btn fill">Register Interest</button>
-            </div>
-        </div>
-    </div>
-
-    <div class="prop-card tilt-effect reveal" style="transition-delay: 0.2s">
-        <div class="prop-img">
-            <img src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=600&q=80" alt="Prop">
-            <div class="card-overlay"></div>
-        </div>
-        <div class="prop-body">
-            <div class="prop-top">
-                <span class="badge">NEW LAUNCH</span>
-                <div class="prop-title">Bugatti Residences</div>
-            </div>
-            <div class="prop-desc">Starting AED 19M | Business Bay</div>
-            <div class="btn-row">
-                <button class="prop-btn fill">Register Interest</button>
-            </div>
-        </div>
-    </div>
-
-    <div class="prop-card tilt-effect reveal" style="transition-delay: 0.4s">
-        <div class="prop-img">
-            <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=600&q=80" alt="Prop">
-            <div class="card-overlay"></div>
-        </div>
-        <div class="prop-body">
-            <div class="prop-top">
-                <span class="badge">LIMITED</span>
-                <div class="prop-title">Burj Binghatti</div>
-            </div>
-            <div class="prop-desc">Penthouse Collection | Jumeirah</div>
-            <div class="btn-row">
-                <button class="prop-btn fill">Register Interest</button>
-            </div>
-        </div>
-    </div>
-</div> -->
 
 <section class="partners-section reveal">
     <video autoplay muted loop playsinline class="partners-video">
@@ -266,7 +209,7 @@
 
 <div class="video-parallax reveal">
     <video autoplay muted loop playsinline>
-        <source src="https://assets.mixkit.co/videos/preview/mixkit-stars-in-space-background-1610-large.mp4" type="video/mp4">
+        <source src="video/Dubai_Real_Estate_Video_Generated.mp4" type="video/mp4">
     </video>
     <div class="parallax-text">
         <span>VISION</span>

@@ -1,278 +1,6 @@
-/* ============================
-   1. CORE VARIABLES & RESET
-   ============================ */
-:root {
-    --gold: #D4AF37;
-    --dark: #0A1120;
-    --darker: #05080f;
-    --card-bg: #111827;
-    --white: #ffffff;
-    --text-grey: #b0b0b0;
-    --glass: rgba(255, 255, 255, 0.05);
-    --border: rgba(255, 255, 255, 0.1);
-}
-
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
-
-body {
-    background-color: var(--dark);
-    color: var(--white);
-    /* CHANGED: Main body font is now Work Sans */
-    font-family: 'Work Sans', sans-serif;
-    overflow-x: hidden;
-    cursor: none;
-}
-
-/* Mobile Reset */
-@media (max-width: 992px) {
-    body {
-        cursor: auto;
-    }
-}
-
-img {
-    max-width: 100%;
-    display: block;
-}
-
-a {
-    text-decoration: none;
-    color: inherit;
-    cursor: none;
-    transition: 0.3s;
-}
-
-button {
-    cursor: none;
-}
-
-/* ============================
-   2. LUXURY CURSOR
-   ============================ */
-.cursor-dot,
-.cursor-outline {
-    position: fixed;
-    top: 0;
-    left: 0;
-    transform: translate(-50%, -50%);
-    border-radius: 50%;
-    z-index: 9999999;
-    pointer-events: none;
-    display: none;
-}
-
-.cursor-dot {
-    width: 8px;
-    height: 8px;
-    background-color: var(--gold);
-}
-
-.cursor-outline {
-    width: 40px;
-    height: 40px;
-    border: 1px solid var(--gold);
-    transition: width 0.2s, height 0.2s, background-color 0.2s;
-}
-
-@media (min-width: 992px) {
-
-    .cursor-dot,
-    .cursor-outline {
-        display: block;
-    }
-}
-
-body.hovering .cursor-outline {
-    width: 80px;
-    height: 80px;
-    background-color: rgba(212, 175, 55, 0.1);
-}
-
-/* ============================
-   3. HEADER & MENU
-   ============================ */
-
- /* =========================================
-   LOGO IMAGE STYLES
-   ========================================= */
-
-.brand-logo{
-    display: flex; /* Helps center the image vertically */
-    align-items: center;
-    text-decoration: none; /* Removes any underline */
-}
-
-.brand-logo img {
-    height: 80px; /* Adjust this height to fit your header */
-    width: auto;  /* Maintains the logo's aspect ratio */
-    object-fit: contain;
-    transition: transform 0.3s ease;
-}
-
-/* Optional: Slight zoom on hover */
-.brand-logo:hover img {
-    transform: scale(1.05);
-}
-
-/* Mobile Adjustment */
-@media (max-width: 768px) {
-    .brand-logo img {
-        height: 40px; /* Slightly smaller on mobile */
-    }
-}
-.site-header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    padding: 20px 50px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    z-index: 1000;
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.9), transparent);
-    transition: background 0.3s;
-}
-
-.site-header.scrolled {
-    background: rgba(10, 17, 32, 0.95);
-    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-}
-
-/* CHANGED: Logo usually looks better in the Heading font or specific brand font */
-.brand-logo {
-    font-family: 'Work Sans', sans-serif;
-    font-weight: 600;
-    font-size: 20px;
-    letter-spacing: 2px;
-}
-
-.menu-btn {
-    background: none;
-    border: none;
-    display: flex;
-    flex-direction: column;
-    gap: 6px;
-    padding: 10px;
-}
-
-.menu-btn span {
-    width: 30px;
-    height: 2px;
-    background: white;
-    transition: 0.3s;
-}
-
-.menu-btn:hover span {
-    width: 35px;
-    background: var(--gold);
-}
-
-/* Sliding Menu */
-.menu-overlay {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.8);
-    z-index: 1001;
-    opacity: 0;
-    visibility: hidden;
-    transition: 0.3s;
-}
-
-.menu-overlay.active {
-    opacity: 1;
-    visibility: visible;
-}
-
-.side-menu {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 350px;
-    height: 100vh;
-    background: var(--dark);
-    z-index: 1002;
-    padding: 60px 40px;
-    transform: translateX(-100%);
-    transition: transform 0.6s cubic-bezier(0.77, 0, 0.175, 1);
-    display: flex;
-    flex-direction: column;
-    border-right: 1px solid rgba(255, 255, 255, 0.1);
-}
-
-.side-menu.active {
-    transform: translateX(0);
-}
-
-.close-btn {
-    position: absolute;
-    top: 20px;
-    right: 20px;
-    background: none;
-    border: none;
-    color: white;
-    font-size: 24px;
-}
-
-.menu-links ul {
-    list-style: none;
-    padding: 0;
-    margin-top: 40px;
-}
-
-.menu-links li {
-    margin-bottom: 25px;
-    opacity: 0;
-    transform: translateY(20px);
-    transition: 0.4s ease;
-}
-
-.side-menu.active .menu-links li {
-    opacity: 1;
-    transform: translateY(0);
-    transition-delay: var(--delay);
-}
-
-.menu-links a {
-    font-family: 'Playfair Display', serif;
-    font-size: 24px;
-    transition: 0.3s;
-    display: block;
-}
-
-.menu-links a:hover {
-    color: var(--gold);
-    padding-left: 10px;
-}
-
-/* CHANGED: Sub-cat is small text */
-.sub-cat {
-    display: block;
-    font-size: 11px;
-    color: #888;
-    margin-top: 5px;
-    font-family: 'Work Sans', sans-serif;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-}
-
-.menu-footer {
-    margin-top: auto;
-    border-top: 1px solid #333;
-    padding-top: 20px;
-    font-size: 12px;
-    color: #777;
-}
 
 /* =========================================
-   2. HOME HERO
+   . HOME HERO
    ========================================= */
 .home-hero {
     height: 100vh;
@@ -358,12 +86,12 @@ body.hovering .cursor-outline {
     line-height: 1.6;
 }
 /* =========================================
-   EXCLUSIVE PROPERTIES SECTION
+   EXCLUSIVE PROPERTIES SECTION (White Card Theme)
    ========================================= */
 
 .properties-section {
     padding: 100px 5%;
-    background: #0A1120;
+    background: #0A1120; /* Main section background stays dark for contrast */
 }
 
 .properties-section .section-header {
@@ -387,8 +115,7 @@ body.hovering .cursor-outline {
 /* --- GRID LAYOUT (Responsive) --- */
 .properties-grid {
     display: grid;
-    /* Creates as many columns as fit, min width 320px */
-    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); 
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
     gap: 30px;
     max-width: 1400px;
     margin: 0 auto;
@@ -396,8 +123,8 @@ body.hovering .cursor-outline {
 
 /* --- CARD STYLING --- */
 .property-card {
-    background: #feffff; /* Card BG */
-    border: 1px solid rgba(255,255,255,0.05);
+    background: #ffffff; /* CHANGED: Card BG is now White */
+    border: 1px solid rgba(0,0,0,0.1); /* CHANGED: Subtle dark border */
     border-radius: 4px;
     overflow: hidden;
     transition: all 0.4s ease;
@@ -447,14 +174,14 @@ body.hovering .cursor-outline {
 .prop-details h3 {
     font-family: 'Playfair Display', serif;
     font-size: 22px;
-    color: #131212;
+    color: #000; /* CHANGED: Title is now black */
     margin-bottom: 5px;
 }
 
 .prop-loc {
     font-family: 'Work Sans', sans-serif;
     font-size: 13px;
-    color: #888;
+    color: #555; /* CHANGED: Location is dark grey */
     margin-bottom: 20px;
     text-transform: uppercase;
     letter-spacing: 1px;
@@ -465,8 +192,9 @@ body.hovering .cursor-outline {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border-top: 1px solid rgba(255,255,255,0.1);
-    border-bottom: 1px solid rgba(255,255,255,0.1);
+    /* CHANGED: Separator lines are now faint dark */
+    border-top: 1px solid rgba(0,0,0,0.1);
+    border-bottom: 1px solid rgba(0,0,0,0.1);
     padding: 15px 0;
     margin-bottom: 20px;
 }
@@ -483,14 +211,16 @@ body.hovering .cursor-outline {
 .agent-icons { display: flex; gap: 10px; }
 .agent-icons a {
     width: 35px; height: 35px;
-    background: rgba(255, 254, 254, 0.05);
+    background: rgba(0,0,0,0.05); /* CHANGED: Slight dark background */
     border-radius: 50%;
     display: flex; align-items: center; justify-content: center;
     text-decoration: none; font-size: 14px;
+    color: #000; /* CHANGED: Icon is black */
     transition: 0.3s;
 }
 .agent-icons a:hover {
     background: #D4AF37;
+    color: #000;
     transform: scale(1.1);
 }
 
@@ -503,20 +233,30 @@ body.hovering .cursor-outline {
     font-family: 'Work Sans', sans-serif;
     font-size: 11px;
     text-transform: uppercase;
-    font-weight: 600;
+    font-weight: 700;
     cursor: pointer;
     transition: 0.3s;
 }
 
+/* Solid Button (Gold) */
 .prop-btn.solid {
     background: #D4AF37; border: 1px solid #D4AF37; color: #000;
 }
-.prop-btn.solid:hover { background: #fff; border-color: #fff; }
-
-.prop-btn.outline {
-    background: transparent; border: 1px solid #555; color: #fff;
+.prop-btn.solid:hover {
+    background: #000; border-color: #000; color: #D4AF37; /* CHANGED hover for better contrast */
 }
-.prop-btn.outline:hover { border-color: #D4AF37; color: #D4AF37; }
+
+/* Outline Button (Dark on White BG) */
+.prop-btn.outline {
+    background: transparent;
+    border: 1px solid #000; /* CHANGED: Black border */
+    color: #000; /* CHANGED: Black text */
+}
+.prop-btn.outline:hover {
+    background: #D4AF37;
+    border-color: #D4AF37;
+    color: #000;
+}
 
 /* Mobile Adjustment */
 @media (max-width: 600px) {
@@ -656,13 +396,12 @@ body.hovering .cursor-outline {
    6. VIDEO PARALLAX
    ========================================= */
 .video-parallax {
-    height: 450px;
-    position: relative;
+   height: 1000px;    
+   position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
     overflow: hidden;
-    margin: 50px 0;
 }
 
 .video-parallax video {
@@ -1123,160 +862,4 @@ body.hovering .cursor-outline {
     font-weight: 400;
     color: #666;
     margin-top: 5px;
-}
-
-/* =========================================
-   11. SCROLL REVEAL UTILITY
-   ========================================= */
-.reveal {
-    opacity: 0;
-    transform: translateY(60px);
-    transition: all 1s cubic-bezier(0.5, 0, 0, 1);
-}
-
-.reveal.active {
-    opacity: 1;
-    transform: translateY(0);
-}
-
-/* =========================================
-   12. RESPONSIVE
-   ========================================= */
-@media (max-width: 992px) {
-
-    .properties-grid,
-    .partners-grid,
-    .awards-grid-img,
-    .team-grid,
-    .events-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .hero-text-center h1 {
-        font-size: 50px;
-    }
-
-    .sell-section {
-        flex-direction: column;
-    }
-
-    .sell-text {
-        padding: 0;
-        margin-bottom: 40px;
-    }
-
-    .sell-images {
-        width: 100%;
-        height: 300px;
-    }
-
-    .parallax-text {
-        font-size: 50px;
-        letter-spacing: 5px;
-    }
-}
-
-
-/* =========================================
-   BINGHATTI STYLE ANIMATION (Curtain Lift)
-   ========================================= */
-/* FOOTER */
-.binghatti-footer {
-    padding: 100px 5%;
-}
-
-.content-container {
-    max-width: 1200px;
-    margin: auto;
-    display: flex;
-    gap: 80px;
-}
-
-/* LEFT */
-.f-left h2 {
-    font-size: 50px;
-    line-height: 1;
-}
-
-.f-left span {
-    display: block;
-    font-weight: 300;
-    color: #c9a84e;
-}
-
-.f-left a {
-    display: block;
-    margin-top: 20px;
-    font-size: 12px;
-    color: #777;
-    text-decoration: none;
-}
-
-/* FORM */
-.f-right {
-    max-width: 500px;
-    width: 100%;
-}
-
-.f-form {
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
-}
-
-.form-group label {
-    font-size: 17px;
-    color: #777;
-    margin-bottom: 10px;
-    display: block;
-}
-
-.f-input {
-    width: 100%;
-    background: transparent;
-    border: none;
-    border-bottom: 1.5px solid #222;
-    padding: 12px 0;
-    font-size: 16px;
-    color: #fff;
-}
-
-.f-input:focus {
-    outline: none;
-    border-bottom-color: #c9a84e;
-}
-
-.form-row {
-    display: flex;
-    gap: 20px;
-}
-
-.small {
-    width: 80px;
-}
-
-.large {
-    flex: 1;
-}
-
-/* BUTTON */
-.f-btn {
-    padding: 18px;
-    border: 1px solid #444;
-    background: transparent;
-    color: #fff;
-    letter-spacing: 2px;
-    cursor: pointer;
-}
-
-.f-btn:hover {
-    background: #c9a84e;
-    color: #000;
-}
-
-/* RESPONSIVE */
-@media(max-width: 768px) {
-    .content-container {
-        flex-direction: column;
-    }
 }
