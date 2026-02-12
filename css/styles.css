@@ -100,7 +100,7 @@ body.hovering .cursor-outline {
    LOGO IMAGE STYLES
    ========================================= */
 
-.brand-logo {
+.brand-logo{
     display: flex; /* Helps center the image vertically */
     align-items: center;
     text-decoration: none; /* Removes any underline */
