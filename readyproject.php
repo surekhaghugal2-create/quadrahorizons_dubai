@@ -42,9 +42,9 @@
         <button class="yellow-btn">Show More</button>
     </div>
     <div class="choose-images">
-        <img src="image/1.jpg">
-        <img src="image/2.jpg">
-        <img src="image/3.jpg">
+        <img src="images/property1.jpg">
+        <img src="images/property2.jpg">
+        <img src="images/property3.jpg">
     </div>
 </section>
 
@@ -87,67 +87,10 @@
         <p>Clear understanding of maintenance costs upfront.</p>
     </div>
 </section>
-<section class="interest-wrapper">
 
-  <!-- LEFT PANEL -->
-  <div class="interest-left">
-    <h1>
-      EXPRESS<br>
-      YOUR<br>
-      INTEREST
-    </h1>
-
-    <div class="interest-links">
-      <a href="#">Find a Sales Boutique →</a>
-      <a href="#">Discover the Collection →</a>
-    </div>
-
-    <div class="socials">
-      <span>○</span><span>○</span><span>○</span><span>○</span>
-    </div>
-  </div>
-
-  <!-- RIGHT PANEL -->
-  <div class="interest-right">
-    <form method="POST">
-
-      <div class="field">
-        <label>NAME</label>
-        <input type="text" name="name" required>
-      </div>
-
-      <div class="field-row">
-        <div class="field small">
-          <label>+971</label>
-          <input type="text" disabled>
-        </div>
-
-        <div class="field">
-          <label>MOBILE</label>
-          <input type="text" name="mobile" required>
-        </div>
-      </div>
-
-      <div class="field">
-        <label>EMAIL</label>
-        <input type="email" name="email" required>
-      </div>
-
-      <p class="terms">
-        By submitting, you agree to our <a href="#">terms & conditions</a>
-      </p>
-
-      <button type="submit" class="submit-btn">
-        MEET OUR BRAND AMBASSADOR
-      </button>
-
-    </form>
-  </div>
-
-</section>
-
-
-
+<footer>
+    <p>© <?php echo date("Y"); ?> Real Estate Company</p>
+</footer>
 
 </body>
 </html>

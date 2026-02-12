@@ -29,7 +29,7 @@ body {
     justify-content: center;
 }
 .hero h1 {
-    font-size: 8rem;
+    font-size: 3rem;
 }
 
 /* PROJECTS */
@@ -95,138 +95,6 @@ body {
     padding: 20px;
     margin-top: 15px;
     border-radius: 8px;
-}
-/* contact section  */
-
-
-.interest-wrapper {
-  display: flex;
-  min-height: 100vh;
-}
-
-/* LEFT */
-.interest-left {
-  width: 40%;
-  padding: 80px 60px;
-  background: #000;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-
-.interest-left h1 {
-  font-size: 48px;
-  line-height: 1.2;
-  letter-spacing: 2px;
-}
-
-.interest-links a {
-  display: block;
-  margin-top: 15px;
-  color: #aaa;
-  text-decoration: none;
-}
-
-.socials span {
-  display: inline-block;
-  border: 1px solid #fff;
-  width: 30px;
-  height: 30px;
-  text-align: center;
-  line-height: 28px;
-  border-radius: 50%;
-  margin-right: 10px;
-}
-
-/* RIGHT */
-.interest-right {
-  width: 60%;
-  background: linear-gradient(
-      rgba(0,0,0,0.6),
-      rgba(0,0,0,0.6)
-    ),
-    url("image/bg.jpg") center/cover no-repeat;
-  display: flex;                                 
-  align-items: center;
-  justify-content: center;
-}
-
-form {
-  width: 70%;
-}
-
-.field {
-  margin-bottom: 30px;
-}
-
-.field-row {
-  display: flex;
-  gap: 20px;
-}
-
-.field label {
-  font-size: 12px;
-  letter-spacing: 1px;
-  color: #ccc;
-}
-
-.field input {
-  width: 100%;
-  background: transparent;
-  border: none;
-  border-bottom: 1px solid #777;
-  padding: 10px 0;
-  color: #fff;
-  font-size: 16px;
-}
-
-.field.small {
-  width: 120px;
-}
-
-.terms {
-  font-size: 12px;
-  color: #aaa;
-  margin-bottom: 30px;
-}
-
-.terms a {
-  color: #fff;
-}
-
-.submit-btn {
-  width: 100%;
-  padding: 15px;
-  background: transparent;
-  border: 1px solid #fff;
-  color: #fff;
-  letter-spacing: 2px;
-  cursor: pointer;
-}
-
-.submit-btn:hover {
-  background: #fff;
-  color: #000;
-}
-
-/* RESPONSIVE */
-@media (max-width: 900px) {
-  .interest-wrapper {
-    flex-direction: column;
-  }
-
-  .interest-left,
-  .interest-right {
-    width: 100%;
-  }
-
-  .interest-left {
-    padding: 50px 30px;
-  }
-
-  form {
-    width: 85%;
-  }
 }
 
 /* FOOTER */
