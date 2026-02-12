@@ -25,8 +25,10 @@
 
     <section class="team-section">
         <div class="section-header reveal">
-            <h2>Architects of Vision</h2>
-            <p style="color: #888; margin-top: 10px;">Meet the leadership driving Dubai's skyline.</p>
+            <h2>About Section</h2>
+            <p style="color: #888; margin-top: 10px;">An off-plan property is a building or a construction project that hasn’t been built
+    or completed yet. To be able to visualize what the finished product will look like,
+    developers use floor plans, computer-generated imagery (CGIs), and working drawings.</p>
         </div>
         <div class="team-grid">
             <div class="team-card reveal">

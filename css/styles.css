@@ -95,6 +95,35 @@ body.hovering .cursor-outline {
 /* ============================
    3. HEADER & MENU
    ============================ */
+
+ /* =========================================
+   LOGO IMAGE STYLES
+   ========================================= */
+
+.brand-logo {
+    display: flex; /* Helps center the image vertically */
+    align-items: center;
+    text-decoration: none; /* Removes any underline */
+}
+
+.brand-logo img {
+    height: 80px; /* Adjust this height to fit your header */
+    width: auto;  /* Maintains the logo's aspect ratio */
+    object-fit: contain;
+    transition: transform 0.3s ease;
+}
+
+/* Optional: Slight zoom on hover */
+.brand-logo:hover img {
+    transform: scale(1.05);
+}
+
+/* Mobile Adjustment */
+@media (max-width: 768px) {
+    .brand-logo img {
+        height: 40px; /* Slightly smaller on mobile */
+    }
+}
 .site-header {
     position: fixed;
     top: 0;

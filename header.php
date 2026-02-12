@@ -24,8 +24,9 @@
   <div class="cursor-outline"></div>
 
   <header class="site-header" id="siteHeader">
-    <a href="index.php" class="brand-logo">QUADRA HORIZON</a>
-
+ <a href="index.php" class="brand-logo">
+    <img src="image/1.png" alt="Quadra Horizon Logo">
+</a>
     <button class="menu-btn" id="menuTrigger">
       <span></span>
       <span></span>
