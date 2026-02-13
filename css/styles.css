@@ -64,7 +64,7 @@
    ========================================= */
 .section-header {
     text-align: center;
-    padding: 100px 20px 60px;
+    padding: 20px 20px 60px;
     position: relative;
 }
 
@@ -665,6 +665,7 @@
     transform: translateY(-5px); /* Lift effect */
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3); /* Soft shadow depth */
 }
+
 /* --- FAQ CONTAINER --- */
 .faq-section {
     padding: 100px 5%;

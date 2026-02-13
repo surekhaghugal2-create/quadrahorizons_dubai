@@ -43,8 +43,8 @@ body {
 .page-title {
   text-align: center;
   padding: 80px 20px;
-  background: #fff;
-  color: #000;
+  background: #0A1120;
+  color: #ffffff;
 }
 
 .page-title h1 {
@@ -59,7 +59,8 @@ body {
   font-size: 15px;
 }
 
-/* PROPERTIES */
+/* PROPERTIES
+
 .properties {
   padding: 80px 60px;
   display: grid;
@@ -115,7 +116,7 @@ button.outline {
   background: transparent;
   color: #000;
   border: 1px solid #000;
-}
+} */
 
 
 /* DARK SECTIONS */
