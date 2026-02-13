@@ -24,7 +24,6 @@
 
 .hero-overlay {
     position: absolute; inset: 0;
-    background: rgba(0,0,0,0.5); 
     z-index: 1;
 }
 
@@ -37,7 +36,7 @@
 
 .hero-content h1 {
     font-family: 'Playfair Display', serif;
-    font-size: 60px;
+    font-size: 70px;
     letter-spacing: 5px;
     text-transform: uppercase;
     margin-bottom: 20px;
@@ -53,7 +52,7 @@
 
 .hero-content p {
     font-family: 'Work Sans', sans-serif;
-    font-size: 16px;
+    font-size: 18px;
     letter-spacing: 4px;
     text-transform: uppercase;
     color: #e0e0e0;
@@ -63,9 +62,9 @@
 .mission-section {
     padding: 100px 10%;
     text-align: center;
-    background: var(--dark);
     position: relative;
     z-index: 2;
+     background: var(--darker); 
 }
 
 .mission-box {
@@ -108,58 +107,91 @@
     background: var(--darker);
 }
 
-.team-grid {
+/* --- THE GRID (2 Columns) --- */
+.leaders-grid {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 30px;
-    max-width: 1400px;
+    grid-template-columns: repeat(2, 1fr); /* Exactly 2 columns */
+    gap: 60px; /* Generous spacing between cards */
+    max-width: 1100px; /* Restrict width to keep portraits vertical */
     margin: 0 auto;
 }
 
-.team-card {
-    background: transparent;
-    overflow: hidden;
-}
-
-.team-card .img-box {
+/* --- CARD STYLING --- */
+.leader-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     position: relative;
-    overflow: hidden;
-    height: 400px;
-    border: 1px solid #333;
 }
 
-.team-card img {
-    width: 100%; height: 100%;
+/* Image Wrapper */
+.leader-img-wrap {
+    width: 100%;
+    height: 550px; /* Tall portrait height */
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 25px; /* Space between image and text */
+}
+
+.leader-img-wrap img {
+    width: 100%;
+    height: 100%;
     object-fit: cover;
-    filter: grayscale(100%);
+    filter: grayscale(100%); /* Start Black & White */
     transition: transform 0.6s ease, filter 0.6s ease;
 }
 
-.team-card:hover img {
-    filter: grayscale(0%);
-    transform: scale(1.1);
+/* Hover Effect */
+.leader-card:hover .leader-img-wrap img {
+    transform: scale(1.05);
+    filter: grayscale(0%); /* Color on hover */
 }
 
-.team-info {
-    padding-top: 20px;
+.leader-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(212, 175, 55, 0.7); /* Gold Tint */
+    display: flex;
+    align-items: center; justify-content: center;
+    opacity: 0;
+    transition: 0.4s ease;
+}
+.leader-card:hover .leader-overlay { opacity: 1; }
+.leader-overlay i { font-size: 30px; color: #fff; }
+
+/* --- TEXT STYLING (Matches Reference) --- */
+.leader-text {
     text-align: center;
 }
 
-.team-info .role {
+.leader-role {
     display: block;
-    font-family: 'Work Sans', sans-serif;
-    font-size: 11px;
-    letter-spacing: 1px;
-    color: #888;
-    text-transform: uppercase;
-    margin-bottom: 5px;
+    font-family: 'Playfair Display', serif; /* Serif font for role */
+    font-style: italic;
+    font-size: 16px;
+    color: #ccc;
+    margin-bottom: 8px;
 }
 
-.team-info .name {
-    font-family: 'Playfair Display', serif;
-    font-size: 20px;
-    color: var(--white);
+.leader-name {
+    font-family: 'Work Sans', sans-serif; /* Sans-serif for name */
+    font-size: 22px;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-weight: 400;
     margin: 0;
+}
+
+/* --- MOBILE RESPONSIVE --- */
+@media (max-width: 768px) {
+    .leaders-grid {
+        grid-template-columns: 1fr; /* 1 Column on mobile */
+        gap: 40px;
+    }
+    .leader-img-wrap {
+        height: 450px; /* Slightly shorter on phone */
+    }
 }
 
 /* --- 4. Experience Video Break --- */
@@ -348,4 +380,274 @@
     .team-grid { grid-template-columns: 1fr; }
     .awards-grid { flex-direction: column; }
     .exp-content h2 { font-size: 30px; }
+}
+
+
+/* =========================================
+   AWARDS SECTION (Prestige Grid Design)
+   ========================================= */
+
+.awards-section {
+    padding: 120px 5%;
+    background-color: #05080f; /* Deep Dark Background */
+    text-align: center;
+}
+
+.awards-header {
+    margin-bottom: 70px;
+}
+.awards-header h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 50px; color: #fff; margin-bottom: 10px;
+}
+.awards-header h2 span {
+    color: #D4AF37; font-style: italic;
+}
+.awards-header p {
+    font-family: 'Work Sans', sans-serif;
+    color: #888; font-size: 12px; letter-spacing: 2px; text-transform: uppercase;
+}
+
+/* --- GRID LAYOUT --- */
+.awards-grid-display {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 Cards in a row */
+    gap: 30px;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+/* --- CARD STYLING --- */
+.award-card {
+    background: #0A1120; /* Slightly lighter than bg */
+    padding: 50px 30px;
+    position: relative;
+    transition: transform 0.4s ease;
+    overflow: hidden; /* Keeps border inside */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgba(255,255,255,0.05);
+}
+
+.award-card:hover {
+    transform: translateY(-10px); /* Lift Effect */
+    background: #0f172a;
+}
+
+/* Icons */
+.award-icon {
+    font-size: 40px;
+    color: #444; /* Dark initially */
+    margin-bottom: 25px;
+    transition: 0.4s;
+}
+.award-card:hover .award-icon {
+    color: #D4AF37; /* Lights up Gold */
+    transform: scale(1.1);
+}
+
+/* Text */
+.award-year {
+    font-family: 'Work Sans', sans-serif;
+    font-size: 11px; font-weight: 700; letter-spacing: 2px;
+    color: #D4AF37;
+    border: 1px solid rgba(212, 175, 55, 0.3);
+    padding: 5px 12px;
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+
+.award-card h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 22px; color: #fff;
+    margin-bottom: 10px; line-height: 1.3;
+}
+
+.award-card p {
+    font-family: 'Work Sans', sans-serif;
+    font-size: 13px; color: #888;
+}
+
+/* --- GOLD BORDER ANIMATION --- */
+/* This creates a border that "draws" itself around the box on hover */
+.hover-border {
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+}
+
+.hover-border::before, .hover-border::after {
+    content: '';
+    position: absolute;
+    width: 0; height: 2px;
+    background: #D4AF37;
+    transition: 0.4s ease;
+}
+
+.hover-border::before { top: 0; left: 0; }
+.hover-border::after { bottom: 0; right: 0; }
+
+.award-card:hover .hover-border::before,
+.award-card:hover .hover-border::after {
+    width: 100%; /* Top and Bottom lines draw full width */
+}
+
+/* Left and Right Vertical Lines */
+.award-card::before, .award-card::after {
+    content: '';
+    position: absolute;
+    width: 2px; height: 0;
+    background: #D4AF37;
+    transition: 0.4s ease;
+    transition-delay: 0.1s; /* Delays vertical lines slightly for effect */
+}
+
+.award-card::before { top: 0; right: 0; }
+.award-card::after { bottom: 0; left: 0; }
+
+.award-card:hover::before,
+.award-card:hover::after {
+    height: 100%;
+}
+
+/* --- RESPONSIVE --- */
+@media (max-width: 1024px) {
+    .awards-grid-display { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 600px) {
+    .awards-grid-display { grid-template-columns: 1fr; }
+}
+
+/* =========================================
+   LUXURY NEWSLETTER SECTION
+   ========================================= */
+
+.newsletter-section {
+    padding: 100px 5%;
+    background-color: #05080f; /* Matches dark theme */
+    display: flex;
+    justify-content: center;
+}
+
+.newsletter-container {
+    background: linear-gradient(145deg, #0A1120, #000);
+    padding: 80px 50px;
+    max-width: 900px;
+    width: 100%;
+    border: 1px solid rgba(255,255,255,0.05);
+    border-radius: 4px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 20px 50px rgba(0,0,0,0.4);
+    transition: transform 0.4s ease, border-color 0.4s ease;
+}
+
+/* Hover Effect: Gold Glow */
+.newsletter-container:hover {
+    transform: translateY(-5px);
+    border-color: rgba(212, 175, 55, 0.3);
+    box-shadow: 0 30px 60px rgba(0,0,0,0.6);
+}
+
+/* Decorative Top Line */
+.newsletter-container::before {
+    content: '';
+    position: absolute; top: 0; left: 0; width: 100%; height: 3px;
+    background: linear-gradient(90deg, transparent, #D4AF37, transparent);
+}
+
+/* --- TEXT STYLES --- */
+.sub-gold {
+    display: block;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 11px; letter-spacing: 4px; text-transform: uppercase;
+    color: #D4AF37; margin-bottom: 20px;
+}
+
+.newsletter-content h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 45px; color: #fff;
+    margin-bottom: 20px;
+}
+.newsletter-content h2 span {
+    font-style: italic; color: #D4AF37;
+}
+
+.newsletter-content p {
+    font-family: 'Work Sans', sans-serif;
+    color: #888; font-size: 15px; line-height: 1.6;
+    max-width: 500px; margin: 0 auto 40px;
+}
+
+/* --- FORM STYLES --- */
+.newsletter-form {
+    max-width: 500px; margin: 0 auto;
+}
+
+.input-group {
+    position: relative;
+    display: flex;
+    border-bottom: 1px solid #444;
+    transition: 0.3s;
+}
+
+/* Input Field */
+.input-group input {
+    width: 100%;
+    background: transparent;
+    border: none;
+    padding: 15px 0;
+    color: #fff;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 16px;
+    outline: none;
+}
+.input-group input::placeholder { color: #555; }
+
+/* Animated Border on Focus */
+.input-group:focus-within {
+    border-bottom-color: #D4AF37;
+}
+
+/* Submit Button */
+.news-btn {
+    background: transparent;
+    border: none;
+    color: #D4AF37;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: 0.3s;
+    padding: 0 20px;
+}
+
+.news-btn:hover {
+    color: #fff;
+    letter-spacing: 3px; /* Subtle expansion effect */
+}
+
+/* Privacy Note */
+.privacy-note {
+    font-size: 10px !important;
+    color: #444 !important;
+    margin-top: 30px !important;
+    margin-bottom: 0 !important;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* --- MOBILE RESPONSIVE --- */
+@media (max-width: 600px) {
+    .newsletter-container { padding: 50px 20px; }
+    .newsletter-content h2 { font-size: 32px; }
+    .input-group { flex-direction: column; border-bottom: none; }
+    .input-group input { border-bottom: 1px solid #444; margin-bottom: 20px; text-align: center; }
+    .news-btn { width: 100%; background: #D4AF37; color: #000; padding: 15px; }
+    .news-btn:hover { background: #fff; color: #000; letter-spacing: 2px; }
 }

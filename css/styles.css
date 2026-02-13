@@ -64,7 +64,7 @@
    ========================================= */
 .section-header {
     text-align: center;
-    padding: 100px 20px 60px;
+    padding: 0px 20px 60px; 
     position: relative;
 }
 
@@ -90,13 +90,12 @@
    ========================================= */
 
 .properties-section {
-    padding: 100px 5%;
+    padding: 100px 5%; 
     background: #0A1120; /* Main section background stays dark for contrast */
 }
 
 .properties-section .section-header {
     text-align: center;
-    margin-bottom: 60px;
 }
 .properties-section .section-header h2 {
     font-family: 'Playfair Display', serif;
