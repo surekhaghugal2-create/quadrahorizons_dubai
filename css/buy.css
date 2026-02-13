@@ -5,7 +5,7 @@
 }
 
 body {
-  font-family: "Inter", sans-serif;
+  font-family: "Work Sans", sans-serif;
   background: #000;
   color: #fff;
 }
@@ -61,63 +61,195 @@ body {
 
 /* PROPERTIES
 
-.properties {
-  padding: 80px 60px;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 30px;
-  background: #fff;
+/* =========================================
+   EXCLUSIVE PROPERTIES SECTION (White Card Theme)
+   ========================================= */
+.section-header-buy{
+  padding: 20px 20px 60px;
+  text-align: center;
+ }
+ 
+ .section-header-buy h2{
+  font-family: 'Playfair Display', serif;
+  font-size: 50px;
+ }
+ .section-header-buy p{
+  font-family: Work Sans;
+  font-size: 22px;
+ }
+.properties-section {
+    padding: 100px 5%;
+    background: #0A1120; /* Main section background stays dark for contrast */
 }
 
+.properties-section .section-header {
+    text-align: center;
+    margin-bottom: 60px;
+}
+.properties-section .section-header h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 45px;
+    color: #fff;
+    margin-bottom: 10px;
+}
+.properties-section .section-header p {
+    font-family: 'Work Sans', sans-serif;
+    color: #D4AF37;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-size: 12px;
+}
+
+/* --- GRID LAYOUT (Responsive) --- */
+.properties-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: 30px;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+/* --- CARD STYLING --- */
 .property-card {
-  background: #f9f9f9;
-  border-radius: 16px;
-  padding: 15px;
-  color: #000;
+    background: rgba(0,0,0,0.2); /* CHANGED: Card BG is now White */
+    border: 1px solid rgba(0,0,0,0.1); /* CHANGED: Subtle dark border */
+    border-radius: 4px;
+    overflow: hidden;
+    transition: all 0.4s ease;
+    display: flex;
+    flex-direction: column;
 }
 
-.property-card img {
-  width: 100%;
-  border-radius: 12px;
+/* Hover Effect: Lift & Gold Border */
+.property-card:hover {
+    transform: translateY(-10px);
+    border-color: #D4AF37;
+    box-shadow: 0 15px 30px rgba(0,0,0,0.3);
 }
 
-.property-card h3 {
-  margin: 15px 0 5px;
+/* --- IMAGE AREA --- */
+.prop-img-box {
+    position: relative;
+    height: 250px;
+    overflow: hidden;
+}
+.prop-img-box img {
+    width: 100%; height: 100%;
+    object-fit: cover;
+    transition: transform 0.6s ease;
+}
+.property-card:hover .prop-img-box img {
+    transform: scale(1.1); /* Zoom on hover */
 }
 
-.property-card p {
-  font-size: 13px;
-  opacity: 0.7;
+/* Badge (e.g. New Launch) */
+.prop-tag {
+    position: absolute;
+    top: 15px; left: 15px;
+    background: #D4AF37;
+    color: #000000;
+    font-size: 10px;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 5px 10px;
+    letter-spacing: 1px;
+    font-family: 'Work Sans', sans-serif;
 }
 
-.agent {
-  display: flex;
-  justify-content: space-between;
-  margin: 15px 0;
-  font-size: 12px;
+/* --- TEXT DETAILS --- */
+.prop-details { padding: 25px; display: flex; flex-direction: column; flex-grow: 1; }
+
+.prop-details h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 22px;
+    color: #ffffff; /* CHANGED: Title is now black */
+    margin-bottom: 5px;
 }
 
-.actions {
-  display: flex;
-  gap: 10px;
+.prop-loc {
+    font-family: 'Work Sans', sans-serif;
+    font-size: 13px;
+    color: #d6d6d6; /* CHANGED: Location is dark grey */
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
 }
 
-button {
-  padding: 10px 14px;
-  border-radius: 20px;
-  border: none;
-  cursor: pointer;
-  background: #000;
-  color: #fff;
-  font-size: 12px;
+/* --- AGENT INFO --- */
+.prop-agent {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* CHANGED: Separator lines are now faint dark */
+    border-top: 1px solid #d6d6d6;
+    border-bottom: 1px solid #d6d6d6;
+    padding: 15px 0;
+    margin-bottom: 20px;
 }
 
-button.outline {
-  background: transparent;
-  color: #000;
-  border: 1px solid #000;
-} */
+.agent-info span {
+    display: block; font-size: 10px; color: #888; text-transform: uppercase;
+    font-family: 'Work Sans', sans-serif;
+}
+.agent-info strong {
+    display: block; color: #D4AF37; font-size: 14px; margin-top: 3px;
+    font-family: 'Playfair Display', serif; font-weight: 400; letter-spacing: 1px;
+}
 
+.agent-icons { display: flex; gap: 10px; }
+.agent-icons a {
+    width: 35px; height: 35px;
+    background: rgba(0,0,0,0.05); /* CHANGED: Slight dark background */
+    border-radius: 50%;
+    display: flex; align-items: center; justify-content: center;
+    text-decoration: none; font-size: 14px;
+    color: #000; /* CHANGED: Icon is black */
+    transition: 0.3s;
+}
+.agent-icons a:hover {
+    background: #D4AF37;
+    color: #000;
+    transform: scale(1.1);
+}
+
+/* --- BUTTONS --- */
+.prop-actions { display: flex; gap: 10px; margin-top: auto; }
+
+.prop-btn {
+    flex: 1;
+    padding: 12px;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 11px;
+    text-transform: uppercase;
+    font-weight: 700;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+/* Solid Button (Gold) */
+.prop-btn.solid {
+    background: #D4AF37; border: 1px solid #D4AF37; color: #000;
+}
+.prop-btn.solid:hover {
+    background: #000; border-color: #D4AF37; color: #D4AF37; /* CHANGED hover for better contrast */
+}
+
+/* Outline Button (Dark on White BG) */
+.prop-btn.outline {
+    background: transparent;
+    border: 1px solid #ffffff; /* CHANGED: Black border */
+    color: #ffffff; /* CHANGED: Black text */
+}
+.prop-btn.outline:hover {
+    background: #D4AF37;
+    border-color: #D4AF37;
+    color: #000;
+}
+
+/* Mobile Adjustment */
+@media (max-width: 600px) {
+    .properties-grid { grid-template-columns: 1fr; }
+}
 
 /* DARK SECTIONS */
 .dark {

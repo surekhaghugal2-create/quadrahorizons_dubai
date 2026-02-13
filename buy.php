@@ -32,7 +32,7 @@
 
 <!-- PROPERTY GRID -->
 <section class="properties-section reveal">
-    <div class="section-header">
+    <div class="section-header-buy">
         <h2>Exclusive Listings</h2>
         <p>Discover our curated selection of Dubai's finest properties.</p>
     </div>
@@ -211,7 +211,7 @@
 
 <!-- FAQ SECTION -->
  <section class="faq-section reveal">
-    <div class="section-header">
+    <div class="section-header-buy">
         <h2>Frequently Asked Questions</h2>
     </div>
     
