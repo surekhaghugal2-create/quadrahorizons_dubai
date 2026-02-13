@@ -12,7 +12,7 @@
   <link rel="stylesheet" href="css/header.css">
   <link rel="stylesheet" href="css/footer.css">
   <link rel="stylesheet" href="css/off-plan-projects.css">
-  <link rel="stylesheet" href="css/about-style.css">
+  <link rel="stylesheet" href="css/about.css">
   <link rel="stylesheet" href="css/contact.css">
   <link rel="stylesheet" href="css/buy.css">
 
