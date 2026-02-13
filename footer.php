@@ -46,7 +46,7 @@
 
                     <button type="button" class="f-btn">MEET OUR BRAND AMBASSADOR</button>
                 </form> -->
-                <form class="f-form" action="send-mail.php" method="POST">
+                <form class="f-form" action="mailto:surekhaghugal2@gmail.com" method="POST">
 
     <div class="form-group">
         <label>NAME</label>
