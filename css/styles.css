@@ -123,7 +123,7 @@
 
 /* --- CARD STYLING --- */
 .property-card {
-    background: #ffffff; /* CHANGED: Card BG is now White */
+    background: rgba(0,0,0,0.2); /* CHANGED: Card BG is now White */
     border: 1px solid rgba(0,0,0,0.1); /* CHANGED: Subtle dark border */
     border-radius: 4px;
     overflow: hidden;
@@ -159,7 +159,7 @@
     position: absolute;
     top: 15px; left: 15px;
     background: #D4AF37;
-    color: #000;
+    color: #000000;
     font-size: 10px;
     font-weight: 700;
     text-transform: uppercase;
@@ -174,14 +174,14 @@
 .prop-details h3 {
     font-family: 'Playfair Display', serif;
     font-size: 22px;
-    color: #000; /* CHANGED: Title is now black */
+    color: #ffffff; /* CHANGED: Title is now black */
     margin-bottom: 5px;
 }
 
 .prop-loc {
     font-family: 'Work Sans', sans-serif;
     font-size: 13px;
-    color: #555; /* CHANGED: Location is dark grey */
+    color: #d6d6d6; /* CHANGED: Location is dark grey */
     margin-bottom: 20px;
     text-transform: uppercase;
     letter-spacing: 1px;
@@ -193,8 +193,8 @@
     justify-content: space-between;
     align-items: center;
     /* CHANGED: Separator lines are now faint dark */
-    border-top: 1px solid rgba(0,0,0,0.1);
-    border-bottom: 1px solid rgba(0,0,0,0.1);
+    border-top: 1px solid #d6d6d6;
+    border-bottom: 1px solid #d6d6d6;
     padding: 15px 0;
     margin-bottom: 20px;
 }
@@ -243,14 +243,14 @@
     background: #D4AF37; border: 1px solid #D4AF37; color: #000;
 }
 .prop-btn.solid:hover {
-    background: #000; border-color: #000; color: #D4AF37; /* CHANGED hover for better contrast */
+    background: #000; border-color: #D4AF37; color: #D4AF37; /* CHANGED hover for better contrast */
 }
 
 /* Outline Button (Dark on White BG) */
 .prop-btn.outline {
     background: transparent;
-    border: 1px solid #000; /* CHANGED: Black border */
-    color: #000; /* CHANGED: Black text */
+    border: 1px solid #ffffff; /* CHANGED: Black border */
+    color: #ffffff; /* CHANGED: Black text */
 }
 .prop-btn.outline:hover {
     background: #D4AF37;
@@ -327,7 +327,7 @@
 
 /* --- Logo Styling (ORIGINAL COLORS) --- */
 .partner-logo {
-    height: 70px;
+    height: auto;
     /* Fixed height */
     width: auto;
     /* Maintain aspect ratio */
