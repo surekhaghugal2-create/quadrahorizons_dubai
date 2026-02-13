@@ -1,18 +1,18 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <title>Properties for Buy | Quadra Horizons</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" /> -->
 
   <!-- Google Font -->
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+  <!-- <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="css\buy.css">
   <link rel="stylesheet" href="css/header.css">
   <link rel="stylesheet" href="css/footer.css">
 </head>
-<body>
+<body> -->
 
 <?php include 'header.php'; ?>
 
@@ -31,148 +31,174 @@
 </section>
 
 <!-- PROPERTY GRID -->
-<section class="properties">
-  <div class="property-card">
-    <img src="image/1.jpg" />
-    <h3>Two Bedrooms</h3>
-    <p>MERCEDES-BENZ PLACES | Quadra Horizons Properties</p>
-    <div class="agent">
-      <span>Listed by<br><strong>Riyan Shagotra</strong></span>
-      <span class="icons">📞 💬</span>
+<section class="properties-section reveal">
+    <div class="section-header-buy">
+        <h2>Exclusive Listings</h2>
+        <p>Discover our curated selection of Dubai's finest properties.</p>
     </div>
-    <div class="actions">
-      <button>Book Now</button>
-      <button class="outline">Download Brochure</button>
-    </div>
-  </div>
 
-  <div class="property-card">
-    <img src="image/1.jpg" />
-    <h3>Two Bedrooms</h3>
-    <p>MERCEDES-BENZ PLACES | Quadra Horizons Properties</p>
-    <div class="agent">
-      <span>Listed by<br><strong>Riyan Shagotra</strong></span>
-      <span class="icons">📞 💬</span>
-    </div>
-    <div class="actions">
-      <button>Book Now</button>
-      <button class="outline">Download Brochure</button>
-    </div>
-  </div>
+    <div class="properties-grid">
+        
+        <div class="property-card">
+            <div class="prop-img-box">
+                <img src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=600&q=80" alt="Property">
+                <span class="prop-tag">New Launch</span>
+            </div>
+            <div class="prop-details">
+                <h3>Mercedes-Benz Places</h3>
+                <p class="prop-loc">Downtown Dubai | 2 Bedrooms</p>
+                
+                <div class="prop-agent">
+                    <div class="agent-info">
+                        <span>Listed by</span>
+                        <strong>Riyan Shagotra</strong>
+                    </div>
+                    <div class="agent-icons">
+                        <a href="tel:+971500000000">📞</a>
+                        <a href="https://wa.me/971500000000">💬</a>
+                    </div>
+                </div>
 
-  <div class="property-card">
-    <img src="image/1.jpg" />
-    <h3>Two Bedrooms</h3>
-    <p>MERCEDES-BENZ PLACES | Quadra Horizons Properties</p>
-    <div class="agent">
-      <span>Listed by<br><strong>Riyan Shagotra</strong></span>
-      <span class="icons">📞 💬</span>
-    </div>
-    <div class="actions">
-      <button>Book Now</button>
-      <button class="outline">Download Brochure</button>
-    </div>
-  </div>
+                <div class="prop-actions">
+                    <button class="prop-btn solid">Book Now</button>
+                    <button class="prop-btn outline">Download Brochure</button>
+                </div>
+            </div>
+        </div>
 
-  <div class="property-card">
-    <img src="image/1.jpg" />
-    <h3>Two Bedrooms</h3>
-    <p>MERCEDES-BENZ PLACES | Quadra Horizons Properties</p>
-    <div class="agent">
-      <span>Listed by<br><strong>Riyan Shagotra</strong></span>
-      <span class="icons">📞 💬</span>
-    </div>
-    <div class="actions">
-      <button>Book Now</button>
-      <button class="outline">Download Brochure</button>
-    </div>
-  </div>
+        <div class="property-card">
+            <div class="prop-img-box">
+                <img src="https://images.unsplash.com/photo-1512915922686-57c11dde9b6b?auto=format&fit=crop&w=600&q=80git init" alt="Property">
+                <span class="prop-tag">Selling Fast</span>
+            </div>
+            <div class="prop-details">
+                <h3>Bugatti Residences</h3>
+                <p class="prop-loc">Business Bay | 3 Bedrooms</p>
+                <div class="prop-agent">
+                    <div class="agent-info"><span>Listed by</span><strong>Sarah Jenkins</strong></div>
+                    <div class="agent-icons"><a href="#">📞</a><a href="#">💬</a></div>
+                </div>
+                <div class="prop-actions">
+                    <button class="prop-btn solid">Book Now</button>
+                    <button class="prop-btn outline">Download Brochure</button>
+                </div>
+            </div>
+        </div>
 
-  <div class="property-card">
-    <img src="image/1.jpg" />
-    <h3>Two Bedrooms</h3>
-    <p>MERCEDES-BENZ PLACES | Quadra Horizons Properties</p>
-    <div class="agent">
-      <span>Listed by<br><strong>Riyan Shagotra</strong></span>
-      <span class="icons">📞 💬</span>
-    </div>
-    <div class="actions">
-      <button>Book Now</button>
-      <button class="outline">Download Brochure</button>
-    </div>
-  </div>
+        <div class="property-card">
+            <div class="prop-img-box">
+                <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=600&q=80" alt="Property">
+            </div>
+            <div class="prop-details">
+                <h3>The Palm Crown</h3>
+                <p class="prop-loc">Palm Jumeirah | 5 Bedroom Villa</p>
+                <div class="prop-agent">
+                    <div class="agent-info"><span>Listed by</span><strong>Ahmed Al-Fayed</strong></div>
+                    <div class="agent-icons"><a href="#">📞</a><a href="#">💬</a></div>
+                </div>
+                <div class="prop-actions">
+                    <button class="prop-btn solid">Book Now</button>
+                    <button class="prop-btn outline">Download Brochure</button>
+                </div>
+            </div>
+        </div>
 
-  <div class="property-card">
-    <img src="image/1.jpg" />
-    <h3>Two Bedrooms</h3>
-    <p>MERCEDES-BENZ PLACES | Quadra Horizons Properties</p>
-    <div class="agent">
-      <span>Listed by<br><strong>Riyan Shagotra</strong></span>
-      <span class="icons">📞 💬</span>
-    </div>
-    <div class="actions">
-      <button>Book Now</button>
-      <button class="outline">Download Brochure</button>
-    </div>
-  </div>
+        <div class="property-card">
+            <div class="prop-img-box">
+                <img src="https://images.unsplash.com/photo-1613977257363-707ba9348227?auto=format&fit=crop&w=600&q=80" alt="Property">
+                <span class="prop-tag">Hot Deal</span>
+            </div>
+            <div class="prop-details">
+                <h3>Franck Muller Aeternitas</h3>
+                <p class="prop-loc">Dubai Marina | Penthouse</p>
+                <div class="prop-agent">
+                    <div class="agent-info"><span>Listed by</span><strong>Riyan Shagotra</strong></div>
+                    <div class="agent-icons"><a href="#">📞</a><a href="#">💬</a></div>
+                </div>
+                <div class="prop-actions">
+                    <button class="prop-btn solid">Book Now</button>
+                    <button class="prop-btn outline">Download Brochure</button>
+                </div>
+            </div>
+        </div>
 
-  <div class="property-card">
-    <img src="image/1.jpg" />
-    <h3>Two Bedrooms</h3>
-    <p>MERCEDES-BENZ PLACES | Quadra Horizons Properties</p>
-    <div class="agent">
-      <span>Listed by<br><strong>Riyan Shagotra</strong></span>
-      <span class="icons">📞 💬</span>
-    </div>
-    <div class="actions">
-      <button>Book Now</button>
-      <button class="outline">Download Brochure</button>
-    </div>
-  </div>
+        <div class="property-card">
+            <div class="prop-img-box">
+                <img src="https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?auto=format&fit=crop&w=600&q=80" alt="Property">
+            </div>
+            <div class="prop-details">
+                <h3>Address Residences</h3>
+                <p class="prop-loc">Jumeirah Beach | 2 Bedrooms</p>
+                <div class="prop-agent">
+                    <div class="agent-info"><span>Listed by</span><strong>Maria Lopez</strong></div>
+                    <div class="agent-icons"><a href="#">📞</a><a href="#">💬</a></div>
+                </div>
+                <div class="prop-actions">
+                    <button class="prop-btn solid">Book Now</button>
+                    <button class="prop-btn outline">Download Brochure</button>
+                </div>
+            </div>
+        </div>
 
-  <div class="property-card">
-    <img src="image/1.jpg" />
-    <h3>Two Bedrooms</h3>
-    <p>MERCEDES-BENZ PLACES | Quadra Horizons Properties</p>
-    <div class="agent">
-      <span>Listed by<br><strong>Riyan Shagotra</strong></span>
-      <span class="icons">📞 💬</span>
-    </div>
-    <div class="actions">
-      <button>Book Now</button>
-      <button class="outline">Download Brochure</button>
-    </div>
-  </div>
+        <div class="property-card">
+            <div class="prop-img-box">
+                <img src="https://images.unsplash.com/photo-1512915922686-57c11dde9b6b?auto=format&fit=crop&w=600&q=80" alt="Property">
+                <span class="prop-tag">Exclusive</span>
+            </div>
+            <div class="prop-details">
+                <h3>Burj Binghatti Jacob & Co</h3>
+                <p class="prop-loc">Business Bay | Sky Mansion</p>
+                <div class="prop-agent">
+                    <div class="agent-info"><span>Listed by</span><strong>Riyan Shagotra</strong></div>
+                    <div class="agent-icons"><a href="#">📞</a><a href="#">💬</a></div>
+                </div>
+                <div class="prop-actions">
+                    <button class="prop-btn solid">Book Now</button>
+                    <button class="prop-btn outline">Download Brochure</button>
+                </div>
+            </div>
+        </div>
 
-  <div class="property-card">
-    <img src="image/1.jpg" />
-    <h3>Two Bedrooms</h3>
-    <p>MERCEDES-BENZ PLACES | Quadra Horizons Properties</p>
-    <div class="agent">
-      <span>Listed by<br><strong>Riyan Shagotra</strong></span>
-      <span class="icons">📞 💬</span>
-    </div>
-    <div class="actions">
-      <button>Book Now</button>
-      <button class="outline">Download Brochure</button>
-    </div>
-  </div>
+        <div class="property-card">
+            <div class="prop-img-box">
+                <img src="https://images.unsplash.com/photo-1570129477492-45c003edd2be?auto=format&fit=crop&w=600&q=80" alt="Property">
+            </div>
+            <div class="prop-details">
+                <h3>Sobha Hartland II</h3>
+                <p class="prop-loc">Sobha Hartland | 4 Bedroom Villa</p>
+                <div class="prop-agent">
+                    <div class="agent-info"><span>Listed by</span><strong>James Wilson</strong></div>
+                    <div class="agent-icons"><a href="#">📞</a><a href="#">💬</a></div>
+                </div>
+                <div class="prop-actions">
+                    <button class="prop-btn solid">Book Now</button>
+                    <button class="prop-btn outline">Download Brochure</button>
+                </div>
+            </div>
+        </div>
 
-  <div class="property-card">
-    <img src="image/1.jpg" />
-    <h3>Two Bedrooms</h3>
-    <p>MERCEDES-BENZ PLACES | Quadra Horizons Properties</p>
-    <div class="agent">
-      <span>Listed by<br><strong>Riyan Shagotra</strong></span>
-      <span class="icons">📞 💬</span>
-    </div>
-    <div class="actions">
-      <button>Book Now</button>
-      <button class="outline">Download Brochure</button>
-    </div>
-  </div>
+        <div class="property-card">
+            <div class="prop-img-box">
+                <img src="https://images.unsplash.com/photo-1560185007-cde436f6a4d0?auto=format&fit=crop&w=600&q=80" alt="Property">
+                <span class="prop-tag">Just Listed</span>
+            </div>
+            <div class="prop-details">
+                <h3>Damac Lagoons</h3>
+                <p class="prop-loc">Hessa Street | 3 Bedroom Townhouse</p>
+                <div class="prop-agent">
+                    <div class="agent-info"><span>Listed by</span><strong>Elena Russo</strong></div>
+                    <div class="agent-icons"><a href="#">📞</a><a href="#">💬</a></div>
+                </div>
+                <div class="prop-actions">
+                    <button class="prop-btn solid">Book Now</button>
+                    <button class="prop-btn outline">Download Brochure</button>
+                </div>
+            </div>
+        </div>
+
 
 </section>
+
 
 <!-- INFO SECTION -->
 <section class="info dark">
@@ -185,7 +211,7 @@
 
 <!-- FAQ SECTION -->
  <section class="faq-section reveal">
-    <div class="section-header">
+    <div class="section-header-buy">
         <h2>Frequently Asked Questions</h2>
     </div>
     

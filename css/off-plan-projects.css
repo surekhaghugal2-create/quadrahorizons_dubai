@@ -264,61 +264,84 @@ ul.luxury-list li::before {
 /* =========================================
    5. FAQ SECTION
    ========================================= */
+/* --- FAQ CONTAINER --- */
 .faq-section {
     padding: 100px 5%;
-    max-width: 1000px;
-    margin: 0 auto;
+    background-color: #0A1120;
+    /* Dark Background */
+    color: #fff;
 }
 
-.section-title {
-    font-family: 'Playfair Display', serif;
-    font-size: 45px;
-    margin-bottom: 60px;
-    text-align: center;
+.faq-container {
+    max-width: 900px;
+    margin: 0 auto;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .faq-item {
-    border-bottom: 1px solid var(--border-color);
-    margin-bottom: 20px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    overflow: hidden;
+    /* Crucial for animation */
 }
 
+/* --- QUESTION (CLICKABLE) --- */
 .faq-question {
-    font-family: 'Playfair Display', serif;
-    font-size: 22px;
-    padding: 25px 0;
-    cursor: pointer;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 25px 0;
+    cursor: pointer;
     transition: 0.3s;
 }
 
-.faq-question:hover {
-    color: var(--gold);
+.faq-question h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 20px;
+    font-weight: 400;
+    margin: 0;
+    color: #fff;
 }
 
+.faq-icon {
+    font-size: 24px;
+    color: #D4AF37;
+    /* Gold */
+    font-weight: 300;
+    width: 30px;
+    text-align: center;
+}
+
+/* Hover Effect */
+.faq-question:hover h3 {
+    color: #D4AF37;
+}
+
+/* --- ANSWER (HIDDEN DEFAULT) --- */
 .faq-answer {
     max-height: 0;
+    /* Hidden */
     overflow: hidden;
-    transition: all 0.5s ease;
-    color: var(--text-grey);
-    font-size: 15px;
-    line-height: 1.8;
+    transition: max-height 0.5s ease-out;
+    /* Smooth Slide */
+    padding-right: 20px;
 }
 
-.faq-item.active .faq-answer {
-    max-height: 200px;
-    padding-bottom: 30px;
+.faq-answer p {
+    font-family: 'Work Sans', sans-serif;
+    font-size: 14px;
+    line-height: 1.6;
+    color: #b0b0b0;
+    margin: 0;
+    padding-bottom: 25px;
+    /* Spacing */
 }
 
-.faq-item.active .faq-question {
-    color: var(--gold);
+/* --- ACTIVE STATE --- */
+.faq-item.active .faq-question h3 {
+    color: #D4AF37;
 }
 
-.faq-item.active .fa-plus {
-    transform: rotate(45deg);
-    transition: 0.3s;
-}
+/* .active .faq-answer max-height is handled by JS */
 
 /* =========================================
    6. SCROLL REVEAL ANIMATION

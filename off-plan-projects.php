@@ -165,29 +165,53 @@
         </div>
     </div>
 
-    <section class="faq-section">
-        <h2 class="section-title reveal">Frequently Asked Questions</h2>
-        
-        <div class="faq-item reveal">
-            <div class="faq-question">Is it a good time to buy a property in Dubai in 2024? <i class="fas fa-plus"></i></div>
+    <!-- FAQ SECTION -->
+ <section class="faq-section reveal">
+    <div class="section-header">
+        <h2>Frequently Asked Questions</h2>
+    </div>
+    
+    <div class="faq-container">
+        <div class="faq-item">
+            <div class="faq-question">
+                <h3>Is it a good time to buy a property in Dubai in 2024?</h3>
+                <span class="faq-icon">+</span>
+            </div>
             <div class="faq-answer">
-                Yes, the Dubai market is currently experiencing significant growth with high ROI potential in emerging areas.
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
             </div>
         </div>
 
-        <div class="faq-item reveal">
-            <div class="faq-question">How is the current real estate market in Dubai? <i class="fas fa-plus"></i></div>
+        <div class="faq-item">
+            <div class="faq-question">
+                <h3>How is the current real estate market in Dubai in 2024?</h3>
+                <span class="faq-icon">+</span>
+            </div>
             <div class="faq-answer">
-                The market is robust, driven by high demand for luxury properties and an influx of international investors.
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
             </div>
         </div>
 
-        <div class="faq-item reveal">
-            <div class="faq-question">Can an expat buy property in Dubai and live permanently? <i class="fas fa-plus"></i></div>
+        <div class="faq-item">
+            <div class="faq-question">
+                <h3>Have there been shifts in sale prices for Dubai properties in 2024?</h3>
+                <span class="faq-icon">+</span>
+            </div>
             <div class="faq-answer">
-                Yes, freehold areas allow expats to own property 100%. Property ownership can also lead to long-term residency visas (Golden Visa).
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
             </div>
         </div>
-    </section>
+
+        <div class="faq-item">
+            <div class="faq-question">
+                <h3>Can an expat buy Property in Dubai and live permanently?</h3>
+                <span class="faq-icon">+</span>
+            </div>
+            <div class="faq-answer">
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+            </div>
+        </div>
+    </div>
+</section>
 
 <?php include 'footer.php'; ?>
