@@ -107,7 +107,7 @@ body.hovering .cursor-outline {
 }
 
 .brand-logo img {
-    height: 80px; /* Adjust this height to fit your header */
+    height: 120px; /* Adjust this height to fit your header */
     width: auto;  /* Maintains the logo's aspect ratio */
     object-fit: contain;
     transition: transform 0.3s ease;

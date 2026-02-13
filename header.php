@@ -28,7 +28,7 @@
 
   <header class="site-header" id="siteHeader">
  <a href="index.php" class="brand-logo">
-    <img src="image/1.png" alt="Quadra Horizon Logo">
+    <img src="image/Logo2.png" alt="Quadra Horizon Logo">
 </a>
     <button class="menu-btn" id="menuTrigger">
       <span></span>
