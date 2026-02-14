@@ -8,13 +8,12 @@
 
 
 
-  <link rel="stylesheet" href="css/styles.css">
   <link rel="stylesheet" href="css/header.css">
   <link rel="stylesheet" href="css/footer.css">
-  <link rel="stylesheet" href="css/off-plan-projects.css">
-  <link rel="stylesheet" href="css/about.css">
-  <link rel="stylesheet" href="css/contact.css">
-  <link rel="stylesheet" href="css/buy.css">
+
+
+ 
+
 
 
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=Work+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">

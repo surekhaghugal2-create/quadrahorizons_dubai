@@ -1,21 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <title>Properties for Rent | Quadra Horizons</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-  <!-- Google Font -->
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
-
-  <link rel="stylesheet" href="css\rent.css">
-  <link rel="stylesheet" href="css/header.css">
-  <link rel="stylesheet" href="css/footer.css">
-</head>
-<body>
-
 <?php include 'header.php'; ?>
-
+  <link rel="stylesheet" href="css/rent.css">
 <!-- HERO -->
 <section class="hero">
   <img src="image/1.jpg" alt="Dubai Skyline">
@@ -261,6 +245,3 @@
 </section>
 
 <?php include "footer.php"; ?>
-
-</body>
-</html>

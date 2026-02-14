@@ -1,653 +1,278 @@
 /* =========================================
-   ABOUT US PAGE STYLES (Fixed)
+   ABOUT PAGE STYLES (Fonts Fixed: Headings=Playfair, Text=Work Sans)
    ========================================= */
 
-/* --- 1. Hero Video Background --- */
-.about-hero {
-    height: 70vh;
-    width: 100%;
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    overflow: hidden;
-    margin-bottom: 0; /* Fixes spacing issues */
+/* --- 1. HERO SECTION --- */
+.about-hero-section {
+    position: relative; height: 80vh; width: 100%;
+    display: flex; align-items: center; justify-content: center;
+    overflow: hidden; background: #000;
 }
-
-.hero-bg-video {
-    position: absolute;
-    top: 0; left: 0;
-    width: 100%; height: 100%;
-    object-fit: cover;
-    z-index: 0;
+.about-hero-video {
+    position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);
+    min-width: 100%; min-height: 100%; width: auto; height: auto;
+    object-fit: cover; opacity: 0.6; z-index: 0;
 }
-
-.hero-overlay {
+.about-hero-overlay {
     position: absolute; inset: 0;
+    background: linear-gradient(to bottom, rgba(10,17,32,0.3), #0A1120);
     z-index: 1;
 }
-
-.hero-content {
-    position: relative; z-index: 2;
-    text-align: center;
-    max-width: 900px;
-    padding: 0 20px;
+.about-hero-content {
+    position: relative; z-index: 2; text-align: center; color: #fff; padding-top: 60px;
+}
+.about-hero-content h1 {
+    font-family: 'Playfair Display', serif; /* HEADING */
+    font-size: 80px; margin: 0;
+    text-shadow: 0 20px 40px rgba(0,0,0,0.5);
+}
+.about-hero-line {
+    width: 60px; height: 3px; background: #D4AF37; margin: 20px auto;
+}
+.about-hero-content p {
+    font-family: 'Work Sans', sans-serif; /* PARAGRAPH */
+    font-size: 18px; letter-spacing: 6px; text-transform: uppercase;
+    color: #D4AF37;
 }
 
-.hero-content h1 {
-    font-family: 'Playfair Display', serif;
-    font-size: 70px;
-    letter-spacing: 5px;
-    text-transform: uppercase;
-    margin-bottom: 20px;
-    color: var(--white);
-    line-height: 1.1;
+/* --- 2. LEADERS SECTION --- */
+.about-leaders-section {
+    padding: 100px 5%; background-color: #05080f; text-align: center;
 }
+.about-leaders-header { margin-bottom: 70px; }
 
-.hero-line {
-    width: 60px; height: 3px;
-    background: var(--gold);
-    margin: 20px auto;
-}
-
-.hero-content p {
-    font-family: 'Work Sans', sans-serif;
-    font-size: 18px;
-    letter-spacing: 4px;
-    text-transform: uppercase;
-    color: #e0e0e0;
-}
-
-/* --- 2. Mission Section --- */
-.mission-section {
-    padding: 100px 10%;
-    text-align: center;
-    position: relative;
-    z-index: 2;
-     background: var(--darker); 
-}
-
-.mission-box {
-    border: 1px solid rgba(212, 175, 55, 0.3);
-    padding: 60px;
-    position: relative;
-    background: rgba(255, 255, 255, 0.02); /* Slight glass effect */
-}
-
-.quote-mark {
-    font-family: 'Playfair Display', serif;
-    font-size: 80px;
-    color: var(--gold);
-    line-height: 0.5;
-    display: block;
-    opacity: 0.5;
-    margin-bottom: 20px;
-}
-
-.mission-text {
-    font-family: 'Playfair Display', serif;
-    font-size: 26px;
-    line-height: 1.6;
-    color: var(--white);
-    margin: 30px 0;
-}
-
-.quoter-name {
-    font-family: 'Work Sans', sans-serif;
-    font-size: 12px;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    color: var(--gold);
-    font-weight: 700;
-}
-
-/* --- 3. Team Section --- */
-.team-section {
-    padding: 80px 5%;
-    background: var(--darker);
-}
-
-/* --- THE GRID (2 Columns) --- */
-.leaders-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr); /* Exactly 2 columns */
-    gap: 60px; /* Generous spacing between cards */
-    max-width: 1100px; /* Restrict width to keep portraits vertical */
-    margin: 0 auto;
-}
-
-/* --- CARD STYLING --- */
-.leader-card {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    position: relative;
-}
-
-/* Image Wrapper */
-.leader-img-wrap {
-    width: 100%;
-    height: 550px; /* Tall portrait height */
-    overflow: hidden;
-    position: relative;
-    margin-bottom: 25px; /* Space between image and text */
-}
-
-.leader-img-wrap img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    filter: grayscale(100%); /* Start Black & White */
-    transition: transform 0.6s ease, filter 0.6s ease;
-}
-
-/* Hover Effect */
-.leader-card:hover .leader-img-wrap img {
-    transform: scale(1.05);
-    filter: grayscale(0%); /* Color on hover */
-}
-
-.leader-overlay {
-    position: absolute;
-    inset: 0;
-    background: rgba(212, 175, 55, 0.7); /* Gold Tint */
-    display: flex;
-    align-items: center; justify-content: center;
-    opacity: 0;
-    transition: 0.4s ease;
-}
-.leader-card:hover .leader-overlay { opacity: 1; }
-.leader-overlay i { font-size: 30px; color: #fff; }
-
-/* --- TEXT STYLING (Matches Reference) --- */
-.leader-text {
-    text-align: center;
-}
-
-.leader-role {
-    display: block;
-    font-family: 'Playfair Display', serif; /* Serif font for role */
-    font-style: italic;
-    font-size: 16px;
-    color: #ccc;
-    margin-bottom: 8px;
-}
-
-.leader-name {
-    font-family: 'Work Sans', sans-serif; /* Sans-serif for name */
-    font-size: 22px;
-    color: #fff;
-    text-transform: uppercase;
-    letter-spacing: 3px;
-    font-weight: 400;
-    margin: 0;
-}
-
-/* --- MOBILE RESPONSIVE --- */
-@media (max-width: 768px) {
-    .leaders-grid {
-        grid-template-columns: 1fr; /* 1 Column on mobile */
-        gap: 40px;
-    }
-    .leader-img-wrap {
-        height: 450px; /* Slightly shorter on phone */
-    }
-}
-
-/* --- 4. Experience Video Break --- */
-.experience-section {
-    height: 500px;
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    overflow: hidden;
-    margin: 100px 0;
-}
-
-.exp-video {
-    position: absolute; top: 0; left: 0;
-    width: 100%; height: 100%;
-    object-fit: cover;
-    z-index: 0;
-    opacity: 0.5;
-}
-
-.exp-content {
-    position: relative; z-index: 2;
-    text-align: center;
-}
-
-.exp-content h2 {
-    font-family: 'Playfair Display', serif;
-    font-size: 60px;
-    margin-bottom: 30px;
-    text-transform: uppercase;
-    color: var(--white);
-    text-shadow: 0 5px 15px rgba(0,0,0,0.5);
-}
-
-.play-btn {
-    background: transparent;
-    border: 1px solid var(--white);
-    color: var(--white);
-    padding: 15px 40px;
-    font-size: 12px;
-    letter-spacing: 2px;
-    font-weight: 600;
-    cursor: pointer;
-    transition: 0.3s;
-    font-family: 'Work Sans', sans-serif;
-}
-
-.play-btn:hover {
-    background: var(--gold);
-    border-color: var(--gold);
-    color: #000;
-}
-
-/* --- 5. Awards Section --- */
-.awards-section {
-    padding: 80px 5%;
-    text-align: center;
-    background: var(--dark);
-}
-
-.title-serif {
-    font-family: 'Playfair Display', serif;
-    font-size: 40px;
-    color: var(--white);
-    margin-bottom: 60px;
-}
-.title-serif span { color: var(--gold); font-style: italic; }
-
-.awards-grid {
-    display: flex;
-    justify-content: space-around;
-    padding: 40px 0;
-    border-top: 1px solid rgba(255,255,255,0.1);
-    border-bottom: 1px solid rgba(255,255,255,0.1);
-    flex-wrap: wrap; gap: 40px;
-    max-width: 1200px; margin: 0 auto;
-}
-
-.award-box {
-    text-align: center;
-    position: relative;
-    min-width: 200px;
-}
-
-.award-year {
-    display: block;
-    font-size: 50px;
-    font-family: 'Playfair Display', serif;
-    color: var(--gold);
-    line-height: 1;
-}
-
-.award-line {
-    display: block;
-    width: 40px; height: 1px;
-    background: #444;
-    margin: 15px auto;
-}
-
-.award-name {
-    font-family: 'Work Sans', sans-serif;
-    font-size: 12px;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-    color: var(--white);
-}
-
-/* --- 6. Luxury Collections --- */
-.luxury-section {
-    padding: 100px 5%;
-    background: var(--darker);
-}
-
-.luxury-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 30px;
-    max-width: 1400px;
-    margin: 50px auto 0;
-}
-
-.lux-card {
-    position: relative;
-    cursor: pointer;
-    transition: transform 0.4s ease;
-}
-
-.lux-card:hover {
-    transform: translateY(-15px);
-}
-
-.lux-img-wrap {
-    height: 450px;
-    overflow: hidden;
-    position: relative;
-}
-
-.lux-img-wrap img {
-    width: 100%; height: 100%;
-    object-fit: cover;
-    transition: transform 0.8s ease;
-}
-
-.lux-card:hover img {
-    transform: scale(1.1);
-}
-
-.lux-label {
-    background: var(--white);
-    color: #000;
-    padding: 25px;
-    text-align: center;
-    position: relative;
-    width: 85%;
-    margin: -50px auto 0;
-    box-shadow: 0 15px 30px rgba(0,0,0,0.3);
-    z-index: 2;
-}
-
-.lux-label h4 {
-    margin: 0;
-    font-family: 'Playfair Display', serif;
-    font-size: 20px;
-    margin-bottom: 5px;
-}
-
-.lux-label p {
-    font-family: 'Work Sans', sans-serif;
-    font-size: 11px;
-    color: #666;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-}
-
-/* --- Responsive Adjustments --- */
-@media (max-width: 992px) {
-    .team-grid { grid-template-columns: repeat(2, 1fr); }
-    .luxury-grid { grid-template-columns: 1fr; }
-    .mission-section { padding: 80px 5%; }
-    .mission-box { padding: 30px; }
-    .hero-content h1 { font-size: 40px; }
-}
-
-@media (max-width: 768px) {
-    .team-grid { grid-template-columns: 1fr; }
-    .awards-grid { flex-direction: column; }
-    .exp-content h2 { font-size: 30px; }
-}
-
-
-/* =========================================
-   AWARDS SECTION (Prestige Grid Design)
-   ========================================= */
-
-.awards-section {
-    padding: 120px 5%;
-    background-color: #05080f; /* Deep Dark Background */
-    text-align: center;
-}
-
-.awards-header {
-    margin-bottom: 70px;
-}
-.awards-header h2 {
-    font-family: 'Playfair Display', serif;
+.about-leaders-header h2 {
+    font-family: 'Playfair Display', serif; /* HEADING */
     font-size: 50px; color: #fff; margin-bottom: 10px;
 }
-.awards-header h2 span {
-    color: #D4AF37; font-style: italic;
+.about-leaders-header p {
+    font-family: 'Work Sans', sans-serif; /* PARAGRAPH */
+    color: #888; font-size: 16px;
+    line-height: 1.6; max-width: 800px; margin: 0 auto;
 }
-.awards-header p {
-    font-family: 'Work Sans', sans-serif;
+
+.about-leaders-grid {
+    display: grid; grid-template-columns: repeat(2, 1fr); gap: 60px;
+    max-width: 1100px; margin: 0 auto;
+}
+
+.about-leader-card {
+    display: flex; flex-direction: column; align-items: center; position: relative;
+}
+.about-leader-img {
+    width: 100%; height: 550px; overflow: hidden; position: relative; margin-bottom: 25px;
+}
+.about-leader-img img {
+    width: 100%; height: 100%; object-fit: cover; filter: grayscale(100%);
+    transition: transform 0.6s ease, filter 0.6s ease;
+}
+.about-leader-card:hover .about-leader-img img {
+    transform: scale(1.05); filter: grayscale(0%);
+}
+.about-leader-overlay {
+    position: absolute; inset: 0; background: rgba(212, 175, 55, 0.7);
+    display: flex; align-items: center; justify-content: center; opacity: 0; transition: 0.4s ease;
+}
+.about-leader-card:hover .about-leader-overlay { opacity: 1; }
+.about-leader-overlay i { font-size: 30px; color: #fff; }
+
+.about-leader-info { text-align: center; }
+
+.about-leader-role {
+    display: block; 
+    font-family: 'Work Sans', sans-serif; /* PARAGRAPH/SPAN */
+    font-style: italic; font-size: 16px; color: #ccc; margin-bottom: 8px;
+}
+.about-leader-name {
+    font-family: 'Playfair Display', serif; /* HEADING (H3) */
+    font-size: 24px; color: #fff;
+    text-transform: uppercase; letter-spacing: 2px; font-weight: 400; margin: 0;
+}
+
+/* --- 3. MISSION SECTION --- */
+.about-mission-section { padding: 120px 5%; background: #0A1120; text-align: center; }
+.about-mission-box { max-width: 900px; margin: 0 auto; position: relative; }
+.about-quote-mark {
+    font-family: 'Playfair Display', serif; font-size: 120px; line-height: 0;
+    color: rgba(212, 175, 55, 0.2); position: absolute; top: 0; left: -40px;
+}
+.about-mission-text {
+    font-family: 'Work Sans', sans-serif; /* PARAGRAPH */
+    font-size: 26px; color: #fff;
+    line-height: 1.6; font-style: italic; margin-bottom: 30px;
+}
+.about-quoter-name {
+    font-family: 'Work Sans', sans-serif; /* PARAGRAPH/SPAN */
+    color: #D4AF37; letter-spacing: 2px;
+    text-transform: uppercase; font-size: 12px;
+}
+
+/* --- 4. AWARDS (Grid) --- */
+.about-awards-section {
+    padding: 120px 5%; background-color: #05080f; text-align: center;
+}
+.about-awards-header { margin-bottom: 70px; }
+.about-awards-header h2 {
+    font-family: 'Playfair Display', serif; /* HEADING */
+    font-size: 50px; color: #fff; margin-bottom: 10px;
+}
+.about-awards-header h2 span { color: #D4AF37; font-style: italic; }
+.about-awards-header p {
+    font-family: 'Work Sans', sans-serif; /* PARAGRAPH */
     color: #888; font-size: 12px; letter-spacing: 2px; text-transform: uppercase;
 }
 
-/* --- GRID LAYOUT --- */
-.awards-grid-display {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr); /* 4 Cards in a row */
-    gap: 30px;
-    max-width: 1400px;
-    margin: 0 auto;
+.about-awards-grid {
+    display: grid; grid-template-columns: repeat(4, 1fr); gap: 30px;
+    max-width: 1400px; margin: 0 auto;
 }
 
-/* --- CARD STYLING --- */
-.award-card {
-    background: #0A1120; /* Slightly lighter than bg */
-    padding: 50px 30px;
-    position: relative;
-    transition: transform 0.4s ease;
-    overflow: hidden; /* Keeps border inside */
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+.about-award-card {
+    background: #0A1120; padding: 50px 30px; position: relative;
+    transition: transform 0.4s ease; overflow: hidden;
+    display: flex; flex-direction: column; align-items: center; justify-content: center;
     border: 1px solid rgba(255,255,255,0.05);
 }
+.about-award-card:hover { transform: translateY(-10px); background: #0f172a; }
 
-.award-card:hover {
-    transform: translateY(-10px); /* Lift Effect */
-    background: #0f172a;
-}
+.about-award-icon { font-size: 40px; color: #444; margin-bottom: 25px; transition: 0.4s; }
+.about-award-card:hover .about-award-icon { color: #D4AF37; transform: scale(1.1); }
 
-/* Icons */
-.award-icon {
-    font-size: 40px;
-    color: #444; /* Dark initially */
-    margin-bottom: 25px;
-    transition: 0.4s;
-}
-.award-card:hover .award-icon {
-    color: #D4AF37; /* Lights up Gold */
-    transform: scale(1.1);
-}
-
-/* Text */
-.award-year {
-    font-family: 'Work Sans', sans-serif;
+.about-award-year {
+    font-family: 'Work Sans', sans-serif; /* PARAGRAPH/SPAN */
     font-size: 11px; font-weight: 700; letter-spacing: 2px;
-    color: #D4AF37;
-    border: 1px solid rgba(212, 175, 55, 0.3);
-    padding: 5px 12px;
-    border-radius: 20px;
-    margin-bottom: 20px;
+    color: #D4AF37; border: 1px solid rgba(212, 175, 55, 0.3); padding: 5px 12px;
+    border-radius: 20px; margin-bottom: 20px;
 }
-
-.award-card h3 {
-    font-family: 'Playfair Display', serif;
+.about-award-card h3 {
+    font-family: 'Playfair Display', serif; /* HEADING */
     font-size: 22px; color: #fff;
     margin-bottom: 10px; line-height: 1.3;
 }
-
-.award-card p {
-    font-family: 'Work Sans', sans-serif;
+.about-award-card p {
+    font-family: 'Work Sans', sans-serif; /* PARAGRAPH */
     font-size: 13px; color: #888;
 }
 
-/* --- GOLD BORDER ANIMATION --- */
-/* This creates a border that "draws" itself around the box on hover */
-.hover-border {
-    position: absolute;
-    inset: 0;
-    pointer-events: none;
+/* Border Animation */
+.about-hover-border { position: absolute; inset: 0; pointer-events: none; }
+.about-hover-border::before, .about-hover-border::after {
+    content: ''; position: absolute; width: 0; height: 2px; background: #D4AF37; transition: 0.4s ease;
+}
+.about-hover-border::before { top: 0; left: 0; }
+.about-hover-border::after { bottom: 0; right: 0; }
+.about-award-card:hover .about-hover-border::before,
+.about-award-card:hover .about-hover-border::after { width: 100%; }
+
+.about-award-card::before, .about-award-card::after {
+    content: ''; position: absolute; width: 2px; height: 0; background: #D4AF37;
+    transition: 0.4s ease; transition-delay: 0.1s;
+}
+.about-award-card::before { top: 0; right: 0; }
+.about-award-card::after { bottom: 0; left: 0; }
+.about-award-card:hover::before, .about-award-card:hover::after { height: 100%; }
+
+/* --- 5. LUXURY COLLECTIONS --- */
+.about-lux-section { padding: 100px 5%; background-color: #0A1120; }
+.about-lux-header { text-align: center; margin-bottom: 60px; }
+.about-lux-header h2 {
+    font-family: 'Playfair Display', serif; /* HEADING */
+    font-size: 50px; color: #fff;
+}
+.about-lux-grid {
+    display: grid; grid-template-columns: repeat(3, 1fr); gap: 30px;
+    max-width: 1400px; margin: 0 auto;
+}
+.about-lux-card {
+    position: relative; height: 550px; overflow: hidden; cursor: pointer; border-radius: 2px;
+}
+.about-lux-img { width: 100%; height: 100%; position: relative; }
+.about-lux-img img {
+    width: 100%; height: 100%; object-fit: cover;
+    transition: transform 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+.about-lux-card:hover .about-lux-img img { transform: scale(1.15); }
+.about-lux-label {
+    position: absolute; bottom: 40px; left: 40px; z-index: 2; width: 100%;
+}
+.about-lux-label h4 {
+    font-family: 'Playfair Display', serif; /* HEADING */
+    font-size: 28px; color: #fff; margin: 0;
+}
+.about-lux-label p {
+    font-family: 'Work Sans', sans-serif; /* PARAGRAPH */
+    font-size: 12px; letter-spacing: 2px;
+    text-transform: uppercase; color: #D4AF37; margin-top: 5px;
 }
 
-.hover-border::before, .hover-border::after {
-    content: '';
-    position: absolute;
-    width: 0; height: 2px;
-    background: #D4AF37;
-    transition: 0.4s ease;
+/* --- 6. NEWSLETTER --- */
+.about-news-section {
+    padding: 100px 5%; background-color: #05080f; display: flex; justify-content: center;
 }
-
-.hover-border::before { top: 0; left: 0; }
-.hover-border::after { bottom: 0; right: 0; }
-
-.award-card:hover .hover-border::before,
-.award-card:hover .hover-border::after {
-    width: 100%; /* Top and Bottom lines draw full width */
+.about-news-container {
+    background: linear-gradient(145deg, #0A1120, #000); padding: 80px 50px;
+    max-width: 900px; width: 100%; border: 1px solid rgba(255,255,255,0.05);
+    border-radius: 4px; text-align: center; position: relative; overflow: hidden;
+    box-shadow: 0 20px 50px rgba(0,0,0,0.4); transition: transform 0.4s ease, border-color 0.4s ease;
 }
-
-/* Left and Right Vertical Lines */
-.award-card::before, .award-card::after {
-    content: '';
-    position: absolute;
-    width: 2px; height: 0;
-    background: #D4AF37;
-    transition: 0.4s ease;
-    transition-delay: 0.1s; /* Delays vertical lines slightly for effect */
-}
-
-.award-card::before { top: 0; right: 0; }
-.award-card::after { bottom: 0; left: 0; }
-
-.award-card:hover::before,
-.award-card:hover::after {
-    height: 100%;
-}
-
-/* --- RESPONSIVE --- */
-@media (max-width: 1024px) {
-    .awards-grid-display { grid-template-columns: repeat(2, 1fr); }
-}
-@media (max-width: 600px) {
-    .awards-grid-display { grid-template-columns: 1fr; }
-}
-
-/* =========================================
-   LUXURY NEWSLETTER SECTION
-   ========================================= */
-
-.newsletter-section {
-    padding: 100px 5%;
-    background-color: #05080f; /* Matches dark theme */
-    display: flex;
-    justify-content: center;
-}
-
-.newsletter-container {
-    background: linear-gradient(145deg, #0A1120, #000);
-    padding: 80px 50px;
-    max-width: 900px;
-    width: 100%;
-    border: 1px solid rgba(255,255,255,0.05);
-    border-radius: 4px;
-    text-align: center;
-    position: relative;
-    overflow: hidden;
-    box-shadow: 0 20px 50px rgba(0,0,0,0.4);
-    transition: transform 0.4s ease, border-color 0.4s ease;
-}
-
-/* Hover Effect: Gold Glow */
-.newsletter-container:hover {
-    transform: translateY(-5px);
-    border-color: rgba(212, 175, 55, 0.3);
+.about-news-container:hover {
+    transform: translateY(-5px); border-color: rgba(212, 175, 55, 0.3);
     box-shadow: 0 30px 60px rgba(0,0,0,0.6);
 }
-
-/* Decorative Top Line */
-.newsletter-container::before {
-    content: '';
-    position: absolute; top: 0; left: 0; width: 100%; height: 3px;
+.about-news-container::before {
+    content: ''; position: absolute; top: 0; left: 0; width: 100%; height: 3px;
     background: linear-gradient(90deg, transparent, #D4AF37, transparent);
 }
-
-/* --- TEXT STYLES --- */
-.sub-gold {
-    display: block;
-    font-family: 'Work Sans', sans-serif;
-    font-size: 11px; letter-spacing: 4px; text-transform: uppercase;
-    color: #D4AF37; margin-bottom:20px;
+.about-sub-gold {
+    display: block; 
+    font-family: 'Work Sans', sans-serif; /* PARAGRAPH/SPAN */
+    font-size: 11px; letter-spacing: 4px; text-transform: uppercase; color: #D4AF37; margin-bottom: 20px;
 }
-
-.newsletter-content h2 {
-    font-family: 'Playfair Display', serif;
-    font-size: 45px; color: #fff;
-    margin-bottom: 20px;
+.about-news-content h2 {
+    font-family: 'Playfair Display', serif; /* HEADING */
+    font-size: 45px; color: #fff; margin-bottom: 20px;
 }
-.newsletter-content h2 span {
-    font-style: italic; color: #D4AF37;
+.about-news-content h2 span { font-style: italic; color: #D4AF37; }
+.about-news-content p {
+    font-family: 'Work Sans', sans-serif; /* PARAGRAPH */
+    color: #888; font-size: 18px;
+    line-height: 1.6; max-width: 500px; margin: 0 auto 40px;
 }
-
-.newsletter-content p {
-    font-family: 'Work Sans', sans-serif;
-    color: #888; font-size: 15px; line-height: 1.6;
-    max-width: 500px; margin: 0 auto 40px;
+.about-news-form { max-width: 500px; margin: 0 auto; }
+.about-input-group {
+    position: relative; display: flex; border-bottom: 1px solid #444; transition: 0.3s;
 }
-
-/* --- FORM STYLES --- */
-.newsletter-form {
-    max-width: 500px; margin: 0 auto;
+.about-input-group input {
+    width: 100%; background: transparent; border: none; padding: 15px 0;
+    color: #fff; 
+    font-family: 'Work Sans', sans-serif; /* INPUT TEXT */
+    font-size: 18px; outline: none;
 }
-
-.input-group {
-    position: relative;
-    display: flex;
-    border-bottom: 1px solid #444;
-    transition: 0.3s;
+.about-input-group:focus-within { border-bottom-color: #D4AF37; }
+.about-news-btn {
+    background: transparent; border: none; color: #D4AF37;
+    font-family: 'Work Sans', sans-serif; /* BUTTON TEXT */
+    font-size: 12px; font-weight: 700;
+    letter-spacing: 2px; text-transform: uppercase; cursor: pointer;
+    transition: 0.3s; padding: 0 20px;
 }
-
-/* Input Field */
-.input-group input {
-    width: 100%;
-    background: transparent;
-    border: none;
-    padding: 15px 0;
-    color: #fff;
-    font-family: 'Work Sans', sans-serif;
-    font-size: 16px;
-    outline: none;
-}
-.input-group input::placeholder { color: #555; }
-
-/* Animated Border on Focus */
-.input-group:focus-within {
-    border-bottom-color: #D4AF37;
-}
-
-/* Submit Button */
-.news-btn {
-    background: transparent;
-    border: none;
-    color: #D4AF37;
-    font-family: 'Work Sans', sans-serif;
-    font-size: 12px;
-    font-weight: 700;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    cursor: pointer;
-    transition: 0.3s;
-    padding: 0 20px;
-}
-
-.news-btn:hover {
-    color: #fff;
-    letter-spacing: 3px; /* Subtle expansion effect */
-}
-
-/* Privacy Note */
-.privacy-note {
-    font-size: 10px !important;
-    color: #444 !important;
-    margin-top: 30px !important;
-    margin-bottom: 0 !important;
-    text-transform: uppercase;
-    letter-spacing: 1px;
+.about-news-btn:hover { color: #fff; letter-spacing: 3px; }
+.about-privacy-note {
+    font-family: 'Work Sans', sans-serif; /* PARAGRAPH */
+    font-size: 10px !important; color: #444 !important;
+    margin-top: 30px !important; text-transform: uppercase; letter-spacing: 1px;
 }
 
 /* --- MOBILE RESPONSIVE --- */
+@media (max-width: 1024px) {
+    .about-leaders-grid { grid-template-columns: 1fr; }
+    .about-awards-grid { grid-template-columns: repeat(2, 1fr); }
+    .about-lux-grid { grid-template-columns: 1fr; }
+}
 @media (max-width: 600px) {
-    .newsletter-container { padding: 50px 20px; }
-    .newsletter-content h2 { font-size: 32px; }
-    .input-group { flex-direction: column; border-bottom: none; }
-    .input-group input { border-bottom: 1px solid #444; margin-bottom: 20px; text-align: center; }
-    .news-btn { width: 100%; background: #D4AF37; color: #000; padding: 15px; }
-    .news-btn:hover { background: #fff; color: #000; letter-spacing: 2px; }
+    .about-awards-grid { grid-template-columns: 1fr; }
+    .about-news-container { padding: 50px 20px; }
+    .about-input-group { flex-direction: column; border-bottom: none; }
+    .about-input-group input { border-bottom: 1px solid #444; margin-bottom: 20px; text-align: center; }
+    .about-news-btn { width: 100%; background: #D4AF37; color: #000; padding: 15px; }
 }

@@ -1,4 +1,5 @@
 <?php include 'header.php'; ?>
+ <link rel="stylesheet" href="css/contact.css">
 
 <section class="contact-hero">
     <video autoplay muted loop playsinline class="contact-hero-video">
