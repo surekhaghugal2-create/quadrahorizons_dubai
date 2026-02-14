@@ -241,16 +241,16 @@
             </div>
             <div class="sell-grid-small">
                 <div class="sell-img-box reveal" style="transition-delay: 0.2s">
-                    <img src="https://images.unsplash.com/photo-1518684079-3c830dcef090?auto=format&fit=crop&w=600&q=80" alt="Dubai Aerial">
+                    <img src="image/WhatsApp Image 2026-02-12 at 3.03.51 PM.jpeg" alt="Dubai Aerial">
                 </div>
                 <div class="sell-img-box reveal" style="transition-delay: 0.4s">
-                    <img src="https://images.unsplash.com/photo-1528702748617-c64d49f918af?auto=format&fit=crop&w=600&q=80" alt="Dubai Golf Course">
+                    <img src="image/WhatsApp Image 2026-02-12 at 3.03.50 PM.jpeg" alt="Dubai Golf Course">
                 </div>
             </div>
         </div>
 
         <div class="sell-content-right reveal" style="transition-delay: 0.6s">
-            <img src="https://images.unsplash.com/photo-1582610116397-edb318620f90?auto=format&fit=crop&w=600&q=80" alt="Dubai Marina">
+            <img src="image/WhatsApp Image 2026-02-12 at 3.03.48 PM.jpeg" alt="Dubai Marina">
         </div>
     </div>
 
