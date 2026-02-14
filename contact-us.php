@@ -32,7 +32,7 @@
             <div class="detail-value"><a href="tel:+971501234567">+971 50 123 4567</a></div>
         </div>
 
-        <div class="detail-box">
+        <div class="detail-box"> 
             <span class="detail-label">Email Us</span>
             <div class="detail-value" style="font-size: 20px;">
                 <a href="mailto:info@quadrahorizon.com">info@quadrahorizon.com</a>

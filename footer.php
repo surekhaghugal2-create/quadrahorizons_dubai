@@ -49,13 +49,13 @@
                 <form class="f-form" action="mailto:surekhaghugal2@gmail.com" method="POST">
 
     <div class="form-group">
-        <label>NAME</label>
+        <label >NAME</label>
         <input type="text" name="name" class="f-input" placeholder="Your Name" required>
     </div>
 
     <div class="form-row">
         <div class="form-group small">
-            <label>CODE</label>
+            <label >CODE</label>
             <input type="text" name="code" class="f-input" value="+971" required>
         </div>
 
