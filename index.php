@@ -1,5 +1,7 @@
 <?php include 'header.php'; ?>
 
+<link rel="stylesheet" href="css/styles.css">
+
 <section class="home-hero">
     <video autoplay muted loop playsinline class="hero-video">
         <source src="video/Dubai_Real_Estate_Video_Generated.mp4" type="video/mp4">
@@ -177,6 +179,7 @@
         </div>
 
 
+    </div>
 </section>
 
 
@@ -227,15 +230,14 @@
     <div class="award-card float-anim delay-3"><img src="https://via.placeholder.com/300x400/111/D4AF37?text=Excellence" alt="Award"></div>
 </div>
 
-<!-- Sell section -->
-
 <section class="sell-section reveal">
     <div class="sell-container">
         <div class="sell-content-left">
             <div class="sell-text">
-<h2>Sell Your Property in <br>
+                <h2>Sell Your Property in <br>
                     <span class="gold-text">Dubai 2026 | Residential & Commercial</span>
-                </h2>                <p>An off-plan property is a building or a construction project that hasn’t been built or completed yet. To be able to visualize what the finished product will look like, developers use floor plans, computer-generated imagery (CGIs), and working drawings.</p>
+                </h2>
+                <p>An off-plan property is a building or a construction project that hasn’t been built or completed yet. To be able to visualize what the finished product will look like, developers use floor plans, computer-generated imagery (CGIs), and working drawings.</p>
             </div>
             <div class="sell-grid-small">
                 <div class="sell-img-box reveal" style="transition-delay: 0.2s">
@@ -309,8 +311,7 @@
     </div>
   <a href="about-us.php" class="gold-btn-solid center">About</a></section>
 
-<!-- FAQ SECTION -->
- <section class="faq-section reveal">
+<section class="faq-section reveal">
     <div class="section-header">
         <h2>Frequently Asked Questions</h2>
     </div>
@@ -357,8 +358,6 @@
         </div>
     </div>
 </section>
-
-<!-- Event -->
 
 <div class="section-header reveal">
     <h2>Exclusive Access</h2>

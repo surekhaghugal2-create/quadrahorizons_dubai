@@ -15,6 +15,7 @@
 <body> -->
 
 <?php include 'header.php'; ?>
+<link rel="stylesheet" href="css/buy.css">
 
 <!-- HERO -->
 <section class="hero">

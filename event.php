@@ -1,22 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Quadra Horizons – Events</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <!-- GOOGLE FONT -->
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
-
-  <!-- CSS -->
-  <link rel="stylesheet" href="css\event.css">
-  <link rel="stylesheet" href="css/header.css">
-  <link rel="stylesheet" href="css/footer.css">
-</head>
-
-<body>
-
 <?php include "header.php"; ?>
+<link rel="stylesheet" href="css/event.css">
 
 <!-- HERO -->
 <section class="hero">
@@ -66,5 +49,3 @@
 
 <?php include "footer.php"; ?>
 
-</body>
-</html>
