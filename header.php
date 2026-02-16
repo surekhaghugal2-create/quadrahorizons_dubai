@@ -64,7 +64,7 @@
           <a href="event.php">Event</a>
         </li>
          <li style="--delay: 0.6s">
-          <a href="Content-hub.php">Content HUb</a>
+          <a href="content-hub.php">Content HUb</a>
         </li>
         <li style="--delay: 0.6s">
           <a href="about-us.php">About us</a>
