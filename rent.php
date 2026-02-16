@@ -4,7 +4,6 @@
 <section class="hero">
   <img src="image/1.jpg" alt="Dubai Skyline">
 </section>
-
 <!-- TITLE -->
 <section class="page-title">
   <h1>Properties for Rent</h1>

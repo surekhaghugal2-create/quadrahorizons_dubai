@@ -57,8 +57,17 @@
         <div class="form-group small">
             <label >CODE</label>
             <input type="text" name="code" class="f-input" value="+971" required>
-        </div>
-
+             <select class="c-select">
+             <option value="+971">🇦🇪 +971 (UAE)</option>
+            <option value="+91">🇮🇳 +91 (India)</option>
+            <option value="+1">🇺🇸 +1 (USA)</option>
+            <option value="+44">🇬🇧 +44 (UK)</option>
+            <option value="+61">🇦🇺 +61 (Australia)</option>
+            <option value="+966">🇸🇦 +966 (Saudi)</option>
+            <option value="+974">🇶🇦 +974 (Qatar)</option>
+            </select>
+        </div>                        
+                                    
         <div class="form-group large">
             <label>MOBILE</label>
             <input type="text" name="mobile" class="f-input" placeholder="50 123 4567" required>
