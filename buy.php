@@ -1,19 +1,3 @@
-<!-- <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <title>Properties for Buy | Quadra Horizons</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" /> -->
-
-  <!-- Google Font -->
-  <!-- <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
-
-  <link rel="stylesheet" href="css\buy.css">
-  <link rel="stylesheet" href="css/header.css">
-  <link rel="stylesheet" href="css/footer.css">
-</head>
-<body> -->
-
 <?php include 'header.php'; ?>
 <link rel="stylesheet" href="css/buy.css">
 
@@ -203,10 +187,10 @@
 
 <!-- INFO SECTION -->
 <section class="info dark">
-  <h2>Properties for Sell in Dubai | Binghatti</h2>
+  <h1>Properties for Sell in Dubai | Binghatti</h1>
   <p>
-    Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
+    Delivering world-class real estate experiences across Dubai with a focus on
+    architecture, innovation and long-term value. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
   </p>
 </section>
 
@@ -261,23 +245,29 @@
 
 <!-- TESTIMONIALS -->
 <section class="testimonials dark">
-  <h2>What Our Buyers Say...</h2>
-
-  <div class="testimonial-row">
-    <div class="testimonial">
-      <h4>Elon Musk</h4>
-      <p>Lorem Ipsum is simply dummy text of the printing industry.</p>
+  <div class="section-header reveal">
+    <h2>Client Experiences</h2>
+</div>
+<div class="testimonials-scroll reveal">
+    <div class="testi-card">
+        <div class="quote-icon">“</div>
+        <p>"The team found me a penthouse that wasn't even on the market yet. Incredible access."</p>
+        <div class="client-name">Michael R. <span>Investor, UK</span></div>
     </div>
-    <div class="testimonial">
-      <h4>Elon Musk</h4>
-      <p>Lorem Ipsum is simply dummy text of the printing industry.</p>
+    <div class="testi-card">
+        <div class="quote-icon">“</div>
+        <p>"Professional, transparent, and swift. They handled my entire portfolio perfectly."</p>
+        <div class="client-name">Sarah J. <span>Entrepreneur, UAE</span></div>
     </div>
-    <div class="testimonial">
-      <h4>Elon Musk</h4>
-      <p>Lorem Ipsum is simply dummy text of the printing industry.</p>
+    <div class="testi-card">
+        <div class="quote-icon">“</div>
+        <p>"A truly white-glove service from start to finish. Highly recommended."</p>
+        <div class="client-name">David L. <span>CEO, USA</span></div>
     </div>
-  </div>
+</div>
 </section>
+
+
 
 
 <?php include 'footer.php'; ?>

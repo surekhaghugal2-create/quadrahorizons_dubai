@@ -54,9 +54,10 @@ body {
 }
 
 .page-title p {
-  max-width: 800px;
+  max-width: 1400px;
   margin: auto;
-  font-size: 15px;
+  font-size: 18px;
+  font-weight: 200;
 }
 
 /* PROPERTIES
@@ -65,7 +66,7 @@ body {
    EXCLUSIVE PROPERTIES SECTION (White Card Theme)
    ========================================= */
 .section-header-buy{
-  padding: 20px 20px 60px;
+  padding: 0px 20px 60px;
   text-align: center;
  }
  
@@ -78,7 +79,7 @@ body {
   font-size: 22px;
  }
 .properties-section {
-    padding: 100px 5%;
+    padding: 50px 5%;
     background: #0A1120; /* Main section background stays dark for contrast */
 }
 
@@ -253,19 +254,29 @@ body {
 
 /* DARK SECTIONS */
 .dark {
-  background: linear-gradient(135deg, #020d17, #000);
-  padding: 80px 60px;
+  text-align: center;
+  padding: 80px 20px;
+  background: #0A1120;
+  color: #ffffff;
 }
 
-.dark h2 {
+.dark h1 {
   font-family: "Playfair Display", serif;
-  font-size: 36px;
+  font-size: 48px;
   margin-bottom: 20px;
 }
 
+.dark p {
+  max-width: 1400px;
+  margin: auto;
+  font-size: 18px;
+  font-weight: 200;
+}
+
+
 /* --- FAQ CONTAINER --- */
 .faq-section {
-    padding: 100px 5%;
+    padding: 50px 5%;
     background-color: #0A1120;
     /* Dark Background */
     color: #fff;
@@ -340,7 +351,9 @@ body {
     color: #D4AF37;
 }
 
-/* TESTIMONIALS */
+/* =========================================
+   11. TESTIMONIALS
+   ========================================= */
 .testimonial-row {
   display: flex;
   gap: 20px;
@@ -354,6 +367,61 @@ body {
   border-radius: 14px;
   min-width: 280px;
 }
+
+.section-header {
+    margin-top: 20px;
+    margin-bottom: 70px;
+    max-width: 1400px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    background-color: #d6dae2;
+}
+
+.section-header h2 {
+    font-family: var(--font-heading);
+    font-size: 50px; /* FIXED SIZE */
+    color: var(--white);
+    background-color: #0A1120 ;
+    margin-bottom: 20px;
+}
+
+/* Mobile (768px) - 1 Column */
+@media (max-width: 768px) {
+    /* Adjust font size for mobile specific */
+    .section-header h2 {
+        font-size: 40px; 
+    }
+}
+
+.testimonials-scroll {
+    display: flex; overflow-x: auto; gap: 30px; padding: 0 5% 100px;
+    scrollbar-width: none;
+    background-color: #0A1120;
+}
+.testimonials-scroll::-webkit-scrollbar { display: none; }
+
+.testi-card {
+    min-width: 400px; background: #111; border: 1px solid #222;
+    padding: 50px; position: relative;
+}
+.quote-icon {
+    font-size: 60px; color: var(--gold); opacity: 0.3;
+    font-family: 'Playfair Display', serif; line-height: 0; margin-bottom: 30px;
+}
+.testi-card p {
+    font-family: 'Work Sans', sans-serif;
+    font-style: italic;
+    font-size: 18px; /* UPDATED Paragraph Size */
+    line-height: 1.8; color: #ddd; margin-bottom: 30px;
+}
+.client-name {
+    font-family: 'Work Sans', sans-serif; font-weight: 700; color: var(--gold); font-size: 14px;
+}
+.client-name span {
+    display: block; font-weight: 400; color: #666; margin-top: 5px;
+}
+
 
 /* EXPRESS */
 .express {
