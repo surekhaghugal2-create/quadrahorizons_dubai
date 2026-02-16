@@ -27,8 +27,8 @@
                 <span class="prop-tag">New Launch</span>
             </div>
             <div class="prop-details">
-                <h3>Mercedes-Benz Places</h3>
-                <p class="prop-loc">Downtown Dubai | 2 Bedrooms</p>
+                <h3>Mercedes-Benz Places Binghatti City</h3>
+                <p class="prop-loc">Nad al sheba</p>
                 
                 <div class="prop-agent">
                     <div class="agent-info">
