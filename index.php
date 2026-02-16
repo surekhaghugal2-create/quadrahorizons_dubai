@@ -23,7 +23,7 @@
         
         <div class="property-card">
             <div class="prop-img-box">
-                <img src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=600&q=80" alt="Property">
+                <img src="image/Mercedes-Benz Places Binghatti City.png" alt="Property">
                 <span class="prop-tag">New Launch</span>
             </div>
             <div class="prop-details">
@@ -54,11 +54,14 @@
                 <span class="prop-tag">Selling Fast</span>
             </div>
             <div class="prop-details">
-                <h3>Bugatti Residences</h3>
-                <p class="prop-loc">Business Bay | 3 Bedrooms</p>
+                <h3>Binghatti Amberhall</h3>
+                <p class="prop-loc">JVC</p>
                 <div class="prop-agent">
                     <div class="agent-info"><span>Listed by</span><strong>Sarah Jenkins</strong></div>
-                    <div class="agent-icons"><a href="#">📞</a><a href="#">💬</a></div>
+                    <div class="agent-icons">
+                        <a href="tel:+971500000000">📞</a>
+                        <a href="https://wa.me/971500000000">💬</a>
+                    </div>
                 </div>
                 <div class="prop-actions">
                     <button class="prop-btn solid">Book Now</button>
