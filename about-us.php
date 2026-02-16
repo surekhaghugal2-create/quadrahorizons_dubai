@@ -24,7 +24,7 @@
             
             <div class="about-leader-card">
                 <div class="about-leader-img">
-                    <img src="image/omer.jpeg" alt="Omar Alsayed">
+                    <img src="image/omar.png" alt="Omar Alsayed">
                     <div class="about-leader-overlay"><i class="fab fa-linkedin"></i></div>
                 </div>
                 <div class="about-leader-info">
@@ -57,7 +57,7 @@
 
             <div class="about-leader-card">
                 <div class="about-leader-img">
-                    <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&w=600&q=80" alt="Khaled Alblooshi">
+                    <img src="image/IMG_0070.JPG.jpeg" alt="Khaled Alblooshi">
                     <div class="about-leader-overlay"><i class="fab fa-linkedin"></i></div>
                 </div>
                 <div class="about-leader-info">

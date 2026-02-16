@@ -27,30 +27,23 @@
                 <span class="prop-tag">New Launch</span>
             </div>
             <div class="prop-details">
-                <h3>Mercedes-Benz Places Binghatti City</h3>
-                <p class="prop-loc">Nad al sheba</p>
+                <h3>Mercedes-Benz Places</h3>
+                <p class="prop-loc">Downtown Dubai | 2 Bedrooms</p>
                 
                 <div class="prop-agent">
-                    <div class="agent-info">
-                        <span>Listed by</span>
-                        <strong>Riyan Shagotra</strong>
-                    </div>
-                    <div class="agent-icons">
-                        <a href="tel:+971500000000">📞</a>
-                        <a href="https://wa.me/971500000000">💬</a>
-                    </div>
+                    <div class="agent-info"><span>Listed by</span><strong>Riyan Shagotra</strong></div>
+                    <div class="agent-icons"><a href="#">📞</a><a href="#">💬</a></div>
                 </div>
-
                 <div class="prop-actions">
                     <button class="prop-btn solid">Book Now</button>
-                    <button class="prop-btn outline">Download Brochure</button>
+                    <a href="downloads/mbp-bc-all-assets.zip" download class="prop-btn outline" style="text-decoration: none; text-align: center; display: flex; align-items: center; justify-content: center;">Download Brochure</a>
                 </div>
             </div>
         </div>
 
         <div class="property-card">
             <div class="prop-img-box">
-                <img src="https://images.unsplash.com/photo-1512915922686-57c11dde9b6b?auto=format&fit=crop&w=600&q=80git init" alt="Property">
+                <img src="https://images.unsplash.com/photo-1512915922686-57c11dde9b6b?auto=format&fit=crop&w=600&q=80" alt="Property">
                 <span class="prop-tag">Selling Fast</span>
             </div>
             <div class="prop-details">
@@ -65,7 +58,7 @@
                 </div>
                 <div class="prop-actions">
                     <button class="prop-btn solid">Book Now</button>
-                    <button class="prop-btn outline">Download Brochure</button>
+                    <a href="downloads/bugatti-brochure.zip" download class="prop-btn outline" style="text-decoration: none; text-align: center; display: flex; align-items: center; justify-content: center;">Download Brochure</a>
                 </div>
             </div>
         </div>
@@ -83,7 +76,7 @@
                 </div>
                 <div class="prop-actions">
                     <button class="prop-btn solid">Book Now</button>
-                    <button class="prop-btn outline">Download Brochure</button>
+                    <a href="downloads/palm-crown-brochure.zip" download class="prop-btn outline" style="text-decoration: none; text-align: center; display: flex; align-items: center; justify-content: center;">Download Brochure</a>
                 </div>
             </div>
         </div>
@@ -102,7 +95,7 @@
                 </div>
                 <div class="prop-actions">
                     <button class="prop-btn solid">Book Now</button>
-                    <button class="prop-btn outline">Download Brochure</button>
+                    <a href="downloads/franck-muller-brochure.zip" download class="prop-btn outline" style="text-decoration: none; text-align: center; display: flex; align-items: center; justify-content: center;">Download Brochure</a>
                 </div>
             </div>
         </div>
@@ -120,7 +113,7 @@
                 </div>
                 <div class="prop-actions">
                     <button class="prop-btn solid">Book Now</button>
-                    <button class="prop-btn outline">Download Brochure</button>
+                    <a href="downloads/address-residences-brochure.zip" download class="prop-btn outline" style="text-decoration: none; text-align: center; display: flex; align-items: center; justify-content: center;">Download Brochure</a>
                 </div>
             </div>
         </div>
@@ -139,7 +132,7 @@
                 </div>
                 <div class="prop-actions">
                     <button class="prop-btn solid">Book Now</button>
-                    <button class="prop-btn outline">Download Brochure</button>
+                    <a href="downloads/burj-binghatti-brochure.zip" download class="prop-btn outline" style="text-decoration: none; text-align: center; display: flex; align-items: center; justify-content: center;">Download Brochure</a>
                 </div>
             </div>
         </div>
@@ -157,7 +150,7 @@
                 </div>
                 <div class="prop-actions">
                     <button class="prop-btn solid">Book Now</button>
-                    <button class="prop-btn outline">Download Brochure</button>
+                    <a href="downloads/sobha-brochure.zip" download class="prop-btn outline" style="text-decoration: none; text-align: center; display: flex; align-items: center; justify-content: center;">Download Brochure</a>
                 </div>
             </div>
         </div>
@@ -176,15 +169,13 @@
                 </div>
                 <div class="prop-actions">
                     <button class="prop-btn solid">Book Now</button>
-                    <button class="prop-btn outline">Download Brochure</button>
+                    <a href="downloads/damac-brochure.zip" download class="prop-btn outline" style="text-decoration: none; text-align: center; display: flex; align-items: center; justify-content: center;">Download Brochure</a>
                 </div>
             </div>
         </div>
 
-
     </div>
 </section>
-
 
 <section class="partners-section reveal">
     <video autoplay muted loop playsinline class="partners-video">
@@ -266,55 +257,68 @@
 <section class="team-section">
     <div class="section-header reveal">
         <h2>About Section</h2>
-        <p style="color: #888; margin-top: 10px;"> An off-plan property is a building or a construction project that hasn’t been built
-    or completed yet. To be able to visualize what the finished product will look like,
-    developers use floor plans, computer-generated imagery (CGIs), and working drawings.</p>
+        <p>
+            An off-plan property is a building or a construction project that hasn’t been built
+            or completed yet. To be able to visualize what the finished product will look like,
+            developers use floor plans, computer-generated imagery (CGIs), and working drawings.
+        </p>
     </div>
+
     <div class="team-grid">
+        
         <div class="team-card reveal">
             <div class="img-box">
-                <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&w=600&q=80" alt="CEO">
+                <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&w=600&q=80" alt="Khaled Alblooshi">
                 <div class="social-overlay"><i class="fab fa-linkedin"></i></div>
             </div>
             <div class="team-info">
                 <span class="role">Founder & Chairman</span>
-                <h3 class="name">ALEXANDER R.</h3>
+                <h3 class="name">KHALED ALBLOOSHI</h3>
             </div>
         </div>
+
         <div class="team-card reveal" style="transition-delay: 0.2s">
             <div class="img-box">
-                <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=600&q=80" alt="Director">
+                <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=600&q=80" alt="Yasin Mulla Ali">
                 <div class="social-overlay"><i class="fab fa-linkedin"></i></div>
             </div>
             <div class="team-info">
-                <span class="role">Managing Director</span>
-                <h3 class="name">SARAH J.</h3>
+                <span class="role">Founder & Chairman</span>
+                <h3 class="name">YASIN MULLA ALI</h3>
             </div>
         </div>
+
         <div class="team-card reveal" style="transition-delay: 0.4s">
             <div class="img-box">
-                <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=600&q=80" alt="Head of Sales">
+                <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=600&q=80" alt="Chakib Chami">
                 <div class="social-overlay"><i class="fab fa-linkedin"></i></div>
             </div>
             <div class="team-info">
-                <span class="role">Head of Sales</span>
-                <h3 class="name">MICHAEL B.</h3>
+                <span class="role">Founder & Chairman</span>
+                <h3 class="name">CHAKIB CHAMI</h3>
             </div>
         </div>
+
         <div class="team-card reveal" style="transition-delay: 0.6s">
             <div class="img-box">
-                <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&w=600&q=80" alt="Architect">
+                <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&w=600&q=80" alt="Omar Alsayed">
                 <div class="social-overlay"><i class="fab fa-linkedin"></i></div>
             </div>
             <div class="team-info">
-                <span class="role">Chief Architect</span>
-                <h3 class="name">DAVID W.</h3>
+                <span class="role">Founder & Chairman</span>
+                <h3 class="name">OMAR ALSAYED</h3>
             </div>
         </div>
-    </div>
-  <a href="about-us.php" class="gold-btn-solid center">About</a></section>
 
-<section class="faq-section reveal">
+    </div>
+    
+    <a href="about-us.php" class="gold-btn-solid center">About</a>
+</section>
+
+
+
+
+  <section class="faq-section reveal">
     <div class="section-header">
         <h2>Frequently Asked Questions</h2>
     </div>
