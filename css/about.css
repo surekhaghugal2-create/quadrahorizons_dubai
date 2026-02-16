@@ -292,3 +292,167 @@
         font-size: 36px; /* Scaled down for mobile */
     }
 }
+
+/* =========================================
+   NEW CAREERS SECTION (Text Slider Design)
+   ========================================= */
+
+.careers-section-new {
+    position: relative;
+    height: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    background-color: #000;
+}
+
+/* --- BACKGROUND --- */
+.careers-bg-new {
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+}
+
+.careers-bg-new img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.4; /* Darken image */
+    transition: transform 10s ease;
+}
+
+/* Subtle Zoom Effect on Hover */
+.careers-section-new:hover .careers-bg-new img {
+    transform: scale(1.1);
+}
+
+.careers-overlay-new {
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(circle at center, transparent 0%, #05080f 90%);
+    z-index: 1;
+}
+
+/* --- CONTAINER --- */
+.careers-container-new {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    max-width: 900px;
+    padding: 0 20px;
+}
+
+/* --- TEXT WRAPPER (Flex to align static + slider) --- */
+.careers-text-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+/* Static Heading */
+.static-text {
+    font-family: 'Playfair Display', serif;
+    font-size: 50px; /* FIXED: 50px */
+    color: #ffffff;
+    margin: 0;
+    line-height: 1.2;
+}
+
+/* --- SLIDING TEXT ANIMATION --- */
+.sliding-text-container {
+    height: 60px; /* Matches font size to clip text */
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.sliding-word {
+    display: block;
+    font-family: 'Playfair Display', serif;
+    font-size: 50px; /* FIXED: 50px matching heading */
+    color: #D4AF37; /* Gold Color */
+    font-style: italic;
+    height: 100%;
+    position: absolute;
+    width: 100%;
+    top: 100%; /* Start below visible area */
+    left: 0;
+    opacity: 0;
+    animation: slideText 12s infinite; /* 4 words * 3s each */
+}
+
+/* Stagger Animations */
+.sliding-word:nth-child(1) { animation-delay: 0s; }
+.sliding-word:nth-child(2) { animation-delay: 3s; }
+.sliding-word:nth-child(3) { animation-delay: 6s; }
+.sliding-word:nth-child(4) { animation-delay: 9s; }
+
+@keyframes slideText {
+    0% { top: 100%; opacity: 0; }
+    10% { top: 0; opacity: 1; }    /* Slide In */
+    25% { top: 0; opacity: 1; }    /* Stay */
+    35% { top: -100%; opacity: 0; } /* Slide Out Up */
+    100% { top: -100%; opacity: 0; }
+}
+
+/* --- DESCRIPTION --- */
+.careers-desc {
+    font-family: 'Work Sans', sans-serif;
+    font-size: 18px; /* FIXED: 18px */
+    color: #cccccc;
+    max-width: 600px;
+    margin: 0 auto 50px;
+    line-height: 1.8;
+}
+
+/* --- MINIMALIST BUTTON --- */
+.careers-btn-new {
+    position: relative;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: #fff;
+    text-decoration: none;
+    padding-bottom: 10px;
+    transition: 0.3s;
+}
+
+.btn-line {
+    width: 30px;
+    height: 2px;
+    background-color: #D4AF37;
+    margin: 10px auto 0;
+    transition: width 0.3s ease;
+}
+
+.careers-btn-new:hover {
+    color: #D4AF37;
+}
+
+.careers-btn-new:hover .btn-line {
+    width: 100%; /* Line expands on hover */
+}
+
+/* --- RESPONSIVE --- */
+@media (max-width: 768px) {
+    .careers-section-new { height: 500px; }
+    
+    .static-text, .sliding-word {
+        font-size: 36px; /* Smaller for mobile */
+    }
+    
+    .sliding-text-container {
+        height: 45px; /* Adjust container height for smaller font */
+    }
+    
+    .careers-desc {
+        font-size: 16px;
+        padding: 0 10px;
+    }
+}
