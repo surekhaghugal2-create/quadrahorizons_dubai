@@ -176,4 +176,35 @@
         </div>
     </section>
 
+
+    <section class="careers-section-new reveal">
+    <div class="careers-bg-new">
+        <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1600&q=80" alt="Building Architecture">
+    </div>
+    
+    <div class="careers-overlay-new"></div>
+
+    <div class="careers-container-new">
+        <div class="careers-text-wrapper">
+            <h2 class="static-text">We are looking for</h2>
+            
+            <div class="sliding-text-container">
+                <span class="sliding-word">Visionaries</span>
+                <span class="sliding-word">Innovators</span>
+                <span class="sliding-word">Leaders</span>
+                <span class="sliding-word">Creators</span>
+            </div>
+        </div>
+
+        <p class="careers-desc">
+            Join a team that is redefining the skyline of Dubai. We offer more than a job; we offer a legacy. Explore opportunities across Sales, Marketing, and Strategy.
+        </p>
+
+        <a href="#" class="careers-btn-new">
+            <span>View Openings</span>
+            <div class="btn-line"></div>
+        </a>
+    </div>
+</section>
+
 <?php include 'footer.php'; ?>
