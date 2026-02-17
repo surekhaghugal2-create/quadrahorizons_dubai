@@ -98,11 +98,7 @@
 
 .form-group label {
     display: block; font-family: 'Work Sans', sans-serif;
-<<<<<<< HEAD
     font-size: 20px; letter-spacing: 1px; color: #666;
-=======
-    font-size: 18px; letter-spacing: 1px; color: #666;
->>>>>>> 0ebfc62030214dbff29bd594d65ae3febbe9ced9
     margin-bottom: 8px; font-weight: 700;
 }
 

@@ -1,0 +1,334 @@
+/* =========================================
+   CONTENT HUB STYLES
+   ========================================= */
+
+:root {
+    --gold: #D4AF37;
+    --dark: #05080f;
+    --card-bg: #0A1120;
+    --white: #ffffff;
+    --text-grey: #b0b0b0;
+    --font-heading: 'Playfair Display', serif;
+    --font-body: 'Work Sans', sans-serif;
+}
+
+/* GENERAL SETUP */
+body {
+    background-color: var(--dark);
+    color: var(--white);
+    font-family: var(--font-body);
+}
+
+h2, h3, h4 { font-family: var(--font-heading); }
+
+/* --- 1. HERO SECTION --- */
+.hub-hero {
+    position: relative;
+    height: 60vh;
+    width: 100%;
+    overflow: hidden;
+}
+
+.hub-hero-bg img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    animation: zoomSlow 20s infinite alternate;
+}
+
+.hub-hero-overlay {
+    position: absolute; inset: 0;
+    background: linear-gradient(to bottom, rgba(0,0,0,0.2) 0%, var(--dark) 100%);
+}
+
+@keyframes zoomSlow {
+    0% { transform: scale(1); }
+    100% { transform: scale(1.1); }
+}
+
+/* --- 2. NEWS GRID SECTION --- */
+.news-section {
+    padding: 80px 5%;
+    background: linear-gradient(to bottom, var(--dark), #0b121e);
+    position: relative;
+}
+
+/* Adding the diagonal line pattern background */
+.news-section::before, .blogs-section::before {
+    content: '';
+    position: absolute; inset: 0;
+    background-image: repeating-linear-gradient(
+        45deg,
+        rgba(255, 255, 255, 0.03) 0px,
+        rgba(255, 255, 255, 0.03) 1px,
+        transparent 1px,
+        transparent 60px
+    );
+    pointer-events: none;
+    z-index: 0;
+}
+
+.section-header {
+    text-align: center; margin-bottom: 60px; position: relative; z-index: 1;
+}
+
+.section-header h2 {
+    font-size: 60px; color: var(--white);
+    text-transform: capitalize;
+}
+
+.section-header h2 span {
+    font-style: italic; font-weight: 400;
+}
+
+.news-grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    max-width: 1400px; margin: 0 auto;
+    position: relative; z-index: 1;
+}
+
+.news-card {
+    position: relative;
+    height: 400px;
+    border: 1px solid rgba(255,255,255,0.2);
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.news-img {
+    width: 100%; height: 100%;
+    position: absolute; inset: 0;
+}
+
+.news-img img {
+    width: 100%; height: 100%; object-fit: cover;
+    transition: transform 0.6s ease;
+}
+
+.news-card:hover .news-img img { transform: scale(1.1); }
+
+.news-content {
+    position: absolute; bottom: 0; left: 0; width: 100%;
+    padding: 30px;
+    background: linear-gradient(to top, rgba(0,0,0,0.9), transparent);
+    z-index: 2;
+}
+
+.news-content h3 {
+    font-size: 20px; color: var(--white);
+    font-family: var(--font-body); /* Based on image, titles look sans-serif */
+    font-weight: 600; margin-bottom: 15px;
+    line-height: 1.4;
+}
+
+.news-meta {
+    display: flex; justify-content: space-between; align-items: center;
+    font-size: 14px; color: #ccc;
+    font-family: var(--font-body);
+}
+
+.read-more {
+    color: var(--gold); text-decoration: none; text-transform: uppercase; letter-spacing: 1px;
+}
+
+/* --- 3. BLOGS SECTION --- */
+.blogs-section {
+    padding: 80px 5%;
+    background-color: var(--dark);
+    position: relative;
+}
+
+.blogs-grid {
+    display: grid; grid-template-columns: 1fr 1fr; /* 2 Columns Layout */
+    gap: 40px;
+    max-width: 1200px; margin: 0 auto;
+    position: relative; z-index: 1;
+}
+
+.blog-card {
+    display: flex; /* Horizontal Layout for Blog Cards */
+    background: rgba(255,255,255,0.02);
+    border: 1px solid rgba(255,255,255,0.1);
+    transition: 0.3s ease;
+    height: 200px;
+}
+
+.blog-card:hover {
+    border-color: var(--gold);
+    transform: translateY(-5px);
+}
+
+.blog-img {
+    width: 40%; flex-shrink: 0; overflow: hidden;
+}
+
+.blog-img img {
+    width: 100%; height: 100%; object-fit: cover;
+    transition: 0.6s ease;
+}
+
+.blog-card:hover .blog-img img { transform: scale(1.1); }
+
+.blog-info {
+    padding: 20px;
+    display: flex; flex-direction: column; justify-content: space-between;
+    width: 60%;
+}
+
+.blog-info h4 {
+    font-family: var(--font-body); font-size: 14px;
+    color: var(--white); line-height: 1.5; margin-bottom: 5px;
+}
+
+.blog-date {
+    font-size: 12px; color: #888; margin-bottom: 15px;
+}
+
+.blog-footer {
+    display: flex; justify-content: space-between; align-items: center;
+    border-top: 1px solid rgba(255,255,255,0.1);
+    padding-top: 10px;
+}
+
+.blog-share i {
+    color: #888; font-size: 14px; margin-right: 10px; cursor: pointer; transition: 0.3s;
+}
+.blog-share i:hover { color: var(--gold); }
+
+.blog-link {
+    font-size: 10px; color: var(--white); text-decoration: none; letter-spacing: 1px;
+}
+
+/* --- 4. EXPRESS FORM SECTION --- */
+.express-section {
+    position: relative;
+    display: flex;
+    min-height: 600px;
+    background: #000;
+}
+
+.express-bg {
+    position: absolute; inset: 0; z-index: 0;
+}
+.express-bg img {
+    width: 100%; height: 100%; object-fit: cover;
+}
+.express-overlay {
+    position: absolute; inset: 0;
+    background: linear-gradient(to right, #000 30%, rgba(0,0,0,0.4) 100%);
+}
+
+.express-content {
+    flex: 1;
+    position: relative; z-index: 2;
+    padding: 100px 5%;
+    display: flex; flex-direction: column; justify-content: center;
+}
+
+.express-content h2 {
+    font-size: 60px; color: var(--white); line-height: 1.1; margin-bottom: 40px;
+}
+.express-content h2 .thin-text {
+    font-family: var(--font-body); font-weight: 300;
+}
+
+.express-links {
+    display: flex; flex-direction: column; gap: 15px;
+}
+.express-links a {
+    color: var(--white); text-decoration: none;
+    font-family: var(--font-body); font-size: 14px;
+    letter-spacing: 2px; text-transform: uppercase;
+    border-bottom: 1px solid var(--white);
+    display: inline-block; width: max-content;
+    padding-bottom: 5px; transition: 0.3s;
+}
+.express-links a:hover { color: var(--gold); border-color: var(--gold); }
+
+/* Form Side */
+.express-form-container {
+    flex: 1;
+    position: relative; z-index: 2;
+    padding: 100px 5%;
+    display: flex; flex-direction: column; justify-content: center;
+    background: rgba(0,0,0,0.3); /* Slight dim on right side */
+    backdrop-filter: blur(5px);
+}
+
+.express-form {
+    max-width: 500px; width: 100%;
+}
+
+.form-group {
+    margin-bottom: 30px;
+    border-bottom: 1px solid rgba(255,255,255,0.3);
+}
+
+.form-group input {
+    width: 100%; background: transparent; border: none;
+    padding: 15px 0; color: var(--white);
+    font-family: var(--font-body); font-size: 14px;
+    letter-spacing: 1px; outline: none;
+}
+.form-group input::placeholder { color: #aaa; text-transform: uppercase; }
+
+.form-row {
+    display: flex; gap: 20px; align-items: flex-end;
+}
+.country-code {
+    width: 60px; border-bottom: 1px solid rgba(255,255,255,0.3); margin-bottom: 30px;
+}
+.country-code input {
+    width: 100%; background: transparent; border: none;
+    color: var(--white); padding: 15px 0; text-align: center;
+}
+
+.terms-text {
+    font-size: 10px; color: #666; margin-bottom: 30px;
+}
+
+.submit-btn {
+    background: transparent; border: none;
+    color: #888; font-family: var(--font-body);
+    font-size: 12px; letter-spacing: 3px; text-transform: uppercase;
+    cursor: pointer; position: relative; padding-bottom: 5px;
+    transition: 0.3s;
+}
+.submit-btn:hover { color: var(--gold); }
+
+.btn-line {
+    display: block; width: 40px; height: 1px; background: #888;
+    margin: 5px auto 0; transition: 0.3s;
+}
+.submit-btn:hover .btn-line { width: 100%; background: var(--gold); }
+
+/* --- RESPONSIVE MEDIA QUERIES --- */
+@media (max-width: 1024px) {
+    .news-grid-container { grid-template-columns: 1fr; }
+    .blogs-grid { grid-template-columns: 1fr; }
+    .express-section { flex-direction: column; }
+    .express-overlay { background: rgba(0,0,0,0.8); } /* Darker overlay on mobile */
+    .express-form-container { padding-top: 20px; }
+}
+
+@media (max-width: 768px) {
+    .section-header h2 { font-size: 40px; }
+    .news-card { height: 350px; }
+    
+    .blog-card { height: auto; flex-direction: column; }
+    .blog-img { width: 100%; height: 200px; }
+    .blog-info { width: 100%; }
+    
+    .express-content h2 { font-size: 40px; }
+}
+
+/* --- REVEAL ANIMATION --- */
+.reveal {
+    opacity: 0; transform: translateY(50px);
+    transition: all 1s ease;
+}
+.reveal.active {
+    opacity: 1; transform: translateY(0);
+}

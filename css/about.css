@@ -1,5 +1,5 @@
 /* =========================================
-   ABOUT PAGE STYLES (Fonts Fixed: Headings=Playfair, Text=Work Sans)
+   ABOUT PAGE STYLES (Fixed: Headings 50px / Text 18px)
    ========================================= */
 
 /* --- 1. HERO SECTION --- */
@@ -22,16 +22,18 @@
     position: relative; z-index: 2; text-align: center; color: #fff; padding-top: 60px;
 }
 .about-hero-content h1 {
-    font-family: 'Playfair Display', serif; /* HEADING */
-    font-size: 80px; margin: 0;
+    font-family: 'Playfair Display', serif;
+    font-size: 80px; /* Hero Title stays large for impact */
+    margin: 0;
     text-shadow: 0 20px 40px rgba(0,0,0,0.5);
 }
 .about-hero-line {
     width: 60px; height: 3px; background: #D4AF37; margin: 20px auto;
 }
 .about-hero-content p {
-    font-family: 'Work Sans', sans-serif; /* PARAGRAPH */
-    font-size: 18px; letter-spacing: 6px; text-transform: uppercase;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 18px; /* FIXED: 18px */
+    letter-spacing: 6px; text-transform: uppercase;
     color: #D4AF37;
 }
 
@@ -42,12 +44,14 @@
 .about-leaders-header { margin-bottom: 70px; }
 
 .about-leaders-header h2 {
-    font-family: 'Playfair Display', serif; /* HEADING */
-    font-size: 50px; color: #fff; margin-bottom: 10px;
+    font-family: 'Playfair Display', serif;
+    font-size: 50px; /* FIXED: 50px */
+    color: #fff; margin-bottom: 10px;
 }
 .about-leaders-header p {
-    font-family: 'Work Sans', sans-serif; /* PARAGRAPH */
-    color: #888; font-size: 16px;
+    font-family: 'Work Sans', sans-serif;
+    color: #888; 
+    font-size: 18px; /* FIXED: 18px */
     line-height: 1.6; max-width: 800px; margin: 0 auto;
 }
 
@@ -80,11 +84,11 @@
 
 .about-leader-role {
     display: block; 
-    font-family: 'Work Sans', sans-serif; /* PARAGRAPH/SPAN */
+    font-family: 'Work Sans', sans-serif;
     font-style: italic; font-size: 16px; color: #ccc; margin-bottom: 8px;
 }
 .about-leader-name {
-    font-family: 'Playfair Display', serif; /* HEADING (H3) */
+    font-family: 'Playfair Display', serif;
     font-size: 24px; color: #fff;
     text-transform: uppercase; letter-spacing: 2px; font-weight: 400; margin: 0;
 }
@@ -97,12 +101,12 @@
     color: rgba(212, 175, 55, 0.2); position: absolute; top: 0; left: -40px;
 }
 .about-mission-text {
-    font-family: 'Work Sans', sans-serif; /* PARAGRAPH */
+    font-family: 'Work Sans', sans-serif;
     font-size: 26px; color: #fff;
     line-height: 1.6; font-style: italic; margin-bottom: 30px;
 }
 .about-quoter-name {
-    font-family: 'Work Sans', sans-serif; /* PARAGRAPH/SPAN */
+    font-family: 'Work Sans', sans-serif;
     color: #D4AF37; letter-spacing: 2px;
     text-transform: uppercase; font-size: 12px;
 }
@@ -113,13 +117,16 @@
 }
 .about-awards-header { margin-bottom: 70px; }
 .about-awards-header h2 {
-    font-family: 'Playfair Display', serif; /* HEADING */
-    font-size: 50px; color: #fff; margin-bottom: 10px;
+    font-family: 'Playfair Display', serif;
+    font-size: 50px; /* FIXED: 50px */
+    color: #fff; margin-bottom: 10px;
 }
 .about-awards-header h2 span { color: #D4AF37; font-style: italic; }
 .about-awards-header p {
-    font-family: 'Work Sans', sans-serif; /* PARAGRAPH */
-    color: #888; font-size: 12px; letter-spacing: 2px; text-transform: uppercase;
+    font-family: 'Work Sans', sans-serif;
+    color: #888; 
+    font-size: 18px; /* FIXED: 18px */
+    letter-spacing: 2px; text-transform: uppercase;
 }
 
 .about-awards-grid {
@@ -139,18 +146,18 @@
 .about-award-card:hover .about-award-icon { color: #D4AF37; transform: scale(1.1); }
 
 .about-award-year {
-    font-family: 'Work Sans', sans-serif; /* PARAGRAPH/SPAN */
+    font-family: 'Work Sans', sans-serif;
     font-size: 11px; font-weight: 700; letter-spacing: 2px;
     color: #D4AF37; border: 1px solid rgba(212, 175, 55, 0.3); padding: 5px 12px;
     border-radius: 20px; margin-bottom: 20px;
 }
 .about-award-card h3 {
-    font-family: 'Playfair Display', serif; /* HEADING */
+    font-family: 'Playfair Display', serif;
     font-size: 22px; color: #fff;
     margin-bottom: 10px; line-height: 1.3;
 }
 .about-award-card p {
-    font-family: 'Work Sans', sans-serif; /* PARAGRAPH */
+    font-family: 'Work Sans', sans-serif;
     font-size: 13px; color: #888;
 }
 
@@ -176,8 +183,9 @@
 .about-lux-section { padding: 100px 5%; background-color: #0A1120; }
 .about-lux-header { text-align: center; margin-bottom: 60px; }
 .about-lux-header h2 {
-    font-family: 'Playfair Display', serif; /* HEADING */
-    font-size: 50px; color: #fff;
+    font-family: 'Playfair Display', serif;
+    font-size: 50px; /* FIXED: 50px */
+    color: #fff;
 }
 .about-lux-grid {
     display: grid; grid-template-columns: repeat(3, 1fr); gap: 30px;
@@ -196,11 +204,11 @@
     position: absolute; bottom: 40px; left: 40px; z-index: 2; width: 100%;
 }
 .about-lux-label h4 {
-    font-family: 'Playfair Display', serif; /* HEADING */
+    font-family: 'Playfair Display', serif;
     font-size: 28px; color: #fff; margin: 0;
 }
 .about-lux-label p {
-    font-family: 'Work Sans', sans-serif; /* PARAGRAPH */
+    font-family: 'Work Sans', sans-serif;
     font-size: 12px; letter-spacing: 2px;
     text-transform: uppercase; color: #D4AF37; margin-top: 5px;
 }
@@ -225,17 +233,19 @@
 }
 .about-sub-gold {
     display: block; 
-    font-family: 'Work Sans', sans-serif; /* PARAGRAPH/SPAN */
+    font-family: 'Work Sans', sans-serif;
     font-size: 11px; letter-spacing: 4px; text-transform: uppercase; color: #D4AF37; margin-bottom: 20px;
 }
 .about-news-content h2 {
-    font-family: 'Playfair Display', serif; /* HEADING */
-    font-size: 45px; color: #fff; margin-bottom: 20px;
+    font-family: 'Playfair Display', serif;
+    font-size: 50px; /* FIXED: 50px */
+    color: #fff; margin-bottom: 20px;
 }
 .about-news-content h2 span { font-style: italic; color: #D4AF37; }
 .about-news-content p {
-    font-family: 'Work Sans', sans-serif; /* PARAGRAPH */
-    color: #888; font-size: 18px;
+    font-family: 'Work Sans', sans-serif;
+    color: #888; 
+    font-size: 18px; /* FIXED: 18px */
     line-height: 1.6; max-width: 500px; margin: 0 auto 40px;
 }
 .about-news-form { max-width: 500px; margin: 0 auto; }
@@ -245,20 +255,20 @@
 .about-input-group input {
     width: 100%; background: transparent; border: none; padding: 15px 0;
     color: #fff; 
-    font-family: 'Work Sans', sans-serif; /* INPUT TEXT */
+    font-family: 'Work Sans', sans-serif;
     font-size: 18px; outline: none;
 }
 .about-input-group:focus-within { border-bottom-color: #D4AF37; }
 .about-news-btn {
     background: transparent; border: none; color: #D4AF37;
-    font-family: 'Work Sans', sans-serif; /* BUTTON TEXT */
+    font-family: 'Work Sans', sans-serif;
     font-size: 12px; font-weight: 700;
     letter-spacing: 2px; text-transform: uppercase; cursor: pointer;
     transition: 0.3s; padding: 0 20px;
 }
 .about-news-btn:hover { color: #fff; letter-spacing: 3px; }
 .about-privacy-note {
-    font-family: 'Work Sans', sans-serif; /* PARAGRAPH */
+    font-family: 'Work Sans', sans-serif;
     font-size: 10px !important; color: #444 !important;
     margin-top: 30px !important; text-transform: uppercase; letter-spacing: 1px;
 }
@@ -275,4 +285,174 @@
     .about-input-group { flex-direction: column; border-bottom: none; }
     .about-input-group input { border-bottom: 1px solid #444; margin-bottom: 20px; text-align: center; }
     .about-news-btn { width: 100%; background: #D4AF37; color: #000; padding: 15px; }
+    
+    /* Mobile Font Adjustments */
+    .about-hero-content h1 { font-size: 50px; }
+    .about-leaders-header h2, .about-awards-header h2, .about-lux-header h2, .about-news-content h2 { 
+        font-size: 36px; /* Scaled down for mobile */
+    }
+}
+
+/* =========================================
+   NEW CAREERS SECTION (Text Slider Design)
+   ========================================= */
+
+.careers-section-new {
+    position: relative;
+    height: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    background-color: #000;
+}
+
+/* --- BACKGROUND --- */
+.careers-bg-new {
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+}
+
+.careers-bg-new img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.4; /* Darken image */
+    transition: transform 10s ease;
+}
+
+/* Subtle Zoom Effect on Hover */
+.careers-section-new:hover .careers-bg-new img {
+    transform: scale(1.1);
+}
+
+.careers-overlay-new {
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(circle at center, transparent 0%, #05080f 90%);
+    z-index: 1;
+}
+
+/* --- CONTAINER --- */
+.careers-container-new {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    max-width: 900px;
+    padding: 0 20px;
+}
+
+/* --- TEXT WRAPPER (Flex to align static + slider) --- */
+.careers-text-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+/* Static Heading */
+.static-text {
+    font-family: 'Playfair Display', serif;
+    font-size: 50px; /* FIXED: 50px */
+    color: #ffffff;
+    margin: 0;
+    line-height: 1.2;
+}
+
+/* --- SLIDING TEXT ANIMATION --- */
+.sliding-text-container {
+    height: 60px; /* Matches font size to clip text */
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.sliding-word {
+    display: block;
+    font-family: 'Playfair Display', serif;
+    font-size: 50px; /* FIXED: 50px matching heading */
+    color: #D4AF37; /* Gold Color */
+    font-style: italic;
+    height: 100%;
+    position: absolute;
+    width: 100%;
+    top: 100%; /* Start below visible area */
+    left: 0;
+    opacity: 0;
+    animation: slideText 12s infinite; /* 4 words * 3s each */
+}
+
+/* Stagger Animations */
+.sliding-word:nth-child(1) { animation-delay: 0s; }
+.sliding-word:nth-child(2) { animation-delay: 3s; }
+.sliding-word:nth-child(3) { animation-delay: 6s; }
+.sliding-word:nth-child(4) { animation-delay: 9s; }
+
+@keyframes slideText {
+    0% { top: 100%; opacity: 0; }
+    10% { top: 0; opacity: 1; }    /* Slide In */
+    25% { top: 0; opacity: 1; }    /* Stay */
+    35% { top: -100%; opacity: 0; } /* Slide Out Up */
+    100% { top: -100%; opacity: 0; }
+}
+
+/* --- DESCRIPTION --- */
+.careers-desc {
+    font-family: 'Work Sans', sans-serif;
+    font-size: 18px; /* FIXED: 18px */
+    color: #cccccc;
+    max-width: 600px;
+    margin: 0 auto 50px;
+    line-height: 1.8;
+}
+
+/* --- MINIMALIST BUTTON --- */
+.careers-btn-new {
+    position: relative;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: #fff;
+    text-decoration: none;
+    padding-bottom: 10px;
+    transition: 0.3s;
+}
+
+.btn-line {
+    width: 30px;
+    height: 2px;
+    background-color: #D4AF37;
+    margin: 10px auto 0;
+    transition: width 0.3s ease;
+}
+
+.careers-btn-new:hover {
+    color: #D4AF37;
+}
+
+.careers-btn-new:hover .btn-line {
+    width: 100%; /* Line expands on hover */
+}
+
+/* --- RESPONSIVE --- */
+@media (max-width: 768px) {
+    .careers-section-new { height: 500px; }
+    
+    .static-text, .sliding-word {
+        font-size: 36px; /* Smaller for mobile */
+    }
+    
+    .sliding-text-container {
+        height: 45px; /* Adjust container height for smaller font */
+    }
+    
+    .careers-desc {
+        font-size: 16px;
+        padding: 0 10px;
+    }
 }

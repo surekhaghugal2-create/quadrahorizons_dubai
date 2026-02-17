@@ -1,6 +1,7 @@
 
+
 /* =========================================
-   . HOME HERO
+   2. HOME HERO
    ========================================= */
 .home-hero {
     height: 100vh;
@@ -12,190 +13,108 @@
 }
 
 .hero-video {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    z-index: 0;
+    position: absolute; top: 0; left: 0;
+    width: 100%; height: 100%; object-fit: cover; z-index: 0;
 }
 
 .hero-overlay {
-    position: absolute;
-    inset: 0;
-    background: rgba(0, 0, 0, 0.5);
-    z-index: 1;
+    position: absolute; inset: 0;
+    background: rgba(0, 0, 0, 0.5); z-index: 1;
 }
 
 .hero-text-center {
-    position: relative;
-    z-index: 2;
-    text-align: center;
+    position: relative; z-index: 2; text-align: center;
 }
 
 .hero-text-center h1 {
     font-family: 'Playfair Display', serif;
-    /* Heading */
-    font-size: 90px;
-    line-height: 0.9;
-    letter-spacing: -2px;
-    margin-bottom: 20px;
-    color: var(--white);
-    text-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    font-size: 90px; /* Hero stays big for impact */
+    line-height: 0.9; letter-spacing: -2px; margin-bottom: 20px;
+    color: var(--white); text-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
 }
 
-.hero-text-center h1 span {
-    color: var(--gold);
-    font-style: italic;
-}
+.hero-text-center h1 span { color: var(--gold); font-style: italic; }
 
 .hero-text-center p {
     font-family: 'Work Sans', sans-serif;
-    /* Paragraph */
-    font-size: 18px;
-    letter-spacing: 6px;
-    text-transform: uppercase;
-    color: #e0e0e0;
+    font-size: 18px; /* Paragraph Standard */
+    letter-spacing: 6px; text-transform: uppercase; color: #e0e0e0;
 }
 
 /* =========================================
    3. SECTIONS HEADERS
    ========================================= */
 .section-header {
-    text-align: center;
-    padding: 100px 20px 60px;
-    position: relative;
+    text-align: center; padding: 50px 20px 60px; position: relative;
 }
 
 .section-header h2 {
     font-family: 'Playfair Display', serif;
-    /* Heading */
-    font-size: 50px;
-    margin-bottom: 20px;
-    color: var(--white);
+    font-size: 50px; /* UPDATED: Standard Heading Size */
+    margin-bottom: 20px; color: var(--white);
 }
 
 .section-header p {
     font-family: 'Work Sans', sans-serif;
-    /* Paragraph */
-    color: var(--text-grey);
-    max-width: 700px;
-    margin: 0 auto;
-    font-size: 14px;
+    color: var(--text-grey); max-width: 700px; margin: 0 auto;
+    font-size: 18px; /* UPDATED: Standard Paragraph Size */
     line-height: 1.6;
 }
+
 /* =========================================
-   EXCLUSIVE PROPERTIES SECTION (White Card Theme)
+   4. EXCLUSIVE PROPERTIES SECTION
    ========================================= */
-
 .properties-section {
-    padding: 100px 5%; 
-    background: #0A1120; /* Main section background stays dark for contrast */
+    padding: 100px 5%; background: #0A1120;
 }
 
-.properties-section .section-header {
-    text-align: center;
-}
-.properties-section .section-header h2 {
-    font-family: 'Playfair Display', serif;
-    font-size: 45px;
-    color: #fff;
-    margin-bottom: 10px;
-}
-.properties-section .section-header p {
-    font-family: 'Work Sans', sans-serif;
-    color: #D4AF37;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    font-size: 12px;
-}
-
-/* --- GRID LAYOUT (Responsive) --- */
 .properties-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
-    gap: 30px;
-    max-width: 1400px;
-    margin: 0 auto;
+    display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: 30px; max-width: 1400px; margin: 0 auto;
 }
 
-/* --- CARD STYLING --- */
 .property-card {
-    background: rgba(0,0,0,0.2); /* CHANGED: Card BG is now White */
-    border: 1px solid rgba(0,0,0,0.1); /* CHANGED: Subtle dark border */
-    border-radius: 4px;
-    overflow: hidden;
-    transition: all 0.4s ease;
-    display: flex;
-    flex-direction: column;
+    background: rgba(0,0,0,0.2); border: 1px solid rgba(0,0,0,0.1);
+    border-radius: 4px; overflow: hidden; transition: all 0.4s ease;
+    display: flex; flex-direction: column;
 }
 
-/* Hover Effect: Lift & Gold Border */
 .property-card:hover {
-    transform: translateY(-10px);
-    border-color: #D4AF37;
+    transform: translateY(-10px); border-color: #D4AF37;
     box-shadow: 0 15px 30px rgba(0,0,0,0.3);
 }
 
-/* --- IMAGE AREA --- */
-.prop-img-box {
-    position: relative;
-    height: 250px;
-    overflow: hidden;
-}
+.prop-img-box { position: relative; height: 250px; overflow: hidden; }
 .prop-img-box img {
-    width: 100%; height: 100%;
-    object-fit: cover;
-    transition: transform 0.6s ease;
+    width: 100%; height: 100%; object-fit: cover; transition: transform 0.6s ease;
 }
-.property-card:hover .prop-img-box img {
-    transform: scale(1.1); /* Zoom on hover */
-}
+.property-card:hover .prop-img-box img { transform: scale(1.1); }
 
-/* Badge (e.g. New Launch) */
 .prop-tag {
-    position: absolute;
-    top: 15px; left: 15px;
-    background: #D4AF37;
-    color: #000000;
-    font-size: 10px;
-    font-weight: 700;
-    text-transform: uppercase;
-    padding: 5px 10px;
-    letter-spacing: 1px;
-    font-family: 'Work Sans', sans-serif;
+    position: absolute; top: 15px; left: 15px;
+    background: #D4AF37; color: #000000;
+    font-size: 10px; font-weight: 700; text-transform: uppercase;
+    padding: 5px 10px; letter-spacing: 1px; font-family: 'Work Sans', sans-serif;
 }
 
-/* --- TEXT DETAILS --- */
 .prop-details { padding: 25px; display: flex; flex-direction: column; flex-grow: 1; }
 
 .prop-details h3 {
     font-family: 'Playfair Display', serif;
-    font-size: 22px;
-    color: #ffffff; /* CHANGED: Title is now black */
-    margin-bottom: 5px;
+    font-size: 22px; /* Card Title smaller than section heading */
+    color: #ffffff; margin-bottom: 5px;
 }
 
 .prop-loc {
     font-family: 'Work Sans', sans-serif;
-    font-size: 13px;
-    color: #d6d6d6; /* CHANGED: Location is dark grey */
-    margin-bottom: 20px;
-    text-transform: uppercase;
-    letter-spacing: 1px;
+    font-size: 13px; color: #d6d6d6; margin-bottom: 20px;
+    text-transform: uppercase; letter-spacing: 1px;
 }
 
-/* --- AGENT INFO --- */
 .prop-agent {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    /* CHANGED: Separator lines are now faint dark */
-    border-top: 1px solid #d6d6d6;
-    border-bottom: 1px solid #d6d6d6;
-    padding: 15px 0;
-    margin-bottom: 20px;
+    display: flex; justify-content: space-between; align-items: center;
+    border-top: 1px solid #d6d6d6; border-bottom: 1px solid #d6d6d6;
+    padding: 15px 0; margin-bottom: 20px;
 }
 
 .agent-info span {
@@ -209,657 +128,472 @@
 
 .agent-icons { display: flex; gap: 10px; }
 .agent-icons a {
-    width: 35px; height: 35px;
-    background: rgba(0,0,0,0.05); /* CHANGED: Slight dark background */
-    border-radius: 50%;
-    display: flex; align-items: center; justify-content: center;
-    text-decoration: none; font-size: 14px;
-    color: #000; /* CHANGED: Icon is black */
-    transition: 0.3s;
+    width: 35px; height: 35px; background: rgba(0,0,0,0.05);
+    border-radius: 50%; display: flex; align-items: center; justify-content: center;
+    text-decoration: none; font-size: 14px; color: #000; transition: 0.3s;
 }
-.agent-icons a:hover {
-    background: #D4AF37;
-    color: #000;
-    transform: scale(1.1);
-}
+.agent-icons a:hover { background: #D4AF37; color: #000; transform: scale(1.1); }
 
-/* --- BUTTONS --- */
 .prop-actions { display: flex; gap: 10px; margin-top: auto; }
 
 .prop-btn {
-    flex: 1;
-    padding: 12px;
-    font-family: 'Work Sans', sans-serif;
-    font-size: 11px;
-    text-transform: uppercase;
-    font-weight: 700;
-    cursor: pointer;
-    transition: 0.3s;
+    flex: 1; padding: 12px; font-family: 'Work Sans', sans-serif;
+    font-size: 11px; text-transform: uppercase; font-weight: 700;
+    cursor: pointer; transition: 0.3s;
 }
-
-/* Solid Button (Gold) */
-.prop-btn.solid {
-    background: #D4AF37; border: 1px solid #D4AF37; color: #000;
-}
-.prop-btn.solid:hover {
-    background: #000; border-color: #D4AF37; color: #D4AF37; /* CHANGED hover for better contrast */
-}
-
-/* Outline Button (Dark on White BG) */
-.prop-btn.outline {
-    background: transparent;
-    border: 1px solid #ffffff; /* CHANGED: Black border */
-    color: #ffffff; /* CHANGED: Black text */
-}
-.prop-btn.outline:hover {
-    background: #D4AF37;
-    border-color: #D4AF37;
-    color: #000;
-}
-
-/* Mobile Adjustment */
-@media (max-width: 600px) {
-    .properties-grid { grid-template-columns: 1fr; }
-}
+.prop-btn.solid { background: #D4AF37; border: 1px solid #D4AF37; color: #000; }
+.prop-btn.solid:hover { background: #000; border-color: #D4AF37; color: #D4AF37; }
+.prop-btn.outline { background: transparent; border: 1px solid #ffffff; color: #ffffff; }
+.prop-btn.outline:hover { background: #D4AF37; border-color: #D4AF37; color: #000; }
 
 /* =========================================
-   5. PARTNERS MARQUEE (Original Colors)
+   5. PARTNERS MARQUEE
    ========================================= */
 .partners-section {
-    position: relative;
-    padding: 100px 0;
-    overflow: hidden;
-    background: #000;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    position: relative; padding: 100px 0; overflow: hidden; background: #000;
+    display: flex; flex-direction: column; align-items: center; justify-content: center;
 }
-
 .partners-video {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    opacity: 0.3;
-    z-index: 0;
+    position: absolute; top: 0; left: 0; width: 100%; height: 100%;
+    object-fit: cover; opacity: 0.3; z-index: 0;
 }
-
-.partners-content {
-    position: relative;
-    z-index: 2;
-    text-align: center;
-    width: 100%;
-}
+.partners-content { position: relative; z-index: 2; text-align: center; width: 100%; }
 
 .partners-title {
     font-family: 'Playfair Display', serif;
-    font-size: 40px;
-    color: var(--white);
-    margin-bottom: 50px;
-    text-transform: uppercase;
-    letter-spacing: 2px;
+    font-size: 50px; /* UPDATED Heading Size */
+    color: var(--white); margin-bottom: 50px;
+    text-transform: uppercase; letter-spacing: 2px;
 }
 
-/* --- Marquee Container --- */
 .marquee-wrapper {
-    width: 100%;
-    overflow: hidden;
-    position: relative;
-    /* Soft fade on edges */
+    width: 100%; overflow: hidden; position: relative;
     -webkit-mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
     mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
 }
-
-/* --- Scrolling Track --- */
 .marquee-content {
-    display: flex;
-    /* Forces single row */
-    align-items: center;
-    width: max-content;
-    /* Forces container to stretch */
+    display: flex; align-items: center; width: max-content;
     animation: scroll 35s linear infinite;
-    /* Smooth continuous scroll */
 }
-
-/* --- Logo Styling (ORIGINAL COLORS) --- */
 .partner-logo {
-    height: auto;
-    /* Fixed height */
-    width: auto;
-    /* Maintain aspect ratio */
-    margin: 0 50px;
-    /* Space between logos */
-    flex-shrink: 0;
-    /* Prevents squishing */
-
-    /* REMOVED FILTERS -> Shows original image color */
-    filter: none;
-    opacity: 1;
-
-    transition: transform 0.4s ease;
-    cursor: pointer;
+    height: auto; width: auto; margin: 0 50px; flex-shrink: 0;
+    filter: none; opacity: 1; transition: transform 0.4s ease; cursor: pointer;
 }
+.partner-logo:hover { transform: scale(1.1); }
 
-/* --- Hover Effect --- */
-.partner-logo:hover {
-    transform: scale(1.1);
-    /* Simple Zoom */
-}
-
-/* --- Keyframe Animation --- */
 @keyframes scroll {
-    0% {
-        transform: translateX(0);
-    }
-
-    100% {
-        transform: translateX(-50%);
-    }
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
 }
 
-/* --- Button --- */
 .call-now-btn {
     font-family: 'Work Sans', sans-serif;
-    background: var(--white);
-    color: #000;
-    border: none;
-    padding: 15px 50px;
-    letter-spacing: 2px;
-    font-weight: 700;
-    transition: 0.3s;
-    margin-top: 50px;
-    cursor: pointer;
+    background: var(--white); color: #000; border: none;
+    padding: 15px 50px; letter-spacing: 2px; font-weight: 700;
+    transition: 0.3s; margin-top: 50px; cursor: pointer;
 }
-
-.call-now-btn:hover {
-    background: var(--gold);
-    transform: scale(1.05);
-}
-
-/* --- Mobile Responsive --- */
-@media (max-width: 768px) {
-    .partner-logo {
-        height: 45px;
-        margin: 0 25px;
-    }
-
-    .marquee-content {
-        animation-duration: 20s;
-    }
-}
+.call-now-btn:hover { background: var(--gold); transform: scale(1.05); }
 
 /* =========================================
    6. VIDEO PARALLAX
    ========================================= */
 .video-parallax {
-   height: 1000px;    
-   position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    overflow: hidden;
+    height: 1000px; position: relative; display: flex;
+    align-items: center; justify-content: center; overflow: hidden;
 }
-
 .video-parallax video {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    opacity: 0.5;
+    position: absolute; width: 100%; height: 100%; object-fit: cover; opacity: 0.5;
 }
-
 .parallax-text {
-    position: relative;
-    z-index: 2;
-    font-family: 'Playfair Display', serif;
-    /* Big Display Text */
-    font-size: 100px;
-    letter-spacing: 20px;
-    color: rgba(255, 255, 255, 0.8);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    line-height: 1;
+    position: relative; z-index: 2; font-family: 'Playfair Display', serif;
+    font-size: 100px; letter-spacing: 20px; color: rgba(255, 255, 255, 0.8);
+    display: flex; flex-direction: column; align-items: center; line-height: 1;
 }
 
 /* =========================================
    7. AWARDS
    ========================================= */
 .awards-grid-img {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 30px;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 5% 100px;
+    display: grid; grid-template-columns: repeat(4, 1fr);
+    gap: 30px; max-width: 1200px; margin: 0 auto; padding: 0 5% 100px;
 }
-
-.award-card img {
-    width: 100%;
-    border: 1px solid #333;
-    transition: 0.3s;
-}
+.award-card img { width: 100%; border: 1px solid #333; transition: 0.3s; }
 
 @keyframes float {
-    0% {
-        transform: translateY(0px);
-    }
-
-    50% {
-        transform: translateY(-15px);
-    }
-
-    100% {
-        transform: translateY(0px);
-    }
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-15px); }
+    100% { transform: translateY(0px); }
 }
-
-.float-anim {
-    animation: float 6s ease-in-out infinite;
-}
-
-.delay-1 {
-    animation-delay: 1s;
-}
-
-.delay-2 {
-    animation-delay: 2s;
-}
-
-.delay-3 {
-    animation-delay: 3s;
-}
+.float-anim { animation: float 6s ease-in-out infinite; }
+.delay-1 { animation-delay: 1s; }
+.delay-2 { animation-delay: 2s; }
+.delay-3 { animation-delay: 3s; }
 
 /* =========================================
-   8. SELL SECTION (REDESIGNED)
+   8. SELL SECTION
    ========================================= */
-
-.sell-text h2 {
-    font-family: 'Playfair Display', serif;
-    font-size: 45px;
-    line-height: 1.2;
-    margin-bottom: 25px;
-    color: var(--white);
-    /* Top line color */
-}
-
-.sell-text h2 .gold-text {
-    display: block;
-    color: var(--gold);
-    /* Bottom line color */
-    font-weight: 400;
-    margin-top: 10px;
-}
-
 .sell-section {
     padding: 100px 5%;
     background: linear-gradient(to bottom right, #05080f, #0A1120, #111827);
-    /* Dark Gradient */
-    position: relative;
-    overflow: hidden;
+    position: relative; overflow: hidden;
 }
-
-/* Add a subtle line pattern overlay like in the reference */
 .sell-section::before {
-    content: '';
-    position: absolute;
-    inset: 0;
-    background: repeating-linear-gradient(45deg,
-            rgba(255, 255, 255, 0.02),
-            rgba(255, 255, 255, 0.02) 1px,
-            transparent 1px,
-            transparent 50px);
+    content: ''; position: absolute; inset: 0;
+    background: repeating-linear-gradient(45deg, rgba(255, 255, 255, 0.02), rgba(255, 255, 255, 0.02) 1px, transparent 1px, transparent 50px);
     z-index: 0;
 }
-
 .sell-container {
-    display: flex;
-    gap: 40px;
-    max-width: 1400px;
-    margin: 0 auto;
-    position: relative;
-    z-index: 1;
+    display: flex; gap: 40px; max-width: 1400px; margin: 0 auto;
+    position: relative; z-index: 1;
 }
-
-/* --- Left Side --- */
-.sell-content-left {
-    flex: 3;
-}
+.sell-content-left { flex: 3; }
 
 .sell-text h2 {
     font-family: 'Playfair Display', serif;
-    font-size: 45px;
-    line-height: 1.2;
-    margin-bottom: 25px;
+    font-size: 50px; /* UPDATED Heading Size */
+    line-height: 1.2; margin-bottom: 25px; color: var(--white);
 }
-
-.sell-text h2 span {
-    display: block;
-    color: var(--white);
-    font-weight: 400;
+.sell-text h2 .gold-text {
+    display: block; color: var(--gold); font-weight: 400; margin-top: 10px;
 }
-
 .sell-text p {
     font-family: 'Work Sans', sans-serif;
-    font-size: 14px;
-    line-height: 1.8;
-    color: #b0b0b0;
-    margin-bottom: 40px;
-    max-width: 600px;
+    font-size: 18px; /* UPDATED Paragraph Size */
+    line-height: 1.8; color: #b0b0b0; margin-bottom: 40px; max-width: 600px;
 }
 
-/* Small image grid */
-.sell-grid-small {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 20px;
-}
+.sell-grid-small { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+.sell-img-box { height: 250px; overflow: hidden; border-radius: 4px; }
+.sell-img-box img { width: 100%; height: 100%; object-fit: cover; transition: 0.6s ease; }
+.sell-img-box:hover img { transform: scale(1.1); }
 
-.sell-img-box {
-    height: 250px;
-    overflow: hidden;
-    border-radius: 4px;
-}
-
-.sell-img-box img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    transition: 0.6s ease;
-}
-
-.sell-img-box:hover img {
-    transform: scale(1.1);
-}
-
-/* --- Right Side (Tall Image) --- */
 .sell-content-right {
-    flex: 2;
-    height: 520px;
-    /* Match the height of the left side content + grid */
-    border-radius: 4px;
-    overflow: hidden;
-    align-self: flex-end;
-    /* Aligns it to the bottom */
+    flex: 2; height: 520px; border-radius: 4px; overflow: hidden; align-self: flex-end;
 }
-
 .sell-content-right img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    transition: 0.6s ease;
+    width: 100%; height: 100%; object-fit: cover; transition: 0.6s ease;
 }
+.sell-content-right:hover img { transform: scale(1.1); }
 
-.sell-content-right:hover img {
-    transform: scale(1.1);
-}
-
-/* --- Button Container --- */
 .sell-button-container {
-    display: flex;
-    justify-content: flex-end;
-    /* Aligns button to the right */
-    max-width: 1400px;
-    margin: 30px auto 0;
-    position: relative;
-    z-index: 1;
+    display: flex; justify-content: flex-end; max-width: 1400px;
+    margin: 30px auto 0; position: relative; z-index: 1;
 }
-
 .show-more-btn {
-    padding: 15px 50px;
-    font-size: 14px;
-    background: var(--gold);
-    color: #000;
-    border: none;
+    padding: 15px 50px; font-size: 14px; background: var(--gold);
+    color: #000; border: none; font-family: 'Work Sans', sans-serif;
 }
 
-/* --- Mobile Responsive --- */
-@media (max-width: 992px) {
-    .sell-container {
-        flex-direction: column;
-    }
-
-    .sell-text h2 {
-        font-size: 32px;
-    }
-
-    .sell-content-right {
-        height: 300px;
-        align-self: auto;
-    }
-
-    .sell-button-container {
-        justify-content: center;
-    }
-}
 /* =========================================
-   CENTER BUTTON WITH HOVER EFFECT
+   9. FAQ SECTION
    ========================================= */
-.gold-btn-solid.center {
-    display: table; /* Centers the anchor element itself */
-    margin: 50px auto; /* Centers horizontally with vertical spacing */
-    font-family: 'Work Sans', sans-serif; /* Paragraph font */
-    background-color: var(--gold); /* Your primary brand color */
-    color: #000; /* Contrast text color */
-    padding: 15px 45px;
-    text-align: center;
-    text-decoration: none; /* Removes link underline */
-    text-transform: uppercase;
-    font-weight: 700;
-    letter-spacing: 2px;
-    font-size: 14px;
-    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); /* Smooth luxury easing */
-    border: 1px solid var(--gold);
-    cursor: pointer;
-}
+.faq-section { padding: 100px 5%; background-color: #0A1120; color: #fff; }
+.faq-container { max-width: 900px; margin: 0 auto; border-top: 1px solid rgba(255, 255, 255, 0.1); }
+.faq-item { border-bottom: 1px solid rgba(255, 255, 255, 0.1); overflow: hidden; }
 
-/* --- HOVER EFFECT --- */
-.gold-btn-solid.center:hover {
-    background-color: transparent; /* Switch background */
-    color: var(--white); /* Switch text color */
-    border-color: var(--white); /* Change border color */
-    transform: translateY(-5px); /* Lift effect */
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3); /* Soft shadow depth */
-}
-
-/* --- FAQ CONTAINER --- */
-.faq-section {
-    padding: 100px 5%;
-    background-color: #0A1120;
-    /* Dark Background */
-    color: #fff;
-}
-
-.faq-container {
-    max-width: 900px;
-    margin: 0 auto;
-    border-top: 1px solid rgba(255, 255, 255, 0.1);
-}
-
-.faq-item {
-    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-    overflow: hidden;
-    /* Crucial for animation */
-}
-
-/* --- QUESTION (CLICKABLE) --- */
 .faq-question {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 25px 0;
-    cursor: pointer;
-    transition: 0.3s;
+    display: flex; justify-content: space-between; align-items: center;
+    padding: 25px 0; cursor: pointer; transition: 0.3s;
 }
-
 .faq-question h3 {
     font-family: 'Playfair Display', serif;
-    font-size: 20px;
-    font-weight: 400;
-    margin: 0;
-    color: #fff;
+    font-size: 24px; /* Slightly larger than normal for FAQ title */
+    font-weight: 400; margin: 0; color: #fff;
 }
-
 .faq-icon {
-    font-size: 24px;
-    color: #D4AF37;
-    /* Gold */
-    font-weight: 300;
-    width: 30px;
-    text-align: center;
+    font-size: 24px; color: #D4AF37; font-weight: 300; width: 30px; text-align: center;
 }
+.faq-question:hover h3 { color: #D4AF37; }
 
-/* Hover Effect */
-.faq-question:hover h3 {
-    color: #D4AF37;
-}
-
-/* --- ANSWER (HIDDEN DEFAULT) --- */
 .faq-answer {
-    max-height: 0;
-    /* Hidden */
-    overflow: hidden;
-    transition: max-height 0.5s ease-out;
-    /* Smooth Slide */
-    padding-right: 20px;
+    max-height: 0; overflow: hidden; transition: max-height 0.5s ease-out; padding-right: 20px;
 }
-
 .faq-answer p {
     font-family: 'Work Sans', sans-serif;
-    font-size: 14px;
-    line-height: 1.6;
-    color: #b0b0b0;
-    margin: 0;
-    padding-bottom: 25px;
-    /* Spacing */
+    font-size: 18px; /* UPDATED Paragraph Size */
+    line-height: 1.6; color: #b0b0b0; margin: 0; padding-bottom: 25px;
 }
-
-/* --- ACTIVE STATE --- */
-.faq-item.active .faq-question h3 {
-    color: #D4AF37;
-}
-
-/* .active .faq-answer max-height is handled by JS */
+.faq-item.active .faq-question h3 { color: #D4AF37; }
 
 /* =========================================
-   9. EVENTS & TEAM
+   10. EVENTS & TEAM
    ========================================= */
-.events-grid,
-.team-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 30px;
-    max-width: 1400px;
-    margin: 0 auto 100px;
-    padding: 0 5%;
+.events-grid, .team-grid {
+    display: grid; grid-template-columns: repeat(3, 1fr); gap: 30px;
+    max-width: 1400px; margin: 0 auto 100px; padding: 0 5%;
+}
+.team-grid { grid-template-columns: repeat(4, 1fr); }
+
+.event-card, .team-member {
+    border: 1px solid rgba(255,255,255,0.1); background: var(--card-bg);
+    overflow: hidden; transition: 0.3s;
+}
+.event-img, .team-member img { height: 300px; overflow: hidden; position: relative; }
+.event-img img, .team-member img {
+    width: 100%; height: 100%; object-fit: cover; transition: 0.6s;
+}
+.event-card:hover .event-img img, .team-member:hover img {
+    transform: scale(1.1); filter: brightness(1.1);
 }
 
-.team-grid {
-    grid-template-columns: repeat(4, 1fr);
+.event-content, .team-name { padding: 25px; text-align: center; }
+.event-content h3 {
+    font-family: 'Playfair Display', serif; margin-bottom: 10px; color: var(--gold);
+}
+.event-content p {
+    font-family: 'Work Sans', sans-serif; font-size: 13px; color: #ccc;
 }
 
-.event-card,
-.team-member {
-    border: 1px solid var(--border);
-    background: var(--card-bg);
-    overflow: hidden;
-    transition: 0.3s;
+/* =========================================
+   11. TESTIMONIALS
+   ========================================= */
+.testimonials-scroll {
+    display: flex; overflow-x: auto; gap: 30px; padding: 0 5% 100px;
+    scrollbar-width: none;
+}
+.testimonials-scroll::-webkit-scrollbar { display: none; }
+
+.testi-card {
+    min-width: 400px; background: #111; border: 1px solid #222;
+    padding: 50px; position: relative;
+}
+.quote-icon {
+    font-size: 60px; color: var(--gold); opacity: 0.3;
+    font-family: 'Playfair Display', serif; line-height: 0; margin-bottom: 30px;
+}
+.testi-card p {
+    font-family: 'Work Sans', sans-serif;
+    font-style: italic;
+    font-size: 18px; /* UPDATED Paragraph Size */
+    line-height: 1.8; color: #ddd; margin-bottom: 30px;
+}
+.client-name {
+    font-family: 'Work Sans', sans-serif; font-weight: 700; color: var(--gold); font-size: 14px;
+}
+.client-name span {
+    display: block; font-weight: 400; color: #666; margin-top: 5px;
 }
 
-.event-img,
-.team-member img {
-    height: 300px;
-    overflow: hidden;
+/* =========================================
+   12. MOBILE RESPONSIVE
+   ========================================= */
+@media (max-width: 992px) {
+    .properties-grid { grid-template-columns: repeat(2, 1fr); }
+    .sell-container { flex-direction: column; }
+    .sell-content-right { height: 300px; align-self: auto; }
+    .sell-button-container { justify-content: center; }
+    .awards-grid-img, .team-grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 600px) {
+    .properties-grid, .events-grid, .awards-grid-img, .team-grid {
+        grid-template-columns: 1fr;
+    }
+    .section-header h2, .partners-title, .sell-text h2 {
+        font-size: 36px; /* Scaled down for mobile */
+    }
+    .section-header p, .sell-text p, .faq-answer p, .testi-card p {
+        font-size: 16px; /* Scaled down for mobile */
+    }
+    .hero-text-center h1 { font-size: 50px; }
+}
+
+/* About section css */
+/* --- SECTION CONTAINER --- */
+.team-section {
+    padding: 100px 5%;
+    background-color: var(--dark);
+    text-align: center;
     position: relative;
 }
 
-.event-img img,
-.team-member img {
+/* --- SECTION HEADER (Fixed Fonts) --- */
+.section-header {
+    margin-bottom: 70px;
+    max-width: 1400px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.section-header h2 {
+    font-family: var(--font-heading);
+    font-size: 50px; /* FIXED SIZE */
+    color: var(--white);
+    margin-bottom: 20px;
+}
+
+.section-header p {
+    font-family: var(--font-body);
+    font-size: 18px; /* FIXED SIZE */
+    color: var(--text-grey);
+    line-height: 1.6;
+}
+
+/* --- GRID LAYOUT --- */
+.team-grid {
+    display: grid;
+    /* 4 Columns by default */
+    grid-template-columns: repeat(4, 1fr); 
+    gap: 30px;
+    max-width: 1400px;
+    margin: 0 auto 60px; /* Bottom margin for button */
+}
+
+/* --- CARD STYLING --- */
+.team-card {
+    background: transparent;
+    position: relative;
+    overflow: hidden;
+    /* Animation defaults */
+    opacity: 0; 
+    transform: translateY(50px);
+    transition: all 0.6s ease;
+}
+
+/* --- IMAGE AREA (Animation Focus) --- */
+.img-box {
+    position: relative;
+    width: 100%;
+    height: 400px; /* Tall Portrait Mode */
+    overflow: hidden;
+    margin-bottom: 20px;
+    border-radius: 2px;
+}
+
+.img-box img {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    transition: 0.6s;
+    filter: grayscale(100%); /* Black & White initially */
+    transition: transform 0.6s ease, filter 0.6s ease;
 }
 
-.event-card:hover .event-img img,
-.team-member:hover img {
+/* Hover Effect: Zoom & Color */
+.team-card:hover .img-box img {
     transform: scale(1.1);
-    filter: brightness(1.1);
+    filter: grayscale(0%);
 }
 
-.event-content,
-.team-name {
-    padding: 25px;
+/* --- GOLD OVERLAY (Hidden initially) --- */
+.social-overlay {
+    position: absolute;
+    inset: 0; /* Full cover */
+    background: rgba(212, 175, 55, 0.85); /* Gold with transparency */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transform: translateY(100%); /* Slide up effect */
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.team-card:hover .social-overlay {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.social-overlay i {
+    font-size: 30px;
+    color: #fff;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.social-overlay i:hover {
+    transform: scale(1.2);
+    color: #000;
+}
+
+/* --- TEXT CONTENT --- */
+.team-info {
     text-align: center;
 }
 
-.event-content h3 {
-    font-family: 'Playfair Display', serif;
-    margin-bottom: 10px;
+.team-info .role {
+    display: block;
+    font-family: var(--font-body);
+    font-size: 12px;
     color: var(--gold);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 5px;
+    font-weight: 600;
 }
 
-.event-content p {
-    font-family: 'Work Sans', sans-serif;
-    font-size: 13px;
-    color: #ccc;
+.team-info .name {
+    font-family: var(--font-heading);
+    font-size: 24px; /* Name size */
+    color: var(--white);
+    margin: 0;
+    text-transform: uppercase;
+    letter-spacing: 1px;
 }
+
+/* --- BUTTON STYLING --- */
+.gold-btn-solid.center {
+    display: table;
+    margin: 0 auto; /* Center horizontally */
+    background-color: var(--gold);
+    color: #000;
+    padding: 15px 50px;
+    font-family: var(--font-body);
+    font-weight: 700;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-decoration: none;
+    border: 1px solid var(--gold);
+    transition: 0.3s ease;
+}
+
+.gold-btn-solid.center:hover {
+    background-color: transparent;
+    color: var(--white);
+    border-color: var(--white);
+}
+
+/* --- REVEAL ANIMATION CLASS --- */
+/* Ensure elements slide up when scrolling */
+.reveal.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Staggered Delay for Cards */
+.team-card:nth-child(1) { transition-delay: 0.1s; }
+.team-card:nth-child(2) { transition-delay: 0.2s; }
+.team-card:nth-child(3) { transition-delay: 0.3s; }
+.team-card:nth-child(4) { transition-delay: 0.4s; }
 
 /* =========================================
-   10. TESTIMONIALS
+   RESPONSIVE DESIGN (Mobile & Tablet)
    ========================================= */
-.testimonials-scroll {
-    display: flex;
-    overflow-x: auto;
-    gap: 30px;
-    padding: 0 5% 100px;
-    scrollbar-width: none;
+
+/* Tablet (1024px) - 2 Columns */
+@media (max-width: 1024px) {
+    .team-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 40px;
+    }
 }
 
-.testimonials-scroll::-webkit-scrollbar {
-    display: none;
-}
+/* Mobile (768px) - 1 Column */
+@media (max-width: 768px) {
+    .team-section {
+        padding: 80px 5%;
+    }
 
-.testi-card {
-    min-width: 400px;
-    background: #111;
-    border: 1px solid #222;
-    padding: 50px;
-    position: relative;
-}
+    .team-grid {
+        grid-template-columns: 1fr;
+        gap: 50px;
+    }
 
-.quote-icon {
-    font-size: 60px;
-    color: var(--gold);
-    opacity: 0.3;
-    font-family: 'Playfair Display', serif;
-    line-height: 0;
-    margin-bottom: 30px;
-}
+    .img-box {
+        height: 450px; /* Taller images on mobile look premium */
+    }
 
-.testi-card p {
-    font-family: 'Work Sans', sans-serif;
-    /* Paragraph */
-    font-style: italic;
-    font-size: 16px;
-    line-height: 1.8;
-    color: #ddd;
-    margin-bottom: 30px;
-}
-
-.client-name {
-    font-family: 'Work Sans', sans-serif;
-    font-weight: 700;
-    color: var(--gold);
-    font-size: 14px;
-}
-
-.client-name span {
-    display: block;
-    font-weight: 400;
-    color: #666;
-    margin-top: 5px;
+    /* Adjust font size for mobile specific */
+    .section-header h2 {
+        font-size: 40px; 
+    }
 }
