@@ -60,9 +60,52 @@
                         <label>EMAIL</label>
                     </div>
 
+<<<<<<< HEAD
                     <button type="submit" class="split-btn">
                         MEET OUR BRAND AMBASSADOR
                     </button>
+=======
+                    <button type="button" class="f-btn">MEET OUR BRAND AMBASSADOR</button>
+                </form> -->
+                <form class="f-form" action="mailto:surekhaghugal2@gmail.com" method="POST">
+
+    <div class="form-group">
+        <label >NAME</label>
+        <input type="text" name="name" class="f-input" placeholder="Your Name" required>
+    </div>
+
+    <div class="form-row">
+        <div class="form-group small">
+            <label >CODE</label>
+            <input type="text" name="code" class="f-input" value="+971" required>
+             <select class="c-select">
+             <option value="+971">🇦🇪 +971 (UAE)</option>
+            <option value="+91">🇮🇳 +91 (India)</option>
+            <option value="+1">🇺🇸 +1 (USA)</option>
+            <option value="+44">🇬🇧 +44 (UK)</option>
+            <option value="+61">🇦🇺 +61 (Australia)</option>
+            <option value="+966">🇸🇦 +966 (Saudi)</option>
+            <option value="+974">🇶🇦 +974 (Qatar)</option>
+            </select>
+        </div>                        
+                                    
+        <div class="form-group large">
+            <label>MOBILE</label>
+            <input type="text" name="mobile" class="f-input" placeholder="50 123 4567" required>
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label>EMAIL</label>
+        <input type="email" name="email" class="f-input" placeholder="name@example.com" required>
+    </div>
+
+    <button type="submit" class="f-btn">
+        MEET OUR BRAND AMBASSADOR
+    </button>
+
+</form>
+>>>>>>> 800bf6d9b3d6284f69a2e97ee13b799a747838ef
 
                 </form>
             </div>

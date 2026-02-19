@@ -14,14 +14,13 @@
     </div>
 </section>
 
-<section class="rent-intro reveal">
-    <div class="intro-container">
-        <p>
-            Delivering world-class real estate experiences across Dubai with a focus on architecture, innovation, and long-term value. 
-            <br><br>
-            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
-        </p>
-    </div>
+<!-- TITLE -->
+<section class="page-title">
+  <h1>Properties for Rent</h1>
+  <p>
+    Delivering world-class real estate experiences across Dubai with a focus on
+    architecture, innovation and long-term value. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+  </p>
 </section>
 
 <section class="properties-section reveal">
