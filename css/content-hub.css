@@ -1,100 +1,114 @@
 /* =========================================
-   CONTENT HUB STYLES
-   ========================================= */
+   CONTENT HUB - FULL STYLESHEET
+ */
 
-:root {
-    --gold: #D4AF37;
-    --dark: #05080f;
-    --card-bg: #0A1120;
-    --white: #ffffff;
-    --text-grey: #b0b0b0;
-    --font-heading: 'Playfair Display', serif;
-    --font-body: 'Work Sans', sans-serif;
-}
-
-/* GENERAL SETUP */
 body {
     background-color: var(--dark);
     color: var(--white);
     font-family: var(--font-body);
+    overflow-x: hidden;
 }
 
-h2, h3, h4 { font-family: var(--font-heading); }
+/* TYPOGRAPHY RULES */
+h1, h2, h3, h4, h5 { font-family: var(--font-heading); font-weight: 400; }
+p, span, a, li, button { font-family: var(--font-body); }
 
-/* --- 1. HERO SECTION --- */
+/* =========================================
+   1. HERO SECTION (Video Background)
+   ========================================= */
 .hub-hero {
     position: relative;
-    height: 60vh;
+    height: 80vh; /* Cinematic Height */
     width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     overflow: hidden;
+    background: #000;
 }
 
-.hub-hero-bg img {
-    width: 100%;
-    height: 100%;
+/* Video Styling */
+.hub-hero-video {
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
     object-fit: cover;
-    animation: zoomSlow 20s infinite alternate;
+    z-index: 0;
+    opacity: 0.6; /* Dim slightly for text readability */
 }
 
+/* Overlay */
 .hub-hero-overlay {
     position: absolute; inset: 0;
-    background: linear-gradient(to bottom, rgba(0,0,0,0.2) 0%, var(--dark) 100%);
+    background: linear-gradient(to bottom, rgba(0,0,0,0.3) 0%, #05080f 100%);
+    z-index: 1;
 }
 
-@keyframes zoomSlow {
-    0% { transform: scale(1); }
-    100% { transform: scale(1.1); }
+/* Content Styling */
+.hub-hero-content {
+    position: relative; z-index: 2;
+    text-align: center;
+    opacity: 0;
+    animation: fadeUp 1s ease forwards 0.5s;
 }
 
-/* --- 2. NEWS GRID SECTION --- */
+.hub-hero-content h1 {
+    font-size: 80px; /* Big Hero Title */
+    color: var(--white); margin: 0;
+    text-shadow: 0 10px 30px rgba(0,0,0,0.5);
+    line-height: 1;
+}
+
+.hub-hero-content span {
+    color: var(--gold);
+    font-style: italic;
+}
+
+.hub-hero-content p {
+    font-size: 18px; /* FIXED: 18px */
+    color: #ddd;
+    margin-top: 20px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+/* =========================================
+   2. NEWS GRID SECTION
+   ========================================= */
 .news-section {
-    padding: 80px 5%;
+    padding: 100px 5%;
     background: linear-gradient(to bottom, var(--dark), #0b121e);
     position: relative;
 }
 
-/* Adding the diagonal line pattern background */
-.news-section::before, .blogs-section::before {
-    content: '';
-    position: absolute; inset: 0;
-    background-image: repeating-linear-gradient(
-        45deg,
-        rgba(255, 255, 255, 0.03) 0px,
-        rgba(255, 255, 255, 0.03) 1px,
-        transparent 1px,
-        transparent 60px
-    );
-    pointer-events: none;
-    z-index: 0;
-}
-
 .section-header {
-    text-align: center; margin-bottom: 60px; position: relative; z-index: 1;
+    text-align: center; margin-bottom: 60px;
 }
 
 .section-header h2 {
-    font-size: 60px; color: var(--white);
-    text-transform: capitalize;
+    font-size: 50px; /* FIXED: 50px */
+    color: var(--white);
 }
 
 .section-header h2 span {
-    font-style: italic; font-weight: 400;
+    font-style: italic; color: var(--gold);
 }
 
+/* Grid Layout */
 .news-grid-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 30px;
+    gap: 40px;
     max-width: 1400px; margin: 0 auto;
-    position: relative; z-index: 1;
 }
 
 .news-card {
     position: relative;
-    height: 400px;
-    border: 1px solid rgba(255,255,255,0.2);
+    height: 450px;
+    border-radius: 4px;
     overflow: hidden;
     cursor: pointer;
+    border: 1px solid rgba(255,255,255,0.1);
 }
 
 .news-img {
@@ -104,55 +118,56 @@ h2, h3, h4 { font-family: var(--font-heading); }
 
 .news-img img {
     width: 100%; height: 100%; object-fit: cover;
-    transition: transform 0.6s ease;
+    transition: transform 0.8s ease;
 }
 
 .news-card:hover .news-img img { transform: scale(1.1); }
 
 .news-content {
     position: absolute; bottom: 0; left: 0; width: 100%;
-    padding: 30px;
-    background: linear-gradient(to top, rgba(0,0,0,0.9), transparent);
+    padding: 40px;
+    background: linear-gradient(to top, rgba(0,0,0,0.95), transparent);
     z-index: 2;
 }
 
 .news-content h3 {
-    font-size: 20px; color: var(--white);
-    font-family: var(--font-body); /* Based on image, titles look sans-serif */
-    font-weight: 600; margin-bottom: 15px;
-    line-height: 1.4;
+    font-family: var(--font-body);
+    font-size: 20px; font-weight: 600;
+    color: var(--white); margin-bottom: 15px;
+    line-height: 1.5;
 }
 
 .news-meta {
     display: flex; justify-content: space-between; align-items: center;
-    font-size: 14px; color: #ccc;
-    font-family: var(--font-body);
+    font-size: 12px; color: #ccc; text-transform: uppercase;
 }
 
 .read-more {
-    color: var(--gold); text-decoration: none; text-transform: uppercase; letter-spacing: 1px;
+    color: var(--gold); text-decoration: none; letter-spacing: 1px;
+    transition: color 0.3s;
 }
+.read-more:hover { color: var(--white); }
 
-/* --- 3. BLOGS SECTION --- */
+/* =========================================
+   3. BLOGS SECTION
+   ========================================= */
 .blogs-section {
-    padding: 80px 5%;
+    padding: 100px 5%;
     background-color: var(--dark);
-    position: relative;
 }
 
 .blogs-grid {
-    display: grid; grid-template-columns: 1fr 1fr; /* 2 Columns Layout */
+    display: grid; grid-template-columns: 1fr 1fr;
     gap: 40px;
     max-width: 1200px; margin: 0 auto;
-    position: relative; z-index: 1;
 }
 
 .blog-card {
-    display: flex; /* Horizontal Layout for Blog Cards */
+    display: flex;
     background: rgba(255,255,255,0.02);
-    border: 1px solid rgba(255,255,255,0.1);
+    border: 1px solid rgba(255,255,255,0.05);
+    height: 220px;
     transition: 0.3s ease;
-    height: 200px;
 }
 
 .blog-card:hover {
@@ -161,7 +176,7 @@ h2, h3, h4 { font-family: var(--font-heading); }
 }
 
 .blog-img {
-    width: 40%; flex-shrink: 0; overflow: hidden;
+    width: 40%; height: 100%; overflow: hidden;
 }
 
 .blog-img img {
@@ -172,28 +187,28 @@ h2, h3, h4 { font-family: var(--font-heading); }
 .blog-card:hover .blog-img img { transform: scale(1.1); }
 
 .blog-info {
-    padding: 20px;
+    width: 60%; padding: 25px;
     display: flex; flex-direction: column; justify-content: space-between;
-    width: 60%;
 }
 
 .blog-info h4 {
-    font-family: var(--font-body); font-size: 14px;
-    color: var(--white); line-height: 1.5; margin-bottom: 5px;
+    font-family: var(--font-body);
+    font-size: 16px; line-height: 1.5; color: var(--white);
+    margin-bottom: 10px;
 }
 
 .blog-date {
-    font-size: 12px; color: #888; margin-bottom: 15px;
+    font-size: 12px; color: #888;
 }
 
 .blog-footer {
     display: flex; justify-content: space-between; align-items: center;
     border-top: 1px solid rgba(255,255,255,0.1);
-    padding-top: 10px;
+    padding-top: 15px; margin-top: 10px;
 }
 
 .blog-share i {
-    color: #888; font-size: 14px; margin-right: 10px; cursor: pointer; transition: 0.3s;
+    color: #666; margin-right: 10px; font-size: 14px; cursor: pointer; transition: 0.3s;
 }
 .blog-share i:hover { color: var(--gold); }
 
@@ -201,134 +216,140 @@ h2, h3, h4 { font-family: var(--font-heading); }
     font-size: 10px; color: var(--white); text-decoration: none; letter-spacing: 1px;
 }
 
-/* --- 4. EXPRESS FORM SECTION --- */
+/* =========================================
+   4. EXPRESS INTEREST (Full Video, No Form)
+   ========================================= */
+
 .express-section {
     position: relative;
+    width: 100%;
+    height: 80vh;
     display: flex;
-    min-height: 600px;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
     background: #000;
 }
 
-.express-bg {
-    position: absolute; inset: 0; z-index: 0;
+/* Background Video */
+.express-video-bg {
+    position: absolute; top: 0; left: 0;
+    width: 100%; height: 100%;
+    object-fit: cover;
+    z-index: 0;
+    opacity: 0.6;
 }
-.express-bg img {
-    width: 100%; height: 100%; object-fit: cover;
-}
+
 .express-overlay {
     position: absolute; inset: 0;
-    background: linear-gradient(to right, #000 30%, rgba(0,0,0,0.4) 100%);
+    background: radial-gradient(circle, rgba(0,0,0,0.1) 0%, #000 90%);
+    z-index: 1;
 }
 
-.express-content {
-    flex: 1;
+/* Centered Content */
+.express-content-center {
     position: relative; z-index: 2;
-    padding: 100px 5%;
-    display: flex; flex-direction: column; justify-content: center;
+    text-align: center;
+    max-width: 800px;
+    padding: 0 20px;
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 1s ease 0.3s;
 }
 
-.express-content h2 {
-    font-size: 60px; color: var(--white); line-height: 1.1; margin-bottom: 40px;
-}
-.express-content h2 .thin-text {
-    font-family: var(--font-body); font-weight: 300;
+/* Trigger animation when active */
+.express-section.active .express-content-center {
+    opacity: 1; transform: translateY(0);
 }
 
-.express-links {
-    display: flex; flex-direction: column; gap: 15px;
+.express-content-center h2 {
+    font-size: 50px; /* FIXED: 50px */
+    color: var(--white);
+    line-height: 1.1;
+    margin-bottom: 20px;
 }
-.express-links a {
-    color: var(--white); text-decoration: none;
-    font-family: var(--font-body); font-size: 14px;
-    letter-spacing: 2px; text-transform: uppercase;
-    border-bottom: 1px solid var(--white);
-    display: inline-block; width: max-content;
-    padding-bottom: 5px; transition: 0.3s;
-}
-.express-links a:hover { color: var(--gold); border-color: var(--gold); }
 
-/* Form Side */
-.express-form-container {
-    flex: 1;
+.express-content-center h2 span {
+    color: var(--gold);
+    font-style: italic;
+}
+
+/* Divider */
+.gold-divider-center {
+    width: 80px; height: 3px; background: var(--gold);
+    margin: 0 auto 30px;
+}
+
+.express-content-center p {
+    font-size: 18px; /* FIXED: 18px */
+    color: #ddd;
+    line-height: 1.8;
+    margin-bottom: 50px;
+}
+
+/* CTA Button */
+.express-cta-btn {
+    display: inline-block;
+    position: relative;
+    padding: 18px 60px;
+    border: 1px solid var(--gold);
+    color: var(--gold);
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 14px;
+    letter-spacing: 2px;
+    font-weight: 700;
+    font-family: var(--font-body);
+    overflow: hidden;
+    transition: color 0.4s;
+}
+
+.express-cta-btn span {
     position: relative; z-index: 2;
-    padding: 100px 5%;
-    display: flex; flex-direction: column; justify-content: center;
-    background: rgba(0,0,0,0.3); /* Slight dim on right side */
-    backdrop-filter: blur(5px);
 }
 
-.express-form {
-    max-width: 500px; width: 100%;
+/* Button Fill Animation */
+.express-cta-btn .btn-bg {
+    position: absolute; top: 0; left: 0; width: 0; height: 100%;
+    background: var(--gold);
+    z-index: 1;
+    transition: width 0.4s cubic-bezier(0.25, 1, 0.5, 1);
 }
 
-.form-group {
-    margin-bottom: 30px;
-    border-bottom: 1px solid rgba(255,255,255,0.3);
-}
+.express-cta-btn:hover { color: #000; }
+.express-cta-btn:hover .btn-bg { width: 100%; }
 
-.form-group input {
-    width: 100%; background: transparent; border: none;
-    padding: 15px 0; color: var(--white);
-    font-family: var(--font-body); font-size: 14px;
-    letter-spacing: 1px; outline: none;
-}
-.form-group input::placeholder { color: #aaa; text-transform: uppercase; }
-
-.form-row {
-    display: flex; gap: 20px; align-items: flex-end;
-}
-.country-code {
-    width: 60px; border-bottom: 1px solid rgba(255,255,255,0.3); margin-bottom: 30px;
-}
-.country-code input {
-    width: 100%; background: transparent; border: none;
-    color: var(--white); padding: 15px 0; text-align: center;
-}
-
-.terms-text {
-    font-size: 10px; color: #666; margin-bottom: 30px;
-}
-
-.submit-btn {
-    background: transparent; border: none;
-    color: #888; font-family: var(--font-body);
-    font-size: 12px; letter-spacing: 3px; text-transform: uppercase;
-    cursor: pointer; position: relative; padding-bottom: 5px;
-    transition: 0.3s;
-}
-.submit-btn:hover { color: var(--gold); }
-
-.btn-line {
-    display: block; width: 40px; height: 1px; background: #888;
-    margin: 5px auto 0; transition: 0.3s;
-}
-.submit-btn:hover .btn-line { width: 100%; background: var(--gold); }
-
-/* --- RESPONSIVE MEDIA QUERIES --- */
-@media (max-width: 1024px) {
-    .news-grid-container { grid-template-columns: 1fr; }
-    .blogs-grid { grid-template-columns: 1fr; }
-    .express-section { flex-direction: column; }
-    .express-overlay { background: rgba(0,0,0,0.8); } /* Darker overlay on mobile */
-    .express-form-container { padding-top: 20px; }
-}
-
-@media (max-width: 768px) {
-    .section-header h2 { font-size: 40px; }
-    .news-card { height: 350px; }
-    
-    .blog-card { height: auto; flex-direction: column; }
-    .blog-img { width: 100%; height: 200px; }
-    .blog-info { width: 100%; }
-    
-    .express-content h2 { font-size: 40px; }
-}
-
-/* --- REVEAL ANIMATION --- */
+/* =========================================
+   ANIMATIONS & RESPONSIVE
+   ========================================= */
 .reveal {
     opacity: 0; transform: translateY(50px);
     transition: all 1s ease;
 }
-.reveal.active {
-    opacity: 1; transform: translateY(0);
+.reveal.active { opacity: 1; transform: translateY(0); }
+
+@keyframes fadeUp {
+    from { opacity: 0; transform: translateY(30px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@media (max-width: 1024px) {
+    .news-grid-container { grid-template-columns: 1fr; }
+    .blogs-grid { grid-template-columns: 1fr; }
+}
+
+@media (max-width: 768px) {
+    .hub-hero { height: 60vh; }
+    .hub-hero-content h1 { font-size: 50px; }
+    
+    .section-header h2, 
+    .express-content-center h2 { font-size: 36px; }
+    
+    .express-content-center p { font-size: 16px; }
+    
+    .blog-card { flex-direction: column; height: auto; }
+    .blog-img { width: 100%; height: 200px; }
+    .blog-info { width: 100%; }
+    
+    .express-cta-btn { width: 100%; text-align: center; }
 }
