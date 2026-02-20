@@ -41,7 +41,7 @@
                 <form class="modern-form" action="send-mail.php" method="POST">
 
                     <div class="form-group">
-                        <input type="text" required placeholder=" ">
+                        <input type="text" required placeholder=" " name="name">
                         <label>NAME</label>
                     </div>
 
@@ -50,13 +50,13 @@
                             <select id="split-country-select"></select>
                         </div>
                         <div class="form-group mobile-wrapper">
-                            <input type="tel" required placeholder=" ">
+                            <input type="tel" required placeholder=" " name="contact">
                             <label>MOBILE</label>
                         </div>
                     </div>
 
                     <div class="form-group">
-                        <input type="email" required placeholder=" ">
+                        <input type="email" required placeholder=" " name="email">
                         <label>EMAIL</label>
                     </div>
 

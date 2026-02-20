@@ -1,71 +1,39 @@
-
-
-<?php include "header.php"; ?>
-  <link rel="stylesheet" href="css/sell.css">
+<?php include 'header.php'; ?>
+<link rel="stylesheet" href="css/Sell.css">
 
 <!-- HERO -->
-<section class="sell-hero">
-  <div class="hero-overlay"></div>
-
-  <div class="hero-text">
-    <h1>
-      Sell Your Property in Dubai<br>
-      2026 | Residential & Commercial
-    </h1>
-  </div>
+<section class="hero">
+  <img src="image/1.jpg" alt="Dubai Skyline">
 </section>
 
-<!-- WHY SELL -->
-<section class="dark-section">
-  <h2>Why Sell with Quadra Horizons Properties?</h2>
+<!-- TITLE -->
+<section class="page-title">
+  <h1>Properties for Sell</h1>
   <p>
-    Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
+    Delivering world-class real estate experiences across Dubai with a focus on
+    architecture, innovation and long-term value. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
   </p>
-
-  <h3>Required documents list</h3>
-  <ul>
-    <li>ABC</li>
-    <li>XYZ</li>
-    <li>PQRS</li>
-  </ul>
-
-  <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
 </section>
 
-<!-- SELLER TESTIMONIALS -->
-<section class="dark-section">
-  <h2>What Our Sellers Say...</h2>
-  <p class="subtext">
-    Don’t take our word for it. Here are some of the great things our clients have said.
+<!-- INFO SECTION -->
+<section class="info dark">
+  <h1>Properties for Sell in Dubai | Binghatti</h1>
+  <p>
+    Delivering world-class real estate experiences across Dubai with a focus on
+    architecture, innovation and long-term value. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
   </p>
-
-  <div class="testimonial-row">
-    <div class="testimonial">
-      <h4>Elon Musk</h4>
-      <p>Lorem Ipsum is simply dummy text of the printing industry.</p>
-    </div>
-    <div class="testimonial">
-      <h4>Elon Musk</h4>
-      <p>Lorem Ipsum is simply dummy text of the printing industry.</p>
-    </div>
-    <div class="testimonial">
-      <h4>Elon Musk</h4>
-      <p>Lorem Ipsum is simply dummy text of the printing industry.</p>
-    </div>
-  </div>
 </section>
 
 <!-- FAQ SECTION -->
  <section class="faq-section reveal">
-    <div class="section-header">
+    <div class="section-header-Sell">
         <h2>Frequently Asked Questions</h2>
     </div>
     
     <div class="faq-container">
         <div class="faq-item">
             <div class="faq-question">
-                <h3>Is it a good time to buy a property in Dubai in 2024?</h3>
+                <h3>Is it a good time to Sell a property in Dubai in 2024?</h3>
                 <span class="faq-icon">+</span>
             </div>
             <div class="faq-answer">
@@ -95,7 +63,7 @@
 
         <div class="faq-item">
             <div class="faq-question">
-                <h3>Can an expat buy Property in Dubai and live permanently?</h3>
+                <h3>Can an expat Sell Property in Dubai and live permanently?</h3>
                 <span class="faq-icon">+</span>
             </div>
             <div class="faq-answer">
@@ -105,4 +73,33 @@
     </div>
 </section>
 
-<?php include "footer.php"; ?>
+<!-- TESTIMONIALS -->
+<section class="testimonials dark">
+  <div class="section-header reveal">
+    <h2>Client Experiences</h2>
+</div>
+<div class="testimonials-scroll reveal">
+    <div class="testi-card">
+        <div class="quote-icon">“</div>
+        <p>"The team found me a penthouse that wasn't even on the market yet. Incredible access."</p>
+        <div class="client-name">Michael R. <span>Investor, UK</span></div>
+    </div>
+    <div class="testi-card">
+        <div class="quote-icon">“</div>
+        <p>"Professional, transparent, and swift. They handled my entire portfolio perfectly."</p>
+        <div class="client-name">Sarah J. <span>Entrepreneur, UAE</span></div>
+    </div>
+    <div class="testi-card">
+        <div class="quote-icon">“</div>
+        <p>"A truly white-glove service from start to finish. Highly recommended."</p>
+        <div class="client-name">David L. <span>CEO, USA</span></div>
+    </div>
+</div>
+</section>
+
+
+
+
+<?php include 'footer.php'; ?>
+</body>
+</html>

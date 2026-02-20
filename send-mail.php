@@ -1,36 +1,54 @@
 <?php
 
+use PHPMailer\PHPMailer\PHPMailer;
+use PHPMailer\PHPMailer\Exception;
+
+require 'PHPMailer/src/Exception.php';
+require 'PHPMailer/src/PHPMailer.php';
+require 'PHPMailer/src/SMTP.php';
+
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
-    $name = htmlspecialchars($_POST['name']);
-    $email = htmlspecialchars($_POST['email']);
-    $contact = htmlspecialchars($_POST['contact']);
+    $name = $_POST['name'];
+    $email = $_POST['email'];
+    $contact = $_POST['contact'];
 
-    $to = "info@quadrahorizons.com";   // Yaha apna receiving email daale
-    $subject = "New Express Interest Form Submission";
+    $mail = new PHPMailer(true);
 
-    $message = "
-    New Form Submission Details:
+    try {
 
-    Name: $name
-    Email: $email
-    Contact: $contact
-    ";
+        // SMTP Settings
+        $mail->isSMTP();
+        $mail->Host       = 'smtp.hostinger.com';   // Hostinger SMTP
+        $mail->SMTPAuth   = true;
+        $mail->Username   = 'info@quadrahorizons.com'; // Your domain email
+        $mail->Password   = 'YOUR_EMAIL_PASSWORD';     // Email password
+        $mail->SMTPSecure = 'tls';
+        $mail->Port       = 587;
 
-    $headers = "From: $email\r\n";
-    $headers .= "Reply-To: $email\r\n";
+        // Sender & Receiver
+        $mail->setFrom('info@quadrahorizons.com', 'Quadra Horizons');
+        $mail->addAddress('info@quadrahorizons.com');
 
-    if (mail($to, $subject, $message, $headers)) {
+        $mail->isHTML(true);
+        $mail->Subject = 'New Express Interest Form';
+
+        $mail->Body = "
+            <h3>New Form Submission</h3>
+            <b>Name:</b> $name <br>
+            <b>Email:</b> $email <br>
+            <b>Contact:</b> $contact
+        ";
+
+        $mail->send();
+
         echo "<script>
-            alert('Thank You! Your message has been sent successfully.');
+            alert('Message Sent Successfully!');
             window.location.href='index.php';
         </script>";
-    } else {
-        echo "<script>
-            alert('Error! Mail not sent.');
-            window.history.back();
-        </script>";
+
+    } catch (Exception $e) {
+        echo "Mailer Error: " . $mail->ErrorInfo;
     }
 }
-
 ?>
