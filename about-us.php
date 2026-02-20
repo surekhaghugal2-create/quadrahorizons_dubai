@@ -23,16 +23,26 @@
     <div class="container fade-in">
         
         <div class="vision-header">
+<<<<<<< HEAD
             <span class="vision-label">About Us</span>
             <h2 class="vision-title">  Our Vision & Philosophy </h2>
+=======
+            <span class="vision-label">Our Philosophy</span>
+            <h2 class="vision-title">Quadra Horizons Properties</h2>
+>>>>>>> b8d1ac8a5a34c29c76c1570e5b32198be4258ff5
             <div class="vision-divider"></div>
         </div>
 
         <p class="vision-quote">
+<<<<<<< HEAD
             We believe that every space tells a story. Our mission is to create timeless environments 
             that reflect elegance, functionality, and purpose. We don’t just design structures — 
             we shape experiences that inspire growth, comfort, and success.
             <span class="gold-highlight">Excellence, integrity, and innovation define everything we create.</span>"
+=======
+            "We are not just building structures, we are crafting the backdrop for your life's most memorable moments. 
+            <span class="gold-highlight">Excellence is our only currency.</span>"
+>>>>>>> b8d1ac8a5a34c29c76c1570e5b32198be4258ff5
         </p>
 
     </div>
