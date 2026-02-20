@@ -284,6 +284,24 @@ ul.luxury-list li::before {
     /* Crucial for animation */
 }
 
+.section-header {
+    margin-top: 20px;
+    margin-bottom: 70px;
+    max-width: 1400px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    background-color: #d6dae2;
+}
+
+.section-header h2 {
+    font-family: var(--font-heading);
+    font-size: 50px; /* FIXED SIZE */
+    color: var(--white);
+    background-color: #0A1120 ;
+    margin-bottom: 20px;
+}
+
 /* --- QUESTION (CLICKABLE) --- */
 .faq-question {
     display: flex;
