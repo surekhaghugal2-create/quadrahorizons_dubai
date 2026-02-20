@@ -1,18 +1,20 @@
 /* --- VARIABLES --- */
 :root {
-    --bg-body: #050505;
-    --bg-panel: #111111;
-    --gold: #D4AF37;
-    --white: #ffffff;
-    --gray: #888;
+    /* --- Brand Colors from Palette --- */
+    --bg-body: #000000;
+    --bg-panel: #2A2A2A;
+    --gold: #FFC72C;
+    --white: #FFFFFF;
+    
+    /* --- Supporting UI Colors --- */
+    --gray: #888888;
     --glass: rgba(255, 255, 255, 0.05);
     --border: rgba(255, 255, 255, 0.1);
     
-    --font-heading: 'Cinzel', serif;
-    --font-body: 'Montserrat', sans-serif;
+    /* --- Typography --- */
+    --font-heading: 'Playfair Display', serif;
+    --font-body: 'Work Sans', sans-serif;
 }
-
-* { margin: 0; padding: 0; box-sizing: border-box; }
 
 body {
     background-color: var(--bg-body);
@@ -25,7 +27,7 @@ a { text-decoration: none; color: inherit; transition: 0.3s; }
 ul { list-style: none; }
 
 /* --- UTILITIES --- */
-.container { max-width: 1300px; margin: 0 auto; padding: 0 40px; }
+.container { max-width: 1400px; margin: 0 auto; padding: 0 40px; }
 .gold-text { color: var(--gold); }
 .fade-in { opacity: 0; transform: translateY(30px); transition: all 1s ease; }
 .fade-in.visible { opacity: 1; transform: translateY(0); }
@@ -64,9 +66,52 @@ ul { list-style: none; }
     font-size: 1.2rem; letter-spacing: 3px; margin-top: 20px;
     text-transform: uppercase; color: var(--gold);
 }
+
+/* ==========================================
+   TABLET VIEW (Up to 768px)
+   ========================================== */
+@media (max-width: 768px) {
+    .about-hero {
+        padding: 0 30px; /* Adds safe space on the sides */
+    }
+    
+    .hero-title {
+        font-size: 10vw; /* Increased from 7vw so it doesn't get too tiny */
+        letter-spacing: 3px;
+    }
+    
+    .hero-subtitle {
+        font-size: 36px; /* Slightly scaled down */
+        letter-spacing: 2px;
+        margin-top: 15px;
+    }
+}
+
+/* ==========================================
+   MOBILE VIEW (Up to 425px / 320px)
+   ========================================== */
+@media (max-width: 425px) {
+    .about-hero {
+        padding: 0 20px; 
+        height: 75vh;
+    }
+    
+    .hero-title {
+        font-size: 14vw; /* Larger ratio for small screens to keep it prominent */
+        letter-spacing: 2px;
+        line-height: 1.2; /* Gives breathing room if the title wraps to two lines */
+    }
+    
+    .hero-subtitle {
+        font-size: 0.85rem; /* Better fit for narrow mobile screens */
+        letter-spacing: 1.5px;
+        margin-top: 10px;
+    }
+}
+
+
 /* --- VISION SECTION REDESIGN --- */
 .vision-section {
-    padding: 0px 0;
     background: var(--bg-body);
     text-align: center;
     position: relative;
@@ -167,6 +212,107 @@ ul { list-style: none; }
     .vision-title { font-size: 2.5rem; }
     .vision-quote { font-size: 1.4rem; padding: 0 20px; }
 }
+
+/* ==========================================
+   VISION SECTION: TEXT REVEAL ANIMATIONS
+   ========================================== */
+/* Initial state for the text elements to hide them before animation */
+.vision-label,
+.vision-title,
+.vision-quote {
+    opacity: 0;
+}
+
+@keyframes slideUpText {
+    0% { opacity: 0; transform: translateY(30px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
+
+/* Staggered animation triggers when parent gets '.visible' class via JS */
+.fade-in.visible .vision-label {
+    animation: slideUpText 0.8s cubic-bezier(0.25, 1, 0.5, 1) forwards 0.1s;
+}
+
+.fade-in.visible .vision-title {
+    animation: slideUpText 0.8s cubic-bezier(0.25, 1, 0.5, 1) forwards 0.3s;
+}
+
+.fade-in.visible .vision-quote {
+    /* Triggers after the gold divider line finishes growing */
+    animation: slideUpText 0.8s cubic-bezier(0.25, 1, 0.5, 1) forwards 0.8s;
+}
+
+/* ==========================================
+   TABLET VIEW (Up to 768px)
+   ========================================== */
+@media (max-width: 768px) {
+    .vision-section { 
+        padding: 100px 20px; 
+    }
+    
+    .vision-label {
+        font-size: 11px;
+        letter-spacing: 3px;
+    }
+    
+    .vision-title { 
+        font-size: 3rem; /* Scaled down for tablet */
+        margin-bottom: 25px;
+    }
+    
+    .fade-in.visible .vision-divider {
+        height: 35px; /* Slightly shorter line */
+        margin: 15px auto 30px;
+    }
+    
+    .vision-quote { 
+        font-size: 1.5rem; 
+        line-height: 1.6;
+        padding: 0 15px; 
+    }
+}
+
+/* ==========================================
+   MOBILE VIEW (Up to 425px & 320px)
+   ========================================== */
+@media (max-width: 425px) {
+    .vision-section { 
+        padding: 0px; 
+        text-align: left; /* Aligns all text to the left */    }
+    
+    /* Shrink the background glow so it doesn't wash out the text on small screens */
+    .vision-section::before {
+        width: 300px; 
+        height: 300px;
+    }
+    
+    .vision-label {
+        font-size: 14px;
+        letter-spacing: 2px;
+        margin-bottom: 15px;
+    }
+    
+    .vision-title { 
+        font-size: 36px; /* Keeps it prominent but fits the screen */
+        line-height: 1.2;
+        margin-bottom: 10px;
+    }
+    
+    .fade-in.visible .vision-divider {
+        height: 25px; /* Compact line for mobile */
+         margin: 10px 0 0 0;
+    }
+
+    
+    .vision-quote { 
+        font-family: var(--font-body) ;
+        font-size: 18px; /* Readable paragraph size for phones */
+        line-height: 1.5;
+        padding: 0px; 
+    }
+}
+
+
 /* --- 3. FOUNDERS (2-COLUMN LUXURY GRID) --- */
 .founders-section {
     padding: 50px 0;
@@ -228,6 +374,86 @@ ul { list-style: none; }
 /* Reveal Text on Hover */
 .founder-card:hover .founder-role { opacity: 1; transform: translateY(0); }
 .founder-card:hover .founder-name { transform: translateY(0); }
+
+/* ==========================================
+   TABLET VIEW (Up to 992px)
+   ========================================== */
+@media (max-width: 992px) {
+    .founders-grid {
+        gap: 30px; /* Reduce gap between cards */
+    }
+    
+    .founder-card {
+        height: 500px; /* Slightly shorter cards */
+    }
+    
+    .founder-overlay {
+        padding: 30px;
+    }
+}
+
+/* ==========================================
+   MOBILE VIEW (Up to 768px)
+   ========================================== */
+@media (max-width: 768px) {
+    .founders-section {
+        padding: 60px 20px; /* Add side padding */
+    }
+
+    .founders-grid {
+        grid-template-columns: 1fr; /* Stack into 1 single column */
+        gap: 40px;
+    }
+
+    .founder-card {
+        height: 450px; 
+    }
+
+    /* SPECIFIC FONT SIZES REQUESTED */
+    .founder-name {
+        font-size: 36px !important; /* Forces 36px heading */
+        margin-bottom: 5px;
+    }
+
+    .founder-role, 
+    .founder-overlay p {
+        font-size: 18px !important; /* Forces 18px paragraph/role */
+        letter-spacing: 1px;
+        text-transform: capitalize; /* 18px uppercase might be too loud, capitalize looks cleaner */
+    }
+
+    /* TOUCH SCREEN FIX: Show text by default since there is no "hover" on phones */
+    .founder-role {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    .founder-name {
+        transform: translateY(0);
+    }
+    .founder-img {
+        filter: grayscale(0%) brightness(0.8); /* Remove grayscale by default on mobile */
+    }
+}
+
+/* ==========================================
+   SMALL MOBILE VIEW (Up to 425px)
+   ========================================== */
+@media (max-width: 425px) {
+    .founder-card {
+        height: 400px; /* Keep it from taking up the whole screen height */
+    }
+
+    .founder-overlay {
+        padding: 20px;
+    }
+
+    /* Heading remains 36px and paragraph 18px as requested, but we tighten the spacing */
+    .founder-name {
+        line-height: 1.1; 
+    }
+}
+
+
 
 /* --- 4. AWARDS (VERTICAL LIST) --- */
 /* SECTION CONTAINER */
@@ -393,7 +619,7 @@ ul { list-style: none; }
     @media (max-width: 425px) {
         .awards-recognition-section { padding: 60px 0; }
         .awards-heading { font-size: 28px; margin-bottom: 40px; }
-        .awards-container { padding: 0 15px; }
+        .awards-container { padding: 0 10px; }
         .awards-grid { gap: 30px 10px; }
 
         .mock-forbes-main { font-size: 22px; }
@@ -553,123 +779,6 @@ ul { list-style: none; }
         .careers-desc { font-size: 16px; }
     }
 
-/* SECTION CONTAINER */
-    .why-velvet {
-        padding: 140px 0;
-        background-color: var(--velvet-bg);
-        position: relative;
-    }
-
-    .velvet-container {
-        max-width: 1300px;
-        margin: 0 auto;
-        padding: 0 40px;
-    }
-
-    /* --- TYPING HEADING (50px) --- */
-    .velvet-heading {
-        display: block;
-        width: fit-content;
-        margin: 0 auto 90px; /* Centered */
-        
-        color: var(--gold);
-        font-family: var(--font-heading);
-        font-size: 50px; /* REQUESTED SIZE */
-        line-height: 1.2;
-        text-transform: uppercase;
-        letter-spacing: 2px;
-        
-        /* Typing Essentials */
-        overflow: hidden;
-        white-space: nowrap;
-        border-right: 4px solid var(--gold);
-        
-        animation: 
-            typeVelvet 3s steps(30, end) forwards,
-            blinkVelvet .75s step-end infinite;
-    }
-
-    @keyframes typeVelvet { from { width: 0 } to { width: 100% } }
-    @keyframes blinkVelvet { from, to { border-color: transparent } 50% { border-color: var(--gold); } }
-
-    /* --- GRID --- */
-    .velvet-grid {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        gap: 40px;
-    }
-
-    /* --- CARD ITEM --- */
-    .velvet-card {
-        background: var(--velvet-card);
-        padding: 60px 40px;
-        text-align: left; /* Editorial alignment */
-        border: 1px solid rgba(255, 255, 255, 0.05);
-        transition: all 0.5s ease;
-        position: relative;
-        overflow: hidden;
-    }
-
-    /* Hover: Lighter BG + Gold Border Bottom */
-    .velvet-card:hover {
-        background: #141414;
-        transform: translateY(-10px);
-        border-bottom-color: var(--gold);
-        box-shadow: 0 20px 60px rgba(0,0,0,0.8);
-    }
-
-    /* --- GOLD STRIP ACCENT (Top Corner) --- */
-    .velvet-card::before {
-        content: '';
-        position: absolute;
-        top: 0; left: 0;
-        width: 0%; height: 3px;
-        background: var(--gold);
-        transition: width 0.5s ease;
-    }
-    .velvet-card:hover::before {
-        width: 100%;
-    }
-
-    /* --- ICON --- */
-    .velvet-icon {
-        font-size: 40px;
-        color: rgba(255, 255, 255, 0.2); /* Subtle Initally */
-        margin-bottom: 30px;
-        transition: 0.5s ease;
-    }
-    
-    .velvet-card:hover .velvet-icon {
-        color: var(--gold);
-        transform: scale(1.1);
-        text-shadow: 0 0 20px rgba(212, 175, 55, 0.4);
-    }
-
-    /* --- TITLE --- */
-    .velvet-title {
-        font-family: var(--font-heading);
-        font-size: 28px;
-        color: var(--white);
-        margin-bottom: 20px;
-        letter-spacing: 1px;
-    }
-
-    /* --- DESCRIPTION (18px) --- */
-    .velvet-desc {
-        font-family: var(--font-body);
-        font-size: 18px; /* REQUESTED SIZE */
-        line-height: 1.7;
-        color: var(--gray);
-        transition: color 0.3s;
-    }
-    .velvet-card:hover .velvet-desc { color: #d4d4d4; }
-
-    /* RESPONSIVE */
-    @media (max-width: 992px) {
-        .velvet-grid { grid-template-columns: 1fr; gap: 40px; }
-        .velvet-heading { font-size: 36px; white-space: normal; width: 100%; border: none; text-align: center; animation: none; }
-        .velvet-card { text-align: center; }
-    }
 /* --- SECTION CONTAINER --- */
     .invest-dubai-section {
         background-color: #ffffff; 
@@ -1111,4 +1220,101 @@ ul { list-style: none; }
     @media (max-width: 768px) {
         .invest-main-heading { font-size: 40px; }
         .benefit-card { flex-direction: column; gap: 20px; padding: 25px; }
+    }
+
+    /* ==========================================
+       RESPONSIVE: TABLET VIEW (Up to 1024px)
+       ========================================== */
+    @media (max-width: 1024px) {
+        .invest-reasons-section {
+            padding: 100px 0;
+        }
+        .invest-reasons-container { 
+            flex-direction: column; 
+            gap: 50px; 
+        }
+        .invest-left-sticky {
+            position: relative; /* Disable sticky on tablets/mobile */
+            top: 0;
+            width: 100%;
+            height: 450px; /* Shorter image height */
+            min-height: auto;
+        }
+    }
+
+    /* ==========================================
+       RESPONSIVE: MOBILE VIEW (Up to 768px)
+       ========================================== */
+    @media (max-width: 768px) {
+        .invest-reasons-section {
+            padding: 80px 0;
+        }
+        .invest-reasons-container {
+            padding: 0 20px;
+            gap: 40px;
+        }
+        .invest-left-sticky {
+            height: 350px;
+        }
+        .invest-overlay {
+            padding: 40px 30px;
+        }
+        .invest-main-heading { 
+            font-size: 42px; 
+        }
+        .benefit-card { 
+            flex-direction: column; /* Stacks icon above text */
+            gap: 15px; 
+            padding: 25px; 
+        }
+        .benefit-icon {
+            font-size: 30px; /* Slightly smaller icon */
+        }
+    }
+
+    /* ==========================================
+       RESPONSIVE: SMALL MOBILE VIEW (Up to 425px & 320px)
+       ========================================== */
+    @media (max-width: 425px) {
+        .invest-reasons-section {
+            padding: 60px 0;
+        }
+        .invest-reasons-container {
+            padding: 0 15px; /* Maximum screen usage */
+            gap: 30px;
+        }
+        
+        .invest-left-sticky {
+            height: 300px; /* Prevents the image from taking up the whole phone screen */
+        }
+        .invest-overlay {
+            padding: 30px 20px;
+        }
+        
+        .invest-pre-heading {
+            font-size: 12px;
+            letter-spacing: 2px;
+            margin-bottom: 5px;
+        }
+        .invest-main-heading { 
+            font-size: 36px; /* perfectly matches your other mobile sections */
+        }
+
+        .invest-right-list {
+            gap: 20px; /* Tighter spacing between cards */
+            padding-top: 0;
+        }
+
+        .benefit-card { 
+            padding: 20px; 
+        }
+        .benefit-content h3 { 
+            font-size: 22px; 
+            margin-bottom: 8px;
+        }
+        .benefit-content p, 
+        .benefit-content ul { 
+            font-size: 16px; /* Slightly scaled down from 18px so it doesn't look squished on a 320px screen */
+            line-height: 1.5; 
+        }
     }

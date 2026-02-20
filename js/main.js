@@ -296,3 +296,14 @@ document.addEventListener("DOMContentLoaded", function() {
             observer.observe(el);
         });
     });
+
+    // video speed of about section
+    document.addEventListener("DOMContentLoaded", function() {
+        // Find the background video element
+        const bgVideo = document.querySelector('.awards-video-bg');
+        
+        // Check if the video exists, then slow it down
+        if (bgVideo) {
+            bgVideo.playbackRate = 0.2; // Change this number to adjust speed (0.5 = 50% speed)
+        }
+    });

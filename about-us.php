@@ -18,18 +18,21 @@
     </div>
 </section>
 
+<!-- vision section -->
 <section class="vision-section">
     <div class="container fade-in">
         
         <div class="vision-header">
-            <span class="vision-label">Our Philosophy</span>
-            <h2 class="vision-title">The Art of Living</h2>
+            <span class="vision-label">About Us</span>
+            <h2 class="vision-title">  Our Vision & Philosophy </h2>
             <div class="vision-divider"></div>
         </div>
 
         <p class="vision-quote">
-            "We are not just building structures; we are crafting the backdrop for your life's most memorable moments. 
-            <span class="gold-highlight">Excellence is our only currency.</span>"
+            We believe that every space tells a story. Our mission is to create timeless environments 
+            that reflect elegance, functionality, and purpose. We don’t just design structures — 
+            we shape experiences that inspire growth, comfort, and success.
+            <span class="gold-highlight">Excellence, integrity, and innovation define everything we create.</span>"
         </p>
 
     </div>
@@ -80,7 +83,7 @@
 <section class="awards-recognition-section">
     
     <video class="awards-video-bg" autoplay loop muted playsinline>
-        <source src="video/" type="video/mp4">
+        <source src="video/GettyImages-1309566975.mp4" type="video/mp4">
         Your browser does not support the video tag.
     </video>
 
@@ -179,41 +182,7 @@
 
     </div>
 </section>
-<!-- why -->
-<section class="why-velvet">
-    <div class="velvet-container">
-        
-        <h2 class="velvet-heading">Why Choose Quadra</h2>
 
-        <div class="velvet-grid">
-            
-            <div class="velvet-card">
-                <div class="velvet-icon"><i class="fas fa-key"></i></div>
-                <h3 class="velvet-title">Priority Access</h3>
-                <p class="velvet-desc">
-                    Secure the most sought-after units before the public launch. We provide exclusive entry to Dubai's premier off-plan developments.
-                </p>
-            </div>
-
-            <div class="velvet-card">
-                <div class="velvet-icon"><i class="fas fa-chart-area"></i></div>
-                <h3 class="velvet-title">Yield Maximization</h3>
-                <p class="velvet-desc">
-                    Our analysts identify high-growth zones to ensure your portfolio delivers superior capital appreciation and rental returns.
-                </p>
-            </div>
-
-            <div class="velvet-card">
-                <div class="velvet-icon"><i class="fas fa-star"></i></div>
-                <h3 class="velvet-title">Luxury Service</h3>
-                <p class="velvet-desc">
-                    From legal processing to key handover, experience a seamless, white-glove journey tailored to the global investor.
-                </p>
-            </div>
-
-        </div>
-    </div>
-</section>
 
 <!-- what to look  -->
 <section class="dubai-split-section projects-section">
