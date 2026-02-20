@@ -160,6 +160,7 @@
 
     </div>
 </section>
+<!-- why -->
 <section class="why-velvet">
     <div class="velvet-container">
         
@@ -195,7 +196,69 @@
     </div>
 </section>
 
+<!-- what to look  -->
+<section class="dubai-split-section projects-section">
+    <div class="dubai-container">
+        
+        <div class="future-card fade-in">
+            <span class="future-sub">What to look forward in</span>
+            <h2 class="future-title">DUBAI</h2>
+            <span class="future-post">For the next 50 years?</span>
+        </div>
 
+        <div class="projects-content fade-in" style="transition-delay: 0.2s;">
+            <h3 class="projects-header">Other Notable Projects</h3>
+            <div class="projects-divider"></div>
+
+            <div class="projects-list">
+                
+                <div class="project-item">
+                    <div class="project-icon"><i class="fas fa-handshake"></i></div>
+                    <div class="project-text">
+                        <h4>China</h4>
+                        <p>To invest $3.4 B to build 60 M sq.ft. operation to host Chinese products for shipping around the world.</p>
+                    </div>
+                </div>
+
+                <div class="project-item">
+                    <div class="project-icon"><i class="fas fa-hands-holding-heart"></i></div>
+                    <div class="project-text">
+                        <h4>Healthcare</h4>
+                        <p>Highly developed healthcare infrastructure to support a growing global population.</p>
+                    </div>
+                </div>
+
+                <div class="project-item">
+                    <div class="project-icon"><i class="fab fa-bitcoin"></i></div>
+                    <div class="project-text">
+                        <h4>Blockchain</h4>
+                        <p>Dubai would be the first Government to have all of its transactions via Blockchain.</p>
+                    </div>
+                </div>
+
+                <div class="project-item">
+                    <div class="project-icon"><i class="fas fa-microchip"></i></div>
+                    <div class="project-text">
+                        <h4>Technology Innovation</h4>
+                        <p>Artificial Intelligence to reduce accidents, minimize chronic diseases and reduce cost of education.</p>
+                    </div>
+                </div>
+
+                <div class="project-item">
+                    <div class="project-icon"><i class="fas fa-city"></i></div>
+                    <div class="project-text">
+                        <h4>Smart Dubai Initiative</h4>
+                        <p>100 smart initiatives and more than 1000 smart services transforming the city landscape.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!-- career -->
 <section class="careers-premium-section" id="careers-section">
     
     <div class="careers-bg"></div>
