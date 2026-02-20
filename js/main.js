@@ -171,3 +171,82 @@ document.addEventListener('DOMContentLoaded', () => {
         observer.observe(footer);
     }
 });
+
+
+//About page javascript
+// Intersection Observer for Fade In Animation
+document.addEventListener("DOMContentLoaded", function() {
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('visible');
+            }
+        });
+    }, { threshold: 0.1 });
+
+    document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+});
+
+document.addEventListener("DOMContentLoaded", function() {
+        const targetSection = document.getElementById('invest-section');
+
+        // Check if the browser supports IntersectionObserver
+        if ('IntersectionObserver' in window) {
+            const observerOptions = {
+                root: null,
+                rootMargin: '0px',
+                threshold: 0.1 // Triggers as soon as 10% of the section is visible
+            };
+
+            const observer = new IntersectionObserver((entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        // Add the class to the parent section
+                        entry.target.classList.add('is-visible');
+                        // Stop observing once the animation has fired
+                        observer.unobserve(entry.target); 
+                    }
+                });
+            }, observerOptions);
+
+            if (targetSection) {
+                observer.observe(targetSection);
+            }
+        } else {
+            // Fallback for very old browsers: just show the content immediately
+            if (targetSection) {
+                targetSection.classList.add('is-visible');
+            }
+        }
+    });
+
+    //career section 
+    document.addEventListener("DOMContentLoaded", function() {
+        const careersSection = document.getElementById('careers-section');
+
+        if ('IntersectionObserver' in window) {
+            const observerOptions = {
+                root: null,
+                rootMargin: '0px',
+                threshold: 0.2 // Triggers when 20% of the section is visible
+            };
+
+            const observer = new IntersectionObserver((entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('is-visible');
+                        observer.unobserve(entry.target); 
+                    }
+                });
+            }, observerOptions);
+
+            if (careersSection) {
+                observer.observe(careersSection);
+            }
+        } else {
+            // Fallback for older browsers
+            if (careersSection) {
+                careersSection.classList.add('is-visible');
+            }
+        }
+    }); 

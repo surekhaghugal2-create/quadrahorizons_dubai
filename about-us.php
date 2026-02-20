@@ -1,210 +1,216 @@
 <?php include 'header.php'; ?>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;800&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
+
 <link rel="stylesheet" href="css/about.css">
 
-    <section class="about-hero-section">
-        <video autoplay muted loop playsinline class="about-hero-video">
+<section class="about-hero">
+    <div class="hero-bg">
+        <video autoplay muted loop playsinline>
             <source src="video/Dubai_Real_Estate_Video_Generated.mp4" type="video/mp4">
         </video>
-        <div class="about-hero-overlay"></div>
-        
-        <div class="about-hero-content reveal">
-            <h1>The Quadra Standard</h1>
-            <div class="about-hero-line"></div>
-            <p>Where Innovation Meets Elegance</p>
-        </div>
-    </section>
-
-    <section class="about-leaders-section reveal">
-        <div class="about-leaders-header">
-            <h2>About Us</h2>
-            <p>An off-plan property is a building or a construction project that hasn’t been built or completed yet.</p>
-        </div>
-
-        <div class="about-leaders-grid">
-            
-            <div class="about-leader-card">
-                <div class="about-leader-img">
-                    <img src="image/omar.png" alt="Omar Alsayed">
-                    <div class="about-leader-overlay"><i class="fab fa-linkedin"></i></div>
-                </div>
-                <div class="about-leader-info">
-                    <span class="about-leader-role">Founder & Chairman</span>
-                    <h3 class="about-leader-name">OMAR ALSAYED</h3>
-                </div>
-            </div>
-
-            <div class="about-leader-card">
-                <div class="about-leader-img">
-                    <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=600&q=80" alt="Yasin Mulla Ali">
-                    <div class="about-leader-overlay"><i class="fab fa-linkedin"></i></div>
-                </div>
-                <div class="about-leader-info">
-                    <span class="about-leader-role">Founder & Chairman</span>
-                    <h3 class="about-leader-name">YASIN MULLA ALI</h3>
-                </div>
-            </div>
-
-            <div class="about-leader-card">
-                <div class="about-leader-img">
-                    <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=600&q=80" alt="Chakib Chami">
-                    <div class="about-leader-overlay"><i class="fab fa-linkedin"></i></div>
-                </div>
-                <div class="about-leader-info">
-                    <span class="about-leader-role">Founder & Chairman</span>
-                    <h3 class="about-leader-name">CHAKIB CHAMI</h3>
-                </div>
-            </div>
-
-            <div class="about-leader-card">
-                <div class="about-leader-img">
-                    <img src="image/IMG_0070.JPG.jpeg" alt="Khaled Alblooshi">
-                    <div class="about-leader-overlay"><i class="fab fa-linkedin"></i></div>
-                </div>
-                <div class="about-leader-info">
-                    <span class="about-leader-role">Founder & Chairman</span>
-                    <h3 class="about-leader-name">KHALED ALBLOOSHI</h3>
-                </div>
-            </div>
-
-        </div>
-    </section>
-
-    <section class="about-mission-section reveal">
-        <div class="about-mission-box">
-            <span class="about-quote-mark">“</span>
-            <p class="about-mission-text">
-                We don't just sell properties; we curate lifestyles. Quadra Horizon bridges the gap between dream and reality using data-driven insights and an unwavering commitment to luxury.
-            </p>
-            <div class="about-quoter-name">- The Founders</div>
-        </div>
-    </section>
-    
-    <section class="about-awards-section">
-        <div class="about-awards-header reveal">
-            <h2>Excellence <span>Recognized</span></h2>
-            <p>Honoring our commitment to redefining luxury living.</p>
-        </div>
-
-        <div class="about-awards-grid">
-            
-            <div class="about-award-card reveal" style="transition-delay: 0.1s">
-                <div class="about-award-icon"><i class="fas fa-trophy"></i></div>
-                <span class="about-award-year">2025</span>
-                <h3>Forbes Middle East</h3>
-                <p>Real Estate Agency of the Year</p>
-                <div class="about-hover-border"></div>
-            </div>
-
-            <div class="about-award-card reveal" style="transition-delay: 0.2s">
-                <div class="about-award-icon"><i class="fas fa-star"></i></div>
-                <span class="about-award-year">2024</span>
-                <h3>Arabian Property Awards</h3>
-                <p>Best Luxury Portfolio</p>
-                <div class="about-hover-border"></div>
-            </div>
-
-            <div class="about-award-card reveal" style="transition-delay: 0.3s">
-                <div class="about-award-icon"><i class="fas fa-medal"></i></div>
-                <span class="about-award-year">2023</span>
-                <h3>Gulf Business Awards</h3>
-                <p>Excellence in Service</p>
-                <div class="about-hover-border"></div>
-            </div>
-
-            <div class="about-award-card reveal" style="transition-delay: 0.4s">
-                <div class="about-award-icon"><i class="fas fa-globe"></i></div>
-                <span class="about-award-year">2022</span>
-                <h3>International Design</h3>
-                <p>Best Website UX</p>
-                <div class="about-hover-border"></div>
-            </div>
-
-        </div>
-    </section>
-
-    <section class="about-lux-section">
-        <div class="about-lux-header reveal">
-            <h2>Luxury Collections</h2>
-        </div>
-        <div class="about-lux-grid">
-            <div class="about-lux-card reveal">
-                <div class="about-lux-img">
-                    <img src="https://images.unsplash.com/photo-1600596542815-e328d4de4bf7?auto=format&fit=crop&w=800&q=80" alt="Villa">
-                </div>
-                <div class="about-lux-label">
-                    <h4>Hillcrest Villas</h4>
-                    <p>Exclusive Collection</p>
-                </div>
-            </div>
-            <div class="about-lux-card reveal" style="transition-delay: 0.2s">
-                <div class="about-lux-img">
-                    <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=800&q=80" alt="Heights">
-                </div>
-                <div class="about-lux-label">
-                    <h4>Horizon Heights</h4>
-                    <p>Skyline Apartments</p>
-                </div>
-            </div>
-            <div class="about-lux-card reveal" style="transition-delay: 0.4s">
-                <div class="about-lux-img">
-                    <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=80" alt="Views">
-                </div>
-                <div class="about-lux-label">
-                    <h4>Waterfront Views</h4>
-                    <p>Luxury Living</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="about-news-section reveal" id="newsletter-force">
-        <div class="about-news-container">
-            <div class="about-news-content">
-                <span class="about-sub-gold">The Inner Circle</span>
-                <h2>Unlock Exclusive <span>Access</span></h2>
-                <p>Be the first to receive off-market listings, VIP launch invitations, and Dubai market insights directly to your inbox.</p>
-                
-                <form class="about-news-form">
-                    <div class="about-input-group">
-                        <input type="email" placeholder="Your Email Address" required>
-                        <button type="submit" class="about-news-btn">SUBSCRIBE</button>
-                    </div>
-                </form>
-                
-                <p class="about-privacy-note">We respect your privacy. Unsubscribe at any time.</p>
-            </div>
-        </div>
-    </section>
-
-
-    <section class="careers-section-new reveal">
-    <div class="careers-bg-new">
-        <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1600&q=80" alt="Building Architecture">
     </div>
-    
-    <div class="careers-overlay-new"></div>
-
-    <div class="careers-container-new">
-        <div class="careers-text-wrapper">
-            <h2 class="static-text">We are looking for</h2>
-            
-            <div class="sliding-text-container">
-                <span class="sliding-word">Visionaries</span>
-                <span class="sliding-word">Innovators</span>
-                <span class="sliding-word">Leaders</span>
-                <span class="sliding-word">Creators</span>
-            </div>
-        </div>
-
-        <p class="careers-desc">
-            Join a team that is redefining the skyline of Dubai. We offer more than a job; we offer a legacy. Explore opportunities across Sales, Marketing, and Strategy.
-        </p>
-
-        <a href="#" class="careers-btn-new">
-            <span>View Openings</span>
-            <div class="btn-line"></div>
-        </a>
+    <div class="hero-overlay"></div>
+    <div class="hero-content fade-in">
+        <p class="hero-subtitle">The Quadra Standard</p>
+        <h1 class="hero-title">Timeless<br>Elegance</h1>
     </div>
 </section>
+
+<section class="vision-section">
+    <div class="container fade-in">
+        
+        <div class="vision-header">
+            <span class="vision-label">Our Philosophy</span>
+            <h2 class="vision-title">The Art of Living</h2>
+            <div class="vision-divider"></div>
+        </div>
+
+        <p class="vision-quote">
+            "We are not just building structures; we are crafting the backdrop for your life's most memorable moments. 
+            <span class="gold-highlight">Excellence is our only currency.</span>"
+        </p>
+
+    </div>
+</section>
+
+<section class="founders-section">
+    <div class="container">
+        <span class="section-label fade-in">Leadership</span>
+        <div class="founders-grid">
+            
+            <div class="founder-card fade-in">
+                <img src="image/omar.png" class="founder-img" alt="Omar Alsayed">
+                <div class="founder-overlay">
+                    <span class="founder-role">Founder & Chairman</span>
+                    <h3 class="founder-name">Omar Alsayed</h3>
+                </div>
+            </div>
+
+            <div class="founder-card fade-in">
+                <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&w=800&q=80" class="founder-img" alt="Yasin Mulla">
+                <div class="founder-overlay">
+                    <span class="founder-role">Founder & Chairman</span>
+                    <h3 class="founder-name">Yasin Mulla Ali</h3>
+                </div>
+            </div>
+
+            <div class="founder-card fade-in">
+                <img src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&fit=crop&w=800&q=80" class="founder-img" alt="Chakib Chami">
+                <div class="founder-overlay">
+                    <span class="founder-role">Founder & Chairman</span>
+                    <h3 class="founder-name">Chakib Chami</h3>
+                </div>
+            </div>
+
+            <div class="founder-card fade-in">
+                <img src="image/IMG_0070.JPG.jpeg" class="founder-img" alt="Khaled Alblooshi">
+                <div class="founder-overlay">
+                    <span class="founder-role">Founder & Chairman</span>
+                    <h3 class="founder-name">Khaled Alblooshi</h3>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+<section class="awards-section">
+    <div class="container">
+        
+        <span class="section-label">Awards & Recognition</span>
+        
+        <div class="awards-list">
+            
+            <div class="award-item">
+                <div class="award-bg">
+                    <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1600&q=80" alt="Building">
+                </div>
+                
+                <div class="award-content">
+                    <div class="award-left">
+                        <span class="award-year">2025</span>
+                        <h3 class="award-title">Forbes Middle East - Agency of the Year</h3>
+                    </div>
+                    <div class="award-icon">
+                        <i class="fas fa-arrow-right"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="award-item">
+                <div class="award-bg">
+                    <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&w=1600&q=80" alt="Luxury Interior">
+                </div>
+
+                <div class="award-content">
+                    <div class="award-left">
+                        <span class="award-year">2024</span>
+                        <h3 class="award-title">Arabian Property Awards - Best Luxury Portfolio</h3>
+                    </div>
+                    <div class="award-icon">
+                        <i class="fas fa-arrow-right"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="award-item">
+                <div class="award-bg">
+                    <img src="https://images.unsplash.com/photo-1512453979798-5ea904ac6605?auto=format&fit=crop&w=1600&q=80" alt="Skyline">
+                </div>
+
+                <div class="award-content">
+                    <div class="award-left">
+                        <span class="award-year">2023</span>
+                        <h3 class="award-title">Gulf Business - Excellence in Service</h3>
+                    </div>
+                    <div class="award-icon">
+                        <i class="fas fa-arrow-right"></i>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+<!-- why section  -->
+<section class="invest-dubai-section" id="invest-section">
+    <div class="invest-container">
+        
+        <div class="invest-image-wrapper">
+            <img src="image/WhatsApp Image 2026-02-12 at 3.03.48 PM (1).jpeg" alt="Burj Al Arab, Dubai" class="invest-image">
+        </div>
+
+        <div class="invest-content">
+            <span class="invest-subtitle invest-anim">Why Invest In</span>
+            
+            <h2 class="invest-title invest-anim delay-1">DUBAI?</h2>
+            
+            <div class="invest-text">
+                <p class="invest-anim delay-2">
+                    Dubai is a fast-growing cosmopolitan city with a thriving economy. It is a prominent tourist destination and a major hub for international investors.
+                </p>
+                <p class="invest-anim delay-3">
+                    These factors make Dubai an attractive investment destination particularly for real estate.
+                </p>
+            </div>
+        </div>
+
+    </div>
+</section>
+<section class="why-velvet">
+    <div class="velvet-container">
+        
+        <h2 class="velvet-heading">Why Choose Quadra</h2>
+
+        <div class="velvet-grid">
+            
+            <div class="velvet-card">
+                <div class="velvet-icon"><i class="fas fa-key"></i></div>
+                <h3 class="velvet-title">Priority Access</h3>
+                <p class="velvet-desc">
+                    Secure the most sought-after units before the public launch. We provide exclusive entry to Dubai's premier off-plan developments.
+                </p>
+            </div>
+
+            <div class="velvet-card">
+                <div class="velvet-icon"><i class="fas fa-chart-area"></i></div>
+                <h3 class="velvet-title">Yield Maximization</h3>
+                <p class="velvet-desc">
+                    Our analysts identify high-growth zones to ensure your portfolio delivers superior capital appreciation and rental returns.
+                </p>
+            </div>
+
+            <div class="velvet-card">
+                <div class="velvet-icon"><i class="fas fa-star"></i></div>
+                <h3 class="velvet-title">Luxury Service</h3>
+                <p class="velvet-desc">
+                    From legal processing to key handover, experience a seamless, white-glove journey tailored to the global investor.
+                </p>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+<section class="careers-premium-section" id="careers-section">
+    
+    <div class="careers-bg"></div>
+    
+    <div class="careers-glass-card">
+        <span class="careers-label">Careers at Quadra</span>
+        <h2 class="careers-title">Join the Elite</h2>
+        <p class="careers-desc">
+            We are looking for individuals who refuse to settle for the ordinary. 
+            If you have the drive to redefine luxury real estate in Dubai, we have the platform.
+        </p>
+        <a href="contact-us.php" class="btn-luxury-apply">Apply Now</a>
+    </div>
+
+</section>
+<script src="js/about.js"></script>
 
 <?php include 'footer.php'; ?>
