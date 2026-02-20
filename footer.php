@@ -38,7 +38,7 @@
 
         <div class="split-col-right">
             <div class="split-form-container">
-                <form class="modern-form">
+                <form class="modern-form" action="send-mail.php" method="POST">
 
                     <div class="form-group">
                         <input type="text" required placeholder=" ">
