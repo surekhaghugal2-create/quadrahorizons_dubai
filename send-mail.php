@@ -22,7 +22,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $mail->Host       = 'smtp.hostinger.com';   // Hostinger SMTP
         $mail->SMTPAuth   = true;
         $mail->Username   = 'info@quadrahorizons.com'; // Your domain email
-        $mail->Password   = 'YOUR_EMAIL_PASSWORD';     // Email password
+        $mail->Password   = 'QuadraAlsayed@123';     // Email password
         $mail->SMTPSecure = 'tls';
         $mail->Port       = 587;
 
