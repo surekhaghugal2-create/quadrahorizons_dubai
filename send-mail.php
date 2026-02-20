@@ -53,7 +53,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
    
 
     // Create email content
-    $to = "surekhaghugal2@gmail.com";
+    $to = "info@quadrahorizons.com";
     $subject = "New Contact Form Submission";
     $body = "Name: $name\nEmail: $email\nContact: $contact";
 

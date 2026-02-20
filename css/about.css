@@ -411,10 +411,9 @@ ul { list-style: none; }
         -webkit-backdrop-filter: blur(12px);
         border: 1px solid rgba(212, 175, 55, 0.3); /* Subtle gold border */
         padding: 80px 60px;
-        max-width: 850px;
         text-align: center;
         box-shadow: 0 30px 60px rgba(0, 0, 0, 0.5);
-        
+        width: 60%;
         /* Initial Animation State */
         opacity: 0;
         transform: translateY(50px) scale(0.95);
@@ -751,4 +750,135 @@ ul { list-style: none; }
         .invest-content { padding-right: 0; }
         .invest-image-wrapper { height: 400px; }
         .invest-title { font-size: 50px; }
+    }
+
+    /* what to look  */
+    /* ==========================================
+       SECTION 2: FUTURE & NOTABLE PROJECTS
+       ========================================== */
+    .projects-section {
+        background-color: var(--bg-panel);
+        border-top: 1px solid var(--border-color);
+    }
+
+    /* Left Side: Image with Text Overlay */
+    .future-card {
+        position: relative;
+        width: 100%;
+        height: 700px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding: 40px;
+        background: linear-gradient(to bottom, rgba(5,5,5,0.7), rgba(5,5,5,0.9)), 
+                    url('https://images.unsplash.com/photo-1512453979798-5ea904ac6605?auto=format&fit=crop&w=1600&q=80') center/cover;
+        border: 1px solid var(--border-color);
+    }
+
+    .future-sub {
+        font-family: var(--font-body);
+        font-size: 14px;
+        letter-spacing: 5px;
+        color: var(--white);
+        text-transform: uppercase;
+        margin-bottom: 10px;
+    }
+
+    .future-title {
+        font-family: var(--font-heading);
+        font-size: 90px;
+        color: var(--gold);
+        letter-spacing: 8px;
+        margin: 0;
+        line-height: 1;
+    }
+
+    .future-post {
+        font-family: var(--font-body);
+        font-size: 14px;
+        letter-spacing: 4px;
+        color: var(--white);
+        text-transform: uppercase;
+        margin-top: 15px;
+    }
+
+    /* Right Side: Projects List */
+    .projects-header {
+        font-family: var(--font-heading);
+        font-size: 36px;
+        color: var(--white);
+        margin-bottom: 20px;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+    }
+
+    .projects-divider {
+        width: 100%;
+        height: 1px;
+        background: var(--border-color);
+        margin-bottom: 40px;
+        position: relative;
+    }
+    .projects-divider::after {
+        content: '';
+        position: absolute;
+        left: 0; top: 0;
+        width: 80px; height: 2px;
+        background: var(--gold);
+    }
+
+    .projects-list {
+        display: flex;
+        flex-direction: column;
+        gap: 35px;
+    }
+
+    .project-item {
+        display: flex;
+        align-items: flex-start;
+        gap: 25px;
+        transition: transform 0.3s ease;
+    }
+    .project-item:hover {
+        transform: translateX(10px);
+    }
+
+    .project-icon {
+        font-size: 30px;
+        color: var(--gold);
+        min-width: 40px;
+        text-align: center;
+        margin-top: 5px;
+    }
+
+    .project-text h4 {
+        font-family: var(--font-body);
+        font-size: 18px;
+        color: var(--white);
+        margin-bottom: 8px;
+    }
+
+    .project-text p {
+        font-family: var(--font-body);
+        font-size: 15px;
+        color: var(--gray);
+        line-height: 1.6;
+    }
+
+    /* --- RESPONSIVE --- */
+    @media (max-width: 1024px) {
+        .dubai-container { gap: 40px; }
+        .invest-title { font-size: 60px; }
+        .future-title { font-size: 60px; }
+        .invest-img-wrapper, .future-card { height: 500px; }
+    }
+
+    @media (max-width: 768px) {
+        .dubai-container { grid-template-columns: 1fr; text-align: center; }
+        .invest-img-wrapper, .future-card { height: 400px; }
+        .invest-title { font-size: 50px; }
+        .projects-divider::after { left: 50%; transform: translateX(-50%); }
+        .project-item { text-align: left; } /* Keep list readable */
     }
