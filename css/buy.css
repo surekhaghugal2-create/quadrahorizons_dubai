@@ -390,7 +390,7 @@ body {
 @media (max-width: 768px) {
     /* Adjust font size for mobile specific */
     .section-header h2 {
-        font-size: 40px; 
+        font-size: 36px; 
     }
 }
 
@@ -565,7 +565,7 @@ html {
 
 @media (max-width: 576px) {
   .page-title h1 {
-    font-size: 30px;
+    font-size: 36px;
   }
 
   .page-title p {
@@ -590,7 +590,7 @@ html {
   }
 
   .section-header-buy h2 {
-    font-size: 40px;
+    font-size: 36px;
   }
 
   .section-header-buy p {
@@ -671,11 +671,11 @@ html {
   }
 
   .dark h1 {
-    font-size: 28px;
+    font-size: 36px;
   }
 
   .dark p {
-    font-size: 14px;
+    font-size: 16px;
   }
 }
 
