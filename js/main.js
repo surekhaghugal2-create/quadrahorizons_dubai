@@ -263,3 +263,36 @@ document.addEventListener("DOMContentLoaded", function() {
 
         document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
     });
+
+    // why
+    document.addEventListener("DOMContentLoaded", function() {
+        // Ensures animations fire when elements enter the screen
+        const observer = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                    observer.unobserve(entry.target); 
+                }
+            });
+        }, { threshold: 0.1 }); 
+
+        document.querySelectorAll('.scroll-trigger').forEach(el => {
+            observer.observe(el);
+        });
+    });
+
+    // Award 
+document.addEventListener("DOMContentLoaded", function() {
+        const observer = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible'); 
+                    observer.unobserve(entry.target); 
+                }
+            });
+        }, { threshold: 0.1 }); 
+
+        document.querySelectorAll('.scroll-trigger').forEach(el => {
+            observer.observe(el);
+        });
+    });

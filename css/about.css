@@ -231,148 +231,186 @@ ul { list-style: none; }
 
 /* --- 4. AWARDS (VERTICAL LIST) --- */
 /* SECTION CONTAINER */
-    .awards-section {
-        padding: 100px 0;
-        background: var(--bg-body);
+    .awards-recognition-section {
         position: relative;
-        z-index: 5;
+        padding: 120px 0;
+        background-color: #000; /* Fallback before video loads */
         overflow: hidden;
-    }
-
-    .container {
-        max-width: 1400px;
-        margin: 0 auto;
-        padding: 0 40px;
-    }
-
-    /* --- ANIMATED HEADING (UPDATED) --- */
-    .section-label {
-        display: block;
-        color: var(--gold);
-        font-family: var(--font-heading); /* Changed to Luxury Font */
-        font-size: 50px; /* UPDATED SIZE */
-        line-height: 1.2;
-        text-transform: uppercase;
-        margin-bottom: 60px;
-        opacity: 0;
-        text-align: center;
-        
-        /* Cinematic Reveal Animation */
-        animation: cinematicReveal 1.5s cubic-bezier(0.25, 1, 0.5, 1) forwards;
-    }
-
-    @keyframes cinematicReveal {
-        0% {
-            opacity: 0;
-            transform: translateY(40px);
-            letter-spacing: 0px;
-            filter: blur(10px);
-        }
-        100% {
-            opacity: 1;
-            transform: translateY(0);
-            letter-spacing: 2px; /* Slight expansion */
-            filter: blur(0);
-        }
-    }
-
-    /* --- THE LIST --- */
-    .awards-list {
-        display: flex;
-        flex-direction: column;
-        border-top: 1px solid var(--border);
-    }
-
-    /* --- INDIVIDUAL AWARD ITEM --- */
-    .award-item {
-        position: relative;
-        width: 100%;
-        height: 120px; /* Default Height */
-        border-bottom: 1px solid var(--border);
-        overflow: hidden;
-        cursor: pointer;
-        transition: height 0.6s cubic-bezier(0.25, 1, 0.5, 1);
-        display: flex;
+        height: 70vh;
         align-items: center;
-        group: 1; 
     }
 
-    /* HOVER STATE */
-    .award-item:hover {
-        height: 350px; /* Expanded Height */
+    /* --- BACKGROUND VIDEO --- */
+    .awards-video-bg {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        z-index: 0;
+        pointer-events: none; /* Prevents users from pausing it */
     }
 
-    /* --- BACKGROUND IMAGE --- */
-    .award-bg {
+    /* --- VIDEO OVERLAY (Tint + Diagonal Lines) --- */
+    .awards-video-overlay {
         position: absolute;
         inset: 0;
-        z-index: 0;
-        opacity: 0;
-        transform: scale(1.1);
-        transition: opacity 0.6s ease, transform 6s ease;
-    }
-    
-    .award-bg img {
-        width: 100%; height: 100%; object-fit: cover;
-        filter: brightness(0.4);
+        z-index: 1;
+        background-color: var(--bg-deep-navy-tint);
+        background-image: 
+            repeating-linear-gradient(45deg, transparent, transparent 150px, var(--diagonal-line) 150px, var(--diagonal-line) 152px),
+            repeating-linear-gradient(-45deg, transparent, transparent 150px, var(--diagonal-line) 150px, var(--diagonal-line) 152px);
     }
 
-    .award-item:hover .award-bg {
-        opacity: 1; transform: scale(1);
-    }
-
-    /* --- CONTENT ROW --- */
-    .award-content {
-        position: relative;
-        z-index: 2;
-        width: 100%;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
+    /* --- CONTENT CONTAINER --- */
+    .awards-container {
+        max-width: 1300px;
+        margin: 0 auto;
         padding: 0 40px;
-        transition: transform 0.6s ease;
+        position: relative;
+        z-index: 2; /* Sits above the video and overlay */
+    }
+
+    /* --- HEADING (50px Playfair Display) --- */
+    .awards-heading {
+        font-family: var(--font-heading);
+        font-size: 50px; 
+        color: var(--white);
+        text-align: center;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        margin: 0 0 80px 0;
+    }
+
+    /* --- LOGOS GRID (Desktop) --- */
+    .awards-grid {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 60px 80px; 
+    }
+
+    .award-logo-item {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: transform 0.4s ease, filter 0.4s ease;
+        filter: brightness(0.9);
     }
     
-    .award-item:hover .award-content { transform: translateY(10px); }
-
-    .award-left { display: flex; align-items: center; gap: 60px; }
-
-    /* YEAR & TITLE */
-    .award-year {
-        font-family: var(--font-body); font-size: 16px; color: var(--gray);
-        transition: color 0.4s;
-    }
-    .award-item:hover .award-year { color: var(--gold); }
-
-    .award-title {
-        font-family: var(--font-heading); font-size: 32px; color: var(--white);
-        margin: 0; transition: 0.4s;
-    }
-    .award-item:hover .award-title { text-shadow: 0 0 20px rgba(0,0,0,0.5); }
-
-    /* ICON */
-    .award-icon {
-        width: 50px; height: 50px;
-        border: 1px solid var(--border); border-radius: 50%;
-        display: flex; align-items: center; justify-content: center;
-        color: var(--gold); font-size: 14px;
-        transition: 0.4s; background: transparent;
+    .award-logo-item:hover {
+        transform: scale(1.05);
+        filter: brightness(1.2);
     }
 
-    .award-item:hover .award-icon {
-        background: var(--gold); color: #000;
-        border-color: var(--gold); transform: rotate(-45deg);
+    /* --- MOCK LOGO DESIGNS --- */
+    .mock-forbes {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        color: var(--white);
+        font-family: var(--font-heading);
+        line-height: 0.8;
+    }
+    .mock-forbes-top {
+        font-family: var(--font-body);
+        font-size: 10px;
+        letter-spacing: 0.5px;
+        margin-right: 2px;
+        margin-bottom: 2px;
+    }
+    .mock-forbes-main { font-size: 45px; font-weight: 700; letter-spacing: -1px; }
+
+    .mock-gulf {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        color: var(--white);
+    }
+    .mock-gulf-icon { font-size: 38px; color: var(--white); opacity: 0.9; }
+    .mock-gulf-text { display: flex; flex-direction: column; line-height: 1.2; }
+    .mock-gulf-top { font-family: var(--font-body); font-size: 14px; font-weight: 400; letter-spacing: 1px; }
+    .mock-gulf-bottom { font-family: var(--font-body); font-size: 18px; font-weight: 600; letter-spacing: 1px; }
+
+    /* ==========================================
+       ANIMATIONS
+       ========================================== */
+    .anim-slide-down {
+        opacity: 0; transform: translateY(-40px);
+        transition: all 1s cubic-bezier(0.25, 1, 0.5, 1);
+    }
+    .anim-fade-up {
+        opacity: 0; transform: translateY(40px);
+        transition: all 0.8s cubic-bezier(0.25, 1, 0.5, 1);
+    }
+    .anim-slide-down.visible,
+    .anim-fade-up.visible {
+        opacity: 1; transform: translate(0, 0);
     }
 
-    /* RESPONSIVE */
+    /* Desktop Delays */
+    .delay-1 { transition-delay: 0.1s; }
+    .delay-2 { transition-delay: 0.2s; }
+    .delay-3 { transition-delay: 0.3s; }
+    .delay-4 { transition-delay: 0.4s; }
+    .delay-5 { transition-delay: 0.5s; }
+    .delay-6 { transition-delay: 0.6s; }
+    .delay-7 { transition-delay: 0.7s; }
+
+    /* ==========================================
+       RESPONSIVE DESIGN (Tablets & Mobile)
+       ========================================== */
+    @media (max-width: 992px) {
+        .awards-heading { font-size: 40px; margin-bottom: 60px; }
+        .awards-grid { gap: 40px 60px; }
+    }
+
     @media (max-width: 768px) {
-        .section-label { font-size: 36px; margin-bottom: 40px; }
-        .award-title { font-size: 20px; }
-        .award-left { gap: 20px; flex-direction: column; align-items: flex-start; }
-        .award-item { height: 140px; padding: 20px 0; }
-        .award-item:hover { height: 300px; }
-    } 
+        .awards-recognition-section { padding: 80px 0; }
+        
+        /* Adjust overlay lines for mobile */
+        .awards-video-overlay {
+            background-image: 
+                repeating-linear-gradient(45deg, transparent, transparent 80px, var(--diagonal-line) 80px, var(--diagonal-line) 81px),
+                repeating-linear-gradient(-45deg, transparent, transparent 80px, var(--diagonal-line) 80px, var(--diagonal-line) 81px);
+        }
+        
+        .awards-container { padding: 0 20px; }
+        .awards-heading { font-size: 32px; margin-bottom: 50px; }
+        .awards-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 40px 15px; }
+        .award-logo-item:last-child { grid-column: span 2; justify-self: center; }
 
+        .mock-forbes-main { font-size: 26px; }
+        .mock-forbes-top { font-size: 8px; }
+        .mock-gulf { gap: 8px; }
+        .mock-gulf-icon { font-size: 22px; }
+        .mock-gulf-top { font-size: 8px; letter-spacing: 0px; }
+        .mock-gulf-bottom { font-size: 11px; letter-spacing: 0px; }
+    }
+
+    @media (max-width: 425px) {
+        .awards-recognition-section { padding: 60px 0; }
+        .awards-heading { font-size: 28px; margin-bottom: 40px; }
+        .awards-container { padding: 0 15px; }
+        .awards-grid { gap: 30px 10px; }
+
+        .mock-forbes-main { font-size: 22px; }
+        .mock-forbes-top { font-size: 7px; margin-bottom: 1px; }
+        .mock-gulf { gap: 6px; }
+        .mock-gulf-icon { font-size: 18px; }
+        .mock-gulf-top { font-size: 7px; }
+        .mock-gulf-bottom { font-size: 9px; }
+
+        .delay-1 { transition-delay: 0.1s; }
+        .delay-2 { transition-delay: 0.15s; }
+        .delay-3 { transition-delay: 0.2s; }
+        .delay-4 { transition-delay: 0.25s; }
+        .delay-5 { transition-delay: 0.3s; }
+        .delay-6 { transition-delay: 0.35s; }
+        .delay-7 { transition-delay: 0.4s; }
+    }
 /* --- 5. CAREERS (SPLIT LAYOUT) --- */
 
     .careers-premium-section {
@@ -881,4 +919,196 @@ ul { list-style: none; }
         .invest-title { font-size: 50px; }
         .projects-divider::after { left: 50%; transform: translateX(-50%); }
         .project-item { text-align: left; } /* Keep list readable */
+    }
+
+    /* --- SECTION CONTAINER --- */
+    .invest-reasons-section {
+        padding: 120px 0;
+        background-color: var(--bg-luxury);
+        position: relative;
+        /* IMPORTANT: Do NOT add overflow: hidden here, or sticky will break! */
+    }
+
+    .invest-reasons-container {
+        max-width: 1400px;
+        margin: 0 auto;
+        padding: 0 40px;
+        display: flex;
+        align-items: flex-start; /* CRITICAL: Allows children to have independent heights for sticky */
+        gap: 80px;
+    }
+
+    /* ==========================================
+       LEFT COLUMN (PERFECTLY STICKY)
+       ========================================== */
+    .invest-left-sticky {
+        flex: 1;
+        position: -webkit-sticky; /* For Safari support */
+        position: sticky;
+        top: 100px; /* Locks 100px from the top of the screen */
+        height: calc(100vh - 120px); /* Takes up screen height minus padding */
+        min-height: 600px; /* Prevents it from getting too small */
+        border-radius: 4px;
+        overflow: hidden;
+    }
+
+    /* Slide Left Animation */
+    .anim-slide-left {
+        opacity: 0;
+        transform: translateX(-40px); 
+        transition: all 1.2s cubic-bezier(0.25, 1, 0.5, 1);
+    }
+    .anim-slide-left.visible {
+        opacity: 1;
+        transform: translateX(0);
+    }
+
+    .invest-image-bg {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        filter: brightness(0.6);
+        transition: transform 10s linear;
+    }
+    .invest-left-sticky:hover .invest-image-bg {
+        transform: scale(1.1);
+    }
+
+    /* Overlay Content inside the image */
+    .invest-overlay {
+        position: absolute;
+        inset: 0;
+        background: linear-gradient(to top, rgba(0,0,0,0.9) 0%, rgba(0,0,0,0.2) 100%);
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        padding: 60px 40px;
+    }
+
+    .invest-pre-heading {
+        font-family: var(--font-body);
+        font-size: 14px;
+        color: var(--gold);
+        letter-spacing: 4px;
+        text-transform: uppercase;
+        margin-bottom: 10px;
+    }
+
+    .invest-main-heading {
+        font-family: var(--font-heading);
+        font-size: 50px; /* REQUESTED SIZE */
+        color: var(--white);
+        line-height: 1.1;
+        margin: 0;
+        text-shadow: 0 10px 30px rgba(0,0,0,0.8);
+    }
+
+    /* ==========================================
+       RIGHT COLUMN (SCROLLING LIST)
+       ========================================== */
+    .invest-right-list {
+        flex: 1.2;
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        padding-top: 20px;
+        padding-bottom: 20px; /* Extra padding so the last item clears nicely */
+    }
+
+    /* Slide Right Animation */
+    .anim-slide-right {
+        opacity: 0;
+        transform: translateX(40px);
+        transition: all 0.8s cubic-bezier(0.25, 1, 0.5, 1);
+    }
+    .anim-slide-right.visible {
+        opacity: 1;
+        transform: translateX(0);
+    }
+
+    /* Benefit Card Styling */
+    .benefit-card {
+        display: flex;
+        align-items: flex-start;
+        gap: 30px;
+        padding: 35px;
+        background: rgba(255, 255, 255, 0.02);
+        border: 1px solid var(--border-color);
+        transition: all 0.4s ease;
+        position: relative;
+        overflow: hidden;
+    }
+
+    .benefit-card:hover {
+        background: rgba(20, 20, 20, 0.9);
+        border-color: var(--gold);
+        transform: translateY(-5px);
+        box-shadow: 0 15px 40px rgba(0,0,0,0.5);
+    }
+
+    .benefit-card::before {
+        content: '';
+        position: absolute;
+        left: 0; top: 0;
+        width: 3px; height: 0%;
+        background: var(--gold);
+        transition: height 0.4s ease;
+    }
+    .benefit-card:hover::before { height: 100%; }
+
+    .benefit-icon {
+        font-size: 35px;
+        color: var(--gold);
+        min-width: 45px;
+        text-align: center;
+        transition: transform 0.4s ease;
+    }
+    .benefit-card:hover .benefit-icon {
+        transform: scale(1.1);
+    }
+
+    .benefit-content h3 {
+        font-family: var(--font-heading); 
+        font-size: 26px; 
+        color: var(--white);
+        margin-bottom: 12px;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+    }
+
+    .benefit-content p, .benefit-content ul {
+        font-family: var(--font-body);
+        font-size: 18px; /* REQUESTED SIZE */
+        color: var(--gray);
+        line-height: 1.6;
+        margin: 0;
+        list-style-type: none;
+        padding: 0;
+    }
+
+    .benefit-content ul li {
+        position: relative;
+        padding-left: 15px;
+        margin-bottom: 5px;
+    }
+    .benefit-content ul li::before {
+        content: '•';
+        color: var(--gold);
+        position: absolute;
+        left: 0;
+    }
+
+    /* --- RESPONSIVE --- */
+    @media (max-width: 1024px) {
+        .invest-reasons-container { flex-direction: column; }
+        .invest-left-sticky {
+            position: relative; /* Disable sticky on tablets/mobile */
+            top: 0;
+            width: 100%;
+            height: 500px;
+        }
+    }
+    @media (max-width: 768px) {
+        .invest-main-heading { font-size: 40px; }
+        .benefit-card { flex-direction: column; gap: 20px; padding: 25px; }
     }

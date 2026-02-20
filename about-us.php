@@ -75,65 +75,84 @@
         </div>
     </div>
 </section>
-<section class="awards-section">
-    <div class="container">
+
+<!-- Award section start  -->
+<section class="awards-recognition-section">
+    
+    <video class="awards-video-bg" autoplay loop muted playsinline>
+        <source src="video/" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+    <div class="awards-video-overlay"></div>
+
+    <div class="awards-container">
         
-        <span class="section-label">Awards & Recognition</span>
-        
-        <div class="awards-list">
+        <h2 class="awards-heading anim-slide-down scroll-trigger">Awards & Recognitions</h2>
+
+        <div class="awards-grid">
             
-            <div class="award-item">
-                <div class="award-bg">
-                    <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1600&q=80" alt="Building">
+            <div class="award-logo-item anim-fade-up delay-1 scroll-trigger">
+                <div class="mock-forbes">
+                    <span class="mock-forbes-top">Middle East</span>
+                    <span class="mock-forbes-main">Forbes</span>
                 </div>
-                
-                <div class="award-content">
-                    <div class="award-left">
-                        <span class="award-year">2025</span>
-                        <h3 class="award-title">Forbes Middle East - Agency of the Year</h3>
-                    </div>
-                    <div class="award-icon">
-                        <i class="fas fa-arrow-right"></i>
+            </div>
+
+            <div class="award-logo-item anim-fade-up delay-2 scroll-trigger">
+                <div class="mock-gulf">
+                    <i class="fas fa-dharmachakra mock-gulf-icon"></i> 
+                    <div class="mock-gulf-text">
+                        <span class="mock-gulf-top">GULF REAL ESTATE</span>
+                        <span class="mock-gulf-bottom">AWARDS™ 2022</span>
                     </div>
                 </div>
             </div>
 
-            <div class="award-item">
-                <div class="award-bg">
-                    <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&w=1600&q=80" alt="Luxury Interior">
+            <div class="award-logo-item anim-fade-up delay-3 scroll-trigger">
+                <div class="mock-forbes">
+                    <span class="mock-forbes-top">Middle East</span>
+                    <span class="mock-forbes-main">Forbes</span>
                 </div>
+            </div>
 
-                <div class="award-content">
-                    <div class="award-left">
-                        <span class="award-year">2024</span>
-                        <h3 class="award-title">Arabian Property Awards - Best Luxury Portfolio</h3>
-                    </div>
-                    <div class="award-icon">
-                        <i class="fas fa-arrow-right"></i>
+            <div class="award-logo-item anim-fade-up delay-4 scroll-trigger">
+                <div class="mock-gulf">
+                    <i class="fas fa-dharmachakra mock-gulf-icon"></i>
+                    <div class="mock-gulf-text">
+                        <span class="mock-gulf-top">GULF REAL ESTATE</span>
+                        <span class="mock-gulf-bottom">AWARDS™ 2022</span>
                     </div>
                 </div>
             </div>
 
-            <div class="award-item">
-                <div class="award-bg">
-                    <img src="https://images.unsplash.com/photo-1512453979798-5ea904ac6605?auto=format&fit=crop&w=1600&q=80" alt="Skyline">
+            <div class="award-logo-item anim-fade-up delay-5 scroll-trigger">
+                <div class="mock-forbes">
+                    <span class="mock-forbes-top">Middle East</span>
+                    <span class="mock-forbes-main">Forbes</span>
                 </div>
+            </div>
 
-                <div class="award-content">
-                    <div class="award-left">
-                        <span class="award-year">2023</span>
-                        <h3 class="award-title">Gulf Business - Excellence in Service</h3>
+            <div class="award-logo-item anim-fade-up delay-6 scroll-trigger">
+                <div class="mock-gulf">
+                    <i class="fas fa-dharmachakra mock-gulf-icon"></i>
+                    <div class="mock-gulf-text">
+                        <span class="mock-gulf-top">GULF REAL ESTATE</span>
+                        <span class="mock-gulf-bottom">AWARDS™ 2022</span>
                     </div>
-                    <div class="award-icon">
-                        <i class="fas fa-arrow-right"></i>
-                    </div>
+                </div>
+            </div>
+
+            <div class="award-logo-item anim-fade-up delay-7 scroll-trigger">
+                <div class="mock-forbes">
+                    <span class="mock-forbes-top">Middle East</span>
+                    <span class="mock-forbes-main">Forbes</span>
                 </div>
             </div>
 
         </div>
     </div>
 </section>
-
 
 <!-- why section  -->
 <section class="invest-dubai-section" id="invest-section">
@@ -205,58 +224,88 @@
             <h2 class="future-title">DUBAI</h2>
             <span class="future-post">For the next 50 years?</span>
         </div>
+     </div>
+</section>
 
-        <div class="projects-content fade-in" style="transition-delay: 0.2s;">
-            <h3 class="projects-header">Other Notable Projects</h3>
-            <div class="projects-divider"></div>
-
-            <div class="projects-list">
-                
-                <div class="project-item">
-                    <div class="project-icon"><i class="fas fa-handshake"></i></div>
-                    <div class="project-text">
-                        <h4>China</h4>
-                        <p>To invest $3.4 B to build 60 M sq.ft. operation to host Chinese products for shipping around the world.</p>
-                    </div>
-                </div>
-
-                <div class="project-item">
-                    <div class="project-icon"><i class="fas fa-hands-holding-heart"></i></div>
-                    <div class="project-text">
-                        <h4>Healthcare</h4>
-                        <p>Highly developed healthcare infrastructure to support a growing global population.</p>
-                    </div>
-                </div>
-
-                <div class="project-item">
-                    <div class="project-icon"><i class="fab fa-bitcoin"></i></div>
-                    <div class="project-text">
-                        <h4>Blockchain</h4>
-                        <p>Dubai would be the first Government to have all of its transactions via Blockchain.</p>
-                    </div>
-                </div>
-
-                <div class="project-item">
-                    <div class="project-icon"><i class="fas fa-microchip"></i></div>
-                    <div class="project-text">
-                        <h4>Technology Innovation</h4>
-                        <p>Artificial Intelligence to reduce accidents, minimize chronic diseases and reduce cost of education.</p>
-                    </div>
-                </div>
-
-                <div class="project-item">
-                    <div class="project-icon"><i class="fas fa-city"></i></div>
-                    <div class="project-text">
-                        <h4>Smart Dubai Initiative</h4>
-                        <p>100 smart initiatives and more than 1000 smart services transforming the city landscape.</p>
-                    </div>
-                </div>
-
+<!-- why -->
+ <section class="invest-reasons-section">
+    <div class="invest-reasons-container">
+        
+        <div class="invest-left-sticky anim-slide-left scroll-trigger">
+            <img src="image/WhatsApp Image 2026-02-12 at 3.03.50 PM (1).jpeg" alt="Museum of the Future, Dubai" class="invest-image-bg">
+            <div class="invest-overlay">
+                <span class="invest-pre-heading">Why Invest In</span>
+                <h2 class="invest-main-heading">DUBAI?</h2>
             </div>
+        </div>
+
+        <div class="invest-right-list">
+            
+            <div class="benefit-card anim-slide-right scroll-trigger">
+                <div class="benefit-icon"><i class="fas fa-chart-line"></i></div>
+                <div class="benefit-content">
+                    <h3>Strong Rental Market</h3>
+                    <p>With high occupancy rates and rental yields.</p>
+                </div>
+            </div>
+
+            <div class="benefit-card anim-slide-right scroll-trigger">
+                <div class="benefit-icon"><i class="fas fa-city"></i></div>
+                <div class="benefit-content">
+                    <h3>World Class Infrastructure</h3>
+                    <p>Including airports, roads, and public transportation.</p>
+                </div>
+            </div>
+
+            <div class="benefit-card anim-slide-right scroll-trigger">
+                <div class="benefit-icon"><i class="fas fa-percent"></i></div>
+                <div class="benefit-content">
+                    <h3>Tax Haven</h3>
+                    <p>Dubai has no income tax.</p>
+                </div>
+            </div>
+
+            <div class="benefit-card anim-slide-right scroll-trigger">
+                <div class="benefit-icon"><i class="fas fa-shield-alt"></i></div>
+                <div class="benefit-content">
+                    <h3>Safe & Stable</h3>
+                    <ul>
+                        <li>Even after the global health crisis in 2020.</li>
+                        <li>Dubai has been ranked the fourth safest city in the world for 2024.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="benefit-card anim-slide-right scroll-trigger">
+                <div class="benefit-icon"><i class="fas fa-coins"></i></div>
+                <div class="benefit-content">
+                    <h3>Property ROI</h3>
+                    <p>High return of investment.</p>
+                </div>
+            </div>
+
+            <div class="benefit-card anim-slide-right scroll-trigger">
+                <div class="benefit-icon"><i class="fas fa-globe"></i></div>
+                <div class="benefit-content">
+                    <h3>Growing Economy</h3>
+                    <p>Driven by tourism, trade and finance.</p>
+                </div>
+            </div>
+
+            <div class="benefit-card anim-slide-right scroll-trigger">
+                <div class="benefit-icon"><i class="fas fa-passport"></i></div>
+                <div class="benefit-content">
+                    <h3>Investor Visa Advantage</h3>
+                    <p>Golden visa is given to property owners/investors.</p>
+                </div>
+            </div>
+
         </div>
 
     </div>
 </section>
+
+
 
 <!-- career -->
 <section class="careers-premium-section" id="careers-section">
