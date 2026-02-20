@@ -45,7 +45,7 @@
    3. SECTIONS HEADERS
    ========================================= */
 .section-header {
-    text-align: center; padding: 50px 20px 60px; position: relative;
+    text-align: center; padding: 50px 20px 30px; position: relative;
 }
 
 .section-header h2 {
@@ -287,7 +287,7 @@
 /* =========================================
    9. FAQ SECTION
    ========================================= */
-.faq-section { padding: 100px 5%; background-color: #0A1120; color: #fff; }
+.faq-section { padding: 0px 5%; background-color: #0A1120; color: #fff; }
 .faq-container { max-width: 900px; margin: 0 auto; border-top: 1px solid rgba(255, 255, 255, 0.1); }
 .faq-item { border-bottom: 1px solid rgba(255, 255, 255, 0.1); overflow: hidden; }
 
@@ -375,6 +375,14 @@
 }
 
 /* =========================================
+   Exclusive Access Section
+   ========================================= */
+   .exclusive-access{
+    padding-top: 80px;
+   }
+
+
+/* =========================================
    12. MOBILE RESPONSIVE
    ========================================= */
 @media (max-width: 992px) {
@@ -409,7 +417,7 @@
 
 /* --- SECTION HEADER (Fixed Fonts) --- */
 .section-header {
-    margin-bottom: 70px;
+    margin-bottom: 0px;
     max-width: 1400px;
     margin-left: auto;
     margin-right: auto;

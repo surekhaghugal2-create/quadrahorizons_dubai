@@ -367,7 +367,9 @@
 </section>
 
 <div class="section-header reveal">
+    <div class="exclusive-access">
     <h2>Exclusive Access</h2>
+    </div>
 </div>
 <div class="events-grid reveal">
     <div class="event-card">
