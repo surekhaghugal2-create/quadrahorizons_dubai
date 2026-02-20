@@ -23,12 +23,12 @@
         
         <div class="vision-header">
             <span class="vision-label">Our Philosophy</span>
-            <h2 class="vision-title">The Art of Living</h2>
+            <h2 class="vision-title">Quadra Horizons Properties</h2>
             <div class="vision-divider"></div>
         </div>
 
         <p class="vision-quote">
-            "We are not just building structures; we are crafting the backdrop for your life's most memorable moments. 
+            "We are not just building structures, we are crafting the backdrop for your life's most memorable moments. 
             <span class="gold-highlight">Excellence is our only currency.</span>"
         </p>
 

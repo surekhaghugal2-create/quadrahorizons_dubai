@@ -15,8 +15,10 @@
 
 <section class="properties-section reveal">
     <div class="section-header">
+        <div class="section-header">
         <h2>Exclusive Listings</h2>
         <p>Discover our curated selection of Dubai's finest properties.</p>
+    </div>
     </div>
 
     <div class="properties-grid">
