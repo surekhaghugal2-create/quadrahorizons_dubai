@@ -8,3 +8,6 @@ Thumbs.db
 
 # XAMPP
 /.htaccess
+
+# *.zip
+property_Zipfiles/
