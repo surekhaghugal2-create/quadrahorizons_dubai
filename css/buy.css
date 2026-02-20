@@ -390,7 +390,7 @@ body {
 @media (max-width: 768px) {
     /* Adjust font size for mobile specific */
     .section-header h2 {
-        font-size: 40px; 
+        font-size: 36px; 
     }
 }
 
@@ -465,5 +465,328 @@ body {
 
   .page-title h1 {
     font-size: 34px;
+  }
+}
+  /* new css added */
+  /* =========================================
+   GLOBAL RESPONSIVE TYPOGRAPHY
+========================================= */
+
+html {
+  font-size: 16px;
+}
+
+@media (max-width: 1400px) {
+  html { font-size: 15px; }
+}
+
+@media (max-width: 1200px) {
+  html { font-size: 14.5px; }
+}
+
+@media (max-width: 992px) {
+  html { font-size: 14px; }
+}
+
+@media (max-width: 768px) {
+  html { font-size: 13.5px; }
+}
+
+@media (max-width: 576px) {
+  html { font-size: 13px; }
+}
+
+
+/* =========================================
+   HEADER RESPONSIVE
+========================================= */
+
+@media (max-width: 992px) {
+  .header {
+    padding: 18px 25px;
+  }
+}
+
+@media (max-width: 576px) {
+  .header {
+    padding: 15px 20px;
+  }
+
+  .logo {
+    font-size: 14px;
+  }
+
+  .menu {
+    font-size: 22px;
+  }
+}
+
+
+/* =========================================
+   HERO SECTION
+========================================= */
+
+@media (max-width: 992px) {
+  .hero img {
+    height: 65vh;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero img {
+    height: 55vh;
+  }
+}
+
+@media (max-width: 576px) {
+  .hero img {
+    height: 45vh;
+  }
+}
+
+
+/* =========================================
+   PAGE TITLE SECTION
+========================================= */
+
+@media (max-width: 992px) {
+  .page-title {
+    padding: 60px 20px;
+  }
+
+  .page-title h1 {
+    font-size: 40px;
+  }
+
+  .page-title p {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 576px) {
+  .page-title h1 {
+    font-size: 36px;
+  }
+
+  .page-title p {
+    font-size: 14px;
+  }
+}
+
+
+/* =========================================
+   PROPERTIES GRID RESPONSIVE
+========================================= */
+
+@media (max-width: 1200px) {
+  .properties-grid {
+    gap: 25px;
+  }
+}
+
+@media (max-width: 992px) {
+  .properties-grid {
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  }
+
+  .section-header-buy h2 {
+    font-size: 36px;
+  }
+
+  .section-header-buy p {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 768px) {
+  .properties-section {
+    padding: 40px 20px;
+  }
+
+  .properties-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+
+  .prop-img-box {
+    height: 200px;
+  }
+
+  .prop-details h3 {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 576px) {
+  .properties-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .prop-img-box {
+    height: 180px;
+  }
+
+  .prop-details {
+    padding: 18px;
+  }
+
+  .prop-details h3 {
+    font-size: 16px;
+  }
+
+  .prop-loc {
+    font-size: 12px;
+  }
+
+  .agent-icons a {
+    width: 30px;
+    height: 30px;
+    font-size: 12px;
+  }
+
+  .prop-btn {
+    font-size: 10px;
+    padding: 10px;
+  }
+}
+
+
+/* =========================================
+   INFO SECTION RESPONSIVE
+========================================= */
+
+@media (max-width: 992px) {
+  .dark h1 {
+    font-size: 40px;
+  }
+
+  .dark p {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 576px) {
+  .dark {
+    padding: 60px 20px;
+  }
+
+  .dark h1 {
+    font-size: 36px;
+  }
+
+  .dark p {
+    font-size: 16px;
+  }
+}
+
+
+/* =========================================
+   FAQ RESPONSIVE
+========================================= */
+
+@media (max-width: 768px) {
+  .faq-question h3 {
+    font-size: 18px;
+  }
+
+  .faq-answer p {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 576px) {
+  .faq-section {
+    padding: 40px 20px;
+  }
+
+  .faq-question {
+    padding: 18px 0;
+  }
+
+  .faq-question h3 {
+    font-size: 16px;
+  }
+}
+
+
+/* =========================================
+   TESTIMONIALS RESPONSIVE
+========================================= */
+
+@media (max-width: 992px) {
+  .testi-card {
+    min-width: 320px;
+    padding: 35px;
+  }
+
+  .testi-card p {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 576px) {
+  .testi-card {
+    min-width: 260px;
+    padding: 25px;
+  }
+
+  .quote-icon {
+    font-size: 40px;
+  }
+
+  .testi-card p {
+    font-size: 14px;
+  }
+
+  .client-name {
+    font-size: 12px;
+  }
+}
+
+
+/* =========================================
+   EXPRESS SECTION RESPONSIVE
+========================================= */
+
+@media (max-width: 992px) {
+  .express {
+    padding: 60px 30px;
+  }
+
+  .express h2 {
+    font-size: 32px;
+  }
+}
+
+@media (max-width: 768px) {
+  .express {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+}
+
+@media (max-width: 576px) {
+  .express {
+    padding: 50px 20px;
+  }
+
+  .express h2 {
+    font-size: 26px;
+  }
+
+  .express input {
+    padding: 10px;
+    font-size: 14px;
+  }
+}
+
+
+/* =========================================
+   FOOTER RESPONSIVE
+========================================= */
+
+@media (max-width: 576px) {
+  .footer {
+    font-size: 11px;
   }
 }
