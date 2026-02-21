@@ -13,11 +13,11 @@
         <div class="project-card reveal">
             <span class="exclusive-tag">Exclusive</span>
             <div class="card-img-wrap">
-                <img src="https://images.unsplash.com/photo-1590090886021-4e987b226c4c?auto=format&fit=crop&w=600&q=80" alt="Project">
+                <img src="image/mbp-bc-hero-banner.webp">
             </div>
             <div class="card-content">
-                <h3>Mercedes-Benz Places</h3>
-                <span class="location"><i class="fas fa-map-marker-alt"></i> Dubai</span>
+                <h3>Mercedes-Benz Places Binghatti City</h3>
+                <span class="location"><i class="fas fa-map-marker-alt"></i> Nad al sheba</span>
                 <div class="price-row">
                     <div>
                         <span class="price-label">FROM</span>
@@ -31,11 +31,11 @@
         <div class="project-card reveal" style="transition-delay: 0.1s">
             <span class="exclusive-tag">Exclusive</span>
             <div class="card-img-wrap">
-                <img src="https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&fit=crop&w=600&q=80" alt="Project">
+                <img src="image/binghatti-etheria-hero-banner.avif" alt="Project">
             </div>
             <div class="card-content">
-                <h3>Sky Mansion Penthouse</h3>
-                <span class="location"><i class="fas fa-map-marker-alt"></i> Dubai</span>
+                <h3>Binghatti Etherea</h3>
+                <span class="location"><i class="fas fa-map-marker-alt"></i> Jumeirah Village Circle</span>
                 <div class="price-row">
                     <div>
                         <span class="price-label">FROM</span>
@@ -49,11 +49,11 @@
         <div class="project-card reveal" style="transition-delay: 0.2s">
             <span class="exclusive-tag">New Launch</span>
             <div class="card-img-wrap">
-                <img src="https://images.unsplash.com/photo-1515263487990-61b07816b324?auto=format&fit=crop&w=600&q=80" alt="Project">
+                <img src="image/binghatti-skyterraces-hero-banner.avif">
             </div>
             <div class="card-content">
-                <h3>Bugatti Residences</h3>
-                <span class="location"><i class="fas fa-map-marker-alt"></i> Business Bay</span>
+                <h3>Binghatti Skyterraces</h3>
+                <span class="location"><i class="fas fa-map-marker-alt"></i> Motor City</span>
                 <div class="price-row">
                     <div>
                         <span class="price-label">FROM</span>
@@ -67,11 +67,11 @@
         <div class="project-card reveal">
             <span class="exclusive-tag">Exclusive</span>
             <div class="card-img-wrap">
-                <img src="https://images.unsplash.com/photo-1582407947304-fd86f028f716?auto=format&fit=crop&w=600&q=80" alt="Project">
+                <img src="image/binghatti-luxuria-hero-banner.avif">
             </div>
             <div class="card-content">
-                <h3>Hillside Haven</h3>
-                <span class="location"><i class="fas fa-map-marker-alt"></i> Dubai Hills</span>
+                <h3>Binghatti Luxuria</h3>
+                <span class="location"><i class="fas fa-map-marker-alt"></i> Jumeirah Village Triangle</span>
                 <div class="price-row">
                     <div>
                         <span class="price-label">FROM</span>
@@ -85,11 +85,11 @@
         <div class="project-card reveal" style="transition-delay: 0.1s">
             <span class="exclusive-tag">Selling Fast</span>
             <div class="card-img-wrap">
-                <img src="https://images.unsplash.com/photo-1574362848149-11496d93a7c7?auto=format&fit=crop&w=600&q=80" alt="Project">
+                <img src="image/binghatti-cullinan-hero-banner.avif" alt="Project">
             </div>
             <div class="card-content">
-                <h3>The Palm Crown</h3>
-                <span class="location"><i class="fas fa-map-marker-alt"></i> Palm Jumeirah</span>
+                <h3>Binghatti Cullinan</h3>
+                <span class="location"><i class="fas fa-map-marker-alt"></i> Al Jaddaf</span>
                 <div class="price-row">
                     <div>
                         <span class="price-label">FROM</span>
@@ -103,11 +103,101 @@
         <div class="project-card reveal" style="transition-delay: 0.2s">
             <span class="exclusive-tag">Exclusive</span>
             <div class="card-img-wrap">
-                <img src="https://images.unsplash.com/photo-1628135893392-4a0044813a48?auto=format&fit=crop&w=600&q=80" alt="Project">
+                <img src="image/binghatti-hillcrest-hero-banner.avif" alt="Project">
             </div>
             <div class="card-content">
-                <h3>Emaar Beachfront</h3>
-                <span class="location"><i class="fas fa-map-marker-alt"></i> Dubai Harbour</span>
+                <h3>Binghatti Hillcrest</h3>
+                <span class="location"><i class="fas fa-map-marker-alt"></i> Arjan</span>
+                <div class="price-row">
+                    <div>
+                        <span class="price-label">FROM</span>
+                        <div class="price-value">AED 3.2M</div>
+                    </div>
+                    <i class="fas fa-arrow-circle-down arrow-icon"></i>
+                </div>
+            </div>
+        </div>
+
+        <div class="project-card reveal" style="transition-delay: 0.2s">
+            <span class="exclusive-tag">Exclusive</span>
+            <div class="card-img-wrap">
+                <img src="image/binghatti-titania-hero-banner-1.avif" alt="Project">
+            </div>
+            <div class="card-content">
+                <h3>Binghatti Titania</h3>
+                <span class="location"><i class="fas fa-map-marker-alt"></i> Majan</span>
+                <div class="price-row">
+                    <div>
+                        <span class="price-label">FROM</span>
+                        <div class="price-value">AED 3.2M</div>
+                    </div>
+                    <i class="fas fa-arrow-circle-down arrow-icon"></i>
+                </div>
+            </div>
+        </div>
+
+        <div class="project-card reveal" style="transition-delay: 0.2s">
+            <span class="exclusive-tag">Exclusive</span>
+            <div class="card-img-wrap">
+                <img src="image/binghatti-vintage-hero-banner.avif" alt="Project">
+            </div>
+            <div class="card-content">
+                <h3>Binghatti Vintage</h3>
+                <span class="location"><i class="fas fa-map-marker-alt"></i> Majan</span>
+                <div class="price-row">
+                    <div>
+                        <span class="price-label">FROM</span>
+                        <div class="price-value">AED 3.2M</div>
+                    </div>
+                    <i class="fas fa-arrow-circle-down arrow-icon"></i>
+                </div>
+            </div>
+        </div>
+
+        <div class="project-card reveal" style="transition-delay: 0.2s">
+            <span class="exclusive-tag">Exclusive</span>
+            <div class="card-img-wrap">
+                <img src="image/binghatti-pinnacle-hero-banner.avif" alt="Project">
+            </div>
+            <div class="card-content">
+                <h3>Binghatti Pinnacle</h3>
+                <span class="location"><i class="fas fa-map-marker-alt"></i> Al Jaddaf</span>
+                <div class="price-row">
+                    <div>
+                        <span class="price-label">FROM</span>
+                        <div class="price-value">AED 3.2M</div>
+                    </div>
+                    <i class="fas fa-arrow-circle-down arrow-icon"></i>
+                </div>
+            </div>
+        </div>
+
+        <div class="project-card reveal" style="transition-delay: 0.2s">
+            <span class="exclusive-tag">Exclusive</span>
+            <div class="card-img-wrap">
+                <img src="image/Mercedes-Benz Places Binghatti City.png" alt="Project">
+            </div>
+            <div class="card-content">
+                <h3>Mercedes-Benz Places | By Binghatti</h3>
+                <span class="location"><i class="fas fa-map-marker-alt"></i> Business Bay</span>
+                <div class="price-row">
+                    <div>
+                        <span class="price-label">FROM</span>
+                        <div class="price-value">AED 3.2M</div>
+                    </div>
+                    <i class="fas fa-arrow-circle-down arrow-icon"></i>
+                </div>
+            </div>
+        </div>
+
+        <div class="project-card reveal" style="transition-delay: 0.2s">
+            <span class="exclusive-tag">Exclusive</span>
+            <div class="card-img-wrap">
+                <img src="image/binghatti-amberhall-hero-banner.webp" alt="Project">
+            </div>
+            <div class="card-content">
+                <h3>Binghatti Amberhall</h3>
+                <span class="location"><i class="fas fa-map-marker-alt"></i> JVC</span>
                 <div class="price-row">
                     <div>
                         <span class="price-label">FROM</span>
