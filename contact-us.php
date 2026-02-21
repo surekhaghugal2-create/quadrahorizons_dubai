@@ -71,7 +71,7 @@
 
 </section>
 
-<div class="fade-in-up scroll-anim delay-100">
+<div class="map-wrapper fade-in-up scroll-anim delay-100">
     <iframe class="full-map" src="https://maps.google.com/maps?q=Downtown%20Dubai,%20Blvd%20Plaza&t=m&z=14&output=embed&iwloc=near" loading="lazy"></iframe>
 </div>
 
