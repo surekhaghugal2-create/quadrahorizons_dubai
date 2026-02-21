@@ -3,12 +3,11 @@
 
 <section class="contact-hero">
     <video autoplay muted loop playsinline class="contact-hero-video">
-        <source src="https://assets.mixkit.co/videos/preview/mixkit-night-sky-over-a-city-4532-large.mp4" type="video/mp4">
+        <source src="video/Dubai_Real_Estate_Video_Generated.mp4" type="video/mp4">
     </video>
-    
     <div class="contact-hero-overlay"></div>
     
-    <div class="contact-hero-content slide-in-left scroll-anim">
+    <div class="contact-hero-content slide-in-left">
         <h1 class="hero-heading-line">Contact Us</h1>
         <p>Your Gateway to Luxury Living</p>
     </div>
@@ -75,4 +74,5 @@
 <div class="fade-in-up scroll-anim delay-100">
     <iframe class="full-map" src="https://maps.google.com/maps?q=Downtown%20Dubai,%20Blvd%20Plaza&t=m&z=14&output=embed&iwloc=near" loading="lazy"></iframe>
 </div>
+
 <?php include 'footer.php'; ?>

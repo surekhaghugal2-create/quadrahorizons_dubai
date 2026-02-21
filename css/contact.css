@@ -1,6 +1,7 @@
 /* =========================================
    1. SCROLL ANIMATION UTILITIES
    ========================================= */
+/* Fade Up Animation */
 .fade-in-up {
     opacity: 0;
     transform: translateY(40px);
@@ -11,7 +12,7 @@
     transform: translateY(0);
 }
 
-/* --- NEW: Left Slide Animation --- */
+/* Slide Right from Left Animation */
 .slide-in-left {
     opacity: 0;
     transform: translateX(-60px);
@@ -22,30 +23,29 @@
     transform: translateX(0);
 }
 
-/* --- NEW: Animated Heading Underlines --- */
-/* Centered line for the Hero Section */
+/* Animated Gold Underline for Hero */
 .hero-heading-line::after {
     content: '';
     display: block;
-    width: 0; /* Starts at 0 width */
+    width: 0; 
     height: 3px;
-    background: #D4AF37; /* Gold */
-    margin: 15px auto 0; /* Centered */
-    transition: width 1s cubic-bezier(0.25, 1, 0.5, 1) 0.5s; /* Delays slightly so it draws after text appears */
+    background: #D4AF37; 
+    margin: 15px auto 0; 
+    transition: width 1s cubic-bezier(0.25, 1, 0.5, 1) 0.5s; 
 }
 .visible .hero-heading-line::after,
 .visible.hero-heading-line::after {
-    width: 100px; /* Draws out to 100px */
+    width: 100px; 
 }
 
-/* Left-aligned line for the Contact Details */
+/* Animated Gold Underline for Left Content */
 .heading-line::after {
     content: '';
     display: block;
     width: 0;
     height: 3px;
     background: #D4AF37;
-    margin: 15px 0 0 0; /* Left aligned */
+    margin: 15px 0 0 0; 
     transition: width 1s cubic-bezier(0.25, 1, 0.5, 1) 0.5s;
 }
 .visible .heading-line::after,
@@ -53,7 +53,7 @@
     width: 80px; 
 }
 
-/* Staggered delays */
+/* Animation Delays for sequence loading */
 .delay-100 { transition-delay: 0.1s; }
 .delay-200 { transition-delay: 0.2s; }
 .delay-300 { transition-delay: 0.3s; }
@@ -116,6 +116,7 @@
     font-weight: 700;
     margin-top: 15px;
 }
+
 
 /* =========================================
    3. MAIN CONTACT CONTAINER 
@@ -308,7 +309,7 @@
 }
 
 /* =========================================
-   6. RESPONSIVE: MOBILE (Max 425px)
+   6. RESPONSIVE: MOBILE (Max 425px & 320px)
    ========================================= */
 @media (max-width: 425px) {
     

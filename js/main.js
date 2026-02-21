@@ -342,3 +342,33 @@ document.addEventListener("DOMContentLoaded", function() {
     scrollElements.forEach(el => {
         revealOnScroll.observe(el);
     });
+
+
+    // conatct page
+    document.addEventListener("DOMContentLoaded", function() {
+    
+    // 1. FIRE HERO ANIMATION INSTANTLY ON LOAD
+    setTimeout(function() {
+        const heroContent = document.querySelector('.contact-hero-content');
+        if (heroContent) {
+            heroContent.classList.add('visible');
+        }
+    }, 150); // Small 150ms delay makes it look incredibly smooth
+
+    // 2. SCROLL OBSERVER FOR THE REST OF THE PAGE
+    const scrollElements = document.querySelectorAll('.scroll-anim');
+    
+    // Lowered threshold to 0.05 so it triggers much easier on mobile phones
+    const revealOnScroll = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('visible');
+                observer.unobserve(entry.target); 
+            }
+        });
+    }, { threshold: 0.05, rootMargin: "0px 0px -20px 0px" }); 
+
+    scrollElements.forEach(el => {
+        revealOnScroll.observe(el);
+    });
+});
