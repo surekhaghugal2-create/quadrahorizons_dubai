@@ -1,5 +1,5 @@
 <?php include 'header.php'; ?>
- <link rel="stylesheet" href="css/contact.css">
+<link rel="stylesheet" href="css/contact.css">
 
 <section class="contact-hero">
     <video autoplay muted loop playsinline class="contact-hero-video">
@@ -8,16 +8,17 @@
     
     <div class="contact-hero-overlay"></div>
     
-    <div class="contact-hero-content reveal">
-        <h1>Contact Us</h1>
+    <div class="contact-hero-content slide-in-left scroll-anim">
+        <h1 class="hero-heading-line">Contact Us</h1>
         <p>Your Gateway to Luxury Living</p>
     </div>
 </section>
 
 <section class="contact-main-wrapper">
     
-    <div class="contact-details reveal">
-        <h2>Get In <span>Touch</span></h2>
+    <div class="contact-details slide-in-left scroll-anim delay-100">
+        <h2 class="heading-line">Get In <span>Touch</span></h2>
+        
         <p class="contact-desc">
             Whether you are buying, selling, or looking for property management, 
             our team of experts is ready to assist you in Dubai's most prestigious locations.
@@ -47,7 +48,7 @@
         </div>
     </div>
 
-    <div class="contact-form-box reveal" style="transition-delay: 0.2s">
+    <div class="contact-form-box fade-in-up scroll-anim delay-200">
         <form>
             <div class="c-form-group">
                 <label class="c-label">Full Name</label>
@@ -71,8 +72,7 @@
 
 </section>
 
-<div class="reveal">
-    <iframe class="full-map" src="https://maps.google.com/maps?q=Downtown%20Dubai&t=&z=13&ie=UTF8&iwloc=&output=embed" loading="lazy"></iframe>
+<div class="fade-in-up scroll-anim delay-100">
+    <iframe class="full-map" src="https://maps.google.com/maps?q=Downtown%20Dubai,%20Blvd%20Plaza&t=m&z=14&output=embed&iwloc=near" loading="lazy"></iframe>
 </div>
-
 <?php include 'footer.php'; ?>

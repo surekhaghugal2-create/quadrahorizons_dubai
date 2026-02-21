@@ -307,3 +307,38 @@ document.addEventListener("DOMContentLoaded", function() {
             bgVideo.playbackRate = 0.2; // Change this number to adjust speed (0.5 = 50% speed)
         }
     });
+
+    // 1. FAQ Accordion Functionality off page
+    const faqItems = document.querySelectorAll('.faq-item');
+    
+    faqItems.forEach(item => {
+        const question = item.querySelector('.faq-question');
+        
+        question.addEventListener('click', () => {
+            // Close all other open items
+            faqItems.forEach(otherItem => {
+                if (otherItem !== item && otherItem.classList.contains('active')) {
+                    otherItem.classList.remove('active');
+                }
+            });
+            // Toggle the clicked item
+            item.classList.toggle('active');
+        });
+    });
+
+    // 2. Global Scroll Reveal Animations
+    // Finds everything with the class 'scroll-trigger' and adds 'visible' when scrolled to
+    const scrollElements = document.querySelectorAll('.scroll-trigger');
+    
+    const revealOnScroll = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('visible'); // Matches the CSS class we added
+                observer.unobserve(entry.target); // Stop observing once revealed
+            }
+        });
+    }, { threshold: 0.15 });
+
+    scrollElements.forEach(el => {
+        revealOnScroll.observe(el);
+    });

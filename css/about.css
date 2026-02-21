@@ -429,17 +429,46 @@ ul { list-style: none; padding: 0; margin: 0; }
 }
 
 @media (max-width: 768px) {
-    .careers-bg { background-attachment: scroll; }
-    .careers-glass-card { padding: 50px 25px; border-width: 1px 0; border-radius: 0; width: 100%; }
-    .careers-title { font-size: 36px; }
-    .careers-desc { font-size: 16px; }
+    .careers-bg { background-attachment: scroll; } /* Fixes parallax issues on iOS mobile */
+    .careers-glass-card { 
+        padding: 50px 25px; 
+        border-width: 1px 0; 
+        border-radius: 0; 
+        width: 100%; 
+        text-align: left !important; 
+    }
+    .careers-title { font-size: 36px !important; }
+    .careers-desc { font-size: 18px !important; }
 }
 
 @media (max-width: 425px) {
-    .careers-premium-section { padding: 40px 10px; margin: 0; }
-    .careers-glass-card { padding: 30px 15px; margin: 0; border: none; }
-    .careers-title { font-size: 32px; margin: 0 0 15px 0; }
-    .careers-desc { font-size: 15px; margin: 0 0 20px 0; }
+    .careers-premium-section { padding: 0px 10px; margin: 0; }
+    
+    /* --- GLASS CARD / OVERLAY LAYOUT FIX --- */
+    .careers-glass-card { 
+        padding: 30px 15px; 
+        margin: 0; 
+        border: none; 
+        text-align: left !important; /* Forces all text to left align */
+        background: rgba(15, 15, 15, 0.7); /* Slightly darker overlay for better mobile readability */
+    }
+    
+    .careers-label { text-align: left; margin-bottom: 10px; }
+
+    /* --- FIXED HEADING SIZE (36px) --- */
+    .careers-title { 
+        font-size: 36px !important; 
+        margin: 0 0 15px 0; 
+        text-align: left;
+    }
+    
+    /* --- FIXED PARAGRAPH SIZE (18px) --- */
+    .careers-desc { 
+        font-size: 18px !important; 
+        margin: 0 0 25px 0; 
+        line-height: 1.6;
+        text-align: left;
+    }
 }
 
 
