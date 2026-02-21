@@ -80,6 +80,7 @@
    ========================================= */
 .properties-section {
     padding: 0px 5%; background: #0A1120;
+    margin-bottom: 80px;
 }
 
 .properties-grid {
@@ -212,7 +213,7 @@
    6. VIDEO PARALLAX
    ========================================= */
 .video-parallax {
-    height: 1000px; position: relative; display: flex;
+    height: 500px; position: relative; display: flex;
     align-items: center; justify-content: center; overflow: hidden;
 }
 .video-parallax video {
@@ -334,7 +335,7 @@
    ========================================= */
 .events-grid, .team-grid {
     display: grid; grid-template-columns: repeat(3, 1fr); gap: 30px;
-    max-width: 1400px; margin: 0 auto 100px; padding: 0 5%;
+    max-width: 1400px; margin: 0 auto 50px; padding: 0 5%;
 }
 .team-grid { grid-template-columns: repeat(4, 1fr); }
 
@@ -368,7 +369,7 @@
 .testimonials-scroll::-webkit-scrollbar { display: none; }
 
 .testi-card {
-    min-width: 400px; background: #111; border: 1px solid #222;
+    min-width: 350px; background: #111; border: 1px solid #222;
     padding: 50px; position: relative;
 }
 .quote-icon {
@@ -424,6 +425,7 @@
 /* --- SECTION CONTAINER --- */
 .team-section {
     padding: 0px 5%;
+    margin-bottom: 80px;
     background-color: var(--dark);
     text-align: center;
     position: relative;
