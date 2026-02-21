@@ -1,4 +1,6 @@
-/* --- VARIABLES --- */
+/* =======================================================
+   GLOBAL VARIABLES & UTILITIES
+   ======================================================= */
 :root {
     /* --- Brand Colors from Palette --- */
     --bg-body: #000000;
@@ -21,18 +23,50 @@ body {
     color: var(--white);
     font-family: var(--font-body);
     overflow-x: hidden;
+    margin: 0;
 }
 
 a { text-decoration: none; color: inherit; transition: 0.3s; }
-ul { list-style: none; }
+ul { list-style: none; padding: 0; margin: 0; }
 
-/* --- UTILITIES --- */
+/* --- UTILITIES & ANIMATIONS --- */
 .container { max-width: 1400px; margin: 0 auto; padding: 0 40px; }
 .gold-text { color: var(--gold); }
 .fade-in { opacity: 0; transform: translateY(30px); transition: all 1s ease; }
 .fade-in.visible { opacity: 1; transform: translateY(0); }
 
-/* --- 1. PARALLAX HERO --- */
+/* --- NEW: SCROLL REVEAL SLIDERS (Left & Right) --- */
+.slide-in-left { opacity: 0; transform: translateX(-60px); transition: all 1s cubic-bezier(0.25, 1, 0.5, 1); }
+.slide-in-left.visible { opacity: 1; transform: translateX(0); }
+
+.slide-in-right { opacity: 0; transform: translateX(60px); transition: all 1s cubic-bezier(0.25, 1, 0.5, 1); }
+.slide-in-right.visible { opacity: 1; transform: translateX(0); }
+
+/* Animation Delays for Staggered List Effects */
+.delay-100 { transition-delay: 0.1s; }
+.delay-200 { transition-delay: 0.2s; }
+.delay-300 { transition-delay: 0.3s; }
+.delay-400 { transition-delay: 0.4s; }
+.delay-500 { transition-delay: 0.5s; }
+
+/* --- NEW: INFINITE CONTINUOUS LEFT SCROLLER (Marquee) --- */
+@keyframes scrollLeftInfinite {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+}
+.infinite-scroller {
+    display: flex;
+    width: max-content;
+    animation: scrollLeftInfinite 20s linear infinite;
+}
+.infinite-scroller:hover {
+    animation-play-state: paused; /* Pauses when user hovers over it */
+}
+
+
+/* =======================================================
+   1. PARALLAX HERO
+   ======================================================= */
 .about-hero {
     height: 100vh;
     position: relative;
@@ -61,166 +95,87 @@ ul { list-style: none; }
     font-size: 7vw; line-height: 1;
     text-transform: uppercase; letter-spacing: 5px;
     opacity: 0.9;
+    margin: 0;
 }
 .hero-subtitle {
     font-size: 1.2rem; letter-spacing: 3px; margin-top: 20px;
     text-transform: uppercase; color: var(--gold);
 }
 
-/* ==========================================
-   TABLET VIEW (Up to 768px)
-   ========================================== */
 @media (max-width: 768px) {
-    .about-hero {
-        padding: 0 30px; /* Adds safe space on the sides */
-    }
-    
-    .hero-title {
-        font-size: 10vw; /* Increased from 7vw so it doesn't get too tiny */
-        letter-spacing: 3px;
-    }
-    
-    .hero-subtitle {
-        font-size: 36px; /* Slightly scaled down */
-        letter-spacing: 2px;
-        margin-top: 15px;
-    }
+    .about-hero { padding: 0 30px; }
+    .hero-title { font-size: 10vw; letter-spacing: 3px; }
+    .hero-subtitle { font-size: 36px; letter-spacing: 2px; margin-top: 15px; }
 }
 
-/* ==========================================
-   MOBILE VIEW (Up to 425px / 320px)
-   ========================================== */
 @media (max-width: 425px) {
-    .about-hero {
-        padding: 0 20px; 
-        height: 75vh;
-    }
-    
-    .hero-title {
-        font-size: 14vw; /* Larger ratio for small screens to keep it prominent */
-        letter-spacing: 2px;
-        line-height: 1.2; /* Gives breathing room if the title wraps to two lines */
-    }
-    
-    .hero-subtitle {
-        font-size: 0.85rem; /* Better fit for narrow mobile screens */
-        letter-spacing: 1.5px;
-        margin-top: 10px;
-    }
+    .about-hero { padding: 0; height: 75vh; margin: 0; }
+    .hero-title { font-size: 14vw; letter-spacing: 2px; line-height: 1.2; margin: 0; }
+    .hero-subtitle { font-size: 0.85rem; letter-spacing: 1.5px; margin: 10px 0 0 0; }
 }
 
 
-/* --- VISION SECTION REDESIGN --- */
+/* =======================================================
+   2. VISION SECTION
+   ======================================================= */
 .vision-section {
     background: var(--bg-body);
     text-align: center;
     position: relative;
     overflow: hidden;
+    padding: 120px 0;
 }
 
-/* Optional: Subtle background glow behind the text */
 .vision-section::before {
     content: '';
     position: absolute;
     top: 50%; left: 50%;
     transform: translate(-50%, -50%);
     width: 600px; height: 600px;
-    background: radial-gradient(circle, rgba(212, 175, 55, 0.08) 0%, transparent 70%);
+    background: radial-gradient(circle, rgba(255, 199, 44, 0.08) 0%, transparent 70%);
     z-index: 0;
     pointer-events: none;
 }
 
-.vision-header {
-    margin-bottom: 50px;
-    position: relative;
-    z-index: 2;
-}
+.vision-header { margin-bottom: 50px; position: relative; z-index: 2; }
 
 .vision-label {
-    display: block;
-    font-family: var(--font-body);
-    font-size: 12px;
-    letter-spacing: 4px;
-    text-transform: uppercase;
-    color: var(--gold);
-    margin-bottom: 20px;
+    display: block; font-family: var(--font-body); font-size: 12px;
+    letter-spacing: 4px; text-transform: uppercase; color: var(--gold);
+    margin-bottom: 20px; opacity: 0;
 }
 
 .vision-title {
-    font-family: var(--font-heading);
-    font-size: 4rem; /* Big luxury heading */
-    color: var(--white);
-    margin-bottom: 30px;
-    line-height: 1.1;
+    font-family: var(--font-heading); font-size: 4rem; color: var(--white);
+    margin-bottom: 30px; line-height: 1.1; opacity: 0;
 }
 
-/* --- ANIMATED DIVIDER --- */
 .vision-divider {
-    width: 2px;
-    height: 0; /* Start invisible/collapsed */
-    /* Gradient: Transparent top/bottom, Solid Gold middle */
-    background: linear-gradient(to bottom, rgba(212, 175, 55, 0), #D4AF37, rgba(212, 175, 55, 0));
-    margin: 20px auto 40px;
-    opacity: 0;
-    position: relative;
-    
-    /* Animation 1: Grow Height when visible */
+    width: 2px; height: 0; 
+    background: linear-gradient(to bottom, transparent, var(--gold), transparent);
+    margin: 20px auto 40px; opacity: 0; position: relative;
     transition: height 1.5s cubic-bezier(0.65, 0, 0.35, 1) 0.4s, opacity 1s ease 0.4s;
 }
 
-/* This triggers when the JavaScript adds the '.visible' class to the parent container */
 .fade-in.visible .vision-divider {
-    height: 40px; /* Final Height */
-    opacity: 1;
-    /* Animation 2: Continuous subtle glow pulse */
+    height: 40px; opacity: 1;
     animation: goldPulse 3s infinite alternate ease-in-out 2s;
 }
 
-/* Glow Keyframes */
 @keyframes goldPulse {
-    0% {
-        box-shadow: 0 0 5px rgba(212, 175, 55, 0.2);
-        opacity: 0.8;
-    }
-    100% {
-        box-shadow: 0 0 15px rgba(212, 175, 55, 0.8);
-        opacity: 1;
-    }
+    0% { box-shadow: 0 0 5px rgba(255, 199, 44, 0.2); opacity: 0.8; }
+    100% { box-shadow: 0 0 15px rgba(255, 199, 44, 0.8); opacity: 1; }
 }
 
 .vision-quote {
-    font-family: var(--font-heading); /* Serif font for elegance */
-    font-size: 2rem; /* Large readable size */
-    line-height: 1.6;
-    max-width: 1400px;
-    margin: 0 auto;
-    color: #cccccc;
-    position: relative;
-    z-index: 2;
+    font-family: var(--font-heading); font-size: 2rem; line-height: 1.6;
+    max-width: 1400px; margin: 0 auto; color: #cccccc;
+    position: relative; z-index: 2; opacity: 0;
 }
 
 .gold-highlight {
-    color: var(--gold);
-    font-style: italic;
-    border-bottom: 1px solid rgba(212, 175, 55, 0.3); /* Subtle underline */
-    padding-bottom: 2px;
-}
-
-/* --- RESPONSIVE ADJUSTMENTS --- */
-@media (max-width: 768px) {
-    .vision-section { padding: 100px 0; }
-    .vision-title { font-size: 2.5rem; }
-    .vision-quote { font-size: 1.4rem; padding: 0 20px; }
-}
-
-/* ==========================================
-   VISION SECTION: TEXT REVEAL ANIMATIONS
-   ========================================== */
-/* Initial state for the text elements to hide them before animation */
-.vision-label,
-.vision-title,
-.vision-quote {
-    opacity: 0;
+    color: var(--gold); font-style: italic;
+    border-bottom: 1px solid rgba(255, 199, 44, 0.3); padding-bottom: 2px;
 }
 
 @keyframes slideUpText {
@@ -228,1093 +183,528 @@ ul { list-style: none; }
     100% { opacity: 1; transform: translateY(0); }
 }
 
-/* Staggered animation triggers when parent gets '.visible' class via JS */
-.fade-in.visible .vision-label {
-    animation: slideUpText 0.8s cubic-bezier(0.25, 1, 0.5, 1) forwards 0.1s;
-}
+.fade-in.visible .vision-label { animation: slideUpText 0.8s cubic-bezier(0.25, 1, 0.5, 1) forwards 0.1s; }
+.fade-in.visible .vision-title { animation: slideUpText 0.8s cubic-bezier(0.25, 1, 0.5, 1) forwards 0.3s; }
+.fade-in.visible .vision-quote { animation: slideUpText 0.8s cubic-bezier(0.25, 1, 0.5, 1) forwards 0.8s; }
 
-.fade-in.visible .vision-title {
-    animation: slideUpText 0.8s cubic-bezier(0.25, 1, 0.5, 1) forwards 0.3s;
-}
-
-.fade-in.visible .vision-quote {
-    /* Triggers after the gold divider line finishes growing */
-    animation: slideUpText 0.8s cubic-bezier(0.25, 1, 0.5, 1) forwards 0.8s;
-}
-
-/* ==========================================
-   TABLET VIEW (Up to 768px)
-   ========================================== */
 @media (max-width: 768px) {
-    .vision-section { 
-        padding: 100px 20px; 
-    }
-    
-    .vision-label {
-        font-size: 11px;
-        letter-spacing: 3px;
-    }
-    
-    .vision-title { 
-        font-size: 3rem; /* Scaled down for tablet */
-        margin-bottom: 25px;
-    }
-    
-    .fade-in.visible .vision-divider {
-        height: 35px; /* Slightly shorter line */
-        margin: 15px auto 30px;
-    }
-    
-    .vision-quote { 
-        font-size: 1.5rem; 
-        line-height: 1.6;
-        padding: 0 15px; 
-    }
+    .vision-section { padding: 100px 20px; }
+    .vision-label { font-size: 11px; letter-spacing: 3px; }
+    .vision-title { font-size: 3rem; margin-bottom: 25px; }
+    .fade-in.visible .vision-divider { height: 35px; margin: 15px auto 30px; }
+    .vision-quote { font-size: 1.5rem; line-height: 1.6; padding: 0 15px; }
 }
 
-/* ==========================================
-   MOBILE VIEW (Up to 425px & 320px)
-   ========================================== */
 @media (max-width: 425px) {
-    .vision-section { 
-        padding: 0px; 
-        text-align: left; /* Aligns all text to the left */    }
-    
-    /* Shrink the background glow so it doesn't wash out the text on small screens */
-    .vision-section::before {
-        width: 300px; 
-        height: 300px;
-    }
-    
-    .vision-label {
-        font-size: 14px;
-        letter-spacing: 2px;
-        margin-bottom: 15px;
-    }
-    
-    .vision-title { 
-        font-size: 36px; /* Keeps it prominent but fits the screen */
-        line-height: 1.2;
-        margin-bottom: 10px;
-    }
-    
-    .fade-in.visible .vision-divider {
-        height: 25px; /* Compact line for mobile */
-         margin: 10px 0 0 0;
-    }
-
-    
-    .vision-quote { 
-        font-family: var(--font-body) ;
-        font-size: 18px; /* Readable paragraph size for phones */
-        line-height: 1.5;
-        padding: 0px; 
-    }
+    .vision-section { padding: 40px 10px; margin: 0; text-align: left; }
+    .vision-section::before { width: 300px; height: 300px; }
+    .vision-label { font-size: 14px; letter-spacing: 2px; margin: 0 0 10px 0; }
+    .vision-title { font-size: 36px; line-height: 1.2; margin: 0 0 10px 0; }
+    .fade-in.visible .vision-divider { height: 25px; margin: 10px 0; }
+    .vision-quote { font-family: var(--font-body); font-size: 18px; line-height: 1.5; padding: 0; margin: 0; }
 }
 
 
-/* --- 3. FOUNDERS (2-COLUMN LUXURY GRID) --- */
-.founders-section {
-    padding: 50px 0;
-    background: var(--bg-body);
-}
+/* =======================================================
+   3. FOUNDERS (2-COLUMN LUXURY GRID)
+   ======================================================= */
+.founders-section { padding: 50px 0; background: var(--bg-body); }
 
 .section-label {
     color: var(--gold); letter-spacing: 2px; text-transform: uppercase;
     font-size: 12px; margin-bottom: 20px; display: block;
 }
 
-.founders-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr); /* STRICTLY 2 COLUMNS */
-    gap: 60px;
-}
+.founders-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 60px; }
 
-.founder-card {
-    position: relative;
-    height: 600px; /* Tall luxurious cards */
-    overflow: hidden;
-    group: 1;
-}
+.founder-card { position: relative; height: 600px; overflow: hidden; }
 
 .founder-img {
-    width: 100%; height: 100%;
-    object-fit: cover;
+    width: 100%; height: 100%; object-fit: cover;
     transition: transform 0.7s ease, filter 0.7s ease;
     filter: grayscale(100%) brightness(0.8);
 }
 
-/* Hover Effect */
-.founder-card:hover .founder-img {
-    filter: grayscale(0%) brightness(1);
-    transform: scale(1.05);
-}
+.founder-card:hover .founder-img { filter: grayscale(0%) brightness(1); transform: scale(1.05); }
 
 .founder-overlay {
     position: absolute; inset: 0;
     background: linear-gradient(to top, rgba(0,0,0,0.9), transparent);
     display: flex; flex-direction: column; justify-content: flex-end;
-    padding: 40px;
-    opacity: 1; transition: 0.5s;
+    padding: 40px; opacity: 1; transition: 0.5s;
 }
 
 .founder-role {
-    font-family: var(--font-body);
-    font-size: 11px; letter-spacing: 2px; text-transform: uppercase;
-    color: var(--gold); margin-bottom: 10px;
-    transform: translateY(20px); opacity: 0; transition: 0.5s ease 0.1s;
+    font-family: var(--font-body); font-size: 11px; letter-spacing: 2px; text-transform: uppercase;
+    color: var(--gold); margin-bottom: 10px; transform: translateY(20px); opacity: 0; transition: 0.5s ease 0.1s;
 }
 .founder-name {
-    font-family: var(--font-heading);
-    font-size: 2.5rem; color: var(--white);
-    margin-bottom: 0;
-    transform: translateY(20px); transition: 0.5s ease;
+    font-family: var(--font-heading); font-size: 2.5rem; color: var(--white);
+    margin: 0; transform: translateY(20px); transition: 0.5s ease;
 }
 
-/* Reveal Text on Hover */
 .founder-card:hover .founder-role { opacity: 1; transform: translateY(0); }
 .founder-card:hover .founder-name { transform: translateY(0); }
 
-/* ==========================================
-   TABLET VIEW (Up to 992px)
-   ========================================== */
 @media (max-width: 992px) {
-    .founders-grid {
-        gap: 30px; /* Reduce gap between cards */
-    }
-    
-    .founder-card {
-        height: 500px; /* Slightly shorter cards */
-    }
-    
-    .founder-overlay {
-        padding: 30px;
-    }
+    .founders-grid { gap: 30px; }
+    .founder-card { height: 500px; }
+    .founder-overlay { padding: 30px; }
 }
 
-/* ==========================================
-   MOBILE VIEW (Up to 768px)
-   ========================================== */
 @media (max-width: 768px) {
-    .founders-section {
-        padding: 60px 20px; /* Add side padding */
-    }
-
-    .founders-grid {
-        grid-template-columns: 1fr; /* Stack into 1 single column */
-        gap: 40px;
-    }
-
-    .founder-card {
-        height: 450px; 
-    }
-
-    /* SPECIFIC FONT SIZES REQUESTED */
-    .founder-name {
-        font-size: 36px !important; /* Forces 36px heading */
-        margin-bottom: 5px;
-    }
-
-    .founder-role, 
-    .founder-overlay p {
-        font-size: 18px !important; /* Forces 18px paragraph/role */
-        letter-spacing: 1px;
-        text-transform: capitalize; /* 18px uppercase might be too loud, capitalize looks cleaner */
-    }
-
-    /* TOUCH SCREEN FIX: Show text by default since there is no "hover" on phones */
-    .founder-role {
-        opacity: 1;
-        transform: translateY(0);
-    }
-    .founder-name {
-        transform: translateY(0);
-    }
-    .founder-img {
-        filter: grayscale(0%) brightness(0.8); /* Remove grayscale by default on mobile */
-    }
+    .founders-section { padding: 60px 20px; }
+    .founders-grid { grid-template-columns: 1fr; gap: 40px; }
+    .founder-card { height: 450px; }
+    .founder-name { font-size: 36px !important; margin-bottom: 5px; }
+    .founder-role, .founder-overlay p { font-size: 18px !important; letter-spacing: 1px; text-transform: capitalize; }
+    .founder-role { opacity: 1; transform: translateY(0); }
+    .founder-name { transform: translateY(0); }
+    .founder-img { filter: grayscale(0%) brightness(0.8); }
 }
 
-/* ==========================================
-   SMALL MOBILE VIEW (Up to 425px)
-   ========================================== */
 @media (max-width: 425px) {
-    .founder-card {
-        height: 400px; /* Keep it from taking up the whole screen height */
-    }
-
-    .founder-overlay {
-        padding: 20px;
-    }
-
-    /* Heading remains 36px and paragraph 18px as requested, but we tighten the spacing */
-    .founder-name {
-        line-height: 1.1; 
-    }
+    .founders-section { padding: 40px 0; margin: 0; }
+    .founders-grid { gap: 20px; margin: 0; padding: 0 10px; }
+    .founder-card { height: 400px; margin: 0; }
+    .founder-overlay { padding: 15px; margin: 0; }
+    .founder-name { line-height: 1.1; margin: 0; }
 }
 
 
+/* =======================================================
+   4. AWARDS & RECOGNITIONS 
+   ======================================================= */
+.awards-recognition-section {
+    position: relative; padding: 120px 0; background-color: #000;
+    overflow: hidden; min-height: 70vh; display: flex; align-items: center;
+}
 
-/* --- 4. AWARDS (VERTICAL LIST) --- */
-/* SECTION CONTAINER */
-    .awards-recognition-section {
-        position: relative;
-        padding: 120px 0;
-        background-color: #000; /* Fallback before video loads */
-        overflow: hidden;
-        height: 70vh;
-        align-items: center;
-    }
+.awards-video-bg {
+    position: absolute; top: 0; left: 0; width: 100%; height: 100%;
+    object-fit: cover; z-index: 0; pointer-events: none;
+}
 
-    /* --- BACKGROUND VIDEO --- */
-    .awards-video-bg {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        z-index: 0;
-        pointer-events: none; /* Prevents users from pausing it */
-    }
+.awards-video-overlay {
+    position: absolute; inset: 0; z-index: 1;
+    background-color: rgba(4, 10, 18, 0.85);
+    background-image: 
+        repeating-linear-gradient(45deg, transparent, transparent 150px, var(--border) 150px, var(--border) 152px),
+        repeating-linear-gradient(-45deg, transparent, transparent 150px, var(--border) 150px, var(--border) 152px);
+}
 
-    /* --- VIDEO OVERLAY (Tint + Diagonal Lines) --- */
+.awards-container { max-width: 1300px; margin: 0 auto; padding: 0 40px; position: relative; z-index: 2; width: 100%; }
+
+.awards-heading {
+    font-family: var(--font-heading); font-size: 50px; color: var(--white);
+    text-align: center; text-transform: uppercase; letter-spacing: 2px; margin: 0 0 80px 0;
+}
+
+.awards-grid { display: flex; flex-wrap: wrap; justify-content: center; align-items: center; gap: 60px 80px; }
+
+.award-logo-item {
+    display: flex; align-items: center; justify-content: center;
+    transition: transform 0.4s ease, filter 0.4s ease; filter: brightness(0.9);
+}
+.award-logo-item:hover { transform: scale(1.05); filter: brightness(1.2); }
+
+.mock-forbes { display: flex; flex-direction: column; align-items: flex-end; color: var(--white); font-family: var(--font-heading); line-height: 0.8; }
+.mock-forbes-top { font-family: var(--font-body); font-size: 10px; letter-spacing: 0.5px; margin-right: 2px; margin-bottom: 2px; }
+.mock-forbes-main { font-size: 45px; font-weight: 700; letter-spacing: -1px; }
+
+.mock-gulf { display: flex; align-items: center; gap: 15px; color: var(--white); }
+.mock-gulf-icon { font-size: 38px; color: var(--white); opacity: 0.9; }
+.mock-gulf-text { display: flex; flex-direction: column; line-height: 1.2; }
+.mock-gulf-top { font-family: var(--font-body); font-size: 14px; font-weight: 400; letter-spacing: 1px; }
+.mock-gulf-bottom { font-family: var(--font-body); font-size: 18px; font-weight: 600; letter-spacing: 1px; }
+
+.anim-slide-down { opacity: 0; transform: translateY(-40px); transition: all 1s cubic-bezier(0.25, 1, 0.5, 1); }
+.anim-fade-up { opacity: 0; transform: translateY(40px); transition: all 0.8s cubic-bezier(0.25, 1, 0.5, 1); }
+.anim-slide-down.visible, .anim-fade-up.visible { opacity: 1; transform: translate(0, 0); }
+
+.delay-1 { transition-delay: 0.1s; } .delay-2 { transition-delay: 0.2s; } .delay-3 { transition-delay: 0.3s; }
+.delay-4 { transition-delay: 0.4s; } .delay-5 { transition-delay: 0.5s; } .delay-6 { transition-delay: 0.6s; } .delay-7 { transition-delay: 0.7s; }
+
+@media (max-width: 992px) {
+    .awards-heading { font-size: 40px; margin-bottom: 60px; }
+    .awards-grid { gap: 40px 60px; }
+}
+
+@media (max-width: 768px) {
+    .awards-recognition-section { padding: 80px 0; }
     .awards-video-overlay {
-        position: absolute;
-        inset: 0;
-        z-index: 1;
-        background-color: var(--bg-deep-navy-tint);
         background-image: 
-            repeating-linear-gradient(45deg, transparent, transparent 150px, var(--diagonal-line) 150px, var(--diagonal-line) 152px),
-            repeating-linear-gradient(-45deg, transparent, transparent 150px, var(--diagonal-line) 150px, var(--diagonal-line) 152px);
+            repeating-linear-gradient(45deg, transparent, transparent 80px, var(--border) 80px, var(--border) 81px),
+            repeating-linear-gradient(-45deg, transparent, transparent 80px, var(--border) 80px, var(--border) 81px);
     }
+    .awards-container { padding: 0 20px; }
+    .awards-heading { font-size: 32px; margin-bottom: 50px; }
+    .awards-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 40px 15px; }
+    .award-logo-item:last-child { grid-column: span 2; justify-self: center; }
+    .mock-forbes-main { font-size: 26px; }
+    .mock-forbes-top { font-size: 8px; }
+    .mock-gulf { gap: 8px; }
+    .mock-gulf-icon { font-size: 22px; }
+    .mock-gulf-top { font-size: 8px; letter-spacing: 0px; }
+    .mock-gulf-bottom { font-size: 11px; letter-spacing: 0px; }
+}
 
-    /* --- CONTENT CONTAINER --- */
-    .awards-container {
-        max-width: 1300px;
-        margin: 0 auto;
-        padding: 0 40px;
-        position: relative;
-        z-index: 2; /* Sits above the video and overlay */
-    }
-
-    /* --- HEADING (50px Playfair Display) --- */
-    .awards-heading {
-        font-family: var(--font-heading);
-        font-size: 50px; 
-        color: var(--white);
-        text-align: center;
-        text-transform: uppercase;
-        letter-spacing: 2px;
-        margin: 0 0 80px 0;
-    }
-
-    /* --- LOGOS GRID (Desktop) --- */
-    .awards-grid {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-items: center;
-        gap: 60px 80px; 
-    }
-
-    .award-logo-item {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        transition: transform 0.4s ease, filter 0.4s ease;
-        filter: brightness(0.9);
+@media (max-width: 425px) {
+    .awards-recognition-section { 
+        padding: 40px 0; /* Added a tiny bit of padding so it's not glued to the edges */
+        margin: 0; 
+        min-height: auto !important; /* CRITICAL FIX: Removes the massive empty height */
+        display: block !important;   /* CRITICAL FIX: Stops the flexbox from stretching it */
     }
     
-    .award-logo-item:hover {
-        transform: scale(1.05);
-        filter: brightness(1.2);
-    }
+    .awards-heading { font-size: 28px; margin: 0 0 25px 0; }
+    .awards-container { padding: 0 15px; margin: 0; }
+    .awards-grid { gap: 20px 10px; margin: 0; }
+    
+    .mock-forbes-main { font-size: 22px; margin: 0; }
+    .mock-forbes-top { font-size: 7px; margin: 0 0 1px 0; }
+    
+    .mock-gulf { gap: 6px; margin: 0; }
+    .mock-gulf-icon { font-size: 30px; margin: 0; }
+    .mock-gulf-top { font-size: 7px; margin: 0; }
+    .mock-gulf-bottom { font-size: 9px; margin: 0; }
+}
 
-    /* --- MOCK LOGO DESIGNS --- */
-    .mock-forbes {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-end;
-        color: var(--white);
-        font-family: var(--font-heading);
-        line-height: 0.8;
-    }
-    .mock-forbes-top {
-        font-family: var(--font-body);
-        font-size: 10px;
-        letter-spacing: 0.5px;
-        margin-right: 2px;
-        margin-bottom: 2px;
-    }
-    .mock-forbes-main { font-size: 45px; font-weight: 700; letter-spacing: -1px; }
+/* =======================================================
+   5. CAREERS SECTION
+   ======================================================= */
+.careers-premium-section {
+    position: relative; min-height: 50vh; display: flex; align-items: center;
+    justify-content: center; padding: 100px 20px; overflow: hidden;
+}
 
-    .mock-gulf {
-        display: flex;
-        align-items: center;
-        gap: 15px;
-        color: var(--white);
-    }
-    .mock-gulf-icon { font-size: 38px; color: var(--white); opacity: 0.9; }
-    .mock-gulf-text { display: flex; flex-direction: column; line-height: 1.2; }
-    .mock-gulf-top { font-family: var(--font-body); font-size: 14px; font-weight: 400; letter-spacing: 1px; }
-    .mock-gulf-bottom { font-family: var(--font-body); font-size: 18px; font-weight: 600; letter-spacing: 1px; }
+.careers-bg {
+    position: absolute; inset: 0; z-index: 1;
+    background: url('https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=1920&q=80') center/cover no-repeat fixed;
+}
+.careers-bg::after { content: ''; position: absolute; inset: 0; background: rgba(0, 0, 0, 0.65); }
 
-    /* ==========================================
-       ANIMATIONS
-       ========================================== */
-    .anim-slide-down {
-        opacity: 0; transform: translateY(-40px);
-        transition: all 1s cubic-bezier(0.25, 1, 0.5, 1);
-    }
-    .anim-fade-up {
-        opacity: 0; transform: translateY(40px);
-        transition: all 0.8s cubic-bezier(0.25, 1, 0.5, 1);
-    }
-    .anim-slide-down.visible,
-    .anim-fade-up.visible {
-        opacity: 1; transform: translate(0, 0);
-    }
+.careers-glass-card {
+    position: relative; z-index: 2; background: rgba(15, 15, 15, 0.5);
+    backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 199, 44, 0.3); padding: 80px 60px;
+    text-align: center; box-shadow: 0 30px 60px rgba(0, 0, 0, 0.5); width: 60%;
+    opacity: 0; transform: translateY(50px) scale(0.95); transition: all 1s cubic-bezier(0.25, 1, 0.5, 1);
+}
 
-    /* Desktop Delays */
-    .delay-1 { transition-delay: 0.1s; }
-    .delay-2 { transition-delay: 0.2s; }
-    .delay-3 { transition-delay: 0.3s; }
-    .delay-4 { transition-delay: 0.4s; }
-    .delay-5 { transition-delay: 0.5s; }
-    .delay-6 { transition-delay: 0.6s; }
-    .delay-7 { transition-delay: 0.7s; }
+.careers-premium-section.is-visible .careers-glass-card { opacity: 1; transform: translateY(0) scale(1); }
 
-    /* ==========================================
-       RESPONSIVE DESIGN (Tablets & Mobile)
-       ========================================== */
-    @media (max-width: 992px) {
-        .awards-heading { font-size: 40px; margin-bottom: 60px; }
-        .awards-grid { gap: 40px 60px; }
-    }
+.careers-label {
+    display: block; font-family: var(--font-body); font-size: 14px;
+    color: var(--gold); letter-spacing: 4px; text-transform: uppercase; margin-bottom: 20px;
+}
 
-    @media (max-width: 768px) {
-        .awards-recognition-section { padding: 80px 0; }
-        
-        /* Adjust overlay lines for mobile */
-        .awards-video-overlay {
-            background-image: 
-                repeating-linear-gradient(45deg, transparent, transparent 80px, var(--diagonal-line) 80px, var(--diagonal-line) 81px),
-                repeating-linear-gradient(-45deg, transparent, transparent 80px, var(--diagonal-line) 80px, var(--diagonal-line) 81px);
-        }
-        
-        .awards-container { padding: 0 20px; }
-        .awards-heading { font-size: 32px; margin-bottom: 50px; }
-        .awards-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 40px 15px; }
-        .award-logo-item:last-child { grid-column: span 2; justify-self: center; }
+.careers-title {
+    font-family: var(--font-heading); font-size: 50px; color: var(--white);
+    line-height: 1.1; margin-bottom: 30px; text-transform: uppercase;
+}
 
-        .mock-forbes-main { font-size: 26px; }
-        .mock-forbes-top { font-size: 8px; }
-        .mock-gulf { gap: 8px; }
-        .mock-gulf-icon { font-size: 22px; }
-        .mock-gulf-top { font-size: 8px; letter-spacing: 0px; }
-        .mock-gulf-bottom { font-size: 11px; letter-spacing: 0px; }
-    }
+.careers-desc {
+    font-family: var(--font-body); font-size: 18px; color: var(--gray);
+    line-height: 1.8; margin: 0 auto 45px auto; max-width: 600px;
+}
 
-    @media (max-width: 425px) {
-        .awards-recognition-section { padding: 60px 0; }
-        .awards-heading { font-size: 28px; margin-bottom: 40px; }
-        .awards-container { padding: 0 10px; }
-        .awards-grid { gap: 30px 10px; }
+.btn-luxury-apply {
+    display: inline-block; padding: 20px 50px; background: transparent; color: var(--gold);
+    font-family: var(--font-body); font-size: 14px; font-weight: 500; letter-spacing: 2px;
+    text-transform: uppercase; border: 1px solid var(--gold); position: relative; overflow: hidden; transition: all 0.4s ease; z-index: 1;
+}
 
-        .mock-forbes-main { font-size: 22px; }
-        .mock-forbes-top { font-size: 7px; margin-bottom: 1px; }
-        .mock-gulf { gap: 6px; }
-        .mock-gulf-icon { font-size: 18px; }
-        .mock-gulf-top { font-size: 7px; }
-        .mock-gulf-bottom { font-size: 9px; }
+.btn-luxury-apply::before {
+    content: ''; position: absolute; top: 0; left: 0; width: 0%; height: 100%;
+    background: var(--gold); z-index: -1; transition: width 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+}
 
-        .delay-1 { transition-delay: 0.1s; }
-        .delay-2 { transition-delay: 0.15s; }
-        .delay-3 { transition-delay: 0.2s; }
-        .delay-4 { transition-delay: 0.25s; }
-        .delay-5 { transition-delay: 0.3s; }
-        .delay-6 { transition-delay: 0.35s; }
-        .delay-7 { transition-delay: 0.4s; }
-    }
-/* --- 5. CAREERS (SPLIT LAYOUT) --- */
+.btn-luxury-apply:hover { color: #000000; box-shadow: 0 0 20px rgba(255, 199, 44, 0.4); }
+.btn-luxury-apply:hover::before { width: 100%; }
 
-    .careers-premium-section {
-        position: relative;
-        min-height: 50vh;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        padding: 100px 20px;
-        overflow: hidden;
-    }
+@media (max-width: 992px) {
+    .careers-title { font-size: 42px; }
+    .careers-glass-card { padding: 60px 40px; width: 80%; }
+}
 
-    /* --- PARALLAX BACKGROUND --- */
-    .careers-bg {
-        position: absolute;
-        inset: 0;
-        z-index: 1;
-        /* Replace with your preferred office/architecture image */
-        background: url('https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=1920&q=80') center/cover no-repeat fixed;
+@media (max-width: 768px) {
+    .careers-bg { background-attachment: scroll; }
+    .careers-glass-card { padding: 50px 25px; border-width: 1px 0; border-radius: 0; width: 100%; }
+    .careers-title { font-size: 36px; }
+    .careers-desc { font-size: 16px; }
+}
+
+@media (max-width: 425px) {
+    .careers-premium-section { padding: 40px 10px; margin: 0; }
+    .careers-glass-card { padding: 30px 15px; margin: 0; border: none; }
+    .careers-title { font-size: 32px; margin: 0 0 15px 0; }
+    .careers-desc { font-size: 15px; margin: 0 0 20px 0; }
+}
+
+
+/* =======================================================
+   6. DUBAI INVESTMENT (Split Basic)
+   ======================================================= */
+.invest-dubai-section { background-color: var(--bg-body); padding: 120px 0; overflow: hidden; }
+
+.invest-container {
+    max-width: 1400px; margin: 0 auto; padding: 0 40px; display: grid;
+    grid-template-columns: 1fr 1fr; gap: 100px; align-items: center;
+}
+
+.invest-image-wrapper {
+    width: 100%; height: 750px; overflow: hidden; position: relative;
+    opacity: 0; transform: translateX(-50px); transition: all 1.2s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+.invest-image {
+    width: 100%; height: 100%; object-fit: cover; transform: scale(1.15);
+    transition: transform 1.5s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+.invest-content { padding-right: 40px; }
+
+.invest-anim { opacity: 0; transform: translateY(30px); transition: all 0.8s cubic-bezier(0.25, 1, 0.5, 1); }
+
+.invest-subtitle {
+    display: block; font-family: var(--font-body); font-size: 14px;
+    letter-spacing: 8px; text-transform: uppercase; color: var(--gold); margin-bottom: 20px;
+}
+
+.invest-title {
+    font-family: var(--font-heading); font-size: 85px; font-weight: 400;
+    color: var(--white); margin: 0 0 40px 0; letter-spacing: 5px; line-height: 1;
+}
+
+.invest-text p {
+    font-family: var(--font-body); font-size: 18px; line-height: 1.8;
+    color: var(--gray); margin-bottom: 30px;
+}
+
+.invest-dubai-section.is-visible .invest-image-wrapper { opacity: 1; transform: translateX(0); }
+.invest-dubai-section.is-visible .invest-image { transform: scale(1); }
+.invest-dubai-section.is-visible .invest-anim { opacity: 1; transform: translateY(0); }
+
+@media (max-width: 1024px) {
+    .invest-container { gap: 50px; }
+    .invest-title { font-size: 60px; }
+    .invest-image-wrapper { height: 600px; }
+}
+
+@media (max-width: 768px) {
+    .invest-container { grid-template-columns: 1fr; text-align: center; gap: 40px; padding: 0 20px; }
+    .invest-content { padding-right: 0; }
+    .invest-image-wrapper { height: 400px; }
+    .invest-title { font-size: 50px; }
+}
+@media (max-width: 425px) {
+    .invest-dubai-section { padding: 40px 10px; margin: 0; }
+    
+    /* --- 1. LEFT ALIGN THE CONTAINER --- */
+    .invest-container { 
+        padding: 0 15px; /* Standard mobile padding */
+        gap: 20px; 
+        margin: 0; 
+        text-align: left !important; /* Forces all text inside to the left */
     }
     
-    /* Dark Overlay to make text readable */
-    .careers-bg::after {
-        content: '';
-        position: absolute;
-        inset: 0;
-        background: rgba(0, 0, 0, 0.65);
-    }
+    .invest-image-wrapper { height: 300px; margin: 0; }
+    
+    /* Optional: Ensure subtitle is also left-aligned */
+    .invest-subtitle { text-align: left; margin-bottom: 10px; }
 
-    /* --- GLASSMORPHISM CARD --- */
-    .careers-glass-card {
-        position: relative;
-        z-index: 2;
-        background: rgba(15, 15, 15, 0.5); /* Semi-transparent dark */
-        backdrop-filter: blur(12px); /* Frosted glass effect */
-        -webkit-backdrop-filter: blur(12px);
-        border: 1px solid rgba(212, 175, 55, 0.3); /* Subtle gold border */
-        padding: 80px 60px;
-        text-align: center;
-        box-shadow: 0 30px 60px rgba(0, 0, 0, 0.5);
-        width: 60%;
-        /* Initial Animation State */
-        opacity: 0;
-        transform: translateY(50px) scale(0.95);
-        transition: all 1s cubic-bezier(0.25, 1, 0.5, 1);
-    }
-
-    /* Triggered via JS when scrolled into view */
-    .careers-premium-section.is-visible .careers-glass-card {
-        opacity: 1;
-        transform: translateY(0) scale(1);
-    }
-
-    /* --- TYPOGRAPHY --- */
-    .careers-label {
-        display: block;
-        font-family: var(--font-body);
-        font-size: 14px;
-        color: var(--gold);
-        letter-spacing: 4px;
-        text-transform: uppercase;
-        margin-bottom: 20px;
-    }
-
-    .careers-title {
-        font-family: var(--font-heading);
-        font-size: 50px; /* Requested Size */
-        color: var(--white);
-        line-height: 1.1;
-        margin-bottom: 30px;
-        text-transform: uppercase;
-    }
-
-    .careers-desc {
-        font-family: var(--font-body);
-        font-size: 18px; /* Requested Size */
-        color: var(--gray-light);
-        line-height: 1.8;
-        margin-bottom: 45px;
-        max-width: 600px;
-        margin-left: auto;
-        margin-right: auto;
-    }
-
-    /* --- LUXURY BUTTON --- */
-    .btn-luxury-apply {
-        display: inline-block;
-        padding: 20px 50px;
-        background: transparent;
-        color: var(--gold);
-        font-family: var(--font-body);
-        font-size: 14px;
-        font-weight: 500;
-        letter-spacing: 2px;
-        text-transform: uppercase;
-        text-decoration: none;
-        border: 1px solid var(--gold);
-        position: relative;
-        overflow: hidden;
-        transition: all 0.4s ease;
-        z-index: 1;
-    }
-
-    /* Button Hover Fill Effect */
-    .btn-luxury-apply::before {
-        content: '';
-        position: absolute;
-        top: 0; left: 0;
-        width: 0%; height: 100%;
-        background: var(--gold);
-        z-index: -1;
-        transition: width 0.4s cubic-bezier(0.25, 1, 0.5, 1);
-    }
-
-    .btn-luxury-apply:hover {
-        color: #000000;
-        box-shadow: 0 0 20px rgba(212, 175, 55, 0.4);
-    }
-
-    .btn-luxury-apply:hover::before {
-        width: 100%;
-    }
-
-    /* --- RESPONSIVE DESIGN --- */
-    @media (max-width: 992px) {
-        .careers-title { font-size: 42px; }
-        .careers-glass-card { padding: 60px 40px; }
-    }
-
-    @media (max-width: 768px) {
-        .careers-bg {
-            background-attachment: scroll; /* Fixes parallax issues on iOS mobile */
-        }
-        .careers-glass-card {
-            padding: 50px 25px;
-            border-width: 1px 0; /* Only top/bottom border on mobile for edge-to-edge feel */
-            border-radius: 0;
-        }
-        .careers-title { font-size: 36px; }
-        .careers-desc { font-size: 16px; }
-    }
-
-/* --- SECTION CONTAINER --- */
-    .invest-dubai-section {
-        background-color: #ffffff; 
-        padding: 120px 0;
-        overflow: hidden;
-    }
-
-    /* --- 1400px WIDTH CONTAINER --- */
-    .invest-container {
-        max-width: 1400px; 
-        margin: 0 auto;
-        padding: 0 40px;
-        display: grid;
-        grid-template-columns: 1fr 1fr; /* 50/50 Split */
-        gap: 100px; 
-        align-items: center;
-    }
-
-    /* --- LEFT: IMAGE STYLES --- */
-    .invest-image-wrapper {
-        width: 100%;
-        height: 750px; 
-        overflow: hidden;
-        position: relative;
-        /* Animation Initial State */
-        opacity: 0;
-        transform: translateX(-50px);
-        transition: all 1.2s cubic-bezier(0.25, 1, 0.5, 1);
-    }
-
-    .invest-image {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        transform: scale(1.15); 
-        transition: transform 1.5s cubic-bezier(0.25, 1, 0.5, 1);
-    }
-
-    /* --- RIGHT: CONTENT STYLES --- */
-    .invest-content {
-        padding-right: 40px;
-    }
-
-    /* Animation Initial State for Text */
-    .invest-anim {
-        opacity: 0;
-        transform: translateY(30px);
-        transition: all 0.8s cubic-bezier(0.25, 1, 0.5, 1);
-    }
-
-    /* Delays for staggered effect */
-    .delay-1 { transition-delay: 0.2s; }
-    .delay-2 { transition-delay: 0.4s; }
-    .delay-3 { transition-delay: 0.6s; }
-
-    /* Typography */
-    .invest-subtitle {
-        display: block;
-        font-family: 'Montserrat', sans-serif;
-        font-size: 14px;
-        letter-spacing: 8px; 
-        text-transform: uppercase;
-        color: #777777;
-        margin-bottom: 20px;
-    }
-
-    .invest-title {
-        font-family: 'Montserrat', sans-serif;
-        font-size: 85px; 
-        font-weight: 400; 
-        color: #444444; 
-        margin: 0 0 40px 0;
-        letter-spacing: 5px;
-        line-height: 1;
-    }
-
-    .invest-text p {
-        font-family: 'Montserrat', sans-serif;
-        font-size: 18px; 
-        line-height: 1.8;
-        color: #666666;
-        margin-bottom: 30px;
-    }
-
-    /* =======================================================
-       ACTIVE ANIMATION STATES (Triggered by JS)
-       ======================================================= */
-    .invest-dubai-section.is-visible .invest-image-wrapper {
-        opacity: 1;
-        transform: translateX(0);
+    /* --- 2. FIXED HEADING SIZE (36px) --- */
+    .invest-title { 
+        font-size: 36px !important; 
+        margin: 0 0 15px 0; 
+        text-align: left;
     }
     
-    .invest-dubai-section.is-visible .invest-image {
-        transform: scale(1); /* Zooms out */
-    }
-
-    .invest-dubai-section.is-visible .invest-anim {
-        opacity: 1;
-        transform: translateY(0);
-    }
-
-    /* --- RESPONSIVE ADJUSTMENTS --- */
-    @media (max-width: 1024px) {
-        .invest-container { gap: 50px; }
-        .invest-title { font-size: 60px; }
-        .invest-image-wrapper { height: 600px; }
-    }
-
-    @media (max-width: 768px) {
-        .invest-container {
-            grid-template-columns: 1fr; 
-            text-align: center;
-            gap: 40px;
-            padding: 0 20px;
-        }
-        .invest-content { padding-right: 0; }
-        .invest-image-wrapper { height: 400px; }
-        .invest-title { font-size: 50px; }
-    }
-
-    /* what to look  */
-    /* ==========================================
-       SECTION 2: FUTURE & NOTABLE PROJECTS
-       ========================================== */
-    .projects-section {
-        background-color: var(--bg-panel);
-        border-top: 1px solid var(--border-color);
-    }
-
-    /* Left Side: Image with Text Overlay */
-    .future-card {
-        position: relative;
-        width: 100%;
-        height: 700px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        text-align: center;
-        padding: 40px;
-        background: linear-gradient(to bottom, rgba(5,5,5,0.7), rgba(5,5,5,0.9)), 
-                    url('https://images.unsplash.com/photo-1512453979798-5ea904ac6605?auto=format&fit=crop&w=1600&q=80') center/cover;
-        border: 1px solid var(--border-color);
-    }
-
-    .future-sub {
-        font-family: var(--font-body);
-        font-size: 14px;
-        letter-spacing: 5px;
-        color: var(--white);
-        text-transform: uppercase;
-        margin-bottom: 10px;
-    }
-
-    .future-title {
-        font-family: var(--font-heading);
-        font-size: 90px;
-        color: var(--gold);
-        letter-spacing: 8px;
-        margin: 0;
-        line-height: 1;
-    }
-
-    .future-post {
-        font-family: var(--font-body);
-        font-size: 14px;
-        letter-spacing: 4px;
-        color: var(--white);
-        text-transform: uppercase;
-        margin-top: 15px;
-    }
-
-    /* Right Side: Projects List */
-    .projects-header {
-        font-family: var(--font-heading);
-        font-size: 36px;
-        color: var(--white);
-        margin-bottom: 20px;
-        text-transform: uppercase;
-        letter-spacing: 2px;
-    }
-
-    .projects-divider {
-        width: 100%;
-        height: 1px;
-        background: var(--border-color);
-        margin-bottom: 40px;
-        position: relative;
-    }
-    .projects-divider::after {
-        content: '';
-        position: absolute;
-        left: 0; top: 0;
-        width: 80px; height: 2px;
-        background: var(--gold);
-    }
-
-    .projects-list {
-        display: flex;
-        flex-direction: column;
-        gap: 35px;
-    }
-
-    .project-item {
-        display: flex;
-        align-items: flex-start;
-        gap: 25px;
-        transition: transform 0.3s ease;
-    }
-    .project-item:hover {
-        transform: translateX(10px);
-    }
-
-    .project-icon {
-        font-size: 30px;
-        color: var(--gold);
-        min-width: 40px;
-        text-align: center;
-        margin-top: 5px;
-    }
-
-    .project-text h4 {
-        font-family: var(--font-body);
-        font-size: 18px;
-        color: var(--white);
-        margin-bottom: 8px;
-    }
-
-    .project-text p {
-        font-family: var(--font-body);
-        font-size: 15px;
-        color: var(--gray);
+    /* --- 3. FIXED PARAGRAPH SIZE (18px) --- */
+    .invest-text p { 
+        font-size: 18px !important; 
+        margin: 0 0 15px 0; 
         line-height: 1.6;
+        text-align: left;
     }
+}
 
-    /* --- RESPONSIVE --- */
-    @media (max-width: 1024px) {
-        .dubai-container { gap: 40px; }
-        .invest-title { font-size: 60px; }
-        .future-title { font-size: 60px; }
-        .invest-img-wrapper, .future-card { height: 500px; }
-    }
+/* =======================================================
+   7. FUTURE & NOTABLE PROJECTS
+   ======================================================= */
+.projects-section { background-color: var(--bg-panel); border-top: 1px solid var(--border); padding: 120px 0; }
+/* 1. Lock the video inside this section */
+.projects-section {
+    position: relative !important; /* CRITICAL: keeps absolute video inside */
+    background-color: #000;
+    padding: 120px 0;
+    overflow: hidden;
+}
 
-    @media (max-width: 768px) {
-        .dubai-container { grid-template-columns: 1fr; text-align: center; }
-        .invest-img-wrapper, .future-card { height: 400px; }
-        .invest-title { font-size: 50px; }
-        .projects-divider::after { left: 50%; transform: translateX(-50%); }
-        .project-item { text-align: left; } /* Keep list readable */
-    }
+/* 2. Stretch the background div to fill the section */
+.projects-section .hero-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+}
 
-    /* --- SECTION CONTAINER --- */
-    .invest-reasons-section {
-        padding: 120px 0;
-        background-color: var(--bg-luxury);
-        position: relative;
-        /* IMPORTANT: Do NOT add overflow: hidden here, or sticky will break! */
-    }
+/* 3. Stretch the actual video to cover the area perfectly */
+.projects-section .hero-bg video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Prevents squishing/stretching */
+    opacity: 0.8;
+}
 
-    .invest-reasons-container {
-        max-width: 1400px;
-        margin: 0 auto;
-        padding: 0 40px;
-        display: flex;
-        align-items: flex-start; /* CRITICAL: Allows children to have independent heights for sticky */
-        gap: 80px;
-    }
+/* 4. Overlay to darken the video so text is readable */
+.projects-section .hero-overlay {
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+    background: rgba(0, 0, 0, 0.5); /* 50% dark tint */
+}
 
-    /* ==========================================
-       LEFT COLUMN (PERFECTLY STICKY)
-       ========================================== */
-    .invest-left-sticky {
-        flex: 1;
-        position: -webkit-sticky; /* For Safari support */
-        position: sticky;
-        top: 100px; /* Locks 100px from the top of the screen */
-        height: calc(100vh - 120px); /* Takes up screen height minus padding */
-        min-height: 600px; /* Prevents it from getting too small */
-        border-radius: 4px;
-        overflow: hidden;
-    }
+/* 5. Bring the content in front of the video */
+.projects-section .dubai-container {
+    position: relative;
+    z-index: 2; 
+}
+.future-card {
+    position: relative; width: 100%; height: 700px; display: flex; flex-direction: column;
+    align-items: center; justify-content: center; text-align: center; padding: 40px;
+    background: transparent; /* Removed the dark overlay and image so your video is visible */
+    border: 1px solid var(--border);
+}
 
-    /* Slide Left Animation */
-    .anim-slide-left {
-        opacity: 0;
-        transform: translateX(-40px); 
-        transition: all 1.2s cubic-bezier(0.25, 1, 0.5, 1);
-    }
-    .anim-slide-left.visible {
-        opacity: 1;
-        transform: translateX(0);
-    }
+.future-sub { font-family: var(--font-body); font-size: 14px; letter-spacing: 5px; color: var(--white); text-transform: uppercase; margin-bottom: 10px; }
+.future-title { font-family: var(--font-heading); font-size: 90px; color: var(--gold); letter-spacing: 8px; margin: 0; line-height: 1; }
+.future-post { font-family: var(--font-body); font-size: 14px; letter-spacing: 4px; color: var(--white); text-transform: uppercase; margin-top: 15px; }
 
-    .invest-image-bg {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        filter: brightness(0.6);
-        transition: transform 10s linear;
-    }
-    .invest-left-sticky:hover .invest-image-bg {
-        transform: scale(1.1);
-    }
+.projects-header { font-family: var(--font-heading); font-size: 36px; color: var(--white); margin-bottom: 20px; text-transform: uppercase; letter-spacing: 2px; }
+.projects-divider { width: 100%; height: 1px; background: var(--border); margin-bottom: 40px; position: relative; }
+.projects-divider::after { content: ''; position: absolute; left: 0; top: 0; width: 80px; height: 2px; background: var(--gold); }
 
-    /* Overlay Content inside the image */
-    .invest-overlay {
-        position: absolute;
-        inset: 0;
-        background: linear-gradient(to top, rgba(0,0,0,0.9) 0%, rgba(0,0,0,0.2) 100%);
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-end;
-        padding: 60px 40px;
-    }
+.projects-list { display: flex; flex-direction: column; gap: 35px; }
+.project-item { display: flex; align-items: flex-start; gap: 25px; transition: transform 0.3s ease; }
+.project-item:hover { transform: translateX(10px); }
+.project-icon { font-size: 30px; color: var(--gold); min-width: 40px; text-align: center; margin-top: 5px; }
+.project-text h4 { font-family: var(--font-body); font-size: 18px; color: var(--white); margin-bottom: 8px; }
+.project-text p { font-family: var(--font-body); font-size: 15px; color: var(--gray); line-height: 1.6; margin: 0;}
 
-    .invest-pre-heading {
-        font-family: var(--font-body);
-        font-size: 14px;
-        color: var(--gold);
-        letter-spacing: 4px;
-        text-transform: uppercase;
-        margin-bottom: 10px;
-    }
+@media (max-width: 1024px) {
+    .future-title { font-size: 60px; }
+    .future-card { height: 500px; }
+}
+@media (max-width: 768px) {
+    .future-card { height: 400px; }
+    .projects-divider::after { left: 50%; transform: translateX(-50%); }
+    .projects-header { text-align: center; }
+}
 
-    .invest-main-heading {
-        font-family: var(--font-heading);
-        font-size: 50px; /* REQUESTED SIZE */
-        color: var(--white);
-        line-height: 1.1;
-        margin: 0;
-        text-shadow: 0 10px 30px rgba(0,0,0,0.8);
-    }
+@media (max-width: 425px) {
+    .projects-section { padding: 40px 0; margin: 0; }
+    .future-card { height: 350px; padding: 20px; margin: 0; border: none; }
+    .future-title { font-size: 50px; margin: 0; }
+    .projects-header { font-size: 28px; margin: 0 0 15px 0; }
+    .projects-divider { margin: 0 0 20px 0; }
+    .projects-list { gap: 20px; margin: 0; padding: 0 10px; }
+    .project-item { gap: 15px; margin: 0; }
+    .project-text h4 { margin: 0 0 5px 0; }
+    .project-text p { margin: 0; }
+}
 
-    /* ==========================================
-       RIGHT COLUMN (SCROLLING LIST)
-       ========================================== */
-    .invest-right-list {
-        flex: 1.2;
-        display: flex;
-        flex-direction: column;
-        gap: 40px;
-        padding-top: 20px;
-        padding-bottom: 20px; /* Extra padding so the last item clears nicely */
-    }
+/* =======================================================
+   8. WHY INVEST IN DUBAI (Sticky Image + Benefits List)
+   ======================================================= */
+.invest-reasons-section { padding: 120px 0; background-color: var(--bg-body); position: relative; }
 
-    /* Slide Right Animation */
-    .anim-slide-right {
-        opacity: 0;
-        transform: translateX(40px);
-        transition: all 0.8s cubic-bezier(0.25, 1, 0.5, 1);
-    }
-    .anim-slide-right.visible {
-        opacity: 1;
-        transform: translateX(0);
-    }
+.invest-reasons-container {
+    max-width: 1400px; margin: 0 auto; padding: 0 40px;
+    display: flex; align-items: flex-start; gap: 80px;
+}
 
-    /* Benefit Card Styling */
-    .benefit-card {
-        display: flex;
-        align-items: flex-start;
-        gap: 30px;
-        padding: 35px;
-        background: rgba(255, 255, 255, 0.02);
-        border: 1px solid var(--border-color);
-        transition: all 0.4s ease;
-        position: relative;
-        overflow: hidden;
-    }
+.invest-left-sticky {
+    flex: 1; position: -webkit-sticky; position: sticky; top: 100px;
+    height: calc(100vh - 120px); min-height: 600px; border-radius: 4px; overflow: hidden;
+}
 
-    .benefit-card:hover {
-        background: rgba(20, 20, 20, 0.9);
-        border-color: var(--gold);
-        transform: translateY(-5px);
-        box-shadow: 0 15px 40px rgba(0,0,0,0.5);
-    }
+.anim-slide-left { opacity: 0; transform: translateX(-40px); transition: all 1.2s cubic-bezier(0.25, 1, 0.5, 1); }
+.anim-slide-left.visible { opacity: 1; transform: translateX(0); }
 
-    .benefit-card::before {
-        content: '';
-        position: absolute;
-        left: 0; top: 0;
-        width: 3px; height: 0%;
-        background: var(--gold);
-        transition: height 0.4s ease;
-    }
-    .benefit-card:hover::before { height: 100%; }
+.invest-image-bg { width: 100%; height: 100%; object-fit: cover; filter: brightness(0.6); transition: transform 10s linear; }
+.invest-left-sticky:hover .invest-image-bg { transform: scale(1.1); }
 
-    .benefit-icon {
-        font-size: 35px;
-        color: var(--gold);
-        min-width: 45px;
-        text-align: center;
-        transition: transform 0.4s ease;
-    }
-    .benefit-card:hover .benefit-icon {
-        transform: scale(1.1);
-    }
+.invest-overlay {
+    position: absolute; inset: 0; background: linear-gradient(to top, rgba(0,0,0,0.9) 0%, rgba(0,0,0,0.2) 100%);
+    display: flex; flex-direction: column; justify-content: flex-end; padding: 60px 40px;
+}
 
-    .benefit-content h3 {
-        font-family: var(--font-heading); 
-        font-size: 26px; 
-        color: var(--white);
-        margin-bottom: 12px;
-        text-transform: uppercase;
-        letter-spacing: 1px;
-    }
+.invest-pre-heading { font-family: var(--font-body); font-size: 14px; color: var(--gold); letter-spacing: 4px; text-transform: uppercase; margin-bottom: 10px; }
+.invest-main-heading { font-family: var(--font-heading); font-size: 50px; color: var(--white); line-height: 1.1; margin: 0; text-shadow: 0 10px 30px rgba(0,0,0,0.8); }
 
-    .benefit-content p, .benefit-content ul {
-        font-family: var(--font-body);
-        font-size: 18px; /* REQUESTED SIZE */
-        color: var(--gray);
-        line-height: 1.6;
-        margin: 0;
-        list-style-type: none;
-        padding: 0;
-    }
+.invest-right-list { flex: 1.2; display: flex; flex-direction: column; gap: 40px; padding: 20px 0; }
 
-    .benefit-content ul li {
-        position: relative;
-        padding-left: 15px;
-        margin-bottom: 5px;
-    }
-    .benefit-content ul li::before {
-        content: '•';
-        color: var(--gold);
-        position: absolute;
-        left: 0;
-    }
+.anim-slide-right { opacity: 0; transform: translateX(40px); transition: all 0.8s cubic-bezier(0.25, 1, 0.5, 1); }
+.anim-slide-right.visible { opacity: 1; transform: translateX(0); }
 
-    /* --- RESPONSIVE --- */
-    @media (max-width: 1024px) {
-        .invest-reasons-container { flex-direction: column; }
-        .invest-left-sticky {
-            position: relative; /* Disable sticky on tablets/mobile */
-            top: 0;
-            width: 100%;
-            height: 500px;
-        }
-    }
-    @media (max-width: 768px) {
-        .invest-main-heading { font-size: 40px; }
-        .benefit-card { flex-direction: column; gap: 20px; padding: 25px; }
-    }
+.benefit-card {
+    display: flex; align-items: flex-start; gap: 30px; padding: 35px;
+    background: rgba(255, 255, 255, 0.02); border: 1px solid var(--border);
+    transition: all 0.4s ease; position: relative; overflow: hidden;
+}
 
-    /* ==========================================
-       RESPONSIVE: TABLET VIEW (Up to 1024px)
-       ========================================== */
-    @media (max-width: 1024px) {
-        .invest-reasons-section {
-            padding: 100px 0;
-        }
-        .invest-reasons-container { 
-            flex-direction: column; 
-            gap: 50px; 
-        }
-        .invest-left-sticky {
-            position: relative; /* Disable sticky on tablets/mobile */
-            top: 0;
-            width: 100%;
-            height: 450px; /* Shorter image height */
-            min-height: auto;
-        }
-    }
+.benefit-card:hover { background: rgba(42, 42, 42, 0.9); border-color: var(--gold); transform: translateY(-5px); box-shadow: 0 15px 40px rgba(0,0,0,0.5); }
+.benefit-card::before { content: ''; position: absolute; left: 0; top: 0; width: 3px; height: 0%; background: var(--gold); transition: height 0.4s ease; }
+.benefit-card:hover::before { height: 100%; }
 
-    /* ==========================================
-       RESPONSIVE: MOBILE VIEW (Up to 768px)
-       ========================================== */
-    @media (max-width: 768px) {
-        .invest-reasons-section {
-            padding: 80px 0;
-        }
-        .invest-reasons-container {
-            padding: 0 20px;
-            gap: 40px;
-        }
-        .invest-left-sticky {
-            height: 350px;
-        }
-        .invest-overlay {
-            padding: 40px 30px;
-        }
-        .invest-main-heading { 
-            font-size: 42px; 
-        }
-        .benefit-card { 
-            flex-direction: column; /* Stacks icon above text */
-            gap: 15px; 
-            padding: 25px; 
-        }
-        .benefit-icon {
-            font-size: 30px; /* Slightly smaller icon */
-        }
-    }
+.benefit-icon { font-size: 35px; color: var(--gold); min-width: 45px; text-align: center; transition: transform 0.4s ease; }
+.benefit-card:hover .benefit-icon { transform: scale(1.1); }
 
-    /* ==========================================
-       RESPONSIVE: SMALL MOBILE VIEW (Up to 425px & 320px)
-       ========================================== */
-    @media (max-width: 425px) {
-        .invest-reasons-section {
-            padding: 60px 0;
-        }
-        .invest-reasons-container {
-            padding: 0 15px; /* Maximum screen usage */
-            gap: 30px;
-        }
-        
-        .invest-left-sticky {
-            height: 300px; /* Prevents the image from taking up the whole phone screen */
-        }
-        .invest-overlay {
-            padding: 30px 20px;
-        }
-        
-        .invest-pre-heading {
-            font-size: 12px;
-            letter-spacing: 2px;
-            margin-bottom: 5px;
-        }
-        .invest-main-heading { 
-            font-size: 36px; /* perfectly matches your other mobile sections */
-        }
+.benefit-content h3 { font-family: var(--font-heading); font-size: 26px; color: var(--white); margin: 0 0 12px 0; text-transform: uppercase; letter-spacing: 1px; }
+.benefit-content p, .benefit-content ul { font-family: var(--font-body); font-size: 18px; color: var(--gray); line-height: 1.6; margin: 0; padding: 0; }
+.benefit-content ul li { position: relative; padding-left: 15px; margin-bottom: 5px; }
+.benefit-content ul li::before { content: '•'; color: var(--gold); position: absolute; left: 0; }
 
-        .invest-right-list {
-            gap: 20px; /* Tighter spacing between cards */
-            padding-top: 0;
-        }
+@media (max-width: 1024px) {
+    .invest-reasons-section { padding: 100px 0; }
+    .invest-reasons-container { flex-direction: column; gap: 50px; }
+    .invest-left-sticky { position: relative; top: 0; width: 100%; height: 450px; min-height: auto; }
+}
 
-        .benefit-card { 
-            padding: 20px; 
-        }
-        .benefit-content h3 { 
-            font-size: 22px; 
-            margin-bottom: 8px;
-        }
-        .benefit-content p, 
-        .benefit-content ul { 
-            font-size: 16px; /* Slightly scaled down from 18px so it doesn't look squished on a 320px screen */
-            line-height: 1.5; 
-        }
-    }
+@media (max-width: 768px) {
+    .invest-reasons-section { padding: 80px 0; }
+    .invest-reasons-container { padding: 0 20px; gap: 40px; }
+    .invest-left-sticky { height: 350px; }
+    .invest-overlay { padding: 40px 30px; }
+    .invest-main-heading { font-size: 42px; }
+    .benefit-card { flex-direction: column; gap: 15px; padding: 25px; }
+    .benefit-icon { font-size: 30px; }
+}
+
+@media (max-width: 425px) {
+    .invest-reasons-section { padding: 40px 10px; margin: 0; } 
+    .invest-reasons-container { padding: 0; gap: 0; margin: 0; display: block; } /* Changes grid/flex to block so it stacks perfectly */
+    
+    /* --- HIDE IMAGE BUT KEEP HEADING FIX --- */
+    .invest-image-bg { display: none !important; } /* Hides the image */
+    .invest-left-sticky { height: auto; min-height: auto; margin: 0; border-radius: 0; position: relative; } 
+    .invest-overlay { position: relative; padding: 0 15px; margin: 0; background: transparent; } /* Removes dark tint and positions text normally */
+    /* --------------------------------------- */
+
+    .invest-pre-heading { font-size: 12px; letter-spacing: 2px; margin: 0 0 5px 0; }
+    
+    /* FIXED HEADING SIZE */
+    .invest-main-heading { font-size: 36px !important; margin: 0; } 
+
+    .invest-right-list { gap: 15px; padding: 20px 15px 15px 15px; margin: 0; }
+    .benefit-card { padding: 20px 15px; gap: 12px; margin: 0; }
+    .benefit-content h3 { font-size: 20px; margin: 0 0 8px 0; }
+    
+    /* FIXED PARAGRAPH SIZE */
+    .benefit-content p, 
+    .benefit-content ul { font-size: 16px !important; line-height: 1.5; margin: 0; }
+}
