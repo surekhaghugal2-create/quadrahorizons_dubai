@@ -1,8 +1,12 @@
+<!-- <?php
+header("Location: index.php");
+exit();
+?> -->
 <?php include "header.php"; ?>
 <link rel="stylesheet" href="css/event.css">
 
 <!-- HERO -->
-<section class="hero">
+<section class="hero faq-section">
   <div class="hero-content">
     <h1>
       Sell Your Property in Dubai<br>
@@ -12,7 +16,7 @@
 </section>
 
 <!-- EVENT + INSIGHTS -->
-<section class="section-bg">
+<section class="section-bg faq-section">
 
   <h2 class="section-title">Event Highlights</h2>
 

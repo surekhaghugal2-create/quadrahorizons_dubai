@@ -10,6 +10,9 @@ body {
   color: #fff;
 }
 
+.faq-section {
+  display: none;
+}
 
 
 /* ================= HERO ================= */
@@ -190,4 +193,8 @@ body {
   .section-bg {
     padding: 80px 30px;
   }
+  .faq-section {
+  display: none;
+}
+
 }
