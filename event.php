@@ -1,7 +1,7 @@
-<!-- <?php
-header("Location: index.php");
-exit();
-?> -->
+ <?php
+// header("Location: index.php");
+// exit();
+?> 
 <?php include "header.php"; ?>
 <link rel="stylesheet" href="css/event.css">
 

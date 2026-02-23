@@ -2,14 +2,14 @@
    1. CORE VARIABLES & RESET
    ============================ */
 :root {
-    --gold: #D4AF37;
-    --dark: #0A1120;
-    --darker: #05080f;
-    --card-bg: #111827;
-    --white: #ffffff;
-    --text-grey: #b0b0b0;
-    --glass: rgba(255, 255, 255, 0.05);
-    --border: rgba(255, 255, 255, 0.1);
+  --bg-body: #000000;
+  --gold: #D4AF37;
+  --white: #ffffff;
+  --gray: #b0b0b0;
+  --text-grey: #cccccc;
+
+  --font-body: "Work Sans", sans-serif;
+  --font-heading: "Playfair Display", serif;
 }
 
 * {
