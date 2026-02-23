@@ -59,9 +59,15 @@
 <section class="invest-dubai-section" id="invest-section">
     <div class="invest-container">
         
-        <div class="invest-image-wrapper">
+        <!-- <div class="invest-image-wrapper">
             <img src="image/WhatsApp Image 2026-02-12 at 3.03.48 PM (1).jpeg" alt="Burj Al Arab, Dubai" class="invest-image">
-        </div>
+        </div> -->
+
+        <div class="invest-image-wrapper slide-left">
+    <img src="image/WhatsApp Image 2026-02-12 at 3.03.48 PM (1).jpeg"
+         alt="Burj Al Arab, Dubai"
+         class="invest-image">
+</div>
 
         <div class="invest-content">
             <span class="invest-subtitle invest-anim">Strategic Selling Approach</span>
@@ -70,6 +76,9 @@
             <div class="invest-text">
                 <p class="invest-anim delay-2">
                     The Dubai real estate market continues to attract global investors, high-net-worth individuals, and institutional buyers. To stand out in a competitive landscape, your property requires more than a listing — it requires presence.
+                </p>
+                <p class="invest-anim delay-2">
+                    Our selling strategy includes:
                 </p>
                 <ul class="selling-strategy">
                     <li>Professional property valuation based on live Dubai market data</li>
@@ -116,10 +125,20 @@
                 </p>
             </div>
         </div>
+            <!-- <div class="invest-image-wrapper slide-right">
+    <img src="image/WhatsApp Image 2026-02-12 at 3.03.48 PM (1).jpeg" 
+         alt="Burj Al Arab, Dubai" 
+         class="invest-image">
+</div> -->
 
-         <div class="invest-image-wrapper">
+<div class="invest-image-wrapper slide-right">
+    <img src="image/WhatsApp Image 2026-02-12 at 3.03.48 PM (1).jpeg"
+         alt="Burj Al Arab, Dubai"
+         class="invest-image">
+</div>
+         <!-- <div class="invest-image-wrapper1">
             <img src="image/WhatsApp Image 2026-02-12 at 3.03.48 PM (1).jpeg" alt="Burj Al Arab, Dubai" class="invest-image">
-        </div>
+        </div> -->
 
     </div>
 </section>
@@ -200,15 +219,18 @@
 <script>
 document.addEventListener("DOMContentLoaded", function() {
 
-    const imageWrapper = document.querySelector(".invest-image-wrapper");
+    const elements = document.querySelectorAll(".slide-left, .slide-right");
 
     function revealOnScroll() {
         const windowHeight = window.innerHeight;
-        const elementTop = imageWrapper.getBoundingClientRect().top;
 
-        if (elementTop < windowHeight - 100) {
-            imageWrapper.classList.add("show");
-        }
+        elements.forEach(function(el) {
+            const elementTop = el.getBoundingClientRect().top;
+
+            if (elementTop < windowHeight - 100) {
+                el.classList.add("show");
+            }
+        });
     }
 
     window.addEventListener("scroll", revealOnScroll);
