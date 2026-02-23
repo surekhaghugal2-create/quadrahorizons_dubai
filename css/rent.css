@@ -87,74 +87,152 @@ body {
     position: relative; z-index: 2; text-align: center; max-width: 900px; padding: 0 20px;
 }
 
+/* =========================================
+   3. PROJECTS GRID SECTION
+   ========================================= */
+.projects-section {
+    padding: 80px 5%;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.project-card {
+    background: var(--card-bg);
+    border-radius: 4px;
+    overflow: hidden;
+    position: relative;
+    transition: transform 0.4s ease;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+    cursor: pointer;
+}
+
+.project-card:hover {
+    transform: translateY(-10px);
+}
+
+.card-img-wrap {
+    position: relative;
+    height: 350px;
+    overflow: hidden;
+}
+
+.card-img-wrap img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.6s ease;
+}
+
+.project-card:hover .card-img-wrap img {
+    transform: scale(1.1);
+}
+
+.exclusive-tag {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    background: var(--gold);
+    color: #000;
+    padding: 6px 15px;
+    font-size: 10px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    z-index: 2;
+}
+
+.card-content {
+    padding: 25px;
+}
+
+.card-content h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 22px;
+    margin: 0 0 5px 0;
+    color: var(--white);
+}
+
+.location {
+    font-size: 12px;
+    color: var(--text-grey);
+    display: block;
+    margin-bottom: 20px;
+}
+
+.price-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    border-top: 1px solid var(--border-color);
+    padding-top: 15px;
+}
+
+.price-label {
+    font-size: 10px;
+    color: #888;
+    text-transform: uppercase;
+    display: block;
+    margin-bottom: 2px;
+}
+
+.price-value {
+    color: var(--gold);
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.arrow-icon {
+    color: var(--gold);
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+.project-card:hover .arrow-icon {
+    transform: rotate(-45deg);
+}
+
 
 /* =========================================
-   5. UNTOUCHED PROPERTY CARDS (AS REQUESTED)
+   6. CINEMATIC SECTION VIDEO BACKGROUNDS
    ========================================= */
-.properties-section { padding: 100px 5%; background: var(--card-bg); }
-.properties-header { text-align: center; margin-bottom: 60px; }
-
-.properties-grid {
-    display: grid; grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
-    gap: 40px; max-width: 1400px; margin: 0 auto;
+.has-bg {
+    position: relative;
+    background: #000 !important;
+    overflow: hidden;
+    border: none !important;
+    padding: 100px 5%;
 }
 
-.property-card {
-    background: var(--dark); border: 1px solid rgba(255,255,255,0.05);
-    border-radius: 4px; overflow: hidden; transition: all 0.5s cubic-bezier(0.25, 1, 0.5, 1);
-    display: flex; flex-direction: column;
-}
-.property-card:hover {
-    transform: translateY(-12px); border-color: var(--gold);
-    box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+.bg-asset {
+    position: absolute; top: 0; left: 0;
+    width: 100%; height: 100%; object-fit: cover;
+    opacity: 0.25; /* Keeps the video dim enough to easily read the text */
+    z-index: 0;
 }
 
-.prop-img-box { position: relative; height: 280px; overflow: hidden; }
-.prop-img-box img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.8s ease; filter: brightness(0.85); }
-.property-card:hover .prop-img-box img { transform: scale(1.1); filter: brightness(1); }
-
-.prop-tag {
-    position: absolute; top: 20px; left: 20px;
-    background: var(--gold); color: #000;
-    font-size: 11px; font-weight: 700; text-transform: uppercase;
-    padding: 6px 12px; letter-spacing: 1px;
+.bg-overlay {
+    position: absolute; inset: 0;
+    /* Smooth gradient to fade the top and bottom edges into the page */
+    background: linear-gradient(to bottom, var(--dark) 0%, rgba(5,8,15,0.4) 50%, var(--dark) 100%);
+    z-index: 1;
 }
 
-.prop-details { padding: 30px; display: flex; flex-direction: column; flex-grow: 1; }
-.prop-details h3 { font-family: var(--font-heading); font-size: 26px; color: #fff; margin-bottom: 8px; }
-.prop-loc { font-size: 13px; color: var(--gold); margin-bottom: 25px; text-transform: uppercase; letter-spacing: 1px; }
-
-.prop-agent {
-    display: flex; justify-content: space-between; align-items: center;
-    border-top: 1px solid rgba(255,255,255,0.1); border-bottom: 1px solid rgba(255,255,255,0.1);
-    padding: 15px 0; margin-bottom: 25px;
+/* Force content to sit above the video background */
+.has-bg .info-wrapper,
+.has-bg .anim-fade-up,
+.has-bg .test-grid {
+    position: relative; z-index: 2;
 }
-.agent-info span { display: block; font-size: 10px; color: #888; text-transform: uppercase; }
-.agent-info strong { display: block; color: #fff; font-size: 15px; margin-top: 4px; letter-spacing: 1px; }
-
-.agent-icons { display: flex; gap: 10px; }
-.agent-icons a {
-    width: 38px; height: 38px; background: rgba(255,255,255,0.05); border-radius: 50%;
-    display: flex; align-items: center; justify-content: center; color: var(--white); transition: 0.3s;
-}
-.agent-icons a:hover { background: var(--gold); color: #000; transform: scale(1.1); }
-
-.prop-actions { display: flex; gap: 15px; margin-top: auto; }
-.prop-btn {
-    flex: 1; padding: 14px; font-size: 12px; text-transform: uppercase; font-weight: 700;
-    cursor: pointer; transition: 0.4s; text-align: center; letter-spacing: 1px; border: none;
-}
-.prop-btn.solid { background: var(--gold); color: #000; }
-.prop-btn.solid:hover { background: #fff; }
-.prop-btn.outline { background: transparent; border: 1px solid rgba(255,255,255,0.2); color: #fff; }
-.prop-btn.outline:hover { border-color: var(--gold); color: var(--gold); }
-
 
 /* =========================================
-   6. CLEAN SPLIT INFO SECTION
+   7. CLEAN SPLIT INFO SECTION
    ========================================= */
-.info-section { padding: 100px 5%; background: var(--dark); border-top: 1px solid rgba(255,255,255,0.05); border-bottom: 1px solid rgba(255,255,255,0.05); }
-
 .info-wrapper {
     max-width: 1300px; margin: 0 auto;
     display: flex; align-items: center; gap: 60px;
@@ -164,7 +242,7 @@ body {
 .info-image img { width: 100%; height: 100%; object-fit: cover; }
 
 .info-content { flex: 1; }
-.info-content .heading-line::after { margin-left: 0; } /* Left align underline */
+.info-content .heading-line::after { margin-left: 0; }
 
 .info-list { list-style: none; padding: 0; margin-top: 30px; display: grid; gap: 15px; }
 .info-list li {
@@ -176,9 +254,8 @@ body {
     position: absolute; left: 0; top: 2px;
 }
 
-
 /* =========================================
-   7. CLASSIC LUXURY FAQ
+   8. CLASSIC LUXURY FAQ
    ========================================= */
 .faq-section { padding: 100px 5%; max-width: 1000px; margin: 0 auto; background: var(--dark); }
 
@@ -203,11 +280,10 @@ body {
 .faq-item.active .faq-icon { transform: rotate(45deg); }
 .faq-item.active .faq-answer { max-height: 300px; }
 
-
 /* =========================================
-   8. ELEGANT TESTIMONIAL CARDS
+   9. ELEGANT TESTIMONIAL CARDS
    ========================================= */
-.testimonials-section { padding: 100px 5%; background: var(--card-bg); text-align: center; }
+.testimonials-section { text-align: center; }
 
 .test-grid { 
     display: grid; grid-template-columns: repeat(3, 1fr); gap: 40px; 
@@ -215,21 +291,21 @@ body {
 }
 
 .test-card {
-    background: var(--dark); padding: 50px 40px;
-    border: 1px solid rgba(255,255,255,0.05); border-radius: 4px;
+    background: rgba(10, 17, 32, 0.7); /* Glassy background so the video peeks through */
+    backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px);
+    padding: 50px 40px; border: 1px solid rgba(255,255,255,0.05); border-radius: 4px;
     transition: 0.4s ease; text-align: center;
 }
 
 .test-card:hover { border-color: var(--gold); transform: translateY(-10px); box-shadow: 0 20px 40px rgba(0,0,0,0.3); }
 
 .test-icon { font-family: var(--font-heading); font-size: 50px; color: var(--gold); line-height: 0.5; margin-bottom: 20px; }
-
 .test-card h5 { font-size: 22px; color: var(--white); margin-bottom: 5px; font-family: var(--font-heading); }
 .test-card span { display: block; font-size: 12px; color: var(--gold); text-transform: uppercase; letter-spacing: 2px; margin-bottom: 25px; }
 
 
 /* =========================================
-   9. RESPONSIVE: LAPTOP / TABLET
+   10. RESPONSIVE: LAPTOP / TABLET
    ========================================= */
 @media (max-width: 1024px) {
     .properties-grid { grid-template-columns: repeat(2, 1fr); }
@@ -241,7 +317,7 @@ body {
 }
 
 /* =========================================
-   10. RESPONSIVE: MOBILE (Strict Typography)
+   11. RESPONSIVE: MOBILE (Strict Typography)
    ========================================= */
 @media (max-width: 768px) {
     .properties-grid, .test-grid { grid-template-columns: 1fr; }
@@ -251,7 +327,7 @@ body {
 @media (max-width: 425px) {
     .rent-hero { height: 60vh; min-height: 400px; }
     
-    .properties-section, .info-section, .faq-section, .testimonials-section { padding: 60px 20px; }
+    .properties-section, .has-bg, .faq-section { padding: 60px 20px; }
 
     /* --- STRICT MOBILE TYPOGRAPHY ENFORCEMENT --- */
     .heading-strict {

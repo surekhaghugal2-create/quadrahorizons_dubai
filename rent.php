@@ -24,73 +24,214 @@
     </div>
 </section>
 
-<section class="properties-section">
-    <div class="properties-header anim-fade-up scroll-anim">
-        <h2 class="heading-strict heading-line">Exclusive <span class="accent-text">Listings</span></h2>
-        <p class="para-strict" style="margin-top: 20px;">Discover our curated selection of Dubai's finest properties.</p>
+<section class="projects-section">
+    <div class="grid-container">
+        <div class="project-card reveal">
+            <span class="exclusive-tag">Exclusive</span>
+            <div class="card-img-wrap">
+                <img src="image/mbp-bc-hero-banner.webp">
+            </div>
+            <div class="card-content">
+                <h3>Mercedes-Benz Places Binghatti City</h3>
+                <span class="location"><i class="fas fa-map-marker-alt"></i> Nad al sheba</span>
+                <div class="price-row">
+                    <div>
+                        <span class="price-label">FROM</span>
+                        <div class="price-value">AED 1M</div>
+                    </div>
+                    <i class="fas fa-arrow-circle-down arrow-icon"></i>
+                </div>
+            </div>
+        </div>
+
+        <div class="project-card reveal" style="transition-delay: 0.1s">
+            <span class="exclusive-tag">Exclusive</span>
+            <div class="card-img-wrap">
+                <img src="image/binghatti-etheria-hero-banner.avif" alt="Project">
+            </div>
+            <div class="card-content">
+                <h3>Binghatti Etherea</h3>
+                <span class="location"><i class="fas fa-map-marker-alt"></i> Jumeirah Village Circle</span>
+                <div class="price-row">
+                    <div>
+                        <span class="price-label">FROM</span>
+                        <div class="price-value">AED 5M</div>
+                    </div>
+                    <i class="fas fa-arrow-circle-down arrow-icon"></i>
+                </div>
+            </div>
+        </div>
+
+        <div class="project-card reveal" style="transition-delay: 0.2s">
+            <span class="exclusive-tag">New Launch</span>
+            <div class="card-img-wrap">
+                <img src="image/binghatti-skyterraces-hero-banner.avif">
+            </div>
+            <div class="card-content">
+                <h3>Binghatti Skyterraces</h3>
+                <span class="location"><i class="fas fa-map-marker-alt"></i> Motor City</span>
+                <div class="price-row">
+                    <div>
+                        <span class="price-label">FROM</span>
+                        <div class="price-value">AED 19M</div>
+                    </div>
+                    <i class="fas fa-arrow-circle-down arrow-icon"></i>
+                </div>
+            </div>
+        </div>
+
+        <div class="project-card reveal">
+            <span class="exclusive-tag">Exclusive</span>
+            <div class="card-img-wrap">
+                <img src="image/binghatti-luxuria-hero-banner.avif">
+            </div>
+            <div class="card-content">
+                <h3>Binghatti Luxuria</h3>
+                <span class="location"><i class="fas fa-map-marker-alt"></i> Jumeirah Village Triangle</span>
+                <div class="price-row">
+                    <div>
+                        <span class="price-label">FROM</span>
+                        <div class="price-value">AED 2.5M</div>
+                    </div>
+                    <i class="fas fa-arrow-circle-down arrow-icon"></i>
+                </div>
+            </div>
+        </div>
+
+        <div class="project-card reveal" style="transition-delay: 0.1s">
+            <span class="exclusive-tag">Selling Fast</span>
+            <div class="card-img-wrap">
+                <img src="image/binghatti-cullinan-hero-banner.avif" alt="Project">
+            </div>
+            <div class="card-content">
+                <h3>Binghatti Cullinan</h3>
+                <span class="location"><i class="fas fa-map-marker-alt"></i> Al Jaddaf</span>
+                <div class="price-row">
+                    <div>
+                        <span class="price-label">FROM</span>
+                        <div class="price-value">AED 45M</div>
+                    </div>
+                    <i class="fas fa-arrow-circle-down arrow-icon"></i>
+                </div>
+            </div>
+        </div>
+
+        <div class="project-card reveal" style="transition-delay: 0.2s">
+            <span class="exclusive-tag">Exclusive</span>
+            <div class="card-img-wrap">
+                <img src="image/binghatti-hillcrest-hero-banner.avif" alt="Project">
+            </div>
+            <div class="card-content">
+                <h3>Binghatti Hillcrest</h3>
+                <span class="location"><i class="fas fa-map-marker-alt"></i> Arjan</span>
+                <div class="price-row">
+                    <div>
+                        <span class="price-label">FROM</span>
+                        <div class="price-value">AED 3.2M</div>
+                    </div>
+                    <i class="fas fa-arrow-circle-down arrow-icon"></i>
+                </div>
+            </div>
+        </div>
+
+        <div class="project-card reveal" style="transition-delay: 0.2s">
+            <span class="exclusive-tag">Exclusive</span>
+            <div class="card-img-wrap">
+                <img src="image/binghatti-titania-hero-banner-1.avif" alt="Project">
+            </div>
+            <div class="card-content">
+                <h3>Binghatti Titania</h3>
+                <span class="location"><i class="fas fa-map-marker-alt"></i> Majan</span>
+                <div class="price-row">
+                    <div>
+                        <span class="price-label">FROM</span>
+                        <div class="price-value">AED 3.2M</div>
+                    </div>
+                    <i class="fas fa-arrow-circle-down arrow-icon"></i>
+                </div>
+            </div>
+        </div>
+
+        <div class="project-card reveal" style="transition-delay: 0.2s">
+            <span class="exclusive-tag">Exclusive</span>
+            <div class="card-img-wrap">
+                <img src="image/binghatti-vintage-hero-banner.avif" alt="Project">
+            </div>
+            <div class="card-content">
+                <h3>Binghatti Vintage</h3>
+                <span class="location"><i class="fas fa-map-marker-alt"></i> Majan</span>
+                <div class="price-row">
+                    <div>
+                        <span class="price-label">FROM</span>
+                        <div class="price-value">AED 3.2M</div>
+                    </div>
+                    <i class="fas fa-arrow-circle-down arrow-icon"></i>
+                </div>
+            </div>
+        </div>
+
+        <div class="project-card reveal" style="transition-delay: 0.2s">
+            <span class="exclusive-tag">Exclusive</span>
+            <div class="card-img-wrap">
+                <img src="image/binghatti-pinnacle-hero-banner.avif" alt="Project">
+            </div>
+            <div class="card-content">
+                <h3>Binghatti Pinnacle</h3>
+                <span class="location"><i class="fas fa-map-marker-alt"></i> Al Jaddaf</span>
+                <div class="price-row">
+                    <div>
+                        <span class="price-label">FROM</span>
+                        <div class="price-value">AED 3.2M</div>
+                    </div>
+                    <i class="fas fa-arrow-circle-down arrow-icon"></i>
+                </div>
+            </div>
+        </div>
+
+        <div class="project-card reveal" style="transition-delay: 0.2s">
+            <span class="exclusive-tag">Exclusive</span>
+            <div class="card-img-wrap">
+                <img src="image/Mercedes-Benz Places Binghatti City.png" alt="Project">
+            </div>
+            <div class="card-content">
+                <h3>Mercedes-Benz Places | By Binghatti</h3>
+                <span class="location"><i class="fas fa-map-marker-alt"></i> Business Bay</span>
+                <div class="price-row">
+                    <div>
+                        <span class="price-label">FROM</span>
+                        <div class="price-value">AED 3.2M</div>
+                    </div>
+                    <i class="fas fa-arrow-circle-down arrow-icon"></i>
+                </div>
+            </div>
+        </div>
+
+        <div class="project-card reveal" style="transition-delay: 0.2s">
+            <span class="exclusive-tag">Exclusive</span>
+            <div class="card-img-wrap">
+                <img src="image/binghatti-amberhall-hero-banner.webp" alt="Project">
+            </div>
+            <div class="card-content">
+                <h3>Binghatti Amberhall</h3>
+                <span class="location"><i class="fas fa-map-marker-alt"></i> JVC</span>
+                <div class="price-row">
+                    <div>
+                        <span class="price-label">FROM</span>
+                        <div class="price-value">AED 3.2M</div>
+                    </div>
+                    <i class="fas fa-arrow-circle-down arrow-icon"></i>
+                </div>
+            </div>
+        </div>
     </div>
-
-    <div class="properties-grid">
-        <div class="property-card anim-fade-up scroll-anim delay-100">
-            <div class="prop-img-box">
-                <img src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=600&q=80" alt="Property">
-                <span class="prop-tag">New Launch</span>
-            </div>
-            <div class="prop-details">
-                <h3>Mercedes-Benz Places</h3>
-                <p class="prop-loc">Downtown Dubai | 2 Bedrooms</p>
-                <div class="prop-agent">
-                    <div class="agent-info"><span>Listed by</span><strong>Riyan Shagotra</strong></div>
-                    <div class="agent-icons"><a href="#"><i class="fas fa-phone"></i></a><a href="#"><i class="fab fa-whatsapp"></i></a></div>
-                </div>
-                <div class="prop-actions">
-                    <button class="prop-btn solid">Book Now</button>
-                    <button class="prop-btn outline">Download Brochure</button>
-                </div>
-            </div>
-        </div>
-
-        <div class="property-card anim-fade-up scroll-anim delay-200">
-            <div class="prop-img-box">
-                <img src="https://images.unsplash.com/photo-1512915922686-57c11dde9b6b?auto=format&fit=crop&w=600&q=80" alt="Property">
-                <span class="prop-tag">Selling Fast</span>
-            </div>
-            <div class="prop-details">
-                <h3>Bugatti Residences</h3>
-                <p class="prop-loc">Business Bay | 3 Bedrooms</p>
-                <div class="prop-agent">
-                    <div class="agent-info"><span>Listed by</span><strong>Sarah Jenkins</strong></div>
-                    <div class="agent-icons"><a href="#"><i class="fas fa-phone"></i></a><a href="#"><i class="fab fa-whatsapp"></i></a></div>
-                </div>
-                <div class="prop-actions">
-                    <button class="prop-btn solid">Book Now</button>
-                    <button class="prop-btn outline">Download Brochure</button>
-                </div>
-            </div>
-        </div>
-
-        <div class="property-card anim-fade-up scroll-anim delay-300">
-            <div class="prop-img-box">
-                <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=600&q=80" alt="Property">
-            </div>
-            <div class="prop-details">
-                <h3>The Palm Crown</h3>
-                <p class="prop-loc">Palm Jumeirah | 5 Bedroom Villa</p>
-                <div class="prop-agent">
-                    <div class="agent-info"><span>Listed by</span><strong>Ahmed Al-Fayed</strong></div>
-                    <div class="agent-icons"><a href="#"><i class="fas fa-phone"></i></a><a href="#"><i class="fab fa-whatsapp"></i></a></div>
-                </div>
-                <div class="prop-actions">
-                    <button class="prop-btn solid">Book Now</button>
-                    <button class="prop-btn outline">Download Brochure</button>
-                </div>
-            </div>
-        </div>
-        
-        </div>
 </section>
 
-<section class="info-section">
+<section class="has-bg">
+    <video autoplay muted loop playsinline class="bg-asset">
+        <source src="https://assets.mixkit.co/videos/preview/mixkit-night-city-with-bright-lights-and-traffic-4570-large.mp4" type="video/mp4">
+    </video>
+    <div class="bg-overlay"></div>
+
     <div class="info-wrapper">
         <div class="info-image anim-slide-left scroll-anim">
             <img src="https://images.unsplash.com/photo-1546412414-e1885259563a?auto=format&fit=crop&w=1000&q=80" alt="Dubai City">
@@ -148,7 +289,12 @@
     </div>
 </section>
 
-<section class="testimonials-section">
+<section class="testimonials-section has-bg">
+    <video id="testimonial-bg-video" autoplay="autoplay" muted="muted" loop="loop" playsinline="playsinline" preload="auto" class="bg-asset">
+        <source src="video/background (2).mp4" type="video/mp4">
+        </video>
+    <div class="bg-overlay"></div>
+
     <div class="anim-fade-up scroll-anim">
         <h2 class="heading-strict heading-line">Client <span class="accent-text">Experiences</span></h2>
     </div>
@@ -176,6 +322,7 @@
         </div>
     </div>
 </section>
+
 
 <script>
 document.addEventListener("DOMContentLoaded", function() {
@@ -209,6 +356,17 @@ document.addEventListener("DOMContentLoaded", function() {
     }, { threshold: 0.1, rootMargin: "0px 0px -50px 0px" }); 
 
     scrollElements.forEach(el => revealOnScroll.observe(el));
+});
+
+document.addEventListener("DOMContentLoaded", function() {
+    // Force the video to play if the browser tries to block it
+    var bgVideo = document.getElementById("testimonial-bg-video");
+    if (bgVideo) {
+        bgVideo.muted = true; // Browsers require video to be strictly muted to allow autoplay
+        bgVideo.play().catch(function(error) {
+            console.log("Browser prevented autoplay. This is normal if the device is on Low Power Mode.");
+        });
+    }
 });
 </script>
 
