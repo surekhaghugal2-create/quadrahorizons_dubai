@@ -26,19 +26,7 @@
 <!-- Strategic Selling Approach  -->
 <section class="invest-dubai-section" id="invest-section">
     <div class="invest-container">
-<<<<<<< HEAD
-=======
-        
-<<<<<<< HEAD
-    <div class="invest-image-wrapper slide-left">
-=======
-        <!-- <div class="invest-image-wrapper">
-            <img src="image/WhatsApp Image 2026-02-12 at 3.03.48 PM (1).jpeg" alt="Burj Al Arab, Dubai" class="invest-image">
-        </div> -->
-
->>>>>>> 5b79be4f4af4eca80246b463e4a1a2fe6bc57239
         <div class="invest-image-wrapper slide-left">
->>>>>>> 6d5ea38b5df5436f47ca9bd86a66ff9e70e462af
     <img src="image/WhatsApp Image 2026-02-12 at 3.03.48 PM (1).jpeg"
          alt="Burj Al Arab, Dubai"
          class="invest-image">
@@ -100,37 +88,12 @@
                 </p>
             </div>
         </div>
-<<<<<<< HEAD
 
     <div class="invest-image-wrapper slide-right">
         <img src="image/WhatsApp Image 2026-02-12 at 3.03.48 PM (1).jpeg"
             alt="Burj Al Arab, Dubai"
             class="invest-image">
     </div>
-=======
-<<<<<<< HEAD
- <div class="invest-image-wrapper slide-right">
-    <img src="image/WhatsApp Image 2026-02-12 at 3.03.50 PM (1).jpeg"
-         alt="Burj Al Arab, Dubai"
-         class="invest-image">
-</div>
-=======
-            <!-- <div class="invest-image-wrapper slide-right">
-    <img src="image/WhatsApp Image 2026-02-12 at 3.03.48 PM (1).jpeg" 
-         alt="Burj Al Arab, Dubai" 
-         class="invest-image">
-</div> -->
-
-<div class="invest-image-wrapper slide-right">
-    <img src="image/WhatsApp Image 2026-02-12 at 3.03.48 PM (1).jpeg"
-         alt="Burj Al Arab, Dubai"
-         class="invest-image">
-</div>
-         <!-- <div class="invest-image-wrapper1">
-            <img src="image/WhatsApp Image 2026-02-12 at 3.03.48 PM (1).jpeg" alt="Burj Al Arab, Dubai" class="invest-image">
-        </div> -->
->>>>>>> 6d5ea38b5df5436f47ca9bd86a66ff9e70e462af
->>>>>>> 5b79be4f4af4eca80246b463e4a1a2fe6bc57239
 
     </div>
 </section>
@@ -208,10 +171,9 @@
 </div>
 </section>
 
+<script>
+document.addEventListener("DOMContentLoaded", function() {
 
-<<<<<<< HEAD
-
-=======
     const elements = document.querySelectorAll(".slide-left, .slide-right");
 
     function revealOnScroll() {
@@ -230,7 +192,6 @@
     revealOnScroll();
 });
 </script>
->>>>>>> 6d5ea38b5df5436f47ca9bd86a66ff9e70e462af
 
 
 <?php include 'footer.php'; ?>
