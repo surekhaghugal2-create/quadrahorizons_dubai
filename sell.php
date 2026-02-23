@@ -59,15 +59,11 @@
 <section class="invest-dubai-section" id="invest-section">
     <div class="invest-container">
         
-<<<<<<< HEAD
-    <div class="invest-image-wrapper slide-left">
-=======
         <!-- <div class="invest-image-wrapper">
             <img src="image/WhatsApp Image 2026-02-12 at 3.03.48 PM (1).jpeg" alt="Burj Al Arab, Dubai" class="invest-image">
         </div> -->
 
         <div class="invest-image-wrapper slide-left">
->>>>>>> 6d5ea38b5df5436f47ca9bd86a66ff9e70e462af
     <img src="image/WhatsApp Image 2026-02-12 at 3.03.48 PM (1).jpeg"
          alt="Burj Al Arab, Dubai"
          class="invest-image">
@@ -129,13 +125,6 @@
                 </p>
             </div>
         </div>
-<<<<<<< HEAD
- <div class="invest-image-wrapper slide-right">
-    <img src="image/WhatsApp Image 2026-02-12 at 3.03.50 PM (1).jpeg"
-         alt="Burj Al Arab, Dubai"
-         class="invest-image">
-</div>
-=======
             <!-- <div class="invest-image-wrapper slide-right">
     <img src="image/WhatsApp Image 2026-02-12 at 3.03.48 PM (1).jpeg" 
          alt="Burj Al Arab, Dubai" 
@@ -150,7 +139,6 @@
          <!-- <div class="invest-image-wrapper1">
             <img src="image/WhatsApp Image 2026-02-12 at 3.03.48 PM (1).jpeg" alt="Burj Al Arab, Dubai" class="invest-image">
         </div> -->
->>>>>>> 6d5ea38b5df5436f47ca9bd86a66ff9e70e462af
 
     </div>
 </section>
