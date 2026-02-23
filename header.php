@@ -60,12 +60,12 @@
           <a href="rent.php">Rent</a>
           <span class="sub-cat">Luxury Rentals</span>
         </li>
-         <li style="--delay: 0.6s">
+         <!-- <li style="--delay: 0.6s">
           <a href="event.php">Event</a>
-        </li>
-         <li style="--delay: 0.6s">
+        </li> -->
+         <!-- <li style="--delay: 0.6s">
           <a href="content-hub.php">Content Hub</a>
-        </li>
+        </li> -->
         <li style="--delay: 0.6s">
           <a href="about-us.php">About us</a>
         </li>

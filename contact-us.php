@@ -65,7 +65,7 @@
                 <label class="c-label">Message</label>
                 <textarea class="c-input" rows="4" style="resize: none;" placeholder="How can we help?" name="message"></textarea>
             </div>
-            <button type="button" class="c-btn">Send Request</button>
+            <button type="submit" class="c-btn">Send Request</button>
         </form>
     </div>
 
