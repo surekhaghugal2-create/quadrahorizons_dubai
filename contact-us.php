@@ -48,22 +48,22 @@
     </div>
 
     <div class="contact-form-box fade-in-up scroll-anim delay-200">
-        <form>
+        <form action="send-mail2.php" method="POST">
             <div class="c-form-group">
                 <label class="c-label">Full Name</label>
-                <input type="text" class="c-input" placeholder="Your Name">
+                <input type="text" class="c-input" placeholder="Your Name" name="name">
             </div>
             <div class="c-form-group">
                 <label class="c-label">Email Address</label>
-                <input type="email" class="c-input" placeholder="name@example.com">
+                <input type="email" class="c-input" placeholder="name@example.com" name="email">
             </div>
             <div class="c-form-group">
                 <label class="c-label">Phone Number</label>
-                <input type="tel" class="c-input" placeholder="+971 ...">
+                <input type="tel" class="c-input" placeholder="+971 ..." name="contact">
             </div>
             <div class="c-form-group">
                 <label class="c-label">Message</label>
-                <textarea class="c-input" rows="4" style="resize: none;" placeholder="How can we help?"></textarea>
+                <textarea class="c-input" rows="4" style="resize: none;" placeholder="How can we help?" name="message"></textarea>
             </div>
             <button type="button" class="c-btn">Send Request</button>
         </form>
