@@ -19,9 +19,11 @@
 <section class="invest-dubai-section" id="invest-section">
     <div class="invest-container">
         
-        <div class="invest-image-wrapper">
-            <img src="image/WhatsApp Image 2026-02-12 at 3.03.48 PM (1).jpeg" alt="Burj Al Arab, Dubai" class="invest-image">
-        </div>
+    <div class="invest-image-wrapper slide-left">
+    <img src="image/WhatsApp Image 2026-02-12 at 3.03.48 PM (1).jpeg"
+         alt="Burj Al Arab, Dubai"
+         class="invest-image">
+</div>
 
         <div class="invest-content">
             <span class="invest-subtitle invest-anim">Strategic Selling Approach</span>
@@ -80,10 +82,11 @@
                 </p>
             </div>
         </div>
-
-         <div class="invest-image-wrapper">
-            <img src="image/WhatsApp Image 2026-02-12 at 3.03.48 PM (1).jpeg" alt="Burj Al Arab, Dubai" class="invest-image">
-        </div>
+ <div class="invest-image-wrapper slide-right">
+    <img src="image/WhatsApp Image 2026-02-12 at 3.03.50 PM (1).jpeg"
+         alt="Burj Al Arab, Dubai"
+         class="invest-image">
+</div>
 
     </div>
 </section>
@@ -170,24 +173,8 @@
 </div>
 </section>
 
-<script>
-document.addEventListener("DOMContentLoaded", function() {
 
-    const imageWrapper = document.querySelector(".invest-image-wrapper");
 
-    function revealOnScroll() {
-        const windowHeight = window.innerHeight;
-        const elementTop = imageWrapper.getBoundingClientRect().top;
-
-        if (elementTop < windowHeight - 100) {
-            imageWrapper.classList.add("show");
-        }
-    }
-
-    window.addEventListener("scroll", revealOnScroll);
-    revealOnScroll();
-});
-</script>
 
 
 <?php include 'footer.php'; ?>
