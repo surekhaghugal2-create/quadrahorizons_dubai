@@ -6,13 +6,53 @@
   <img src="image/1.jpg" alt="Dubai Skyline">
 </section>
 
-<!-- TITLE -->
-<section class="page-title">
-  <h1>Properties for Sell</h1>
-  <p>
-    Delivering world-class real estate experiences across Dubai with a focus on
-    architecture, innovation and long-term value. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
-  </p>
+<!-- RERA SAFETY SECTION -->
+<section class="rera-section">
+    <div class="rera-container">
+
+        <div class="rera-header">
+            <span class="rera-subtitle">INVESTOR PROTECTION</span>
+            <h2>Sell Property in Dubai</h2>
+            <p>
+                At QH Properties, we curate strategic sales journeys for luxury apartments, waterfront villas, penthouses, and high-value investment assets across Dubai’s prime communities. Whether you are selling in Downtown Dubai, Dubai Marina, Palm Jumeirah, Business Bay, or Dubai Hills Estate, we ensure your property achieves maximum exposure, premium positioning, and optimal return.
+            </p><br/>
+            <p>
+                Selling real estate in Dubai is not simply a transaction — it is a calculated release of capital, opportunity, and legacy. Our RERA-certified brokers combine market intelligence, buyer networks, and precision negotiation to deliver exceptional results.
+            </p>
+        </div>
+
+        <!-- <div class="rera-cards">
+
+            <div class="rera-card">
+                <div class="rera-icon">01</div>
+                <h3>Escrow Protection</h3>
+                <p>
+                    All payments must be deposited into escrow accounts 
+                    monitored and regulated by RERA to protect buyer funds.
+                </p>
+            </div>
+
+            <div class="rera-card">
+                <div class="rera-icon">02</div>
+                <h3>Developer Checks</h3>
+                <p>
+                    RERA requires developers to own the land and complete 
+                    at least 20% of construction before selling units.
+                </p>
+            </div>
+
+            <div class="rera-card">
+                <div class="rera-icon">03</div>
+                <h3>Delivery Assurance</h3>
+                <p>
+                    Developers are obligated to provide realistic timelines 
+                    and adhere to strict regulatory compliance standards.
+                </p>
+            </div>
+
+        </div> -->
+
+    </div>
 </section>
 
 <!-- Strategic Selling Approach  -->
@@ -51,10 +91,6 @@
 <!-- Strategic Selling Approach  -->
 <section class="invest-dubai-section" id="why-sell-dubai">
     <div class="invest-container">
-        
-        <!-- <div class="invest-image-wrapper">
-            <img src="image/WhatsApp Image 2026-02-12 at 3.03.48 PM (1).jpeg" alt="Burj Al Arab, Dubai" class="invest-image">
-        </div> -->
 
         <div class="invest-content">
             <span class="invest-subtitle invest-anim">Why Sell Your Property in</span>
@@ -86,15 +122,6 @@
         </div>
 
     </div>
-</section>
-
-<!-- INFO SECTION -->
-<section class="info dark">
-  <h1>Properties for Sell in Dubai | Binghatti</h1>
-  <p>
-    Delivering world-class real estate experiences across Dubai with a focus on
-    architecture, innovation and long-term value. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
-  </p>
 </section>
 
 <!-- FAQ SECTION -->
