@@ -326,7 +326,7 @@
         
         <div class="team-card reveal">
             <div class="img-box">
-                <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&w=600&q=80" alt="Khaled Alblooshi">
+                <img src="image/IMG_0070.JPG.jpeg" alt="Khaled Alblooshi">
                 <div class="social-overlay"><i class="fab fa-linkedin"></i></div>
             </div>
             <div class="team-info">
@@ -337,7 +337,7 @@
 
         <div class="team-card reveal" style="transition-delay: 0.2s">
             <div class="img-box">
-                <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=600&q=80" alt="Yasin Mulla Ali">
+                <img src="" alt="Yasin Mulla Ali">
                 <div class="social-overlay"><i class="fab fa-linkedin"></i></div>
             </div>
             <div class="team-info">
@@ -348,7 +348,7 @@
 
         <div class="team-card reveal" style="transition-delay: 0.4s">
             <div class="img-box">
-                <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=600&q=80" alt="Chakib Chami">
+                <img src="" alt="Chakib Chami">
                 <div class="social-overlay"><i class="fab fa-linkedin"></i></div>
             </div>
             <div class="team-info">
@@ -359,7 +359,7 @@
 
         <div class="team-card reveal" style="transition-delay: 0.6s">
             <div class="img-box">
-                <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&w=600&q=80" alt="Omar Alsayed">
+                <img src="image/omar.png" alt="Omar Alsayed">
                 <div class="social-overlay"><i class="fab fa-linkedin"></i></div>
             </div>
             <div class="team-info">
