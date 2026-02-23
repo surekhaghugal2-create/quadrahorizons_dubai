@@ -307,3 +307,68 @@ document.addEventListener("DOMContentLoaded", function() {
             bgVideo.playbackRate = 0.2; // Change this number to adjust speed (0.5 = 50% speed)
         }
     });
+
+    // 1. FAQ Accordion Functionality off page
+    const faqItems = document.querySelectorAll('.faq-item');
+    
+    faqItems.forEach(item => {
+        const question = item.querySelector('.faq-question');
+        
+        question.addEventListener('click', () => {
+            // Close all other open items
+            faqItems.forEach(otherItem => {
+                if (otherItem !== item && otherItem.classList.contains('active')) {
+                    otherItem.classList.remove('active');
+                }
+            });
+            // Toggle the clicked item
+            item.classList.toggle('active');
+        });
+    });
+
+    // 2. Global Scroll Reveal Animations
+    // Finds everything with the class 'scroll-trigger' and adds 'visible' when scrolled to
+    const scrollElements = document.querySelectorAll('.scroll-trigger');
+    
+    const revealOnScroll = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('visible'); // Matches the CSS class we added
+                observer.unobserve(entry.target); // Stop observing once revealed
+            }
+        });
+    }, { threshold: 0.15 });
+
+    scrollElements.forEach(el => {
+        revealOnScroll.observe(el);
+    });
+
+
+    // conatct page
+    document.addEventListener("DOMContentLoaded", function() {
+    
+    // 1. FIRE HERO ANIMATION INSTANTLY ON LOAD
+    setTimeout(function() {
+        const heroContent = document.querySelector('.contact-hero-content');
+        if (heroContent) {
+            heroContent.classList.add('visible');
+        }
+    }, 150); // Small 150ms delay makes it look incredibly smooth
+
+    // 2. SCROLL OBSERVER FOR THE REST OF THE PAGE
+    const scrollElements = document.querySelectorAll('.scroll-anim');
+    
+    // Lowered threshold to 0.05 so it triggers much easier on mobile phones
+    const revealOnScroll = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('visible');
+                observer.unobserve(entry.target); 
+            }
+        });
+    }, { threshold: 0.05, rootMargin: "0px 0px -20px 0px" }); 
+
+    scrollElements.forEach(el => {
+        revealOnScroll.observe(el);
+    });
+});

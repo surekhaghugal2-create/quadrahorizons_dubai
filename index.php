@@ -195,44 +195,6 @@
             </div>
         </div>
 
-        <!-- <div class="property-card">
-            <div class="prop-img-box">
-                <img src="image/binghatti-flare-hero-banner-new.avif" alt="Property">
-                <span class="prop-tag">Just Listed</span>
-            </div>
-            <div class="prop-details">
-                <h3>Binghatti Flare</h3>
-                <p class="prop-loc">Jumeirah Village Triangle</p>
-                <div class="prop-agent">
-                    <div class="agent-info"><span>Listed by</span><strong>Elena Russo</strong></div>
-                    <div class="agent-icons"><a href="#">📞</a><a href="#">💬</a></div>
-                </div>
-                <div class="prop-actions">
-                    <button class="prop-btn solid">Book Now</button>
-                    <a href="downloads/damac-brochure.zip" download class="prop-btn outline" style="text-decoration: none; text-align: center; display: flex; align-items: center; justify-content: center;">Download Brochure</a>
-                </div>
-            </div>
-        </div> -->
-
-        <!-- <div class="property-card">
-            <div class="prop-img-box">
-                <img src="image/binghatti-hillside-hero-banner-new.avif" alt="Property">
-                <span class="prop-tag">Just Listed</span>
-            </div>
-            <div class="prop-details">
-                <h3>Binghatti Hillside</h3>
-                <p class="prop-loc">Dubai Science Park</p>
-                <div class="prop-agent">
-                    <div class="agent-info"><span>Listed by</span><strong>Elena Russo</strong></div>
-                    <div class="agent-icons"><a href="#">📞</a><a href="#">💬</a></div>
-                </div>
-                <div class="prop-actions">
-                    <button class="prop-btn solid">Book Now</button>
-                    <a href="downloads/damac-brochure.zip" download class="prop-btn outline" style="text-decoration: none; text-align: center; display: flex; align-items: center; justify-content: center;">Download Brochure</a>
-                </div>
-            </div>
-        </div> -->
-
           <div class="property-card">
             <div class="prop-img-box">
                 <img src="image/Mercedes-Benz Places Binghatti City.png" alt="Property">

@@ -1,23 +1,23 @@
 <?php include 'header.php'; ?>
- <link rel="stylesheet" href="css/contact.css">
+<link rel="stylesheet" href="css/contact.css">
 
 <section class="contact-hero">
     <video autoplay muted loop playsinline class="contact-hero-video">
-        <source src="https://assets.mixkit.co/videos/preview/mixkit-night-sky-over-a-city-4532-large.mp4" type="video/mp4">
+        <source src="video/Dubai_Real_Estate_Video_Generated.mp4" type="video/mp4">
     </video>
-    
     <div class="contact-hero-overlay"></div>
     
-    <div class="contact-hero-content reveal">
-        <h1>Contact Us</h1>
+    <div class="contact-hero-content slide-in-left">
+        <h1 class="hero-heading-line">Contact Us</h1>
         <p>Your Gateway to Luxury Living</p>
     </div>
 </section>
 
 <section class="contact-main-wrapper">
     
-    <div class="contact-details reveal">
-        <h2>Get In <span>Touch</span></h2>
+    <div class="contact-details slide-in-left scroll-anim delay-100">
+        <h2 class="heading-line">Get In <span>Touch</span></h2>
+        
         <p class="contact-desc">
             Whether you are buying, selling, or looking for property management, 
             our team of experts is ready to assist you in Dubai's most prestigious locations.
@@ -47,23 +47,23 @@
         </div>
     </div>
 
-    <div class="contact-form-box reveal" style="transition-delay: 0.2s">
-        <form>
+    <div class="contact-form-box fade-in-up scroll-anim delay-200">
+        <form action="send-mail2.php" method="POST">
             <div class="c-form-group">
                 <label class="c-label">Full Name</label>
-                <input type="text" class="c-input" placeholder="Your Name">
+                <input type="text" class="c-input" placeholder="Your Name" name="name">
             </div>
             <div class="c-form-group">
                 <label class="c-label">Email Address</label>
-                <input type="email" class="c-input" placeholder="name@example.com">
+                <input type="email" class="c-input" placeholder="name@example.com" name="email">
             </div>
             <div class="c-form-group">
                 <label class="c-label">Phone Number</label>
-                <input type="tel" class="c-input" placeholder="+971 ...">
+                <input type="tel" class="c-input" placeholder="+971 ..." name="contact">
             </div>
             <div class="c-form-group">
                 <label class="c-label">Message</label>
-                <textarea class="c-input" rows="4" style="resize: none;" placeholder="How can we help?"></textarea>
+                <textarea class="c-input" rows="4" style="resize: none;" placeholder="How can we help?" name="message"></textarea>
             </div>
             <button type="button" class="c-btn">Send Request</button>
         </form>
@@ -71,8 +71,8 @@
 
 </section>
 
-<div class="reveal">
-    <iframe class="full-map" src="https://maps.google.com/maps?q=Downtown%20Dubai&t=&z=13&ie=UTF8&iwloc=&output=embed" loading="lazy"></iframe>
+<div class="map-wrapper fade-in-up scroll-anim delay-100">
+    <iframe class="full-map" src="https://maps.google.com/maps?q=Downtown%20Dubai,%20Blvd%20Plaza&t=m&z=14&output=embed&iwloc=near" loading="lazy"></iframe>
 </div>
 
 <?php include 'footer.php'; ?>
