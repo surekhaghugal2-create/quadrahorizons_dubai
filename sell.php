@@ -170,7 +170,24 @@
 </div>
 </section>
 
+<script>
+document.addEventListener("DOMContentLoaded", function() {
 
+    const imageWrapper = document.querySelector(".invest-image-wrapper");
+
+    function revealOnScroll() {
+        const windowHeight = window.innerHeight;
+        const elementTop = imageWrapper.getBoundingClientRect().top;
+
+        if (elementTop < windowHeight - 100) {
+            imageWrapper.classList.add("show");
+        }
+    }
+
+    window.addEventListener("scroll", revealOnScroll);
+    revealOnScroll();
+});
+</script>
 
 
 <?php include 'footer.php'; ?>
