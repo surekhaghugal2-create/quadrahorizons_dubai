@@ -20,38 +20,6 @@
                 Selling real estate in Dubai is not simply a transaction — it is a calculated release of capital, opportunity, and legacy. Our RERA-certified brokers combine market intelligence, buyer networks, and precision negotiation to deliver exceptional results.
             </p>
         </div>
-
-        <!-- <div class="rera-cards">
-
-            <div class="rera-card">
-                <div class="rera-icon">01</div>
-                <h3>Escrow Protection</h3>
-                <p>
-                    All payments must be deposited into escrow accounts 
-                    monitored and regulated by RERA to protect buyer funds.
-                </p>
-            </div>
-
-            <div class="rera-card">
-                <div class="rera-icon">02</div>
-                <h3>Developer Checks</h3>
-                <p>
-                    RERA requires developers to own the land and complete 
-                    at least 20% of construction before selling units.
-                </p>
-            </div>
-
-            <div class="rera-card">
-                <div class="rera-icon">03</div>
-                <h3>Delivery Assurance</h3>
-                <p>
-                    Developers are obligated to provide realistic timelines 
-                    and adhere to strict regulatory compliance standards.
-                </p>
-            </div>
-
-        </div> -->
-
     </div>
 </section>
 
@@ -125,6 +93,7 @@
                 </p>
             </div>
         </div>
+<<<<<<< HEAD
             <!-- <div class="invest-image-wrapper slide-right">
     <img src="image/WhatsApp Image 2026-02-12 at 3.03.48 PM (1).jpeg" 
          alt="Burj Al Arab, Dubai" 
@@ -139,6 +108,14 @@
          <!-- <div class="invest-image-wrapper1">
             <img src="image/WhatsApp Image 2026-02-12 at 3.03.48 PM (1).jpeg" alt="Burj Al Arab, Dubai" class="invest-image">
         </div> -->
+=======
+
+    <div class="invest-image-wrapper slide-right">
+        <img src="image/WhatsApp Image 2026-02-12 at 3.03.48 PM (1).jpeg"
+            alt="Burj Al Arab, Dubai"
+            class="invest-image">
+    </div>
+>>>>>>> 9dd7c3dcd190dfceea9d4ed87e19e0f234d62fa5
 
     </div>
 </section>
@@ -216,10 +193,9 @@
 </div>
 </section>
 
+<script>
+document.addEventListener("DOMContentLoaded", function() {
 
-<<<<<<< HEAD
-
-=======
     const elements = document.querySelectorAll(".slide-left, .slide-right");
 
     function revealOnScroll() {
@@ -238,7 +214,6 @@
     revealOnScroll();
 });
 </script>
->>>>>>> 6d5ea38b5df5436f47ca9bd86a66ff9e70e462af
 
 
 <?php include 'footer.php'; ?>
