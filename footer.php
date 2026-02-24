@@ -46,7 +46,8 @@
                     </div>
 
                     <div class="form-row">
-                        <div class="form-group country-code-wrapper">
+                        <div class="form-group country-code-wrapper number-background">
+    
                             <select id="split-country-select"></select>
                         </div>
                         <div class="form-group mobile-wrapper">
