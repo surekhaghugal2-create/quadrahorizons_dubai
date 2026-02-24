@@ -272,7 +272,7 @@
     </div>
 </div>
 
-<div class="section-header reveal">
+<!-- <div class="section-header reveal">
     <h2>Global Recognition</h2>
 </div>
 <div class="awards-grid-img reveal">
@@ -280,7 +280,7 @@
     <div class="award-card float-anim delay-1"><img src="https://via.placeholder.com/300x400/111/D4AF37?text=Best+Broker" alt="Award"></div>
     <div class="award-card float-anim delay-2"><img src="https://via.placeholder.com/300x400/111/D4AF37?text=Top+Sales" alt="Award"></div>
     <div class="award-card float-anim delay-3"><img src="https://via.placeholder.com/300x400/111/D4AF37?text=Excellence" alt="Award"></div>
-</div>
+</div> -->
 
 <section class="sell-section reveal">
     <div class="sell-container">
