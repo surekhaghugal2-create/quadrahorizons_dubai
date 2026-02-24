@@ -278,7 +278,7 @@ ul.luxury-list li::before {
     border-top: 1px solid rgba(255, 255, 255, 0.1);
 }
 
-.faq-item {
+.faq-item { 
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
     overflow: hidden;
     /* Crucial for animation */

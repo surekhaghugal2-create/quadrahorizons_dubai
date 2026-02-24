@@ -251,39 +251,49 @@
     </div>
 </section>
 
-<section class="faq-section">
-    <div class="faq-header anim-fade-up scroll-anim">
-        <h2 class="heading-strict heading-line">Frequently Asked <span class="accent-text">Questions</span></h2>
+<section class="faq-section reveal">
+    <div class="section-header">
+        <h2>Frequently Asked Questions</h2>
     </div>
-    
-    <div class="faq-container anim-fade-up scroll-anim delay-100">
+
+    <div class="faq-container">
         <div class="faq-item">
             <div class="faq-question">
-                <h3>What documents are required to rent?</h3>
+                <h3>Is it a good time to buy a property in Dubai in 2024?</h3>
                 <span class="faq-icon">+</span>
             </div>
             <div class="faq-answer">
-                <p class="para-strict">You will typically need a copy of your passport, a valid UAE residency visa, and your Emirates ID. Corporate clients may require additional trade license documentation.</p>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
             </div>
         </div>
 
         <div class="faq-item">
             <div class="faq-question">
-                <h3>Are utility bills included?</h3>
+                <h3>How is the current real estate market in Dubai in 2024?</h3>
                 <span class="faq-icon">+</span>
             </div>
             <div class="faq-answer">
-                <p class="para-strict">This depends on the lease agreement. Long-term rentals require the tenant to set up DEWA under their own name, while short-term luxury rentals often include utilities.</p>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
             </div>
         </div>
 
         <div class="faq-item">
             <div class="faq-question">
-                <h3>What is Ejari?</h3>
+                <h3>Have there been shifts in sale prices for Dubai properties in 2024?</h3>
                 <span class="faq-icon">+</span>
             </div>
             <div class="faq-answer">
-                <p class="para-strict">Ejari is the official regulatory system for registering tenancy contracts in Dubai. It legally protects your rights as a tenant and is required to connect internet and utilities.</p>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question">
+                <h3>Can an expat buy Property in Dubai and live permanently?</h3>
+                <span class="faq-icon">+</span>
+            </div>
+            <div class="faq-answer">
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
             </div>
         </div>
     </div>
