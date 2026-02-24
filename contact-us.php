@@ -48,7 +48,7 @@
     </div>
 
     <div class="contact-form-box fade-in-up scroll-anim delay-200">
-        <form action="send-mail2.php" action="sent-mail.php" method="POST">
+        <form action="send-mail2.php" method="POST">
             <div class="c-form-group">
                 <label class="c-label">Full Name</label>
                 <input type="text" class="c-input" placeholder="Your Name" name="name">

@@ -2,14 +2,14 @@
    1. CORE VARIABLES & RESET
    ============================ */
 :root {
-  --bg-body: #000000;
-  --gold: #D4AF37;
-  --white: #ffffff;
-  --gray: #b0b0b0;
-  --text-grey: #cccccc;
-
-  --font-body: "Work Sans", sans-serif;
-  --font-heading: "Playfair Display", serif;
+    --gold: #D4AF37;
+    --dark: #0A1120;
+    --darker: #05080f;
+    --card-bg: #111827;
+    --white: #ffffff;
+    --text-grey: #b0b0b0;
+    --glass: rgba(255, 255, 255, 0.05);
+    --border: rgba(255, 255, 255, 0.1);
 }
 
 * {
@@ -179,7 +179,6 @@ body.hovering .cursor-outline {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.8);
     z-index: 1001;
     opacity: 0;
     visibility: hidden;
