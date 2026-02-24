@@ -230,7 +230,7 @@
    ========================================= */
 .awards-grid-img {
     display: grid; grid-template-columns: repeat(4, 1fr);
-    gap: 30px; max-width: 1200px; margin: 0 auto; padding: 0 5% 100px;
+    gap: 30px; max-width: 1200px; margin: 0 auto; padding: 0 5% 50px;
 }
 .award-card img { width: 100%; border: 1px solid #333; transition: 0.3s; }
 
@@ -248,7 +248,7 @@
    8. SELL SECTION
    ========================================= */
 .sell-section {
-    padding: 100px 5%;
+    padding: 150px 5% 80px 5%;
     background: linear-gradient(to bottom right, #05080f, #0A1120, #111827);
     position: relative; overflow: hidden;
 }
@@ -335,7 +335,7 @@
    ========================================= */
 .events-grid, .team-grid {
     display: grid; grid-template-columns: repeat(3, 1fr); gap: 30px;
-    max-width: 1400px; margin: 0 auto 50px; padding: 0 5%;
+    max-width: 1400px; margin: 0 auto 80px; padding: 0 5%;
 }
 .team-grid { grid-template-columns: repeat(4, 1fr); }
 
@@ -412,6 +412,9 @@
     .properties-grid, .events-grid, .awards-grid-img, .team-grid {
         grid-template-columns: 1fr;
     }
+    .section-header {
+        text-align: center; padding: 20px 20px 30px; position: relative;
+    }
     .section-header h2, .partners-title, .sell-text h2 {
         font-size: 36px; /* Scaled down for mobile */
     }
@@ -419,6 +422,21 @@
         font-size: 16px; /* Scaled down for mobile */
     }
     .hero-text-center h1 { font-size: 50px; }
+    .home-hero {
+        height: 80vh;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+    }
+    .sell-content-right img {
+        width: 100%; height: 300px; object-fit: cover; transition: 0.6s ease;
+    }
+    .sell-section {
+        padding: 60px 5%;
+        position: relative; overflow: hidden;
+    }
 }
 
 /* About section css */

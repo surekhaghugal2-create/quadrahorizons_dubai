@@ -1,7 +1,18 @@
+/* ===============================
+   GLOBAL RESET
+================================= */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+:root {
+  --gold: #D4AF37;
+  --white: #ffffff;
+  --text-grey: #b0b0b0;
+  --card-bg: #111827;
+  --border-color: rgba(255,255,255,0.08);
 }
 
 body {
@@ -10,9 +21,11 @@ body {
   color: #fff;
 }
 
-/* HEADER */
+/* ===============================
+   HEADER
+================================= */
 .header {
-  position: fixed;  
+  position: fixed;
   top: 0;
   width: 100%;
   padding: 20px 40px;
@@ -32,19 +45,23 @@ body {
   cursor: pointer;
 }
 
-/* HERO */
+/* ===============================
+   HERO
+================================= */
 .hero img {
   width: 100%;
   height: 85vh;
+  /* height: auto; */
   object-fit: cover;
 }
 
-/* TITLE */
+/* ===============================
+   PAGE TITLE
+================================= */
 .page-title {
   text-align: center;
   padding: 80px 20px;
   background: #0A1120;
-  color: #ffffff;
 }
 
 .page-title h1 {
@@ -57,298 +74,399 @@ body {
   max-width: 1400px;
   margin: auto;
   font-size: 18px;
-  font-weight: 200;
+  font-weight: 300;
 }
 
-/* PROPERTIES
-
-/* =========================================
-   EXCLUSIVE PROPERTIES SECTION (White Card Theme)
-   ========================================= */
-.section-header-buy{
-  padding: 0px 20px 60px;
-  text-align: center;
- }
- 
- .section-header-buy h2{
-  font-family: 'Playfair Display', serif;
-  font-size: 50px;
- }
- .section-header-buy p{
-  font-family: Work Sans;
-  font-size: 22px;
- }
-.properties-section {
-    padding: 50px 5%;
-    background: #0A1120; /* Main section background stays dark for contrast */
+/* ===============================
+   INVEST SECTION
+================================= */
+.invest-section {
+  background: #000;
 }
 
-.properties-section .section-header {
-    text-align: center;
-    margin-bottom: 60px;
-}
-.properties-section .section-header h2 {
-    font-family: 'Playfair Display', serif;
-    font-size: 45px;
-    color: #fff;
-    margin-bottom: 10px;
-}
-.properties-section .section-header p {
-    font-family: 'Work Sans', sans-serif;
-    color: #D4AF37;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    font-size: 12px;
+.invest-container {
+  max-width: 1400px;
+  margin: auto;
+  padding: 40px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  align-items: center;
 }
 
-/* --- GRID LAYOUT (Responsive) --- */
-.properties-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
-    gap: 30px;
-    max-width: 1400px;
-    margin: 0 auto;
+.invest-image-wrapper {
+  height: 650px;
+  overflow: hidden;
+  opacity: 0;
+  transform: translateX(-80px);
+  transition: 1s ease;
 }
 
-/* --- CARD STYLING --- */
-.property-card {
-    background: rgba(0,0,0,0.2); /* CHANGED: Card BG is now White */
-    border: 1px solid rgba(0,0,0,0.1); /* CHANGED: Subtle dark border */
-    border-radius: 4px;
-    overflow: hidden;
-    transition: all 0.4s ease;
-    display: flex;
-    flex-direction: column;
+.invest-image-wrapper.show {
+  opacity: 1;
+  transform: translateX(0);
 }
 
-/* Hover Effect: Lift & Gold Border */
-.property-card:hover {
-    transform: translateY(-10px);
-    border-color: #D4AF37;
-    box-shadow: 0 15px 30px rgba(0,0,0,0.3);
+.invest-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
-/* --- IMAGE AREA --- */
-.prop-img-box {
-    position: relative;
-    height: 250px;
-    overflow: hidden;
-}
-.prop-img-box img {
-    width: 100%; height: 100%;
-    object-fit: cover;
-    transition: transform 0.6s ease;
-}
-.property-card:hover .prop-img-box img {
-    transform: scale(1.1); /* Zoom on hover */
+.invest-content {
+  padding-top: 50px;
+  padding-right: 40px;
 }
 
-/* Badge (e.g. New Launch) */
-.prop-tag {
-    position: absolute;
-    top: 15px; left: 15px;
-    background: #D4AF37;
-    color: #000000;
-    font-size: 10px;
-    font-weight: 700;
-    text-transform: uppercase;
-    padding: 5px 10px;
-    letter-spacing: 1px;
-    font-family: 'Work Sans', sans-serif;
-}
-
-/* --- TEXT DETAILS --- */
-.prop-details { padding: 25px; display: flex; flex-direction: column; flex-grow: 1; }
-
-.prop-details h3 {
-    font-family: 'Playfair Display', serif;
-    font-size: 22px;
-    color: #ffffff; /* CHANGED: Title is now black */
-    margin-bottom: 5px;
-}
-
-.prop-loc {
-    font-family: 'Work Sans', sans-serif;
-    font-size: 13px;
-    color: #d6d6d6; /* CHANGED: Location is dark grey */
-    margin-bottom: 20px;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-}
-
-/* --- AGENT INFO --- */
-.prop-agent {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    /* CHANGED: Separator lines are now faint dark */
-    border-top: 1px solid #d6d6d6;
-    border-bottom: 1px solid #d6d6d6;
-    padding: 15px 0;
-    margin-bottom: 20px;
-}
-
-.agent-info span {
-    display: block; font-size: 10px; color: #888; text-transform: uppercase;
-    font-family: 'Work Sans', sans-serif;
-}
-.agent-info strong {
-    display: block; color: #D4AF37; font-size: 14px; margin-top: 3px;
-    font-family: 'Playfair Display', serif; font-weight: 400; letter-spacing: 1px;
-}
-
-.agent-icons { display: flex; gap: 10px; }
-.agent-icons a {
-    width: 35px; height: 35px;
-    background: rgba(0,0,0,0.05); /* CHANGED: Slight dark background */
-    border-radius: 50%;
-    display: flex; align-items: center; justify-content: center;
-    text-decoration: none; font-size: 14px;
-    color: #000; /* CHANGED: Icon is black */
-    transition: 0.3s;
-}
-.agent-icons a:hover {
-    background: #D4AF37;
-    color: #000;
-    transform: scale(1.1);
-}
-
-/* --- BUTTONS --- */
-.prop-actions { display: flex; gap: 10px; margin-top: auto; }
-
-.prop-btn {
-    flex: 1;
-    padding: 12px;
-    font-family: 'Work Sans', sans-serif;
-    font-size: 11px;
-    text-transform: uppercase;
-    font-weight: 700;
-    cursor: pointer;
-    transition: 0.3s;
-}
-
-/* Solid Button (Gold) */
-.prop-btn.solid {
-    background: #D4AF37; border: 1px solid #D4AF37; color: #000;
-}
-.prop-btn.solid:hover {
-    background: #000; border-color: #D4AF37; color: #D4AF37; /* CHANGED hover for better contrast */
-}
-
-/* Outline Button (Dark on White BG) */
-.prop-btn.outline {
-    background: transparent;
-    border: 1px solid #ffffff; /* CHANGED: Black border */
-    color: #ffffff; /* CHANGED: Black text */
-}
-.prop-btn.outline:hover {
-    background: #D4AF37;
-    border-color: #D4AF37;
-    color: #000;
-}
-
-/* Mobile Adjustment */
-@media (max-width: 600px) {
-    .properties-grid { grid-template-columns: 1fr; }
-}
-
-/* DARK SECTIONS */
-.dark {
-  text-align: center;
-  padding: 80px 20px;
-  background: #0A1120;
-  color: #ffffff;
-}
-
-.dark h1 {
-  font-family: "Playfair Display", serif;
-  font-size: 48px;
+.invest-subtitle {
+  font-size: 14px;
+  letter-spacing: 6px;
+  text-transform: uppercase;
+  color: var(--gold);
   margin-bottom: 20px;
 }
 
-.dark p {
-  max-width: 1400px;
-  margin: auto;
-  font-size: 18px;
-  font-weight: 200;
+.invest-title {
+  font-family: "Playfair Display", serif;
+  font-size: 70px;
+  line-height: 1.1;
+  margin-bottom: 30px;
 }
 
+.invest-text p {
+  font-size: 18px;
+  line-height: 1.8;
+  color: #ccc;
+  margin-bottom: 25px;
+}
 
-/* --- FAQ CONTAINER --- */
+/* LIST */
+.selling-strategy {
+  list-style: none;
+}
+
+.selling-strategy li {
+  position: relative;
+  padding-left: 25px;
+  margin-bottom: 15px;
+  font-size: 14px;
+  color: var(--text-grey);
+}
+
+.selling-strategy li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: var(--gold);
+  font-size: 20px;
+}
+
+/* ===============================
+   RERA SECTION
+================================= */
+.rera-section {
+  background: #000;
+  padding: 100px 5%;
+}
+
+.rera-container {
+  max-width: 1300px;
+  margin: auto;
+}
+
+.rera-header {
+  text-align: center;
+  max-width: 900px;
+  margin: auto auto 80px;
+}
+
+.rera-subtitle {
+  font-size: 12px;
+  letter-spacing: 4px;
+  color: var(--gold);
+  margin-bottom: 15px;
+  font-weight: 600;
+}
+
+.rera-header h2 {
+  font-family: "Playfair Display", serif;
+  font-size: 50px;
+  margin-bottom: 25px;
+}
+
+.rera-header p {
+  font-size: 18px;
+  line-height: 1.8;
+  color: var(--text-grey);
+}
+
+.rera-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+}
+
+.rera-card {
+  background: var(--card-bg);
+  padding: 40px;
+  border: 1px solid var(--border-color);
+  transition: 0.4s ease;
+}
+
+.rera-card:hover {
+  transform: translateY(-10px);
+  border-color: var(--gold);
+}
+
+.rera-icon {
+  font-size: 40px;
+  font-family: "Playfair Display", serif;
+  color: var(--gold);
+  margin-bottom: 20px;
+}
+
+.rera-card h3 {
+  font-family: "Playfair Display", serif;
+  font-size: 22px;
+  margin-bottom: 15px;
+}
+
+.rera-card p {
+  font-size: 15px;
+  color: var(--text-grey);
+  line-height: 1.7;
+}
+
+/* ===============================
+   FAQ
+================================= */
 .faq-section {
-    padding: 50px 5%;
-    background-color: #0A1120;
-    /* Dark Background */
-    color: #fff;
+  padding: 80px 5%;
+  background: #000;
+  text-align: center;
 }
 
 .faq-container {
-    max-width: 900px;
-    margin: 0 auto;
-    border-top: 1px solid rgba(255, 255, 255, 0.1);
+  max-width: 900px;
+  margin: auto;
+  border-top: 1px solid var(--border-color);
 }
 
 .faq-item {
-    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-    overflow: hidden;
-    /* Crucial for animation */
+  border-bottom: 1px solid var(--border-color);
+  overflow: hidden;
 }
 
-/* --- QUESTION (CLICKABLE) --- */
 .faq-question {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 25px 0;
-    cursor: pointer;
-    transition: 0.3s;
+  display: flex;
+  justify-content: space-between;
+  padding: 25px 0;
+  cursor: pointer;
 }
 
 .faq-question h3 {
-    font-family: 'Playfair Display', serif;
-    font-size: 20px;
-    font-weight: 400;
-    margin: 0;
-    color: #fff;
+  font-family: "Playfair Display", serif;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.faq-question:hover h3,
+.faq-item.active h3 {
+  color: var(--gold);
 }
 
 .faq-icon {
-    font-size: 24px;
-    color: #D4AF37;
-    /* Gold */
-    font-weight: 300;
-    width: 30px;
-    text-align: center;
+  font-size: 24px;
+  color: var(--gold);
 }
 
-/* Hover Effect */
-.faq-question:hover h3 {
-    color: #D4AF37;
-}
-
-/* --- ANSWER (HIDDEN DEFAULT) --- */
 .faq-answer {
-    max-height: 0;
-    /* Hidden */
-    overflow: hidden;
-    transition: max-height 0.5s ease-out;
-    /* Smooth Slide */
-    padding-right: 20px;
+  max-height: 0;
+  overflow: hidden;
+  transition: 0.5s ease;
 }
 
 .faq-answer p {
-    font-family: 'Work Sans', sans-serif;
-    font-size: 14px;
-    line-height: 1.6;
-    color: #b0b0b0;
-    margin: 0;
-    padding-bottom: 25px;
-    /* Spacing */
+  font-size: 14px;
+  line-height: 1.6;
+  color: var(--text-grey);
+  padding-bottom: 25px;
+  text-align: left;
 }
 
-/* --- ACTIVE STATE --- */
-.faq-item.active .faq-question h3 {
-    color: #D4AF37;
+/* ===============================
+   PROJECTS SECTION
+================================= */
+
+.projects-section {
+  padding: 0px 5%;
+  padding-bottom: 150px;
+}
+
+.grid-container {
+  max-width: 1400px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+.project-card {
+  position: relative;
+  background: var(--card-bg);
+  border-radius: 6px;
+  overflow: hidden;
+  transition: 0.4s ease;
+  cursor: pointer;
+}
+
+.project-card:hover {
+  transform: translateY(-10px);
+}
+
+/* Image */
+.card-img-wrap {
+  height: 350px;
+  overflow: hidden;
+}
+
+.card-img-wrap img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: 0.6s ease;
+}
+
+.project-card:hover img {
+  transform: scale(1.08);
+}
+
+/* Tag */
+.exclusive-tag {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  background: var(--gold);
+  color: #000;
+  font-size: 11px;
+  padding: 6px 12px;
+  font-weight: 600;
+  z-index: 2;
+  letter-spacing: 1px;
+}
+
+/* Content */
+.card-content {
+  padding: 25px;
+}
+
+.card-content h3 {
+  font-family: "Playfair Display", serif;
+  font-size: 20px;
+  margin-bottom: 8px;
+}
+
+.location {
+  display: block;
+  font-size: 14px;
+  color: var(--text-grey);
+  margin-bottom: 20px;
+}
+
+.price-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 15px;
+  border-top: 1px solid var(--border-color);
+}
+
+.price-label {
+  font-size: 12px;
+  color: var(--text-grey);
+  letter-spacing: 1px;
+}
+
+.price-value {
+  color: var(--gold);
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.arrow-icon {
+  font-size: 20px;
+  color: var(--gold);
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+  .grid-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .grid-container {
+    grid-template-columns: 1fr;
+  }
+}
+/* ===============================
+   EXPRESS FORM
+================================= */
+.express {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 80px 60px;
+}
+
+.express form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.express input {
+  padding: 12px;
+  border-radius: 6px;
+  border: none;
+}
+
+/* ===============================
+   FOOTER
+================================= */
+.footer {
+  padding: 20px;
+  text-align: center;
+  font-size: 12px;
+  opacity: 0.6;
+}
+
+/* ===============================
+   RESPONSIVE
+================================= */
+@media (max-width: 992px) {
+  .rera-cards {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+
+  .invest-container,
+  .grid-container,
+  .rera-cards,
+  .express {
+    grid-template-columns: 1fr;
+  }
+
+  .invest-title {
+    font-size: 38px;
+  }
+
+  .page-title h1,
+  .rera-header h2 {
+    font-size: 32px;
+  }
 }
 
 /* =========================================
@@ -382,7 +500,7 @@ body {
     font-family: var(--font-heading);
     font-size: 50px; /* FIXED SIZE */
     color: var(--white);
-    background-color: #0A1120 ;
+    background-color: #000000 ;
     margin-bottom: 20px;
 }
 
@@ -392,12 +510,15 @@ body {
     .section-header h2 {
         font-size: 36px; 
     }
+    .section-header-Sell h2 {
+        font-size: 36px;
+    }
 }
 
 .testimonials-scroll {
     display: flex; overflow-x: auto; gap: 30px; padding: 0 5% 100px;
     scrollbar-width: none;
-    background-color: #0A1120;
+    background-color: #000000;
 }
 .testimonials-scroll::-webkit-scrollbar { display: none; }
 
@@ -420,373 +541,4 @@ body {
 }
 .client-name span {
     display: block; font-weight: 400; color: #666; margin-top: 5px;
-}
-
-
-/* EXPRESS */
-.express {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  padding: 80px 60px;
-  background: #000;
-}
-
-.express h2 {
-  font-family: "Playfair Display", serif;
-  font-size: 40px;
-}
-
-.express form {
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
-}
-
-.express input {
-  padding: 12px;
-  border-radius: 6px;
-  border: none;
-}
-
-/* FOOTER */
-.footer {
-  padding: 20px;
-  text-align: center;
-  font-size: 12px;
-  opacity: 0.6;
-}
-
-/* RESPONSIVE */
-@media (max-width: 768px) {
-  .express {
-    grid-template-columns: 1fr;
-    gap: 40px;
-  }
-
-  .page-title h1 {
-    font-size: 34px;
-  }
-}
-  /* new css added */
-  /* =========================================
-   GLOBAL RESPONSIVE TYPOGRAPHY
-========================================= */
-
-html {
-  font-size: 16px;
-}
-
-@media (max-width: 1400px) {
-  html { font-size: 15px; }
-}
-
-@media (max-width: 1200px) {
-  html { font-size: 14.5px; }
-}
-
-@media (max-width: 992px) {
-  html { font-size: 14px; }
-}
-
-@media (max-width: 768px) {
-  html { font-size: 13.5px; }
-}
-
-@media (max-width: 576px) {
-  html { font-size: 13px; }
-}
-
-
-/* =========================================
-   HEADER RESPONSIVE
-========================================= */
-
-@media (max-width: 992px) {
-  .header {
-    padding: 18px 25px;
-  }
-}
-
-@media (max-width: 576px) {
-  .header {
-    padding: 15px 20px;
-  }
-
-  .logo {
-    font-size: 14px;
-  }
-
-  .menu {
-    font-size: 22px;
-  }
-}
-
-
-/* =========================================
-   HERO SECTION
-========================================= */
-
-@media (max-width: 992px) {
-  .hero img {
-    height: 65vh;
-  }
-}
-
-@media (max-width: 768px) {
-  .hero img {
-    height: 55vh;
-  }
-}
-
-@media (max-width: 576px) {
-  .hero img {
-    height: 45vh;
-  }
-}
-
-
-/* =========================================
-   PAGE TITLE SECTION
-========================================= */
-
-@media (max-width: 992px) {
-  .page-title {
-    padding: 60px 20px;
-  }
-
-  .page-title h1 {
-    font-size: 40px;
-  }
-
-  .page-title p {
-    font-size: 16px;
-  }
-}
-
-@media (max-width: 576px) {
-  .page-title h1 {
-    font-size: 36px;
-  }
-
-  .page-title p {
-    font-size: 14px;
-  }
-}
-
-
-/* =========================================
-   PROPERTIES GRID RESPONSIVE
-========================================= */
-
-@media (max-width: 1200px) {
-  .properties-grid {
-    gap: 25px;
-  }
-}
-
-@media (max-width: 992px) {
-  .properties-grid {
-    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-  }
-
-  .section-header-buy h2 {
-    font-size: 36px;
-  }
-
-  .section-header-buy p {
-    font-size: 18px;
-  }
-}
-
-@media (max-width: 768px) {
-  .properties-section {
-    padding: 40px 20px;
-  }
-
-  .properties-grid {
-    grid-template-columns: 1fr 1fr;
-    gap: 20px;
-  }
-
-  .prop-img-box {
-    height: 200px;
-  }
-
-  .prop-details h3 {
-    font-size: 18px;
-  }
-}
-
-@media (max-width: 576px) {
-  .properties-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .prop-img-box {
-    height: 180px;
-  }
-
-  .prop-details {
-    padding: 18px;
-  }
-
-  .prop-details h3 {
-    font-size: 16px;
-  }
-
-  .prop-loc {
-    font-size: 12px;
-  }
-
-  .agent-icons a {
-    width: 30px;
-    height: 30px;
-    font-size: 12px;
-  }
-
-  .prop-btn {
-    font-size: 10px;
-    padding: 10px;
-  }
-}
-
-
-/* =========================================
-   INFO SECTION RESPONSIVE
-========================================= */
-
-@media (max-width: 992px) {
-  .dark h1 {
-    font-size: 40px;
-  }
-
-  .dark p {
-    font-size: 16px;
-  }
-}
-
-@media (max-width: 576px) {
-  .dark {
-    padding: 60px 20px;
-  }
-
-  .dark h1 {
-    font-size: 36px;
-  }
-
-  .dark p {
-    font-size: 16px;
-  }
-}
-
-
-/* =========================================
-   FAQ RESPONSIVE
-========================================= */
-
-@media (max-width: 768px) {
-  .faq-question h3 {
-    font-size: 18px;
-  }
-
-  .faq-answer p {
-    font-size: 13px;
-  }
-}
-
-@media (max-width: 576px) {
-  .faq-section {
-    padding: 40px 20px;
-  }
-
-  .faq-question {
-    padding: 18px 0;
-  }
-
-  .faq-question h3 {
-    font-size: 16px;
-  }
-}
-
-
-/* =========================================
-   TESTIMONIALS RESPONSIVE
-========================================= */
-
-@media (max-width: 992px) {
-  .testi-card {
-    min-width: 320px;
-    padding: 35px;
-  }
-
-  .testi-card p {
-    font-size: 16px;
-  }
-}
-
-@media (max-width: 576px) {
-  .testi-card {
-    min-width: 260px;
-    padding: 25px;
-  }
-
-  .quote-icon {
-    font-size: 40px;
-  }
-
-  .testi-card p {
-    font-size: 14px;
-  }
-
-  .client-name {
-    font-size: 12px;
-  }
-}
-
-
-/* =========================================
-   EXPRESS SECTION RESPONSIVE
-========================================= */
-
-@media (max-width: 992px) {
-  .express {
-    padding: 60px 30px;
-  }
-
-  .express h2 {
-    font-size: 32px;
-  }
-}
-
-@media (max-width: 768px) {
-  .express {
-    grid-template-columns: 1fr;
-    gap: 40px;
-  }
-}
-
-@media (max-width: 576px) {
-  .express {
-    padding: 50px 20px;
-  }
-
-  .express h2 {
-    font-size: 26px;
-  }
-
-  .express input {
-    padding: 10px;
-    font-size: 14px;
-  }
-}
-
-
-/* =========================================
-   FOOTER RESPONSIVE
-========================================= */
-
-@media (max-width: 576px) {
-  .footer {
-    font-size: 11px;
-  }
 }

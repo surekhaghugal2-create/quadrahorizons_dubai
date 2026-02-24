@@ -3,207 +3,320 @@
 
 <!-- HERO -->
 <section class="hero">
-  <img src="image/1.jpg" alt="Dubai Skyline">
+  <img src="image/binghatti-hillside-hero-banner-new.avif" alt="Dubai Skyline">
 </section>
 
-<!-- TITLE -->
-<section class="page-title">
-  <h1>Properties for Buy</h1>
-  <p>
-    Delivering world-class real estate experiences across Dubai with a focus on
-    architecture, innovation and long-term value. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
-  </p>
+<!-- RERA SAFETY SECTION -->
+<section class="rera-section">
+    <div class="rera-container">
+
+        <div class="rera-header">
+            <span class="rera-subtitle">INVESTOR PROTECTION</span>
+            <h2>Properties for Buy in Dubai</h2>
+            <p>
+                Discover an exclusive collection of luxury properties for sale in Dubai, carefully curated for discerning homeowners and global investors. From ultra-modern waterfront villas and branded residences to high-rise apartments in Downtown Dubai and Dubai Marina, QH Properties offers access to the city’s most prestigious real estate opportunities.
+            </p><br/>
+            <p>
+                Whether you are looking to buy property in Dubai for personal living or strategic investment, our RERA-certified brokers provide expert guidance, market intelligence, and seamless transaction support from inquiry to handover.
+            </p>
+        </div>
+    </div>
 </section>
 
-<!-- PROPERTY GRID -->
-<section class="properties-section reveal">
-    <div class="section-header-buy">
-        <h2>Exclusive Listings</h2>
-        <p>Discover our curated selection of Dubai's finest properties.</p>
+<!-- PROJECTS SECTION -->
+<section class="projects-section">
+    <div class="grid-container">
+        <div class="project-card reveal">
+            <span class="exclusive-tag">Exclusive</span>
+            <div class="card-img-wrap">
+                <img src="image/mbp-bc-hero-banner.webp">
+            </div>
+            <div class="card-content">
+                <h3>Mercedes-Benz Places Binghatti City</h3>
+                <span class="location"><i class="fas fa-map-marker-alt"></i> Nad al sheba</span>
+                <div class="price-row">
+                    <div>
+                        <span class="price-label">FROM</span>
+                        <div class="price-value">AED 1M</div>
+                    </div>
+                    <i class="fas fa-arrow-circle-down arrow-icon"></i>
+                </div>
+            </div>
+        </div>
+
+        <div class="project-card reveal" style="transition-delay: 0.1s">
+            <span class="exclusive-tag">Exclusive</span>
+            <div class="card-img-wrap">
+                <img src="image/binghatti-etheria-hero-banner.avif" alt="Project">
+            </div>
+            <div class="card-content">
+                <h3>Binghatti Etherea</h3>
+                <span class="location"><i class="fas fa-map-marker-alt"></i> Jumeirah Village Circle</span>
+                <div class="price-row">
+                    <div>
+                        <span class="price-label">FROM</span>
+                        <div class="price-value">AED 5M</div>
+                    </div>
+                    <i class="fas fa-arrow-circle-down arrow-icon"></i>
+                </div>
+            </div>
+        </div>
+
+        <div class="project-card reveal" style="transition-delay: 0.2s">
+            <span class="exclusive-tag">New Launch</span>
+            <div class="card-img-wrap">
+                <img src="image/binghatti-skyterraces-hero-banner.avif">
+            </div>
+            <div class="card-content">
+                <h3>Binghatti Skyterraces</h3>
+                <span class="location"><i class="fas fa-map-marker-alt"></i> Motor City</span>
+                <div class="price-row">
+                    <div>
+                        <span class="price-label">FROM</span>
+                        <div class="price-value">AED 19M</div>
+                    </div>
+                    <i class="fas fa-arrow-circle-down arrow-icon"></i>
+                </div>
+            </div>
+        </div>
+
+        <div class="project-card reveal">
+            <span class="exclusive-tag">Exclusive</span>
+            <div class="card-img-wrap">
+                <img src="image/binghatti-luxuria-hero-banner.avif">
+            </div>
+            <div class="card-content">
+                <h3>Binghatti Luxuria</h3>
+                <span class="location"><i class="fas fa-map-marker-alt"></i> Jumeirah Village Triangle</span>
+                <div class="price-row">
+                    <div>
+                        <span class="price-label">FROM</span>
+                        <div class="price-value">AED 2.5M</div>
+                    </div>
+                    <i class="fas fa-arrow-circle-down arrow-icon"></i>
+                </div>
+            </div>
+        </div>
+
+        <div class="project-card reveal" style="transition-delay: 0.1s">
+            <span class="exclusive-tag">Selling Fast</span>
+            <div class="card-img-wrap">
+                <img src="image/binghatti-cullinan-hero-banner.avif" alt="Project">
+            </div>
+            <div class="card-content">
+                <h3>Binghatti Cullinan</h3>
+                <span class="location"><i class="fas fa-map-marker-alt"></i> Al Jaddaf</span>
+                <div class="price-row">
+                    <div>
+                        <span class="price-label">FROM</span>
+                        <div class="price-value">AED 45M</div>
+                    </div>
+                    <i class="fas fa-arrow-circle-down arrow-icon"></i>
+                </div>
+            </div>
+        </div>
+
+        <div class="project-card reveal" style="transition-delay: 0.2s">
+            <span class="exclusive-tag">Exclusive</span>
+            <div class="card-img-wrap">
+                <img src="image/binghatti-hillcrest-hero-banner.avif" alt="Project">
+            </div>
+            <div class="card-content">
+                <h3>Binghatti Hillcrest</h3>
+                <span class="location"><i class="fas fa-map-marker-alt"></i> Arjan</span>
+                <div class="price-row">
+                    <div>
+                        <span class="price-label">FROM</span>
+                        <div class="price-value">AED 3.2M</div>
+                    </div>
+                    <i class="fas fa-arrow-circle-down arrow-icon"></i>
+                </div>
+            </div>
+        </div>
+
+        <div class="project-card reveal" style="transition-delay: 0.2s">
+            <span class="exclusive-tag">Exclusive</span>
+            <div class="card-img-wrap">
+                <img src="image/binghatti-titania-hero-banner-1.avif" alt="Project">
+            </div>
+            <div class="card-content">
+                <h3>Binghatti Titania</h3>
+                <span class="location"><i class="fas fa-map-marker-alt"></i> Majan</span>
+                <div class="price-row">
+                    <div>
+                        <span class="price-label">FROM</span>
+                        <div class="price-value">AED 3.2M</div>
+                    </div>
+                    <i class="fas fa-arrow-circle-down arrow-icon"></i>
+                </div>
+            </div>
+        </div>
+
+        <div class="project-card reveal" style="transition-delay: 0.2s">
+            <span class="exclusive-tag">Exclusive</span>
+            <div class="card-img-wrap">
+                <img src="image/binghatti-vintage-hero-banner.avif" alt="Project">
+            </div>
+            <div class="card-content">
+                <h3>Binghatti Vintage</h3>
+                <span class="location"><i class="fas fa-map-marker-alt"></i> Majan</span>
+                <div class="price-row">
+                    <div>
+                        <span class="price-label">FROM</span>
+                        <div class="price-value">AED 3.2M</div>
+                    </div>
+                    <i class="fas fa-arrow-circle-down arrow-icon"></i>
+                </div>
+            </div>
+        </div>
+
+        <div class="project-card reveal" style="transition-delay: 0.2s">
+            <span class="exclusive-tag">Exclusive</span>
+            <div class="card-img-wrap">
+                <img src="image/binghatti-pinnacle-hero-banner.avif" alt="Project">
+            </div>
+            <div class="card-content">
+                <h3>Binghatti Pinnacle</h3>
+                <span class="location"><i class="fas fa-map-marker-alt"></i> Al Jaddaf</span>
+                <div class="price-row">
+                    <div>
+                        <span class="price-label">FROM</span>
+                        <div class="price-value">AED 3.2M</div>
+                    </div>
+                    <i class="fas fa-arrow-circle-down arrow-icon"></i>
+                </div>
+            </div>
+        </div>
+
+        <div class="project-card reveal" style="transition-delay: 0.2s">
+            <span class="exclusive-tag">Exclusive</span>
+            <div class="card-img-wrap">
+                <img src="image/Mercedes-Benz Places Binghatti City.png" alt="Project">
+            </div>
+            <div class="card-content">
+                <h3>Mercedes-Benz Places | By Binghatti</h3>
+                <span class="location"><i class="fas fa-map-marker-alt"></i> Business Bay</span>
+                <div class="price-row">
+                    <div>
+                        <span class="price-label">FROM</span>
+                        <div class="price-value">AED 3.2M</div>
+                    </div>
+                    <i class="fas fa-arrow-circle-down arrow-icon"></i>
+                </div>
+            </div>
+        </div>
+
+        <div class="project-card reveal" style="transition-delay: 0.2s">
+            <span class="exclusive-tag">Exclusive</span>
+            <div class="card-img-wrap">
+                <img src="image/binghatti-amberhall-hero-banner.webp" alt="Project">
+            </div>
+            <div class="card-content">
+                <h3>Binghatti Amberhall</h3>
+                <span class="location"><i class="fas fa-map-marker-alt"></i> JVC</span>
+                <div class="price-row">
+                    <div>
+                        <span class="price-label">FROM</span>
+                        <div class="price-value">AED 3.2M</div>
+                    </div>
+                    <i class="fas fa-arrow-circle-down arrow-icon"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Strategic Selling Approach  -->
+<section class="invest-dubai-section" id="invest-section">
+    <div class="invest-container">
+        
+        <!-- <div class="invest-image-wrapper">
+            <img src="image/WhatsApp Image 2026-02-12 at 3.03.48 PM (1).jpeg" alt="Burj Al Arab, Dubai" class="invest-image">
+        </div> -->
+
+        <div class="invest-image-wrapper slide-left">
+    <img src="image/WhatsApp Image 2026-02-12 at 3.03.48 PM (1).jpeg"
+         alt="Burj Al Arab, Dubai"
+         class="invest-image">
+</div>
+
+        <div class="invest-content">
+            <span class="invest-subtitle invest-anim">Strategic Buying Approach</span>
+            
+            <h2 class="invest-title invest-anim delay-1">Our Locations</h2>
+            <div class="invest-text">
+                <!-- <p class="invest-anim delay-2">
+                    The Dubai real estate market continues to attract global investors, high-net-worth individuals, and institutional buyers. To stand out in a competitive landscape, your property requires more than a listing — it requires presence.
+                </p> -->
+                <p class="invest-anim delay-2">
+                    Explore our handpicked portfolio of premium apartments, villas, penthouses, and branded residences located in Dubai’s most sought-after communities, including:
+                </p>
+                <ul class="selling-strategy">
+                    <li>Downtown Dubai</li>
+                    <li>Dubai Marina</li>
+                    <li>Palm Jumeirah</li>
+                    <li>Business Bay</li>
+                    <li>Jumeirah Village Circle (JVC)</li>
+                    <li>Sobha Hartland</li>
+                    <li>Dubai Hills Estate</li>
+                </ul><br/>
+                <p class="invest-anim delay-3">
+                    Each property is selected for architectural excellence, prime location, lifestyle amenities, and strong capital appreciation potential. Whether you seek a luxury apartment in Dubai with skyline views.
+                </p>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!-- Strategic Selling Approach  -->
+<section class="invest-dubai-section" id="why-sell-dubai">
+    <div class="invest-container">
+
+        <div class="invest-content">
+            <span class="invest-subtitle invest-anim">Why Buy Your Property in</span>
+            
+            <h2 class="invest-title invest-anim delay-1">Dubai ?</h2>
+            <div class="invest-text">
+                <!-- <p class="invest-anim delay-2">
+                    Dubai’s property market in 2026 demonstrates strong transaction volumes, increasing international demand, and sustained growth in prime communities. Limited inventory in luxury villa segments and waterfront residences has created favorable conditions for sellers.
+                </p> -->
+                <p class="invest-anim delay-2">
+                    Dubai remains one of the world’s most attractive property investment destinations due to:
+                </p>
+                <ul class="selling-strategy">
+                    <li>Tax-free property ownership</li>
+                    <li>High rental yields compared to global cities</li>
+                    <li>Strong capital appreciation potential</li>
+                    <li>Golden Visa eligibility for qualifying investments</li>
+                    <li>Investor-friendly regulations</li>
+                    <li>World-class infrastructure and lifestyle</li>
+                </ul><br/>
+                <p class="invest-anim delay-3">
+                    Buying property in Dubai offers both lifestyle elevation and financial growth. With growing international demand and expanding freehold zones, Dubai real estate continues to deliver exceptional ROI for local and overseas investors.
+                </p>
+            </div>
+        </div>
+
+    <div class="invest-image-wrapper slide-right">
+        <img src="image/WhatsApp Image 2026-02-12 at 3.03.48 PM (1).jpeg"
+            alt="Burj Al Arab, Dubai"
+            class="invest-image">
     </div>
 
-    <div class="properties-grid">
-        
-        <div class="property-card">
-            <div class="prop-img-box">
-                <img src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=600&q=80" alt="Property">
-                <span class="prop-tag">New Launch</span>
-            </div>
-            <div class="prop-details">
-                <h3>Mercedes-Benz Places</h3>
-                <p class="prop-loc">Downtown Dubai | 2 Bedrooms</p>
-                
-                <div class="prop-agent">
-                    <div class="agent-info">
-                        <span>Listed by</span>
-                        <strong>Riyan Shagotra</strong>
-                    </div>
-                    <div class="agent-icons">
-                        <a href="tel:+971500000000">📞</a>
-                        <a href="https://wa.me/971500000000">💬</a>
-                    </div>
-                </div>
-
-                <div class="prop-actions">
-                    <button class="prop-btn solid">Book Now</button>
-                    <button class="prop-btn outline">Download Brochure</button>
-                </div>
-            </div>
-        </div>
-
-        <div class="property-card">
-            <div class="prop-img-box">
-                <img src="https://images.unsplash.com/photo-1512915922686-57c11dde9b6b?auto=format&fit=crop&w=600&q=80git init" alt="Property">
-                <span class="prop-tag">Selling Fast</span>
-            </div>
-            <div class="prop-details">
-                <h3>Bugatti Residences</h3>
-                <p class="prop-loc">Business Bay | 3 Bedrooms</p>
-                <div class="prop-agent">
-                    <div class="agent-info"><span>Listed by</span><strong>Sarah Jenkins</strong></div>
-                    <div class="agent-icons"><a href="#">📞</a><a href="#">💬</a></div>
-                </div>
-                <div class="prop-actions">
-                    <button class="prop-btn solid">Book Now</button>
-                    <button class="prop-btn outline">Download Brochure</button>
-                </div>
-            </div>
-        </div>
-
-        <div class="property-card">
-            <div class="prop-img-box">
-                <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=600&q=80" alt="Property">
-            </div>
-            <div class="prop-details">
-                <h3>The Palm Crown</h3>
-                <p class="prop-loc">Palm Jumeirah | 5 Bedroom Villa</p>
-                <div class="prop-agent">
-                    <div class="agent-info"><span>Listed by</span><strong>Ahmed Al-Fayed</strong></div>
-                    <div class="agent-icons"><a href="#">📞</a><a href="#">💬</a></div>
-                </div>
-                <div class="prop-actions">
-                    <button class="prop-btn solid">Book Now</button>
-                    <button class="prop-btn outline">Download Brochure</button>
-                </div>
-            </div>
-        </div>
-
-        <div class="property-card">
-            <div class="prop-img-box">
-                <img src="https://images.unsplash.com/photo-1613977257363-707ba9348227?auto=format&fit=crop&w=600&q=80" alt="Property">
-                <span class="prop-tag">Hot Deal</span>
-            </div>
-            <div class="prop-details">
-                <h3>Franck Muller Aeternitas</h3>
-                <p class="prop-loc">Dubai Marina | Penthouse</p>
-                <div class="prop-agent">
-                    <div class="agent-info"><span>Listed by</span><strong>Riyan Shagotra</strong></div>
-                    <div class="agent-icons"><a href="#">📞</a><a href="#">💬</a></div>
-                </div>
-                <div class="prop-actions">
-                    <button class="prop-btn solid">Book Now</button>
-                    <button class="prop-btn outline">Download Brochure</button>
-                </div>
-            </div>
-        </div>
-
-        <div class="property-card">
-            <div class="prop-img-box">
-                <img src="https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?auto=format&fit=crop&w=600&q=80" alt="Property">
-            </div>
-            <div class="prop-details">
-                <h3>Address Residences</h3>
-                <p class="prop-loc">Jumeirah Beach | 2 Bedrooms</p>
-                <div class="prop-agent">
-                    <div class="agent-info"><span>Listed by</span><strong>Maria Lopez</strong></div>
-                    <div class="agent-icons"><a href="#">📞</a><a href="#">💬</a></div>
-                </div>
-                <div class="prop-actions">
-                    <button class="prop-btn solid">Book Now</button>
-                    <button class="prop-btn outline">Download Brochure</button>
-                </div>
-            </div>
-        </div>
-
-        <div class="property-card">
-            <div class="prop-img-box">
-                <img src="https://images.unsplash.com/photo-1512915922686-57c11dde9b6b?auto=format&fit=crop&w=600&q=80" alt="Property">
-                <span class="prop-tag">Exclusive</span>
-            </div>
-            <div class="prop-details">
-                <h3>Burj Binghatti Jacob & Co</h3>
-                <p class="prop-loc">Business Bay | Sky Mansion</p>
-                <div class="prop-agent">
-                    <div class="agent-info"><span>Listed by</span><strong>Riyan Shagotra</strong></div>
-                    <div class="agent-icons"><a href="#">📞</a><a href="#">💬</a></div>
-                </div>
-                <div class="prop-actions">
-                    <button class="prop-btn solid">Book Now</button>
-                    <button class="prop-btn outline">Download Brochure</button>
-                </div>
-            </div>
-        </div>
-
-        <div class="property-card">
-            <div class="prop-img-box">
-                <img src="https://images.unsplash.com/photo-1570129477492-45c003edd2be?auto=format&fit=crop&w=600&q=80" alt="Property">
-            </div>
-            <div class="prop-details">
-                <h3>Sobha Hartland II</h3>
-                <p class="prop-loc">Sobha Hartland | 4 Bedroom Villa</p>
-                <div class="prop-agent">
-                    <div class="agent-info"><span>Listed by</span><strong>James Wilson</strong></div>
-                    <div class="agent-icons"><a href="#">📞</a><a href="#">💬</a></div>
-                </div>
-                <div class="prop-actions">
-                    <button class="prop-btn solid">Book Now</button>
-                    <button class="prop-btn outline">Download Brochure</button>
-                </div>
-            </div>
-        </div>
-
-        <div class="property-card">
-            <div class="prop-img-box">
-                <img src="https://images.unsplash.com/photo-1560185007-cde436f6a4d0?auto=format&fit=crop&w=600&q=80" alt="Property">
-                <span class="prop-tag">Just Listed</span>
-            </div>
-            <div class="prop-details">
-                <h3>Damac Lagoons</h3>
-                <p class="prop-loc">Hessa Street | 3 Bedroom Townhouse</p>
-                <div class="prop-agent">
-                    <div class="agent-info"><span>Listed by</span><strong>Elena Russo</strong></div>
-                    <div class="agent-icons"><a href="#">📞</a><a href="#">💬</a></div>
-                </div>
-                <div class="prop-actions">
-                    <button class="prop-btn solid">Book Now</button>
-                    <button class="prop-btn outline">Download Brochure</button>
-                </div>
-            </div>
-        </div>
-
-
-</section>
-
-
-<!-- INFO SECTION -->
-<section class="info dark">
-  <h1>Properties for Sell in Dubai | Binghatti</h1>
-  <p>
-    Delivering world-class real estate experiences across Dubai with a focus on
-    architecture, innovation and long-term value. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
-  </p>
+    </div>
 </section>
 
 <!-- FAQ SECTION -->
  <section class="faq-section reveal">
-    <div class="section-header-buy">
+    <div class="section-header-Sell">
         <h2>Frequently Asked Questions</h2>
     </div>
     
     <div class="faq-container">
         <div class="faq-item">
             <div class="faq-question">
-                <h3>Is it a good time to buy a property in Dubai in 2024?</h3>
+                <h3>Is it a good time to Sell a property in Dubai in 2024?</h3>
                 <span class="faq-icon">+</span>
             </div>
             <div class="faq-answer">
@@ -233,7 +346,7 @@
 
         <div class="faq-item">
             <div class="faq-question">
-                <h3>Can an expat buy Property in Dubai and live permanently?</h3>
+                <h3>Can an expat Sell Property in Dubai and live permanently?</h3>
                 <span class="faq-icon">+</span>
             </div>
             <div class="faq-answer">
@@ -267,7 +380,27 @@
 </div>
 </section>
 
+<script>
+document.addEventListener("DOMContentLoaded", function() {
 
+    const elements = document.querySelectorAll(".slide-left, .slide-right");
+
+    function revealOnScroll() {
+        const windowHeight = window.innerHeight;
+
+        elements.forEach(function(el) {
+            const elementTop = el.getBoundingClientRect().top;
+
+            if (elementTop < windowHeight - 100) {
+                el.classList.add("show");
+            }
+        });
+    }
+
+    window.addEventListener("scroll", revealOnScroll);
+    revealOnScroll();
+});
+</script>
 
 
 <?php include 'footer.php'; ?>
