@@ -196,12 +196,12 @@ ul { list-style: none; padding: 0; margin: 0; }
 }
 
 @media (max-width: 425px) {
-    .vision-section { padding: 40px 10px; margin: 0; text-align: left; }
+    .vision-section { padding: 10px 0px; margin: 0; text-align: left; }
     .vision-section::before { width: 300px; height: 300px; }
     .vision-label { font-size: 14px; letter-spacing: 2px; margin: 0 0 10px 0; }
     .vision-title { font-size: 36px; line-height: 1.2; margin: 0 0 10px 0; }
     .fade-in.visible .vision-divider { height: 25px; margin: 10px 0; }
-    .vision-quote { font-family: var(--font-body); font-size: 18px; line-height: 1.5; padding: 0; margin: 0; }
+    .vision-quote { font-family: var(--font-body); font-size: 16px; line-height: 1.5; padding: 0; margin: 0; }
 }
 
 
@@ -256,8 +256,8 @@ ul { list-style: none; padding: 0; margin: 0; }
     .founders-section { padding: 60px 20px; }
     .founders-grid { grid-template-columns: 1fr; gap: 40px; }
     .founder-card { height: 450px; }
-    .founder-name { font-size: 36px !important; margin-bottom: 5px; }
-    .founder-role, .founder-overlay p { font-size: 18px !important; letter-spacing: 1px; text-transform: capitalize; }
+    .founder-name { font-size: 30px !important; margin-bottom: 5px; }
+    .founder-role, .founder-overlay p { font-size: 16px !important; letter-spacing: 1px; text-transform: capitalize; }
     .founder-role { opacity: 1; transform: translateY(0); }
     .founder-name { transform: translateY(0); }
     .founder-img { filter: grayscale(0%) brightness(0.8); }
@@ -268,16 +268,39 @@ ul { list-style: none; padding: 0; margin: 0; }
     .founders-grid { gap: 20px; margin: 0; padding: 0 10px; }
     .founder-card { height: 400px; margin: 0; }
     .founder-overlay { padding: 15px; margin: 0; }
-    .founder-name { line-height: 1.1; margin: 0; }
+    .founder-name { line-height: 1; margin: 0;}
 }
+
+/* =======================================================
+   ANIMATION UTILITIES (Ensure these are in your CSS)
+   ======================================================= */
+.anim-slide-down { opacity: 0; transform: translateY(-40px); transition: all 1s cubic-bezier(0.25, 1, 0.5, 1); }
+.anim-fade-up { opacity: 0; transform: translateY(40px); transition: all 0.8s cubic-bezier(0.25, 1, 0.5, 1); }
+
+/* Trigger class added by javascript when scrolled into view */
+.scroll-anim.visible { opacity: 1; transform: translate(0, 0); }
+
+/* Staggered Delays for the logos */
+.delay-100 { transition-delay: 0.1s; }
+.delay-200 { transition-delay: 0.2s; }
+.delay-300 { transition-delay: 0.3s; }
+.delay-400 { transition-delay: 0.4s; }
+.delay-500 { transition-delay: 0.5s; }
 
 
 /* =======================================================
-   4. AWARDS & RECOGNITIONS 
+   AWARDS & RECOGNITIONS (INCREASED HEIGHT & GAP)
    ======================================================= */
 .awards-recognition-section {
-    position: relative; padding: 120px 0; background-color: #000;
-    overflow: hidden; min-height: 70vh; display: flex; align-items: center;
+    position: relative;
+    /* INCREASED: Top and bottom padding is now 180px (was 120px) */
+    padding: 180px 10px !important; 
+    /* INCREASED: Forces the section to take up at least 80% of the screen height */
+    min-height: 60vh; 
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    margin-top: 80px;
 }
 
 .awards-video-bg {
@@ -287,89 +310,76 @@ ul { list-style: none; padding: 0; margin: 0; }
 
 .awards-video-overlay {
     position: absolute; inset: 0; z-index: 1;
-    background-color: rgba(4, 10, 18, 0.85);
-    background-image: 
-        repeating-linear-gradient(45deg, transparent, transparent 150px, var(--border) 150px, var(--border) 152px),
-        repeating-linear-gradient(-45deg, transparent, transparent 150px, var(--border) 150px, var(--border) 152px);
+    background-color: rgba(0, 0, 0, 0.75); 
 }
 
-.awards-container { max-width: 1300px; margin: 0 auto; padding: 0 40px; position: relative; z-index: 2; width: 100%; }
-
+.awards-container {
+    max-width: 1300px; margin: 0 auto; position: relative; z-index: 2; width: 100%;
+}
+/* --- STRICT DESKTOP TYPOGRAPHY --- */
 .awards-heading {
-    font-family: var(--font-heading); font-size: 50px; color: var(--white);
-    text-align: center; text-transform: uppercase; letter-spacing: 2px; margin: 0 0 80px 0;
+    font-family: var(--font-heading) !important;
+    font-size: 50px !important; /* REQUIRED DESKTOP SIZE */
+    color: #ffffff !important;  /* WHITE TEXT */
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin: 0 0 70px 0;
+    line-height: 1.2;
 }
 
-.awards-grid { display: flex; flex-wrap: wrap; justify-content: center; align-items: center; gap: 60px 80px; }
+/* Flex Grid Layout */
+.awards-grid { 
+    display: flex; flex-wrap: wrap; justify-content: center; align-items: center; gap: 60px 80px; 
+}
 
 .award-logo-item {
     display: flex; align-items: center; justify-content: center;
-    transition: transform 0.4s ease, filter 0.4s ease; filter: brightness(0.9);
-}
-.award-logo-item:hover { transform: scale(1.05); filter: brightness(1.2); }
-
-.mock-forbes { display: flex; flex-direction: column; align-items: flex-end; color: var(--white); font-family: var(--font-heading); line-height: 0.8; }
-.mock-forbes-top { font-family: var(--font-body); font-size: 10px; letter-spacing: 0.5px; margin-right: 2px; margin-bottom: 2px; }
-.mock-forbes-main { font-size: 45px; font-weight: 700; letter-spacing: -1px; }
-
-.mock-gulf { display: flex; align-items: center; gap: 15px; color: var(--white); }
-.mock-gulf-icon { font-size: 38px; color: var(--white); opacity: 0.9; }
-.mock-gulf-text { display: flex; flex-direction: column; line-height: 1.2; }
-.mock-gulf-top { font-family: var(--font-body); font-size: 14px; font-weight: 400; letter-spacing: 1px; }
-.mock-gulf-bottom { font-family: var(--font-body); font-size: 18px; font-weight: 600; letter-spacing: 1px; }
-
-.anim-slide-down { opacity: 0; transform: translateY(-40px); transition: all 1s cubic-bezier(0.25, 1, 0.5, 1); }
-.anim-fade-up { opacity: 0; transform: translateY(40px); transition: all 0.8s cubic-bezier(0.25, 1, 0.5, 1); }
-.anim-slide-down.visible, .anim-fade-up.visible { opacity: 1; transform: translate(0, 0); }
-
-.delay-1 { transition-delay: 0.1s; } .delay-2 { transition-delay: 0.2s; } .delay-3 { transition-delay: 0.3s; }
-.delay-4 { transition-delay: 0.4s; } .delay-5 { transition-delay: 0.5s; } .delay-6 { transition-delay: 0.6s; } .delay-7 { transition-delay: 0.7s; }
-
-@media (max-width: 992px) {
-    .awards-heading { font-size: 40px; margin-bottom: 60px; }
-    .awards-grid { gap: 40px 60px; }
+    transition: transform 0.4s ease; 
 }
 
+.award-logo-item:hover { 
+    transform: scale(1.05); 
+}
+
+/* Logo Image Sizing & Color Forcing */
+.award-logo-item img {
+    max-height: 70px; /* Big logos */
+    width: auto;
+    /* Turns colored/black logos into solid WHITE */
+    filter: brightness(0) invert(1); 
+}
+
+/* =======================================================
+   RESPONSIVE: TABLET & MOBILE VIEW
+   ======================================================= */
 @media (max-width: 768px) {
-    .awards-recognition-section { padding: 80px 0; }
-    .awards-video-overlay {
-        background-image: 
-            repeating-linear-gradient(45deg, transparent, transparent 80px, var(--border) 80px, var(--border) 81px),
-            repeating-linear-gradient(-45deg, transparent, transparent 80px, var(--border) 80px, var(--border) 81px);
+    .awards-grid { 
+        display: grid; 
+        grid-template-columns: repeat(2, 1fr); 
+        gap: 50px 30px; 
+        justify-items: center; 
     }
-    .awards-container { padding: 0 20px; }
-    .awards-heading { font-size: 32px; margin-bottom: 50px; }
-    .awards-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 40px 15px; }
-    .award-logo-item:last-child { grid-column: span 2; justify-self: center; }
-    .mock-forbes-main { font-size: 26px; }
-    .mock-forbes-top { font-size: 8px; }
-    .mock-gulf { gap: 8px; }
-    .mock-gulf-icon { font-size: 22px; }
-    .mock-gulf-top { font-size: 8px; letter-spacing: 0px; }
-    .mock-gulf-bottom { font-size: 11px; letter-spacing: 0px; }
+    .award-logo-item:last-child { 
+        grid-column: span 2; 
+    }
 }
 
 @media (max-width: 425px) {
     .awards-recognition-section { 
-        padding: 40px 0; /* Added a tiny bit of padding so it's not glued to the edges */
-        margin: 0; 
-        min-height: auto !important; /* CRITICAL FIX: Removes the massive empty height */
-        display: block !important;   /* CRITICAL FIX: Stops the flexbox from stretching it */
+        padding: 80px 10px !important; /* STRICT MOBILE PADDING */
+        min-height: 50vh; 
     }
     
-    .awards-heading { font-size: 28px; margin: 0 0 25px 0; }
-    .awards-container { padding: 0 15px; margin: 0; }
-    .awards-grid { gap: 20px 10px; margin: 0; }
+    /* --- STRICT MOBILE TYPOGRAPHY --- */
+    .awards-heading { 
+        font-size: 36px !important; /* REQUIRED MOBILE SIZE */
+        margin-bottom: 50px; 
+    }
     
-    .mock-forbes-main { font-size: 22px; margin: 0; }
-    .mock-forbes-top { font-size: 7px; margin: 0 0 1px 0; }
-    
-    .mock-gulf { gap: 6px; margin: 0; }
-    .mock-gulf-icon { font-size: 30px; margin: 0; }
-    .mock-gulf-top { font-size: 7px; margin: 0; }
-    .mock-gulf-bottom { font-size: 9px; margin: 0; }
+    .awards-grid { gap: 40px 20px; }
+    .award-logo-item img { max-height: 50px; }
 }
-
 /* =======================================================
    5. CAREERS SECTION
    ======================================================= */
@@ -450,7 +460,7 @@ ul { list-style: none; padding: 0; margin: 0; }
         margin: 0; 
         border: none; 
         text-align: left !important; /* Forces all text to left align */
-        background: rgba(15, 15, 15, 0.7); /* Slightly darker overlay for better mobile readability */
+        /* background: rgba(15, 15, 15, 0.7); Slightly darker overlay for better mobile readability */
     }
     
     .careers-label { text-align: left; margin-bottom: 10px; }
@@ -464,7 +474,7 @@ ul { list-style: none; padding: 0; margin: 0; }
     
     /* --- FIXED PARAGRAPH SIZE (18px) --- */
     .careers-desc { 
-        font-size: 18px !important; 
+        font-size: 16px !important; 
         margin: 0 0 25px 0; 
         line-height: 1.6;
         text-align: left;
@@ -556,6 +566,9 @@ ul { list-style: none; padding: 0; margin: 0; }
         margin: 0 0 15px 0; 
         line-height: 1.6;
         text-align: left;
+    }
+    .invest-content{
+        padding: 30px 0px;
     }
 }
 
@@ -736,4 +749,152 @@ ul { list-style: none; padding: 0; margin: 0; }
     /* FIXED PARAGRAPH SIZE */
     .benefit-content p, 
     .benefit-content ul { font-size: 16px !important; line-height: 1.5; margin: 0; }
+}
+
+/* =========================================
+   UNIQUE OPTION: STICKY-SCROLL JOURNEY
+   ========================================= */
+.invest-sticky-section {
+    padding: 120px 5%;
+    position: relative;
+    z-index: 2;
+}
+
+.invest-sticky-container {
+    display: flex;
+    gap: 80px;
+    max-width: 1400px;
+    margin: 0 auto;
+    align-items: flex-start; /* Crucial for the sticky effect to work */
+}
+
+/* LEFT SIDE: Locks to the screen */
+.invest-sticky-left {
+    width: 40%;
+    position: sticky;
+    top: 15vh; /* Freezes 15% from the top of the screen */
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.invest-pre {
+    display: block; font-size: 14px; text-transform: uppercase;
+    letter-spacing: 4px; color: var(--gold); margin-bottom: 15px;
+}
+
+/* --- STRICT DESKTOP TYPOGRAPHY: HEADING --- */
+.invest-sticky-left h2 {
+    font-family: var(--font-heading);
+    font-size: 50px !important; /* REQUIRED DESKTOP SIZE */
+    color: var(--white);
+    line-height: 1.1;
+    margin: 0;
+}
+
+.invest-sticky-image {
+    margin-top: 40px;
+    flex-grow: 1;
+    border-radius: 4px;
+    overflow: hidden;
+    border: 1px solid rgba(255,255,255,0.05);
+    position: relative;
+}
+
+.invest-sticky-image img {
+    width: 100%; height: 100%; object-fit: cover;
+    filter: brightness(0.8);
+}
+
+/* RIGHT SIDE: Scrolls normally */
+.invest-sticky-right {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    padding-bottom: 10vh; /* Allows scrolling past the sticky left side */
+}
+
+/* Glassmorphism Cards */
+.invest-glass-card {
+    background: rgba(10, 17, 32, 0.6);
+    backdrop-filter: blur(15px); -webkit-backdrop-filter: blur(15px);
+    border: 1px solid rgba(255,255,255,0.05);
+    border-left: 3px solid var(--gold);
+    padding: 50px 40px;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.5s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+.invest-glass-card:hover {
+    transform: translateX(20px); /* Slides right slightly on hover */
+    background: rgba(10, 17, 32, 0.95);
+    box-shadow: -20px 20px 50px rgba(0,0,0,0.5);
+    border-color: var(--gold);
+}
+
+/* Large faded background numbers */
+.card-watermark {
+    position: absolute; right: -10px; bottom: -20px;
+    font-family: var(--font-heading); font-size: 150px;
+    color: rgba(255,255,255,0.02); line-height: 1;
+    pointer-events: none; transition: 0.5s ease;
+}
+.invest-glass-card:hover .card-watermark {
+    color: rgba(212, 175, 55, 0.05); transform: scale(1.1);
+}
+
+.invest-card-header { display: flex; align-items: center; gap: 20px; margin-bottom: 20px; position: relative; z-index: 2; }
+.invest-card-icon {
+    width: 50px; height: 50px; background: rgba(212, 175, 55, 0.1); border-radius: 50%;
+    display: flex; align-items: center; justify-content: center; color: var(--gold); font-size: 20px;
+}
+.invest-card-title { font-family: var(--font-heading); font-size: 26px; color: var(--white); margin: 0; }
+
+.invest-card-text { position: relative; z-index: 2; }
+
+/* Custom bullet list for Safe & Stable */
+.invest-list { list-style: none; padding: 0; margin: 0; }
+.invest-list li { position: relative; padding-left: 25px; margin-bottom: 10px; }
+.invest-list li::before { content: '✦'; position: absolute; left: 0; top: 2px; color: var(--gold); font-size: 14px; }
+
+/* --- STRICT DESKTOP TYPOGRAPHY: PARAGRAPHS --- */
+.invest-card-text p,
+.invest-list li {
+    font-family: var(--font-body);
+    font-size: 18px !important; /* REQUIRED DESKTOP SIZE */
+    color: var(--text-grey);
+    line-height: 1.8;
+    margin: 0;
+}
+
+/* =========================================
+   RESPONSIVE (DISABLES STICKY ON MOBILE)
+   ========================================= */
+@media (max-width: 1024px) {
+    .invest-sticky-container { flex-direction: column; gap: 50px; }
+    .invest-sticky-left { width: 100%; position: relative; top: 0; height: auto; text-align: center; }
+    .invest-sticky-image { height: 400px; margin-top: 30px; }
+    .invest-sticky-right { width: 100%; padding-bottom: 0; }
+    .invest-glass-card:hover { transform: translateX(0); transform: translateY(-5px); } /* Slide up instead of right on tablets */
+}
+
+@media (max-width: 425px) {
+    .invest-sticky-section { padding: 60px 20px; }
+    .invest-sticky-image { height: 250px; }
+    .invest-glass-card { padding: 30px 20px; }
+    .invest-card-title { font-size: 22px; }
+    .card-watermark { font-size: 100px; right: -5px; bottom: -10px; }
+
+    /* --- STRICT MOBILE TYPOGRAPHY ENFORCEMENT --- */
+    .invest-sticky-left h2 {
+        font-size: 36px !important; /* REQUIRED MOBILE SIZE */
+    }
+
+    .invest-card-text p,
+    .invest-list li {
+        font-size: 16px !important; /* REQUIRED MOBILE SIZE */
+        line-height: 1.6;
+    }
 }

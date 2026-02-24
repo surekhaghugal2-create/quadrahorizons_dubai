@@ -82,75 +82,44 @@
 <!-- Award section start  -->
 <section class="awards-recognition-section">
     
-    <video class="awards-video-bg" autoplay loop muted playsinline>
-        <source src="video/GettyImages-1309566975.mp4" type="video/mp4">
-        Your browser does not support the video tag.
+    <video class="awards-video-bg" autoplay="autoplay" loop="loop" muted="muted" playsinline="playsinline" preload="auto">
+        <source src="video/background (2).mp4" type="video/mp4">
     </video>
 
     <div class="awards-video-overlay"></div>
 
     <div class="awards-container">
         
-        <h2 class="awards-heading anim-slide-down scroll-trigger">Awards & Recognitions</h2>
+        <h2 class="awards-heading anim-slide-down scroll-anim">Awards & Recognitions</h2>
 
         <div class="awards-grid">
             
-            <div class="award-logo-item anim-fade-up delay-1 scroll-trigger">
-                <div class="mock-forbes">
-                    <span class="mock-forbes-top">Middle East</span>
-                    <span class="mock-forbes-main">Forbes</span>
-                </div>
+            <div class="award-logo-item anim-fade-up delay-100 scroll-anim">
+                <img src="image/award-logo-1.png" alt="Award 1">
             </div>
 
-            <div class="award-logo-item anim-fade-up delay-2 scroll-trigger">
-                <div class="mock-gulf">
-                    <i class="fas fa-dharmachakra mock-gulf-icon"></i> 
-                    <div class="mock-gulf-text">
-                        <span class="mock-gulf-top">GULF REAL ESTATE</span>
-                        <span class="mock-gulf-bottom">AWARDS™ 2022</span>
-                    </div>
-                </div>
+            <div class="award-logo-item anim-fade-up delay-200 scroll-anim">
+                <img src="image/award-logo-2.png" alt="Award 2">
             </div>
 
-            <div class="award-logo-item anim-fade-up delay-3 scroll-trigger">
-                <div class="mock-forbes">
-                    <span class="mock-forbes-top">Middle East</span>
-                    <span class="mock-forbes-main">Forbes</span>
-                </div>
+            <div class="award-logo-item anim-fade-up delay-300 scroll-anim">
+                <img src="image/award-logo-3.png" alt="Award 3">
             </div>
 
-            <div class="award-logo-item anim-fade-up delay-4 scroll-trigger">
-                <div class="mock-gulf">
-                    <i class="fas fa-dharmachakra mock-gulf-icon"></i>
-                    <div class="mock-gulf-text">
-                        <span class="mock-gulf-top">GULF REAL ESTATE</span>
-                        <span class="mock-gulf-bottom">AWARDS™ 2022</span>
-                    </div>
-                </div>
+            <div class="award-logo-item anim-fade-up delay-400 scroll-anim">
+                <img src="image/award-logo-4.png" alt="Award 4">
             </div>
 
-            <div class="award-logo-item anim-fade-up delay-5 scroll-trigger">
-                <div class="mock-forbes">
-                    <span class="mock-forbes-top">Middle East</span>
-                    <span class="mock-forbes-main">Forbes</span>
-                </div>
+            <div class="award-logo-item anim-fade-up delay-100 scroll-anim">
+                <img src="image/award-logo-5.png" alt="Award 5">
             </div>
 
-            <div class="award-logo-item anim-fade-up delay-6 scroll-trigger">
-                <div class="mock-gulf">
-                    <i class="fas fa-dharmachakra mock-gulf-icon"></i>
-                    <div class="mock-gulf-text">
-                        <span class="mock-gulf-top">GULF REAL ESTATE</span>
-                        <span class="mock-gulf-bottom">AWARDS™ 2022</span>
-                    </div>
-                </div>
+            <div class="award-logo-item anim-fade-up delay-200 scroll-anim">
+                <img src="image/award-logo-6.png" alt="Award 6">
             </div>
 
-            <div class="award-logo-item anim-fade-up delay-7 scroll-trigger">
-                <div class="mock-forbes">
-                    <span class="mock-forbes-top">Middle East</span>
-                    <span class="mock-forbes-main">Forbes</span>
-                </div>
+            <div class="award-logo-item anim-fade-up delay-300 scroll-anim">
+                <img src="image/award-logo-7.png" alt="Award 7">
             </div>
 
         </div>
@@ -202,85 +171,105 @@
      </div>
 </section>
 
-<!-- why -->
- <section class="invest-reasons-section">
-    <div class="invest-reasons-container">
-        
-        <div class="invest-left-sticky anim-slide-left scroll-trigger">
-            <img src="image/WhatsApp Image 2026-02-12 at 3.03.50 PM (1).jpeg" alt="Museum of the Future, Dubai" class="invest-image-bg">
-            <div class="invest-overlay">
-                <span class="invest-pre-heading">Why Invest In</span>
-                <h2 class="invest-main-heading">DUBAI?</h2>
+
+<section class="invest-sticky-section">
+    <div class="invest-sticky-container">
+
+        <div class="invest-sticky-left">
+            <span class="invest-pre anim-fade-up scroll-anim">Discover the Potential</span>
+            <h2 class="heading-strict anim-fade-up scroll-anim delay-100">
+                Why Invest In <br><span class="accent-text">DUBAI?</span>
+            </h2>
+            <div class="invest-sticky-image anim-zoom-in scroll-anim delay-200">
+                <img src="image/WhatsApp Image 2026-02-12 at 3.03.50 PM (1).jpeg" alt="Museum of the Future, Dubai">
             </div>
         </div>
 
-        <div class="invest-right-list">
+        <div class="invest-sticky-right">
             
-            <div class="benefit-card anim-slide-right scroll-trigger">
-                <div class="benefit-icon"><i class="fas fa-chart-line"></i></div>
-                <div class="benefit-content">
-                    <h3>Strong Rental Market</h3>
-                    <p>With high occupancy rates and rental yields.</p>
+            <div class="invest-glass-card anim-slide-right scroll-anim">
+                <div class="card-watermark">01</div>
+                <div class="invest-card-header">
+                    <div class="invest-card-icon"><i class="fas fa-chart-line"></i></div>
+                    <h3 class="invest-card-title">Strong Rental Market</h3>
+                </div>
+                <div class="invest-card-text">
+                    <p class="para-strict">With high occupancy rates and exceptional rental yields that outperform global averages.</p>
                 </div>
             </div>
 
-            <div class="benefit-card anim-slide-right scroll-trigger">
-                <div class="benefit-icon"><i class="fas fa-city"></i></div>
-                <div class="benefit-content">
-                    <h3>World Class Infrastructure</h3>
-                    <p>Including airports, roads, and public transportation.</p>
+            <div class="invest-glass-card anim-slide-right scroll-anim">
+                <div class="card-watermark">02</div>
+                <div class="invest-card-header">
+                    <div class="invest-card-icon"><i class="fas fa-city"></i></div>
+                    <h3 class="invest-card-title">World Class Infrastructure</h3>
+                </div>
+                <div class="invest-card-text">
+                    <p class="para-strict">Including futuristic airports, impeccable roads, and state-of-the-art public transportation.</p>
                 </div>
             </div>
 
-            <div class="benefit-card anim-slide-right scroll-trigger">
-                <div class="benefit-icon"><i class="fas fa-percent"></i></div>
-                <div class="benefit-content">
-                    <h3>Tax Haven</h3>
-                    <p>Dubai has no income tax.</p>
+            <div class="invest-glass-card anim-slide-right scroll-anim">
+                <div class="card-watermark">03</div>
+                <div class="invest-card-header">
+                    <div class="invest-card-icon"><i class="fas fa-percent"></i></div>
+                    <h3 class="invest-card-title">Tax Haven</h3>
+                </div>
+                <div class="invest-card-text">
+                    <p class="para-strict">Dubai has no income tax, allowing investors to maximize their wealth entirely.</p>
                 </div>
             </div>
 
-            <div class="benefit-card anim-slide-right scroll-trigger">
-                <div class="benefit-icon"><i class="fas fa-shield-alt"></i></div>
-                <div class="benefit-content">
-                    <h3>Safe & Stable</h3>
-                    <ul>
-                        <li>Even after the global health crisis in 2020.</li>
-                        <li>Dubai has been ranked the fourth safest city in the world for 2024.</li>
+            <div class="invest-glass-card anim-slide-right scroll-anim">
+                <div class="card-watermark">04</div>
+                <div class="invest-card-header">
+                    <div class="invest-card-icon"><i class="fas fa-shield-alt"></i></div>
+                    <h3 class="invest-card-title">Safe & Stable</h3>
+                </div>
+                <div class="invest-card-text">
+                    <ul class="invest-list">
+                        <li class="para-strict">Proven economic resilience, even after the global health crisis in 2020.</li>
+                        <li class="para-strict">Dubai has been officially ranked the fourth safest city in the world for 2024.</li>
                     </ul>
                 </div>
             </div>
 
-            <div class="benefit-card anim-slide-right scroll-trigger">
-                <div class="benefit-icon"><i class="fas fa-coins"></i></div>
-                <div class="benefit-content">
-                    <h3>Property ROI</h3>
-                    <p>High return of investment.</p>
+            <div class="invest-glass-card anim-slide-right scroll-anim">
+                <div class="card-watermark">05</div>
+                <div class="invest-card-header">
+                    <div class="invest-card-icon"><i class="fas fa-coins"></i></div>
+                    <h3 class="invest-card-title">Property ROI</h3>
+                </div>
+                <div class="invest-card-text">
+                    <p class="para-strict">Benefit from a remarkably high return of investment compared to competing major global markets.</p>
                 </div>
             </div>
 
-            <div class="benefit-card anim-slide-right scroll-trigger">
-                <div class="benefit-icon"><i class="fas fa-globe"></i></div>
-                <div class="benefit-content">
-                    <h3>Growing Economy</h3>
-                    <p>Driven by tourism, trade and finance.</p>
+            <div class="invest-glass-card anim-slide-right scroll-anim">
+                <div class="card-watermark">06</div>
+                <div class="invest-card-header">
+                    <div class="invest-card-icon"><i class="fas fa-globe"></i></div>
+                    <h3 class="invest-card-title">Growing Economy</h3>
+                </div>
+                <div class="invest-card-text">
+                    <p class="para-strict">A rapidly expanding market driven consistently by tourism, global trade, and finance.</p>
                 </div>
             </div>
 
-            <div class="benefit-card anim-slide-right scroll-trigger">
-                <div class="benefit-icon"><i class="fas fa-passport"></i></div>
-                <div class="benefit-content">
-                    <h3>Investor Visa Advantage</h3>
-                    <p>Golden visa is given to property owners/investors.</p>
+            <div class="invest-glass-card anim-slide-right scroll-anim">
+                <div class="card-watermark">07</div>
+                <div class="invest-card-header">
+                    <div class="invest-card-icon"><i class="fas fa-passport"></i></div>
+                    <h3 class="invest-card-title">Investor Visa Advantage</h3>
+                </div>
+                <div class="invest-card-text">
+                    <p class="para-strict">The prestigious Golden Visa is granted directly to qualifying property owners and investors.</p>
                 </div>
             </div>
 
         </div>
-
     </div>
 </section>
-
-
 
 <!-- career -->
 <section class="careers-premium-section" id="careers-section">
