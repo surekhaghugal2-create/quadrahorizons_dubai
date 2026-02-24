@@ -83,7 +83,7 @@ img { max-width: 100%; display: block; }
 
 .project-card {
     background: var(--card-bg);
-    border-radius: 4px;
+    border-radius: 10px;
     overflow: hidden;
     position: relative;
     transition: transform 0.4s ease;

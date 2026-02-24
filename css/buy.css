@@ -314,7 +314,7 @@ body {
 .project-card {
   position: relative;
   background: var(--card-bg);
-  border-radius: 6px;
+  border-radius: 10px;
   overflow: hidden;
   transition: 0.4s ease;
   cursor: pointer;
