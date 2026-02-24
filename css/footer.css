@@ -1,4 +1,4 @@
-    /* VARIABLES */
+ /* VARIABLES */
     :root {
         --split-gold: #D4AF37;
         --split-white: #ffffff;
@@ -20,6 +20,7 @@
     }
 
     /* --- 1. SHARED BACKGROUND (CONTINUOUS ZOOM) --- */
+ 
     .split-bg {
         position: absolute; inset: 0; z-index: 0;
     }
@@ -214,6 +215,7 @@
 
 /* --------- LARGE DESKTOP (1400px+) --------- */
 @media (min-width: 1400px) {
+ 
     .intro-title {
         font-size: 90px;
     }
@@ -226,6 +228,7 @@
 
 /* --------- DESKTOP (992px – 1399px) --------- */
 @media (max-width: 1399px) {
+
     .intro-title {
         font-size: 70px;
     }
@@ -239,6 +242,7 @@
 /* --------- TABLET (768px – 991px) --------- */
 @media (max-width: 991px) {
 
+   
     .express-split {
         height: auto;
         min-height: 100vh;
@@ -285,6 +289,9 @@
 /* --------- MOBILE (576px – 767px) --------- */
 @media (max-width: 767px) {
 
+   .split-bg{
+    height: 50%;
+   }
     .intro-title {
         font-size: 36px;
         line-height: 1.2;
@@ -310,8 +317,11 @@
 
     .country-code-wrapper {
         width: 100%;
+      
     }
-
+    .number-background select{
+        background-color: #000;
+    }
     .split-btn {
         padding: 15px;
         font-size: 11px;
@@ -350,5 +360,8 @@
     .split-btn {
         font-size: 16px;
         letter-spacing: 1px;
+    }
+    .number-background select{
+        background-color: #000;
     }
 }
