@@ -93,20 +93,12 @@
                 </p>
             </div>
         </div>
-            <!-- <div class="invest-image-wrapper slide-right">
-    <img src="image/WhatsApp Image 2026-02-12 at 3.03.48 PM (1).jpeg" 
-         alt="Burj Al Arab, Dubai" 
-         class="invest-image">
-</div> -->
 
-<div class="invest-image-wrapper slide-right">
-    <img src="image/WhatsApp Image 2026-02-12 at 3.03.48 PM (1).jpeg"
-         alt="Burj Al Arab, Dubai"
-         class="invest-image">
-</div>
-         <!-- <div class="invest-image-wrapper1">
-            <img src="image/WhatsApp Image 2026-02-12 at 3.03.48 PM (1).jpeg" alt="Burj Al Arab, Dubai" class="invest-image">
-        </div> -->
+    <div class="invest-image-wrapper slide-right">
+        <img src="image/WhatsApp Image 2026-02-12 at 3.03.48 PM (1).jpeg"
+            alt="Burj Al Arab, Dubai"
+            class="invest-image">
+    </div>
 
     </div>
 </section>
