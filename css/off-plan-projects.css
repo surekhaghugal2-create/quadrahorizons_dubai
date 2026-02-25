@@ -3,8 +3,8 @@
    ========================================= */
 :root {
     --gold: #D4AF37;
-    --dark: #0A1120;
-    --darker: #05080f;
+    --dark: #000000;
+    --darker: #000000;
     --card-bg: #111827;
     --white: #ffffff;
     --text-grey: #b0b0b0;
@@ -267,7 +267,8 @@ ul.luxury-list li::before {
 /* --- FAQ CONTAINER --- */
 .faq-section {
     padding: 100px 5%;
-    background-color: #0A1120;
+    /* background-color: #0A1120; */
+    background-color: #000;
     /* Dark Background */
     color: #fff;
 }
@@ -298,7 +299,8 @@ ul.luxury-list li::before {
     font-family: var(--font-heading);
     font-size: 50px; /* FIXED SIZE */
     color: var(--white);
-    background-color: #0A1120 ;
+    /* background-color: #0A1120 ; */
+    background-color: #000;
     margin-bottom: 20px;
 }
 
@@ -424,6 +426,15 @@ ul.luxury-list li::before {
         font-size: 18px;
     }
     .block-text {
-    font-size: 16px;
-}
+        font-size: 16px;
+    }
+    .projects-section {
+        padding: 20px 5%;
+    }
+    .info-wrapper {
+        padding: 50px 5%;
+    }
+    .faq-section {
+        padding: 50px 5%;
+    }
 }

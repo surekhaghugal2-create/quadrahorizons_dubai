@@ -26,16 +26,11 @@
 <!-- Strategic Selling Approach  -->
 <section class="invest-dubai-section" id="invest-section">
     <div class="invest-container">
-        
-        <!-- <div class="invest-image-wrapper">
-            <img src="image/WhatsApp Image 2026-02-12 at 3.03.48 PM (1).jpeg" alt="Burj Al Arab, Dubai" class="invest-image">
-        </div> -->
-
         <div class="invest-image-wrapper slide-left">
-    <img src="image/WhatsApp Image 2026-02-12 at 3.03.48 PM (1).jpeg"
-         alt="Burj Al Arab, Dubai"
-         class="invest-image">
-</div>
+        <img src="image/WhatsApp Image 2026-02-12 at 3.03.48 PM (1).jpeg"
+            alt="Burj Al Arab, Dubai"
+            class="invest-image">
+            </div>
 
         <div class="invest-content">
             <span class="invest-subtitle invest-anim">Strategic Selling Approach</span>
