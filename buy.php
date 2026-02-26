@@ -55,7 +55,7 @@
                 <div class="price-row">
                     <div>
                         <span class="price-label">FROM</span>
-                        <div class="price-value">AED 5M</div>
+                        <div class="price-value">AED 2.5M</div>
                     </div>
                     <i class="fas fa-arrow-circle-down arrow-icon"></i>
                 </div>
@@ -73,7 +73,7 @@
                 <div class="price-row">
                     <div>
                         <span class="price-label">FROM</span>
-                        <div class="price-value">AED 19M</div>
+                        <div class="price-value">AED 2M</div>
                     </div>
                     <i class="fas fa-arrow-circle-down arrow-icon"></i>
                 </div>
@@ -109,7 +109,7 @@
                 <div class="price-row">
                     <div>
                         <span class="price-label">FROM</span>
-                        <div class="price-value">AED 45M</div>
+                        <div class="price-value">AED 1.5M</div>
                     </div>
                     <i class="fas fa-arrow-circle-down arrow-icon"></i>
                 </div>
@@ -127,7 +127,7 @@
                 <div class="price-row">
                     <div>
                         <span class="price-label">FROM</span>
-                        <div class="price-value">AED 3.2M</div>
+                        <div class="price-value">AED 1.3M</div>
                     </div>
                     <i class="fas fa-arrow-circle-down arrow-icon"></i>
                 </div>
@@ -145,7 +145,7 @@
                 <div class="price-row">
                     <div>
                         <span class="price-label">FROM</span>
-                        <div class="price-value">AED 3.2M</div>
+                        <div class="price-value">AED 1.7M</div>
                     </div>
                     <i class="fas fa-arrow-circle-down arrow-icon"></i>
                 </div>
@@ -163,7 +163,7 @@
                 <div class="price-row">
                     <div>
                         <span class="price-label">FROM</span>
-                        <div class="price-value">AED 3.2M</div>
+                        <div class="price-value">AED 3M</div>
                     </div>
                     <i class="fas fa-arrow-circle-down arrow-icon"></i>
                 </div>
@@ -181,7 +181,7 @@
                 <div class="price-row">
                     <div>
                         <span class="price-label">FROM</span>
-                        <div class="price-value">AED 3.2M</div>
+                        <div class="price-value">AED 1.5M</div>
                     </div>
                     <i class="fas fa-arrow-circle-down arrow-icon"></i>
                 </div>
@@ -199,7 +199,7 @@
                 <div class="price-row">
                     <div>
                         <span class="price-label">FROM</span>
-                        <div class="price-value">AED 3.2M</div>
+                        <div class="price-value">AED 2.2M</div>
                     </div>
                     <i class="fas fa-arrow-circle-down arrow-icon"></i>
                 </div>
@@ -217,7 +217,7 @@
                 <div class="price-row">
                     <div>
                         <span class="price-label">FROM</span>
-                        <div class="price-value">AED 3.2M</div>
+                        <div class="price-value">AED 2M</div>
                     </div>
                     <i class="fas fa-arrow-circle-down arrow-icon"></i>
                 </div>
