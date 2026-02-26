@@ -37,6 +37,7 @@
         </div>
 
         <div class="split-col-right">
+            <h2>Contact Us </h2>
             <div class="split-form-container">
                 <form class="modern-form" action="send-mail.php" method="POST">
 

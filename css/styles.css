@@ -249,7 +249,8 @@
    ========================================= */
 .sell-section {
     padding: 150px 5% 80px 5%;
-    background: linear-gradient(to bottom right, #05080f, #0A1120, #111827);
+    background-color: #0A0A0A;
+    /* background: linear-gradient(to bottom right, #05080f, #0A1120, #111827); */
     position: relative; overflow: hidden;
 }
 .sell-section::before {
@@ -272,7 +273,7 @@
     display: block; color: var(--gold); font-weight: 400; margin-top: 10px;
 }
 .sell-text p {
-    font-family: 'Work Sans', sans-serif;
+    font-family: 'inter', sans-serif;
     font-size: 18px; /* UPDATED Paragraph Size */
     line-height: 1.8; color: #b0b0b0; margin-bottom: 40px; max-width: 600px;
 }
@@ -302,7 +303,9 @@
 /* =========================================
    9. FAQ SECTION
    ========================================= */
-.faq-section { padding: 0px 5%; background-color: #0A1120; color: #fff; }
+   .faq-section { padding: 0px 5%; background-color:#222222
+; color: #fff; }
+/* .faq-section { padding: 0px 5%; background-color: #0A1120; color: #fff; } */
 .faq-container { max-width: 900px; margin: 0 auto; border-top: 1px solid rgba(255, 255, 255, 0.1); }
 .faq-item { border-bottom: 1px solid rgba(255, 255, 255, 0.1); overflow: hidden; }
 
@@ -444,7 +447,8 @@
 .team-section {
     padding: 0px 5%;
     margin-bottom: 80px;
-    background-color: var(--dark);
+    background-color: #111111 ;
+    /* background-color: var(--dark); */
     text-align: center;
     position: relative;
 }
