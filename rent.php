@@ -163,86 +163,7 @@
     </div>
 </section>
 
-<section class="luxury-faq-section">
-    
-    <video class="faq-bg-media" autoplay loop muted playsinline>
-        <source src="video/background (1).mp4 " type="video/mp4">
-    </video> 
-    
-    <div class="faq-bg-overlay"></div>
 
-    <div class="faq-container">
-        
-        <div class="faq-header anim-fade-up scroll-anim">
-            <h2 class="faq-title">Frequently Asked <span class="accent-text"> Questions </span></h2>
-            <div class="faq-divider"></div>
-        </div>
-
-        <div class="faq-accordion">
-            
-            <div class="faq-item anim-fade-up delay-100 scroll-anim">
-                <div class="faq-question">
-                    <h3>What is the minimum investment required for a Golden Visa?</h3>
-                    <div class="faq-icon">
-                        <span class="icon-line horizontal"></span>
-                        <span class="icon-line vertical"></span>
-                    </div>
-                </div>
-                <div class="faq-answer">
-                    <div class="faq-answer-inner">
-                        <p>To qualify for the UAE Golden Visa through real estate, the minimum property investment required is AED 2,000,000. This grants you a 10-year renewable residency for you and your immediate family, along with exceptional long-term benefits.</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="faq-item anim-fade-up delay-200 scroll-anim">
-                <div class="faq-question">
-                    <h3>Can foreign nationals own property in Dubai?</h3>
-                    <div class="faq-icon">
-                        <span class="icon-line horizontal"></span>
-                        <span class="icon-line vertical"></span>
-                    </div>
-                </div>
-                <div class="faq-answer">
-                    <div class="faq-answer-inner">
-                        <p>Absolutely. Foreign nationals can purchase, own, and sell properties on a freehold basis in designated investment zones across Dubai. These prime locations include Downtown Dubai, Palm Jumeirah, and Dubai Marina.</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="faq-item anim-fade-up delay-300 scroll-anim">
-                <div class="faq-question">
-                    <h3>Are there any property taxes in Dubai?</h3>
-                    <div class="faq-icon">
-                        <span class="icon-line horizontal"></span>
-                        <span class="icon-line vertical"></span>
-                    </div>
-                </div>
-                <div class="faq-answer">
-                    <div class="faq-answer-inner">
-                        <p>Dubai is a renowned tax haven. There are zero property taxes, zero capital gains taxes, and zero income taxes on rental yields. The only fee applied is a one-time 4% DLD (Dubai Land Department) registration fee upon purchase.</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="faq-item anim-fade-up delay-400 scroll-anim">
-                <div class="faq-question">
-                    <h3>Do you offer post-handover property management?</h3>
-                    <div class="faq-icon">
-                        <span class="icon-line horizontal"></span>
-                        <span class="icon-line vertical"></span>
-                    </div>
-                </div>
-                <div class="faq-answer">
-                    <div class="faq-answer-inner">
-                        <p>Yes, we provide end-to-end, white-glove property management services. From tenant sourcing and screening to maintenance and legal compliance, we ensure your asset generates maximum returns completely hassle-free.</p>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-    </div>
-</section>
 
 <section class="testimonials-section has-bg" style="padding: 100px 5%; text-align: center;">
     <div class="anim-fade-up scroll-anim">
@@ -273,98 +194,107 @@
     </div>
 </section>
 
+<section class="luxury-hero-slider">
+    
+    <div class="hero-slide active">
+        <img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=1920&q=80" alt="Etherea Interior" class="hero-bg-img">
+        <div class="hero-overlay"></div>
+        
+        <div class="hero-content-wrapper">
+            <div class="hero-text-col">
+                <span class="hero-brand">BINGHATTI</span>
+                <h1 class="hero-title">ETHEREA</h1>
+                <p class="hero-location">Jumeirah Village Circle</p>
+                <a href="#collection" class="btn-glass">Discover The Collection</a>
+            </div>
+            
+            <div class="hero-preview-col">
+                <button class="hero-nav-arrow prev-arrow"><i class="fas fa-chevron-left"></i></button>
+                
+                <div class="hero-preview-card">
+                    <img src="https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&fit=crop&w=600&q=80" alt="Etherea Exterior Render" class="hero-preview-img">
+                </div>
+                
+                <button class="hero-nav-arrow next-arrow"><i class="fas fa-chevron-right"></i></button>
+            </div>
+        </div>
+    </div>
+
+    <div class="hero-slide">
+        <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1920&q=80" alt="Mercedes Benz Places" class="hero-bg-img">
+        <div class="hero-overlay"></div>
+        
+        <div class="hero-content-wrapper">
+            <div class="hero-text-col">
+                <span class="hero-brand">BINGHATTI</span>
+                <h1 class="hero-title">MERCEDES-BENZ PLACES</h1>
+                <p class="hero-location">Downtown Dubai</p>
+                <a href="#collection" class="btn-glass">Discover The Collection</a>
+            </div>
+            
+            <div class="hero-preview-col">
+                <button class="hero-nav-arrow prev-arrow"><i class="fas fa-chevron-left"></i></button>
+                
+                <div class="hero-preview-card">
+                    <img src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=600&q=80" alt="Mercedes Benz Places Exterior" class="hero-preview-img">
+                </div>
+                
+                <button class="hero-nav-arrow next-arrow"><i class="fas fa-chevron-right"></i></button>
+            </div>
+        </div>
+    </div>
+
+</section>
+
 <script>
+
+//faq 
+
+    
+
+//end fqaq
 document.addEventListener("DOMContentLoaded", function() {
-    // 1. FAQ Accordion
-    const faqItems = document.querySelectorAll('.faq-item');
-    faqItems.forEach(item => {
-        const question = item.querySelector('.faq-question');
-        question.addEventListener('click', () => {
-            faqItems.forEach(otherItem => {
-                if (otherItem !== item && otherItem.classList.contains('active')) {
-                    otherItem.classList.remove('active');
-                    otherItem.querySelector('.faq-answer').style.maxHeight = '0';
-                    otherItem.querySelector('.faq-icon').style.transform = 'rotate(0deg)';
-                }
-            });
-            
-            item.classList.toggle('active');
-            const answer = item.querySelector('.faq-answer');
-            const icon = item.querySelector('.faq-icon');
-            
-            if (item.classList.contains('active')) {
-                answer.style.maxHeight = answer.scrollHeight + 'px';
-                icon.style.transform = 'rotate(45deg)';
-            } else {
-                answer.style.maxHeight = '0';
-                icon.style.transform = 'rotate(0deg)';
-            }
-        });
-    });
+    const slides = document.querySelectorAll('.hero-slide');
+    // Select ALL next and prev arrows since they are inside the slides now
+    const nextBtns = document.querySelectorAll('.next-arrow');
+    const prevBtns = document.querySelectorAll('.prev-arrow');
+    
+    let currentSlide = 0;
+    let isAnimating = false;
 
-    // 2. Scroll Animation Observer
-    setTimeout(() => {
-        document.querySelectorAll('.hero-content').forEach(el => el.classList.add('visible'));
-    }, 150);
+    function goToSlide(index) {
+        if (isAnimating) return;
+        isAnimating = true;
 
-    const scrollElements = document.querySelectorAll('.scroll-anim:not(.hero-content), .reveal');
-    const revealOnScroll = new IntersectionObserver((entries, observer) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                entry.target.classList.add('visible');
-                observer.unobserve(entry.target); 
-            }
-        });
-    }, { threshold: 0.1, rootMargin: "0px 0px -50px 0px" }); 
+        slides[currentSlide].classList.remove('active');
 
-    scrollElements.forEach(el => revealOnScroll.observe(el));
+        currentSlide = index;
 
-    // 3. Bulletproof Background Video Autoplay (Both Global & Hero)
-    var globalVideo = document.getElementById("main-bg-video");
-    if (globalVideo) {
-        globalVideo.muted = true; 
-        globalVideo.play().catch(function(error) {
-            console.log("Browser prevented autoplay on global video.");
-        });
+        // Loop back around
+        if (currentSlide >= slides.length) {
+            currentSlide = 0;
+        } else if (currentSlide < 0) {
+            currentSlide = slides.length - 1;
+        }
+
+        slides[currentSlide].classList.add('active');
+
+        // Prevent clicking again until the ultra-smooth animation finishes
+        setTimeout(() => {
+            isAnimating = false;
+        }, 1200); 
     }
 
-    var heroVideo = document.getElementById("hero-video");
-    if (heroVideo) {
-        heroVideo.muted = true; 
-        heroVideo.play().catch(function(error) {
-            console.log("Browser prevented autoplay on hero video.");
-        });
-    }
-});
+    // Attach click events to EVERY arrow button
+    nextBtns.forEach(btn => {
+        btn.addEventListener('click', () => goToSlide(currentSlide + 1));
+    });
 
-//FAQ Section
-
-document.addEventListener("DOMContentLoaded", function() {
-    // Select all FAQ items
-    const faqItems = document.querySelectorAll('.faq-item');
-
-    faqItems.forEach(item => {
-        const question = item.querySelector('.faq-question');
-        const answer = item.querySelector('.faq-answer');
-
-        question.addEventListener('click', () => {
-            const isActive = item.classList.contains('active');
-
-            // Close all other accordions when one is opened (Luxury behavior)
-            faqItems.forEach(otherItem => {
-                otherItem.classList.remove('active');
-                otherItem.querySelector('.faq-answer').style.maxHeight = null;
-            });
-
-            // If the clicked item wasn't already active, open it
-            if (!isActive) {
-                item.classList.add('active');
-                // Dynamically calculate the exact height of the hidden text to slide it down
-                answer.style.maxHeight = answer.scrollHeight + "px";
-            }
-        });
+    prevBtns.forEach(btn => {
+        btn.addEventListener('click', () => goToSlide(currentSlide - 1));
     });
 });
+
 
 
 </script>
