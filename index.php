@@ -13,6 +13,28 @@
     </div>
 </section>
 
+<section class="legacy-section">
+    <div class="legacy-content">
+        <h2>A Legacy of <br> Architectural Artistry</h2>
+
+        <p>
+            QuadraHorizons Holding Limited is a vertically integrated real estate developer founded in 2008 with roots as a contractor before transitioning into full-scale development.
+        </p>
+
+        <p>
+            Leveraging in-house design, development, construction and delivery capabilities, the Group stands out as one of Dubai’s most avant-garde private developers.
+        </p>
+
+        <p>
+            Sustainability is embedded across developments through energy efficient technologies, responsible materials selection and long-term value creation strategies.
+        </p>
+
+        <div class="signature">
+            — QuadraHorizons Team
+        </div>
+    </div>
+</section>
+
 <section class="properties-section reveal">
     <div class="section-header">
         <div class="section-header">
@@ -244,16 +266,16 @@
 
         <div class="marquee-wrapper">
             <div class="marquee-content">
-                <img src="image/Beyond.png" class="partner-logo" alt="EMAAR">
-                <img src="image/Aldar-Properties 1.png" class="partner-logo" alt="DAMAC">
-                <img src="image/binghatti-dubai-logo 1.png" class="partner-logo" alt="NAKHEEL">
-                <img src="image/DAMAC-Developer 1.png" class="partner-logo" alt="MERAAS">
-                <img src="image/Diyar.png" class="partner-logo" alt="BEYOND">
-                <img src="image/Ellington-Developers 1.png" class="partner-logo" alt="OMNIYAT">
-                <img src="image/EMAAR-768x512 1.png" class="partner-logo" alt="BINGHATTI">
-                <img src="image/meraas-final 1.png" class="partner-logo" alt="ALDAR">
-                <img src="image/Nakheel-Developers 1.png" class="partner-logo" alt="BINGHATTI">
-                <img src="image/Omniyat-Developers 1.png" class="partner-logo" alt="ALDAR">
+                <img src="image/Partner_Brands/Beyond.png" class="partner-logo" alt="EMAAR">
+                <img src="image/Partner_Brands/Aldar-Properties.png" class="partner-logo" alt="aldar">
+                <img src="image/Partner_Brands/binghatti.png" class="partner-logo" alt="binghatti">
+                <img src="image/Partner_Brands/DAMAC.png" class="partner-logo" alt="damac">
+                <img src="image/Partner_Brands/Diyar.png" class="partner-logo" alt="diyar">
+                <img src="image/Partner_Brands/Ellington.png" class="partner-logo" alt="ellington">
+                <img src="image/Partner_Brands/EMAAR.png" class="partner-logo" alt="emaar">
+                <img src="image/Partner_Brands/meraas.png" class="partner-logo" alt="meraas">
+                <img src="image/Partner_Brands/Nakheel.png" class="partner-logo" alt="Nakheel">
+                <img src="image/Partner_Brands/Omniyat.png" class="partner-logo" alt="Omniyat">
 
             </div>
         </div>
@@ -375,51 +397,83 @@
 
 
 
-
-  <section class="faq-section reveal">
-    <div class="section-header">
-        <h2>Frequently Asked Questions</h2>
-    </div>
+<section class="luxury-faq-section">
     
+    <video class="faq-bg-media" autoplay loop muted playsinline>
+        <source src="video/background (1).mp4 " type="video/mp4">
+    </video> 
+    
+    <div class="faq-bg-overlay"></div>
+
     <div class="faq-container">
-        <div class="faq-item">
-            <div class="faq-question">
-                <h3>Is it a good time to buy a property in Dubai in 2024?</h3>
-                <span class="faq-icon">+</span>
-            </div>
-            <div class="faq-answer">
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-            </div>
+        
+        <div class="faq-header anim-fade-up scroll-anim">
+            <h2 class="faq-title">Frequently Asked <span class="accent-text"> Questions </span></h2>
+            <div class="faq-divider"></div>
         </div>
 
-        <div class="faq-item">
-            <div class="faq-question">
-                <h3>How is the current real estate market in Dubai in 2024?</h3>
-                <span class="faq-icon">+</span>
+        <div class="faq-accordion">
+            
+            <div class="faq-item anim-fade-up delay-100 scroll-anim">
+                <div class="faq-question">
+                    <h3>What is the minimum investment required for a Golden Visa?</h3>
+                    <div class="faq-icon">
+                        <span class="icon-line horizontal"></span>
+                        <span class="icon-line vertical"></span>
+                    </div>
+                </div>
+                <div class="faq-answer">
+                    <div class="faq-answer-inner">
+                        <p>To qualify for the UAE Golden Visa through real estate, the minimum property investment required is AED 2,000,000. This grants you a 10-year renewable residency for you and your immediate family, along with exceptional long-term benefits.</p>
+                    </div>
+                </div>
             </div>
-            <div class="faq-answer">
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-            </div>
-        </div>
 
-        <div class="faq-item">
-            <div class="faq-question">
-                <h3>Have there been shifts in sale prices for Dubai properties in 2024?</h3>
-                <span class="faq-icon">+</span>
+            <div class="faq-item anim-fade-up delay-200 scroll-anim">
+                <div class="faq-question">
+                    <h3>Can foreign nationals own property in Dubai?</h3>
+                    <div class="faq-icon">
+                        <span class="icon-line horizontal"></span>
+                        <span class="icon-line vertical"></span>
+                    </div>
+                </div>
+                <div class="faq-answer">
+                    <div class="faq-answer-inner">
+                        <p>Absolutely. Foreign nationals can purchase, own, and sell properties on a freehold basis in designated investment zones across Dubai. These prime locations include Downtown Dubai, Palm Jumeirah, and Dubai Marina.</p>
+                    </div>
+                </div>
             </div>
-            <div class="faq-answer">
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-            </div>
-        </div>
 
-        <div class="faq-item">
-            <div class="faq-question">
-                <h3>Can an expat buy Property in Dubai and live permanently?</h3>
-                <span class="faq-icon">+</span>
+            <div class="faq-item anim-fade-up delay-300 scroll-anim">
+                <div class="faq-question">
+                    <h3>Are there any property taxes in Dubai?</h3>
+                    <div class="faq-icon">
+                        <span class="icon-line horizontal"></span>
+                        <span class="icon-line vertical"></span>
+                    </div>
+                </div>
+                <div class="faq-answer">
+                    <div class="faq-answer-inner">
+                        <p>Dubai is a renowned tax haven. There are zero property taxes, zero capital gains taxes, and zero income taxes on rental yields. The only fee applied is a one-time 4% DLD (Dubai Land Department) registration fee upon purchase.</p>
+                    </div>
+                </div>
             </div>
-            <div class="faq-answer">
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+
+            <div class="faq-item anim-fade-up delay-400 scroll-anim">
+                <div class="faq-question">
+                    <h3>Do you offer post-handover property management?</h3>
+                    <div class="faq-icon">
+                        <span class="icon-line horizontal"></span>
+                        <span class="icon-line vertical"></span>
+                    </div>
+                </div>
+                <div class="faq-answer">
+                    <div class="faq-answer-inner">
+                        <p>Yes, we provide end-to-end, white-glove property management services. From tenant sourcing and screening to maintenance and legal compliance, we ensure your asset generates maximum returns completely hassle-free.</p>
+                    </div>
+                </div>
             </div>
+
         </div>
     </div>
 </section>
@@ -479,5 +533,103 @@
         <div class="client-name">David L. <span>CEO, USA</span></div>
     </div>
 </div>
+
+
+
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+    // 1. FAQ Accordion
+    const faqItems = document.querySelectorAll('.faq-item');
+    faqItems.forEach(item => {
+        const question = item.querySelector('.faq-question');
+        question.addEventListener('click', () => {
+            faqItems.forEach(otherItem => {
+                if (otherItem !== item && otherItem.classList.contains('active')) {
+                    otherItem.classList.remove('active');
+                    otherItem.querySelector('.faq-answer').style.maxHeight = '0';
+                    otherItem.querySelector('.faq-icon').style.transform = 'rotate(0deg)';
+                }
+            });
+            
+            item.classList.toggle('active');
+            const answer = item.querySelector('.faq-answer');
+            const icon = item.querySelector('.faq-icon');
+            
+            if (item.classList.contains('active')) {
+                answer.style.maxHeight = answer.scrollHeight + 'px';
+                icon.style.transform = 'rotate(45deg)';
+            } else {
+                answer.style.maxHeight = '0';
+                icon.style.transform = 'rotate(0deg)';
+            }
+        });
+    });
+
+    // 2. Scroll Animation Observer
+    setTimeout(() => {
+        document.querySelectorAll('.hero-content').forEach(el => el.classList.add('visible'));
+    }, 150);
+
+    const scrollElements = document.querySelectorAll('.scroll-anim:not(.hero-content), .reveal');
+    const revealOnScroll = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('visible');
+                observer.unobserve(entry.target); 
+            }
+        });
+    }, { threshold: 0.1, rootMargin: "0px 0px -50px 0px" }); 
+
+    scrollElements.forEach(el => revealOnScroll.observe(el));
+
+    // 3. Bulletproof Background Video Autoplay (Both Global & Hero)
+    var globalVideo = document.getElementById("main-bg-video");
+    if (globalVideo) {
+        globalVideo.muted = true; 
+        globalVideo.play().catch(function(error) {
+            console.log("Browser prevented autoplay on global video.");
+        });
+    }
+
+    var heroVideo = document.getElementById("hero-video");
+    if (heroVideo) {
+        heroVideo.muted = true; 
+        heroVideo.play().catch(function(error) {
+            console.log("Browser prevented autoplay on hero video.");
+        });
+    }
+});
+
+//FAQ Section
+
+document.addEventListener("DOMContentLoaded", function() {
+    // Select all FAQ items
+    const faqItems = document.querySelectorAll('.faq-item');
+
+    faqItems.forEach(item => {
+        const question = item.querySelector('.faq-question');
+        const answer = item.querySelector('.faq-answer');
+
+        question.addEventListener('click', () => {
+            const isActive = item.classList.contains('active');
+
+            // Close all other accordions when one is opened (Luxury behavior)
+            faqItems.forEach(otherItem => {
+                otherItem.classList.remove('active');
+                otherItem.querySelector('.faq-answer').style.maxHeight = null;
+            });
+
+            // If the clicked item wasn't already active, open it
+            if (!isActive) {
+                item.classList.add('active');
+                // Dynamically calculate the exact height of the hidden text to slide it down
+                answer.style.maxHeight = answer.scrollHeight + "px";
+            }
+        });
+    });
+});
+
+
+</script>
 
 <?php include 'footer.php'; ?>
