@@ -628,8 +628,17 @@ document.addEventListener("DOMContentLoaded", function() {
         });
     });
 });
-
-
 </script>
+
+<section class="design-section">
+    <div class="design-content">
+        <h1>Life at the Soul of the City</h1>
+        <p>
+            The city's iconic tower stands as both a landmark and anchor,
+            a constant presence that defines the city's soul.
+        </p>
+    </div>
+</section>
+
 
 <?php include 'footer.php'; ?>

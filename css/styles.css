@@ -1000,3 +1000,66 @@
         border-radius: 12px;
     }
 }
+
+/* ============================= */
+/* HERO SECTION */
+/* ============================= */
+
+.design-section {
+    width: 100%;
+    min-height: 100vh;
+
+    background-image: url("../image/Background_Image/BG2.png"); /* change path */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    position: relative;
+    text-align: center;
+}
+
+/* Optional dark overlay for better text visibility */
+.design-section::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.05);
+}
+
+.design-content {
+    position: relative;
+    z-index: 2;
+    max-width: 700px;
+    padding: 20px;
+    color: #ffffff;
+}
+
+.design-content h1 {
+    font-size: 48px;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+.design-content p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #dddddd;
+}
+
+/* ============================= */
+/* RESPONSIVE */
+/* ============================= */
+
+@media (max-width: 768px) {
+    .design-content h1 {
+        font-size: 32px;
+    }
+
+    .design-content p {
+        font-size: 16px;
+    }
+}
