@@ -163,30 +163,83 @@
     </div>
 </section>
 
-<section class="faq-section reveal" style="padding: 100px 5%; max-width: 900px; margin: 0 auto;">
-    <div class="section-header" style="text-align: center; margin-bottom: 50px;">
-        <h2 class="heading-strict heading-line">Frequently Asked <span class="accent-text">Questions</span></h2>
-    </div>
+<section class="luxury-faq-section">
+    
+    <video class="faq-bg-media" autoplay loop muted playsinline>
+        <source src="video/background (1).mp4 " type="video/mp4">
+    </video> 
+    
+    <div class="faq-bg-overlay"></div>
 
     <div class="faq-container">
-        <div class="faq-item" style="background: rgba(10,17,32,0.8); backdrop-filter: blur(10px); border: 1px solid rgba(255,255,255,0.05); margin-bottom: 15px; border-radius: 4px;">
-            <div class="faq-question" style="display: flex; justify-content: space-between; padding: 25px; cursor: pointer;">
-                <h3 style="font-family: var(--font-body); font-size: 20px; font-weight: 500; margin: 0;">Is it a good time to rent in Dubai in 2024?</h3>
-                <span class="faq-icon" style="color: var(--gold); font-size: 24px;">+</span>
-            </div>
-            <div class="faq-answer" style="max-height: 0; overflow: hidden; padding: 0 25px; transition: max-height 0.3s ease;">
-                <p class="para-strict" style="padding-bottom: 25px;">Yes, the rental market offers diverse options from luxury villas to modern apartments, catering to various lifestyle needs.</p>
-            </div>
+        
+        <div class="faq-header anim-fade-up scroll-anim">
+            <h2 class="faq-title">Frequently Asked <span class="accent-text"> Questions </span></h2>
+            <div class="faq-divider"></div>
         </div>
 
-        <div class="faq-item" style="background: rgba(10,17,32,0.8); backdrop-filter: blur(10px); border: 1px solid rgba(255,255,255,0.05); margin-bottom: 15px; border-radius: 4px;">
-            <div class="faq-question" style="display: flex; justify-content: space-between; padding: 25px; cursor: pointer;">
-                <h3 style="font-family: var(--font-body); font-size: 20px; font-weight: 500; margin: 0;">Can I rent property as an expat?</h3>
-                <span class="faq-icon" style="color: var(--gold); font-size: 24px;">+</span>
+        <div class="faq-accordion">
+            
+            <div class="faq-item anim-fade-up delay-100 scroll-anim">
+                <div class="faq-question">
+                    <h3>What is the minimum investment required for a Golden Visa?</h3>
+                    <div class="faq-icon">
+                        <span class="icon-line horizontal"></span>
+                        <span class="icon-line vertical"></span>
+                    </div>
+                </div>
+                <div class="faq-answer">
+                    <div class="faq-answer-inner">
+                        <p>To qualify for the UAE Golden Visa through real estate, the minimum property investment required is AED 2,000,000. This grants you a 10-year renewable residency for you and your immediate family, along with exceptional long-term benefits.</p>
+                    </div>
+                </div>
             </div>
-            <div class="faq-answer" style="max-height: 0; overflow: hidden; padding: 0 25px; transition: max-height 0.3s ease;">
-                <p class="para-strict" style="padding-bottom: 25px;">Absolutely. Dubai has very expat-friendly rental laws allowing you to rent seamlessly with a valid residency visa.</p>
+
+            <div class="faq-item anim-fade-up delay-200 scroll-anim">
+                <div class="faq-question">
+                    <h3>Can foreign nationals own property in Dubai?</h3>
+                    <div class="faq-icon">
+                        <span class="icon-line horizontal"></span>
+                        <span class="icon-line vertical"></span>
+                    </div>
+                </div>
+                <div class="faq-answer">
+                    <div class="faq-answer-inner">
+                        <p>Absolutely. Foreign nationals can purchase, own, and sell properties on a freehold basis in designated investment zones across Dubai. These prime locations include Downtown Dubai, Palm Jumeirah, and Dubai Marina.</p>
+                    </div>
+                </div>
             </div>
+
+            <div class="faq-item anim-fade-up delay-300 scroll-anim">
+                <div class="faq-question">
+                    <h3>Are there any property taxes in Dubai?</h3>
+                    <div class="faq-icon">
+                        <span class="icon-line horizontal"></span>
+                        <span class="icon-line vertical"></span>
+                    </div>
+                </div>
+                <div class="faq-answer">
+                    <div class="faq-answer-inner">
+                        <p>Dubai is a renowned tax haven. There are zero property taxes, zero capital gains taxes, and zero income taxes on rental yields. The only fee applied is a one-time 4% DLD (Dubai Land Department) registration fee upon purchase.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="faq-item anim-fade-up delay-400 scroll-anim">
+                <div class="faq-question">
+                    <h3>Do you offer post-handover property management?</h3>
+                    <div class="faq-icon">
+                        <span class="icon-line horizontal"></span>
+                        <span class="icon-line vertical"></span>
+                    </div>
+                </div>
+                <div class="faq-answer">
+                    <div class="faq-answer-inner">
+                        <p>Yes, we provide end-to-end, white-glove property management services. From tenant sourcing and screening to maintenance and legal compliance, we ensure your asset generates maximum returns completely hassle-free.</p>
+                    </div>
+                </div>
+            </div>
+
         </div>
     </div>
 </section>
@@ -283,6 +336,37 @@ document.addEventListener("DOMContentLoaded", function() {
         });
     }
 });
+
+//FAQ Section
+
+document.addEventListener("DOMContentLoaded", function() {
+    // Select all FAQ items
+    const faqItems = document.querySelectorAll('.faq-item');
+
+    faqItems.forEach(item => {
+        const question = item.querySelector('.faq-question');
+        const answer = item.querySelector('.faq-answer');
+
+        question.addEventListener('click', () => {
+            const isActive = item.classList.contains('active');
+
+            // Close all other accordions when one is opened (Luxury behavior)
+            faqItems.forEach(otherItem => {
+                otherItem.classList.remove('active');
+                otherItem.querySelector('.faq-answer').style.maxHeight = null;
+            });
+
+            // If the clicked item wasn't already active, open it
+            if (!isActive) {
+                item.classList.add('active');
+                // Dynamically calculate the exact height of the hidden text to slide it down
+                answer.style.maxHeight = answer.scrollHeight + "px";
+            }
+        });
+    });
+});
+
+
 </script>
 
 <?php include 'footer.php'; ?>
