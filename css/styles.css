@@ -700,7 +700,7 @@
     .hero-text-center h1 { font-size: 50px; }
     .home-hero {
         height: 80vh;
-        position: relative;
+        position: relative; 
         display: flex;
         align-items: center;
         justify-content: center;
