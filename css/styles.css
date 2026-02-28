@@ -155,7 +155,7 @@
    3. SECTIONS HEADERS
    ========================================= */
 .section-header {
-    text-align: center; padding: 50px 20px 50px; position: relative;
+    text-align: center; padding: 100px 20px 50px; position: relative;
 }
 
 .section-header h2 {
@@ -524,7 +524,7 @@
 }
 
 .rent-pg-faq-item.active .rent-pg-faq-q {
-    color: var(--rent-gold);
+    color: #D4AF37;
     font-weight: 500;
 }
 
@@ -538,7 +538,7 @@
 
 .rent-pg-faq-icon .line {
     position: absolute;
-    background: var(--rent-gold);
+    background: #D4AF37;
     transition: all 0.6s cubic-bezier(0.34, 1.56, 0.64, 1);
 }
 
@@ -689,7 +689,7 @@
         grid-template-columns: 1fr;
     }
     .section-header {
-        text-align: center; padding: 20px 20px 10px; position: relative;
+        text-align: center; padding: 50px 20px 10px; position: relative;
     }
     .section-header h2, .partners-title, .sell-text h2 {
         font-size: 36px; /* Scaled down for mobile */

@@ -88,7 +88,7 @@ body {
 .invest-container {
   max-width: 1400px;
   margin: auto;
-  padding: 40px;
+  padding: 60px 0px 100px;
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 80px;
@@ -115,7 +115,6 @@ body {
 }
 
 .invest-content {
-  padding-top: 50px;
   padding-right: 40px;
 }
 
@@ -243,7 +242,7 @@ body {
 ================================= */
 .faq-section {
   padding: 80px 5%;
-  background: #000;
+  background: #161616;
   text-align: center;
 }
 
@@ -301,7 +300,7 @@ body {
 
 .projects-section {
   padding: 0px 5%;
-  padding-bottom: 150px;
+  padding-bottom: 80px;
 }
 
 .grid-container {
@@ -423,7 +422,7 @@ body {
     padding-bottom: 40px;
   }
   .faq-section {
-    padding: 80px 5%;
+    padding:  80px 5%;
   }
   .invest-container {
     padding: 0px 5%;
@@ -480,8 +479,10 @@ body {
   .express {
     grid-template-columns: 1fr;
     gap: 20px;
+    padding: 30px;
   }
 
+ 
   .invest-title {
     font-size: 38px;
   }
@@ -498,6 +499,7 @@ body {
 .testimonial-row {
   display: flex;
   gap: 20px;
+  padding: 30px 5%;
   overflow-x: auto;
 }
 
@@ -510,8 +512,7 @@ body {
 }
 
 .section-header {
-    margin-top: 20px;
-    margin-bottom: 70px;
+    margin: 70px;
     max-width: 1400px;
     margin-left: auto;
     margin-right: auto;
@@ -536,6 +537,7 @@ body {
     /* Adjust font size for mobile specific */
     .section-header h2 {
         font-size: 36px; 
+        padding-top: 40px;
     }
     .section-header-Sell h2 {
         font-size: 36px;

@@ -396,7 +396,7 @@
 </section>
 
 
-<div class="section-header reveal">
+<!-- <div class="section-header reveal">
     <div class="exclusive-access">
     <h2>Exclusive Access</h2>
     </div>
@@ -429,9 +429,9 @@
             <p>One-on-one tours of Dubai's finest penthouses.</p>
         </div>
     </div>
-</div>
+</div> -->
 
-<div class="section-header reveal">
+<!-- <div class="section-header reveal">
     <h2>Client Experiences</h2>
 </div>
 <div class="testimonials-scroll reveal">
@@ -450,7 +450,7 @@
         <p>"A truly white-glove service from start to finish. Highly recommended."</p>
         <div class="client-name">David L. <span>CEO, USA</span></div>
     </div>
-</div>
+</div> -->
 
 
 
@@ -477,7 +477,7 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
     }, observerOptions);
-
+});
 // =======================================================
 //    ULTRA-SMOOTH LUXURY HERO SLIDER
 //    =======================================================
@@ -576,9 +576,6 @@ document.addEventListener("DOMContentLoaded", function() {
                 }
             });
         });
-        
-        // Optional Auto-play (Uncomment to enable)
-        // setInterval(() => { updateLuxurySlider(currentIndex + 1); }, 4000);
     }
 });
 </script>
@@ -586,7 +583,7 @@ document.addEventListener("DOMContentLoaded", function() {
 <!-- =======================================================
    ULTRA-SMOOTH LUXURY HERO SLIDER
    ======================================================= -->
-<section class="design-section">
+<!-- <section class="design-section">
     <div class="design-content">
         <h1>Life at the Soul of the City</h1>
         <p>
@@ -594,7 +591,7 @@ document.addEventListener("DOMContentLoaded", function() {
             a constant presence that defines the city's soul.
         </p>
     </div>
-</section>
+</section> -->
 
 <section class="luxury-hero-slider">
     
@@ -671,6 +668,27 @@ document.addEventListener("DOMContentLoaded", function() {
     </div>
 
 </section>
+
+<div class="section-header reveal">
+    <h2>Client Experiences</h2>
+</div>
+<div class="testimonials-scroll reveal">
+    <div class="testi-card">
+        <div class="quote-icon">“</div>
+        <p>"The team found me a penthouse that wasn't even on the market yet. Incredible access."</p>
+        <div class="client-name">Michael R. <span>Investor, UK</span></div>
+    </div>
+    <div class="testi-card">
+        <div class="quote-icon">“</div>
+        <p>"Professional, transparent, and swift. They handled my entire portfolio perfectly."</p>
+        <div class="client-name">Sarah J. <span>Entrepreneur, UAE</span></div>
+    </div>
+    <div class="testi-card">
+        <div class="quote-icon">“</div>
+        <p>"A truly white-glove service from start to finish. Highly recommended."</p>
+        <div class="client-name">David L. <span>CEO, USA</span></div>
+    </div>
+</div>
 
 <section class="retreat-section">
 
