@@ -1,6 +1,7 @@
 <?php include 'header.php'; ?>
 
 <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" type="image/jpeg" href="image/Logo1.jpeg">
 
 <section class="home-hero">
     <video autoplay muted loop playsinline class="hero-video">

@@ -91,7 +91,7 @@
                 code: "+91",
                 name: "IND"
             },
-            {
+            {              
                 code: "+966",
                 name: "KSA"
             }, {

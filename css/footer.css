@@ -70,7 +70,7 @@
         position: relative; z-index: 5;
         width: 100%; height: 100%;
         display: flex;
-        opacity: 0; 
+        opacity: 0;                     
         animation: contentReveal 1.5s ease-out forwards 3.5s;
     }
 
@@ -87,7 +87,6 @@
         justify-content: center; /* Vertically Center */
         align-items: flex-start; /* Left Align */
         gap: 60px; /* Space between Text and Socials */
-        
         border-right: 1px solid rgba(255,255,255,0.1);
         transform: translateX(-50px);
         animation: slideReset 1s forwards 3.5s;
@@ -139,7 +138,6 @@
         flex-direction: column; 
         justify-content: center; /* Vertically Center */
         align-items: center; /* Left Align Container */
-        
         transform: translateX(50px);
         animation: slideReset 1s forwards 3.5s;
     }
