@@ -329,7 +329,7 @@
     </div>
 
     <div class="sell-button-container reveal" style="transition-delay: 0.8s">
-        <button class="gold-btn-solid show-more-btn">Show More</button>
+        <button class="gold-btn-solid show-more-btn"><a href="sell.php">Show More</button>
     </div>
 </section>
 
@@ -349,7 +349,7 @@
         <div class="team-card reveal">
             <div class="img-box">
                 <img src="image/IMG_0070.JPG.jpeg" alt="Khaled Alblooshi">
-                <div class="social-overlay"><i class="fab fa-linkedin"></i></div>
+                <!-- <div class="social-overlay"><i class="fab fa-linkedin"></i></div> -->
             </div>
             <div class="team-info">
                 <span class="role">Founder & Chairman</span>
@@ -360,7 +360,7 @@
         <div class="team-card reveal" style="transition-delay: 0.2s">
             <div class="img-box">
                 <img src="" alt="Yasin Mulla Ali">
-                <div class="social-overlay"><i class="fab fa-linkedin"></i></div>
+                <!-- <div class="social-overlay"><i class="fab fa-linkedin"></i></div> -->
             </div>
             <div class="team-info">
                 <span class="role">Founder & Chairman</span>
@@ -371,7 +371,7 @@
         <div class="team-card reveal" style="transition-delay: 0.4s">
             <div class="img-box">
                 <img src="" alt="Chakib Chami">
-                <div class="social-overlay"><i class="fab fa-linkedin"></i></div>
+                <!-- <div class="social-overlay"><i class="fab fa-linkedin"></i></div> -->
             </div>
             <div class="team-info">
                 <span class="role">Founder & Chairman</span>
@@ -382,7 +382,7 @@
         <div class="team-card reveal" style="transition-delay: 0.6s">
             <div class="img-box">
                 <img src="image/omar.png" alt="Omar Alsayed">
-                <div class="social-overlay"><i class="fab fa-linkedin"></i></div>
+                <!-- <div class="social-overlay"><i class="fab fa-linkedin"></i></div> -->
             </div>
             <div class="team-info">
                 <span class="role">Founder & Chairman</span>
@@ -395,88 +395,6 @@
     <a href="about-us.php" class="gold-btn-solid center">About</a>
 </section>
 
-
-
-<section class="luxury-faq-section">
-    
-    <video class="faq-bg-media" autoplay loop muted playsinline>
-        <source src="video/background (1).mp4 " type="video/mp4">
-    </video> 
-    
-    <div class="faq-bg-overlay"></div>
-
-    <div class="faq-container">
-        
-        <div class="faq-header anim-fade-up scroll-anim">
-            <h2 class="faq-title">Frequently Asked <span class="accent-text"> Questions </span></h2>
-            <div class="faq-divider"></div>
-        </div>
-
-        <div class="faq-accordion">
-            
-            <div class="faq-item anim-fade-up delay-100 scroll-anim">
-                <div class="faq-question">
-                    <h3>What is the minimum investment required for a Golden Visa?</h3>
-                    <div class="faq-icon">
-                        <span class="icon-line horizontal"></span>
-                        <span class="icon-line vertical"></span>
-                    </div>
-                </div>
-                <div class="faq-answer">
-                    <div class="faq-answer-inner">
-                        <p>To qualify for the UAE Golden Visa through real estate, the minimum property investment required is AED 2,000,000. This grants you a 10-year renewable residency for you and your immediate family, along with exceptional long-term benefits.</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="faq-item anim-fade-up delay-200 scroll-anim">
-                <div class="faq-question">
-                    <h3>Can foreign nationals own property in Dubai?</h3>
-                    <div class="faq-icon">
-                        <span class="icon-line horizontal"></span>
-                        <span class="icon-line vertical"></span>
-                    </div>
-                </div>
-                <div class="faq-answer">
-                    <div class="faq-answer-inner">
-                        <p>Absolutely. Foreign nationals can purchase, own, and sell properties on a freehold basis in designated investment zones across Dubai. These prime locations include Downtown Dubai, Palm Jumeirah, and Dubai Marina.</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="faq-item anim-fade-up delay-300 scroll-anim">
-                <div class="faq-question">
-                    <h3>Are there any property taxes in Dubai?</h3>
-                    <div class="faq-icon">
-                        <span class="icon-line horizontal"></span>
-                        <span class="icon-line vertical"></span>
-                    </div>
-                </div>
-                <div class="faq-answer">
-                    <div class="faq-answer-inner">
-                        <p>Dubai is a renowned tax haven. There are zero property taxes, zero capital gains taxes, and zero income taxes on rental yields. The only fee applied is a one-time 4% DLD (Dubai Land Department) registration fee upon purchase.</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="faq-item anim-fade-up delay-400 scroll-anim">
-                <div class="faq-question">
-                    <h3>Do you offer post-handover property management?</h3>
-                    <div class="faq-icon">
-                        <span class="icon-line horizontal"></span>
-                        <span class="icon-line vertical"></span>
-                    </div>
-                </div>
-                <div class="faq-answer">
-                    <div class="faq-answer-inner">
-                        <p>Yes, we provide end-to-end, white-glove property management services. From tenant sourcing and screening to maintenance and legal compliance, we ensure your asset generates maximum returns completely hassle-free.</p>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-    </div>
-</section>
 
 <div class="section-header reveal">
     <div class="exclusive-access">
@@ -537,97 +455,28 @@
 
 
 <script>
-document.addEventListener("DOMContentLoaded", function() {
-    // 1. FAQ Accordion
-    const faqItems = document.querySelectorAll('.faq-item');
+// FAQ Section
+document.addEventListener('DOMContentLoaded', () => {
+    // 1. FAQ Accordion Logic
+    const faqItems = document.querySelectorAll('.rent-pg-faq-item');
     faqItems.forEach(item => {
-        const question = item.querySelector('.faq-question');
-        question.addEventListener('click', () => {
-            faqItems.forEach(otherItem => {
-                if (otherItem !== item && otherItem.classList.contains('active')) {
-                    otherItem.classList.remove('active');
-                    otherItem.querySelector('.faq-answer').style.maxHeight = '0';
-                    otherItem.querySelector('.faq-icon').style.transform = 'rotate(0deg)';
-                }
-            });
-            
-            item.classList.toggle('active');
-            const answer = item.querySelector('.faq-answer');
-            const icon = item.querySelector('.faq-icon');
-            
-            if (item.classList.contains('active')) {
-                answer.style.maxHeight = answer.scrollHeight + 'px';
-                icon.style.transform = 'rotate(45deg)';
-            } else {
-                answer.style.maxHeight = '0';
-                icon.style.transform = 'rotate(0deg)';
-            }
-        });
-    });
-
-    // 2. Scroll Animation Observer
-    setTimeout(() => {
-        document.querySelectorAll('.hero-content').forEach(el => el.classList.add('visible'));
-    }, 150);
-
-    const scrollElements = document.querySelectorAll('.scroll-anim:not(.hero-content), .reveal');
-    const revealOnScroll = new IntersectionObserver((entries, observer) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                entry.target.classList.add('visible');
-                observer.unobserve(entry.target); 
-            }
-        });
-    }, { threshold: 0.1, rootMargin: "0px 0px -50px 0px" }); 
-
-    scrollElements.forEach(el => revealOnScroll.observe(el));
-
-    // 3. Bulletproof Background Video Autoplay (Both Global & Hero)
-    var globalVideo = document.getElementById("main-bg-video");
-    if (globalVideo) {
-        globalVideo.muted = true; 
-        globalVideo.play().catch(function(error) {
-            console.log("Browser prevented autoplay on global video.");
-        });
-    }
-
-    var heroVideo = document.getElementById("hero-video");
-    if (heroVideo) {
-        heroVideo.muted = true; 
-        heroVideo.play().catch(function(error) {
-            console.log("Browser prevented autoplay on hero video.");
-        });
-    }
-});
-
-//FAQ Section
-
-document.addEventListener("DOMContentLoaded", function() {
-    // Select all FAQ items
-    const faqItems = document.querySelectorAll('.faq-item');
-
-    faqItems.forEach(item => {
-        const question = item.querySelector('.faq-question');
-        const answer = item.querySelector('.faq-answer');
-
-        question.addEventListener('click', () => {
+        const btn = item.querySelector('.rent-pg-faq-btn');
+        btn.addEventListener('click', () => {
             const isActive = item.classList.contains('active');
-
-            // Close all other accordions when one is opened (Luxury behavior)
-            faqItems.forEach(otherItem => {
-                otherItem.classList.remove('active');
-                otherItem.querySelector('.faq-answer').style.maxHeight = null;
-            });
-
-            // If the clicked item wasn't already active, open it
-            if (!isActive) {
-                item.classList.add('active');
-                // Dynamically calculate the exact height of the hidden text to slide it down
-                answer.style.maxHeight = answer.scrollHeight + "px";
-            }
+            faqItems.forEach(i => i.classList.remove('active')); // Close others
+            if (!isActive) item.classList.add('active');
         });
     });
-});
+
+    // 2. Intersection Observer for Scroll Animations
+    const observerOptions = { threshold: 0.15 };
+    const revealObserver = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('is-visible');
+            }
+        });
+    }, observerOptions);
 
 // =======================================================
 //    ULTRA-SMOOTH LUXURY HERO SLIDER
@@ -673,6 +522,65 @@ document.addEventListener("DOMContentLoaded", function() {
         btn.addEventListener('click', () => goToSlide(currentSlide - 1));
     });
 });
+
+/* =========================================
+   5. BRANDED LUXURY COLLECTION SLIDER LOGIC
+   ========================================= */
+document.addEventListener("DOMContentLoaded", function() {
+    
+    // Select all the elements we need to animate
+    const imageSlides = document.querySelectorAll('.col-image-slide');
+    const textSlides = document.querySelectorAll('.col-text-slide');
+    const dots = document.querySelectorAll('.col-dot');
+    const btnNext = document.querySelector('.col-next');
+    const btnPrev = document.querySelector('.col-prev');
+    
+    if (imageSlides.length > 0) {
+        let currentIndex = 0;
+        let isTransitioning = false;
+
+        function updateLuxurySlider(newIndex) {
+            if (isTransitioning) return;
+            isTransitioning = true;
+
+            // Remove active class from EVERYTHING
+            imageSlides[currentIndex].classList.remove('active');
+            textSlides[currentIndex].classList.remove('active');
+            dots[currentIndex].classList.remove('active');
+
+            // Update Index (with looping)
+            currentIndex = newIndex;
+            if (currentIndex >= imageSlides.length) currentIndex = 0;
+            if (currentIndex < 0) currentIndex = imageSlides.length - 1;
+
+            // Add active class to the NEW elements
+            imageSlides[currentIndex].classList.add('active');
+            textSlides[currentIndex].classList.add('active');
+            dots[currentIndex].classList.add('active');
+
+            // Wait for CSS crossfade to finish before allowing another click
+            setTimeout(() => {
+                isTransitioning = false;
+            }, 1000); 
+        }
+
+        // Arrow Clicks
+        if (btnNext) btnNext.addEventListener('click', () => updateLuxurySlider(currentIndex + 1));
+        if (btnPrev) btnPrev.addEventListener('click', () => updateLuxurySlider(currentIndex - 1));
+
+        // Dot Clicks
+        dots.forEach((dot, index) => {
+            dot.addEventListener('click', () => {
+                if (currentIndex !== index) {
+                    updateLuxurySlider(index);
+                }
+            });
+        });
+        
+        // Optional Auto-play (Uncomment to enable)
+        // setInterval(() => { updateLuxurySlider(currentIndex + 1); }, 4000);
+    }
+});
 </script>
 
 <!-- =======================================================
@@ -691,22 +599,22 @@ document.addEventListener("DOMContentLoaded", function() {
 <section class="luxury-hero-slider">
     
     <div class="hero-slide active">
-        <img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=1920&q=80" alt="Etherea Interior" class="hero-bg-img">
+        <img src="image/Background_Image/BG1.png" alt="Etherea Interior" class="hero-bg-img">
         <div class="hero-overlay"></div>
         
         <div class="hero-content-wrapper">
             <div class="hero-text-col">
                 <span class="hero-brand">BINGHATTI</span>
-                <h1 class="hero-title">ETHEREA</h1>
-                <p class="hero-location">Jumeirah Village Circle</p>
-                <a href="#collection" class="btn-glass">Discover The Collection</a>
+                <h1 class="hero-title">VIP Launch Events</h1>
+                <p class="hero-location">Be the first to see new projects before the public.</p>
+                <!-- <a href="#collection" class="btn-glass">Discover The Collection</a> -->
             </div>
             
             <div class="hero-preview-col">
                 <button class="hero-nav-arrow prev-arrow"><i class="fas fa-chevron-left"></i></button>
                 
                 <div class="hero-preview-card">
-                    <img src="https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&fit=crop&w=600&q=80" alt="Etherea Exterior Render" class="hero-preview-img">
+                    <img src="https://images.unsplash.com/photo-1511578314322-379afb476865?auto=format&fit=crop&w=600&q=80" alt="Etherea Exterior Render" class="hero-preview-img">
                 </div>
                 
                 <button class="hero-nav-arrow next-arrow"><i class="fas fa-chevron-right"></i></button>
@@ -715,22 +623,46 @@ document.addEventListener("DOMContentLoaded", function() {
     </div>
 
     <div class="hero-slide">
-        <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1920&q=80" alt="Mercedes Benz Places" class="hero-bg-img">
+        <img src="image/Background_Image/BG1.png" alt="Mercedes Benz Places" class="hero-bg-img">
         <div class="hero-overlay"></div>
         
         <div class="hero-content-wrapper">
             <div class="hero-text-col">
                 <span class="hero-brand">BINGHATTI</span>
-                <h1 class="hero-title">MERCEDES-BENZ PLACES</h1>
-                <p class="hero-location">Downtown Dubai</p>
-                <a href="#collection" class="btn-glass">Discover The Collection</a>
+                <h1 class="hero-title">Investor Galas</h1>
+                <p class="hero-location">Networking with the region's top property moguls.</p>
+                <!-- <a href="#collection" class="btn-glass">Discover The Collection</a> -->
             </div>
             
             <div class="hero-preview-col">
                 <button class="hero-nav-arrow prev-arrow"><i class="fas fa-chevron-left"></i></button>
                 
                 <div class="hero-preview-card">
-                    <img src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=600&q=80" alt="Mercedes Benz Places Exterior" class="hero-preview-img">
+                    <img src="https://images.unsplash.com/photo-1540575467063-178a50c2df87?auto=format&fit=crop&w=600&q=80" alt="Mercedes Benz Places Exterior" class="hero-preview-img">
+                </div>
+                
+                <button class="hero-nav-arrow next-arrow"><i class="fas fa-chevron-right"></i></button>
+            </div>
+        </div>
+    </div>
+
+    <div class="hero-slide">
+        <img src="image/Background_Image/BG1.png" alt="Mercedes Benz Places" class="hero-bg-img">
+        <div class="hero-overlay"></div>
+        
+        <div class="hero-content-wrapper">
+            <div class="hero-text-col">
+                <span class="hero-brand">BINGHATTI</span>
+                <h1 class="hero-title">Private Viewings</h1>
+                <p class="hero-location">One-on-one tours of Dubai's finest penthouses.</p>
+                <!-- <a href="#collection" class="btn-glass">Discover The Collection</a> -->
+            </div>
+            
+            <div class="hero-preview-col">
+                <button class="hero-nav-arrow prev-arrow"><i class="fas fa-chevron-left"></i></button>
+                
+                <div class="hero-preview-card">
+                    <img src="https://images.unsplash.com/photo-1492684223066-81342ee5ff30?auto=format&fit=crop&w=600&q=80" alt="Mercedes Benz Places Exterior" class="hero-preview-img">
                 </div>
                 
                 <button class="hero-nav-arrow next-arrow"><i class="fas fa-chevron-right"></i></button>
@@ -740,6 +672,211 @@ document.addEventListener("DOMContentLoaded", function() {
 
 </section>
 
+<section class="retreat-section">
 
+    <div class="retreat-container">
+
+        <!-- LEFT SIDE -->
+        <div class="retreat-left">
+
+            <span class="retreat-label">DESIGN DETAILS</span>
+
+            <h2 class="retreat-heading">
+                A Retreat.<br>
+                A Promise.
+            </h2>
+
+            <!-- <div class="retreat-small-img">
+                <img src="image/1.jpg" alt="Kitchen Interior">
+            </div> -->
+
+            <div class="retreat-small-img">
+                <div class="img-hover">
+                    <img src="image/binghatti-amberhall-exterior-3.webp" alt="Kitchen Interior">
+                </div>
+            </div>
+    </div>
+
+        <!-- RIGHT SIDE -->
+        <div class="retreat-right">
+
+            <!-- <div class="retreat-large-img">
+                <img src="image/1.jpg" alt="Living Room">
+            </div> -->
+
+            <div class="retreat-large-img">
+                <div class="img-hover">
+                    <img src="image/Cullinan-Livingroom_1.jpg" alt="Living Room">
+                </div>
+            </div>
+
+            <p class="retreat-text">
+                Amidst the city’s pulse, a retreat emerges. Amberhall. A promise. 
+                A dream in glass and steel, waiting to be discovered. Crafted to inspire 
+                and built to endure. <strong>A life of purpose awaits.</strong>
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+<section class="luxury-collection-section">
+    
+    <video autoplay loop muted playsinline class="collection-bg-video">
+        <source src="video/background (1).mp4" type="video/mp4">
+    </video>
+    <div class="collection-bg-overlay"></div>
+
+    <div class="collection-container">
+        
+        <div class="collection-header anim-fade-up scroll-anim">
+            <h2 class="collection-title">BRANDED LUXURY <span class="thin-text">COLLECTION</span></h2>
+        </div>
+
+        <div class="collection-slider-wrapper anim-zoom-in delay-100 scroll-anim">
+            
+            <button class="col-arrow col-prev"><i class="fas fa-chevron-left"></i></button>
+            <button class="col-arrow col-next"><i class="fas fa-chevron-right"></i></button>
+
+            <div class="collection-image-track">
+                
+                <div class="col-image-slide active">
+                    <img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=1200&q=80" alt="Sky Mansion">
+                </div>
+                
+                <div class="col-image-slide">
+                    <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1200&q=80" alt="Etherea Residence">
+                </div>
+                
+                <div class="col-image-slide">
+                    <img src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=1200&q=80" alt="Mercedes Benz Places">
+                </div>
+
+            </div>
+
+            <div class="collection-dots">
+                <span class="col-dot active" data-slide="0"></span>
+                <span class="col-dot" data-slide="1"></span>
+                <span class="col-dot" data-slide="2"></span>
+            </div>
+        </div>
+
+        <div class="collection-text-area anim-fade-up delay-200 scroll-anim">
+            
+            <div class="col-text-slide active">
+                <h3 class="col-subtitle">THE SKY MANSION PENTHOUSE</h3>
+                <p class="col-brand">BUGATTI RESIDENCES BY BINGHATTI</p>
+            </div>
+            
+            <div class="col-text-slide">
+                <h3 class="col-subtitle">SIGNATURE RESIDENCE</h3>
+                <p class="col-brand">BINGHATTI ETHEREA</p>
+            </div>
+            
+            <div class="col-text-slide">
+                <h3 class="col-subtitle">AERODYNAMIC OASIS</h3>
+                <p class="col-brand">MERCEDES-BENZ PLACES</p>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+
+    <!-- FAQ SECTION -->
+    <section class="rent-pg-faq">
+            <video class="faq-bg-media" autoplay loop muted playsinline>
+        <source src="video/background (1).mp4 " type="video/mp4">
+    </video> 
+    
+    <div class="faq-bg-overlay"></div>
+        <div class="rent-pg-faq-container">
+            <header class="rent-pg-faq-header js-reveal">
+                <span class="rent-pg-pre-title">REFINEMENT & DETAIL</span>
+                <h2 class="rent-pg-section-title">Frequently Asked Questions</h2>
+                <div class="rent-pg-gold-divider"></div>
+            </header>
+
+            <div class="rent-pg-faq-accordion">
+                <div class="rent-pg-faq-item js-reveal">
+                    <button class="rent-pg-faq-btn">
+                        <span class="rent-pg-faq-q">How is the architectural integrity verified?</span>
+                        <div class="rent-pg-faq-icon">
+                            <span class="line vertical"></span>
+                            <span class="line horizontal"></span>
+                        </div>
+                    </button>
+                    <div class="rent-pg-faq-panel">
+                        <div class="rent-pg-faq-content">
+                            <p>Our structural engineers utilize aerospace-grade simulations to stress-test every cantilever and foundation. We ensure that your silhouette remains timeless against seismic and environmental shifts.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="rent-pg-faq-item js-reveal">
+                    <button class="rent-pg-faq-btn">
+                        <span class="rent-pg-faq-q">What is the timeline for bespoke commissions?</span>
+                        <div class="rent-pg-faq-icon">
+                            <span class="line vertical"></span>
+                            <span class="line horizontal"></span>
+                        </div>
+                    </button>
+                    <div class="rent-pg-faq-panel">
+                        <div class="rent-pg-faq-content">
+                            <p>A typical architectural masterpiece requires 12 to 18 months from initial conceptualization to final handover. This allows for meticulous sourcing of rare materials and artisan-level finishing.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="rent-pg-faq-item js-reveal">
+                    <button class="rent-pg-faq-btn">
+                        <span class="rent-pg-faq-q">Do you offer smart-home architectural integration?</span>
+                        <div class="rent-pg-faq-icon">
+                            <span class="line vertical"></span>
+                            <span class="line horizontal"></span>
+                        </div>
+                    </button>
+                    <div class="rent-pg-faq-panel">
+                        <div class="rent-pg-faq-content">
+                            <p>We treat technology as invisible luxury. Automation is embedded into the walls themselves, allowing for biometric access, circadian lighting, and climate control that anticipates your arrival.</p>
+                        </div>
+                    </div>
+                </div>
+
+                  <div class="rent-pg-faq-item js-reveal">
+                    <button class="rent-pg-faq-btn">
+                        <span class="rent-pg-faq-q">Do you offer smart-home architectural integration?</span>
+                        <div class="rent-pg-faq-icon">
+                            <span class="line vertical"></span>
+                            <span class="line horizontal"></span>
+                        </div>
+                    </button>
+                    <div class="rent-pg-faq-panel">
+                        <div class="rent-pg-faq-content">
+                            <p>We treat technology as invisible luxury. Automation is embedded into the walls themselves, allowing for biometric access, circadian lighting, and climate control that anticipates your arrival.</p>
+                        </div>
+                    </div>
+                </div>
+
+                  <div class="rent-pg-faq-item js-reveal">
+                    <button class="rent-pg-faq-btn">
+                        <span class="rent-pg-faq-q">Do you offer smart-home architectural integration?</span>
+                        <div class="rent-pg-faq-icon">
+                            <span class="line vertical"></span>
+                            <span class="line horizontal"></span>
+                        </div>
+                    </button>
+                    <div class="rent-pg-faq-panel">
+                        <div class="rent-pg-faq-content">
+                            <p>We treat technology as invisible luxury. Automation is embedded into the walls themselves, allowing for biometric access, circadian lighting, and climate control that anticipates your arrival.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
 <?php include 'footer.php'; ?>

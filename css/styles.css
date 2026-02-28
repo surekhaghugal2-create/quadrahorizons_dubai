@@ -86,11 +86,13 @@
 @media (max-width: 576px) {
 
     .legacy-section {
-        padding: 60px 20px;
+        background: none !important;
+        height: 700px;
+        padding: 30px 20px;
     }
 
     .legacy-content h2 {
-        font-size: 30px;
+        font-size: 36px;
     }
 
     .legacy-content p {
@@ -402,35 +404,207 @@
 }
 
 /* =========================================
-   9. FAQ SECTION
+   6. FAQ SECTION (FIXED WITH BACKGROUND & SHADOW)
    ========================================= */
-.faq-section { padding: 0px 5%; background-color: #0A1120; color: #fff; }
-.faq-container { max-width: 900px; margin: 0 auto; border-top: 1px solid rgba(255, 255, 255, 0.1); }
-.faq-item { border-bottom: 1px solid rgba(255, 255, 255, 0.1); overflow: hidden; }
+.rent-pg-faq { 
+    padding: 120px 5%; 
+    position: relative; /* Essential for background positioning */
+    overflow: hidden;
+    background: #000; /* Fallback */
+}
 
-.faq-question {
-    display: flex; justify-content: space-between; align-items: center;
-    padding: 25px 0; cursor: pointer; transition: 0.3s;
+/* Background Media Fixed */
+.faq-bg-media {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 0;
+    opacity: 0.5; /* Balanced visibility */
+    filter: grayscale(40%) brightness(0.9); 
+    pointer-events: none;
 }
-.faq-question h3 {
-    font-family: 'Playfair Display', serif;
-    font-size: 20px; /* Slightly larger than normal for FAQ title */
-    font-weight: 200; margin: 0; color: #fff;
-}
-.faq-icon {
-    font-size: 24px; color: #D4AF37; font-weight: 300; width: 30px; text-align: center;
-}
-.faq-question:hover h3 { color: #D4AF37; }
 
-.faq-answer {
-    max-height: 0; overflow: hidden; transition: max-height 0.5s ease-out; padding-right: 20px;
+/* Deep Gradient Overlay - Keeps center video visible */
+.faq-bg-overlay {
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+    pointer-events: none;
+    background: radial-gradient(circle at center, rgba(20, 20, 20, 0.253) 0%, rgba(5, 8, 15, 0.85) 100%);
 }
-.faq-answer p {
-    font-family: 'Work Sans', sans-serif;
-    font-size: 18px; /* UPDATED Paragraph Size */
-    line-height: 1.6; color: #b0b0b0; margin: 0; padding-bottom: 25px;
+
+.rent-pg-faq-container {
+    position: relative;
+    z-index: 2; /* Ensures content is above video/overlay */
+    max-width: 1000px;
+    margin: 0 auto;
+  
 }
-.faq-item.active .faq-question h3 { color: #D4AF37; }
+
+.rent-pg-faq-header { 
+    text-align: center; 
+    margin-bottom: 60px; 
+}
+
+/* Cinematic Gold Divider */
+.rent-pg-gold-divider {
+    height: 2px; width: 80px;
+    background: rgba(255, 196, 3, 0.897);
+    margin: 25px auto;
+    position: relative;
+    overflow: hidden;
+}
+
+.rent-pg-gold-divider::after {
+    content: ''; 
+    position: absolute; 
+    top: 0; left: -100%;
+    width: 100%; height: 100%;
+    background: linear-gradient(90deg, transparent, var(--rent-gold), transparent);
+    animation: line-sweep 4s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+}
+
+/* The FAQ Card - Curved & High Shadow */
+.rent-pg-faq-item {
+    max-width: 1000px;
+    margin: 0 auto 20px;
+    background: rgba(5, 5, 5, 0.918); /* Darker glass for better contrast */
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 12px; /* Smooth curved corners */
+    transition: all 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+    overflow: hidden;
+    /* Premium Box Shadow */
+     box-shadow: 
+        0 40px 100px rgba(46, 46, 46, 0.6), 
+        0 10px 40px rgba(22, 22, 22, 0.4),
+        0 0 100px rgba(14, 13, 13, 0.03); 
+        
+    border: 1px solid rgba(43, 43, 43, 0.03); /* Ghost border */
+}
+
+.rent-pg-faq-item:hover {
+    background: var(--rent-dark);
+    border-color: rgba(212, 175, 55, 0.5);
+    transform: translateY(-5px);
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.7), 0 0 15px rgba(212, 175, 55, 0.1);
+}
+
+.rent-pg-faq-item.active {
+    background: rgba(0, 0, 0, 0.89);
+    border-color: rgba(212, 175, 55, 0.7);
+    box-shadow: 0 30px 60px -15px rgba(0, 0, 0, 0.8);
+}
+
+/* Question Trigger */
+.rent-pg-faq-btn {
+    width: 100%;
+    background: none;
+    border: none;
+    padding: 32px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    outline: none;
+}
+
+.rent-pg-faq-q {
+    font-family: 'Work Sans', sans-serif !important;
+    font-size: 18px !important;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.9);
+    text-align: left;
+    letter-spacing: 0.3px;
+    transition: all 0.4s ease;
+}
+
+.rent-pg-faq-item.active .rent-pg-faq-q {
+    color: var(--rent-gold);
+    font-weight: 500;
+}
+
+/* Smooth Icon Animation */
+.rent-pg-faq-icon {
+    position: relative;
+    width: 20px;
+    height: 20px;
+    flex-shrink: 0;
+}
+
+.rent-pg-faq-icon .line {
+    position: absolute;
+    background: var(--rent-gold);
+    transition: all 0.6s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+.rent-pg-faq-icon .vertical {
+    width: 2px; height: 16px;
+    left: 9px; top: 2px;
+}
+
+.rent-pg-faq-icon .horizontal {
+    width: 16px; height: 2px;
+    top: 9px; left: 2px;
+}
+
+.rent-pg-faq-item.active .vertical {
+    transform: rotate(90deg);
+    opacity: 0;
+}
+
+/* The Smooth Panel Reveal */
+.rent-pg-faq-panel {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.rent-pg-faq-item.active .rent-pg-faq-panel {
+    max-height: 600px;
+}
+
+.rent-pg-faq-content {
+    padding: 0 40px 40px 40px;
+    opacity: 0;
+    filter: blur(15px);
+    transform: translateY(20px);
+    transition: 
+        opacity 0.8s ease, 
+        filter 0.8s ease, 
+        transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.rent-pg-faq-item.active .rent-pg-faq-content {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateY(0);
+    transition-delay: 0.2s;
+}
+
+.rent-pg-faq-content p {
+    font-family: 'Work Sans', sans-serif !important;
+    font-size: 18px !important;
+    line-height: 1.8;
+    color: rgba(255, 255, 255, 0.65);
+    margin: 0;
+}
+
+/* Mobile Smoothing */
+@media (max-width: 768px) {
+    .rent-pg-faq { padding: 80px 20px; }
+    .rent-pg-faq-btn { padding: 25px; }
+    .rent-pg-faq-content { padding: 0 25px 30px 25px; }
+    
+    .rent-pg-faq-q, 
+    .rent-pg-faq-content p { 
+        font-size: 16px !important; 
+    }
+}
 
 /* =========================================
    10. EVENTS & TEAM
@@ -495,7 +669,7 @@
    Exclusive Access Section
    ========================================= */
    .exclusive-access{
-    padding-top: 80px;
+    padding-top: 60px;
    }
 
 
@@ -759,250 +933,6 @@
     font-size: 40px; letter-spacing: 20px; color: rgba(255, 255, 255, 0.8);
     display: flex; flex-direction: column; align-items: center; line-height: 1;
 }
-}
-
-/* =======================================================
-   LUXURY FAQ SECTION (ULTRA-MODERN BLUR REVEAL + BG MEDIA)
-   ======================================================= */
-.luxury-faq-section {
-    background-color: var(--black, #000000); 
-    padding: 120px 10px !important; /* STRICT DESKTOP PADDING */
-    position: relative;
-    overflow: hidden;
-    z-index: 2;
-    display: flex;
-    justify-content: center;
-}
-
-/* --- CINEMATIC BACKGROUND VIDEO/IMAGE --- */
-.faq-bg-media {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    z-index: 0;
-    opacity: 0.6; /* Lowered slightly so it blends perfectly */
-    filter: grayscale(30%); 
-    pointer-events: none; /* Prevents video from blocking clicks */
-}
-
-/* --- DEEP GRADIENT OVERLAY --- */
-.faq-bg-overlay {
-    position: absolute;
-    inset: 0;
-    z-index: 1;
-    pointer-events: none;
-    /* FIXED: Changed pure black to a highly transparent fade so the video is highly visible */
-    background: linear-gradient(
-        to bottom, 
-        rgba(0, 0, 0, 0.95) 0%, 
-        rgba(0, 0, 0, 0.1) 50%, 
-        rgba(0, 0, 0, 0.95) 100%
-    );
-}
-.faq-container {
-    max-width: 900px; 
-    width: 100%;
-    margin: 0 auto;
-    position: relative;
-    z-index: 2; /* Keeps cards above the background */
-}
-
-/* --- FAQ HEADER --- */
-.faq-header {
-    text-align: center;
-    margin-bottom: 60px;
-}
-
-.faq-title {
-    font-family: var(--font-heading, 'Playfair Display', serif) !important;
-    font-size: 50px !important; /* STRICT DESKTOP SIZE */
-    color: var(--white, #FFFFFF);
-    line-height: 1.2 !important;
-    font-weight: 400 !important;
-    margin: 0 0 25px 0;
-}
-
-.faq-divider {
-    width: 60px;
-    height: 1px;
-    background: var(--luxury-gold, #D4AF37);
-    margin: 0 auto;
-    position: relative;
-    box-shadow: 0 0 10px rgba(212, 175, 55, 0.5); 
-}
-
-/* --- FAQ ACCORDION ITEMS --- */
-.faq-accordion {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-}
-
-.faq-item {
-    background: rgba(20, 20, 20, 0.4);
-    backdrop-filter: blur(25px);
-    -webkit-backdrop-filter: blur(25px);
-    border: 1px solid rgba(255, 255, 255, 0.05);
-    border-radius: 16px;
-    overflow: hidden;
-    position: relative;
-    transform-origin: center;
-    transition: transform 0.5s cubic-bezier(0.16, 1, 0.3, 1), 
-                box-shadow 0.5s ease, 
-                border-color 0.5s ease;
-}
-
-/* TACTILE PRESS ON HOVER */
-.faq-item:hover {
-    transform: scale(0.985); /* Smoothly shrinks inwards like a physical button */
-    border-color: rgba(212, 175, 55, 0.4);
-    box-shadow: 0 0 40px rgba(212, 175, 55, 0.1); 
-    background: rgba(25, 25, 25, 0.6);
-}
-
-.faq-item.active {
-    transform: scale(1); /* Pops back to full size when opened */
-    border-color: var(--luxury-gold, #D4AF37);
-    background: rgba(30, 30, 30, 0.8);
-    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.8);
-}
-
-/* --- FAQ QUESTION (CLICKABLE) --- */
-.faq-question {
-    padding: 30px 40px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    cursor: pointer;
-    user-select: none;
-    position: relative;
-    z-index: 2;
-}
-
-.faq-question h3 {
-    font-family: var(--font-body, 'Work Sans', sans-serif) !important; 
-    font-size: 18px !important; /* EXACTLY 20PX */
-    color: var(--white, #FFFFFF);
-    font-weight: 400;
-    margin: 0;
-    padding-right: 20px;
-    transition: color 0.4s ease, letter-spacing 0.5s cubic-bezier(0.16, 1, 0.3, 1);
-}
-
-.faq-item:hover .faq-question h3,
-.faq-item.active .faq-question h3 {
-    color: var(--luxury-gold, #D4AF37);
-    letter-spacing: 0.5px; 
-}
-
-/* --- DYNAMIC 'X' SPIN ICON --- */
-.faq-icon {
-    position: relative;
-    width: 18px;
-    height: 18px;
-    flex-shrink: 0;
-    transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1); 
-}
-
-.faq-item.active .faq-icon {
-    transform: rotate(135deg); /* Spins smoothly into an 'X' */
-}
-
-.icon-line {
-    position: absolute;
-    background-color: var(--luxury-gold, #D4AF37);
-    border-radius: 2px;
-    transition: background-color 0.4s ease;
-}
-
-.icon-line.horizontal {
-    top: 50%; left: 0; width: 100%; height: 2px;
-    transform: translateY(-50%);
-}
-
-.icon-line.vertical {
-    top: 0; left: 50%; width: 2px; height: 100%;
-    transform: translateX(-50%);
-}
-
-.faq-item.active .icon-line {
-    background-color: var(--white, #FFFFFF);
-}
-
-/* --- THE BLUR REVEAL --- */
-.faq-answer {
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.8s cubic-bezier(0.16, 1, 0.3, 1); 
-}
-
-.faq-answer-inner {
-    padding: 0 40px 35px 40px; 
-    opacity: 0;
-    filter: blur(10px); /* Text starts blurred out */
-    transform: translateY(-15px); 
-    transition: opacity 0.4s ease, 
-                filter 0.6s cubic-bezier(0.16, 1, 0.3, 1), 
-                transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
-}
-
-.faq-item.active .faq-answer-inner {
-    opacity: 1;
-    filter: blur(0px); /* Unblurs and drops into place perfectly */
-    transform: translateY(0); 
-    transition-delay: 0.1s; 
-}
-
-.faq-answer-inner p {
-    font-family: var(--font-body, 'Work Sans', sans-serif) !important; 
-    font-size: 16px !important; /* EXACTLY 18PX */
-    color: var(--text-grey, #9A9A9A);
-    line-height: 1.8 !important;
-    font-weight: 300 !important;
-    margin: 0;
-}
-
-/* =======================================================
-   RESPONSIVE LAYOUT (TABLET & MOBILE)
-   ======================================================= */
-@media (max-width: 1024px) {
-    .faq-container { padding: 0 20px; }
-}
-
-@media (max-width: 425px) {
-    .luxury-faq-section {
-        padding: 80px 10px !important; /* STRICT MOBILE PADDING */
-    }
-
-    /* STRICT MOBILE TYPOGRAPHY */
-    .faq-title {
-        font-size: 36px !important;
-        margin-bottom: 20px !important;
-    }
-
-    .faq-question {
-        padding: 25px 20px;
-    }
-
-    .faq-question h3 {
-        font-size: 18px !important; 
-    }
-
-    .faq-answer-inner {
-        padding: 0 20px 25px 20px;
-    }
-
-    .faq-answer-inner p {
-        font-size: 16px !important; /* STRICT MOBILE P TEXT */
-        line-height: 1.6 !important;
-    }
-
-    .faq-item {
-        border-radius: 12px;
-    }
 }
 
 /* ============================= */
@@ -1272,8 +1202,7 @@
         flex-direction: column;
         justify-content: center;
         text-align: center;
-        padding: 80px 40px;
-        gap: 0px;
+        padding: 80px 40px 0px;
     }
     .hero-text-col{
         flex: 1;
@@ -1291,6 +1220,7 @@
     .hero-preview-col {
         justify-content: center;
         gap: 20px;
+        margin-top: -800px;
     }
 }
 
@@ -1301,4 +1231,291 @@
     .btn-glass { padding: 14px 30px; }
     .hero-preview-card { width: 220px; height: 300px; }
     .hero-nav-arrow { font-size: 30px; }
+}
+
+/* ==========================================
+   RETREAT SECTION – BINGHATTI LUXURY
+========================================== */
+
+.retreat-section {
+    background: #161616;
+    padding: 140px 6%;
+}
+
+.retreat-container {
+    max-width: 1400px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    gap: 100px;
+}
+
+/* LEFT SIDE */
+.retreat-left {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.retreat-label {
+    font-family: 'Work Sans', sans-serif;
+    font-size: 11px;
+    letter-spacing: 6px;
+    /* color: #dcdcdc; */
+    color: #D4AF37;
+    text-transform: uppercase;
+}
+
+.retreat-heading {
+    font-family: 'Playfair Display', serif;
+    font-size: 95px;
+    font-weight: 400;
+    line-height: 1.05;
+    color: #ffffff;
+    /* color: #D4AF37; */
+    margin: 50px 0;
+    letter-spacing: -1px;
+}
+
+/* ==========================================
+   LUXURY IMAGE WRAPPER
+========================================== */
+
+.retreat-small-img,
+.retreat-large-img {
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.retreat-small-img {
+    margin-top: 80px;
+}
+
+/* Smooth cinematic zoom */
+.retreat-small-img img,
+.retreat-large-img img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transform: scale(1.05);
+    transition: transform 1.8s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+/* Hover zoom */
+.retreat-small-img:hover img,
+.retreat-large-img:hover img {
+    transform: scale(1.15);
+}
+
+/* Soft luxury gradient overlay */
+.retreat-small-img::after,
+.retreat-large-img::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+        180deg,
+        rgba(0,0,0,0) 60%,
+        rgba(0,0,0,0.25) 100%
+    );
+    opacity: 0;
+    transition: opacity 0.8s ease;
+}
+
+.retreat-small-img:hover::after,
+.retreat-large-img:hover::after {
+    opacity: 1;
+}
+
+/* RIGHT SIDE */
+.retreat-right {
+    flex: 1.3;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.retreat-text {
+    margin-top: 50px;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 16px;
+    color: #ffffff;
+    max-width: 520px;
+    line-height: 1.9;
+    letter-spacing: 0.3px;
+}
+
+/* ==========================================
+   RESPONSIVE
+========================================== */
+
+@media (max-width: 992px) {
+
+    .retreat-label {
+        padding-bottom: 30px;
+    }
+
+    .retreat-container {
+        flex-direction: column;
+        gap: 60px;
+    }
+
+    .retreat-heading {
+        font-size: 50px;
+        margin: 0;
+    }
+
+    .retreat-small-img {
+        display: none; /* Keep design clean on mobile */
+    }
+
+    .retreat-large-img img {
+        margin-top: -60px;
+    }
+
+    .retreat-section {
+        padding: 70px 30px;
+    }
+
+    .retreat-text {
+        max-width: 100%;
+        font-size: 15px;
+    }
+}
+
+/* dfvswertesrsererser */
+/* luxury-section */
+/* dfvswertesrsererser */
+/* =======================================================
+   BRANDED LUXURY COLLECTION SLIDER
+   ======================================================= */
+.luxury-collection-section {
+    position: relative;
+    padding: 100px 10px !important;
+    background-color: var(--black, #000);
+    overflow: hidden;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* --- Background Video Setup --- */
+.collection-bg-video {
+    position: absolute; inset: 0;
+    width: 100%; height: 100%; object-fit: cover;
+    z-index: 0; filter: brightness(0.6) grayscale(20%);
+}
+.collection-bg-overlay {
+    position: absolute; inset: 0; z-index: 1;
+    /* Deep gradient to make the central image pop */
+    background: radial-gradient(circle at center, rgba(5,8,15,0.4) 0%, rgba(0,0,0,0.95) 100%);
+}
+
+.collection-container {
+    position: relative; z-index: 2; width: 100%; max-width: 1200px; margin: 0 auto; text-align: center;
+}
+
+/* --- Header --- */
+.collection-header { margin-bottom: 50px; }
+.collection-title {
+    font-family: var(--font-heading) !important; font-size: 35px !important; color: var(--white);
+    letter-spacing: 2px; margin: 0; font-weight: 500 !important;
+}
+.thin-text { font-weight: 200 !important; color: var(--text-grey); }
+
+/* --- Slider Image Wrapper --- */
+.collection-slider-wrapper {
+    position: relative; max-width: 900px; margin: 0 auto;
+    /* Clean glass frame */
+    box-shadow: 0 40px 80px rgba(0,0,0,0.8); border: 1px solid rgba(255,255,255,0.05);
+}
+
+.collection-image-track { position: relative; width: 100%; aspect-ratio: 16/9; overflow: hidden; background: var(--black); }
+
+/* Image Slides (Absolute stacked for crossfading) */
+.col-image-slide {
+    position: absolute; inset: 0; opacity: 0; visibility: hidden;
+    transition: opacity 1s cubic-bezier(0.25, 1, 0.5, 1), visibility 1s;
+}
+.col-image-slide.active { opacity: 1; visibility: visible; z-index: 2; }
+
+.col-image-slide img {
+    width: 100%; height: 100%; object-fit: cover; transform: scale(1.05);
+    transition: transform 6s ease-out; /* Slow zoom out when active */
+}
+.col-image-slide.active img { transform: scale(1); }
+
+/* --- Navigation Arrows --- */
+.col-arrow {
+    position: absolute; top: 50%; transform: translateY(-50%);
+    background: transparent; border: none; color: rgba(255,255,255,0.5); font-size: 35px; font-weight: 100;
+    cursor: pointer; z-index: 10; padding: 20px; transition: all 0.4s ease; outline: none;
+}
+.col-arrow:hover { color: var(--white); transform: translateY(-50%) scale(1.1); }
+.col-prev { left: -80px; }
+.col-next { right: -80px; }
+
+/* --- Indicator Dots --- */
+.collection-dots {
+    position: absolute; bottom: 20px; left: 50%; transform: translateX(-50%);
+    display: flex; gap: 12px; z-index: 10;
+}
+.col-dot {
+    width: 8px; height: 8px; border-radius: 50%; border: 1px solid rgba(255,255,255,0.5);
+    background: transparent; cursor: pointer; transition: all 0.4s ease;
+}
+.col-dot.active { background: var(--white); border-color: var(--white); transform: scale(1.2); }
+
+/* --- Dynamic Text Area --- */
+.collection-text-area {
+    position: relative; height: 100px; margin-top: 40px; display: flex; justify-content: center;
+}
+
+.col-text-slide {
+    position: absolute; top: 0; left: 0; width: 100%; text-align: center;
+    opacity: 0; visibility: hidden; transform: translateY(15px);
+    transition: all 0.8s cubic-bezier(0.25, 1, 0.5, 1);
+}
+.col-text-slide.active { opacity: 1; visibility: visible; transform: translateY(0); transition-delay: 0.2s; }
+
+.col-subtitle { font-family: var(--font-body); font-size: 18px; color: var(--white); font-weight: 400; letter-spacing: 2px; margin: 0 0 10px 0; text-transform: uppercase; }
+.col-brand { font-family: var(--font-body); font-size: 12px; color: var(--text-grey); letter-spacing: 4px; text-transform: uppercase; margin: 0; font-weight: 300; }
+
+/* =======================================================
+   RESPONSIVE LAYOUTS
+   ======================================================= */
+@media (max-width: 1024px) {
+    .collection-slider-wrapper { max-width: 80%; }
+    .col-prev { left: -50px; font-size: 25px; }
+    .col-next { right: -50px; font-size: 25px; }
+}
+
+@media (max-width: 768px) {
+    .collection-slider-wrapper { max-width: 100%; margin: 0 20px; }
+    /* Move arrows inside the image for tablets */
+    .col-prev { left: 10px; color: var(--white); text-shadow: 0 2px 10px rgba(0,0,0,0.5); }
+    .col-next { right: 10px; color: var(--white); text-shadow: 0 2px 10px rgba(0,0,0,0.5); }
+}
+
+/* --- STRICT MOBILE VIEW (Max 425px) --- */
+@media (max-width: 425px) {
+    .luxury-collection-section { padding: 80px 20px !important; min-height: auto; }
+    
+    .collection-header { margin-bottom: 30px; text-align: left !important; }
+    .collection-title { font-size: 26px !important; letter-spacing: 1px; text-align: left !important; }
+
+    .collection-slider-wrapper { margin: 0; max-width: 100%; border-radius: 8px; overflow: hidden; }
+    
+    .col-prev { left: 5px; font-size: 20px; padding: 10px; }
+    .col-next { right: 5px; font-size: 20px; padding: 10px; }
+
+    .collection-text-area { margin-top: 30px; height: 90px; }
+    
+    /* Strict Mobile Text Alignment */
+    .col-text-slide { text-align: left !important; }
+    .col-subtitle { font-size: 16px; margin-bottom: 5px; letter-spacing: 1px; }
+    .col-brand { font-size: 11px; letter-spacing: 2px; }
 }
