@@ -1,302 +1,429 @@
 <?php include 'header.php'; ?>
-<link rel="stylesheet" href="css/rent.css">
+<div class="rent-pg-wrapper">
+    <link rel="stylesheet" href="css/rent.css">
 
-<div class="global-video-bg">
-    <video id="main-bg-video" autoplay="autoplay" muted="muted" loop="loop" playsinline="playsinline" preload="auto">
-        <source src="video/background (1).mp4" type="video/mp4">
-    </video>
-    <div class="global-overlay"></div>
+    <div class="rent-pg-video-bg">
+        <video id="rent-pg-main-video" autoplay muted loop playsinline preload="auto">
+            <source src="video/background (1).mp4" type="video/mp4">
+        </video>
+        <div class="rent-pg-overlay"></div>
+    </div>
+
+    <section class="rent-pg-hero">
+        <video id="rent-pg-hero-video" autoplay muted loop playsinline class="rent-pg-hero-vid-element">
+            <source src="video/Dubai_Real_Estate_Video_Generated.mp4" type="video/mp4">
+        </video>
+        <div class="rent-pg-hero-gradient"></div>
+        
+        <div class="rent-pg-hero-content js-reveal">
+            <h1 class="rent-pg-main-title">Properties <span class="rent-pg-accent">for Rent</span></h1>
+            <p class="rent-pg-subtitle">Experience Dubai's Finest Living</p>
+        </div>
+    </section>
+
+    <section class="rent-pg-intro">
+        <div class="rent-pg-container js-reveal">
+            <h2 class="rent-pg-section-title">A New Standard of Living</h2>
+            <div class="rent-pg-title-line"></div>
+            <p class="rent-pg-description">
+                Delivering world-class real estate experiences across Dubai with a focus on
+                architecture, innovation, and long-term value. From penthouses to luxury villas, 
+                discover properties that define modern luxury.
+            </p>
+        </div>
+    </section>
+
+    <section class="rent-pg-projects">
+        <div class="rent-pg-grid">
+            
+            <article class="rent-pg-card js-reveal">
+                <div class="rent-pg-card-badge">Exclusive</div>
+                <div class="rent-pg-card-media">
+                    <img src="image/mbp-bc-hero-banner.webp" alt="Mercedes-Benz Places">
+                </div>
+                <div class="rent-pg-card-body">
+                    <h3 class="rent-pg-card-title">Mercedes-Benz Places Binghatti City</h3>
+                    <p class="rent-pg-card-loc"><i class="fas fa-map-marker-alt"></i> Nad Al Sheba</p>
+                    <div class="rent-pg-card-footer">
+                        <div class="rent-pg-price-box">
+                            <span class="rent-pg-label">FROM</span>
+                            <span class="rent-pg-value">AED 1M</span>
+                        </div>
+                        <button class="rent-pg-circle-btn"><i class="fas fa-arrow-right"></i></button>
+                    </div>
+                </div>
+            </article>
+
+            <article class="rent-pg-card js-reveal">
+                <div class="rent-pg-card-badge">Exclusive</div>
+                <div class="rent-pg-card-media">
+                    <img src="image/binghatti-etheria-hero-banner.avif" alt="Binghatti Etherea">
+                </div>
+                <div class="rent-pg-card-body">
+                    <h3 class="rent-pg-card-title">Binghatti Etherea</h3>
+                    <p class="rent-pg-card-loc"><i class="fas fa-map-marker-alt"></i> Jumeirah Village Circle</p>
+                    <div class="rent-pg-card-footer">
+                        <div class="rent-pg-price-box">
+                            <span class="rent-pg-label">FROM</span>
+                            <span class="rent-pg-value">AED 5M</span>
+                        </div>
+                        <button class="rent-pg-circle-btn"><i class="fas fa-arrow-right"></i></button>
+                    </div>
+                </div>
+            </article>
+
+            <article class="rent-pg-card js-reveal">
+                <div class="rent-pg-card-badge">New Launch</div>
+                <div class="rent-pg-card-media">
+                    <img src="image/binghatti-skyterraces-hero-banner.avif" alt="Binghatti Skyterraces">
+                </div>
+                <div class="rent-pg-card-body">
+                    <h3 class="rent-pg-card-title">Binghatti Skyterraces</h3>
+                    <p class="rent-pg-card-loc"><i class="fas fa-map-marker-alt"></i> Motor City</p>
+                    <div class="rent-pg-card-footer">
+                        <div class="rent-pg-price-box">
+                            <span class="rent-pg-label">FROM</span>
+                            <span class="rent-pg-value">AED 19M</span>
+                        </div>
+                        <button class="rent-pg-circle-btn"><i class="fas fa-arrow-right"></i></button>
+                    </div>
+                </div>
+            </article>
+
+            <article class="rent-pg-card js-reveal">
+                <div class="rent-pg-card-badge">Exclusive</div>
+                <div class="rent-pg-card-media">
+                    <img src="image/binghatti-luxuria-hero-banner.avif" alt="Binghatti Luxuria">
+                </div>
+                <div class="rent-pg-card-body">
+                    <h3 class="rent-pg-card-title">Binghatti Luxuria</h3>
+                    <p class="rent-pg-card-loc"><i class="fas fa-map-marker-alt"></i> Jumeirah Village Triangle</p>
+                    <div class="rent-pg-card-footer">
+                        <div class="rent-pg-price-box">
+                            <span class="rent-pg-label">FROM</span>
+                            <span class="rent-pg-value">AED 2.5M</span>
+                        </div>
+                        <button class="rent-pg-circle-btn"><i class="fas fa-arrow-right"></i></button>
+                    </div>
+                </div>
+            </article>
+
+            <article class="rent-pg-card js-reveal">
+                <div class="rent-pg-card-badge">Selling Fast</div>
+                <div class="rent-pg-card-media">
+                    <img src="image/binghatti-cullinan-hero-banner.avif" alt="Binghatti Cullinan">
+                </div>
+                <div class="rent-pg-card-body">
+                    <h3 class="rent-pg-card-title">Binghatti Cullinan</h3>
+                    <p class="rent-pg-card-loc"><i class="fas fa-map-marker-alt"></i> Al Jaddaf</p>
+                    <div class="rent-pg-card-footer">
+                        <div class="rent-pg-price-box">
+                            <span class="rent-pg-label">FROM</span>
+                            <span class="rent-pg-value">AED 45M</span>
+                        </div>
+                        <button class="rent-pg-circle-btn"><i class="fas fa-arrow-right"></i></button>
+                    </div>
+                </div>
+            </article>
+
+            <article class="rent-pg-card js-reveal">
+                <div class="rent-pg-card-badge">Exclusive</div>
+                <div class="rent-pg-card-media">
+                    <img src="image/binghatti-hillcrest-hero-banner.avif" alt="Binghatti Hillcrest">
+                </div>
+                <div class="rent-pg-card-body">
+                    <h3 class="rent-pg-card-title">Binghatti Hillcrest</h3>
+                    <p class="rent-pg-card-loc"><i class="fas fa-map-marker-alt"></i> Arjan</p>
+                    <div class="rent-pg-card-footer">
+                        <div class="rent-pg-price-box">
+                            <span class="rent-pg-label">FROM</span>
+                            <span class="rent-pg-value">AED 3.2M</span>
+                        </div>
+                        <button class="rent-pg-circle-btn"><i class="fas fa-arrow-right"></i></button>
+                    </div>
+                </div>
+            </article>
+
+            <article class="rent-pg-card js-reveal">
+                <div class="rent-pg-card-badge">Exclusive</div>
+                <div class="rent-pg-card-media">
+                    <img src="image/binghatti-titania-hero-banner-1.avif" alt="Binghatti Titania">
+                </div>
+                <div class="rent-pg-card-body">
+                    <h3 class="rent-pg-card-title">Binghatti Titania</h3>
+                    <p class="rent-pg-card-loc"><i class="fas fa-map-marker-alt"></i> Majan</p>
+                    <div class="rent-pg-card-footer">
+                        <div class="rent-pg-price-box">
+                            <span class="rent-pg-label">FROM</span>
+                            <span class="rent-pg-value">AED 3.2M</span>
+                        </div>
+                        <button class="rent-pg-circle-btn"><i class="fas fa-arrow-right"></i></button>
+                    </div>
+                </div>
+            </article>
+
+            <article class="rent-pg-card js-reveal">
+                <div class="rent-pg-card-badge">Exclusive</div>
+                <div class="rent-pg-card-media">
+                    <img src="image/binghatti-vintage-hero-banner.avif" alt="Binghatti Vintage">
+                </div>
+                <div class="rent-pg-card-body">
+                    <h3 class="rent-pg-card-title">Binghatti Vintage</h3>
+                    <p class="rent-pg-card-loc"><i class="fas fa-map-marker-alt"></i> Majan</p>
+                    <div class="rent-pg-card-footer">
+                        <div class="rent-pg-price-box">
+                            <span class="rent-pg-label">FROM</span>
+                            <span class="rent-pg-value">AED 3.2M</span>
+                        </div>
+                        <button class="rent-pg-circle-btn"><i class="fas fa-arrow-right"></i></button>
+                    </div>
+                </div>
+            </article>
+
+            <article class="rent-pg-card js-reveal">
+                <div class="rent-pg-card-badge">Exclusive</div>
+                <div class="rent-pg-card-media">
+                    <img src="image/binghatti-pinnacle-hero-banner.avif" alt="Binghatti Pinnacle">
+                </div>
+                <div class="rent-pg-card-body">
+                    <h3 class="rent-pg-card-title">Binghatti Pinnacle</h3>
+                    <p class="rent-pg-card-loc"><i class="fas fa-map-marker-alt"></i> Al Jaddaf</p>
+                    <div class="rent-pg-card-footer">
+                        <div class="rent-pg-price-box">
+                            <span class="rent-pg-label">FROM</span>
+                            <span class="rent-pg-value">AED 3.2M</span>
+                        </div>
+                        <button class="rent-pg-circle-btn"><i class="fas fa-arrow-right"></i></button>
+                    </div>
+                </div>
+            </article>
+
+            <article class="rent-pg-card js-reveal">
+                <div class="rent-pg-card-badge">Exclusive</div>
+                <div class="rent-pg-card-media">
+                    <img src="image/Mercedes-Benz Places Binghatti City.png" alt="Mercedes-Benz Places By Binghatti">
+                </div>
+                <div class="rent-pg-card-body">
+                    <h3 class="rent-pg-card-title">Mercedes-Benz Places | By Binghatti</h3>
+                    <p class="rent-pg-card-loc"><i class="fas fa-map-marker-alt"></i> Business Bay</p>
+                    <div class="rent-pg-card-footer">
+                        <div class="rent-pg-price-box">
+                            <span class="rent-pg-label">FROM</span>
+                            <span class="rent-pg-value">AED 3.2M</span>
+                        </div>
+                        <button class="rent-pg-circle-btn"><i class="fas fa-arrow-right"></i></button>
+                    </div>
+                </div>
+            </article>
+
+            <article class="rent-pg-card js-reveal">
+                <div class="rent-pg-card-badge">Exclusive</div>
+                <div class="rent-pg-card-media">
+                    <img src="image/binghatti-amberhall-hero-banner.webp" alt="Binghatti Amberhall">
+                </div>
+                <div class="rent-pg-card-body">
+                    <h3 class="rent-pg-card-title">Binghatti Amberhall</h3>
+                    <p class="rent-pg-card-loc"><i class="fas fa-map-marker-alt"></i> JVC</p>
+                    <div class="rent-pg-card-footer">
+                        <div class="rent-pg-price-box">
+                            <span class="rent-pg-label">FROM</span>
+                            <span class="rent-pg-value">AED 3.2M</span>
+                        </div>
+                        <button class="rent-pg-circle-btn"><i class="fas fa-arrow-right"></i></button>
+                    </div>
+                </div>
+            </article>
+
+        </div>
+    </section>
+
+
+    <!-- FAQ SECTION -->
+    <section class="rent-pg-faq">
+            <video class="faq-bg-media" autoplay loop muted playsinline>
+        <source src="video/background (1).mp4 " type="video/mp4">
+    </video> 
+    
+    <div class="faq-bg-overlay"></div>
+        <div class="rent-pg-faq-container">
+            <header class="rent-pg-faq-header js-reveal">
+                <span class="rent-pg-pre-title">REFINEMENT & DETAIL</span>
+                <h2 class="rent-pg-section-title">Frequently Asked Questions</h2>
+                <div class="rent-pg-gold-divider"></div>
+            </header>
+
+            <div class="rent-pg-faq-accordion">
+                <div class="rent-pg-faq-item js-reveal">
+                    <button class="rent-pg-faq-btn">
+                        <span class="rent-pg-faq-q">How is the architectural integrity verified?</span>
+                        <div class="rent-pg-faq-icon">
+                            <span class="line vertical"></span>
+                            <span class="line horizontal"></span>
+                        </div>
+                    </button>
+                    <div class="rent-pg-faq-panel">
+                        <div class="rent-pg-faq-content">
+                            <p>Our structural engineers utilize aerospace-grade simulations to stress-test every cantilever and foundation. We ensure that your silhouette remains timeless against seismic and environmental shifts.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="rent-pg-faq-item js-reveal">
+                    <button class="rent-pg-faq-btn">
+                        <span class="rent-pg-faq-q">What is the timeline for bespoke commissions?</span>
+                        <div class="rent-pg-faq-icon">
+                            <span class="line vertical"></span>
+                            <span class="line horizontal"></span>
+                        </div>
+                    </button>
+                    <div class="rent-pg-faq-panel">
+                        <div class="rent-pg-faq-content">
+                            <p>A typical architectural masterpiece requires 12 to 18 months from initial conceptualization to final handover. This allows for meticulous sourcing of rare materials and artisan-level finishing.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="rent-pg-faq-item js-reveal">
+                    <button class="rent-pg-faq-btn">
+                        <span class="rent-pg-faq-q">Do you offer smart-home architectural integration?</span>
+                        <div class="rent-pg-faq-icon">
+                            <span class="line vertical"></span>
+                            <span class="line horizontal"></span>
+                        </div>
+                    </button>
+                    <div class="rent-pg-faq-panel">
+                        <div class="rent-pg-faq-content">
+                            <p>We treat technology as invisible luxury. Automation is embedded into the walls themselves, allowing for biometric access, circadian lighting, and climate control that anticipates your arrival.</p>
+                        </div>
+                    </div>
+                </div>
+
+                  <div class="rent-pg-faq-item js-reveal">
+                    <button class="rent-pg-faq-btn">
+                        <span class="rent-pg-faq-q">Do you offer smart-home architectural integration?</span>
+                        <div class="rent-pg-faq-icon">
+                            <span class="line vertical"></span>
+                            <span class="line horizontal"></span>
+                        </div>
+                    </button>
+                    <div class="rent-pg-faq-panel">
+                        <div class="rent-pg-faq-content">
+                            <p>We treat technology as invisible luxury. Automation is embedded into the walls themselves, allowing for biometric access, circadian lighting, and climate control that anticipates your arrival.</p>
+                        </div>
+                    </div>
+                </div>
+
+                  <div class="rent-pg-faq-item js-reveal">
+                    <button class="rent-pg-faq-btn">
+                        <span class="rent-pg-faq-q">Do you offer smart-home architectural integration?</span>
+                        <div class="rent-pg-faq-icon">
+                            <span class="line vertical"></span>
+                            <span class="line horizontal"></span>
+                        </div>
+                    </button>
+                    <div class="rent-pg-faq-panel">
+                        <div class="rent-pg-faq-content">
+                            <p>We treat technology as invisible luxury. Automation is embedded into the walls themselves, allowing for biometric access, circadian lighting, and climate control that anticipates your arrival.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="rent-pg-slider">
+        <div class="rent-pg-slide active">
+            <img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=1920&q=80" alt="Etherea Interior" class="rent-pg-slide-bg">
+            <div class="rent-pg-slide-overlay"></div>
+            
+            <div class="rent-pg-slide-content">
+                <div class="rent-pg-slide-info">
+                    <span class="rent-pg-brand-tag">BINGHATTI</span>
+                    <h2 class="rent-pg-slide-title">ETHEREA</h2>
+                    <p class="rent-pg-slide-loc">Jumeirah Village Circle</p>
+                    <a href="#" class="rent-pg-btn-luxury">Discover The Collection</a>
+                </div>
+                
+                <div class="rent-pg-slide-visual">
+                    <button class="rent-pg-nav-btn prev-btn"><i class="fas fa-chevron-left"></i></button>
+                    <div class="rent-pg-mini-preview">
+                        <img src="https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&fit=crop&w=600&q=80" alt="Preview">
+                    </div>
+                    <button class="rent-pg-nav-btn next-btn"><i class="fas fa-chevron-right"></i></button>
+                </div>
+            </div>
+        </div>
+
+        <div class="rent-pg-slide">
+            <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1920&q=80" alt="Mercedes Benz Places" class="rent-pg-slide-bg">
+            <div class="rent-pg-slide-overlay"></div>
+            
+            <div class="rent-pg-slide-content">
+                <div class="rent-pg-slide-info">
+                    <span class="rent-pg-brand-tag">BINGHATTI</span>
+                    <h2 class="rent-pg-slide-title">MERCEDES-BENZ PLACES</h2>
+                    <p class="rent-pg-slide-loc">Downtown Dubai</p>
+                    <a href="#" class="rent-pg-btn-luxury">Discover The Collection</a>
+                </div>
+                
+                <div class="rent-pg-slide-visual">
+                    <button class="rent-pg-nav-btn prev-btn"><i class="fas fa-chevron-left"></i></button>
+                    <div class="rent-pg-mini-preview">
+                        <img src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=600&q=80" alt="Preview">
+                    </div>
+                    <button class="rent-pg-nav-btn next-btn"><i class="fas fa-chevron-right"></i></button>
+                </div>
+            </div>
+        </div>
+    </section>
 </div>
 
-<section class="rent-hero">
-    <video id="hero-video" autoplay="autoplay" muted="muted" loop="loop" playsinline="playsinline" class="hero-video">
-        <source src="video/Dubai_Real_Estate_Video_Generated.mp4" type="video/mp4">
-    </video>
-    <div class="hero-gradient"></div>
-    
-    <div class="hero-content anim-fade-up scroll-anim">
-        <h1 class="heading-strict heading-line">Properties <span class="accent-text">for Rent</span></h1>
-        <p class="para-strict" style="margin-top: 30px; letter-spacing: 4px; text-transform: uppercase; color: var(--gold);">Experience Dubai's Finest Living</p>
-    </div>
-</section>
-
-<section style="padding: 100px 5%; text-align: center;">
-    <div class="anim-fade-up scroll-anim" style="max-width: 900px; margin: 0 auto;">
-        <h2 class="heading-strict" style="margin-bottom: 30px;">A New Standard of Living</h2>
-        <p class="para-strict">
-            Delivering world-class real estate experiences across Dubai with a focus on
-            architecture, innovation and long-term value. From penthouses to luxury villas, 
-            discover properties that define modern luxury.
-        </p>
-    </div>
-</section>
-
-<section class="projects-section" style="padding: 100px 5%;">
-    <div class="properties-header anim-fade-up scroll-anim" style="text-align: center; margin-bottom: 60px;">
-        <h2 class="heading-strict heading-line">Exclusive <span class="accent-text">Listings</span></h2>
-        <p class="para-strict" style="margin-top: 20px;">Discover our curated selection of Dubai's finest properties.</p>
-    </div>
-
-    <div class="grid-container" style="display: grid; grid-template-columns: repeat(auto-fill, minmax(350px, 1fr)); gap: 40px; max-width: 1400px; margin: 0 auto;">
-        
-        <div class="project-card reveal">
-            <span class="exclusive-tag" style="position: absolute; top: 20px; left: 20px; background: var(--gold); color: #000; font-size: 11px; font-weight: 700; text-transform: uppercase; padding: 6px 12px; z-index: 10;">Exclusive</span>
-            <div class="card-img-wrap" style="height: 280px; overflow: hidden;">
-                <img src="image/mbp-bc-hero-banner.webp" style="width: 100%; height: 100%; object-fit: cover;">
-            </div>
-            <div class="card-content" style="background: rgba(10,17,32,0.8); backdrop-filter: blur(10px); padding: 30px; border: 1px solid rgba(255,255,255,0.05);">
-                <h3 style="font-family: var(--font-heading); font-size: 24px; color: #fff; margin-bottom: 10px;">Mercedes-Benz Places Binghatti City</h3>
-                <span class="location" style="color: var(--gold); font-size: 13px; text-transform: uppercase; letter-spacing: 1px;"><i class="fas fa-map-marker-alt"></i> Nad al sheba</span>
-                <div class="price-row" style="margin-top: 20px; border-top: 1px solid rgba(255,255,255,0.1); padding-top: 15px;">
-                    <div>
-                        <span class="price-label" style="font-size: 10px; color: #888;">FROM</span>
-                        <div class="price-value" style="color: #fff; font-size: 18px;">AED 1M</div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="project-card reveal" style="transition-delay: 0.1s">
-            <span class="exclusive-tag" style="position: absolute; top: 20px; left: 20px; background: var(--gold); color: #000; font-size: 11px; font-weight: 700; text-transform: uppercase; padding: 6px 12px; z-index: 10;">Exclusive</span>
-            <div class="card-img-wrap" style="height: 280px; overflow: hidden;">
-                <img src="image/binghatti-etheria-hero-banner.avif" style="width: 100%; height: 100%; object-fit: cover;">
-            </div>
-            <div class="card-content" style="background: rgba(10,17,32,0.8); backdrop-filter: blur(10px); padding: 30px; border: 1px solid rgba(255,255,255,0.05);">
-                <h3 style="font-family: var(--font-heading); font-size: 24px; color: #fff; margin-bottom: 10px;">Binghatti Etherea</h3>
-                <span class="location" style="color: var(--gold); font-size: 13px; text-transform: uppercase; letter-spacing: 1px;"><i class="fas fa-map-marker-alt"></i> Jumeirah Village Circle</span>
-                <div class="price-row" style="margin-top: 20px; border-top: 1px solid rgba(255,255,255,0.1); padding-top: 15px;">
-                    <div>
-                        <span class="price-label" style="font-size: 10px; color: #888;">FROM</span>
-                        <div class="price-value" style="color: #fff; font-size: 18px;">AED 5M</div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="project-card reveal" style="transition-delay: 0.2s">
-            <span class="exclusive-tag" style="position: absolute; top: 20px; left: 20px; background: #fff; color: #000; font-size: 11px; font-weight: 700; text-transform: uppercase; padding: 6px 12px; z-index: 10;">New Launch</span>
-            <div class="card-img-wrap" style="height: 280px; overflow: hidden;">
-                <img src="image/binghatti-skyterraces-hero-banner.avif" style="width: 100%; height: 100%; object-fit: cover;">
-            </div>
-            <div class="card-content" style="background: rgba(10,17,32,0.8); backdrop-filter: blur(10px); padding: 30px; border: 1px solid rgba(255,255,255,0.05);">
-                <h3 style="font-family: var(--font-heading); font-size: 24px; color: #fff; margin-bottom: 10px;">Binghatti Skyterraces</h3>
-                <span class="location" style="color: var(--gold); font-size: 13px; text-transform: uppercase; letter-spacing: 1px;"><i class="fas fa-map-marker-alt"></i> Motor City</span>
-                <div class="price-row" style="margin-top: 20px; border-top: 1px solid rgba(255,255,255,0.1); padding-top: 15px;">
-                    <div>
-                        <span class="price-label" style="font-size: 10px; color: #888;">FROM</span>
-                        <div class="price-value" style="color: #fff; font-size: 18px;">AED 19M</div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="project-card reveal">
-            <span class="exclusive-tag" style="position: absolute; top: 20px; left: 20px; background: var(--gold); color: #000; font-size: 11px; font-weight: 700; text-transform: uppercase; padding: 6px 12px; z-index: 10;">Exclusive</span>
-            <div class="card-img-wrap" style="height: 280px; overflow: hidden;">
-                <img src="image/binghatti-luxuria-hero-banner.avif" style="width: 100%; height: 100%; object-fit: cover;">
-            </div>
-            <div class="card-content" style="background: rgba(10,17,32,0.8); backdrop-filter: blur(10px); padding: 30px; border: 1px solid rgba(255,255,255,0.05);">
-                <h3 style="font-family: var(--font-heading); font-size: 24px; color: #fff; margin-bottom: 10px;">Binghatti Luxuria</h3>
-                <span class="location" style="color: var(--gold); font-size: 13px; text-transform: uppercase; letter-spacing: 1px;"><i class="fas fa-map-marker-alt"></i> Jumeirah Village Triangle</span>
-                <div class="price-row" style="margin-top: 20px; border-top: 1px solid rgba(255,255,255,0.1); padding-top: 15px;">
-                    <div>
-                        <span class="price-label" style="font-size: 10px; color: #888;">FROM</span>
-                        <div class="price-value" style="color: #fff; font-size: 18px;">AED 2.5M</div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="project-card reveal" style="transition-delay: 0.1s">
-            <span class="exclusive-tag" style="position: absolute; top: 20px; left: 20px; background: var(--gold); color: #000; font-size: 11px; font-weight: 700; text-transform: uppercase; padding: 6px 12px; z-index: 10;">Selling Fast</span>
-            <div class="card-img-wrap" style="height: 280px; overflow: hidden;">
-                <img src="image/binghatti-cullinan-hero-banner.avif" alt="Project" style="width: 100%; height: 100%; object-fit: cover;">
-            </div>
-            <div class="card-content" style="background: rgba(10,17,32,0.8); backdrop-filter: blur(10px); padding: 30px; border: 1px solid rgba(255,255,255,0.05);">
-                <h3 style="font-family: var(--font-heading); font-size: 24px; color: #fff; margin-bottom: 10px;">Binghatti Cullinan</h3>
-                <span class="location" style="color: var(--gold); font-size: 13px; text-transform: uppercase; letter-spacing: 1px;"><i class="fas fa-map-marker-alt"></i> Al Jaddaf</span>
-                <div class="price-row" style="margin-top: 20px; border-top: 1px solid rgba(255,255,255,0.1); padding-top: 15px;">
-                    <div>
-                        <span class="price-label" style="font-size: 10px; color: #888;">FROM</span>
-                        <div class="price-value" style="color: #fff; font-size: 18px;">AED 45M</div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="project-card reveal" style="transition-delay: 0.2s">
-            <span class="exclusive-tag" style="position: absolute; top: 20px; left: 20px; background: var(--gold); color: #000; font-size: 11px; font-weight: 700; text-transform: uppercase; padding: 6px 12px; z-index: 10;">Exclusive</span>
-            <div class="card-img-wrap" style="height: 280px; overflow: hidden;">
-                <img src="image/binghatti-hillcrest-hero-banner.avif" alt="Project" style="width: 100%; height: 100%; object-fit: cover;">
-            </div>
-            <div class="card-content" style="background: rgba(10,17,32,0.8); backdrop-filter: blur(10px); padding: 30px; border: 1px solid rgba(255,255,255,0.05);">
-                <h3 style="font-family: var(--font-heading); font-size: 24px; color: #fff; margin-bottom: 10px;">Binghatti Hillcrest</h3>
-                <span class="location" style="color: var(--gold); font-size: 13px; text-transform: uppercase; letter-spacing: 1px;"><i class="fas fa-map-marker-alt"></i> Arjan</span>
-                <div class="price-row" style="margin-top: 20px; border-top: 1px solid rgba(255,255,255,0.1); padding-top: 15px;">
-                    <div>
-                        <span class="price-label" style="font-size: 10px; color: #888;">FROM</span>
-                        <div class="price-value" style="color: #fff; font-size: 18px;">AED 3.2M</div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<section class="has-bg" style="padding: 100px 5%;">
-    <div class="info-wrapper" style="max-width: 1300px; margin: 0 auto; display: flex; align-items: center; gap: 60px;">
-        <div class="info-image anim-slide-left scroll-anim" style="flex: 1; height: 500px; overflow: hidden; border-radius: 4px;">
-            <img src="https://images.unsplash.com/photo-1546412414-e1885259563a?auto=format&fit=crop&w=1000&q=80" alt="Dubai City" style="width: 100%; height: 100%; object-fit: cover;">
-        </div>
-        <div class="info-content anim-slide-right scroll-anim delay-200" style="flex: 1;">
-            <h2 class="heading-strict heading-line">Why Rent <span class="accent-text">With Us?</span></h2>
-            <p class="para-strict" style="margin-top: 30px;">
-                For people new to the city, as well as long-term expats, Dubai ranks as one of the strongest places to rent in the Middle East.
-            </p>
-            <ul class="info-list" style="list-style: none; padding: 0; margin-top: 30px; display: grid; gap: 15px;">
-                <li style="font-size: 18px; color: var(--text-grey); position: relative; padding-left: 30px;"><span style="position: absolute; left: 0; color: var(--gold);">✓</span> Access to ultra-luxury, unlisted properties.</li>
-                <li style="font-size: 18px; color: var(--text-grey); position: relative; padding-left: 30px;"><span style="position: absolute; left: 0; color: var(--gold);">✓</span> Expert handling of all Ejari and legal documentation.</li>
-                <li style="font-size: 18px; color: var(--text-grey); position: relative; padding-left: 30px;"><span style="position: absolute; left: 0; color: var(--gold);">✓</span> Dedicated lifestyle support post-move-in.</li>
-                <li style="font-size: 18px; color: var(--text-grey); position: relative; padding-left: 30px;"><span style="position: absolute; left: 0; color: var(--gold);">✓</span> Guided processes for international clients.</li>
-            </ul>
-        </div>
-    </div>
-</section>
-
-
-
-<section class="testimonials-section has-bg" style="padding: 100px 5%; text-align: center;">
-    <div class="anim-fade-up scroll-anim">
-        <h2 class="heading-strict heading-line">Client <span class="accent-text">Experiences</span></h2>
-    </div>
-
-    <div class="test-grid" style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 40px; max-width: 1400px; margin: 60px auto 0;">
-        <div class="test-card anim-fade-up scroll-anim delay-100" style="background: rgba(10,17,32,0.8); backdrop-filter: blur(10px); padding: 50px 40px; border: 1px solid rgba(255,255,255,0.05);">
-            <div class="test-icon" style="font-family: var(--font-heading); font-size: 50px; color: var(--gold); line-height: 0.5; margin-bottom: 20px;">“</div>
-            <h5 style="font-family: var(--font-heading); font-size: 22px; margin-bottom: 5px;">Michael Ross</h5>
-            <span style="font-size: 12px; color: var(--gold); text-transform: uppercase; letter-spacing: 2px;">UK Investor</span>
-            <p class="para-strict" style="margin-top: 20px;">Found my dream penthouse in record time. The team is impeccable and their network is truly unmatched.</p>
-        </div>
-        
-        <div class="test-card anim-fade-up scroll-anim delay-200" style="background: rgba(10,17,32,0.8); backdrop-filter: blur(10px); padding: 50px 40px; border: 1px solid rgba(255,255,255,0.05);">
-            <div class="test-icon" style="font-family: var(--font-heading); font-size: 50px; color: var(--gold); line-height: 0.5; margin-bottom: 20px;">“</div>
-            <h5 style="font-family: var(--font-heading); font-size: 22px; margin-bottom: 5px;">Sarah Jenkins</h5>
-            <span style="font-size: 12px; color: var(--gold); text-transform: uppercase; letter-spacing: 2px;">Tech Entrepreneur</span>
-            <p class="para-strict" style="margin-top: 20px;">Professional, transparent, and swift. They handled my entire leasing portfolio perfectly.</p>
-        </div>
-        
-        <div class="test-card anim-fade-up scroll-anim delay-300" style="background: rgba(10,17,32,0.8); backdrop-filter: blur(10px); padding: 50px 40px; border: 1px solid rgba(255,255,255,0.05);">
-            <div class="test-icon" style="font-family: var(--font-heading); font-size: 50px; color: var(--gold); line-height: 0.5; margin-bottom: 20px;">“</div>
-            <h5 style="font-family: var(--font-heading); font-size: 22px; margin-bottom: 5px;">David Lee</h5>
-            <span style="font-size: 12px; color: var(--gold); text-transform: uppercase; letter-spacing: 2px;">CEO</span>
-            <p class="para-strict" style="margin-top: 20px;">A truly white-glove service from start to finish. Highly recommended for luxury rentals.</p>
-        </div>
-    </div>
-</section>
-
-<section class="luxury-hero-slider">
-    
-    <div class="hero-slide active">
-        <img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=1920&q=80" alt="Etherea Interior" class="hero-bg-img">
-        <div class="hero-overlay"></div>
-        
-        <div class="hero-content-wrapper">
-            <div class="hero-text-col">
-                <span class="hero-brand">BINGHATTI</span>
-                <h1 class="hero-title">ETHEREA</h1>
-                <p class="hero-location">Jumeirah Village Circle</p>
-                <a href="#collection" class="btn-glass">Discover The Collection</a>
-            </div>
-            
-            <div class="hero-preview-col">
-                <button class="hero-nav-arrow prev-arrow"><i class="fas fa-chevron-left"></i></button>
-                
-                <div class="hero-preview-card">
-                    <img src="https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&fit=crop&w=600&q=80" alt="Etherea Exterior Render" class="hero-preview-img">
-                </div>
-                
-                <button class="hero-nav-arrow next-arrow"><i class="fas fa-chevron-right"></i></button>
-            </div>
-        </div>
-    </div>
-
-    <div class="hero-slide">
-        <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1920&q=80" alt="Mercedes Benz Places" class="hero-bg-img">
-        <div class="hero-overlay"></div>
-        
-        <div class="hero-content-wrapper">
-            <div class="hero-text-col">
-                <span class="hero-brand">BINGHATTI</span>
-                <h1 class="hero-title">MERCEDES-BENZ PLACES</h1>
-                <p class="hero-location">Downtown Dubai</p>
-                <a href="#collection" class="btn-glass">Discover The Collection</a>
-            </div>
-            
-            <div class="hero-preview-col">
-                <button class="hero-nav-arrow prev-arrow"><i class="fas fa-chevron-left"></i></button>
-                
-                <div class="hero-preview-card">
-                    <img src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=600&q=80" alt="Mercedes Benz Places Exterior" class="hero-preview-img">
-                </div>
-                
-                <button class="hero-nav-arrow next-arrow"><i class="fas fa-chevron-right"></i></button>
-            </div>
-        </div>
-    </div>
-
-</section>
-
 <script>
+document.addEventListener('DOMContentLoaded', () => {
+    // 1. FAQ Accordion Logic
+    const faqItems = document.querySelectorAll('.rent-pg-faq-item');
+    faqItems.forEach(item => {
+        const btn = item.querySelector('.rent-pg-faq-btn');
+        btn.addEventListener('click', () => {
+            const isActive = item.classList.contains('active');
+            faqItems.forEach(i => i.classList.remove('active')); // Close others
+            if (!isActive) item.classList.add('active');
+        });
+    });
 
-//faq 
+    // 2. Intersection Observer for Scroll Animations
+    const observerOptions = { threshold: 0.15 };
+    const revealObserver = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('is-visible');
+            }
+        });
+    }, observerOptions);
 
-    
+    document.querySelectorAll('.js-reveal').forEach(el => revealObserver.observe(el));
 
-//end fqaq
-document.addEventListener("DOMContentLoaded", function() {
-    const slides = document.querySelectorAll('.hero-slide');
-    // Select ALL next and prev arrows since they are inside the slides now
-    const nextBtns = document.querySelectorAll('.next-arrow');
-    const prevBtns = document.querySelectorAll('.prev-arrow');
-    
+    // 3. Slider Logic
+    const slides = document.querySelectorAll('.rent-pg-slide');
+    const nextBtns = document.querySelectorAll('.next-btn');
+    const prevBtns = document.querySelectorAll('.prev-btn');
     let currentSlide = 0;
     let isAnimating = false;
 
-    function goToSlide(index) {
+    function updateSlide(index) {
         if (isAnimating) return;
         isAnimating = true;
-
+        
         slides[currentSlide].classList.remove('active');
-
-        currentSlide = index;
-
-        // Loop back around
-        if (currentSlide >= slides.length) {
-            currentSlide = 0;
-        } else if (currentSlide < 0) {
-            currentSlide = slides.length - 1;
-        }
-
+        currentSlide = (index + slides.length) % slides.length;
         slides[currentSlide].classList.add('active');
 
-        // Prevent clicking again until the ultra-smooth animation finishes
-        setTimeout(() => {
-            isAnimating = false;
-        }, 1200); 
+        setTimeout(() => { isAnimating = false; }, 1000);
     }
 
-    // Attach click events to EVERY arrow button
-    nextBtns.forEach(btn => {
-        btn.addEventListener('click', () => goToSlide(currentSlide + 1));
-    });
-
-    prevBtns.forEach(btn => {
-        btn.addEventListener('click', () => goToSlide(currentSlide - 1));
-    });
+    nextBtns.forEach(btn => btn.addEventListener('click', () => updateSlide(currentSlide + 1)));
+    prevBtns.forEach(btn => btn.addEventListener('click', () => updateSlide(currentSlide - 1)));
 });
-
-
-
 </script>
 
 <?php include 'footer.php'; ?>

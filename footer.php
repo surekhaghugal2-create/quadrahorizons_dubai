@@ -1,5 +1,6 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=Work+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
 <section class="express-split">
 
     <div class="split-bg">
@@ -11,6 +12,7 @@
         <p class="intro-sub">Welcome to Quadra Horizons</p>
         <h1 class="intro-title">Connect <br> <span>With The Brand</span></h1>
     </div>
+
 
     <div class="split-content-layer">
 
@@ -48,7 +50,7 @@
 
                     <div class="form-row">
                         <div class="form-group country-code-wrapper number-background">
-    
+
                             <select id="split-country-select"></select>
                         </div>
                         <div class="form-group mobile-wrapper">
@@ -60,6 +62,42 @@
                     <div class="form-group">
                         <input type="email" required placeholder=" " name="email">
                         <label>EMAIL</label>
+                    </div>
+                    <div class="form-row booking-row">
+                        <div class="form-group">
+                            <input type="text" name="meeting_date" id="meeting_date" placeholder=" " required>
+                            <label>MEETING DATE</label>
+                        </div>
+                        <div class="form-group">
+                            <select name="meeting_time" required placeholder=" ">
+                                <option value="" disabled selected></option>
+                                <option>10:00 AM</option>
+                                <option>10:30 AM</option>
+                                <option>11:00 AM</option>
+                                <option>11:30 AM</option>
+                                <option>12:00 PM</option>
+                                <option>12:30 PM</option>
+                                <option>01:00 PM</option>
+                                <option>01:30 PM</option>
+                                <option>02:00 PM</option>
+                                <option>02:30 PM</option>
+                                <option>03:00 PM</option>
+                                <option>03:30 PM</option>
+                                <option>04:00 PM</option>
+                                <option>04:30 PM</option>
+                                <option>05:00 PM</option>
+                                <option>05:30 PM</option>
+                                <option>06:00 PM</option>
+
+                            </select>
+                            <label>MEETING TIME</label>
+                        </div>
+
+                    </div>
+
+                    <div class="form-group">
+                        <input type="text" name="location" placeholder=" " required>
+                        <label>LOCATION</label>
                     </div>
 
                     <button type="submit" class="split-btn">
@@ -73,6 +111,8 @@
 
     </div>
 </section>
+
+
 
 <script>
     document.addEventListener("DOMContentLoaded", function() {
@@ -91,7 +131,7 @@
                 code: "+91",
                 name: "IND"
             },
-            {              
+            {
                 code: "+966",
                 name: "KSA"
             }, {
@@ -114,5 +154,27 @@
             if (c.code === "+971") option.selected = true;
             select.appendChild(option);
         });
+    });
+</script>
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+
+        // Disable past dates
+        const today = new Date().toISOString().split("T")[0];
+        document.getElementById("meeting_date").setAttribute("min", today);
+
+    });
+</script>
+<script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+
+        flatpickr("#meeting_date", {
+            minDate: "today", // Past date disable
+            dateFormat: "d-m-Y", // Format
+            disableMobile: true // Force custom calendar
+        });
+
     });
 </script>
