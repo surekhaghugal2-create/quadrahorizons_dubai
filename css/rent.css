@@ -1,226 +1,216 @@
 /* =========================================
-   1. CORE VARIABLES & SETUP
+   1. CORE DESIGN SYSTEM & VARIABLES
    ========================================= */
 :root {
-    --gold: #D4AF37;
-    --dark: #05080f;
-    --card-bg: #0A1120;
-    --white: #ffffff;
-    --text-grey: #b0b0b0;
+    --rent-gold: #D4AF37;
+    --rent-dark: #000000;
+    --rent-card-bg: #111111;
+    --rent-white: #ffffff;
+    --rent-grey: #353434;
+    --rent-glass: rgba(255, 255, 255, 0.03);
+    --rent-glass-border: rgba(255, 255, 255, 0.1);
+    
     --font-heading: 'Playfair Display', serif;
     --font-body: 'Work Sans', sans-serif;
+    --ease-premium: cubic-bezier(0.25, 1, 0.5, 1);
 }
 
-* { margin: 0; padding: 0; box-sizing: border-box; }
-
-body {
-    background-color: var(--dark);
-    color: var(--white);
+.rent-pg-wrapper {
+    background-color: var(--rent-dark);
+    color: var(--rent-white);
     font-family: var(--font-body);
     overflow-x: hidden;
 }
 
 /* =========================================
-   2. GLOBAL BACKGROUND VIDEO & TRANSPARENCY
+   2. GLOBAL BACKGROUND VIDEO
    ========================================= */
-.global-video-bg {
-    position: fixed; 
-    top: 0; 
-    left: 0;
-    width: 100vw; 
-    height: 100vh;
-    z-index: -2; 
-    pointer-events: none; 
-    overflow: hidden;
-    background-color: var(--dark); 
+.rent-pg-video-bg {
+    position: fixed;
+    top: 0; left: 0;
+    width: 100vw; height: 100vh;
+    z-index: -2;
+    pointer-events: none;
 }
 
-.global-video-bg video {
-    width: 100%; 
+.rent-pg-video-bg video {
+    width: 100%;
     height: 100%;
     object-fit: cover;
-    opacity: 0.15; /* Dimmed so text is easily readable */
+    opacity: 0.15;
 }
 
-.global-overlay {
+.rent-pg-overlay {
     position: absolute;
     inset: 0;
-    /* background: radial-gradient(circle at center, rgba(5,8,15,0.6) 0%, rgba(5,8,15,0.95) 100%); */
-    z-index: -1;
+    background: radial-gradient(circle at center, transparent 0%, var(--rent-dark) 100%);
 }
-
-/* IMPORTANT: Makes main sections transparent so the video shows through */
-section { background-color: transparent !important; }
-.projects-section { background-color: transparent !important; }
-.has-bg { background-color: transparent !important; }
 
 /* =========================================
-   3. STRICT TYPOGRAPHY CLASSES
+   3. HERO SECTION
    ========================================= */
-.heading-strict {
-    font-family: var(--font-heading);
-    font-size: 50px !important; /* REQUIRED DESKTOP SIZE */
-    font-weight: 400;
-    color: var(--white);
-    line-height: 1.2;
-    margin: 0;
+.rent-pg-hero {
+    position: relative;
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
 }
 
-.para-strict {
-    font-family: var(--font-body);
-    font-size: 18px !important; /* REQUIRED DESKTOP SIZE */
-    color: var(--text-grey);
-    line-height: 1.8;
-    margin: 0;
+.rent-pg-hero-vid-element {
+    position: absolute;
+    inset: 0;
+    width: 100%; height: 100%;
+    object-fit: cover;
+    opacity: 0.5;
 }
 
-.accent-text { color: var(--gold); }
-
-/* =========================================
-   4. SCROLL ANIMATION SUITE
-   ========================================= */
-.anim-fade-up, .reveal { opacity: 0; transform: translateY(40px); transition: all 0.8s cubic-bezier(0.25, 1, 0.5, 1); }
-.anim-slide-left { opacity: 0; transform: translateX(-60px); transition: all 0.8s cubic-bezier(0.25, 1, 0.5, 1); }
-.anim-slide-right { opacity: 0; transform: translateX(60px); transition: all 0.8s cubic-bezier(0.25, 1, 0.5, 1); }
-.anim-zoom-in { opacity: 0; transform: scale(0.95); transition: all 1s cubic-bezier(0.25, 1, 0.5, 1); }
-
-.visible { opacity: 1; transform: translate(0) scale(1); }
-
-.delay-100 { transition-delay: 0.1s; }
-.delay-200 { transition-delay: 0.2s; }
-.delay-300 { transition-delay: 0.3s; }
-
-/* Animated Golden Underline */
-.heading-line::after {
-    content: ''; display: block; width: 0; height: 3px; background: var(--gold);
-    margin: 20px auto 0; transition: width 1s cubic-bezier(0.25, 1, 0.5, 1) 0.4s;
-}
-.visible .heading-line::after, .visible.heading-line::after { width: 80px; }
-
-/* =========================================
-   5. CLASSIC LUXURY HERO
-   ========================================= */
-.rent-hero {
-    position: relative; width: 100%; height: 80vh; min-height: 500px;
-    display: flex; align-items: center; justify-content: center;
-}
-
-.hero-video {
-    position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover;
-    opacity: 0.5; z-index: 0;
-}
-
-.hero-gradient {
-    position: absolute; inset: 0;
-    background: linear-gradient(to bottom, rgba(5,8,15,0.4) 0%, transparent 100%);
+.rent-pg-hero-gradient {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to bottom, rgba(5,8,15,0.4) 0%, var(--rent-dark) 100%);
     z-index: 1;
 }
 
-.hero-content {
-    position: relative; z-index: 2; text-align: center; max-width: 900px; padding: 0 20px;
+.rent-pg-hero-content {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+}
+
+.rent-pg-main-title {
+    font-family: var(--font-heading);
+    font-size: 50px;
+    font-weight: 400;
+}
+
+.rent-pg-accent { color: var(--rent-gold); }
+
+.rent-pg-subtitle {
+    margin-top: 30px;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    color: var(--rent-gold);
+    font-size: 18px;
 }
 
 /* =========================================
-   6. PROJECTS GRID SECTION (CLEANED)
+   4. INTRO SECTION
    ========================================= */
-.projects-section { padding: 100px 5%; }
-
-.properties-header { text-align: center; margin-bottom: 60px; }
-
-.grid-container {
-    display: grid; grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
-    gap: 40px; max-width: 1400px; margin: 0 auto;
+.rent-pg-intro {
+    padding: 100px 5%;
+    text-align: center;
 }
 
-.project-card {
-    background: rgba(10, 17, 32, 0.7);
-    backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px);
-    border: 1px solid rgba(255, 255, 255, 0.05);
-    border-radius: 10px; overflow: hidden; position: relative;
-    transition: transform 0.4s ease, border-color 0.4s ease;
+.rent-pg-section-title {
+    font-family: var(--font-heading);
+    font-size: 50px;
+    margin-bottom: 30px;
+}
+
+.rent-pg-description {
+    font-size: 18px;
+    line-height: 1.8;
+    color: var(--rent-grey);
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+/* =========================================
+   5. PROPERTY GRID
+   ========================================= */
+.rent-pg-projects { padding: 80px 5%; }
+
+.rent-pg-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.rent-pg-card {
+    background: var(--rent-card-bg);
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+    transition: transform 0.4s var(--ease-premium);
     box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+}
+
+.rent-pg-card:hover { transform: translateY(-10px); }
+
+.rent-pg-card-badge {
+    position: absolute;
+    top: 20px; left: 20px;
+    background: var(--rent-gold);
+    color: #000;
+    padding: 6px 15px;
+    font-size: 10px;
+    font-weight: 700;
+    text-transform: uppercase;
+    z-index: 2;
+}
+
+.rent-pg-card-media { height: 350px; overflow: hidden; }
+
+.rent-pg-card-media img {
+    width: 100%; height: 100%;
+    object-fit: cover;
+    transition: transform 0.6s ease;
+}
+
+.rent-pg-card:hover .rent-pg-card-media img { transform: scale(1.1); }
+
+.rent-pg-card-body { padding: 25px; }
+
+.rent-pg-card-title {
+    font-family: var(--font-heading);
+    font-size: 22px;
+    margin-bottom: 5px;
+}
+
+.rent-pg-card-loc {
+    font-size: 12px;
+    color: var(--rent-grey);
+    margin-bottom: 20px;
+    display: block;
+}
+
+.rent-pg-card-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    border-top: 1px solid rgba(255,255,255,0.1);
+    padding-top: 15px;
+}
+
+.rent-pg-label { font-size: 10px; color: #888; display: block; }
+.rent-pg-value { color: var(--rent-gold); font-weight: 600; font-size: 16px; }
+
+.rent-pg-circle-btn {
+    background: none; border: none;
+    color: var(--rent-gold);
+    font-size: 18px;
+    transition: 0.3s;
     cursor: pointer;
 }
 
-.project-card:hover { transform: translateY(-10px); border-color: var(--gold); }
-
-.card-img-wrap { position: relative; height: 280px; overflow: hidden; }
-.card-img-wrap img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.6s ease; }
-.project-card:hover .card-img-wrap img { transform: scale(1.1); }
-
-.exclusive-tag {
-    position: absolute; top: 20px; left: 20px;
-    background: var(--gold); color: #000;
-    padding: 6px 15px; font-size: 11px; font-weight: 700;
-    text-transform: uppercase; letter-spacing: 1px; z-index: 2;
-}
-
-.card-content { padding: 30px; }
-.card-content h3 { font-family: var(--font-heading); font-size: 24px; margin: 0 0 10px 0; color: var(--white); }
-
-.location { font-size: 13px; color: var(--gold); display: block; margin-bottom: 20px; text-transform: uppercase; letter-spacing: 1px; }
-
-.price-row {
-    display: flex; justify-content: space-between; align-items: flex-end;
-    border-top: 1px solid rgba(255,255,255,0.1); padding-top: 15px;
-}
-.price-label { font-size: 10px; color: #888; text-transform: uppercase; display: block; margin-bottom: 2px; }
-.price-value { color: var(--white); font-weight: 600; font-size: 18px; }
-
-.arrow-icon { color: var(--gold); font-size: 18px; transition: transform 0.3s; }
-.project-card:hover .arrow-icon { transform: rotate(-45deg); }
+.rent-pg-card:hover .rent-pg-circle-btn { transform: rotate(-45deg); }
 
 /* =========================================
-   7. CINEMATIC BACKGROUND ASSETS
+   6. FAQ SECTION (FIXED WITH BACKGROUND & SHADOW)
    ========================================= */
-.has-bg { position: relative; overflow: hidden; padding: 100px 5%; }
-
-.bg-asset {
-    position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover;
-    opacity: 0.25; z-index: 0;
-}
-
-.bg-overlay {
-    position: absolute; inset: 0;
-    background: linear-gradient(to bottom, transparent 0%, rgba(5,8,15,0.6) 50%, transparent 100%);
-    z-index: 1;
-}
-
-.has-bg .info-wrapper, .has-bg .anim-fade-up, .has-bg .test-grid { position: relative; z-index: 2; }
-
-/* =========================================
-   8. INFO SECTION
-   ========================================= */
-.info-wrapper { max-width: 1300px; margin: 0 auto; display: flex; align-items: center; gap: 60px; }
-.info-image { flex: 1; height: 500px; overflow: hidden; border-radius: 4px; }
-.info-image img { width: 100%; height: 100%; object-fit: cover; }
-.info-content { flex: 1; }
-.info-content .heading-line::after { margin-left: 0; }
-
-.info-list { list-style: none; padding: 0; margin-top: 30px; display: grid; gap: 15px; }
-.info-list li {
-    font-size: 18px !important; /* REQUIRED DESKTOP SIZE */
-    color: var(--text-grey); position: relative; padding-left: 30px;
-}
-.info-list li::before {
-    content: '✓'; color: var(--gold); font-size: 16px; 
-    position: absolute; left: 0; top: 2px;
-}
-
-/* =======================================================
-   LUXURY FAQ SECTION (ULTRA-MODERN BLUR REVEAL + BG MEDIA)
-   ======================================================= */
-.luxury-faq-section {
-    background-color: var(--black, #000000); 
-    padding: 120px 10px !important; /* STRICT DESKTOP PADDING */
-    position: relative;
+.rent-pg-faq { 
+    padding: 120px 5%; 
+    position: relative; /* Essential for background positioning */
     overflow: hidden;
-    z-index: 2;
-    display: flex;
-    justify-content: center;
+    background: #000; /* Fallback */
 }
 
-/* --- CINEMATIC BACKGROUND VIDEO/IMAGE --- */
+/* Background Media Fixed */
 .faq-bg-media {
     position: absolute;
     top: 0;
@@ -229,515 +219,298 @@ section { background-color: transparent !important; }
     height: 100%;
     object-fit: cover;
     z-index: 0;
-    opacity: 0.6; /* Lowered slightly so it blends perfectly */
-    filter: grayscale(30%); 
-    pointer-events: none; /* Prevents video from blocking clicks */
+    opacity: 0.5; /* Balanced visibility */
+    filter: grayscale(40%) brightness(0.9); 
+    pointer-events: none;
 }
 
-/* --- DEEP GRADIENT OVERLAY --- */
+/* Deep Gradient Overlay - Keeps center video visible */
 .faq-bg-overlay {
     position: absolute;
     inset: 0;
     z-index: 1;
     pointer-events: none;
-    /* FIXED: Changed pure black to a highly transparent fade so the video is highly visible */
-    background: linear-gradient(
-        to bottom, 
-        rgba(0, 0, 0, 0.95) 0%, 
-        rgba(0, 0, 0, 0.1) 50%, 
-        rgba(0, 0, 0, 0.95) 100%
-    );
+    background: radial-gradient(circle at center, rgba(20, 20, 20, 0.253) 0%, rgba(5, 8, 15, 0.85) 100%);
 }
-.faq-container {
-    max-width: 900px; 
-    width: 100%;
+
+.rent-pg-faq-container {
+    position: relative;
+    z-index: 2; /* Ensures content is above video/overlay */
+    max-width: 1000px;
     margin: 0 auto;
+  
+}
+
+.rent-pg-faq-header { 
+    text-align: center; 
+    margin-bottom: 60px; 
+}
+
+/* Cinematic Gold Divider */
+.rent-pg-gold-divider {
+    height: 2px; width: 80px;
+    background: rgba(255, 196, 3, 0.897);
+    margin: 25px auto;
     position: relative;
-    z-index: 2; /* Keeps cards above the background */
-}
-
-/* --- FAQ HEADER --- */
-.faq-header {
-    text-align: center;
-    margin-bottom: 60px;
-}
-
-.faq-title {
-    font-family: var(--font-heading, 'Playfair Display', serif) !important;
-    font-size: 50px !important; /* STRICT DESKTOP SIZE */
-    color: var(--white, #FFFFFF);
-    line-height: 1.2 !important;
-    font-weight: 400 !important;
-    margin: 0 0 25px 0;
-}
-
-.faq-divider {
-    width: 60px;
-    height: 1px;
-    background: var(--luxury-gold, #D4AF37);
-    margin: 0 auto;
-    position: relative;
-    box-shadow: 0 0 10px rgba(212, 175, 55, 0.5); 
-}
-
-/* --- FAQ ACCORDION ITEMS --- */
-.faq-accordion {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-}
-
-.faq-item {
-    background: rgba(20, 20, 20, 0.4);
-    backdrop-filter: blur(25px);
-    -webkit-backdrop-filter: blur(25px);
-    border: 1px solid rgba(255, 255, 255, 0.05);
-    border-radius: 16px;
     overflow: hidden;
-    position: relative;
-    transform-origin: center;
-    transition: transform 0.5s cubic-bezier(0.16, 1, 0.3, 1), 
-                box-shadow 0.5s ease, 
-                border-color 0.5s ease;
 }
 
-/* TACTILE PRESS ON HOVER */
-.faq-item:hover {
-    transform: scale(0.985); /* Smoothly shrinks inwards like a physical button */
-    border-color: rgba(212, 175, 55, 0.4);
-    box-shadow: 0 0 40px rgba(212, 175, 55, 0.1); 
-    background: rgba(25, 25, 25, 0.6);
+.rent-pg-gold-divider::after {
+    content: ''; 
+    position: absolute; 
+    top: 0; left: -100%;
+    width: 100%; height: 100%;
+    background: linear-gradient(90deg, transparent, var(--rent-gold), transparent);
+    animation: line-sweep 4s cubic-bezier(0.4, 0, 0.2, 1) infinite;
 }
 
-.faq-item.active {
-    transform: scale(1); /* Pops back to full size when opened */
-    border-color: var(--luxury-gold, #D4AF37);
-    background: rgba(30, 30, 30, 0.8);
-    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.8);
-}
-
-/* --- FAQ QUESTION (CLICKABLE) --- */
-.faq-question {
-    padding: 30px 40px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    cursor: pointer;
-    user-select: none;
-    position: relative;
-    z-index: 2;
-}
-
-.faq-question h3 {
-    font-family: var(--font-body, 'Work Sans', sans-serif) !important; 
-    font-size: 18px !important; /* EXACTLY 20PX */
-    color: var(--white, #FFFFFF);
-    font-weight: 400;
-    margin: 0;
-    padding-right: 20px;
-    transition: color 0.4s ease, letter-spacing 0.5s cubic-bezier(0.16, 1, 0.3, 1);
-}
-
-.faq-item:hover .faq-question h3,
-.faq-item.active .faq-question h3 {
-    color: var(--luxury-gold, #D4AF37);
-    letter-spacing: 0.5px; 
-}
-
-/* --- DYNAMIC 'X' SPIN ICON --- */
-.faq-icon {
-    position: relative;
-    width: 18px;
-    height: 18px;
-    flex-shrink: 0;
-    transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1); 
-}
-
-.faq-item.active .faq-icon {
-    transform: rotate(135deg); /* Spins smoothly into an 'X' */
-}
-
-.icon-line {
-    position: absolute;
-    background-color: var(--luxury-gold, #D4AF37);
-    border-radius: 2px;
-    transition: background-color 0.4s ease;
-}
-
-.icon-line.horizontal {
-    top: 50%; left: 0; width: 100%; height: 2px;
-    transform: translateY(-50%);
-}
-
-.icon-line.vertical {
-    top: 0; left: 50%; width: 2px; height: 100%;
-    transform: translateX(-50%);
-}
-
-.faq-item.active .icon-line {
-    background-color: var(--white, #FFFFFF);
-}
-
-/* --- THE BLUR REVEAL --- */
-.faq-answer {
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.8s cubic-bezier(0.16, 1, 0.3, 1); 
-}
-
-.faq-answer-inner {
-    padding: 0 40px 35px 40px; 
-    opacity: 0;
-    filter: blur(10px); /* Text starts blurred out */
-    transform: translateY(-15px); 
-    transition: opacity 0.4s ease, 
-                filter 0.6s cubic-bezier(0.16, 1, 0.3, 1), 
-                transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
-}
-
-.faq-item.active .faq-answer-inner {
-    opacity: 1;
-    filter: blur(0px); /* Unblurs and drops into place perfectly */
-    transform: translateY(0); 
-    transition-delay: 0.1s; 
-}
-
-.faq-answer-inner p {
-    font-family: var(--font-body, 'Work Sans', sans-serif) !important; 
-    font-size: 16px !important; /* EXACTLY 18PX */
-    color: var(--text-grey, #9A9A9A);
-    line-height: 1.8 !important;
-    font-weight: 300 !important;
-    margin: 0;
-}
-
-/* =======================================================
-   RESPONSIVE LAYOUT (TABLET & MOBILE)
-   ======================================================= */
-@media (max-width: 1024px) {
-    .faq-container { padding: 0 20px; }
-}
-
-@media (max-width: 425px) {
-    .luxury-faq-section {
-        padding: 80px 10px !important; /* STRICT MOBILE PADDING */
-    }
-
-    /* STRICT MOBILE TYPOGRAPHY */
-    .faq-title {
-        font-size: 36px !important;
-        margin-bottom: 20px !important;
-    }
-
-    .faq-question {
-        padding: 25px 20px;
-    }
-
-    .faq-question h3 {
-        font-size: 18px !important; 
-    }
-
-    .faq-answer-inner {
-        padding: 0 20px 25px 20px;
-    }
-
-    .faq-answer-inner p {
-        font-size: 16px !important; /* STRICT MOBILE P TEXT */
-        line-height: 1.6 !important;
-    }
-
-    .faq-item {
-        border-radius: 12px;
-    }
-}
-/* =========================================
-   10. ELEGANT TESTIMONIAL CARDS
-   ========================================= */
-.testimonials-section { text-align: center; }
-
-.test-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 40px; max-width: 1400px; margin: 60px auto 0; }
-
-.test-card {
-    background: rgba(10, 17, 32, 0.7);
-    backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px);
-    padding: 50px 40px; border: 1px solid rgba(255,255,255,0.05); border-radius: 4px;
-    transition: 0.4s ease; text-align: center;
-}
-.test-card:hover { border-color: var(--gold); transform: translateY(-10px); box-shadow: 0 20px 40px rgba(0,0,0,0.3); }
-
-.test-icon { font-family: var(--font-heading); font-size: 50px; color: var(--gold); line-height: 0.5; margin-bottom: 20px; }
-.test-card h5 { font-size: 22px; color: var(--white); margin-bottom: 5px; font-family: var(--font-heading); }
-.test-card span { display: block; font-size: 12px; color: var(--gold); text-transform: uppercase; letter-spacing: 2px; margin-bottom: 25px; }
-
-/* =========================================
-   11. RESPONSIVE: LAPTOP / TABLET
-   ========================================= */
-@media (max-width: 1024px) {
-    .grid-container { grid-template-columns: repeat(2, 1fr); }
-    .info-wrapper { flex-direction: column; text-align: center; }
-    .info-image { width: 100%; height: 400px; }
-    .info-content .heading-line::after { margin: 20px auto 0; }
-    .info-list li { text-align: left; display: inline-block; width: 100%; }
-    .test-grid { grid-template-columns: repeat(2, 1fr); }
-}
-
-/* =========================================
-   12. RESPONSIVE: MOBILE (Strict Typography)
-   ========================================= */
-@media (max-width: 768px) {
-    .grid-container, .test-grid { grid-template-columns: 1fr; }
-}
-
-@media (max-width: 425px) {
-    .rent-hero { height: 60vh; min-height: 400px; }
-    
-    .projects-section, .has-bg, .faq-section { padding: 60px 20px; }
-
-    /* --- STRICT MOBILE TYPOGRAPHY ENFORCEMENT --- */
-    .heading-strict {
-        font-size: 36px !important; /* REQUIRED MOBILE SIZE */
-        margin-bottom: 15px;
-    }
-
-    .para-strict, .info-list li, .faq-answer p {
-        font-size: 16px !important; /* REQUIRED MOBILE SIZE */
-        line-height: 1.6;
-    }
-
-    /* Mobile Layout Fixes */
-    .card-img-wrap { height: 220px; }
-    .card-content { padding: 20px; }
-    .info-image { height: 250px; }
-    .faq-question { padding: 20px; }
-    .faq-question h3 { font-size: 18px; padding-right: 15px; }
-    .faq-answer { padding: 0 20px; }
-    .test-card { padding: 40px 20px; }
-}
-
-/* =======================================================
-   ULTRA-SMOOTH LUXURY HERO SLIDER
-   ======================================================= */
-.luxury-hero-slider {
-    position: relative;
-    width: 100%;
-    height: 100vh;
-    background-color: var(--black, #000);
-    overflow: hidden;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-/* --- Slide Container & Background Animations --- */
-.hero-slide {
-    position: absolute;
-    inset: 0;
-    opacity: 0;
-    visibility: hidden;
-    transition: opacity 1.2s cubic-bezier(0.25, 1, 0.5, 1), visibility 1.2s;
-    z-index: 1;
-}
-
-.hero-slide.active {
-    opacity: 1;
-    visibility: visible;
-    z-index: 2;
-}
-
-.hero-bg-img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    transform: scale(1.08); /* Starts zoomed in slightly */
-    transition: transform 8s cubic-bezier(0.25, 1, 0.5, 1); /* Ultra-slow cinematic transition */
-}
-
-.hero-slide.active .hero-bg-img {
-    transform: scale(1); /* Smoothly zooms OUT to normal size */
-}
-
-.hero-overlay {
-    position: absolute;
-    inset: 0;
-    background: linear-gradient(90deg, rgba(0,0,0,0.85) 0%, rgba(0,0,0,0.2) 50%, rgba(0,0,0,0.7) 100%);
-    z-index: 1;
-}
-
-/* --- Content Wrapper --- */
-.hero-content-wrapper {
-    position: absolute;
-    inset: 0;
-    max-width: 1400px;
-    margin: 0 auto;
-    padding: 0 80px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    z-index: 10;
-}
-
-/* --- Left Column: Text Content --- */
-.hero-text-col {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    max-width: 600px;
-}
-
-.hero-brand {
-    font-family: var(--font-body, 'Work Sans', sans-serif);
-    font-size: 16px;
-    color: var(--white, #fff);
-    letter-spacing: 5px;
-    text-transform: uppercase;
-    font-weight: 300;
-    margin-bottom: 15px;
-}
-
-.hero-title {
-    font-family: var(--font-heading, 'Playfair Display', serif);
-    font-size: 75px; 
-    color: var(--white, #fff);
-    line-height: 1.1;
-    margin: 0 0 15px 0;
-    letter-spacing: 2px;
-    font-weight: 400;
-}
-
-.hero-location {
-    font-family: var(--font-body, 'Work Sans', sans-serif);
-    font-size: 14px;
-    color: #B0B0B0;
-    letter-spacing: 4px;
-    text-transform: uppercase;
-    margin-bottom: 50px;
-    font-weight: 300;
-}
-
-/* Glassmorphism Button */
-.btn-glass {
-    display: inline-block;
-    padding: 18px 45px;
-    background: rgba(255, 255, 255, 0.03);
-    backdrop-filter: blur(15px);
-    -webkit-backdrop-filter: blur(15px);
-    border: 1px solid rgba(255, 255, 255, 0.3);
-    color: var(--white, #fff);
-    font-family: var(--font-body, 'Work Sans', sans-serif);
-    font-size: 12px;
-    letter-spacing: 4px;
-    text-transform: uppercase;
+/* The FAQ Card - Curved & High Shadow */
+.rent-pg-faq-item {
+    max-width: 1000px;
+    margin: 0 auto 20px;
+    background: rgba(5, 5, 5, 0.918); /* Darker glass for better contrast */
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 12px; /* Smooth curved corners */
     transition: all 0.6s cubic-bezier(0.16, 1, 0.3, 1);
-    cursor: pointer;
-}
-
-.btn-glass:hover {
-    background: rgba(255, 255, 255, 0.15);
-    border-color: var(--white, #fff);
-    box-shadow: 0 15px 35px rgba(255, 255, 255, 0.1);
-    transform: translateY(-2px);
-}
-
-/* --- Right Column: Image & Arrows --- */
-.hero-preview-col {
-    flex: 0.8;
-    display: flex;
-    align-items: center; /* Aligns arrows and image vertically */
-    justify-content: flex-end;
-    gap: 30px; /* Space between arrows and the image card */
-}
-
-.hero-preview-card {
-    width: 380px;
-    height: 480px;
-    border: 1px solid rgba(255, 255, 255, 0.15);
-    box-shadow: 0 40px 80px rgba(0, 0, 0, 0.9);
     overflow: hidden;
-    position: relative;
+    /* Premium Box Shadow */
+     box-shadow: 
+        0 40px 100px rgba(46, 46, 46, 0.6), 
+        0 10px 40px rgba(22, 22, 22, 0.4),
+        0 0 100px rgba(14, 13, 13, 0.03); 
+        
+    border: 1px solid rgba(43, 43, 43, 0.03); /* Ghost border */
 }
 
-.hero-preview-img {
+.rent-pg-faq-item:hover {
+    background: var(--rent-dark);
+    border-color: rgba(212, 175, 55, 0.5);
+    transform: translateY(-5px);
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.7), 0 0 15px rgba(212, 175, 55, 0.1);
+}
+
+.rent-pg-faq-item.active {
+    background: rgba(0, 0, 0, 0.89);
+    border-color: rgba(212, 175, 55, 0.7);
+    box-shadow: 0 30px 60px -15px rgba(0, 0, 0, 0.8);
+}
+
+/* Question Trigger */
+.rent-pg-faq-btn {
     width: 100%;
-    height: 100%;
-    object-fit: cover;
-    filter: brightness(0.9);
-}
-
-/* --- NAVIGATION ARROWS (Now exclusively in the right column) --- */
-.hero-nav-arrow {
-    background: transparent;
+    background: none;
     border: none;
-    color: rgba(255, 255, 255, 0.5);
-    font-size: 45px; /* Thin, elegant size */
-    font-weight: 100; /* Makes the arrow icon thinner */
+    padding: 32px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     cursor: pointer;
-    transition: all 0.5s cubic-bezier(0.16, 1, 0.3, 1);
-    padding: 10px;
     outline: none;
 }
 
-.hero-nav-arrow:hover {
-    color: var(--white, #fff);
-    transform: scale(1.15); /* Smooth pop on hover */
-    text-shadow: 0 0 20px rgba(255, 255, 255, 0.4);
+.rent-pg-faq-q {
+    font-family: 'Work Sans', sans-serif !important;
+    font-size: 18px !important;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.9);
+    text-align: left;
+    letter-spacing: 0.3px;
+    transition: all 0.4s ease;
 }
 
-/* --- BUTTERY STAGGERED ANIMATIONS --- */
-.hero-brand, .hero-title, .hero-location, .btn-glass {
+.rent-pg-faq-item.active .rent-pg-faq-q {
+    color: var(--rent-gold);
+    font-weight: 500;
+}
+
+/* Smooth Icon Animation */
+.rent-pg-faq-icon {
+    position: relative;
+    width: 20px;
+    height: 20px;
+    flex-shrink: 0;
+}
+
+.rent-pg-faq-icon .line {
+    position: absolute;
+    background: var(--rent-gold);
+    transition: all 0.6s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+.rent-pg-faq-icon .vertical {
+    width: 2px; height: 16px;
+    left: 9px; top: 2px;
+}
+
+.rent-pg-faq-icon .horizontal {
+    width: 16px; height: 2px;
+    top: 9px; left: 2px;
+}
+
+.rent-pg-faq-item.active .vertical {
+    transform: rotate(90deg);
+    opacity: 0;
+}
+
+/* The Smooth Panel Reveal */
+.rent-pg-faq-panel {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.rent-pg-faq-item.active .rent-pg-faq-panel {
+    max-height: 600px;
+}
+
+.rent-pg-faq-content {
+    padding: 0 40px 40px 40px;
+    opacity: 0;
+    filter: blur(15px);
+    transform: translateY(20px);
+    transition: 
+        opacity 0.8s ease, 
+        filter 0.8s ease, 
+        transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.rent-pg-faq-item.active .rent-pg-faq-content {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateY(0);
+    transition-delay: 0.2s;
+}
+
+.rent-pg-faq-content p {
+    font-family: 'Work Sans', sans-serif !important;
+    font-size: 18px !important;
+    line-height: 1.8;
+    color: rgba(255, 255, 255, 0.65);
+    margin: 0;
+}
+
+/* Mobile Smoothing */
+@media (max-width: 768px) {
+    .rent-pg-faq { padding: 80px 20px; }
+    .rent-pg-faq-btn { padding: 25px; }
+    .rent-pg-faq-content { padding: 0 25px 30px 25px; }
+    
+    .rent-pg-faq-q, 
+    .rent-pg-faq-content p { 
+        font-size: 16px !important; 
+    }
+}
+/* =========================================
+   7. LUXURY SLIDER (CINEMATIC)
+   ========================================= */
+.rent-pg-slider {
+    position: relative; width: 100%; height: 100vh;
+    background: #000; overflow: hidden;
+}
+
+.rent-pg-slide {
+    position: absolute; inset: 0;
+    opacity: 0; visibility: hidden;
+    transition: opacity 1.2s var(--ease-premium);
+}
+
+.rent-pg-slide.active { opacity: 1; visibility: visible; }
+
+.rent-pg-slide-bg {
+    width: 100%; height: 100%; object-fit: cover;
+    transform: scale(1.08); transition: transform 8s var(--ease-premium);
+}
+
+.rent-pg-slide.active .rent-pg-slide-bg { transform: scale(1); }
+
+.rent-pg-slide-content {
+    position: absolute; inset: 0;
+    max-width: 1400px; margin: 0 auto;
+    padding: 0 80px; display: flex;
+    align-items: center; justify-content: space-between;
+    z-index: 10;
+}
+
+.rent-pg-slide-info { flex: 1; max-width: 600px; }
+
+.rent-pg-slide-title {
+    font-family: var(--font-heading);
+    font-size: 75px; line-height: 1.1; margin: 15px 0;
+}
+
+.rent-pg-btn-luxury {
+    display: inline-block; padding: 18px 45px;
+    background: rgba(255,255,255,0.03);
+    backdrop-filter: blur(15px);
+    border: 1px solid rgba(255,255,255,0.3);
+    color: #fff; text-decoration: none;
+    letter-spacing: 4px; text-transform: uppercase;
+    font-size: 12px; transition: 0.6s;
+}
+
+.rent-pg-btn-luxury:hover { background: rgba(255,255,255,0.15); border-color: #fff; }
+
+.rent-pg-slide-visual { display: flex; align-items: center; gap: 30px; }
+
+.rent-pg-mini-preview {
+    width: 380px; height: 480px;
+    border: 1px solid rgba(255,255,255,0.15);
+    overflow: hidden;
+}
+
+.rent-pg-mini-preview img { width: 100%; height: 100%; object-fit: cover; }
+
+.rent-pg-nav-btn {
+    background: none; border: none;
+    color: rgba(255,255,255,0.5);
+    font-size: 45px; cursor: pointer; transition: 0.5s;
+}
+
+.rent-pg-nav-btn:hover { color: #fff; transform: scale(1.15); }
+
+/* =========================================
+   8. REVEAL ANIMATIONS
+   ========================================= */
+.js-reveal {
     opacity: 0;
     transform: translateY(40px);
-    transition: all 1s cubic-bezier(0.25, 1, 0.5, 1); /* Apple-style buttery easing */
+    transition: all 0.8s var(--ease-premium);
 }
 
-.hero-preview-card {
-    opacity: 0;
-    transform: translateX(40px) scale(0.95); /* Slides in from right slightly */
-    transition: all 1.2s cubic-bezier(0.25, 1, 0.5, 1);
+.js-reveal.is-visible {
+    opacity: 1;
+    transform: translateY(0);
 }
 
-/* Active State Triggers */
-.hero-slide.active .hero-brand { opacity: 1; transform: translateY(0); transition-delay: 0.2s; }
-.hero-slide.active .hero-title { opacity: 1; transform: translateY(0); transition-delay: 0.3s; }
-.hero-slide.active .hero-location { opacity: 1; transform: translateY(0); transition-delay: 0.4s; }
-.hero-slide.active .btn-glass { opacity: 1; transform: translateY(0); transition-delay: 0.5s; }
-.hero-slide.active .hero-preview-card { opacity: 1; transform: translateX(0) scale(1); transition-delay: 0.6s; }
-
-
-/* =======================================================
-   RESPONSIVE LAYOUT (TABLET & MOBILE)
-   ======================================================= */
+/* =========================================
+   9. MOBILE & TABLET (STRICT TYPOGRAPHY)
+   ========================================= */
 @media (max-width: 1024px) {
-    .hero-title { font-size: 55px; }
-    .hero-preview-card { width: 320px; height: 420px; }
-    .hero-content-wrapper { padding: 0 50px; }
+    .rent-pg-grid { grid-template-columns: repeat(2, 1fr); }
+    .rent-pg-slide-visual { display: none; }
+    .rent-pg-slide-content { text-align: center; justify-content: center; }
 }
 
 @media (max-width: 768px) {
-    .hero-content-wrapper {
-        flex-direction: column;
-        justify-content: center;
-        text-align: center;
-        padding: 0 40px;
-        gap: 50px;
+    .rent-pg-grid { grid-template-columns: 1fr; }
+    
+    /* Strict Mobile Typography */
+    .rent-pg-main-title, .rent-pg-section-title {
+        font-size: 36px !important;
     }
 
-    .hero-text-col {
-        align-items: center;
-        max-width: 100%;
-    }
-
-    .hero-preview-col {
-        justify-content: center;
-        gap: 20px;
+    .rent-pg-description, .rent-pg-faq-content p {
+        font-size: 16px !important;
+        line-height: 1.6;
     }
 }
 
 @media (max-width: 425px) {
-    .luxury-hero-slider { height: 100vh; min-height: 650px; }
-    .hero-title { font-size: 40px; }
-    .hero-location { margin-bottom: 30px; }
-    .btn-glass { padding: 14px 30px; }
-    .hero-preview-card { width: 220px; height: 300px; }
-    .hero-nav-arrow { font-size: 30px; }
+    .rent-pg-hero { height: 60vh; }
+    .rent-pg-card-media { height: 220px; }
+    .rent-pg-faq-btn { padding: 25px 20px; }
+    .rent-pg-faq-q { font-size: 1.1rem; }
+    .rent-pg-slide-title { font-size: 40px; }
 }

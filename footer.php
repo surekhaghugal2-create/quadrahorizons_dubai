@@ -12,6 +12,7 @@
         <h1 class="intro-title">Connect <br> <span>With The Brand</span></h1>
     </div>
 
+    
     <div class="split-content-layer">
 
         <div class="split-col-left">
@@ -74,6 +75,8 @@
     </div>
 </section>
 
+
+ 
 <script>
     document.addEventListener("DOMContentLoaded", function() {
         const select = document.getElementById("split-country-select");

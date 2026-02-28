@@ -113,42 +113,42 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 // FAQ JAVAscript
-document.addEventListener('DOMContentLoaded', () => {
+// document.addEventListener('DOMContentLoaded', () => {
     
-    // Select all FAQ items
-    const faqItems = document.querySelectorAll('.faq-item');
+//     // Select all FAQ items
+//     const faqItems = document.querySelectorAll('.faq-item');
 
-    faqItems.forEach(item => {
-        const question = item.querySelector('.faq-question');
-        const answer = item.querySelector('.faq-answer');
-        const icon = item.querySelector('.faq-icon');
+//     faqItems.forEach(item => {
+//         const question = item.querySelector('.faq-question');
+//         const answer = item.querySelector('.faq-answer');
+//         const icon = item.querySelector('.faq-icon');
 
-        question.addEventListener('click', () => {
+//         question.addEventListener('click', () => {
             
-            // Check if this item is already open
-            const isOpen = item.classList.contains('active');
+//             // Check if this item is already open
+//             const isOpen = item.classList.contains('active');
 
-            // 1. Close ALL other items first (Accordion behavior)
-            faqItems.forEach(otherItem => {
-                const otherAnswer = otherItem.querySelector('.faq-answer');
-                const otherIcon = otherItem.querySelector('.faq-icon');
+//             // 1. Close ALL other items first (Accordion behavior)
+//             faqItems.forEach(otherItem => {
+//                 const otherAnswer = otherItem.querySelector('.faq-answer');
+//                 const otherIcon = otherItem.querySelector('.faq-icon');
                 
-                otherItem.classList.remove('active');
-                otherAnswer.style.maxHeight = null; // Collapse
-                otherIcon.textContent = '+'; // Reset icon
-            });
+//                 otherItem.classList.remove('active');
+//                 otherAnswer.style.maxHeight = null; // Collapse
+//                 otherIcon.textContent = '+'; // Reset icon
+//             });
 
-            // 2. If it wasn't open before, open it now
-            if (!isOpen) {
-                item.classList.add('active');
-                answer.style.maxHeight = answer.scrollHeight + "px"; // Expand to exact height
-                icon.textContent = 'x'; // Change icon
-            } 
-            // If it was open, it is now closed (handled by the loop above)
-        });
-    });
+//             // 2. If it wasn't open before, open it now
+//             if (!isOpen) {
+//                 item.classList.add('active');
+//                 answer.style.maxHeight = answer.scrollHeight + "px"; // Expand to exact height
+//                 icon.textContent = 'x'; // Change icon
+//             } 
+//             // If it was open, it is now closed (handled by the loop above)
+//         });
+//     });
 
-});
+// });
 
 
 //footer animation

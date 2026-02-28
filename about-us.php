@@ -151,24 +151,63 @@
 
     </div>
 </section>
-
-
-<!-- what to look  -->
-<section class="dubai-split-section projects-section">
-     <div class="hero-bg">
-        <video autoplay muted loop playsinline>
-            <source src="video/Dubai_Real_Estate_Video_Generated.mp4" type="video/mp4">
-        </video>
-    </div>
-    <div class="hero-overlay"></div>
-    <div class="dubai-container">
+<!-- new section the story  -->
+ <section class="story-scroll-section" id="storyScrollSection">
+    
+    <div class="story-sticky-container">
         
-        <div class="future-card fade-in">
-            <span class="future-sub">What to look forward in</span>
-            <h2 class="future-title">DUBAI</h2>
-            <span class="future-post">For the next 50 years?</span>
+        <div class="story-track" id="storyTrack">
+            
+            <div class="story-slide">
+                <div class="story-left">
+                    <div class="story-content">
+                        <span class="story-subtitle">A Globally Awarded</span>
+                        <h2 class="story-title">VISIONARY</h2>
+                        <p class="story-desc">Binghatti has earned numerous accolades, including the Gulf Real Estate – Best Real Estate Off-Plan Project, MENA Green Building Awards for 2017 and 2018, along with the prestigious Best Real Estate Tycoon Award from Dubai's Land Department.</p>
+                    </div>
+                    <div class="story-year">2020</div>
+                </div>
+                <div class="story-right">
+                    <video autoplay loop muted playsinline class="story-video">
+                        <source src="video/Dubai_Real_Estate_Video_Generated.mp4" type="video/mp4">
+                    </video>
+                </div>
+            </div>
+
+            <div class="story-slide">
+                <div class="story-left">
+                    <div class="story-content">
+                        <span class="story-subtitle">Redefining Luxury</span>
+                        <h2 class="story-title">EXCELLENCE</h2>
+                        <p class="story-desc">Continuing the legacy of groundbreaking architecture, delivering hyper-towers that reshape the Dubai skyline and set new global standards for premium branded residences.</p>
+                    </div>
+                    <div class="story-year">2022</div>
+                </div>
+                <div class="story-right">
+                    <video autoplay loop muted playsinline class="story-video">
+                        <source src="video/Dubai_Real_Estate_Video_Generated.mp4" type="video/mp4">
+                    </video>
+                </div>
+            </div>
+
+            <div class="story-slide">
+                <div class="story-left">
+                    <div class="story-content">
+                        <span class="story-subtitle">The Future Is Here</span>
+                        <h2 class="story-title">INNOVATION</h2>
+                        <p class="story-desc">Partnering with the world's most elite automotive and luxury brands to create architectural masterpieces that defy engineering limitations.</p>
+                    </div>
+                    <div class="story-year">2024</div>
+                </div>
+                <div class="story-right">
+                    <video autoplay loop muted playsinline class="story-video">
+                        <source src="video/Dubai_Real_Estate_Video_Generated.mp4" type="video/mp4">
+                    </video>
+                </div>
+            </div>
+
         </div>
-     </div>
+    </div>
 </section>
 
 
@@ -289,6 +328,193 @@
     </div>
 
 </section>
-<script src="js/about.js"></script>
+
+
+<section class="dubai-horizontal-section">
+    
+    <div class="horizontal-bg-glow"></div>
+
+    <div class="horizontal-container">
+        
+        <div class="horizontal-header-top anim-fade-up scroll-anim">
+            <div class="header-text-col">
+                <span class="horizontal-pre">Discover the Potential</span>
+                <h2 class="horizontal-title">Why Invest In <span class="accent-text">DUBAI?</span></h2>
+                <div class="horizontal-divider"></div>
+            </div>
+            
+            <div class="slider-controls">
+                <button class="slide-btn prev-slide" aria-label="Previous"><i class="fas fa-arrow-left"></i></button>
+                <button class="slide-btn next-slide" aria-label="Next"><i class="fas fa-arrow-right"></i></button>
+            </div>
+        </div>
+
+        <div class="horizontal-track-wrapper anim-fade-up delay-200 scroll-anim">
+            <div class="horizontal-track" id="investSliderTrack">
+                
+                <div class="h-card">
+                    <div class="card-watermark">01</div>
+                    <i class="fas fa-chart-line h-card-icon"></i>
+                    <h3>Strong Rental Market</h3>
+                    <p>High occupancy rates and exceptional rental yields that consistently outperform global averages.</p>
+                </div>
+
+                <div class="h-card">
+                    <div class="card-watermark">02</div>
+                    <i class="fas fa-city h-card-icon"></i>
+                    <h3>World-Class Infrastructure</h3>
+                    <p>Futuristic airports, impeccable road networks, and state-of-the-art public transportation systems.</p>
+                </div>
+
+                <div class="h-card">
+                    <div class="card-watermark">03</div>
+                    <i class="fas fa-percent h-card-icon"></i>
+                    <h3>Ultimate Tax Haven</h3>
+                    <p>Dubai has zero income tax and zero capital gains tax, allowing investors to maximize their wealth entirely.</p>
+                </div>
+
+                <div class="h-card">
+                    <div class="card-watermark">04</div>
+                    <i class="fas fa-shield-alt h-card-icon"></i>
+                    <h3>Safe & Stable</h3>
+                    <p>Driven by proven economic resilience. Dubai has been officially ranked the fourth safest city in the world.</p>
+                </div>
+
+                <div class="h-card">
+                    <div class="card-watermark">05</div>
+                    <i class="fas fa-coins h-card-icon"></i>
+                    <h3>Unmatched ROI</h3>
+                    <p>Benefit from a remarkably high return on investment compared to competing major global real estate markets.</p>
+                </div>
+
+                <div class="h-card">
+                    <div class="card-watermark">06</div>
+                    <i class="fas fa-globe h-card-icon"></i>
+                    <h3>Booming Economy</h3>
+                    <p>A rapidly expanding market driven consistently by booming tourism, global trade, and high finance.</p>
+                </div>
+
+                <div class="h-card feature-h-card">
+                    <div class="card-watermark">07</div>
+                    <i class="fas fa-passport h-card-icon"></i>
+                    <h3>Investor Visa Advantage</h3>
+                    <p>The prestigious 10-Year Golden Visa is granted directly to qualifying property owners, offering long-term residency.</p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+<script>
+/* =========================================
+       3. HORIZONTAL INVEST SLIDER LOGIC (AUTO-ROTATE)
+       ========================================= */
+    const track = document.getElementById('investSliderTrack');
+    const btnPrev = document.querySelector('.prev-slide');
+    const btnNext = document.querySelector('.next-slide');
+
+    if (track) {
+        let autoScrollInterval;
+        const scrollDelay = 3000; // 3 seconds per slide
+
+        // Function to determine how far to scroll based on device size
+        const getScrollAmount = () => track.clientWidth > 768 ? 430 : track.clientWidth * 0.85 + 15;
+
+        // Function to move to the next slide
+        const scrollNext = () => {
+            // If we have reached the end of the scrollable area, go back to the start
+            if (track.scrollLeft + track.clientWidth >= track.scrollWidth - 10) {
+                track.scrollTo({ left: 0, behavior: 'smooth' });
+            } else {
+                track.scrollBy({ left: getScrollAmount(), behavior: 'smooth' });
+            }
+        };
+
+        // Start the automatic rotation
+        const startAutoScroll = () => {
+            autoScrollInterval = setInterval(scrollNext, scrollDelay);
+        };
+
+        // Stop the automatic rotation
+        const stopAutoScroll = () => {
+            clearInterval(autoScrollInterval);
+        };
+
+        // --- BUTTON CLICKS ---
+        if (btnNext) {
+            btnNext.addEventListener('click', () => {
+                stopAutoScroll(); // Pause timer on manual click
+                scrollNext();
+                startAutoScroll(); // Restart timer
+            });
+        }
+
+        if (btnPrev) {
+            btnPrev.addEventListener('click', () => {
+                stopAutoScroll();
+                track.scrollBy({ left: -getScrollAmount(), behavior: 'smooth' });
+                startAutoScroll();
+            });
+        }
+
+        // --- HOVER & TOUCH PAUSE LOGIC ---
+        // Desktop Hover
+        track.addEventListener('mouseenter', stopAutoScroll);
+        track.addEventListener('mouseleave', startAutoScroll);
+        
+        // Mobile Touch
+        track.addEventListener('touchstart', stopAutoScroll, { passive: true });
+        track.addEventListener('touchend', startAutoScroll);
+
+        // Start the auto-scroll when the page loads
+        startAutoScroll();
+    }
+
+    //horizontal
+    /* =========================================
+   4. HORIZONTAL SCROLL ON VERTICAL SCROLL LOGIC
+   ========================================= */
+document.addEventListener("DOMContentLoaded", function() {
+    
+    const scrollSection = document.getElementById('storyScrollSection');
+    const track = document.getElementById('storyTrack');
+
+    if (scrollSection && track) {
+        let isScrolling = false;
+
+        window.addEventListener('scroll', () => {
+            if (!isScrolling) {
+                window.requestAnimationFrame(() => {
+                    
+                    // Get the position of the section relative to the window
+                    const offsetTop = scrollSection.offsetTop;
+                    const scrollY = window.scrollY;
+                    const sectionHeight = scrollSection.offsetHeight;
+                    const windowHeight = window.innerHeight;
+
+                    // Calculate how far down the user has scrolled within this specific section
+                    let progress = (scrollY - offsetTop) / (sectionHeight - windowHeight);
+                    
+                    // Lock the progress between 0 (start) and 1 (end)
+                    progress = Math.max(0, Math.min(1, progress));
+
+                    // Calculate how far left the track needs to slide
+                    const maxScroll = track.scrollWidth - window.innerWidth;
+                    
+                    // Apply the translation
+                    track.style.transform = `translateX(-${progress * maxScroll}px)`;
+
+                    isScrolling = false;
+                });
+                isScrolling = true;
+            }
+        });
+    }
+});
+</script>
 
 <?php include 'footer.php'; ?>
