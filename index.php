@@ -628,8 +628,56 @@ document.addEventListener("DOMContentLoaded", function() {
         });
     });
 });
+
+// =======================================================
+//    ULTRA-SMOOTH LUXURY HERO SLIDER
+//    =======================================================
+document.addEventListener("DOMContentLoaded", function() {
+    const slides = document.querySelectorAll('.hero-slide');
+    // Select ALL next and prev arrows since they are inside the slides now
+    const nextBtns = document.querySelectorAll('.next-arrow');
+    const prevBtns = document.querySelectorAll('.prev-arrow');
+    
+    let currentSlide = 0;
+    let isAnimating = false;
+
+    function goToSlide(index) {
+        if (isAnimating) return;
+        isAnimating = true;
+
+        slides[currentSlide].classList.remove('active');
+
+        currentSlide = index;
+
+        // Loop back around
+        if (currentSlide >= slides.length) {
+            currentSlide = 0;
+        } else if (currentSlide < 0) {
+            currentSlide = slides.length - 1;
+        }
+
+        slides[currentSlide].classList.add('active');
+
+        // Prevent clicking again until the ultra-smooth animation finishes
+        setTimeout(() => {
+            isAnimating = false;
+        }, 1200); 
+    }
+
+    // Attach click events to EVERY arrow button
+    nextBtns.forEach(btn => {
+        btn.addEventListener('click', () => goToSlide(currentSlide + 1));
+    });
+
+    prevBtns.forEach(btn => {
+        btn.addEventListener('click', () => goToSlide(currentSlide - 1));
+    });
+});
 </script>
 
+<!-- =======================================================
+   ULTRA-SMOOTH LUXURY HERO SLIDER
+   ======================================================= -->
 <section class="design-section">
     <div class="design-content">
         <h1>Life at the Soul of the City</h1>
@@ -639,6 +687,59 @@ document.addEventListener("DOMContentLoaded", function() {
         </p>
     </div>
 </section>
+
+<section class="luxury-hero-slider">
+    
+    <div class="hero-slide active">
+        <img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=1920&q=80" alt="Etherea Interior" class="hero-bg-img">
+        <div class="hero-overlay"></div>
+        
+        <div class="hero-content-wrapper">
+            <div class="hero-text-col">
+                <span class="hero-brand">BINGHATTI</span>
+                <h1 class="hero-title">ETHEREA</h1>
+                <p class="hero-location">Jumeirah Village Circle</p>
+                <a href="#collection" class="btn-glass">Discover The Collection</a>
+            </div>
+            
+            <div class="hero-preview-col">
+                <button class="hero-nav-arrow prev-arrow"><i class="fas fa-chevron-left"></i></button>
+                
+                <div class="hero-preview-card">
+                    <img src="https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&fit=crop&w=600&q=80" alt="Etherea Exterior Render" class="hero-preview-img">
+                </div>
+                
+                <button class="hero-nav-arrow next-arrow"><i class="fas fa-chevron-right"></i></button>
+            </div>
+        </div>
+    </div>
+
+    <div class="hero-slide">
+        <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1920&q=80" alt="Mercedes Benz Places" class="hero-bg-img">
+        <div class="hero-overlay"></div>
+        
+        <div class="hero-content-wrapper">
+            <div class="hero-text-col">
+                <span class="hero-brand">BINGHATTI</span>
+                <h1 class="hero-title">MERCEDES-BENZ PLACES</h1>
+                <p class="hero-location">Downtown Dubai</p>
+                <a href="#collection" class="btn-glass">Discover The Collection</a>
+            </div>
+            
+            <div class="hero-preview-col">
+                <button class="hero-nav-arrow prev-arrow"><i class="fas fa-chevron-left"></i></button>
+                
+                <div class="hero-preview-card">
+                    <img src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=600&q=80" alt="Mercedes Benz Places Exterior" class="hero-preview-img">
+                </div>
+                
+                <button class="hero-nav-arrow next-arrow"><i class="fas fa-chevron-right"></i></button>
+            </div>
+        </div>
+    </div>
+
+</section>
+
 
 
 <?php include 'footer.php'; ?>

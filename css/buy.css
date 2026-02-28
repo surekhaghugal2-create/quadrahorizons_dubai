@@ -397,6 +397,11 @@ body {
 .arrow-icon {
   font-size: 20px;
   color: var(--gold);
+  transition: 0.3s;
+}
+
+.project-card:hover .arrow-icon {
+    transform: rotate(-45deg);
 }
 
 /* Responsive */
