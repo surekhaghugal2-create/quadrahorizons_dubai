@@ -6,7 +6,7 @@
         <source src="video/Dubai_Real_Estate_Video_Generated.mp4" type="video/mp4">
     </video>
     <div class="contact-hero-overlay"></div>
-    
+
     <div class="contact-hero-content slide-in-left">
         <h1 class="hero-heading-line">Contact Us</h1>
         <p>Your Gateway to Luxury Living</p>
@@ -14,12 +14,12 @@
 </section>
 
 <section class="contact-main-wrapper">
-    
+
     <div class="contact-details slide-in-left scroll-anim delay-100">
         <h2 class="heading-line">Get In <span>Touch</span></h2>
-        
+
         <p class="contact-desc">
-            Whether you are buying, selling, or looking for property management, 
+            Whether you are buying, selling, or looking for property management,
             our team of experts is ready to assist you in Dubai's most prestigious locations.
         </p>
 
@@ -33,7 +33,7 @@
             <div class="detail-value"><a href="tel:+971501234567">+971 50 123 4567</a></div>
         </div>
 
-        <div class="detail-box"> 
+        <div class="detail-box">
             <span class="detail-label">Email Us</span>
             <div class="detail-value" style="font-size: 20px;">
                 <a href="mailto:info@quadrahorizon.com">info@quadrahorizon.com</a>
@@ -48,7 +48,7 @@
     </div>
 
     <div class="contact-form-box fade-in-up scroll-anim delay-200">
-        <form action="send-mail2.php" method="POST">
+        <!-- <form action="send-mail2.php" method="POST">
             <div class="c-form-group">
                 <label class="c-label">Full Name</label>
                 <input type="text" class="c-input" placeholder="Your Name" name="name">
@@ -61,12 +61,121 @@
                 <label class="c-label">Phone Number</label>
                 <input type="tel" class="c-input" placeholder="+971 ..." name="contact">
             </div>
+         
+            <div class="c-form-group">
+                <label class="c-label">Select Date</label>
+                <input type="date" class="c-input" name="schedule_date" required>
+            </div>
+
+    
+            <div class="c-form-group">
+                <label class="c-label">Select Time</label>
+                <select class="c-input" name="schedule_time" required>
+                    <option value="">Choose Time</option>
+                    <option>09:00 AM</option>
+                    <option>10:00 AM</option>
+                    <option>11:00 AM</option>
+                    <option>12:00 PM</option>
+                    <option>01:00 PM</option>
+                    <option>02:00 PM</option>
+                    <option>03:00 PM</option>
+                    <option>04:00 PM</option>
+                    <option>05:00 PM</option>
+                    <option>06:00 PM</option>
+                </select>
+            </div>
+
+         
+            <div class="c-form-group">
+                <label class="c-label">Preferred Location</label>
+                <input type="text" class="c-input" placeholder="Enter Property Location" name="location" required>
+            </div>
+            <div class="c-form-group">
+                <label class="c-label">Select Property</label>
+                <select class="c-input" name="property" required>
+                    <option value="">Choose Property</option>
+                    <option value="Downtown Residence">Downtown Residence</option>
+                    <option value="Palm Luxury Villa">Palm Luxury Villa</option>
+                    <option value="Dubai Marina Heights">Dubai Marina Heights</option>
+                    <option value="Business Bay Tower">Business Bay Tower</option>
+                    <option value="JBR Beachfront Apartment">JBR Beachfront Apartment</option>
+                </select>
+            </div>
             <div class="c-form-group">
                 <label class="c-label">Message</label>
                 <textarea class="c-input" rows="4" style="resize: none;" placeholder="How can we help?" name="message"></textarea>
             </div>
             <button type="submit" class="c-btn">Send Request</button>
-        </form>
+        </form> -->
+        <form action="send-mail2.php" method="POST" class="c-form-grid">
+
+    <div class="c-form-group">
+        <label class="c-label">Full Name</label>
+        <input type="text" class="c-input" placeholder="Your Name" name="name">
+    </div>
+
+    <div class="c-form-group">
+        <label class="c-label">Email Address</label>
+        <input type="email" class="c-input" placeholder="name@example.com" name="email">
+    </div>
+
+    <div class="c-form-group">
+        <label class="c-label">Phone Number</label>
+        <input type="tel" class="c-input" placeholder="+971 ..." name="contact">
+    </div>
+
+    <div class="c-form-group">
+        <label class="c-label">Select Date</label>
+        <input type="date" class="c-input" name="schedule_date" required>
+    </div>
+
+    <div class="c-form-group">
+        <label class="c-label">Select Time</label>
+        <select class="c-input" name="schedule_time" required>
+            <option value="">Choose Time</option>
+            <option>09:00 AM</option>
+            <option>10:00 AM</option>
+            <option>11:00 AM</option>
+            <option>12:00 PM</option>
+            <option>01:00 PM</option>
+            <option>02:00 PM</option>
+            <option>03:00 PM</option>
+            <option>04:00 PM</option>
+            <option>05:00 PM</option>
+            <option>06:00 PM</option>
+        </select>
+    </div>
+
+    <div class="c-form-group">
+        <label class="c-label">Preferred Location</label>
+        <input type="text" class="c-input" placeholder="Enter Property Location" name="location">
+    </div>
+
+    <div class="c-form-group full-width">
+        <label class="c-label">Select Property</label>
+        <select class="c-input" name="property">
+            <option value="">Choose Property</option>
+            <option>Downtown Residence</option>
+            <option>Palm Luxury Villa</option>
+            <option>Dubai Marina Heights</option>
+            <option>Business Bay Tower</option>
+            <option>JBR Beachfront Apartment</option>
+        </select>
+    </div>
+
+    <!-- MESSAGE FULL WIDTH -->
+    <div class="c-form-group full-width">
+        <label class="c-label">Message</label>
+        <textarea class="c-input" rows="3" style="resize: none;" 
+        placeholder="How can we help?" name="message"></textarea>
+    </div>
+
+    <!-- BUTTON FULL WIDTH -->
+    <div class="full-width">
+        <button type="submit" class="c-btn">Send Request</button>
+    </div>
+
+</form>
     </div>
 
 </section>
@@ -76,3 +185,27 @@
 </div>
 
 <?php include 'footer.php'; ?>
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+
+        const dateInput = document.querySelector('input[name="schedule_date"]');
+
+        if (dateInput) {
+
+            // Set minimum date = today
+            const today = new Date().toISOString().split("T")[0];
+            dateInput.setAttribute("min", today);
+
+            // AUTO OPEN CALENDAR ON CLICK
+            dateInput.addEventListener("focus", function() {
+                this.showPicker(); // Modern browsers support this
+            });
+
+            // Optional: Auto open when page loads
+            setTimeout(() => {
+                dateInput.showPicker();
+            }, 1000);
+        }
+
+    });
+</script>

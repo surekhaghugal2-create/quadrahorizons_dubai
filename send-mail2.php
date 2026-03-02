@@ -13,8 +13,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $email = $_POST['email'];
     $contact = $_POST['contact'];
     $message = $_Post['message'];
-    $meeting_date = $_POST['meeting_date'];
-    $meeting_time = $_POST['meeting_time'];
+    $schedule_date = $_POST['schedule_date'];
+    $schedule_time = $_POST['schedule_time'];
     $location = $_POST['location'];
 
     $mail = new PHPMailer(true);
@@ -44,7 +44,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             <b>Contact:</b> $contact <br>
             <b>Message:</b> $message<br>
              <b>meeting_date:</b> $meeting_date<br>
-            <b>meeting_time:</b> $meeting_time<br>
+            <b>schedule_time:</b> $schedule_time<br>
             <b>location:</b> $location<br>
         ";
 
