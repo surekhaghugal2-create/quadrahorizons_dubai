@@ -182,7 +182,7 @@ img { max-width: 100%; display: block; }
 .info-wrapper {
     background-color: var(--darker);
     background-image: repeating-linear-gradient(45deg, rgba(255,255,255,0.01) 0px, rgba(255,255,255,0.01) 1px, transparent 1px, transparent 20px);
-    padding: 100px 5%;
+    padding: 50px 5%;
 }
 
 .content-block {
@@ -266,7 +266,7 @@ ul.luxury-list li::before {
    ========================================= */
 /* --- FAQ CONTAINER --- */
 .faq-section {
-    padding: 100px 5%;
+    padding: 50px 5%;
     /* background-color: #0A1120; */
     background-color: #000;
     /* Dark Background */
