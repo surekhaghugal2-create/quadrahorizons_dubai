@@ -477,7 +477,7 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
     }, observerOptions);
-
+});
 // =======================================================
 //    ULTRA-SMOOTH LUXURY HERO SLIDER
 //    =======================================================
@@ -586,7 +586,7 @@ document.addEventListener("DOMContentLoaded", function() {
 <!-- =======================================================
    ULTRA-SMOOTH LUXURY HERO SLIDER
    ======================================================= -->
-<section class="design-section">
+<!-- <section class="design-section">
     <div class="design-content">
         <h1>Life at the Soul of the City</h1>
         <p>
@@ -594,7 +594,7 @@ document.addEventListener("DOMContentLoaded", function() {
             a constant presence that defines the city's soul.
         </p>
     </div>
-</section>
+</section> -->
 
 <section class="luxury-hero-slider">
     
