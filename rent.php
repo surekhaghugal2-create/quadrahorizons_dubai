@@ -33,209 +33,208 @@
         </div>
     </section>
 
-    <section class="rent-pg-projects">
-        <div class="rent-pg-grid">
-            
-            <article class="rent-pg-card js-reveal">
-                <div class="rent-pg-card-badge">Exclusive</div>
-                <div class="rent-pg-card-media">
-                    <img src="image/mbp-bc-hero-banner.webp" alt="Mercedes-Benz Places">
-                </div>
-                <div class="rent-pg-card-body">
-                    <h3 class="rent-pg-card-title">Mercedes-Benz Places Binghatti City</h3>
-                    <p class="rent-pg-card-loc"><i class="fas fa-map-marker-alt"></i> Nad Al Sheba</p>
-                    <div class="rent-pg-card-footer">
-                        <div class="rent-pg-price-box">
-                            <span class="rent-pg-label">FROM</span>
-                            <span class="rent-pg-value">AED 1M</span>
-                        </div>
-                        <button class="rent-pg-circle-btn"><i class="fas fa-arrow-right"></i></button>
+    <!-- project -->
+<section class="projects-section">
+    <div class="grid-container">
+        <div class="project-card reveal">
+            <span class="exclusive-tag">Exclusive</span>
+            <div class="card-img-wrap">
+                <img src="image/mbp-bc-hero-banner.webp">
+            </div>
+            <div class="card-content">
+                <h3>Mercedes-Benz Places Binghatti City</h3>
+                <span class="location"><i class="fas fa-map-marker-alt"></i> Nad al sheba</span>
+                <div class="price-row">
+                    <div>
+                        <span class="price-label">FROM</span>
+                        <div class="price-value">AED 1M</div>
                     </div>
+                    <i class="fas fa-arrow-circle-down arrow-icon"></i>
                 </div>
-            </article>
-
-            <article class="rent-pg-card js-reveal">
-                <div class="rent-pg-card-badge">Exclusive</div>
-                <div class="rent-pg-card-media">
-                    <img src="image/binghatti-etheria-hero-banner.avif" alt="Binghatti Etherea">
-                </div>
-                <div class="rent-pg-card-body">
-                    <h3 class="rent-pg-card-title">Binghatti Etherea</h3>
-                    <p class="rent-pg-card-loc"><i class="fas fa-map-marker-alt"></i> Jumeirah Village Circle</p>
-                    <div class="rent-pg-card-footer">
-                        <div class="rent-pg-price-box">
-                            <span class="rent-pg-label">FROM</span>
-                            <span class="rent-pg-value">AED 5M</span>
-                        </div>
-                        <button class="rent-pg-circle-btn"><i class="fas fa-arrow-right"></i></button>
-                    </div>
-                </div>
-            </article>
-
-            <article class="rent-pg-card js-reveal">
-                <div class="rent-pg-card-badge">New Launch</div>
-                <div class="rent-pg-card-media">
-                    <img src="image/binghatti-skyterraces-hero-banner.avif" alt="Binghatti Skyterraces">
-                </div>
-                <div class="rent-pg-card-body">
-                    <h3 class="rent-pg-card-title">Binghatti Skyterraces</h3>
-                    <p class="rent-pg-card-loc"><i class="fas fa-map-marker-alt"></i> Motor City</p>
-                    <div class="rent-pg-card-footer">
-                        <div class="rent-pg-price-box">
-                            <span class="rent-pg-label">FROM</span>
-                            <span class="rent-pg-value">AED 19M</span>
-                        </div>
-                        <button class="rent-pg-circle-btn"><i class="fas fa-arrow-right"></i></button>
-                    </div>
-                </div>
-            </article>
-
-            <article class="rent-pg-card js-reveal">
-                <div class="rent-pg-card-badge">Exclusive</div>
-                <div class="rent-pg-card-media">
-                    <img src="image/binghatti-luxuria-hero-banner.avif" alt="Binghatti Luxuria">
-                </div>
-                <div class="rent-pg-card-body">
-                    <h3 class="rent-pg-card-title">Binghatti Luxuria</h3>
-                    <p class="rent-pg-card-loc"><i class="fas fa-map-marker-alt"></i> Jumeirah Village Triangle</p>
-                    <div class="rent-pg-card-footer">
-                        <div class="rent-pg-price-box">
-                            <span class="rent-pg-label">FROM</span>
-                            <span class="rent-pg-value">AED 2.5M</span>
-                        </div>
-                        <button class="rent-pg-circle-btn"><i class="fas fa-arrow-right"></i></button>
-                    </div>
-                </div>
-            </article>
-
-            <article class="rent-pg-card js-reveal">
-                <div class="rent-pg-card-badge">Selling Fast</div>
-                <div class="rent-pg-card-media">
-                    <img src="image/binghatti-cullinan-hero-banner.avif" alt="Binghatti Cullinan">
-                </div>
-                <div class="rent-pg-card-body">
-                    <h3 class="rent-pg-card-title">Binghatti Cullinan</h3>
-                    <p class="rent-pg-card-loc"><i class="fas fa-map-marker-alt"></i> Al Jaddaf</p>
-                    <div class="rent-pg-card-footer">
-                        <div class="rent-pg-price-box">
-                            <span class="rent-pg-label">FROM</span>
-                            <span class="rent-pg-value">AED 45M</span>
-                        </div>
-                        <button class="rent-pg-circle-btn"><i class="fas fa-arrow-right"></i></button>
-                    </div>
-                </div>
-            </article>
-
-            <article class="rent-pg-card js-reveal">
-                <div class="rent-pg-card-badge">Exclusive</div>
-                <div class="rent-pg-card-media">
-                    <img src="image/binghatti-hillcrest-hero-banner.avif" alt="Binghatti Hillcrest">
-                </div>
-                <div class="rent-pg-card-body">
-                    <h3 class="rent-pg-card-title">Binghatti Hillcrest</h3>
-                    <p class="rent-pg-card-loc"><i class="fas fa-map-marker-alt"></i> Arjan</p>
-                    <div class="rent-pg-card-footer">
-                        <div class="rent-pg-price-box">
-                            <span class="rent-pg-label">FROM</span>
-                            <span class="rent-pg-value">AED 3.2M</span>
-                        </div>
-                        <button class="rent-pg-circle-btn"><i class="fas fa-arrow-right"></i></button>
-                    </div>
-                </div>
-            </article>
-
-            <article class="rent-pg-card js-reveal">
-                <div class="rent-pg-card-badge">Exclusive</div>
-                <div class="rent-pg-card-media">
-                    <img src="image/binghatti-titania-hero-banner-1.avif" alt="Binghatti Titania">
-                </div>
-                <div class="rent-pg-card-body">
-                    <h3 class="rent-pg-card-title">Binghatti Titania</h3>
-                    <p class="rent-pg-card-loc"><i class="fas fa-map-marker-alt"></i> Majan</p>
-                    <div class="rent-pg-card-footer">
-                        <div class="rent-pg-price-box">
-                            <span class="rent-pg-label">FROM</span>
-                            <span class="rent-pg-value">AED 3.2M</span>
-                        </div>
-                        <button class="rent-pg-circle-btn"><i class="fas fa-arrow-right"></i></button>
-                    </div>
-                </div>
-            </article>
-
-            <article class="rent-pg-card js-reveal">
-                <div class="rent-pg-card-badge">Exclusive</div>
-                <div class="rent-pg-card-media">
-                    <img src="image/binghatti-vintage-hero-banner.avif" alt="Binghatti Vintage">
-                </div>
-                <div class="rent-pg-card-body">
-                    <h3 class="rent-pg-card-title">Binghatti Vintage</h3>
-                    <p class="rent-pg-card-loc"><i class="fas fa-map-marker-alt"></i> Majan</p>
-                    <div class="rent-pg-card-footer">
-                        <div class="rent-pg-price-box">
-                            <span class="rent-pg-label">FROM</span>
-                            <span class="rent-pg-value">AED 3.2M</span>
-                        </div>
-                        <button class="rent-pg-circle-btn"><i class="fas fa-arrow-right"></i></button>
-                    </div>
-                </div>
-            </article>
-
-            <article class="rent-pg-card js-reveal">
-                <div class="rent-pg-card-badge">Exclusive</div>
-                <div class="rent-pg-card-media">
-                    <img src="image/binghatti-pinnacle-hero-banner.avif" alt="Binghatti Pinnacle">
-                </div>
-                <div class="rent-pg-card-body">
-                    <h3 class="rent-pg-card-title">Binghatti Pinnacle</h3>
-                    <p class="rent-pg-card-loc"><i class="fas fa-map-marker-alt"></i> Al Jaddaf</p>
-                    <div class="rent-pg-card-footer">
-                        <div class="rent-pg-price-box">
-                            <span class="rent-pg-label">FROM</span>
-                            <span class="rent-pg-value">AED 3.2M</span>
-                        </div>
-                        <button class="rent-pg-circle-btn"><i class="fas fa-arrow-right"></i></button>
-                    </div>
-                </div>
-            </article>
-
-            <article class="rent-pg-card js-reveal">
-                <div class="rent-pg-card-badge">Exclusive</div>
-                <div class="rent-pg-card-media">
-                    <img src="image/Mercedes-Benz Places Binghatti City.png" alt="Mercedes-Benz Places By Binghatti">
-                </div>
-                <div class="rent-pg-card-body">
-                    <h3 class="rent-pg-card-title">Mercedes-Benz Places | By Binghatti</h3>
-                    <p class="rent-pg-card-loc"><i class="fas fa-map-marker-alt"></i> Business Bay</p>
-                    <div class="rent-pg-card-footer">
-                        <div class="rent-pg-price-box">
-                            <span class="rent-pg-label">FROM</span>
-                            <span class="rent-pg-value">AED 3.2M</span>
-                        </div>
-                        <button class="rent-pg-circle-btn"><i class="fas fa-arrow-right"></i></button>
-                    </div>
-                </div>
-            </article>
-
-            <article class="rent-pg-card js-reveal">
-                <div class="rent-pg-card-badge">Exclusive</div>
-                <div class="rent-pg-card-media">
-                    <img src="image/binghatti-amberhall-hero-banner.webp" alt="Binghatti Amberhall">
-                </div>
-                <div class="rent-pg-card-body">
-                    <h3 class="rent-pg-card-title">Binghatti Amberhall</h3>
-                    <p class="rent-pg-card-loc"><i class="fas fa-map-marker-alt"></i> JVC</p>
-                    <div class="rent-pg-card-footer">
-                        <div class="rent-pg-price-box">
-                            <span class="rent-pg-label">FROM</span>
-                            <span class="rent-pg-value">AED 3.2M</span>
-                        </div>
-                        <button class="rent-pg-circle-btn"><i class="fas fa-arrow-right"></i></button>
-                    </div>
-                </div>
-            </article>
-
+            </div>
         </div>
-    </section>
+
+        <div class="project-card reveal" style="transition-delay: 0.1s">
+            <span class="exclusive-tag">Exclusive</span>
+            <div class="card-img-wrap">
+                <img src="image/binghatti-etheria-hero-banner.avif" alt="Project">
+            </div>
+            <div class="card-content">
+                <h3>Binghatti Etherea</h3>
+                <span class="location"><i class="fas fa-map-marker-alt"></i> Jumeirah Village Circle</span>
+                <div class="price-row">
+                    <div>
+                        <span class="price-label">FROM</span>
+                        <div class="price-value">AED 2.5M</div>
+                    </div>
+                    <i class="fas fa-arrow-circle-down arrow-icon"></i>
+                </div>
+            </div>
+        </div>
+
+        <div class="project-card reveal" style="transition-delay: 0.2s">
+            <span class="exclusive-tag">New Launch</span>
+            <div class="card-img-wrap">
+                <img src="image/binghatti-skyterraces-hero-banner.avif">
+            </div>
+            <div class="card-content">
+                <h3>Binghatti Skyterraces</h3>
+                <span class="location"><i class="fas fa-map-marker-alt"></i> Motor City</span>
+                <div class="price-row">
+                    <div>
+                        <span class="price-label">FROM</span>
+                        <div class="price-value">AED 2M</div>
+                    </div>
+                    <i class="fas fa-arrow-circle-down arrow-icon"></i>
+                </div>
+            </div>
+        </div>
+
+        <div class="project-card reveal">
+            <span class="exclusive-tag">Exclusive</span>
+            <div class="card-img-wrap">
+                <img src="image/binghatti-luxuria-hero-banner.avif">
+            </div>
+            <div class="card-content">
+                <h3>Binghatti Luxuria</h3>
+                <span class="location"><i class="fas fa-map-marker-alt"></i> Jumeirah Village Triangle</span>
+                <div class="price-row">
+                    <div>
+                        <span class="price-label">FROM</span>
+                        <div class="price-value">AED 2.5M</div>
+                    </div>
+                    <i class="fas fa-arrow-circle-down arrow-icon"></i>
+                </div>
+            </div>
+        </div>
+
+        <div class="project-card reveal" style="transition-delay: 0.1s">
+            <span class="exclusive-tag">Selling Fast</span>
+            <div class="card-img-wrap">
+                <img src="image/binghatti-cullinan-hero-banner.avif" alt="Project">
+            </div>
+            <div class="card-content">
+                <h3>Binghatti Cullinan</h3>
+                <span class="location"><i class="fas fa-map-marker-alt"></i> Al Jaddaf</span>
+                <div class="price-row">
+                    <div>
+                        <span class="price-label">FROM</span>
+                        <div class="price-value">AED 1.5M</div>
+                    </div>
+                    <i class="fas fa-arrow-circle-down arrow-icon"></i>
+                </div>
+            </div>
+        </div>
+
+        <div class="project-card reveal" style="transition-delay: 0.2s">
+            <span class="exclusive-tag">Exclusive</span>
+            <div class="card-img-wrap">
+                <img src="image/binghatti-hillcrest-hero-banner.avif" alt="Project">
+            </div>
+            <div class="card-content">
+                <h3>Binghatti Hillcrest</h3>
+                <span class="location"><i class="fas fa-map-marker-alt"></i> Arjan</span>
+                <div class="price-row">
+                    <div>
+                        <span class="price-label">FROM</span>
+                        <div class="price-value">AED 1.3M</div>
+                    </div>
+                    <i class="fas fa-arrow-circle-down arrow-icon"></i>
+                </div>
+            </div>
+        </div>
+
+        <div class="project-card reveal" style="transition-delay: 0.2s">
+            <span class="exclusive-tag">Exclusive</span>
+            <div class="card-img-wrap">
+                <img src="image/binghatti-titania-hero-banner-1.avif" alt="Project">
+            </div>
+            <div class="card-content">
+                <h3>Binghatti Titania</h3>
+                <span class="location"><i class="fas fa-map-marker-alt"></i> Majan</span>
+                <div class="price-row">
+                    <div>
+                        <span class="price-label">FROM</span>
+                        <div class="price-value">AED 1.7M</div>
+                    </div>
+                    <i class="fas fa-arrow-circle-down arrow-icon"></i>
+                </div>
+            </div>
+        </div>
+
+        <div class="project-card reveal" style="transition-delay: 0.2s">
+            <span class="exclusive-tag">Exclusive</span>
+            <div class="card-img-wrap">
+                <img src="image/binghatti-vintage-hero-banner.avif" alt="Project">
+            </div>
+            <div class="card-content">
+                <h3>Binghatti Vintage</h3>
+                <span class="location"><i class="fas fa-map-marker-alt"></i> Majan</span>
+                <div class="price-row">
+                    <div>
+                        <span class="price-label">FROM</span>
+                        <div class="price-value">AED 3M</div>
+                    </div>
+                    <i class="fas fa-arrow-circle-down arrow-icon"></i>
+                </div>
+            </div>
+        </div>
+
+        <div class="project-card reveal" style="transition-delay: 0.2s">
+            <span class="exclusive-tag">Exclusive</span>
+            <div class="card-img-wrap">
+                <img src="image/binghatti-pinnacle-hero-banner.avif" alt="Project">
+            </div>
+            <div class="card-content">
+                <h3>Binghatti Pinnacle</h3>
+                <span class="location"><i class="fas fa-map-marker-alt"></i> Al Jaddaf</span>
+                <div class="price-row">
+                    <div>
+                        <span class="price-label">FROM</span>
+                        <div class="price-value">AED 1.5M</div>
+                    </div>
+                    <i class="fas fa-arrow-circle-down arrow-icon"></i>
+                </div>
+            </div>
+        </div>
+
+        <div class="project-card reveal" style="transition-delay: 0.2s">
+            <span class="exclusive-tag">Exclusive</span>
+            <div class="card-img-wrap">
+                <img src="image/Mercedes-Benz Places Binghatti City.png" alt="Project">
+            </div>
+            <div class="card-content">
+                <h3>Mercedes-Benz Places | By Binghatti</h3>
+                <span class="location"><i class="fas fa-map-marker-alt"></i> Business Bay</span>
+                <div class="price-row">
+                    <div>
+                        <span class="price-label">FROM</span>
+                        <div class="price-value">AED 2.2M</div>
+                    </div>
+                    <i class="fas fa-arrow-circle-down arrow-icon"></i>
+                </div>
+            </div>
+        </div>
+
+        <div class="project-card reveal" style="transition-delay: 0.2s">
+            <span class="exclusive-tag">Exclusive</span>
+            <div class="card-img-wrap">
+                <img src="image/binghatti-amberhall-hero-banner.webp" alt="Project">
+            </div>
+            <div class="card-content">
+                <h3>Binghatti Amberhall</h3>
+                <span class="location"><i class="fas fa-map-marker-alt"></i> JVC</span>
+                <div class="price-row">
+                    <div>
+                        <span class="price-label">FROM</span>
+                        <div class="price-value">AED 2M</div>
+                    </div>
+                    <i class="fas fa-arrow-circle-down arrow-icon"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 
 
     <!-- FAQ SECTION -->
@@ -243,6 +242,7 @@
             <video class="faq-bg-media" autoplay loop muted playsinline>
         <source src="video/background (1).mp4 " type="video/mp4">
     </video> 
+    
     
     <div class="faq-bg-overlay"></div>
         <div class="rent-pg-faq-container">
@@ -331,53 +331,6 @@
         </div>
     </section>
 
-    <section class="rent-pg-slider">
-        <div class="rent-pg-slide active">
-            <img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=1920&q=80" alt="Etherea Interior" class="rent-pg-slide-bg">
-            <div class="rent-pg-slide-overlay"></div>
-            
-            <div class="rent-pg-slide-content">
-                <div class="rent-pg-slide-info">
-                    <span class="rent-pg-brand-tag">BINGHATTI</span>
-                    <h2 class="rent-pg-slide-title">ETHEREA</h2>
-                    <p class="rent-pg-slide-loc">Jumeirah Village Circle</p>
-                    <a href="#" class="rent-pg-btn-luxury">Discover The Collection</a>
-                </div>
-                
-                <div class="rent-pg-slide-visual">
-                    <button class="rent-pg-nav-btn prev-btn"><i class="fas fa-chevron-left"></i></button>
-                    <div class="rent-pg-mini-preview">
-                        <img src="https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&fit=crop&w=600&q=80" alt="Preview">
-                    </div>
-                    <button class="rent-pg-nav-btn next-btn"><i class="fas fa-chevron-right"></i></button>
-                </div>
-            </div>
-        </div>
-
-        <div class="rent-pg-slide">
-            <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1920&q=80" alt="Mercedes Benz Places" class="rent-pg-slide-bg">
-            <div class="rent-pg-slide-overlay"></div>
-            
-            <div class="rent-pg-slide-content">
-                <div class="rent-pg-slide-info">
-                    <span class="rent-pg-brand-tag">BINGHATTI</span>
-                    <h2 class="rent-pg-slide-title">MERCEDES-BENZ PLACES</h2>
-                    <p class="rent-pg-slide-loc">Downtown Dubai</p>
-                    <a href="#" class="rent-pg-btn-luxury">Discover The Collection</a>
-                </div>
-                
-                <div class="rent-pg-slide-visual">
-                    <button class="rent-pg-nav-btn prev-btn"><i class="fas fa-chevron-left"></i></button>
-                    <div class="rent-pg-mini-preview">
-                        <img src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=600&q=80" alt="Preview">
-                    </div>
-                    <button class="rent-pg-nav-btn next-btn"><i class="fas fa-chevron-right"></i></button>
-                </div>
-            </div>
-        </div>
-    </section>
-</div>
-
 <script>
 document.addEventListener('DOMContentLoaded', () => {
     // 1. FAQ Accordion Logic
@@ -401,28 +354,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }, observerOptions);
 
-    document.querySelectorAll('.js-reveal').forEach(el => revealObserver.observe(el));
-
-    // 3. Slider Logic
-    const slides = document.querySelectorAll('.rent-pg-slide');
-    const nextBtns = document.querySelectorAll('.next-btn');
-    const prevBtns = document.querySelectorAll('.prev-btn');
-    let currentSlide = 0;
-    let isAnimating = false;
-
-    function updateSlide(index) {
-        if (isAnimating) return;
-        isAnimating = true;
-        
-        slides[currentSlide].classList.remove('active');
-        currentSlide = (index + slides.length) % slides.length;
-        slides[currentSlide].classList.add('active');
-
-        setTimeout(() => { isAnimating = false; }, 1000);
-    }
-
-    nextBtns.forEach(btn => btn.addEventListener('click', () => updateSlide(currentSlide + 1)));
-    prevBtns.forEach(btn => btn.addEventListener('click', () => updateSlide(currentSlide - 1)));
+   
 });
 </script>
 

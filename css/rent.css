@@ -6,7 +6,7 @@
     --rent-dark: #000000;
     --rent-card-bg: #111111;
     --rent-white: #ffffff;
-    --rent-grey: #353434;
+    --rent-grey: #5a5a5a;
     --rent-glass: rgba(255, 255, 255, 0.03);
     --rent-glass-border: rgba(255, 255, 255, 0.1);
     
@@ -15,11 +15,29 @@
     --ease-premium: cubic-bezier(0.25, 1, 0.5, 1);
 }
 
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
 .rent-pg-wrapper {
     background-color: var(--rent-dark);
     color: var(--rent-white);
     font-family: var(--font-body);
     overflow-x: hidden;
+}
+
+/* =========================================
+   STRICT DESKTOP TYPOGRAPHY (LAPTOP/DESKTOP)
+   ========================================= */
+.rent-pg-main-title, .rent-pg-section-title {
+    font-family: var(--font-heading) !important;
+    font-size: 50px !important; /* STRICT DESKTOP HEADING */
+    font-weight: 400;
+    line-height: 1.2;
+}
+
+.rent-pg-description, .rent-pg-faq-content p, .rent-pg-faq-q {
+    font-family: var(--font-body) !important;
+    font-size: 18px !important; /* STRICT DESKTOP PARAGRAPH */
+    line-height: 1.8;
 }
 
 /* =========================================
@@ -34,15 +52,11 @@
 }
 
 .rent-pg-video-bg video {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    opacity: 0.15;
+    width: 100%; height: 100%; object-fit: cover; opacity: 0.15;
 }
 
 .rent-pg-overlay {
-    position: absolute;
-    inset: 0;
+    position: absolute; inset: 0;
     background: radial-gradient(circle at center, transparent 0%, var(--rent-dark) 100%);
 }
 
@@ -50,467 +64,207 @@
    3. HERO SECTION
    ========================================= */
 .rent-pg-hero {
-    position: relative;
-    width: 100%;
-    height: 80vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    overflow: hidden;
+    position: relative; width: 100%; height: 80vh; min-height: 500px;
+    display: flex; align-items: center; justify-content: center; overflow: hidden;
 }
 
 .rent-pg-hero-vid-element {
-    position: absolute;
-    inset: 0;
-    width: 100%; height: 100%;
-    object-fit: cover;
-    opacity: 0.5;
+    position: absolute; inset: 0; width: 100%; height: 100%;
+    object-fit: cover; opacity: 0.5;
 }
 
 .rent-pg-hero-gradient {
-    position: absolute;
-    inset: 0;
-    background: linear-gradient(to bottom, rgba(5,8,15,0.4) 0%, var(--rent-dark) 100%);
-    z-index: 1;
+    position: absolute; inset: 0;
+    background: linear-gradient(to bottom, rgba(5,8,15,0.4) 0%, var(--rent-dark) 100%); z-index: 1;
 }
 
-.rent-pg-hero-content {
-    position: relative;
-    z-index: 2;
-    text-align: center;
-}
-
-.rent-pg-main-title {
-    font-family: var(--font-heading);
-    font-size: 50px;
-    font-weight: 400;
-}
+.rent-pg-hero-content { position: relative; z-index: 2; text-align: center; padding: 0 20px; }
 
 .rent-pg-accent { color: var(--rent-gold); }
 
 .rent-pg-subtitle {
-    margin-top: 30px;
-    letter-spacing: 4px;
-    text-transform: uppercase;
-    color: var(--rent-gold);
-    font-size: 18px;
+    margin-top: 30px; letter-spacing: 4px; text-transform: uppercase;
+    color: var(--rent-gold); font-size: 18px; display: block;
 }
 
 /* =========================================
    4. INTRO SECTION
    ========================================= */
-.rent-pg-intro {
-    padding: 100px 5%;
-    text-align: center;
-}
-
-.rent-pg-section-title {
-    font-family: var(--font-heading);
-    font-size: 50px;
-    margin-bottom: 30px;
-}
-
-.rent-pg-description {
-    font-size: 18px;
-    line-height: 1.8;
-    color: var(--rent-grey);
-    max-width: 900px;
-    margin: 0 auto;
-}
+.rent-pg-intro { padding: 100px 5%; text-align: center; }
+.rent-pg-section-title { margin-bottom: 30px; }
+.rent-pg-description { color: var(--rent-grey); max-width: 900px; margin: 0 auto; }
 
 /* =========================================
-   5. PROPERTY GRID
+   5. PROPERTY GRID CARDS
    ========================================= */
-.rent-pg-projects { padding: 80px 5%; }
+.projects-section { padding: 80px 5%; }
 
-.rent-pg-grid {
+.grid-container {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 1fr); /* 3 Columns Desktop */
     gap: 30px;
     max-width: 1400px;
     margin: 0 auto;
 }
 
-.rent-pg-card {
-    background: var(--rent-card-bg);
-    border-radius: 10px;
-    overflow: hidden;
-    position: relative;
-    transition: transform 0.4s var(--ease-premium);
-    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+.project-card {
+    background: var(--rent-card-bg); border-radius: 10px; overflow: hidden;
+    position: relative; transition: transform 0.4s ease;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2); cursor: pointer;
 }
 
-.rent-pg-card:hover { transform: translateY(-10px); }
+.project-card:hover { transform: translateY(-10px); }
 
-.rent-pg-card-badge {
-    position: absolute;
-    top: 20px; left: 20px;
-    background: var(--rent-gold);
-    color: #000;
-    padding: 6px 15px;
-    font-size: 10px;
-    font-weight: 700;
-    text-transform: uppercase;
-    z-index: 2;
+.card-img-wrap { position: relative; height: 350px; overflow: hidden; }
+.card-img-wrap img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.6s ease; }
+.project-card:hover .card-img-wrap img { transform: scale(1.1); }
+
+.exclusive-tag {
+    position: absolute; top: 20px; left: 20px;
+    background: var(--rent-gold); color: #000;
+    padding: 6px 15px; font-size: 10px; font-weight: 700;
+    text-transform: uppercase; letter-spacing: 1px; z-index: 2;
 }
 
-.rent-pg-card-media { height: 350px; overflow: hidden; }
+.card-content { padding: 25px; }
+.card-content h3 { font-family: var(--font-heading); font-size: 22px; margin: 0 0 5px 0; color: var(--rent-white); }
+.location { font-size: 12px; color: var(--rent-grey); display: block; margin-bottom: 20px; text-transform: uppercase; letter-spacing: 1px; }
 
-.rent-pg-card-media img {
-    width: 100%; height: 100%;
-    object-fit: cover;
-    transition: transform 0.6s ease;
-}
+.price-row { display: flex; justify-content: space-between; align-items: flex-end; border-top: 1px solid rgba(255,255,255,0.1); padding-top: 15px; }
+.price-label { font-size: 10px; color: #888; text-transform: uppercase; display: block; margin-bottom: 2px; }
+.price-value { color: var(--rent-gold); font-weight: 600; font-size: 16px; }
 
-.rent-pg-card:hover .rent-pg-card-media img { transform: scale(1.1); }
-
-.rent-pg-card-body { padding: 25px; }
-
-.rent-pg-card-title {
-    font-family: var(--font-heading);
-    font-size: 22px;
-    margin-bottom: 5px;
-}
-
-.rent-pg-card-loc {
-    font-size: 12px;
-    color: var(--rent-grey);
-    margin-bottom: 20px;
-    display: block;
-}
-
-.rent-pg-card-footer {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
-    border-top: 1px solid rgba(255,255,255,0.1);
-    padding-top: 15px;
-}
-
-.rent-pg-label { font-size: 10px; color: #888; display: block; }
-.rent-pg-value { color: var(--rent-gold); font-weight: 600; font-size: 16px; }
-
-.rent-pg-circle-btn {
-    background: none; border: none;
-    color: var(--rent-gold);
-    font-size: 18px;
-    transition: 0.3s;
-    cursor: pointer;
-}
-
-.rent-pg-card:hover .rent-pg-circle-btn { transform: rotate(-45deg); }
+.arrow-icon { color: var(--rent-gold); font-size: 18px; transition: transform 0.3s; }
+.project-card:hover .arrow-icon { transform: rotate(-45deg); }
 
 /* =========================================
-   6. FAQ SECTION (FIXED WITH BACKGROUND & SHADOW)
+   6. FAQ SECTION
    ========================================= */
 .rent-pg-faq { 
     padding: 120px 5%; 
-    position: relative; /* Essential for background positioning */
-    overflow: hidden;
-    background: #000; /* Fallback */
+    position: relative; overflow: hidden; background: #000;
 }
 
-/* Background Media Fixed */
 .faq-bg-media {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    z-index: 0;
-    opacity: 0.5; /* Balanced visibility */
-    filter: grayscale(40%) brightness(0.9); 
-    pointer-events: none;
+    position: absolute; top: 0; left: 0; width: 100%; height: 100%;
+    object-fit: cover; z-index: 0; opacity: 0.5; filter: grayscale(40%) brightness(0.9); pointer-events: none;
 }
 
-/* Deep Gradient Overlay - Keeps center video visible */
 .faq-bg-overlay {
-    position: absolute;
-    inset: 0;
-    z-index: 1;
-    pointer-events: none;
-    background: radial-gradient(circle at center, rgba(20, 20, 20, 0.253) 0%, rgba(5, 8, 15, 0.85) 100%);
+    position: absolute; inset: 0; z-index: 1; pointer-events: none;
+    background: radial-gradient(circle at center, rgba(20, 20, 20, 0.25) 0%, rgba(5, 8, 15, 0.85) 100%);
 }
 
-.rent-pg-faq-container {
-    position: relative;
-    z-index: 2; /* Ensures content is above video/overlay */
-    max-width: 1000px;
-    margin: 0 auto;
-  
-}
+.rent-pg-faq-container { position: relative; z-index: 2; max-width: 1000px; margin: 0 auto; }
+.rent-pg-faq-header { text-align: center; margin-bottom: 60px; }
 
-.rent-pg-faq-header { 
-    text-align: center; 
-    margin-bottom: 60px; 
-}
+.rent-pg-pre-title { display: block; color: var(--rent-gold); font-size: 13px; letter-spacing: 4px; text-transform: uppercase; margin-bottom: 15px; }
 
-/* Cinematic Gold Divider */
 .rent-pg-gold-divider {
-    height: 2px; width: 80px;
-    background: rgba(255, 196, 3, 0.897);
-    margin: 25px auto;
-    position: relative;
-    overflow: hidden;
+    height: 2px; width: 80px; background: rgba(212, 175, 55, 0.5);
+    margin: 25px auto; position: relative; overflow: hidden;
 }
-
 .rent-pg-gold-divider::after {
-    content: ''; 
-    position: absolute; 
-    top: 0; left: -100%;
-    width: 100%; height: 100%;
+    content: ''; position: absolute; top: 0; left: -100%; width: 100%; height: 100%;
     background: linear-gradient(90deg, transparent, var(--rent-gold), transparent);
-    animation: line-sweep 4s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+    animation: line-sweep 3s ease-in-out infinite;
 }
+@keyframes line-sweep { 100% { left: 100%; } }
 
-/* The FAQ Card - Curved & High Shadow */
+/* FAQ Cards */
 .rent-pg-faq-item {
-    max-width: 1000px;
-    margin: 0 auto 20px;
-    background: rgba(5, 5, 5, 0.918); /* Darker glass for better contrast */
-    backdrop-filter: blur(20px);
-    -webkit-backdrop-filter: blur(20px);
-    border: 1px solid rgba(255, 255, 255, 0.08);
-    border-radius: 12px; /* Smooth curved corners */
-    transition: all 0.6s cubic-bezier(0.16, 1, 0.3, 1);
-    overflow: hidden;
-    /* Premium Box Shadow */
-     box-shadow: 
-        0 40px 100px rgba(46, 46, 46, 0.6), 
-        0 10px 40px rgba(22, 22, 22, 0.4),
-        0 0 100px rgba(14, 13, 13, 0.03); 
-        
-    border: 1px solid rgba(43, 43, 43, 0.03); /* Ghost border */
+    background: rgba(10, 10, 10, 0.8); backdrop-filter: blur(20px); -webkit-backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.05); border-radius: 12px; margin-bottom: 20px;
+    overflow: hidden; transition: all 0.5s var(--ease-premium);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.4);
 }
 
-.rent-pg-faq-item:hover {
-    background: var(--rent-dark);
-    border-color: rgba(212, 175, 55, 0.5);
-    transform: translateY(-5px);
-    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.7), 0 0 15px rgba(212, 175, 55, 0.1);
-}
+.rent-pg-faq-item:hover { transform: translateY(-3px); border-color: rgba(212, 175, 55, 0.3); background: rgba(15, 15, 15, 0.9); }
+.rent-pg-faq-item.active { border-color: var(--rent-gold); background: rgba(20, 20, 20, 0.95); box-shadow: 0 30px 60px rgba(0,0,0,0.6); }
 
-.rent-pg-faq-item.active {
-    background: rgba(0, 0, 0, 0.89);
-    border-color: rgba(212, 175, 55, 0.7);
-    box-shadow: 0 30px 60px -15px rgba(0, 0, 0, 0.8);
-}
-
-/* Question Trigger */
 .rent-pg-faq-btn {
-    width: 100%;
-    background: none;
-    border: none;
-    padding: 32px 40px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    cursor: pointer;
-    outline: none;
+    width: 100%; background: none; border: none; padding: 30px 40px;
+    display: flex; justify-content: space-between; align-items: center; cursor: pointer; text-align: left;
 }
 
-.rent-pg-faq-q {
-    font-family: 'Work Sans', sans-serif !important;
-    font-size: 18px !important;
-    font-weight: 400;
-    color: rgba(255, 255, 255, 0.9);
-    text-align: left;
-    letter-spacing: 0.3px;
-    transition: all 0.4s ease;
-}
+.rent-pg-faq-q { color: rgba(255, 255, 255, 0.9); transition: color 0.4s ease; }
+.rent-pg-faq-item:hover .rent-pg-faq-q, .rent-pg-faq-item.active .rent-pg-faq-q { color: var(--rent-gold); }
 
-.rent-pg-faq-item.active .rent-pg-faq-q {
-    color: var(--rent-gold);
-    font-weight: 500;
-}
+/* Perfect Plus/Minus Icon */
+.rent-pg-faq-icon { position: relative; width: 18px; height: 18px; flex-shrink: 0; transition: transform 0.5s var(--ease-premium); }
+.rent-pg-faq-icon .line { position: absolute; background: var(--rent-gold); border-radius: 2px; transition: all 0.4s ease; }
+.rent-pg-faq-icon .horizontal { width: 100%; height: 2px; top: 50%; left: 0; transform: translateY(-50%); }
+.rent-pg-faq-icon .vertical { width: 2px; height: 100%; top: 0; left: 50%; transform: translateX(-50%); }
 
-/* Smooth Icon Animation */
-.rent-pg-faq-icon {
-    position: relative;
-    width: 20px;
-    height: 20px;
-    flex-shrink: 0;
-}
+.rent-pg-faq-item.active .rent-pg-faq-icon { transform: rotate(180deg); }
+.rent-pg-faq-item.active .rent-pg-faq-icon .line { background: var(--rent-white); }
+.rent-pg-faq-item.active .vertical { transform: translateX(-50%) scaleY(0); opacity: 0; }
 
-.rent-pg-faq-icon .line {
-    position: absolute;
-    background: var(--rent-gold);
-    transition: all 0.6s cubic-bezier(0.34, 1.56, 0.64, 1);
-}
+/* Panel Animation */
+.rent-pg-faq-panel { max-height: 0; overflow: hidden; transition: max-height 0.8s var(--ease-premium); }
+.rent-pg-faq-content { padding: 0 40px 35px 40px; opacity: 0; transform: translateY(-10px); transition: all 0.5s ease; }
+.rent-pg-faq-item.active .rent-pg-faq-content { opacity: 1; transform: translateY(0); transition-delay: 0.1s; }
+.rent-pg-faq-content p { color: rgba(255, 255, 255, 0.7); }
 
-.rent-pg-faq-icon .vertical {
-    width: 2px; height: 16px;
-    left: 9px; top: 2px;
-}
 
-.rent-pg-faq-icon .horizontal {
-    width: 16px; height: 2px;
-    top: 9px; left: 2px;
-}
+/* =======================================================
+   RESPONSIVE LAYOUTS (TABLET & MOBILE)
+   ======================================================= */
 
-.rent-pg-faq-item.active .vertical {
-    transform: rotate(90deg);
-    opacity: 0;
-}
-
-/* The Smooth Panel Reveal */
-.rent-pg-faq-panel {
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.8s cubic-bezier(0.16, 1, 0.3, 1);
-}
-
-.rent-pg-faq-item.active .rent-pg-faq-panel {
-    max-height: 600px;
-}
-
-.rent-pg-faq-content {
-    padding: 0 40px 40px 40px;
-    opacity: 0;
-    filter: blur(15px);
-    transform: translateY(20px);
-    transition: 
-        opacity 0.8s ease, 
-        filter 0.8s ease, 
-        transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
-}
-
-.rent-pg-faq-item.active .rent-pg-faq-content {
-    opacity: 1;
-    filter: blur(0);
-    transform: translateY(0);
-    transition-delay: 0.2s;
-}
-
-.rent-pg-faq-content p {
-    font-family: 'Work Sans', sans-serif !important;
-    font-size: 18px !important;
-    line-height: 1.8;
-    color: rgba(255, 255, 255, 0.65);
-    margin: 0;
-}
-
-/* Mobile Smoothing */
-@media (max-width: 768px) {
-    .rent-pg-faq { padding: 80px 20px; }
-    .rent-pg-faq-btn { padding: 25px; }
-    .rent-pg-faq-content { padding: 0 25px 30px 25px; }
-    
-    .rent-pg-faq-q, 
-    .rent-pg-faq-content p { 
-        font-size: 16px !important; 
-    }
-}
-/* =========================================
-   7. LUXURY SLIDER (CINEMATIC)
-   ========================================= */
-.rent-pg-slider {
-    position: relative; width: 100%; height: 100vh;
-    background: #000; overflow: hidden;
-}
-
-.rent-pg-slide {
-    position: absolute; inset: 0;
-    opacity: 0; visibility: hidden;
-    transition: opacity 1.2s var(--ease-premium);
-}
-
-.rent-pg-slide.active { opacity: 1; visibility: visible; }
-
-.rent-pg-slide-bg {
-    width: 100%; height: 100%; object-fit: cover;
-    transform: scale(1.08); transition: transform 8s var(--ease-premium);
-}
-
-.rent-pg-slide.active .rent-pg-slide-bg { transform: scale(1); }
-
-.rent-pg-slide-content {
-    position: absolute; inset: 0;
-    max-width: 1400px; margin: 0 auto;
-    padding: 0 80px; display: flex;
-    align-items: center; justify-content: space-between;
-    z-index: 10;
-}
-
-.rent-pg-slide-info { flex: 1; max-width: 600px; }
-
-.rent-pg-slide-title {
-    font-family: var(--font-heading);
-    font-size: 75px; line-height: 1.1; margin: 15px 0;
-}
-
-.rent-pg-btn-luxury {
-    display: inline-block; padding: 18px 45px;
-    background: rgba(255,255,255,0.03);
-    backdrop-filter: blur(15px);
-    border: 1px solid rgba(255,255,255,0.3);
-    color: #fff; text-decoration: none;
-    letter-spacing: 4px; text-transform: uppercase;
-    font-size: 12px; transition: 0.6s;
-}
-
-.rent-pg-btn-luxury:hover { background: rgba(255,255,255,0.15); border-color: #fff; }
-
-.rent-pg-slide-visual { display: flex; align-items: center; gap: 30px; }
-
-.rent-pg-mini-preview {
-    width: 380px; height: 480px;
-    border: 1px solid rgba(255,255,255,0.15);
-    overflow: hidden;
-}
-
-.rent-pg-mini-preview img { width: 100%; height: 100%; object-fit: cover; }
-
-.rent-pg-nav-btn {
-    background: none; border: none;
-    color: rgba(255,255,255,0.5);
-    font-size: 45px; cursor: pointer; transition: 0.5s;
-}
-
-.rent-pg-nav-btn:hover { color: #fff; transform: scale(1.15); }
-
-/* =========================================
-   8. REVEAL ANIMATIONS
-   ========================================= */
-.js-reveal {
-    opacity: 0;
-    transform: translateY(40px);
-    transition: all 0.8s var(--ease-premium);
-}
-
-.js-reveal.is-visible {
-    opacity: 1;
-    transform: translateY(0);
-}
-
-/* =========================================
-   9. MOBILE & TABLET (STRICT TYPOGRAPHY)
-   ========================================= */
+/* --- TABLET VIEW (Max 1024px) --- */
 @media (max-width: 1024px) {
-    .rent-pg-grid { grid-template-columns: repeat(2, 1fr); }
-    .rent-pg-slide-visual { display: none; }
-    .rent-pg-slide-content { text-align: center; justify-content: center; }
+    /* Grid becomes 2 columns */
+    .grid-container { grid-template-columns: repeat(2, 1fr); gap: 20px; }
+    .card-img-wrap { height: 300px; }
+    
+    .rent-pg-intro, .projects-section, .rent-pg-faq { padding: 80px 5%; }
 }
 
+/* --- MOBILE VIEW (Max 768px) --- */
 @media (max-width: 768px) {
-    .rent-pg-grid { grid-template-columns: 1fr; }
+    /* Grid becomes 1 column */
+    .grid-container { grid-template-columns: 1fr; max-width: 500px; }
     
-    /* Strict Mobile Typography */
+    .rent-pg-hero { height: 70vh; }
+    .card-img-wrap { height: 280px; }
+    
+    /* FAQ Mobile Adjustments */
+    .rent-pg-faq-btn { padding: 25px 20px; }
+    .rent-pg-faq-content { padding: 0 20px 25px 20px; }
+}
+
+/* --- STRICT MOBILE VIEW (Max 425px) --- */
+@media (max-width: 425px) {
+    
+    /* Strict Padding for Mobile */
+    .rent-pg-intro, .projects-section, .rent-pg-faq { padding: 60px 20px !important; }
+    
+    /* STRICT MOBILE HEADINGS (36px) */
     .rent-pg-main-title, .rent-pg-section-title {
         font-size: 36px !important;
+        margin-bottom: 20px !important;
     }
-
-    .rent-pg-description, .rent-pg-faq-content p {
+    
+    /* STRICT MOBILE PARAGRAPHS & FAQ TEXT (16px) */
+    .rent-pg-description, .rent-pg-faq-content p, .rent-pg-faq-q {
         font-size: 16px !important;
-        line-height: 1.6;
+        line-height: 1.6 !important;
     }
-}
 
-@media (max-width: 425px) {
-    .rent-pg-hero { height: 60vh; }
-    .rent-pg-card-media { height: 220px; }
-    .rent-pg-faq-btn { padding: 25px 20px; }
-    .rent-pg-faq-q { font-size: 1.1rem; }
-    .rent-pg-slide-title { font-size: 40px; }
+    /* Fix Alignment for Mobile */
+    .rent-pg-section-title, .rent-pg-description, .rent-pg-faq-header {
+        text-align: left !important;
+    }
+    
+    .rent-pg-gold-divider { margin: 15px 0 !important; }
+
+    /* Card Mobile Adjustments */
+    .card-img-wrap { height: 240px; }
+    .card-content { padding: 20px; text-align: left !important; }
+    .card-content h3 { font-size: 20px; }
+    
+    /* FAQ Mobile Fixes */
+    .rent-pg-faq-item { border-radius: 8px; }
+    .rent-pg-faq-btn { padding: 20px; }
+    .rent-pg-faq-content { padding: 0 20px 20px 20px; text-align: left !important; }
 }

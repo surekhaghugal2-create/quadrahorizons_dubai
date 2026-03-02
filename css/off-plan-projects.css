@@ -2,13 +2,13 @@
    1. CORE VARIABLES & SETUP
    ========================================= */
 :root {
-    --gold: #D4AF37;
-    --dark: #000000;
-    --darker: #000000;
-    --card-bg: #111827;
-    --white: #ffffff;
-    --text-grey: #b0b0b0;
-    --border-color: rgba(255, 255, 255, 0.1);
+   --rent-gold: #D4AF37;
+    --rent-dark: #000000;
+    --rent-card-bg: #111111;
+    --rent-white: #ffffff;
+    --rent-grey: #5a5a5a;
+    --rent-glass: rgba(255, 255, 255, 0.03);
+    --rent-glass-border: rgba(255, 255, 255, 0.1);
 }
 
 * { box-sizing: border-box; margin: 0; padding: 0; }
@@ -82,7 +82,7 @@ img { max-width: 100%; display: block; }
 }
 
 .project-card {
-    background: var(--card-bg);
+    background: var(--rent-card-bg);
     border-radius: 10px;
     overflow: hidden;
     position: relative;
