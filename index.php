@@ -8,8 +8,8 @@
     </video>
     <div class="hero-overlay"></div>
     <div class="hero-text-center reveal">
-        <h1>ELEVATING<br><span>HORIZONS</span></h1>
-        <p>The Future of Luxury Living in Dubai</p>
+        <h1>Your Trusted Partner <br><span>QH Properties</span></h1>
+        <p></p>
     </div>
 </section>
 
