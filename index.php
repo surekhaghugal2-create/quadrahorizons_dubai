@@ -64,7 +64,7 @@
                 </div>
                 <div class="prop-actions">
                     <button class="prop-btn solid">Book Now</button>
-                    <a href="downloads/mbp-bc-all-assets.zip" download class="prop-btn outline" style="text-decoration: none; text-align: center; display: flex; align-items: center; justify-content: center;">Download</a>
+                    <a href="image/mbp-bc-hero-banner.webp" download class="prop-btn outline" style="text-decoration: none; text-align: center; display: flex; align-items: center; justify-content: center;">Download</a>
                 </div>
             </div>
         </div>
@@ -86,7 +86,7 @@
                 </div>
                 <div class="prop-actions">
                     <button class="prop-btn solid">Book Now</button>
-                    <a href="downloads/bugatti-brochure.zip" download class="prop-btn outline" style="text-decoration: none; text-align: center; display: flex; align-items: center; justify-content: center;">Download </a>
+                    <a href="image/binghatti-etheria-hero-banner.avif" download class="prop-btn outline" style="text-decoration: none; text-align: center; display: flex; align-items: center; justify-content: center;">Download </a>
                 </div>
             </div>
         </div>
@@ -107,7 +107,7 @@
                 </div>
                 <div class="prop-actions">
                     <button class="prop-btn solid">Book Now</button>
-                    <a href="downloads/palm-crown-brochure.zip" download class="prop-btn outline" style="text-decoration: none; text-align: center; display: flex; align-items: center; justify-content: center;">Download</a>
+                    <a href="image/binghatti-skyterraces-hero-banner.avif" download class="prop-btn outline" style="text-decoration: none; text-align: center; display: flex; align-items: center; justify-content: center;">Download</a>
                 </div>
             </div>
         </div>
@@ -129,7 +129,7 @@
                 </div>
                 <div class="prop-actions">
                     <button class="prop-btn solid">Book Now</button>
-                    <a href="downloads/franck-muller-brochure.zip" download class="prop-btn outline" style="text-decoration: none; text-align: center; display: flex; align-items: center; justify-content: center;">Download </a>
+                    <a href="image/binghatti-luxuria-hero-banner.avif" download class="prop-btn outline" style="text-decoration: none; text-align: center; display: flex; align-items: center; justify-content: center;">Download </a>
                 </div>
             </div>
         </div>
@@ -150,7 +150,7 @@
                 </div>
                 <div class="prop-actions">
                     <button class="prop-btn solid">Book Now</button>
-                    <a href="downloads/address-residences-brochure.zip" download class="prop-btn outline" style="text-decoration: none; text-align: center; display: flex; align-items: center; justify-content: center;">Download </a>
+                    <a href="image/binghatti-cullinan-hero-banner.avif" download class="prop-btn outline" style="text-decoration: none; text-align: center; display: flex; align-items: center; justify-content: center;">Download </a>
                 </div>
             </div>
         </div>
@@ -172,7 +172,7 @@
                 </div>
                 <div class="prop-actions">
                     <button class="prop-btn solid">Book Now</button>
-                    <a href="downloads/burj-binghatti-brochure.zip" download class="prop-btn outline" style="text-decoration: none; text-align: center; display: flex; align-items: center; justify-content: center;">Download</a>
+                    <a href="image/binghatti-hillcrest-hero-banner.avif" download class="prop-btn outline" style="text-decoration: none; text-align: center; display: flex; align-items: center; justify-content: center;">Download</a>
                 </div>
             </div>
         </div>
@@ -193,7 +193,7 @@
                 </div>
                 <div class="prop-actions">
                     <button class="prop-btn solid">Book Now</button>
-                    <a href="downloads/sobha-brochure.zip" download class="prop-btn outline" style="text-decoration: none; text-align: center; display: flex; align-items: center; justify-content: center;">Download</a>
+                    <a href="image/binghatti-titania-hero-banner-1.avif" download class="prop-btn outline" style="text-decoration: none; text-align: center; display: flex; align-items: center; justify-content: center;">Download</a>
                 </div>
             </div>
         </div>
@@ -215,7 +215,7 @@
                 </div>
                 <div class="prop-actions">
                     <button class="prop-btn solid">Book Now</button>
-                    <a href="downloads/damac-brochure.zip" download class="prop-btn outline" style="text-decoration: none; text-align: center; display: flex; align-items: center; justify-content: center;">Download</a>
+                    <a href="image/binghatti-vintage-hero-banner.avif" download class="prop-btn outline" style="text-decoration: none; text-align: center; display: flex; align-items: center; justify-content: center;">Download</a>
                 </div>
             </div>
         </div>
@@ -237,7 +237,7 @@
                 </div>
                 <div class="prop-actions">
                     <button class="prop-btn solid">Book Now</button>
-                    <a href="downloads/damac-brochure.zip" download class="prop-btn outline" style="text-decoration: none; text-align: center; display: flex; align-items: center; justify-content: center;">Download</a>
+                    <a href="image/binghatti-pinnacle-hero-banner.avif" download class="prop-btn outline" style="text-decoration: none; text-align: center; display: flex; align-items: center; justify-content: center;">Download</a>
                 </div>
             </div>
         </div>
@@ -259,7 +259,7 @@
                 </div>
                 <div class="prop-actions">
                     <button class="prop-btn solid">Book Now</button>
-                    <a href="downloads/damac-brochure.zip" download class="prop-btn outline" style="text-decoration: none; text-align: center; display: flex; align-items: center; justify-content: center;">Download</a>
+                    <a href="image/Mercedes-Benz Places Binghatti City.png" download class="prop-btn outline" style="text-decoration: none; text-align: center; display: flex; align-items: center; justify-content: center;">Download</a>
                 </div>
             </div>
         </div>
@@ -281,7 +281,7 @@
                 </div>
                 <div class="prop-actions">
                     <button class="prop-btn solid">Book Now</button>
-                    <a href="downloads/damac-brochure.zip" download class="prop-btn outline" style="text-decoration: none; text-align: center; display: flex; align-items: center; justify-content: center;">Download</a>
+                    <a href="image/binghatti-amberhall-hero-banner.webp" download class="prop-btn outline" style="text-decoration: none; text-align: center; display: flex; align-items: center; justify-content: center;">Download</a>
                 </div>
             </div>
         </div>

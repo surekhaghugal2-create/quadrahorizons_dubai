@@ -33,10 +33,11 @@
         </div>
     </section>
 
-    <!-- project -->
+<!-- project -->
 <section class="projects-section">
     <div class="grid-container">
         <div class="project-card reveal">
+            <a href="image/mbp-bc-hero-banner.webp" download class="prop-btn outline download-btn">
             <span class="exclusive-tag">Exclusive</span>
             <div class="card-img-wrap">
                 <img src="image/mbp-bc-hero-banner.webp">
@@ -52,9 +53,11 @@
                     <i class="fas fa-arrow-circle-down arrow-icon"></i>
                 </div>
             </div>
+            </a>
         </div>
 
         <div class="project-card reveal" style="transition-delay: 0.1s">
+            <a href="image/binghatti-etheria-hero-banner.avif" download class="prop-btn outline download-btn">
             <span class="exclusive-tag">Exclusive</span>
             <div class="card-img-wrap">
                 <img src="image/binghatti-etheria-hero-banner.avif" alt="Project">
@@ -70,9 +73,11 @@
                     <i class="fas fa-arrow-circle-down arrow-icon"></i>
                 </div>
             </div>
+            </a>
         </div>
 
         <div class="project-card reveal" style="transition-delay: 0.2s">
+            <a href="image/binghatti-skyterraces-hero-banner.avif" download class="prop-btn outline download-btn">
             <span class="exclusive-tag">New Launch</span>
             <div class="card-img-wrap">
                 <img src="image/binghatti-skyterraces-hero-banner.avif">
@@ -88,9 +93,11 @@
                     <i class="fas fa-arrow-circle-down arrow-icon"></i>
                 </div>
             </div>
+            </a>
         </div>
 
         <div class="project-card reveal">
+            <a href="image/binghatti-luxuria-hero-banner.avif" download class="prop-btn outline download-btn">
             <span class="exclusive-tag">Exclusive</span>
             <div class="card-img-wrap">
                 <img src="image/binghatti-luxuria-hero-banner.avif">
@@ -106,9 +113,11 @@
                     <i class="fas fa-arrow-circle-down arrow-icon"></i>
                 </div>
             </div>
+            </a>
         </div>
 
         <div class="project-card reveal" style="transition-delay: 0.1s">
+            <a href="image/binghatti-cullinan-hero-banner.avif" download class="prop-btn outline download-btn">
             <span class="exclusive-tag">Selling Fast</span>
             <div class="card-img-wrap">
                 <img src="image/binghatti-cullinan-hero-banner.avif" alt="Project">
@@ -124,9 +133,11 @@
                     <i class="fas fa-arrow-circle-down arrow-icon"></i>
                 </div>
             </div>
+            </a>
         </div>
 
         <div class="project-card reveal" style="transition-delay: 0.2s">
+            <a href="image/binghatti-hillcrest-hero-banner.avif" download class="prop-btn outline download-btn">
             <span class="exclusive-tag">Exclusive</span>
             <div class="card-img-wrap">
                 <img src="image/binghatti-hillcrest-hero-banner.avif" alt="Project">
@@ -142,9 +153,11 @@
                     <i class="fas fa-arrow-circle-down arrow-icon"></i>
                 </div>
             </div>
+            </a>
         </div>
 
         <div class="project-card reveal" style="transition-delay: 0.2s">
+            <a href="image/binghatti-titania-hero-banner-1.avif" download class="prop-btn outline download-btn">
             <span class="exclusive-tag">Exclusive</span>
             <div class="card-img-wrap">
                 <img src="image/binghatti-titania-hero-banner-1.avif" alt="Project">
@@ -160,9 +173,11 @@
                     <i class="fas fa-arrow-circle-down arrow-icon"></i>
                 </div>
             </div>
+            </a>
         </div>
 
         <div class="project-card reveal" style="transition-delay: 0.2s">
+            <a href="image/binghatti-vintage-hero-banner.avif" download class="prop-btn outline download-btn">
             <span class="exclusive-tag">Exclusive</span>
             <div class="card-img-wrap">
                 <img src="image/binghatti-vintage-hero-banner.avif" alt="Project">
@@ -178,9 +193,11 @@
                     <i class="fas fa-arrow-circle-down arrow-icon"></i>
                 </div>
             </div>
+            </a>
         </div>
 
         <div class="project-card reveal" style="transition-delay: 0.2s">
+            <a href="image/binghatti-pinnacle-hero-banner.avif" download class="prop-btn outline download-btn">
             <span class="exclusive-tag">Exclusive</span>
             <div class="card-img-wrap">
                 <img src="image/binghatti-pinnacle-hero-banner.avif" alt="Project">
@@ -196,9 +213,11 @@
                     <i class="fas fa-arrow-circle-down arrow-icon"></i>
                 </div>
             </div>
+            </a>
         </div>
 
         <div class="project-card reveal" style="transition-delay: 0.2s">
+            <a href="image/Mercedes-Benz Places Binghatti City.png" download class="prop-btn outline download-btn">
             <span class="exclusive-tag">Exclusive</span>
             <div class="card-img-wrap">
                 <img src="image/Mercedes-Benz Places Binghatti City.png" alt="Project">
@@ -214,9 +233,11 @@
                     <i class="fas fa-arrow-circle-down arrow-icon"></i>
                 </div>
             </div>
+            </a>
         </div>
 
         <div class="project-card reveal" style="transition-delay: 0.2s">
+            <a href="image/binghatti-amberhall-hero-banner.webp" download class="prop-btn outline download-btn">
             <span class="exclusive-tag">Exclusive</span>
             <div class="card-img-wrap">
                 <img src="image/binghatti-amberhall-hero-banner.webp" alt="Project">
@@ -232,13 +253,11 @@
                     <i class="fas fa-arrow-circle-down arrow-icon"></i>
                 </div>
             </div>
+            </a>
         </div>
     </div>
 </section>
-
-
-    <!-- FAQ SECTION -->
-   
+ 
     <!-- FAQ SECTION -->
     <section class="rent-pg-faq">
             <video class="faq-bg-media" autoplay loop muted playsinline>
