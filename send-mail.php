@@ -12,8 +12,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $name = $_POST['name'];
     $email = $_POST['email'];
     $contact = $_POST['contact'];
+    $meeting_date = $_POST['meeting_date'];
+    $meeting_time = $_POST['meeting_time'];
+    $location = $_POST['location'];
+     $country = $_POST['country'];
 
-    $mail = new PHPMailer(true);
+     $mail = new PHPMailer(true);
 
     try {
 
@@ -37,7 +41,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             <h3>New Form Submission</h3>
             <b>Name:</b> $name <br>
             <b>Email:</b> $email <br>
-            <b>Contact:</b> $contact
+            <b>Contact:</b> $contact<br>
+            <b>meeting_date:</b> $meeting_date<br>
+            <b>meeting_time:</b> $meeting_time<br>
+            <b>location:</b> $location<br>
+             <b>country:</b> $country<br>
+
         ";
 
         $mail->send();

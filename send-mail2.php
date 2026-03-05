@@ -13,6 +13,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $email = $_POST['email'];
     $contact = $_POST['contact'];
     $message = $_Post['message'];
+    $schedule_date = $_POST['schedule_date'];
+    $schedule_time = $_POST['schedule_time'];
+    $location = $_POST['location'];
+     $country = $_POST['country'];
+      $property = $_POST['property'];
 
     $mail = new PHPMailer(true);
 
@@ -39,7 +44,14 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             <b>Name:</b> $name <br>
             <b>Email:</b> $email <br>
             <b>Contact:</b> $contact <br>
-            <b>Message:</b> $message 
+            <b>meeting_date:</b> $meeting_date<br>
+            <b>schedule_time:</b> $schedule_time<br>
+            <b>location:</b> $location<br>
+            <br>property:</b>$property<br>
+            <b>country:</b> $country<br>
+            <b>Message:</b> $message<br>
+            
+
         ";
 
         $mail->send();

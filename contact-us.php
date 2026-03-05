@@ -151,7 +151,11 @@
         <input type="text" class="c-input" placeholder="Enter Property Location" name="location">
     </div>
 
+<<<<<<< HEAD
     <div class="c-form-group full-width">
+=======
+    <div class="c-form-group">
+>>>>>>> abd1abb0418556f56577f94bd12eb6cfae47e901
         <label class="c-label">Select Property</label>
         <select class="c-input" name="property">
             <option value="">Choose Property</option>
@@ -162,6 +166,53 @@
             <option>JBR Beachfront Apartment</option>
         </select>
     </div>
+<<<<<<< HEAD
+=======
+    <div class="c-form-group">
+       <label class="c-label">Select Country</label>
+    <select class="c-input" name="country">
+        <option value="">Choose Country</option>
+
+        <!-- Middle East -->
+        <option value="uae">United Arab Emirates</option>
+        <option value="saudi_arabia">Saudi Arabia</option>
+        <option value="qatar">Qatar</option>
+        <option value="kuwait">Kuwait</option>
+        <option value="oman">Oman</option>
+        <option value="bahrain">Bahrain</option>
+
+        <!-- Asia -->
+        <option value="india">India</option>
+        <option value="pakistan">Pakistan</option>
+        <option value="bangladesh">Bangladesh</option>
+        <option value="china">China</option>
+        <option value="singapore">Singapore</option>
+        <option value="malaysia">Malaysia</option>
+        <option value="philippines">Philippines</option>
+
+        <!-- Europe -->
+        <option value="united_kingdom">United Kingdom</option>
+        <option value="germany">Germany</option>
+        <option value="france">France</option>
+        <option value="italy">Italy</option>
+        <option value="russia">Russia</option>
+        <option value="spain">Spain</option>
+        <option value="netherlands">Netherlands</option>
+
+        <!-- Americas -->
+        <option value="united_states">United States</option>
+        <option value="canada">Canada</option>
+        <option value="brazil">Brazil</option>
+
+        <!-- Africa -->
+        <option value="south_africa">South Africa</option>
+        <option value="nigeria">Nigeria</option>
+        <option value="egypt">Egypt</option>
+
+    </select>
+    </div>
+    
+>>>>>>> abd1abb0418556f56577f94bd12eb6cfae47e901
 
     <!-- MESSAGE FULL WIDTH -->
     <div class="c-form-group full-width">
@@ -179,9 +230,9 @@
     </div>
 
 </section>
-
+<!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3610.493398167557!2d55.25781127605416!3d25.186578232129516!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f69d0bf460681%3A0xdaadfbb50754c3f!2sRegal%20Tower%20-%20502%20Al%20Mustaqbal%20St%20-%20Business%20Bay%20-%20Dubai%20-%20United%20Arab%20Emirates!5e0!3m2!1sen!2sin!4v1772606095897!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> -->
 <div class="map-wrapper fade-in-up scroll-anim delay-100">
-    <iframe class="full-map" src="https://maps.google.com/maps?q=Downtown%20Dubai,%20Blvd%20Plaza&t=m&z=14&output=embed&iwloc=near" loading="lazy"></iframe>
+    <iframe class="full-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3610.493398167557!2d55.25781127605416!3d25.186578232129516!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f69d0bf460681%3A0xdaadfbb50754c3f!2sRegal%20Tower%20-%20502%20Al%20Mustaqbal%20St%20-%20Business%20Bay%20-%20Dubai%20-%20United%20Arab%20Emirates!5e0!3m2!1sen!2sin!4v1772606095897!5m2!1sen!2sin" loading="lazy"></iframe>
 </div>
 
 <?php include 'footer.php'; ?>
