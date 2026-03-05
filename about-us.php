@@ -32,25 +32,13 @@
            Quadra Horizons — كوادرا هوريزونز
 
 At the beginning of 2026, an idea was born — not merely to establish a new real estate company, but to launch a greater vision for the future. This is how Quadra Horizons began in Dubai, a city that knows no limits to ambition.
-
 Although newly established, the company’s roots extend back many years through the extensive hands-on experience of its founders in Dubai’s real estate market. Over time, they gained deep market knowledge and a genuine understanding of investors’ and clients’ needs. After years of experience and growth, four partners sharing the same passion and vision came together to create an entity that reflects their collective aspirations.
-
 The founders chose the name “Quadra Horizons,” meaning “Four Pillars on the Horizon” — a symbol of strength, stability, and forward-looking vision. The name represents the unity of four ambitious minds who believe that true success is built on collaboration, trust, and a clear vision for the future.
-
-The company was founded by the partners:
-* Khaled Alblooshi 
-* Omar Alsayed 
-* Chakib Chami 
-* Yasin mulla Ali 
-
 Each partner represents a fundamental pillar of the company, united by one goal: to build a leading enterprise that goes beyond the real estate sector, becoming an influential brand across multiple industries within Dubai, the United Arab Emirates, and eventually global markets.
-
 At Quadra Horizons, success is not measured solely by the number of transactions, but by the value of the relationships built, the trust earned, and the opportunities created for clients. The company operates with a forward-thinking vision grounded in innovation, professionalism, and the highest standards of service to ensure a secure and exceptional investment experience.
-
 We do not see the horizon as a limit — but as a beginning.
 
-Quadra Horizons — Where vision becomes reality, and ambition turns into achievement.
-            <span class="gold-highlight">Excellence, integrity, and innovation define everything we create.</span>"
+            <span class="gold-highlight">Quadra Horizons — Where vision becomes reality, and ambition turns into achievement.</span>"
         </p>
 
     </div>
@@ -99,66 +87,27 @@ Quadra Horizons — Where vision becomes reality, and ambition turns into achiev
 
 
 <!-- Team section  -->
-<section class="rent-pg-team-section">
-    <div class="team-container">
+<section class="team-hero-section">
+    
+    <div class="team-hero-bg">
+        <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=1920&q=80" alt="Our Team">
+    </div>
+
+    <div class="team-hero-container">
         
-        <div class="team-header anim-fade-up scroll-anim">
-            <span class="team-pre-title">The Minds Behind The Masterpieces</span>
-            <h2 class="rent-pg-section-title">Meet Our <span class="rent-pg-accent">Visionaries</span></h2>
-            <div class="rent-pg-gold-divider"></div>
-            <p class="rent-pg-description team-desc">Our leadership team brings together decades of expertise in avant-garde architecture, luxury real estate development, and world-class client relations.</p>
-        </div>
-
-        <div class="team-grid">
+        <div class="team-hero-content anim-fade-up scroll-anim">
+            <h2 class="rent-pg-section-title">Our Team</h2>
             
-            <div class="team-card anim-fade-up delay-100 scroll-anim">
-                <div class="team-img-wrap">
-                    <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&w=800&q=80" alt="CEO & Founder">
-                    
-                    <div class="team-social-overlay">
-                        <a href="#" class="team-social-icon"><i class="fab fa-linkedin-in"></i></a>
-                        <a href="#" class="team-social-icon"><i class="fas fa-envelope"></i></a>
-                    </div>
-                </div>
-                
-                <div class="team-info-glass">
-                    <h3 class="team-name">Alexander Wright</h3>
-                    <p class="team-role">CEO & Founder</p>
-                    <div class="team-card-line"></div>
-                </div>
-            </div>
-
-            <div class="team-card anim-fade-up delay-200 scroll-anim">
-                <div class="team-img-wrap">
-                    <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=800&q=80" alt="Head of Architecture">
-                    <div class="team-social-overlay">
-                        <a href="#" class="team-social-icon"><i class="fab fa-linkedin-in"></i></a>
-                        <a href="#" class="team-social-icon"><i class="fas fa-envelope"></i></a>
-                    </div>
-                </div>
-                <div class="team-info-glass">
-                    <h3 class="team-name">Elena Rostova</h3>
-                    <p class="team-role">Head of Architecture</p>
-                    <div class="team-card-line"></div>
-                </div>
-            </div>
-
-            <div class="team-card anim-fade-up delay-300 scroll-anim">
-                <div class="team-img-wrap">
-                    <img src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&fit=crop&w=800&q=80" alt="Director of Sales">
-                    <div class="team-social-overlay">
-                        <a href="#" class="team-social-icon"><i class="fab fa-linkedin-in"></i></a>
-                        <a href="#" class="team-social-icon"><i class="fas fa-envelope"></i></a>
-                    </div>
-                </div>
-                <div class="team-info-glass">
-                    <h3 class="team-name">James Sterling</h3>
-                    <p class="team-role">Director of Global Sales</p>
-                    <div class="team-card-line"></div>
-                </div>
-            </div>
-
+            <p class="rent-pg-description">
+                Meet our dynamic team of real estate professionals who bring a wealth of experience and expertise to help you achieve your property goals.
+            </p>
+            
+            <a href="#meet-the-team" class="team-hero-btn">
+                <span>Meet the Team</span> 
+                <i class="fas fa-arrow-right"></i>  
+            </a>
         </div>
+
     </div>
 </section>
 
@@ -245,7 +194,7 @@ Quadra Horizons — Where vision becomes reality, and ambition turns into achiev
                 <div class="story-left">
                     <div class="story-content">
                         <span class="story-subtitle">A Globally Awarded</span>
-                        <h2 class="story-title">VISIONARY</h2>
+                        <h2 class="story-title">Visionary</h2>
                         <p class="story-desc">Binghatti has earned numerous accolades, including the Gulf Real Estate – Best Real Estate Off-Plan Project, MENA Green Building Awards for 2017 and 2018, along with the prestigious Best Real Estate Tycoon Award from Dubai's Land Department.</p>
                     </div>
                     <div class="story-year">2020</div>
@@ -401,17 +350,16 @@ Quadra Horizons — Where vision becomes reality, and ambition turns into achiev
     <div class="careers-bg"></div>
     
     <div class="careers-glass-card">
-        <span class="careers-label">Careers at Quadra</span>
-        <h2 class="careers-title">Join the Elite</h2>
+        <span class="careers-label">CAREERS AT QUADRA</span>
+        <h2 class="careers-title">Define the Exceptional</h2>
         <p class="careers-desc">
-            We are looking for individuals who refuse to settle for the ordinary. 
-            If you have the drive to redefine luxury real estate in Dubai, we have the platform.
+            We seek individuals who transcend the ordinary. 
+            If you have the vision to elevate Dubai's luxury real estate landscape, we provide the ultimate platform for your success.
         </p>
-        <a href="contact-us.php" class="btn-luxury-apply">Apply Now</a>
+        <a href="contact-us.php" class="btn-luxury-apply">INQUIRE TODAY</a>
     </div>
 
 </section>
-
 
 <section class="dubai-horizontal-section">
     
