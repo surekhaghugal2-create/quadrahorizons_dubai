@@ -151,11 +151,7 @@
         <input type="text" class="c-input" placeholder="Enter Property Location" name="location">
     </div>
 
-<<<<<<< HEAD
-    <div class="c-form-group full-width">
-=======
     <div class="c-form-group">
->>>>>>> abd1abb0418556f56577f94bd12eb6cfae47e901
         <label class="c-label">Select Property</label>
         <select class="c-input" name="property">
             <option value="">Choose Property</option>
@@ -166,8 +162,6 @@
             <option>JBR Beachfront Apartment</option>
         </select>
     </div>
-<<<<<<< HEAD
-=======
     <div class="c-form-group">
        <label class="c-label">Select Country</label>
     <select class="c-input" name="country">
@@ -212,7 +206,6 @@
     </select>
     </div>
     
->>>>>>> abd1abb0418556f56577f94bd12eb6cfae47e901
 
     <!-- MESSAGE FULL WIDTH -->
     <div class="c-form-group full-width">
