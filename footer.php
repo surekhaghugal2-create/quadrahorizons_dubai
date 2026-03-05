@@ -95,10 +95,50 @@
 
                     </div>
 
-                    <div class="form-group">
-                        <input type="text" name="location" placeholder=" " required>
-                        <label>LOCATION</label>
+                    <div class="form-row location-row">
+                        <div class="form-group">
+                            <input type="text" name="location" placeholder=" " required>
+                            <label>CITY</label>
+                        </div>
+
+                        <div class="form-group">
+                            <select name="country" required>
+                                <option value="" disabled selected></option>
+                                <option value="United Arab Emirates">United Arab Emirates</option>
+                                <option value="India">India</option>
+                                <option value="United States">United States</option>
+                                <option value="United Kingdom">United Kingdom</option>
+                                <option value="Saudi Arabia">Saudi Arabia</option>
+                                <option value="Qatar">Qatar</option>
+                                <option value="Kuwait">Kuwait</option>
+                                <option value="Oman">Oman</option>
+                                <option value="Bahrain">Bahrain</option>
+                                <option value="Australia">Australia</option>
+                                <option value="Canada">Canada</option>
+                                <option value="Germany">Germany</option>
+                                <option value="France">France</option>
+                                <option value="Italy">Italy</option>
+                                <option value="Russia">Russia</option>
+                                <option value="China">China</option>
+                                <option value="Singapore">Singapore</option>
+                                <option value="Malaysia">Malaysia</option>
+                                <option value="South Africa">South Africa</option>
+                                <option value="Egypt">Egypt</option>
+                                <option value="Pakistan">Pakistan</option>
+                                <option value="Bangladesh">Bangladesh</option>
+                                <option value="Philippines">Philippines</option>
+                                <option value="Brazil">Brazil</option>
+                                <option value="Netherlands">Netherlands</option>
+                            </select>
+                            <label>COUNTRY</label>
+                        </div>
                     </div>
+
+
+                    <!-- <div class="form-group">
+                            <input type="text" name="location" placeholder=" " required>
+                            <label>LOCATION</label>
+                        </div> -->
 
                     <button type="submit" class="split-btn">
                         MEET OUR BRAND AMBASSADOR
@@ -177,4 +217,173 @@
         });
 
     });
+</script>
+<!-- <script>
+    document.addEventListener("DOMContentLoaded", function() {
+        const select = document.getElementById("split-country-select");
+
+        const countries = [{
+                code: "+971",
+                name: "United Arab Emirates"
+            },
+            {
+                code: "+91",
+                name: "India"
+            },
+            {
+                code: "+1",
+                name: "United States"
+            },
+            {
+                code: "+44",
+                name: "United Kingdom"
+            },
+            {
+                code: "+966",
+                name: "Saudi Arabia"
+            },
+            {
+                code: "+974",
+                name: "Qatar"
+            },
+            {
+                code: "+965",
+                name: "Kuwait"
+            },
+            {
+                code: "+968",
+                name: "Oman"
+            },
+            {
+                code: "+973",
+                name: "Bahrain"
+            },
+            {
+                code: "+61",
+                name: "Australia"
+            },
+            {
+                code: "+1",
+                name: "Canada"
+            },
+            {
+                code: "+33",
+                name: "France"
+            },
+            {
+                code: "+49",
+                name: "Germany"
+            },
+            {
+                code: "+39",
+                name: "Italy"
+            },
+            {
+                code: "+34",
+                name: "Spain"
+            },
+            {
+                code: "+7",
+                name: "Russia"
+            },
+            {
+                code: "+86",
+                name: "China"
+            },
+            {
+                code: "+65",
+                name: "Singapore"
+            },
+            {
+                code: "+60",
+                name: "Malaysia"
+            },
+            {
+                code: "+27",
+                name: "South Africa"
+            },
+            {
+                code: "+20",
+                name: "Egypt"
+            },
+            {
+                code: "+92",
+                name: "Pakistan"
+            },
+            {
+                code: "+880",
+                name: "Bangladesh"
+            },
+            {
+                code: "+63",
+                name: "Philippines"
+            },
+            {
+                code: "+81",
+                name: "Japan"
+            },
+            {
+                code: "+82",
+                name: "South Korea"
+            },
+            {
+                code: "+90",
+                name: "Turkey"
+            },
+            {
+                code: "+55",
+                name: "Brazil"
+            },
+            {
+                code: "+31",
+                name: "Netherlands"
+            }
+        ];
+
+        countries.forEach(c => {
+            const option = document.createElement("option");
+            option.value = c.code;
+            option.textContent = `${c.code} - ${c.name}`;
+            if (c.code === "+971") option.selected = true;
+            select.appendChild(option);
+        });
+    });
+</script> -->
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+    const countrySelect = document.querySelector("select[name='country']");
+
+    const countries = [
+        "Afghanistan","Albania","Algeria","Argentina","Australia","Austria",
+        "Bahrain","Bangladesh","Belgium","Brazil","Bulgaria",
+        "Canada","China","Colombia","Croatia",
+        "Denmark","Egypt","Finland","France",
+        "Germany","Greece",
+        "India","Indonesia","Ireland","Italy",
+        "Japan","Jordan",
+        "Kuwait",
+        "Malaysia","Mexico",
+        "Netherlands","New Zealand","Nigeria",
+        "Oman",
+        "Pakistan","Philippines","Poland","Portugal",
+        "Qatar",
+        "Romania","Russia",
+        "Saudi Arabia","Singapore","South Africa","South Korea","Spain",
+        "Sweden","Switzerland",
+        "Thailand","Turkey",
+        "United Arab Emirates","United Kingdom","United States",
+        "Vietnam"
+    ];
+
+    countries.sort();
+
+    countries.forEach(country => {
+        let option = document.createElement("option");
+        option.value = country;
+        option.textContent = country;
+        countrySelect.appendChild(option);
+    });
+
+});
 </script>

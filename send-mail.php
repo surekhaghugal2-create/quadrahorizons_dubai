@@ -15,6 +15,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $meeting_date = $_POST['meeting_date'];
     $meeting_time = $_POST['meeting_time'];
     $location = $_POST['location'];
+     $country = $_POST['country'];
 
      $mail = new PHPMailer(true);
 
@@ -44,6 +45,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             <b>meeting_date:</b> $meeting_date<br>
             <b>meeting_time:</b> $meeting_time<br>
             <b>location:</b> $location<br>
+             <b>country:</b> $country<br>
 
         ";
 
