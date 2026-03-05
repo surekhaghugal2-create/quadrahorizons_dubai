@@ -264,177 +264,202 @@ ul.luxury-list li::before {
 /* =========================================
    5. FAQ SECTION
    ========================================= */
-/* --- FAQ CONTAINER --- */
-.faq-section {
-    padding: 50px 5%;
-    /* background-color: #0A1120; */
-    background-color: #000;
-    /* Dark Background */
-    color: #fff;
-}
-
-.faq-container {
-    max-width: 900px;
-    margin: 0 auto;
-    border-top: 1px solid rgba(255, 255, 255, 0.1);
-}
-
-.faq-item { 
-    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+.rent-pg-faq { 
+    padding: 120px 5%; 
+    position: relative; /* Essential for background positioning */
     overflow: hidden;
-    /* Crucial for animation */
+    background: #000; /* Fallback */
 }
 
-.section-header {
-    margin-top: 20px;
-    margin-bottom: 70px;
-    max-width: 1400px;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-    background-color: #d6dae2;
+/* Background Media Fixed */
+.faq-bg-media {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 0;
+    opacity: 0.5; /* Balanced visibility */
+    filter: grayscale(40%) brightness(0.9); 
+    pointer-events: none;
 }
 
-.section-header h2 {
-    font-family: var(--font-heading);
-    font-size: 50px; /* FIXED SIZE */
-    color: var(--white);
-    /* background-color: #0A1120 ; */
-    background-color: #000;
-    margin-bottom: 20px;
+/* Deep Gradient Overlay - Keeps center video visible */
+.faq-bg-overlay {
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+    pointer-events: none;
+    background: radial-gradient(circle at center, rgba(20, 20, 20, 0.253) 0%, rgba(5, 8, 15, 0.85) 100%);
 }
 
-/* --- QUESTION (CLICKABLE) --- */
-.faq-question {
+.rent-pg-faq-container {
+    position: relative;
+    z-index: 2; /* Ensures content is above video/overlay */
+    max-width: 1000px;
+    margin: 0 auto;
+  
+}
+
+.rent-pg-faq-header { 
+    text-align: center; 
+    margin-bottom: 60px; 
+}
+
+/* Cinematic Gold Divider */
+.rent-pg-gold-divider {
+    height: 2px; width: 80px;
+    background: rgba(255, 196, 3, 0.897);
+    margin: 25px auto;
+    position: relative;
+    overflow: hidden;
+}
+
+.rent-pg-gold-divider::after {
+    content: ''; 
+    position: absolute; 
+    top: 0; left: -100%;
+    width: 100%; height: 100%;
+    background: linear-gradient(90deg, transparent, var(--rent-gold), transparent);
+    animation: line-sweep 4s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+}
+
+/* The FAQ Card - Curved & High Shadow */
+.rent-pg-faq-item {
+    max-width: 1000px;
+    margin: 0 auto 20px;
+    background: rgba(5, 5, 5, 0.918); /* Darker glass for better contrast */
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 12px; /* Smooth curved corners */
+    transition: all 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+    overflow: hidden;
+    /* Premium Box Shadow */
+     box-shadow: 
+        0 40px 100px rgba(46, 46, 46, 0.6), 
+        0 10px 40px rgba(22, 22, 22, 0.4),
+        0 0 100px rgba(14, 13, 13, 0.03); 
+        
+    border: 1px solid rgba(43, 43, 43, 0.03); /* Ghost border */
+}
+
+.rent-pg-faq-item:hover {
+    background: var(--rent-dark);
+    border-color: rgba(212, 175, 55, 0.5);
+    transform: translateY(-5px);
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.7), 0 0 15px rgba(212, 175, 55, 0.1);
+}
+
+.rent-pg-faq-item.active {
+    background: rgba(0, 0, 0, 0.89);
+    border-color: rgba(212, 175, 55, 0.7);
+    box-shadow: 0 30px 60px -15px rgba(0, 0, 0, 0.8);
+}
+
+/* Question Trigger */
+.rent-pg-faq-btn {
+    width: 100%;
+    background: none;
+    border: none;
+    padding: 32px 40px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 25px 0;
     cursor: pointer;
-    transition: 0.3s;
+    outline: none;
 }
 
-.faq-question h3 {
-    font-family: 'Playfair Display', serif;
-    font-size: 20px;
+.rent-pg-faq-q {
+    font-family: 'Work Sans', sans-serif !important;
+    font-size: 18px !important;
     font-weight: 400;
-    margin: 0;
-    color: #fff;
+    color: rgba(255, 255, 255, 0.9);
+    text-align: left;
+    letter-spacing: 0.3px;
+    transition: all 0.4s ease;
 }
 
-.faq-icon {
-    font-size: 24px;
+.rent-pg-faq-item.active .rent-pg-faq-q {
     color: #D4AF37;
-    /* Gold */
-    font-weight: 300;
-    width: 30px;
-    text-align: center;
+    font-weight: 500;
 }
 
-/* Hover Effect */
-.faq-question:hover h3 {
-    color: #D4AF37;
+/* Smooth Icon Animation */
+.rent-pg-faq-icon {
+    position: relative;
+    width: 20px;
+    height: 20px;
+    flex-shrink: 0;
 }
 
-/* --- ANSWER (HIDDEN DEFAULT) --- */
-.faq-answer {
-    max-height: 0;
-    /* Hidden */
-    overflow: hidden;
-    transition: max-height 0.5s ease-out;
-    /* Smooth Slide */
-    padding-right: 20px;
+.rent-pg-faq-icon .line {
+    position: absolute;
+    background: #D4AF37;
+    transition: all 0.6s cubic-bezier(0.34, 1.56, 0.64, 1);
 }
 
-.faq-answer p {
-    font-family: 'Work Sans', sans-serif;
-    font-size: 14px;
-    line-height: 1.6;
-    color: #b0b0b0;
-    margin: 0;
-    padding-bottom: 25px;
-    /* Spacing */
+.rent-pg-faq-icon .vertical {
+    width: 2px; height: 16px;
+    left: 9px; top: 2px;
 }
 
-/* --- ACTIVE STATE --- */
-.faq-item.active .faq-question h3 {
-    color: #D4AF37;
+.rent-pg-faq-icon .horizontal {
+    width: 16px; height: 2px;
+    top: 9px; left: 2px;
 }
 
-/* .active .faq-answer max-height is handled by JS */
-
-/* =========================================
-   6. SCROLL REVEAL ANIMATION
-   ========================================= */
-.reveal {
+.rent-pg-faq-item.active .vertical {
+    transform: rotate(90deg);
     opacity: 0;
-    transform: translateY(50px);
-    transition: all 1s cubic-bezier(0.5, 0, 0, 1);
 }
 
-.reveal.active {
+/* The Smooth Panel Reveal */
+.rent-pg-faq-panel {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.rent-pg-faq-item.active .rent-pg-faq-panel {
+    max-height: 600px;
+}
+
+.rent-pg-faq-content {
+    padding: 0 40px 40px 40px;
+    opacity: 0;
+    filter: blur(15px);
+    transform: translateY(20px);
+    transition: 
+        opacity 0.8s ease, 
+        filter 0.8s ease, 
+        transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.rent-pg-faq-item.active .rent-pg-faq-content {
     opacity: 1;
+    filter: blur(0);
     transform: translateY(0);
+    transition-delay: 0.2s;
 }
 
-/* =========================================
-   7. MOBILE RESPONSIVE
-   ========================================= */
-@media (max-width: 992px) {
-    /* Hero */
-    .page-hero { height: 50vh; }
-    .hero-title h1 { font-size: 40px; }
-
-    /* Grid */
-    .grid-container {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    /* Content Blocks */
-    .content-block {
-        flex-direction: column !important; /* Forces stacking */
-        gap: 40px;
-        text-align: center;
-    }
-    
-    .text-side, .img-side { width: 100%; }
-    
-    ul.luxury-list { 
-        text-align: left; 
-        display: inline-block;
-    }
+.rent-pg-faq-content p {
+    font-family: 'Work Sans', sans-serif !important;
+    font-size: 18px !important;
+    line-height: 1.8;
+    color: rgba(255, 255, 255, 0.65);
+    margin: 0;
 }
 
+/* Mobile Smoothing */
 @media (max-width: 768px) {
-    /* Single Column Grid on Phones */
-    .grid-container {
-        grid-template-columns: 1fr;
-    }
-
-    .section-title, .block-title {
-        font-size: 36px;
-    }
-
-    .hero-title h1 {
-        font-size: 36px;
-    }
+    .rent-pg-faq { padding: 80px 20px; }
+    .rent-pg-faq-btn { padding: 25px; }
+    .rent-pg-faq-content { padding: 0 25px 30px 25px; }
     
-    .section-header h2 {
-        font-size: 36px;
-    }
-    .faq-question {
-        font-size: 18px;
-    }
-    .block-text {
-        font-size: 16px;
-    }
-    .projects-section {
-        padding: 20px 5%;
-    }
-    .info-wrapper {
-        padding: 50px 5%;
-    }
-    .faq-section {
-        padding: 50px 5%;
+    .rent-pg-faq-q, 
+    .rent-pg-faq-content p { 
+        font-size: 16px !important; 
     }
 }

@@ -238,11 +238,12 @@
 
 
     <!-- FAQ SECTION -->
+   
+    <!-- FAQ SECTION -->
     <section class="rent-pg-faq">
             <video class="faq-bg-media" autoplay loop muted playsinline>
         <source src="video/background (1).mp4 " type="video/mp4">
     </video> 
-    
     
     <div class="faq-bg-overlay"></div>
         <div class="rent-pg-faq-container">

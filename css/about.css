@@ -818,3 +818,255 @@ bottom: 50px;    left: 10%;
     }
 }
 
+/* =======================================================
+   OUR TEAM SECTION (ABOUT PAGE)
+   ======================================================= */
+.rent-pg-team-section {
+    padding: 120px 5%;
+    background-color: var(--rent-dark, #000);
+    position: relative;
+    overflow: hidden;
+}
+
+.team-container {
+    max-width: 1400px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 2;
+}
+
+/* --- Header Styling --- */
+.team-header {
+    text-align: center;
+    margin-bottom: 70px;
+}
+
+.team-pre-title {
+    display: block;
+    color: var(--rent-gold, #D4AF37);
+    font-size: 13px;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+
+.team-desc {
+    margin-top: 20px;
+}
+
+/* --- The Grid --- */
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+}
+
+/* --- The Team Cards --- */
+.team-card {
+    position: relative;
+    border-radius: 12px;
+    overflow: hidden;
+    background: var(--rent-card-bg, #111);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    transition: all 0.5s cubic-bezier(0.25, 1, 0.5, 1);
+    cursor: pointer;
+}
+
+.team-card:hover {
+    transform: translateY(-10px);
+    border-color: rgba(212, 175, 55, 0.4);
+    box-shadow: 0 25px 50px rgba(0, 0, 0, 0.6), 0 0 20px rgba(212, 175, 55, 0.1);
+}
+
+/* --- Card Image & Hover Effects --- */
+.team-img-wrap {
+    position: relative;
+    height: 480px; /* Tall, premium portrait aspect ratio */
+    overflow: hidden;
+}
+
+.team-img-wrap img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: grayscale(80%) brightness(0.8); /* Cinematic dark/desaturated look */
+    transition: transform 0.8s ease, filter 0.8s ease;
+}
+
+.team-card:hover .team-img-wrap img {
+    transform: scale(1.08); /* Slow, elegant zoom in */
+    filter: grayscale(0%) brightness(1.1); /* Turns to full color on hover */
+}
+
+/* --- Hover Social Overlay --- */
+.team-social-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.8) 0%, transparent 60%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+.team-card:hover .team-social-overlay {
+    opacity: 1;
+}
+
+.team-social-icon {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    color: var(--rent-white, #fff);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    text-decoration: none;
+    transform: translateY(20px);
+    transition: all 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+.team-card:hover .team-social-icon {
+    transform: translateY(0);
+}
+
+.team-social-icon:hover {
+    background: var(--rent-gold, #D4AF37);
+    border-color: var(--rent-gold, #D4AF37);
+    color: var(--rent-dark, #000);
+}
+
+/* --- Glassmorphism Info Panel --- */
+.team-info-glass {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 20px;
+    background: rgba(10, 10, 10, 0.6);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+    text-align: center;
+    transition: background 0.5s ease;
+}
+
+.team-card:hover .team-info-glass {
+    background: rgba(0, 0, 0, 0.85); /* Darkens slightly on hover to make text pop */
+}
+
+.team-name {
+    font-family: var(--font-heading) !important;
+    font-size: 26px !important;
+    color: var(--rent-white, #fff);
+    margin: 0 0 5px 0;
+    font-weight: 400;
+}
+
+.team-role {
+    font-family: var(--font-body) !important;
+    font-size: 14px !important;
+    color: var(--rent-gold, #D4AF37);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin: 0;
+}
+
+/* Animated Gold Line underneath text */
+.team-card-line {
+    width: 0;
+    height: 2px;
+    background: var(--rent-gold, #D4AF37);
+    margin: 15px auto 0;
+    transition: width 0.6s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+.team-card:hover .team-card-line {
+    width: 60px;
+}
+
+/* =======================================================
+   RESPONSIVE LAYOUTS (TABLET & MOBILE)
+   ======================================================= */
+
+/* --- TABLET VIEW (Max 1024px) --- */
+@media (max-width: 1024px) {
+    .team-grid {
+        grid-template-columns: repeat(2, 1fr); /* 2 columns on iPad */
+        gap: 30px;
+    }
+    .team-img-wrap { height: 420px; }
+}
+
+@media (max-width: 768px) {
+    .team-grid { grid-template-columns: 1fr; max-width: 500px; margin: 0 auto; }
+}
+
+/* --- STRICT MOBILE VIEW (Max 425px) --- */
+@media (max-width: 425px) {
+    
+    /* Strict Mobile Padding */
+    .rent-pg-team-section {
+        padding: 60px 20px !important;
+    }
+
+    /* Strict Mobile Left Alignment */
+    .team-header {
+        text-align: left !important;
+        margin-bottom: 40px;
+    }
+
+    .team-pre-title {
+        text-align: left !important;
+        font-size: 12px;
+        margin-bottom: 10px;
+    }
+
+    /* Enforce 36px Headings & 16px Paragraphs */
+    .team-header .rent-pg-section-title {
+        font-size: 36px !important;
+        text-align: left !important;
+        margin-bottom: 15px !important;
+    }
+
+    .team-desc {
+        font-size: 16px !important;
+        line-height: 1.6 !important;
+        text-align: left !important;
+    }
+
+    /* Snap the divider line to the left edge */
+    .rent-pg-gold-divider {
+        margin: 15px 0 !important;
+    }
+
+    /* Mobile Card Layout */
+    .team-img-wrap {
+        height: 380px; /* Slightly shorter on mobile so it fits the screen */
+    }
+
+    .team-info-glass {
+        text-align: left !important; /* Left aligns the name and role inside the glass */
+        padding: 25px 20px;
+    }
+
+    .team-name {
+        font-size: 24px !important;
+    }
+
+    .team-role {
+        font-size: 13px !important;
+    }
+
+    /* Snap the hover line to the left edge inside the card */
+    .team-card-line {
+        margin: 15px 0 0 0 !important;
+    }
+}

@@ -137,75 +137,207 @@
 .arrow-icon { color: var(--rent-gold); font-size: 18px; transition: transform 0.3s; }
 .project-card:hover .arrow-icon { transform: rotate(-45deg); }
 
-/* =========================================
-   6. FAQ SECTION
-   ========================================= */
 .rent-pg-faq { 
     padding: 120px 5%; 
-    position: relative; overflow: hidden; background: #000;
+    position: relative; /* Essential for background positioning */
+    overflow: hidden;
+    background: #000; /* Fallback */
 }
 
+
+/* FAQ SECTION */
+/* Background Media Fixed */
 .faq-bg-media {
-    position: absolute; top: 0; left: 0; width: 100%; height: 100%;
-    object-fit: cover; z-index: 0; opacity: 0.5; filter: grayscale(40%) brightness(0.9); pointer-events: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 0;
+    opacity: 0.5; /* Balanced visibility */
+    filter: grayscale(40%) brightness(0.9); 
+    pointer-events: none;
 }
 
+/* Deep Gradient Overlay - Keeps center video visible */
 .faq-bg-overlay {
-    position: absolute; inset: 0; z-index: 1; pointer-events: none;
-    background: radial-gradient(circle at center, rgba(20, 20, 20, 0.25) 0%, rgba(5, 8, 15, 0.85) 100%);
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+    pointer-events: none;
+    background: radial-gradient(circle at center, rgba(20, 20, 20, 0.253) 0%, rgba(5, 8, 15, 0.85) 100%);
 }
 
-.rent-pg-faq-container { position: relative; z-index: 2; max-width: 1000px; margin: 0 auto; }
-.rent-pg-faq-header { text-align: center; margin-bottom: 60px; }
+.rent-pg-faq-container {
+    position: relative;
+    z-index: 2; /* Ensures content is above video/overlay */
+    max-width: 1000px;
+    margin: 0 auto;
+  
+}
 
-.rent-pg-pre-title { display: block; color: var(--rent-gold); font-size: 13px; letter-spacing: 4px; text-transform: uppercase; margin-bottom: 15px; }
+.rent-pg-faq-header { 
+    text-align: center; 
+    margin-bottom: 60px; 
+}
 
+/* Cinematic Gold Divider */
 .rent-pg-gold-divider {
-    height: 2px; width: 80px; background: rgba(212, 175, 55, 0.5);
-    margin: 25px auto; position: relative; overflow: hidden;
+    height: 2px; width: 80px;
+    background: rgba(255, 196, 3, 0.897);
+    margin: 25px auto;
+    position: relative;
+    overflow: hidden;
 }
+
 .rent-pg-gold-divider::after {
-    content: ''; position: absolute; top: 0; left: -100%; width: 100%; height: 100%;
+    content: ''; 
+    position: absolute; 
+    top: 0; left: -100%;
+    width: 100%; height: 100%;
     background: linear-gradient(90deg, transparent, var(--rent-gold), transparent);
-    animation: line-sweep 3s ease-in-out infinite;
+    animation: line-sweep 4s cubic-bezier(0.4, 0, 0.2, 1) infinite;
 }
-@keyframes line-sweep { 100% { left: 100%; } }
 
-/* FAQ Cards */
+/* The FAQ Card - Curved & High Shadow */
 .rent-pg-faq-item {
-    background: rgba(10, 10, 10, 0.8); backdrop-filter: blur(20px); -webkit-backdrop-filter: blur(20px);
-    border: 1px solid rgba(255, 255, 255, 0.05); border-radius: 12px; margin-bottom: 20px;
-    overflow: hidden; transition: all 0.5s var(--ease-premium);
-    box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+    max-width: 1000px;
+    margin: 0 auto 20px;
+    background: rgba(5, 5, 5, 0.918); /* Darker glass for better contrast */
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 12px; /* Smooth curved corners */
+    transition: all 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+    overflow: hidden;
+    /* Premium Box Shadow */
+     box-shadow: 
+        0 40px 100px rgba(46, 46, 46, 0.6), 
+        0 10px 40px rgba(22, 22, 22, 0.4),
+        0 0 100px rgba(14, 13, 13, 0.03); 
+        
+    border: 1px solid rgba(43, 43, 43, 0.03); /* Ghost border */
 }
 
-.rent-pg-faq-item:hover { transform: translateY(-3px); border-color: rgba(212, 175, 55, 0.3); background: rgba(15, 15, 15, 0.9); }
-.rent-pg-faq-item.active { border-color: var(--rent-gold); background: rgba(20, 20, 20, 0.95); box-shadow: 0 30px 60px rgba(0,0,0,0.6); }
+.rent-pg-faq-item:hover {
+    background: var(--rent-dark);
+    border-color: rgba(212, 175, 55, 0.5);
+    transform: translateY(-5px);
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.7), 0 0 15px rgba(212, 175, 55, 0.1);
+}
 
+.rent-pg-faq-item.active {
+    background: rgba(0, 0, 0, 0.89);
+    border-color: rgba(212, 175, 55, 0.7);
+    box-shadow: 0 30px 60px -15px rgba(0, 0, 0, 0.8);
+}
+
+/* Question Trigger */
 .rent-pg-faq-btn {
-    width: 100%; background: none; border: none; padding: 30px 40px;
-    display: flex; justify-content: space-between; align-items: center; cursor: pointer; text-align: left;
+    width: 100%;
+    background: none;
+    border: none;
+    padding: 32px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    outline: none;
 }
 
-.rent-pg-faq-q { color: rgba(255, 255, 255, 0.9); transition: color 0.4s ease; }
-.rent-pg-faq-item:hover .rent-pg-faq-q, .rent-pg-faq-item.active .rent-pg-faq-q { color: var(--rent-gold); }
+.rent-pg-faq-q {
+    font-family: 'Work Sans', sans-serif !important;
+    font-size: 18px !important;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.9);
+    text-align: left;
+    letter-spacing: 0.3px;
+    transition: all 0.4s ease;
+}
 
-/* Perfect Plus/Minus Icon */
-.rent-pg-faq-icon { position: relative; width: 18px; height: 18px; flex-shrink: 0; transition: transform 0.5s var(--ease-premium); }
-.rent-pg-faq-icon .line { position: absolute; background: var(--rent-gold); border-radius: 2px; transition: all 0.4s ease; }
-.rent-pg-faq-icon .horizontal { width: 100%; height: 2px; top: 50%; left: 0; transform: translateY(-50%); }
-.rent-pg-faq-icon .vertical { width: 2px; height: 100%; top: 0; left: 50%; transform: translateX(-50%); }
+.rent-pg-faq-item.active .rent-pg-faq-q {
+    color: #D4AF37;
+    font-weight: 500;
+}
 
-.rent-pg-faq-item.active .rent-pg-faq-icon { transform: rotate(180deg); }
-.rent-pg-faq-item.active .rent-pg-faq-icon .line { background: var(--rent-white); }
-.rent-pg-faq-item.active .vertical { transform: translateX(-50%) scaleY(0); opacity: 0; }
+/* Smooth Icon Animation */
+.rent-pg-faq-icon {
+    position: relative;
+    width: 20px;
+    height: 20px;
+    flex-shrink: 0;
+}
 
-/* Panel Animation */
-.rent-pg-faq-panel { max-height: 0; overflow: hidden; transition: max-height 0.8s var(--ease-premium); }
-.rent-pg-faq-content { padding: 0 40px 35px 40px; opacity: 0; transform: translateY(-10px); transition: all 0.5s ease; }
-.rent-pg-faq-item.active .rent-pg-faq-content { opacity: 1; transform: translateY(0); transition-delay: 0.1s; }
-.rent-pg-faq-content p { color: rgba(255, 255, 255, 0.7); }
+.rent-pg-faq-icon .line {
+    position: absolute;
+    background: #D4AF37;
+    transition: all 0.6s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
 
+.rent-pg-faq-icon .vertical {
+    width: 2px; height: 16px;
+    left: 9px; top: 2px;
+}
+
+.rent-pg-faq-icon .horizontal {
+    width: 16px; height: 2px;
+    top: 9px; left: 2px;
+}
+
+.rent-pg-faq-item.active .vertical {
+    transform: rotate(90deg);
+    opacity: 0;
+}
+
+/* The Smooth Panel Reveal */
+.rent-pg-faq-panel {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.rent-pg-faq-item.active .rent-pg-faq-panel {
+    max-height: 600px;
+}
+
+.rent-pg-faq-content {
+    padding: 0 40px 40px 40px;
+    opacity: 0;
+    filter: blur(15px);
+    transform: translateY(20px);
+    transition: 
+        opacity 0.8s ease, 
+        filter 0.8s ease, 
+        transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.rent-pg-faq-item.active .rent-pg-faq-content {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateY(0);
+    transition-delay: 0.2s;
+}
+
+.rent-pg-faq-content p {
+    font-family: 'Work Sans', sans-serif !important;
+    font-size: 18px !important;
+    line-height: 1.8;
+    color: rgba(255, 255, 255, 0.65);
+    margin: 0;
+}
+
+/* Mobile Smoothing */
+@media (max-width: 768px) {
+    .rent-pg-faq { padding: 80px 20px; }
+    .rent-pg-faq-btn { padding: 25px; }
+    .rent-pg-faq-content { padding: 0 25px 30px 25px; }
+    
+    .rent-pg-faq-q, 
+    .rent-pg-faq-content p { 
+        font-size: 16px !important; 
+    }
+}
 
 /* =======================================================
    RESPONSIVE LAYOUTS (TABLET & MOBILE)

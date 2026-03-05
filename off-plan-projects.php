@@ -257,52 +257,124 @@
 </div>
 
 <!-- FAQ SECTION -->
-<section class="faq-section reveal">
-    <div class="section-header">
-        <h2>Frequently Asked Questions</h2>
-    </div>
 
-    <div class="faq-container">
-        <div class="faq-item">
-            <div class="faq-question">
-                <h3>Is it a good time to buy a property in Dubai in 2024?</h3>
-                <span class="faq-icon">+</span>
-            </div>
-            <div class="faq-answer">
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+    <!-- FAQ SECTION -->
+    <section class="rent-pg-faq">
+            <video class="faq-bg-media" autoplay loop muted playsinline>
+        <source src="video/background (1).mp4 " type="video/mp4">
+    </video> 
+    
+    <div class="faq-bg-overlay"></div>
+        <div class="rent-pg-faq-container">
+            <header class="rent-pg-faq-header js-reveal">
+                <span class="rent-pg-pre-title">REFINEMENT & DETAIL</span>
+                <h2 class="rent-pg-section-title">Frequently Asked Questions</h2>
+                <div class="rent-pg-gold-divider"></div>
+            </header>
+
+            <div class="rent-pg-faq-accordion">
+                <div class="rent-pg-faq-item js-reveal">
+                    <button class="rent-pg-faq-btn">
+                        <span class="rent-pg-faq-q">How is the architectural integrity verified?</span>
+                        <div class="rent-pg-faq-icon">
+                            <span class="line vertical"></span>
+                            <span class="line horizontal"></span>
+                        </div>
+                    </button>
+                    <div class="rent-pg-faq-panel">
+                        <div class="rent-pg-faq-content">
+                            <p>Our structural engineers utilize aerospace-grade simulations to stress-test every cantilever and foundation. We ensure that your silhouette remains timeless against seismic and environmental shifts.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="rent-pg-faq-item js-reveal">
+                    <button class="rent-pg-faq-btn">
+                        <span class="rent-pg-faq-q">What is the timeline for bespoke commissions?</span>
+                        <div class="rent-pg-faq-icon">
+                            <span class="line vertical"></span>
+                            <span class="line horizontal"></span>
+                        </div>
+                    </button>
+                    <div class="rent-pg-faq-panel">
+                        <div class="rent-pg-faq-content">
+                            <p>A typical architectural masterpiece requires 12 to 18 months from initial conceptualization to final handover. This allows for meticulous sourcing of rare materials and artisan-level finishing.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="rent-pg-faq-item js-reveal">
+                    <button class="rent-pg-faq-btn">
+                        <span class="rent-pg-faq-q">Do you offer smart-home architectural integration?</span>
+                        <div class="rent-pg-faq-icon">
+                            <span class="line vertical"></span>
+                            <span class="line horizontal"></span>
+                        </div>
+                    </button>
+                    <div class="rent-pg-faq-panel">
+                        <div class="rent-pg-faq-content">
+                            <p>We treat technology as invisible luxury. Automation is embedded into the walls themselves, allowing for biometric access, circadian lighting, and climate control that anticipates your arrival.</p>
+                        </div>
+                    </div>
+                </div>
+
+                  <div class="rent-pg-faq-item js-reveal">
+                    <button class="rent-pg-faq-btn">
+                        <span class="rent-pg-faq-q">Do you offer smart-home architectural integration?</span>
+                        <div class="rent-pg-faq-icon">
+                            <span class="line vertical"></span>
+                            <span class="line horizontal"></span>
+                        </div>
+                    </button>
+                    <div class="rent-pg-faq-panel">
+                        <div class="rent-pg-faq-content">
+                            <p>We treat technology as invisible luxury. Automation is embedded into the walls themselves, allowing for biometric access, circadian lighting, and climate control that anticipates your arrival.</p>
+                        </div>
+                    </div>
+                </div>
+
+                  <div class="rent-pg-faq-item js-reveal">
+                    <button class="rent-pg-faq-btn">
+                        <span class="rent-pg-faq-q">Do you offer smart-home architectural integration?</span>
+                        <div class="rent-pg-faq-icon">
+                            <span class="line vertical"></span>
+                            <span class="line horizontal"></span>
+                        </div>
+                    </button>
+                    <div class="rent-pg-faq-panel">
+                        <div class="rent-pg-faq-content">
+                            <p>We treat technology as invisible luxury. Automation is embedded into the walls themselves, allowing for biometric access, circadian lighting, and climate control that anticipates your arrival.</p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
+    </section>
+    <script>
+document.addEventListener('DOMContentLoaded', () => {
+    // 1. FAQ Accordion Logic
+    const faqItems = document.querySelectorAll('.rent-pg-faq-item');
+    faqItems.forEach(item => {
+        const btn = item.querySelector('.rent-pg-faq-btn');
+        btn.addEventListener('click', () => {
+            const isActive = item.classList.contains('active');
+            faqItems.forEach(i => i.classList.remove('active')); // Close others
+            if (!isActive) item.classList.add('active');
+        });
+    });
 
-        <div class="faq-item">
-            <div class="faq-question">
-                <h3>How is the current real estate market in Dubai in 2024?</h3>
-                <span class="faq-icon">+</span>
-            </div>
-            <div class="faq-answer">
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-            </div>
-        </div>
+    // 2. Intersection Observer for Scroll Animations
+    const observerOptions = { threshold: 0.15 };
+    const revealObserver = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('is-visible');
+            }
+        });
+    }, observerOptions);
 
-        <div class="faq-item">
-            <div class="faq-question">
-                <h3>Have there been shifts in sale prices for Dubai properties in 2024?</h3>
-                <span class="faq-icon">+</span>
-            </div>
-            <div class="faq-answer">
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-            </div>
-        </div>
-
-        <div class="faq-item">
-            <div class="faq-question">
-                <h3>Can an expat buy Property in Dubai and live permanently?</h3>
-                <span class="faq-icon">+</span>
-            </div>
-            <div class="faq-answer">
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-            </div>
-        </div>
-    </div>
-</section>
+   
+});
+</script>
 
 <?php include 'footer.php'; ?>

@@ -29,9 +29,27 @@
         </div>
 
         <p class="vision-quote">
-            We believe that every space tells a story. Our mission is to create timeless environments 
-            that reflect elegance, functionality, and purpose. We don’t just design structures — 
-            we shape experiences that inspire growth, comfort, and success.
+           Quadra Horizons — كوادرا هوريزونز
+
+At the beginning of 2026, an idea was born — not merely to establish a new real estate company, but to launch a greater vision for the future. This is how Quadra Horizons began in Dubai, a city that knows no limits to ambition.
+
+Although newly established, the company’s roots extend back many years through the extensive hands-on experience of its founders in Dubai’s real estate market. Over time, they gained deep market knowledge and a genuine understanding of investors’ and clients’ needs. After years of experience and growth, four partners sharing the same passion and vision came together to create an entity that reflects their collective aspirations.
+
+The founders chose the name “Quadra Horizons,” meaning “Four Pillars on the Horizon” — a symbol of strength, stability, and forward-looking vision. The name represents the unity of four ambitious minds who believe that true success is built on collaboration, trust, and a clear vision for the future.
+
+The company was founded by the partners:
+* Khaled Alblooshi 
+* Omar Alsayed 
+* Chakib Chami 
+* Yasin mulla Ali 
+
+Each partner represents a fundamental pillar of the company, united by one goal: to build a leading enterprise that goes beyond the real estate sector, becoming an influential brand across multiple industries within Dubai, the United Arab Emirates, and eventually global markets.
+
+At Quadra Horizons, success is not measured solely by the number of transactions, but by the value of the relationships built, the trust earned, and the opportunities created for clients. The company operates with a forward-thinking vision grounded in innovation, professionalism, and the highest standards of service to ensure a secure and exceptional investment experience.
+
+We do not see the horizon as a limit — but as a beginning.
+
+Quadra Horizons — Where vision becomes reality, and ambition turns into achievement.
             <span class="gold-highlight">Excellence, integrity, and innovation define everything we create.</span>"
         </p>
 
@@ -72,6 +90,71 @@
                 <div class="founder-overlay">
                     <span class="founder-role">Founder & Chairman</span>
                     <h3 class="founder-name">Khaled Alblooshi</h3>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+<!-- Team section  -->
+<section class="rent-pg-team-section">
+    <div class="team-container">
+        
+        <div class="team-header anim-fade-up scroll-anim">
+            <span class="team-pre-title">The Minds Behind The Masterpieces</span>
+            <h2 class="rent-pg-section-title">Meet Our <span class="rent-pg-accent">Visionaries</span></h2>
+            <div class="rent-pg-gold-divider"></div>
+            <p class="rent-pg-description team-desc">Our leadership team brings together decades of expertise in avant-garde architecture, luxury real estate development, and world-class client relations.</p>
+        </div>
+
+        <div class="team-grid">
+            
+            <div class="team-card anim-fade-up delay-100 scroll-anim">
+                <div class="team-img-wrap">
+                    <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&w=800&q=80" alt="CEO & Founder">
+                    
+                    <div class="team-social-overlay">
+                        <a href="#" class="team-social-icon"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" class="team-social-icon"><i class="fas fa-envelope"></i></a>
+                    </div>
+                </div>
+                
+                <div class="team-info-glass">
+                    <h3 class="team-name">Alexander Wright</h3>
+                    <p class="team-role">CEO & Founder</p>
+                    <div class="team-card-line"></div>
+                </div>
+            </div>
+
+            <div class="team-card anim-fade-up delay-200 scroll-anim">
+                <div class="team-img-wrap">
+                    <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=800&q=80" alt="Head of Architecture">
+                    <div class="team-social-overlay">
+                        <a href="#" class="team-social-icon"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" class="team-social-icon"><i class="fas fa-envelope"></i></a>
+                    </div>
+                </div>
+                <div class="team-info-glass">
+                    <h3 class="team-name">Elena Rostova</h3>
+                    <p class="team-role">Head of Architecture</p>
+                    <div class="team-card-line"></div>
+                </div>
+            </div>
+
+            <div class="team-card anim-fade-up delay-300 scroll-anim">
+                <div class="team-img-wrap">
+                    <img src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&fit=crop&w=800&q=80" alt="Director of Sales">
+                    <div class="team-social-overlay">
+                        <a href="#" class="team-social-icon"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" class="team-social-icon"><i class="fas fa-envelope"></i></a>
+                    </div>
+                </div>
+                <div class="team-info-glass">
+                    <h3 class="team-name">James Sterling</h3>
+                    <p class="team-role">Director of Global Sales</p>
+                    <div class="team-card-line"></div>
                 </div>
             </div>
 

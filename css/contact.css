@@ -368,3 +368,65 @@
     .contact-form-box { padding: 30px 20px; }
     .full-map { height: 300px; }
 }
+
+
+/* Fix Select & Date Styling Same as Input */
+select.c-input,
+input[type="date"].c-input {
+    width: 100%;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #444;
+    padding: 12px 0;
+    color: #888888;
+    font-size: 16px;
+    font-family: 'Work Sans', sans-serif;
+    transition: 0.3s;
+    outline: none;
+}
+
+select.c-input:focus,
+input[type="date"].c-input:focus {
+    border-bottom-color: #D4AF37;
+}
+
+/* Make dropdown arrow white */
+select.c-input {
+    appearance: none;
+    background: url("data:image/svg+xml;utf8,<svg fill='white' height='24' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/></svg>") no-repeat right;
+    background-size: 18px;
+}
+
+/* extra add css for two column */
+/* ===== FORM GRID 2 COLUMN ===== */
+.c-form-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px 40px;
+}
+
+/* Full width items */
+.c-form-grid .full-width {
+    grid-column: span 2;
+}
+
+/* Reduce form padding to make compact */
+.contact-form-box {
+    padding: 40px 45px;
+}
+
+/* Reduce input spacing */
+.c-form-group {
+    margin-bottom: 10px;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+    .c-form-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .c-form-grid .full-width {
+        grid-column: span 1;
+    }
+}
