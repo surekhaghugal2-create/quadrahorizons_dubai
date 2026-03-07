@@ -1,67 +1,87 @@
+/* =======================================================
+   GLOBAL VARIABLES & LUXURY COLOR PALETTE
+   ======================================================= */
+:root {
+    --rent-gold: #D4AF37;
+    --rent-dark: #000000;
+    --rent-card-bg: #111111;
+    --rent-white: #ffffff;
+    --rent-grey: #a0a0a0; /* Adjusted slightly so it's readable on pure black */
+    --rent-glass: rgba(255, 255, 255, 0.03);
+    --rent-glass-border: rgba(255, 255, 255, 0.1);
+}
+
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 body {
-  font-family: "Work Sans", sans-serif;
-  background: #000;
-  color: #fff;
+    font-family: "Work Sans", sans-serif;
+    background: var(--rent-dark); /* Fixed the white background bug */
+    color: var(--rent-white);
+    overflow-x: hidden;
 }
 
-/* HEADER */
+/* =========================================
+   HEADER & HERO
+   ========================================= */
 .header {
-  position: fixed;  
-  top: 0;
-  width: 100%;
-  padding: 20px 40px;
-  display: flex;
-  justify-content: space-between;
-  background: rgba(0,0,0,0.6);
-  z-index: 10;
+    position: fixed;  
+    top: 0;
+    width: 100%;
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    background: rgba(0,0,0,0.6);
+    z-index: 10;
 }
 
 .logo {
-  font-weight: 600;
-  letter-spacing: 1px;
+    font-weight: 600;
+    letter-spacing: 1px;
 }
 
 .menu {
-  font-size: 26px;
-  cursor: pointer;
+    font-size: 26px;
+    cursor: pointer;
 }
 
-/* HERO */
 .hero img {
-  width: 100%;
-  height: 85vh;
-  object-fit: cover;
+    width: 100%;
+    height: 85vh;
+    object-fit: cover;
 }
 
-/* TITLE */
+/* =========================================
+   PAGE TITLE
+   ========================================= */
 .page-title {
-  text-align: center;
-  padding: 80px 20px;
-  background: #0A1120;
-  color: #ffffff;
+    text-align: center;
+    padding: 80px 20px;
+    background: var(--rent-card-bg);
+    color: var(--rent-white);
 }
 
 .page-title h1 {
-  font-family: "Playfair Display", serif;
-  font-size: 48px;
-  margin-bottom: 20px;
+    font-family: "Playfair Display", serif;
+    font-size: 48px;
+    margin-bottom: 20px;
 }
 
 .page-title p {
-  max-width: 1400px;
-  margin: auto;
-  font-size: 18px;
-  font-weight: 200;
+    max-width: 1400px;
+    margin: auto;
+    font-size: 18px;
+    font-weight: 200;
 } 
 
+/* =========================================
+   STRATEGIC SELLING APPROACH SECTION
+   ========================================= */
 .invest-dubai-section {
-    background-color: #000;
+    background-color: var(--rent-dark);
     padding: 40px 5%;
 }
 
@@ -81,38 +101,13 @@ body {
     overflow: hidden;
     opacity: 0;
     transform: translateX(-80px);
-    transition: opacity 1s ease, transform 1s ease;
+    transition: opacity 1s cubic-bezier(0.16, 1, 0.3, 1), transform 1s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
-/* When visible */
 .invest-image-wrapper.show {
     opacity: 1;
     transform: translateX(0);
 }
-/* seconsectionimge */
-
-
-@media (max-width: 768px) {
-    html, body {
-        overflow-x: hidden;
-    }
-    .invest-container {
-        grid-template-columns: 1fr;
-        gap: 40px;
-        padding: 0 20px;
-        text-align: left;
-    }
-    .invest-image-wrapper {
-        height: 350px;
-    }
-    .invest-dubai-section {
-        padding: 0px 5%;
-    }
-    .dark {
-        padding: 0px 20px;
-}
-}   
-
 
 .invest-image {
     width: 100%;
@@ -121,7 +116,7 @@ body {
 }
 
 .invest-content {
-  padding-top: 50px;
+    padding-top: 50px;
     padding-right: 40px;
 }
 
@@ -130,7 +125,7 @@ body {
     font-size: 14px;
     letter-spacing: 6px;
     text-transform: uppercase;
-    color: #D4AF37;
+    color: var(--rent-gold);
     margin-bottom: 20px;
 }
 
@@ -138,7 +133,7 @@ body {
     font-family: "Playfair Display", serif;
     font-size: 50px;
     font-weight: 400;
-    color: #ffffff;
+    color: var(--rent-white);
     margin-bottom: 30px;
     line-height: 1.1;
 }
@@ -146,7 +141,7 @@ body {
 .invest-text p {
     font-size: 18px;
     line-height: 1.8;
-    color: #cccccc;
+    color: var(--rent-grey);
     margin-bottom: 25px;
 }
 
@@ -160,13 +155,13 @@ ul.selling-strategy li {
     position: relative;
     padding-left: 25px;
     margin-bottom: 15px;
-    color: var(--text-grey);
+    color: var(--rent-grey);
     font-size: 14px;
 }
 
 ul.selling-strategy li::before {
     content: '•';
-    color: var(--gold);
+    color: var(--rent-gold);
     font-size: 20px;
     position: absolute;
     left: 0;
@@ -180,19 +175,19 @@ ul.selling-strategy li::before {
         padding: 0 20px;
         text-align: left;
     }
-
     .invest-image-wrapper {
         height: 350px;
     }
-
+    .invest-dubai-section {
+        padding: 0px 5%;
+    }
     .invest-title {
         font-size: 36px;
     }
-
     .invest-text p {
         font-size: 16px;
         line-height: 1.8;
-        color: #cccccc;
+        color: var(--rent-grey);
         margin-bottom: 25px;
     }
     ul.selling-strategy { 
@@ -204,21 +199,17 @@ ul.selling-strategy li::before {
 /* =========================================
    RERA SAFETY SECTION
 ========================================= */
-
 .rera-section {
-    /* background-color: #05080f; */
-    background-color: #000;
-    padding: 0px 5%;
-    /* margin-bottom: 10px; */
-    color: #ffffff;
+    background-color: var(--rent-card-bg); /* Changed so it contrasts against the black */
+    padding: 80px 5%;
+    color: var(--rent-white);
 }
 
 .rera-container {
-    max-width: 1300px;
+    max-width: 1400px;
     margin: 0 auto;
 }
 
-/* Header */
 .rera-header {
     padding-top: 100px;
     text-align: center;
@@ -230,7 +221,7 @@ ul.selling-strategy li::before {
     display: block;
     font-size: 12px;
     letter-spacing: 4px;
-    color: #D4AF37;
+    color: var(--rent-gold);
     margin-bottom: 15px;
     font-weight: 600;
 }
@@ -242,7 +233,7 @@ ul.selling-strategy li::before {
 }
 
 .rera-header p {
-    color: #b0b0b0;
+    color: var(--rent-grey);
     font-size: 18px;
     line-height: 1.8;
 }
@@ -254,25 +245,23 @@ ul.selling-strategy li::before {
     gap: 40px;
 }
 
-/* Individual Card */
 .rera-card {
-    background: #111827;
+    background: var(--rent-dark);
     padding: 40px;
-    border: 1px solid rgba(255,255,255,0.05);
-    transition: 0.4s ease;
+    border: 1px solid var(--rent-glass-border);
+    transition: 0.4s cubic-bezier(0.16, 1, 0.3, 1);
     position: relative;
 }
 
 .rera-card:hover {
     transform: translateY(-10px);
-    border-color: #D4AF37;
+    border-color: var(--rent-gold);
 }
 
-/* Number Icon */
 .rera-icon {
     font-size: 40px;
     font-family: 'Playfair Display', serif;
-    color: #D4AF37;
+    color: var(--rent-gold);
     margin-bottom: 20px;
 }
 
@@ -284,178 +273,227 @@ ul.selling-strategy li::before {
 
 .rera-card p {
     font-size: 15px;
-    color: #b0b0b0;
+    color: var(--rent-grey);
     line-height: 1.7;
 }
 
-/* =========================================
-   RESPONSIVE
-========================================= */
-
 @media (max-width: 992px) {
-    .rera-header h2 {
-        font-size: 40px;
-    }
-
-    .rera-cards {
-        grid-template-columns: 1fr 1fr;
-    }
+    .rera-header h2 { font-size: 40px; }
+    .rera-cards { grid-template-columns: 1fr 1fr; }
+    ul.selling-strategy { text-align: left; display: inline-block; }
 }
 
 @media (max-width: 768px) {
-    /* .rera-section {
-        padding: 80px 5%; 
-    } */
-
-    .rera-header h2 {
-        font-size: 36px;
-    }
-
-    .rera-header p {
-        font-size: 16px;
-    }
-
-    .rera-cards {
-        grid-template-columns: 1fr;
-        gap: 30px;
-    }
-
-    .rera-card {
-        padding: 30px;
-    }
+    .rera-header h2 { font-size: 36px; }
+    .rera-header p { font-size: 16px; }
+    .rera-cards { grid-template-columns: 1fr; gap: 30px; }
+    .rera-card { padding: 30px; }
 }
 
 /* =========================================
-   7. MOBILE RESPONSIVE
-   ========================================= */
-@media (max-width: 992px) {
-    ul.selling-strategy { 
-        text-align: left; 
-        display: inline-block;
-    }
-}
-
-/* DARK SECTIONS */
+   DARK SECTIONS
+========================================= */
 .dark {
-  text-align: center;
-  padding: 40px 20px;
-  background: #000000;
-  color: #ffffff;
+    text-align: center;
+    padding: 40px 20px;
+    background: var(--rent-dark);
+    color: var(--rent-white);
 }
 
 .dark h1 {
-  font-family: "Playfair Display", serif;
-  font-size: 48px;
-  margin-bottom: 20px;
+    font-family: "Playfair Display", serif;
+    font-size: 48px;
+    margin-bottom: 20px;
 }
 
 .dark p {
-  max-width: 1400px;
-  margin: auto;
-  font-size: 18px;
-  font-weight: 200;
+    max-width: 1400px;
+    margin: auto;
+    font-size: 18px;
+    font-weight: 200;
 }
 
-
-/* --- FAQ CONTAINER --- */
-.faq-section {
-    padding: 50px 5%;
-    background-color: #000000;
-    /* Dark Background */
-    color: #fff;
-    text-align: center;
-}
-
-.section-header-Sell h2 {
-  font-family: "Playfair Display", serif;
-  font-size: 50px;
-  margin-bottom: 20px;
-}
-
-.faq-container {
-    max-width: 900px;
-    margin: 0 auto;
-    border-top: 1px solid rgba(255, 255, 255, 0.1);
-}
-
-.faq-item {
-    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+/* =========================================
+   FAQ SECTION
+========================================= */
+.rent-pg-faq {
+    position: relative;
     overflow: hidden;
-    /* Crucial for animation */
+    padding: 120px 5%;
+    background: var(--rent-dark);
 }
 
-/* --- QUESTION (CLICKABLE) --- */
-.faq-question {
+.faq-bg-media {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 0;
+    opacity: 0.5; 
+    filter: grayscale(40%) brightness(0.9); 
+    pointer-events: none;
+}
+
+.faq-bg-overlay {
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+    pointer-events: none;
+    background: radial-gradient(circle at center, rgba(20, 20, 20, 0.253) 0%, rgba(5, 8, 15, 0.85) 100%);
+}
+
+.rent-pg-faq-container {
+    position: relative;
+    z-index: 2; 
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.rent-pg-faq-header { 
+    text-align: center; 
+    margin-bottom: 60px; 
+}
+
+.rent-pg-gold-divider {
+    height: 2px; width: 80px;
+    background: rgba(255, 196, 3, 0.897);
+    margin: 25px auto;
+    position: relative;
+    overflow: hidden;
+}
+
+.rent-pg-gold-divider::after {
+    content: ''; 
+    position: absolute; 
+    top: 0; left: -100%;
+    width: 100%; height: 100%;
+    background: linear-gradient(90deg, transparent, var(--rent-gold), transparent);
+    animation: line-sweep 4s cubic-bezier(0.16, 1, 0.3, 1) infinite;
+}
+
+.rent-pg-faq-item {
+    max-width: 1000px;
+    margin: 0 auto 20px;
+    background: var(--rent-glass);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid var(--rent-glass-border);
+    border-radius: 12px; 
+    transition: all 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+    overflow: hidden;
+     box-shadow: 
+        0 40px 100px rgba(0, 0, 0, 0.6), 
+        0 10px 40px rgba(0, 0, 0, 0.4); 
+}
+
+.rent-pg-faq-item:hover {
+    background: var(--rent-card-bg);
+    border-color: var(--rent-gold);
+    transform: translateY(-5px);
+}
+
+.rent-pg-faq-item.active {
+    background: var(--rent-dark);
+    border-color: var(--rent-gold);
+}
+
+.rent-pg-faq-btn {
+    width: 100%;
+    background: none;
+    border: none;
+    padding: 32px 40px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 25px 0;
     cursor: pointer;
-    transition: 0.3s;
+    outline: none;
 }
 
-.faq-question h3 {
-    font-family: 'Playfair Display', serif;
-    font-size: 18px;
+.rent-pg-faq-q {
+    font-family: 'Work Sans', sans-serif !important;
+    font-size: 18px !important;
     font-weight: 400;
-    margin: 0;
-    color: #fff;
-}
-
-.faq-icon {
-    font-size: 24px;
-    color: #D4AF37;
-    /* Gold */
-    font-weight: 300;
-    width: 30px;
-    text-align: center;
-}
-
-/* Hover Effect */
-.faq-question:hover h3 {
-    color: #D4AF37;
-}
-
-/* --- ANSWER (HIDDEN DEFAULT) --- */
-.faq-answer {
-    max-height: 0;
-    /* Hidden */
-    overflow: hidden;
-    transition: max-height 0.5s ease-out;
-    /* Smooth Slide */
-    padding-right: 20px;
-}
-
-.faq-answer p {
-    font-family: 'Work Sans', sans-serif;
-    font-size: 14px;
-    line-height: 1.6;
-    color: #b0b0b0;
-    margin: 0;
-    padding-bottom: 25px;
+    color: var(--rent-white);
     text-align: left;
+    letter-spacing: 0.3px;
+    transition: all 0.4s ease;
 }
 
-/* --- ACTIVE STATE --- */
-.faq-item.active .faq-question h3 {
-    color: #D4AF37;
+.rent-pg-faq-item.active .rent-pg-faq-q {
+    color: var(--rent-gold);
+    font-weight: 500;
+}
+
+.rent-pg-faq-icon {
+    position: relative;
+    width: 20px;
+    height: 20px;
+    flex-shrink: 0;
+}
+
+.rent-pg-faq-icon .line {
+    position: absolute;
+    background: var(--rent-gold);
+    transition: all 0.6s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+.rent-pg-faq-icon .vertical { width: 2px; height: 16px; left: 9px; top: 2px; }
+.rent-pg-faq-icon .horizontal { width: 16px; height: 2px; top: 9px; left: 2px; }
+
+.rent-pg-faq-item.active .vertical {
+    transform: rotate(90deg);
+    opacity: 0;
+}
+
+.rent-pg-faq-panel {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.rent-pg-faq-item.active .rent-pg-faq-panel {
+    max-height: 600px;
+}
+
+.rent-pg-faq-content {
+    padding: 0 40px 40px 40px;
+    opacity: 0;
+    filter: blur(15px);
+    transform: translateY(20px);
+    transition: opacity 0.8s ease, filter 0.8s ease, transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.rent-pg-faq-item.active .rent-pg-faq-content {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateY(0);
+    transition-delay: 0.2s;
+}
+
+.rent-pg-faq-content p {
+    font-family: 'Work Sans', sans-serif !important;
+    font-size: 18px !important;
+    line-height: 1.8;
+    color: var(--rent-grey);
+    margin: 0;
+}
+
+@media (max-width: 768px) {
+    .rent-pg-faq { padding: 80px 20px; }
+    .rent-pg-faq-btn { padding: 25px; }
+    .rent-pg-faq-content { padding: 0 25px 30px 25px; }
+    .rent-pg-faq-q, .rent-pg-faq-content p { font-size: 16px !important; }
 }
 
 /* =========================================
    11. TESTIMONIALS
    ========================================= */
 .testimonial-row {
-  display: flex;
-  gap: 20px;
-  overflow-x: auto;
-}
-
-.testimonial {
-  background: #fff;
-  color: #000;
-  padding: 20px;
-  border-radius: 14px;
-  min-width: 280px;
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;
 }
 
 .section-header {
@@ -465,109 +503,96 @@ ul.selling-strategy li::before {
     margin-left: auto;
     margin-right: auto;
     text-align: center;
-    background-color: #d6dae2;
 }
 
 .section-header h2 {
-    font-family: var(--font-heading);
-    font-size: 50px; /* FIXED SIZE */
-    color: var(--white);
-    background-color: #000000 ;
+    font-family: "Playfair Display", serif;
+    font-size: 50px; 
+    color: var(--rent-white);
     margin-bottom: 20px;
 }
 
-/* Mobile (768px) - 1 Column */
 @media (max-width: 768px) {
-    /* Adjust font size for mobile specific */
-    .section-header h2 {
-        font-size: 36px; 
-    }
-    .section-header-Sell h2 {
-        font-size: 36px;
-    }
+    .section-header h2 { font-size: 36px; }
 }
 
 .testimonials-scroll {
     display: flex; overflow-x: auto; gap: 30px; padding: 0 5% 100px;
     scrollbar-width: none;
-    background-color: #000000;
+    background-color: var(--rent-dark);
 }
 .testimonials-scroll::-webkit-scrollbar { display: none; }
 
 .testi-card {
-    min-width: 400px; background: #111; border: 1px solid #222;
+    min-width: 400px; background: var(--rent-card-bg); border: 1px solid var(--rent-glass-border);
     padding: 50px; position: relative;
 }
+
 .quote-icon {
-    font-size: 60px; color: var(--gold); opacity: 0.3;
+    font-size: 60px; color: var(--rent-gold); opacity: 0.3;
     font-family: 'Playfair Display', serif; line-height: 0; margin-bottom: 30px;
 }
+
 .testi-card p {
     font-family: 'Work Sans', sans-serif;
     font-style: italic;
-    font-size: 18px; /* UPDATED Paragraph Size */
-    line-height: 1.8; color: #ddd; margin-bottom: 30px;
+    font-size: 18px; 
+    line-height: 1.8; color: var(--rent-white); margin-bottom: 30px;
 }
+
 .client-name {
-    font-family: 'Work Sans', sans-serif; font-weight: 700; color: var(--gold); font-size: 14px;
+    font-family: 'Work Sans', sans-serif; font-weight: 700; color: var(--rent-gold); font-size: 14px;
 }
+
 .client-name span {
-    display: block; font-weight: 400; color: #666; margin-top: 5px;
-}
-
-
-/* EXPRESS */
-.express {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  padding: 80px 60px;
-  background: #000;
-}
-
-.express h2 {
-  font-family: "Playfair Display", serif;
-  font-size: 40px;
-}
-
-.express form {
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
-}
-
-.express input {
-  padding: 12px;
-  border-radius: 6px;
-  border: none;
-}
-
-/* FOOTER */
-.footer {
-  padding: 20px;
-  text-align: center;
-  font-size: 12px;
-  opacity: 0.6;
-}
-
-/* RESPONSIVE */
-@media (max-width: 768px) {
-  .express {
-    grid-template-columns: 1fr;
-    gap: 40px;
-  }
-
-  .page-title h1 {
-    font-size: 34px;
-  }
+    display: block; font-weight: 400; color: var(--rent-grey); margin-top: 5px;
 }
 
 /* ===============================
-   LEFT Slide Animation
+   EXPRESS & FOOTER
+================================= */
+.express {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 80px 60px;
+    background: var(--rent-dark);
+}
+
+.express h2 {
+    font-family: "Playfair Display", serif;
+    font-size: 40px;
+}
+
+.express form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.express input {
+    padding: 12px;
+    border-radius: 6px;
+    border: none;
+}
+
+.footer {
+    padding: 20px;
+    text-align: center;
+    font-size: 12px;
+    opacity: 0.6;
+}
+
+@media (max-width: 768px) {
+    .express { grid-template-columns: 1fr; gap: 40px; }
+}
+
+/* ===============================
+   SLIDE ANIMATIONS
 ================================= */
 .slide-left {
     opacity: 0;
     transform: translateX(-100px);
-    transition: opacity 1s ease, transform 1s ease;
+    transition: opacity 1s cubic-bezier(0.16, 1, 0.3, 1), transform 1s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
 .slide-left.show {
@@ -575,13 +600,10 @@ ul.selling-strategy li::before {
     transform: translateX(0);
 }
 
-/* ===============================
-   RIGHT Slide Animation
-================================= */
 .slide-right {
     opacity: 0;
     transform: translateX(100px);
-    transition: opacity 1s ease, transform 1s ease;
+    transition: opacity 1s cubic-bezier(0.16, 1, 0.3, 1), transform 1s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
 .slide-right.show {

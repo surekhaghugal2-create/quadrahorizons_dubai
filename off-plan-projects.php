@@ -279,7 +279,6 @@
     </div>
 </div>
 
-<!-- FAQ SECTION -->
 
     <!-- FAQ SECTION -->
     <section class="rent-pg-faq">
@@ -373,6 +372,8 @@
             </div>
         </div>
     </section>
+
+
     <script>
 document.addEventListener('DOMContentLoaded', () => {
     // 1. FAQ Accordion Logic

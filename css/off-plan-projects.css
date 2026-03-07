@@ -261,16 +261,8 @@ ul.luxury-list li::before {
     margin-bottom: 0;
 }
 
-/* =========================================
-   5. FAQ SECTION
-   ========================================= */
-.rent-pg-faq { 
-    padding: 120px 5%; 
-    position: relative; /* Essential for background positioning */
-    overflow: hidden;
-    background: #000; /* Fallback */
-}
 
+/* FAQ SECTION */
 /* Background Media Fixed */
 .faq-bg-media {
     position: absolute;
@@ -462,4 +454,66 @@ ul.luxury-list li::before {
     .rent-pg-faq-content p { 
         font-size: 16px !important; 
     }
+}
+
+/* =======================================================
+   RESPONSIVE LAYOUTS (TABLET & MOBILE)
+   ======================================================= */
+
+/* --- TABLET VIEW (Max 1024px) --- */
+@media (max-width: 1024px) {
+    /* Grid becomes 2 columns */
+    .grid-container { grid-template-columns: repeat(2, 1fr); gap: 20px; }
+    .card-img-wrap { height: 300px; }
+    
+    .rent-pg-intro, .projects-section, .rent-pg-faq { padding: 80px 5%; }
+}
+
+/* --- MOBILE VIEW (Max 768px) --- */
+@media (max-width: 768px) {
+    /* Grid becomes 1 column */
+    .grid-container { grid-template-columns: 1fr; max-width: 500px; }
+    
+    .rent-pg-hero { height: 70vh; }
+    .card-img-wrap { height: 280px; }
+    
+    /* FAQ Mobile Adjustments */
+    .rent-pg-faq-btn { padding: 25px 20px; }
+    .rent-pg-faq-content { padding: 0 20px 25px 20px; }
+}
+
+/* --- STRICT MOBILE VIEW (Max 425px) --- */
+@media (max-width: 425px) {
+    
+    /* Strict Padding for Mobile */
+    .rent-pg-intro, .projects-section, .rent-pg-faq { padding: 60px 20px !important; }
+    
+    /* STRICT MOBILE HEADINGS (36px) */
+    .rent-pg-main-title, .rent-pg-section-title {
+        font-size: 36px !important;
+        margin-bottom: 20px !important;
+    }
+    
+    /* STRICT MOBILE PARAGRAPHS & FAQ TEXT (16px) */
+    .rent-pg-description, .rent-pg-faq-content p, .rent-pg-faq-q {
+        font-size: 16px !important;
+        line-height: 1.6 !important;
+    }
+
+    /* Fix Alignment for Mobile */
+    .rent-pg-section-title, .rent-pg-description, .rent-pg-faq-header {
+        text-align: left !important;
+    }
+    
+    .rent-pg-gold-divider { margin: 15px 0 !important; }
+
+    /* Card Mobile Adjustments */
+    .card-img-wrap { height: 240px; }
+    .card-content { padding: 20px; text-align: left !important; }
+    .card-content h3 { font-size: 20px; }
+    
+    /* FAQ Mobile Fixes */
+    .rent-pg-faq-item { border-radius: 8px; }
+    .rent-pg-faq-btn { padding: 20px; }
+    .rent-pg-faq-content { padding: 0 20px 20px 20px; text-align: left !important; }
 }

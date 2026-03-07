@@ -24,21 +24,18 @@
         
         <div class="vision-header">
             <span class="vision-label">About Us</span>
-            <h2 class="vision-title">  Our Vision & Philosophy </h2>
+            <h2 class="vision-title">Quadra Horizons — كوادرا هوريزونز</h2>
             <div class="vision-divider"></div>
         </div>
 
         <p class="vision-quote">
-           Quadra Horizons — كوادرا هوريزونز
 
-At the beginning of 2026, an idea was born — not merely to establish a new real estate company, but to launch a greater vision for the future. This is how Quadra Horizons began in Dubai, a city that knows no limits to ambition.
-Although newly established, the company’s roots extend back many years through the extensive hands-on experience of its founders in Dubai’s real estate market. Over time, they gained deep market knowledge and a genuine understanding of investors’ and clients’ needs. After years of experience and growth, four partners sharing the same passion and vision came together to create an entity that reflects their collective aspirations.
-The founders chose the name “Quadra Horizons,” meaning “Four Pillars on the Horizon” — a symbol of strength, stability, and forward-looking vision. The name represents the unity of four ambitious minds who believe that true success is built on collaboration, trust, and a clear vision for the future.
-Each partner represents a fundamental pillar of the company, united by one goal: to build a leading enterprise that goes beyond the real estate sector, becoming an influential brand across multiple industries within Dubai, the United Arab Emirates, and eventually global markets.
-At Quadra Horizons, success is not measured solely by the number of transactions, but by the value of the relationships built, the trust earned, and the opportunities created for clients. The company operates with a forward-thinking vision grounded in innovation, professionalism, and the highest standards of service to ensure a secure and exceptional investment experience.
-We do not see the horizon as a limit — but as a beginning.
 
-            <span class="gold-highlight">Quadra Horizons — Where vision becomes reality, and ambition turns into achievement.</span>"
+At the beginning of 2026, an idea was born — not just to establish a real estate company, but to create a vision for the future. Quadra Horizons was founded in Dubai, a city known for ambition and limitless opportunities.
+Although the company is newly established, its foundation comes from the many years of hands-on experience of its founders in Dubai’s real estate market. Through this experience, they developed deep market knowledge and a clear understanding of investors’ and clients’ needs.
+Four partners with a shared vision came together to build Quadra Horizons. The name represents “Four Pillars on the Horizon,” symbolizing strength, unity, and forward-looking ambition. Each partner represents a pillar of the company, working together to build a trusted and influential brand.
+At Quadra Horizons, success is measured not only by transactions, but by the relationships built, trust earned, and opportunities created for clients. The company operates with a forward-thinking approach, combining professionalism, innovation, and high standards of service to provide a secure and exceptional investment experience
+            <span class="gold-highlight">Quadra Horizons — Where vision becomes reality and ambition turns into achievement.</span>"
         </p>
 
     </div>

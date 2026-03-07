@@ -5,7 +5,7 @@
 
 <section class="home-hero">
     <video autoplay muted loop playsinline class="hero-video">
-        <source src="video/Dubai_Real_Estate_Video_Generated.mp4" type="video/mp4">
+        <source src="video/Final_V02.mp4" type="video/mp4">
     </video>
     <div class="hero-overlay"></div>
     <div class="hero-text-center reveal">
@@ -317,7 +317,7 @@
 
 <div class="video-parallax reveal">
     <video autoplay muted loop playsinline>
-        <source src="video/Dubai_Real_Estate_Video_Generated.mp4" type="video/mp4">
+        <source src="video/Final_V03.mp4" type="video/mp4">
     </video>
     <div class="parallax-text">
         <span>VISION</span>
