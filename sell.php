@@ -1,15 +1,12 @@
 <?php include 'header.php'; ?>
-<link rel="stylesheet" href="css/Sell.css">
+<link rel="stylesheet" href="css/sell.css">
 
-<!-- HERO -->
 <section class="hero">
   <img src="image/1.jpg" alt="Dubai Skyline">
 </section>
 
-<!-- RERA SAFETY SECTION -->
 <section class="rera-section">
     <div class="rera-container">
-
         <div class="rera-header">
             <span class="rera-subtitle">INVESTOR PROTECTION</span>
             <h2>Sell Property in Dubai</h2>
@@ -23,14 +20,11 @@
     </div>
 </section>
 
-<!-- Strategic Selling Approach  -->
 <section class="invest-dubai-section" id="invest-section">
     <div class="invest-container">
         <div class="invest-image-wrapper slide-left">
-        <img src="image/WhatsApp Image 2026-02-12 at 3.03.48 PM (1).jpeg"
-            alt="Burj Al Arab, Dubai"
-            class="invest-image">
-            </div>
+            <img src="image/WhatsApp Image 2026-02-12 at 3.03.48 PM (1).jpeg" alt="Burj Al Arab, Dubai" class="invest-image">
+        </div>
 
         <div class="invest-content">
             <span class="invest-subtitle invest-anim">Strategic Selling Approach</span>
@@ -56,11 +50,9 @@
                 </p>
             </div>
         </div>
-
     </div>
 </section>
 
-<!-- Strategic Selling Approach  -->
 <section class="invest-dubai-section" id="why-sell-dubai">
     <div class="invest-container">
 
@@ -89,70 +81,81 @@
             </div>
         </div>
 
-    <div class="invest-image-wrapper slide-right">
-        <img src="image/WhatsApp Image 2026-02-12 at 3.03.48 PM (1).jpeg"
-            alt="Burj Al Arab, Dubai"
-            class="invest-image">
-    </div>
+        <div class="invest-image-wrapper slide-right">
+            <img src="image/WhatsApp Image 2026-02-12 at 3.03.48 PM (1).jpeg" alt="Burj Al Arab, Dubai" class="invest-image">
+        </div>
 
     </div>
 </section>
 
-<!-- FAQ SECTION -->
- <section class="faq-section reveal">
-    <div class="section-header-Sell">
-        <h2>Frequently Asked Questions</h2>
-    </div>
+<section class="rent-pg-faq">
+    <video class="faq-bg-media" autoplay loop muted playsinline>
+        <source src="video/GettyImages-1309566975.mp4" type="video/mp4">
+    </video> 
     
-    <div class="faq-container">
-        <div class="faq-item">
-            <div class="faq-question">
-                <h3>Is it a good time to Sell a property in Dubai in 2024?</h3>
-                <span class="faq-icon">+</span>
-            </div>
-            <div class="faq-answer">
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-            </div>
-        </div>
+    <div class="faq-bg-overlay"></div>
+    <div class="rent-pg-faq-container">
+        <header class="rent-pg-faq-header js-reveal">
+            <span class="rent-pg-pre-title">REFINEMENT & DETAIL</span>
+            <h2 class="rent-pg-section-title">Frequently Asked Questions</h2>
+            <div class="rent-pg-gold-divider"></div>
+        </header>
 
-        <div class="faq-item">
-            <div class="faq-question">
-                <h3>How is the current real estate market in Dubai in 2024?</h3>
-                <span class="faq-icon">+</span>
+        <div class="rent-pg-faq-accordion">
+            <div class="rent-pg-faq-item js-reveal">
+                <button class="rent-pg-faq-btn">
+                    <span class="rent-pg-faq-q">How is the architectural integrity verified?</span>
+                    <div class="rent-pg-faq-icon">
+                        <span class="line vertical"></span>
+                        <span class="line horizontal"></span>
+                    </div>
+                </button>
+                <div class="rent-pg-faq-panel">
+                    <div class="rent-pg-faq-content">
+                        <p>Our structural engineers utilize aerospace-grade simulations to stress-test every cantilever and foundation. We ensure that your silhouette remains timeless against seismic and environmental shifts.</p>
+                    </div>
+                </div>
             </div>
-            <div class="faq-answer">
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-            </div>
-        </div>
 
-        <div class="faq-item">
-            <div class="faq-question">
-                <h3>Have there been shifts in sale prices for Dubai properties in 2024?</h3>
-                <span class="faq-icon">+</span>
+            <div class="rent-pg-faq-item js-reveal">
+                <button class="rent-pg-faq-btn">
+                    <span class="rent-pg-faq-q">What is the timeline for bespoke commissions?</span>
+                    <div class="rent-pg-faq-icon">
+                        <span class="line vertical"></span>
+                        <span class="line horizontal"></span>
+                    </div>
+                </button>
+                <div class="rent-pg-faq-panel">
+                    <div class="rent-pg-faq-content">
+                        <p>A typical architectural masterpiece requires 12 to 18 months from initial conceptualization to final handover. This allows for meticulous sourcing of rare materials and artisan-level finishing.</p>
+                    </div>
+                </div>
             </div>
-            <div class="faq-answer">
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-            </div>
-        </div>
 
-        <div class="faq-item">
-            <div class="faq-question">
-                <h3>Can an expat Sell Property in Dubai and live permanently?</h3>
-                <span class="faq-icon">+</span>
-            </div>
-            <div class="faq-answer">
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+            <div class="rent-pg-faq-item js-reveal">
+                <button class="rent-pg-faq-btn">
+                    <span class="rent-pg-faq-q">Do you offer smart-home architectural integration?</span>
+                    <div class="rent-pg-faq-icon">
+                        <span class="line vertical"></span>
+                        <span class="line horizontal"></span>
+                    </div>
+                </button>
+                <div class="rent-pg-faq-panel">
+                    <div class="rent-pg-faq-content">
+                        <p>We treat technology as invisible luxury. Automation is embedded into the walls themselves, allowing for biometric access, circadian lighting, and climate control that anticipates your arrival.</p>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
 </section>
 
-<!-- TESTIMONIALS -->
+
 <section class="testimonials dark">
   <div class="section-header reveal">
     <h2>Client Experiences</h2>
-</div>
-<div class="testimonials-scroll reveal">
+  </div>
+  <div class="testimonials-scroll reveal">
     <div class="testi-card">
         <div class="quote-icon">“</div>
         <p>"The team found me a penthouse that wasn't even on the market yet. Incredible access."</p>
@@ -168,32 +171,56 @@
         <p>"A truly white-glove service from start to finish. Highly recommended."</p>
         <div class="client-name">David L. <span>CEO, USA</span></div>
     </div>
-</div>
+  </div>
 </section>
 
 <script>
 document.addEventListener("DOMContentLoaded", function() {
-
-    const elements = document.querySelectorAll(".slide-left, .slide-right");
-
-    function revealOnScroll() {
-        const windowHeight = window.innerHeight;
-
-        elements.forEach(function(el) {
-            const elementTop = el.getBoundingClientRect().top;
-
-            if (elementTop < windowHeight - 100) {
-                el.classList.add("show");
+    
+    // 1. SCROLL ANIMATIONS (Makes your invisible images slide in!)
+    const scrollObserver = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('show');
+                // Optional: Stop observing once it has animated
+                // scrollObserver.unobserve(entry.target); 
             }
         });
-    }
+    }, { threshold: 0.15 }); // Triggers when 15% of the element is visible
 
-    window.addEventListener("scroll", revealOnScroll);
-    revealOnScroll();
+    // Target everything that needs to fade/slide in
+    const animElements = document.querySelectorAll('.slide-left, .slide-right, .invest-image-wrapper, .invest-anim, .reveal');
+    animElements.forEach((el) => scrollObserver.observe(el));
+
+
+    // 2. FAQ ACCORDION LOGIC
+    const faqItems = document.querySelectorAll('.rent-pg-faq-item');
+    faqItems.forEach(item => {
+        const btn = item.querySelector('.rent-pg-faq-btn');
+        const panel = item.querySelector('.rent-pg-faq-panel');
+
+        btn.addEventListener('click', () => {
+            const isActive = item.classList.contains('active');
+
+            // Close all others first
+            faqItems.forEach(otherItem => {
+                otherItem.classList.remove('active');
+                let otherPanel = otherItem.querySelector('.rent-pg-faq-panel');
+                if (otherPanel) {
+                    otherPanel.style.maxHeight = null; 
+                }
+            });
+
+            // Open clicked one if it was closed
+            if (!isActive) {
+                item.classList.add('active');
+                panel.style.maxHeight = panel.scrollHeight + "px";
+            }
+        });
+    });
+
 });
 </script>
-
-
 <?php include 'footer.php'; ?>
 </body>
 </html>

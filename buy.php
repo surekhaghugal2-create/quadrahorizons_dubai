@@ -422,6 +422,32 @@ document.addEventListener("DOMContentLoaded", function() {
     window.addEventListener("scroll", revealOnScroll);
     revealOnScroll();
 });
+
+
+document.addEventListener('DOMContentLoaded', () => {
+    // 1. FAQ Accordion Logic
+    const faqItems = document.querySelectorAll('.rent-pg-faq-item');
+    faqItems.forEach(item => {
+        const btn = item.querySelector('.rent-pg-faq-btn');
+        btn.addEventListener('click', () => {
+            const isActive = item.classList.contains('active');
+            faqItems.forEach(i => i.classList.remove('active')); // Close others
+            if (!isActive) item.classList.add('active');
+        });
+    });
+
+    // 2. Intersection Observer for Scroll Animations
+    const observerOptions = { threshold: 0.15 };
+    const revealObserver = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('is-visible');
+            }
+        });
+    }, observerOptions);
+
+   
+});
 </script>
 
 
