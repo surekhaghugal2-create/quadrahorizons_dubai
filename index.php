@@ -634,7 +634,7 @@
 
         <div class="hero-content-wrapper">
             <div class="hero-text-col">
-                <span class="hero-brand">BINGHATTI</span>
+                <span class="hero-brand">QH Properties</span>
                 <h1 class="hero-title">VIP Launch Events</h1>
                 <p class="hero-location">Be the first to see new projects before the public.</p>
                 <!-- <a href="#collection" class="btn-glass">Discover The Collection</a> -->
@@ -658,7 +658,7 @@
 
         <div class="hero-content-wrapper">
             <div class="hero-text-col">
-                <span class="hero-brand">BINGHATTI</span>
+                <span class="hero-brand">QH Properties</span>
                 <h1 class="hero-title">Investor Galas</h1>
                 <p class="hero-location">Networking with the region's top property moguls.</p>
                 <!-- <a href="#collection" class="btn-glass">Discover The Collection</a> -->
@@ -682,7 +682,7 @@
 
         <div class="hero-content-wrapper">
             <div class="hero-text-col">
-                <span class="hero-brand">BINGHATTI</span>
+                <span class="hero-brand">QH Properties</span>
                 <h1 class="hero-title">Private Viewings</h1>
                 <p class="hero-location">One-on-one tours of Dubai's finest penthouses.</p>
                 <!-- <a href="#collection" class="btn-glass">Discover The Collection</a> -->
@@ -818,12 +818,12 @@
 
             <div class="col-text-slide active">
                 <h3 class="col-subtitle">THE SKY MANSION PENTHOUSE</h3>
-                <p class="col-brand">BUGATTI RESIDENCES BY BINGHATTI</p>
+                <p class="col-brand">BUGATTI RESIDENCES BY QH Properties</p>
             </div>
 
             <div class="col-text-slide">
                 <h3 class="col-subtitle">SIGNATURE RESIDENCE</h3>
-                <p class="col-brand">BINGHATTI ETHEREA</p>
+                <p class="col-brand">QH Properties ETHEREA</p>
             </div>
 
             <div class="col-text-slide">
