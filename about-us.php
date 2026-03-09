@@ -8,13 +8,15 @@
 <section class="about-hero">
     <div class="hero-bg">
         <video autoplay muted loop playsinline>
-            <source src="video/Dubai_Real_Estate_Video_Generated.mp4" type="video/mp4">
+            <source src="video/Final_V03.mp4" type="video/mp4">
         </video>
     </div>
     <div class="hero-overlay"></div>
     <div class="hero-content fade-in">
         <p class="hero-subtitle">The Quadra Standard</p>
-        <h1 class="hero-title">Timeless<br>Elegance</h1>
+        
+        <h1 class="hero-title">Curators of<br>Fine Living</h1>
+        
     </div>
 </section>
 

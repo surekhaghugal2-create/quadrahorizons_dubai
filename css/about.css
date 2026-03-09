@@ -230,26 +230,87 @@ ul {
     padding: 0 20px;
 }
 
-.hero-title {
-    font-family: var(--font-heading);
-    font-size: 7vw;
-    line-height: 1;
-    text-transform: uppercase;
-    letter-spacing: 8px;
-    opacity: 0.95;
-    margin: 0;
-    font-weight: 300;
+/* =======================================================
+   ABOUT HERO TYPOGRAPHY & NEW ANIMATION
+   ======================================================= */
+
+/* 1. The NEW "Luxury Focus" Animation */
+@keyframes luxuryFocus {
+    0% { 
+        opacity: 0; 
+        transform: scale(1.1) translateY(15px); /* Starts 10% larger and slightly lower */
+        filter: blur(12px); /* Starts heavily blurred */
+    }
+    100% { 
+        opacity: 1; 
+        transform: scale(1) translateY(0); /* Snaps perfectly into place */
+        filter: blur(0); 
+    }
 }
 
+/* 2. The Subtitle (Fades in first) */
 .hero-subtitle {
     font-size: 1.2rem;
     letter-spacing: 5px;
-    margin-top: 25px;
+    margin-bottom: 20px;
     text-transform: uppercase;
-    color: var(--luxury-gold);
+    color: var(--rent-gold, #D4AF37);
     font-weight: 300;
+    
+    /* Crisp dark shadow for readability */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.9);
+    
+    /* NEW Animation: Slower (1.2s), starts almost immediately */
+    opacity: 0;
+    animation: luxuryFocus 1.2s cubic-bezier(0.16, 1, 0.3, 1) 0.2s forwards;
 }
 
+/* 3. The Main Title (Fades in second) */
+.hero-title {
+    font-family: var(--font-heading, 'Playfair Display', serif);
+    font-size: 7vw;
+    line-height: 1.1;
+    text-transform: uppercase;
+    letter-spacing: 8px;
+    color: var(--rent-white, #ffffff);
+    margin: 0;
+    font-weight: 300;
+    
+    /* Premium Layered Text Shadow */
+    text-shadow: 
+        2px 2px 5px rgba(0, 0, 0, 0.9), 
+        0px 10px 30px rgba(0, 0, 0, 0.7);
+    
+    /* NEW Animation: Even slower (1.5s), starts after the subtitle (0.6s) */
+    opacity: 0;
+    animation: luxuryFocus 1.5s cubic-bezier(0.16, 1, 0.3, 1) 0.6s forwards;
+}
+
+/* =======================================================
+   RESPONSIVE TYPOGRAPHY
+   ======================================================= */
+@media (max-width: 768px) {
+    .hero-title {
+        font-size: 48px; 
+        letter-spacing: 5px;
+    }
+    .hero-subtitle {
+        font-size: 1rem;
+        letter-spacing: 4px;
+    }
+}
+
+/* --- STRICT MOBILE VIEW --- */
+@media (max-width: 425px) {
+    .hero-title {
+        font-size: 36px !important; 
+        letter-spacing: 3px;
+    }
+    .hero-subtitle {
+        font-size: 14px;
+        letter-spacing: 3px;
+    }
+}
 /* =======================================================
    2. VISION SECTION (Minimal Soft Black)
    ======================================================= */
@@ -2132,6 +2193,21 @@ ul {
     .team-hero-content {
         max-width: 100%;
     }
+
+
+    .about-hero {
+        /* THIS IS THE MAGIC FIX: 
+           By making the hero box shorter on mobile (60vh instead of 100vh), 
+           the video stretches wider, meaning far less of the sides get cut off! */
+        height: 60vh; 
+        min-height: 400px; /* Ensures it doesn't get too small on tiny phones */
+    }
+    
+    /* If the most important part of your video is on the left or right, 
+       you can force the phone to focus on that side instead of the center!
+       Change this to "left center" or "right center" if needed. */
+    .hero-bg video {
+object-position: 60% center !important;    }
 }
 
 /* --- STRICT MOBILE VIEW (Max 425px) --- */
