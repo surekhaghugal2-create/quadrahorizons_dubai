@@ -290,8 +290,7 @@ ul.luxury-list li::before {
     position: relative;
     z-index: 2; /* Ensures content is above video/overlay */
     max-width: 1000px;
-    margin: 0 auto;
-  
+    margin: 80px auto; 
 }
 
 .rent-pg-faq-header { 
@@ -452,6 +451,7 @@ ul.luxury-list li::before {
     
     .rent-pg-faq-q, 
     .rent-pg-faq-content p { 
+
         font-size: 16px !important; 
     }
 }
