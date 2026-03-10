@@ -330,7 +330,7 @@
 </section>
 
 <!-- FAQ SECTION -->
- <section class="faq-section reveal">
+ <!-- <section class="faq-section reveal">
     <div class="section-header-Sell">
         <h2>Frequently Asked Questions</h2>
     </div>
@@ -373,6 +373,99 @@
             </div>
             <div class="faq-answer">
                 <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+            </div>
+        </div>
+    </div>
+</section> -->
+
+<!-- FAQ SECTION -->
+<section class="rent-pg-faq">
+    <video class="faq-bg-media" autoplay loop muted playsinline>
+        <source src="video/GettyImages-1309566975.mp4 " type="video/mp4">
+    </video>
+
+    <div class="faq-bg-overlay"></div>
+    <div class="rent-pg-faq-container">
+        <header class="rent-pg-faq-header js-reveal">
+            <span class="rent-pg-pre-title">REFINEMENT & DETAIL</span>
+            <h2 class="rent-pg-section-title">Frequently Asked Questions</h2>
+            <div class="rent-pg-gold-divider"></div>
+        </header>
+
+        <div class="rent-pg-faq-accordion">
+            <div class="rent-pg-faq-item js-reveal">
+                <button class="rent-pg-faq-btn">
+                    <span class="rent-pg-faq-q">How is the architectural integrity verified?</span>
+                    <div class="rent-pg-faq-icon">
+                        <span class="line vertical"></span>
+                        <span class="line horizontal"></span>
+                    </div>
+                </button>
+                <div class="rent-pg-faq-panel">
+                    <div class="rent-pg-faq-content">
+                        <p>Our structural engineers utilize aerospace-grade simulations to stress-test every cantilever and foundation. We ensure that your silhouette remains timeless against seismic and environmental shifts.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="rent-pg-faq-item js-reveal">
+                <button class="rent-pg-faq-btn">
+                    <span class="rent-pg-faq-q">What is the timeline for bespoke commissions?</span>
+                    <div class="rent-pg-faq-icon">
+                        <span class="line vertical"></span>
+                        <span class="line horizontal"></span>
+                    </div>
+                </button>
+                <div class="rent-pg-faq-panel">
+                    <div class="rent-pg-faq-content">
+                        <p>A typical architectural masterpiece requires 12 to 18 months from initial conceptualization to final handover. This allows for meticulous sourcing of rare materials and artisan-level finishing.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="rent-pg-faq-item js-reveal">
+                <button class="rent-pg-faq-btn">
+                    <span class="rent-pg-faq-q">Do you offer smart-home architectural integration?</span>
+                    <div class="rent-pg-faq-icon">
+                        <span class="line vertical"></span>
+                        <span class="line horizontal"></span>
+                    </div>
+                </button>
+                <div class="rent-pg-faq-panel">
+                    <div class="rent-pg-faq-content">
+                        <p>We treat technology as invisible luxury. Automation is embedded into the walls themselves, allowing for biometric access, circadian lighting, and climate control that anticipates your arrival.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="rent-pg-faq-item js-reveal">
+                <button class="rent-pg-faq-btn">
+                    <span class="rent-pg-faq-q">Do you offer smart-home architectural integration?</span>
+                    <div class="rent-pg-faq-icon">
+                        <span class="line vertical"></span>
+                        <span class="line horizontal"></span>
+                    </div>
+                </button>
+                <div class="rent-pg-faq-panel">
+                    <div class="rent-pg-faq-content">
+                        <p>We treat technology as invisible luxury. Automation is embedded into the walls themselves, allowing for biometric access, circadian lighting, and climate control that anticipates your arrival.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="rent-pg-faq-item js-reveal">
+                <button class="rent-pg-faq-btn">
+                    <span class="rent-pg-faq-q">Do you offer smart-home architectural integration?</span>
+                    <div class="rent-pg-faq-icon">
+                        <span class="line vertical"></span>
+                        <span class="line horizontal"></span>
+                    </div>
+                </button>
+                <div class="rent-pg-faq-panel">
+                    <div class="rent-pg-faq-content">
+                        <p>We treat technology as invisible luxury. Automation is embedded into the walls themselves, allowing for biometric access, circadian lighting, and climate control that anticipates your arrival.</p>
+                    </div>
+                </div>
             </div>
         </div>
     </div>

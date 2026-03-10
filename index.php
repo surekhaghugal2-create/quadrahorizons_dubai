@@ -360,7 +360,7 @@
     </div>
 
     <div class="sell-button-container reveal" style="transition-delay: 0.8s">
-        <button class="gold-btn-solid show-more-btn"><a href="sell.php">Show More</button>
+        <button class="gold-btn-solid show-more-btn"><a href="sell.php">Show More</a></button>
     </div>
 </section>
 
