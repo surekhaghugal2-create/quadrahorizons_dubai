@@ -14,8 +14,8 @@
 * { box-sizing: border-box; margin: 0; padding: 0; }
 
 body {
-    background-color: var(--dark);
-    color: var(--white);
+    background-color: var(--rent-dark); /* Fixed variable name */
+    color: var(--rent-white); /* Fixed variable name */
     font-family: 'work sans', sans-serif;
     overflow-x: hidden;
     cursor: none; /* Custom Cursor */
@@ -41,7 +41,7 @@ img { max-width: 100%; display: block; }
     content: '';
     position: absolute;
     inset: 0;
-    background: linear-gradient(to top, var(--dark) 10%, transparent 60%, rgba(0,0,0,0.4));
+    background: linear-gradient(to top, var(--rent-dark) 10%, transparent 60%, rgba(0,0,0,0.4));
 }
 
 .hero-title {
@@ -59,7 +59,7 @@ img { max-width: 100%; display: block; }
 }
 
 .hero-title p {
-    color: var(--gold);
+    color: var(--rent-gold);
     letter-spacing: 4px;
     font-size: 14px;
     margin-top: 15px;
@@ -116,7 +116,7 @@ img { max-width: 100%; display: block; }
     position: absolute;
     top: 20px;
     left: 20px;
-    background: var(--gold);
+    background: var(--rent-gold);
     color: #000;
     padding: 6px 15px;
     font-size: 10px;
@@ -134,12 +134,12 @@ img { max-width: 100%; display: block; }
     font-family: 'Playfair Display', serif;
     font-size: 22px;
     margin: 0 0 5px 0;
-    color: var(--white);
+    color: var(--rent-white);
 }
 
 .location {
     font-size: 12px;
-    color: var(--text-grey);
+    color: var(--rent-grey);
     display: block;
     margin-bottom: 20px;
 }
@@ -148,7 +148,7 @@ img { max-width: 100%; display: block; }
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
-    border-top: 1px solid var(--border-color);
+    border-top: 1px solid var(--rent-glass-border);
     padding-top: 15px;
 }
 
@@ -161,13 +161,13 @@ img { max-width: 100%; display: block; }
 }
 
 .price-value {
-    color: var(--gold);
+    color: var(--rent-gold);
     font-weight: 600;
     font-size: 16px;
 }
 
 .arrow-icon {
-    color: var(--gold);
+    color: var(--rent-gold);
     font-size: 18px;
     transition: 0.3s;
 }
@@ -180,7 +180,7 @@ img { max-width: 100%; display: block; }
    4. INFO CONTENT BLOCKS (Alternating)
    ========================================= */
 .info-wrapper {
-    background-color: var(--darker);
+    background-color: var(--rent-card-bg);
     background-image: repeating-linear-gradient(45deg, rgba(255,255,255,0.01) 0px, rgba(255,255,255,0.01) 1px, transparent 1px, transparent 20px);
     padding: 50px 5%;
 }
@@ -205,12 +205,11 @@ img { max-width: 100%; display: block; }
     font-size: 50px;
     margin-bottom: 30px;
     line-height: 1.2;
-    color: var(--white);
+    color: var(--rent-white);
 }
 
 .block-text {
-    color: var(--text-grey);
-    /* line-height: 1.8; */
+    color: var(--rent-grey);
     margin-bottom: 25px;
     font-size: 18px;
 }
@@ -225,13 +224,13 @@ ul.luxury-list li {
     position: relative;
     padding-left: 25px;
     margin-bottom: 15px;
-    color: var(--text-grey);
+    color: var(--rent-grey);
     font-size: 14px;
 }
 
 ul.luxury-list li::before {
     content: '•';
-    color: var(--gold);
+    color: var(--rent-gold);
     font-size: 20px;
     position: absolute;
     left: 0;
@@ -262,7 +261,18 @@ ul.luxury-list li::before {
 }
 
 
-/* FAQ SECTION */
+/* =========================================
+   FAQ SECTION
+   ========================================= */
+
+/* THE FIX: Added the parent container back so the video stays locked inside! */
+.rent-pg-faq {
+    position: relative;
+    overflow: hidden;
+    padding: 120px 5%;
+    background-color: var(--rent-dark);
+}
+
 /* Background Media Fixed */
 .faq-bg-media {
     position: absolute;
@@ -290,7 +300,7 @@ ul.luxury-list li::before {
     position: relative;
     z-index: 2; /* Ensures content is above video/overlay */
     max-width: 1000px;
-    margin: 80px auto; 
+    margin: 0 auto; /* Removed 80px auto to prevent spacing issues */
 }
 
 .rent-pg-faq-header { 
@@ -373,7 +383,7 @@ ul.luxury-list li::before {
 }
 
 .rent-pg-faq-item.active .rent-pg-faq-q {
-    color: #D4AF37;
+    color: var(--rent-gold);
     font-weight: 500;
 }
 
@@ -387,7 +397,7 @@ ul.luxury-list li::before {
 
 .rent-pg-faq-icon .line {
     position: absolute;
-    background: #D4AF37;
+    background: var(--rent-gold);
     transition: all 0.6s cubic-bezier(0.34, 1.56, 0.64, 1);
 }
 
@@ -443,18 +453,6 @@ ul.luxury-list li::before {
     margin: 0;
 }
 
-/* Mobile Smoothing */
-@media (max-width: 768px) {
-    .rent-pg-faq { padding: 80px 20px; }
-    .rent-pg-faq-btn { padding: 25px; }
-    .rent-pg-faq-content { padding: 0 25px 30px 25px; }
-    
-    .rent-pg-faq-q, 
-    .rent-pg-faq-content p { 
-
-        font-size: 16px !important; 
-    }
-}
 
 /* =======================================================
    RESPONSIVE LAYOUTS (TABLET & MOBILE)
@@ -478,8 +476,14 @@ ul.luxury-list li::before {
     .card-img-wrap { height: 280px; }
     
     /* FAQ Mobile Adjustments */
-    .rent-pg-faq-btn { padding: 25px 20px; }
-    .rent-pg-faq-content { padding: 0 20px 25px 20px; }
+    .rent-pg-faq { padding: 80px 20px; }
+    .rent-pg-faq-btn { padding: 25px; }
+    .rent-pg-faq-content { padding: 0 25px 30px 25px; }
+    
+    .rent-pg-faq-q, 
+    .rent-pg-faq-content p { 
+        font-size: 16px !important; 
+    }
 }
 
 /* --- STRICT MOBILE VIEW (Max 425px) --- */
@@ -516,4 +520,127 @@ ul.luxury-list li::before {
     .rent-pg-faq-item { border-radius: 8px; }
     .rent-pg-faq-btn { padding: 20px; }
     .rent-pg-faq-content { padding: 0 20px 20px 20px; text-align: left !important; }
+}
+
+/* =======================================================
+   RESPONSIVE LAYOUTS & STRICT TYPOGRAPHY 
+   (TABLET: 724px & MOBILE: 424px)
+   ======================================================= */
+
+/* --- TABLET VIEW (Max 724px) --- */
+@media (max-width: 724px) {
+    
+    /* 1. STRICT HEADINGS (36px) */
+    .hero-title h1,
+    .block-title,
+    .rent-pg-main-title,
+    .rent-pg-section-title,
+    .page-title h1,
+    .invest-title,
+    .rera-header h2,
+    .express h2,
+    .section-header h2 {
+        font-size: 36px !important;
+        line-height: 1.2 !important;
+        margin-bottom: 20px !important;
+    }
+
+    /* 2. STRICT PARAGRAPHS & LISTS (16px) */
+    .block-text,
+    .rent-pg-description,
+    .rent-pg-faq-content p,
+    .rent-pg-faq-q,
+    .invest-text p,
+    .rera-header p,
+    .testi-card p,
+    .hero-title p,
+    ul.luxury-list li,
+    ul.selling-strategy li {
+        font-size: 16px !important;
+        line-height: 1.6 !important;
+    }
+
+    /* Keep Card Titles Proportional */
+    .card-content h3,
+    .rera-card h3 {
+        font-size: 22px !important; 
+    }
+
+    /* Layout Adjustments for Tablet */
+    .grid-container { grid-template-columns: 1fr; max-width: 500px; margin: 0 auto; gap: 30px; }
+    .card-img-wrap { height: 280px; }
+    .rent-pg-intro, .projects-section, .rent-pg-faq, .info-wrapper { padding: 60px 5%; }
+    
+    .page-hero { height: 50vh; padding-bottom: 50px; }
+    
+    /* Info Blocks Stack Vertically */
+    .content-block, .content-block.reverse { 
+        flex-direction: column; 
+        gap: 30px;
+        margin-bottom: 60px;
+    }
+    .img-side, .text-side { width: 100%; }
+    
+    .rent-pg-faq-btn { padding: 25px 20px; }
+    .rent-pg-faq-content { padding: 0 20px 25px 20px; }
+}
+
+/* --- STRICT MOBILE VIEW (Max 424px) --- */
+@media (max-width: 424px) {
+    
+    /* Strict Padding for Mobile */
+    .rent-pg-intro, .projects-section, .rent-pg-faq, .info-wrapper { padding: 50px 20px !important; }
+    
+    /* Hero Tweaks */
+    .page-hero { height: 45vh; }
+    .hero-title h1 { font-size: 36px !important; } 
+
+    /* =========================================
+       SECTION-WISE ALIGNMENT CONTROL
+       ========================================= */
+
+    /* 1. CENTER ALIGNED (Hero, Main Titles, Section Headers) */
+    .hero-title,
+    .page-title,
+    .rera-header,
+    .rent-pg-faq-header,
+    .section-header,
+    .express h2,
+    .dark {
+        text-align: center !important;
+    }
+
+    /* Center the gold divider under FAQ title */
+    .rent-pg-gold-divider { margin: 15px auto !important; }
+
+    /* 2. LEFT ALIGNED (Cards, Info Blocks, Heavy Text) */
+    .invest-content,
+    .invest-title,
+    .invest-subtitle,
+    .invest-text,
+    .content-block,
+    .block-title,
+    .block-text,
+    .card-content,
+    .rera-card,
+    .testi-card,
+    .rent-pg-faq-btn,
+    .rent-pg-faq-content {
+        text-align: left !important;
+    }
+    
+    /* Lock lists to the left */
+    ul.luxury-list, 
+    ul.selling-strategy { 
+        display: block; 
+        text-align: left !important; 
+    }
+
+    /* Card Mobile Adjustments */
+    .card-img-wrap { height: 240px; }
+    .card-content h3 { font-size: 20px !important; }
+    
+    /* FAQ Mobile Fixes */
+    .rent-pg-faq-item { border-radius: 8px; }
+    .rent-pg-faq-btn { padding: 20px; }
 }

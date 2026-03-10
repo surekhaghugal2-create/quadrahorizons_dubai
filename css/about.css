@@ -2246,3 +2246,159 @@ object-position: 60% center !important;    }
         /* Pushes text to left and arrow to right on mobile button */
     }
 }
+
+/* =======================================================
+   RESPONSIVE LAYOUTS & STRICT TYPOGRAPHY 
+   (TABLET: 724px & MOBILE: 424px)
+   ======================================================= */
+
+/* --- TABLET VIEW (Max 724px) --- */
+@media (max-width: 724px) {
+    
+    /* 1. STRICT HEADINGS (36px) - Applies to all sections */
+    .hero-title,
+    .vision-title,
+    .awards-heading,
+    .careers-title,
+    .invest-title,
+    .projects-header,
+    .future-title,
+    .invest-sticky-left h2,
+    .legacy-title,
+    .horizontal-title,
+    .story-title,
+    .team-hero-content .rent-pg-section-title {
+        font-size: 36px !important;
+        line-height: 1.2 !important;
+        margin-bottom: 20px !important;
+    }
+
+    /* 2. STRICT PARAGRAPHS & LISTS (16px) - Applies to all sections */
+    .vision-quote,
+    .careers-desc,
+    .invest-text p,
+    .project-text p,
+    .invest-card-text p,
+    .invest-list li,
+    .legacy-text-block p,
+    .story-desc,
+    .h-card p,
+    .team-hero-content .rent-pg-description {
+        font-size: 16px !important;
+        line-height: 1.6 !important;
+    }
+
+    /* Keep Card Titles Proportional (Don't force to 36px) */
+    .founder-name { font-size: 28px !important; }
+    .invest-card-title, .h-card h3 { font-size: 22px !important; }
+
+    /* 3. LAYOUT FIXES FOR TABLET (1 Column Stacking) */
+    .founders-grid,
+    .invest-container,
+    .legacy-container,
+    .invest-sticky-container {
+        grid-template-columns: 1fr;
+        flex-direction: column;
+        gap: 50px;
+    }
+
+    .awards-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 40px 20px;
+    }
+
+    /* Section Spacing */
+    .vision-section, .founders-section, .careers-premium-section, 
+    .invest-dubai-section, .projects-section, .invest-sticky-section, 
+    .legacy-section, .team-hero-section {
+        padding: 80px 5% !important;
+    }
+
+    /* Image & Video Sizing */
+    .about-hero { height: 60vh; min-height: 400px; }
+    .hero-bg video { object-position: 60% center !important; }
+    .invest-image-wrapper, .invest-sticky-image, .legacy-image-wrapper { height: 400px; }
+    .invest-sticky-left { position: relative; top: 0; width: 100%; height: auto; }
+    .invest-sticky-right { width: 100%; padding-bottom: 0; }
+    
+    /* Horizontal Slider Fixes */
+    .horizontal-header-top { flex-direction: column; align-items: flex-start; gap: 20px; }
+    .slider-controls { display: none; }
+    .h-card { flex: 0 0 320px; }
+    
+    /* Story Scroll Fixes */
+    .story-slide { flex-wrap: nowrap; }
+    .story-left { flex: 0 0 50vw; padding: 0 5%; }
+    .story-right { flex: 0 0 50vw; }
+    .story-year { font-size: 120px; bottom: 10px; left: 10px; }
+}
+
+/* --- STRICT MOBILE VIEW (Max 424px) --- */
+@media (max-width: 424px) {
+    
+    /* 1. STRICT PADDING FOR MOBILE */
+    .vision-section, .founders-section, .careers-premium-section, 
+    .invest-dubai-section, .projects-section, .invest-sticky-section, 
+    .legacy-section, .team-hero-section, .dubai-horizontal-section {
+        padding: 60px 20px !important;
+    }
+
+    /* 2. ALIGNMENT CONTROL (Center vs Left) */
+    
+    /* CENTER ALIGNED (Main section titles & hero text) */
+    .about-hero .hero-content,
+    .vision-section,
+    .awards-heading,
+    .careers-glass-card,
+    .future-card,
+    .horizontal-header-top,
+    .team-hero-content {
+        text-align: center !important;
+    }
+    .vision-divider, .horizontal-divider { margin: 20px auto !important; }
+
+    /* LEFT ALIGNED (Reading text, descriptions, cards, lists) */
+    .invest-content,
+    .invest-title,
+    .invest-text,
+    .invest-sticky-left h2,
+    .invest-glass-card,
+    .legacy-content,
+    .legacy-title,
+    .legacy-text-block p,
+    .project-item,
+    .h-card,
+    .story-content {
+        text-align: left !important;
+    }
+    .invest-list, .legacy-text-block { text-align: left !important; display: block; }
+    
+    /* 3. MOBILE SPECIFIC LAYOUT ADJUSTMENTS */
+    
+    /* Images */
+    .invest-image-wrapper, .invest-sticky-image, .legacy-image-wrapper { height: 250px; }
+    .founder-card { height: 400px; }
+    .legacy-signature { float: left; margin-top: 20px; }
+    
+    /* Horizontal Slider Swipe Adjustments */
+    .horizontal-track { padding: 10px 20px 40px 20px; gap: 15px; }
+    .h-card { flex: 0 0 85vw; padding: 30px 20px; min-height: auto; }
+    .h-card .card-watermark { font-size: 100px; right: -5px; bottom: -10px; }
+    
+    /* Awards Grid */
+    .awards-grid { grid-template-columns: repeat(2, 1fr); justify-items: center; gap: 30px 20px; }
+    .award-logo-item img { max-height: 40px; }
+    
+    /* Glass Cards */
+    .careers-glass-card { width: 100%; border: none; border-radius: 8px; padding: 40px 20px; }
+    .invest-glass-card { padding: 30px 20px; }
+    .future-card { padding: 30px 20px; text-align: left !important; align-items: flex-start; border: none; }
+    .team-hero-content { padding: 40px 25px !important; width: 100%; }
+    
+    /* Story Scroll Fixes (Converts to stacked for tiny screens) */
+    .story-slide { flex-direction: column; }
+    .story-left { flex: 0 0 auto; width: 100%; height: 50vh; padding: 40px 20px; align-items: flex-start; }
+    .story-right { flex: 0 0 auto; width: 100%; height: 50vh; }
+    .story-year { font-size: 80px; bottom: 0; }
+}

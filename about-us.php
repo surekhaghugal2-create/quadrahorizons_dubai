@@ -57,7 +57,7 @@ At Quadra Horizons, success is measured not only by transactions, but by the rel
             </div>
 
             <div class="founder-card fade-in">
-                <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&w=800&q=80" class="founder-img" alt="Yasin Mulla">
+                <img src="" class="founder-img" alt="Yasin Mulla">
                 <div class="founder-overlay">
                     <span class="founder-role">Founder & Chairman</span>
                     <h3 class="founder-name">Yasin Mulla Ali</h3>
@@ -65,7 +65,7 @@ At Quadra Horizons, success is measured not only by transactions, but by the rel
             </div>
 
             <div class="founder-card fade-in">
-                <img src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&fit=crop&w=800&q=80" class="founder-img" alt="Chakib Chami">
+                <img src="" class="founder-img" alt="Chakib Chami">
                 <div class="founder-overlay">
                     <span class="founder-role">Founder & Chairman</span>
                     <h3 class="founder-name">Chakib Chami</h3>
