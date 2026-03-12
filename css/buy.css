@@ -11,7 +11,7 @@
   --gold: #D4AF37;
   --white: #ffffff;
   --text-grey:  #bdbdbd;   
-  --card-bg: #111827;
+  --card-bg: #111111;
   --border-color: rgba(255,255,255,0.08);
 }
 
@@ -46,14 +46,90 @@ body {
   cursor: pointer;
 }
 
-/* ===============================
-   HERO
-================================= */
-.hero img {
-  width: 100%;
-  height: 85vh;
-  /* height: auto; */
-  object-fit: cover;
+/* =======================================================
+   RENT PAGE HERO SECTION
+   ======================================================= */
+.rent-pg-hero {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    height: 100svh; /* Perfect sizing for mobile browsers */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    background-color: var(--black, #000);
+}
+
+/* --- The Background Video --- */
+.rent-pg-hero-vid-element {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 0;
+    /* Optional: If the video is too bright overall, uncomment the line below */
+    /* filter: brightness(0.85); */
+}
+
+/* --- THE FIX: Bottom-Only Fade to Black --- */
+.rent-pg-hero-gradient {
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+    pointer-events: none; /* Allows clicking through the gradient */
+    
+    /* Transparent at the top (0% to 60%), smoothly fading to solid black at the bottom (100%) */
+    background: linear-gradient(
+        to bottom, 
+        transparent 0%, 
+        transparent 60%, 
+        rgba(0, 0, 0, 0.8) 85%, 
+        var(--black, #000000) 100%
+    );
+}
+
+/* --- Hero Content Container --- */
+.rent-pg-hero-content {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    padding: 0 20px;
+    width: 100%;
+}
+
+/* --- THE FIX: Premium Text Shadows --- */
+.rent-pg-main-title {
+    font-family: var(--font-heading, 'Playfair Display', serif);
+    font-size: 70px; /* Adjust based on your desktop preference */
+    color: var(--white, #ffffff);
+    margin: 0 0 15px 0;
+    line-height: 1.1;
+    font-weight: 400;
+    
+    /* Double-layered shadow: tight crisp edge + soft dark glow */
+    text-shadow: 
+        2px 2px 5px rgba(0, 0, 0, 0.9), 
+        0px 10px 30px rgba(0, 0, 0, 0.7);
+}
+
+.rent-pg-accent {
+    color: var(--luxury-gold, #D4AF37);
+    font-style: italic;
+}
+
+.rent-pg-subtitle {
+    font-family: var(--font-body, 'Work Sans', sans-serif);
+    font-size: 20px;
+    color: var(--text-grey, #cfcfcf);
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    margin: 0;
+    
+    /* Slightly softer shadow for the subtitle */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
 }
 
 /* ===============================
