@@ -6,7 +6,7 @@
     --rent-dark: #000000;
     --rent-card-bg: #111111;
     --rent-white: #ffffff;
-    --rent-grey: #5a5a5a;
+    --rent-grey: #bdbdbd;
     --rent-glass: rgba(255, 255, 255, 0.03);
     --rent-glass-border: rgba(255, 255, 255, 0.1);
     
@@ -29,9 +29,14 @@
    ========================================= */
 .rent-pg-main-title, .rent-pg-section-title {
     font-family: var(--font-heading) !important;
-    font-size: 50px !important; /* STRICT DESKTOP HEADING */
-    font-weight: 400;
+    font-size: 80px !important; /* STRICT DESKTOP HEADING */
+    font-weight: 500;
     line-height: 1.2;
+    
+    /* THE FIX: Layered Text Shadow for perfect readability */
+    text-shadow: 
+        2px 2px 5px rgba(0, 0, 0, 0.9),  /* Crisp dark edge */
+        0px 10px 30px rgba(0, 0, 0, 0.7); /* Wide soft dark glow */
 }
 
 .rent-pg-description, .rent-pg-faq-content p, .rent-pg-faq-q {
@@ -43,21 +48,48 @@
 /* =========================================
    2. GLOBAL BACKGROUND VIDEO
    ========================================= */
+/* =========================================
+   BACKGROUND VIDEO & HERO OVERLAYS
+   ========================================= */
+
 .rent-pg-video-bg {
     position: fixed;
-    top: 0; left: 0;
-    width: 100vw; height: 100vh;
+    top: 0; 
+    left: 0;
+    width: 100vw; 
+    height: 100vh;
     z-index: -2;
     pointer-events: none;
+    background-color: var(--rent-dark, #000000);
 }
 
-.rent-pg-video-bg video {
-    width: 100%; height: 100%; object-fit: cover; opacity: 0.15;
+/* 1. Make the video bright and visible */
+.rent-pg-video-bg video,
+.rent-pg-hero-vid-element {
+    width: 100%; 
+    height: 100%; 
+    object-fit: cover; 
+    opacity: 0.9 !important; /* Forces the video to be 90% visible */
 }
 
-.rent-pg-overlay {
-    position: absolute; inset: 0;
-    background: radial-gradient(circle at center, transparent 0%, var(--rent-dark) 100%);
+/* 2. Cinematic Bottom Fade to Black */
+.rent-pg-overlay,
+.rent-pg-hero-gradient {
+    position: absolute; 
+    inset: 0;
+    z-index: 1;
+    pointer-events: none; /* Lets you click buttons underneath the shadow */
+    
+    /* THE FADE EFFECT:
+       0% - 50%: Completely transparent (shows bright video)
+       80%: Starts getting dark so text is readable
+       100%: Pure black to blend seamlessly into the next section */
+    background: linear-gradient(to bottom, 
+        transparent 0%, 
+        transparent 50%, 
+        rgba(0, 0, 0, 0.8) 80%, 
+        var(--rent-dark, #000000) 100%
+    ) !important;
 }
 
 /* =========================================

@@ -2,16 +2,9 @@
 <div class="rent-pg-wrapper">
     <link rel="stylesheet" href="css/rent.css">
 
-    <div class="rent-pg-video-bg">
-        <video id="rent-pg-main-video" autoplay muted loop playsinline preload="auto">
-            <source src="video/background (1).mp4" type="video/mp4">
-        </video>
-        <div class="rent-pg-overlay"></div>
-    </div>
-
     <section class="rent-pg-hero">
         <video id="rent-pg-hero-video" autoplay muted loop playsinline class="rent-pg-hero-vid-element">
-            <source src="video/Dubai_Real_Estate_Video_Generated.mp4" type="video/mp4">
+            <source src="video/Final_V04.mp4" type="video/mp4">
         </video>
         <div class="rent-pg-hero-gradient"></div>
         
@@ -33,6 +26,7 @@
         </div>
     </section>
 
+    
 <!-- project -->
 <section class="projects-section">
     <div class="grid-container">

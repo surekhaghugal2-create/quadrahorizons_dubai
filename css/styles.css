@@ -481,11 +481,9 @@
     transition: all 0.6s cubic-bezier(0.16, 1, 0.3, 1);
     overflow: hidden;
     /* Premium Box Shadow */
-     box-shadow: 
-        0 40px 100px rgba(46, 46, 46, 0.6), 
-        0 10px 40px rgba(22, 22, 22, 0.4),
-        0 0 100px rgba(14, 13, 13, 0.03); 
-        
+    box-shadow: 
+    0 10px 25px rgba(0, 0, 0, 0.15), 
+    0 4px 10px rgba(0, 0, 0, 0.1);
     border: 1px solid rgba(43, 43, 43, 0.03); /* Ghost border */
 }
 

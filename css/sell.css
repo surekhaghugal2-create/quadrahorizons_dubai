@@ -6,7 +6,7 @@
     --rent-dark: #000000;
     --rent-card-bg: #111111;
     --rent-white: #ffffff;
-    --rent-grey: #a0a0a0; /* Adjusted slightly so it's readable on pure black */
+    --rent-grey:  #bdbdbd; /* Adjusted slightly so it's readable on pure black */
     --rent-glass: rgba(255, 255, 255, 0.03);
     --rent-glass-border: rgba(255, 255, 255, 0.1);
 }

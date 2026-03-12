@@ -34,7 +34,7 @@
                 <p class="invest-anim delay-2">
                     The Dubai real estate market continues to attract global investors, high-net-worth individuals, and institutional buyers. To stand out in a competitive landscape, your property requires more than a listing — it requires presence.
                 </p>
-                <p class="invest-anim delay-2">
+                <!-- <p class="invest-anim delay-2">
                     Our selling strategy includes:
                 </p>
                 <ul class="selling-strategy">
@@ -47,7 +47,7 @@
                 </ul><br/>
                 <p class="invest-anim delay-3">
                     Whether you are selling a luxury apartment in Dubai Marina or a signature villa in Palm Jumeirah, we position your asset to command attention and achieve premium value.
-                </p>
+                </p> -->
             </div>
         </div>
     </div>
