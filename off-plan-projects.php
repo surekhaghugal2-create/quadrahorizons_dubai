@@ -240,7 +240,7 @@
             <h2 class="block-title">What Are Off-Plan Properties?</h2>
             <p class="block-text">
                 An off-plan property in Dubai refers to a residential or commercial unit purchased directly from a developer before construction is completed. Investors typically buy based on architectural designs, floor plans, master plans, and computer-generated imagery (CGIs).
-Buying off-plan in Dubai allows investors to secure premium properties at competitive prices with structured payment plans spread across construction milestones. This makes off-plan real estate one of the most attractive investment strategies in Dubai’s rapidly growing property market.</p>
+                Buying off-plan in Dubai allows investors to secure premium properties at competitive prices with structured payment plans spread across construction milestones. This makes off-plan real estate one of the most attractive investment strategies in Dubai’s rapidly growing property market.</p>
         </div>
         <div class="img-side">
             <img src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=800&q=80" alt="Blueprint">
@@ -259,6 +259,44 @@ Buying off-plan in Dubai allows investors to secure premium properties at compet
                 <li>Commercial off-plan projects</li>
             </ul>
             <p class="block-text">Whether you are looking to buy a luxury apartment in Dubai or invest in a high-yield villa project, QH Properties provides tailored solutions aligned with your investment strategy.</p>
+        </div>
+        <div class="img-side">
+            <img src="https://images.unsplash.com/photo-1546412414-e1885259563a?auto=format&fit=crop&w=800&q=80" alt="Skyline">
+        </div>
+    </div>
+
+    <div class="content-block reveal">
+        <div class="text-side">
+            <h2 class="block-title">Why Invest in Dubai Off-Plan Real Estate?</h2>
+            <p class="block-text">
+                Dubai remains one of the world’s most attractive property investment destinations due to:</p>
+            <ul class="luxury-list">
+                <li>Tax-free property ownership</li>
+                <li>High rental yields compared to global cities</li>
+                <li>Investor-friendly regulations</li>
+                <li>Strong population growth and tourism</li>
+                <li>Golden Visa eligibility for qualifying investments</li>
+            </ul>
+            <p class="block-text">
+                Off-plan projects in Dubai provide lower entry prices, higher appreciation potential, and flexible payment structures — making them ideal for both first-time investors and seasoned global buyers.</p>
+        </div>
+        <div class="img-side">
+            <img src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=800&q=80" alt="Blueprint">
+        </div>
+    </div>
+
+    <div class="content-block reverse reveal">
+        <div class="text-side">
+            <h2 class="block-title">Premium Off-Plan Properties in Dubai</h2>
+            <p class="block-text">Explore a curated portfolio of luxury off-plan apartments, villas, and branded residences located in Dubai’s most sought-after communities, including Downtown Dubai, Business Bay, Dubai Marina, Palm Jumeirah, and emerging investment hubs.<br/>Our off-plan developments offer:</p>
+            <ul class="luxury-list">
+                <li>Attractive pre-launch prices</li>
+                <li>Flexible post-handover payment plans</li>
+                <li>High ROI potential</li>
+                <li>Strong capital appreciation</li>
+                <li>Developer-backed guarantees</li>
+            </ul>
+            <p class="block-text">Through strong partnerships with leading Dubai developers, QH Properties ensures priority allocation and exclusive inventory access for our clients.</p>
         </div>
         <div class="img-side">
             <img src="https://images.unsplash.com/photo-1546412414-e1885259563a?auto=format&fit=crop&w=800&q=80" alt="Skyline">
