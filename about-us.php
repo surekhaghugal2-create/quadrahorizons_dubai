@@ -190,6 +190,7 @@ At Quadra Horizons, success is measured not only by transactions, but by the rel
         <div class="story-track" id="storyTrack">
             
             <div class="story-slide">
+                
                 <div class="story-left">
                     <div class="story-content">
                         <span class="story-subtitle">A Globally Awarded</span>

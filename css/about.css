@@ -1906,7 +1906,7 @@ ul {
 
 .story-title {
     font-family: var(--font-heading) !important;
-    font-size: 45px !important;
+    font-size: 50px !important; /* STRICT DESKTOP: 50px */
     color: var(--white);
     line-height: 1.2 !important;
     font-weight: 400 !important;
@@ -1916,7 +1916,7 @@ ul {
 
 .story-desc {
     font-family: var(--font-body) !important;
-    font-size: 16px !important;
+    font-size: 18px !important; /* STRICT DESKTOP: 18px */
     color: var(--text-grey);
     line-height: 1.8 !important;
     max-width: 500px;
@@ -1956,109 +1956,165 @@ ul {
     /* Slightly dims video to match dark aesthetic */
 }
 
-
 /* =======================================================
-   RESPONSIVE LAYOUTS (TABLET & MOBILE)
+   RESPONSIVE LAYOUTS & STRICT TYPOGRAPHY 
+   (TABLET: 724px & MOBILE: 424px)
    ======================================================= */
-@media (max-width: 1024px) {
-    .story-left {
-        padding: 0 5%;
+
+/* --- TABLET VIEW (Max 724px) --- */
+@media (max-width: 724px) {
+    
+    /* 1. STRICT HEADINGS (36px) - Applies to all sections */
+    .hero-title,
+    .vision-title,
+    .awards-heading,
+    .careers-title,
+    .invest-title,
+    .projects-header,
+    .future-title,
+    .invest-sticky-left h2,
+    .legacy-title,
+    .horizontal-title,
+    .story-title,
+    .team-hero-content .rent-pg-section-title {
+        font-size: 36px !important;
+        line-height: 1.2 !important;
+        margin-bottom: 20px !important;
     }
 
-    .story-title {
-        font-size: 38px !important;
+    /* 2. STRICT PARAGRAPHS & LISTS (16px) - Applies to all sections */
+    .vision-quote,
+    .careers-desc,
+    .invest-text p,
+    .project-text p,
+    .invest-card-text p,
+    .invest-list li,
+    .legacy-text-block p,
+    .story-desc,
+    .h-card p,
+    .team-hero-content .rent-pg-description {
+        font-size: 16px !important;
+        line-height: 1.6 !important;
     }
 
-    .story-year {
-        font-size: 180px;
-        bottom: 0;
+    /* Keep Card Titles Proportional */
+    .founder-name { font-size: 28px !important; }
+    .invest-card-title, .h-card h3 { font-size: 22px !important; }
+
+    /* Layout Fixes */
+    .founders-grid, .invest-container, .legacy-container, .invest-sticky-container {
+        grid-template-columns: 1fr; flex-direction: column; gap: 50px;
     }
+    .awards-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 40px 20px; }
+
+    /* Section Spacing */
+    .vision-section, .founders-section, .careers-premium-section, 
+    .invest-dubai-section, .projects-section, .invest-sticky-section, 
+    .legacy-section, .team-hero-section {
+        padding: 80px 5% !important;
+    }
+
+    /* Image Sizing */
+    .about-hero { height: 60vh; min-height: 400px; }
+    .hero-bg video { object-position: 60% center !important; }
+    .invest-image-wrapper, .invest-sticky-image, .legacy-image-wrapper { height: 400px; }
+    .invest-sticky-left { position: relative; top: 0; width: 100%; height: auto; }
+    .invest-sticky-right { width: 100%; padding-bottom: 0; }
+    
+    /* Horizontal Slider Fixes */
+    .horizontal-header-top { flex-direction: column; align-items: flex-start; gap: 20px; }
+    .slider-controls { display: none; }
+    .h-card { flex: 0 0 320px; }
 }
-
 /* --- STRICT MOBILE VIEW (Max 425px) --- */
-@media (max-width: 768px) {
-
-    /* Change layout to stacked for mobile */
-    /* --- Individual Slide Layout --- */
-    .story-slide {
-        width: 100vw;
-        height: 100vh;
-        display: flex;
-        flex-wrap: nowrap;
-        /* Forces left and right to stay side-by-side */
-        flex-shrink: 0;
+@media (max-width: 425px) {
+    
+    /* Global Section Padding on Mobile */
+    .vision-section {
+        padding: 50px 20px !important;
     }
 
-    /* --- LEFT SIDE: Text (Exactly Half) --- */
-    .story-left {
-        flex: 0 0 50vw;
-        /* STRICTLY 50% of the screen width */
-        height: 100vh;
-        background-color: var(--black, #000);
-        position: relative;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        padding: 0 10%;
-    }
-
-    /* --- RIGHT SIDE: Video Container (Exactly Half) --- */
-    .story-right {
-        flex: 0 0 50vw;
-        /* STRICTLY 50% of the screen width */
-        height: 100vh;
-        position: relative;
-        overflow: hidden;
-        background-color: var(--black, #000);
-    }
-
-    /* --- THE VIDEO ITSELF (100% of the Right Side) --- */
-    .story-video {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        /* Strictly 100% of the half-section */
-        height: 100%;
-        /* Strictly 100% height */
-        object-fit: cover;
-        /* Ensures the video fills the box perfectly without stretching */
-        filter: brightness(0.85);
-    }
-
-    .story-content {
-        transform: translateY(0);
-        text-align: left !important;
-    }
-
-    /* Strict Mobile Typography */
-    .story-subtitle {
-        font-size: 12px;
-        margin-bottom: 5px;
-        text-align: left !important;
-    }
-
+    /* STRICT MOBILE TYPOGRAPHY (36px/16px) */
     .story-title {
-        font-size: 32px !important;
-        margin-bottom: 15px !important;
+        font-size: 36px !important;
+        margin-bottom: 20px !important;
+        line-height: 1.2 !important;
         text-align: left !important;
+        text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.9), 0px 10px 30px rgba(0, 0, 0, 0.7);
     }
 
     .story-desc {
-        font-size: 15px !important;
+        font-size: 16px !important;
         line-height: 1.6 !important;
+        margin-bottom: 0 !important; /* Removed bottom margin so it doesn't push empty space */
         text-align: left !important;
     }
 
-    /* Shrink the outline year and tuck it into the background */
-    .story-year {
-        font-size: 130px;
-        left: 20px;
-        bottom: 10px;
-        -webkit-text-stroke: 1px rgba(255, 255, 255, 0.15);
+    /* =======================================================
+       VISIONARY SECTION (STORY SCROLL) MOBILE FIX 
+       ======================================================= */
+    
+    /* 1. Stack the text on top of the video and fill the WHOLE screen */
+    .story-slide { 
+        flex-direction: column !important; 
+        width: 100vw !important; 
+        height: 100vh !important; /* THE FIX: Must be 100vh to fill the screen! */
+        height: 100svh !important; /* Mobile browser bar fix */
+        display: flex !important;
+    }
+
+    /* 2. Text Container (Takes only the space it needs) */
+    .story-left { 
+        flex: 0 0 auto !important; /* Adapts to text height */
+        width: 100% !important; 
+        height: auto !important; 
+        background-color: var(--black, #000) !important; 
+        padding: 100px 20px 30px 20px !important; /* Extra top padding clears your logo */
+        justify-content: center !important; 
+        align-items: flex-start !important; 
+        text-align: left !important;
+        z-index: 2 !important;
+    }
+
+    .story-content {
+        transform: translateY(0) !important;
+        margin: 0 !important;
+        position: relative !important;
+        z-index: 5 !important;
+    }
+
+    /* 3. Image Container (Stretches to destroy the black gap) */
+    .story-right { 
+        flex: 1 !important; /* THE FIX: This forces the image to fill the rest of the screen */
+        width: 100% !important; 
+        height: auto !important;
+        overflow: hidden !important;
+        position: relative !important;
+    }
+
+    /* 4. Make the image fill its stretched container */
+    .story-video {
+        position: absolute !important;
+        top: 0 !important; 
+        left: 0 !important;
+        width: 100% !important;
+        height: 100% !important;
+        object-fit: cover !important;
+        opacity: 0.8 !important; 
+        filter: contrast(1.1) !important;
+    }
+
+    /* 5. Tucks the year watermark safely into the top right corner */
+    .story-year { 
+        font-size: 80px !important;
+        top: 15px !important;
+        right: 15px !important;
+        left: auto !important;
+        bottom: auto !important;
+        -webkit-text-stroke: 1px rgba(255, 255, 255, 0.2) !important;
+        z-index: 1 !important;
     }
 }
-
 /* =======================================================
    OUR TEAM HERO SECTION (GROUP PHOTO STYLE)
    ======================================================= */
