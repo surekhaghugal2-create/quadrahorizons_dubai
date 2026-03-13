@@ -338,6 +338,17 @@
     </div>
 </section>
 
+<div class="content-block full reveal">
+        <h2 class="block-title">Risks and Safety Regulations (RERA)</h2>
+        <p class="block-text">While off-plan property investment in Dubai offers significant growth potential, it is important to work with experienced advisors and RERA-certified brokers to minimize risks.<br/>Dubai’s Real Estate Regulatory Agency (RERA) protects investors through strict compliance frameworks:</p>
+        <ul class="luxury-list" style="text-align: left; display: inline-block;">
+            <li><strong>Escrow Accounts:</strong> Developer payments are secured in government-regulated escrow accounts</li>
+            <li><strong>Developer Registration:</strong> All developers must be registered and approved before selling off-plan properties.</li>
+            <li><strong>Construction-Linked Payment Plans:</strong> Payments are tied to verified construction milestones.</li>
+            <li><strong>Delivery Compliance:</strong> Developers must adhere to agreed timelines and quality standards.</li>
+        </ul>
+        <p class="block-text">At QH Properties, we conduct detailed due diligence on every off-plan project to ensure your investment is secure and strategically positioned.</p>
+    </div>
 
 <!-- FAQ SECTION -->
 <section class="rent-pg-faq">
