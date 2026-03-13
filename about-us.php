@@ -14,16 +14,16 @@
     <div class="hero-overlay"></div>
     <div class="hero-content fade-in">
         <p class="hero-subtitle">The Quadra Standard</p>
-        
+
         <h1 class="hero-title">Curators of<br>Fine Living</h1>
-        
+
     </div>
 </section>
 
 <!-- vision section -->
 <section class="vision-section">
     <div class="container fade-in">
-        
+
         <div class="vision-header">
             <span class="vision-label">About Us</span>
             <h2 class="vision-title">Quadra Horizons — كوادرا هوريزونز</h2>
@@ -33,10 +33,10 @@
         <p class="vision-quote">
 
 
-At the beginning of 2026, an idea was born — not just to establish a real estate company, but to create a vision for the future. Quadra Horizons was founded in Dubai, a city known for ambition and limitless opportunities.
-Although the company is newly established, its foundation comes from the many years of hands-on experience of its founders in Dubai’s real estate market. Through this experience, they developed deep market knowledge and a clear understanding of investors’ and clients’ needs.
-Four partners with a shared vision came together to build Quadra Horizons. The name represents “Four Pillars on the Horizon,” symbolizing strength, unity, and forward-looking ambition. Each partner represents a pillar of the company, working together to build a trusted and influential brand.
-At Quadra Horizons, success is measured not only by transactions, but by the relationships built, trust earned, and opportunities created for clients. The company operates with a forward-thinking approach, combining professionalism, innovation, and high standards of service to provide a secure and exceptional investment experience
+            At the beginning of 2026, an idea was born — not just to establish a real estate company, but to create a vision for the future. Quadra Horizons was founded in Dubai, a city known for ambition and limitless opportunities.
+            Although the company is newly established, its foundation comes from the many years of hands-on experience of its founders in Dubai’s real estate market. Through this experience, they developed deep market knowledge and a clear understanding of investors’ and clients’ needs.
+            Four partners with a shared vision came together to build Quadra Horizons. The name represents “Four Pillars on the Horizon,” symbolizing strength, unity, and forward-looking ambition. Each partner represents a pillar of the company, working together to build a trusted and influential brand.
+            At Quadra Horizons, success is measured not only by transactions, but by the relationships built, trust earned, and opportunities created for clients. The company operates with a forward-thinking approach, combining professionalism, innovation, and high standards of service to provide a secure and exceptional investment experience
             <span class="gold-highlight">Quadra Horizons — Where vision becomes reality and ambition turns into achievement.</span>"
         </p>
 
@@ -47,7 +47,7 @@ At Quadra Horizons, success is measured not only by transactions, but by the rel
     <div class="container">
         <span class="section-label fade-in">Leadership</span>
         <div class="founders-grid">
-            
+
             <div class="founder-card fade-in">
                 <img src="image/omar.png" class="founder-img" alt="Omar Alsayed">
                 <div class="founder-overlay">
@@ -87,23 +87,23 @@ At Quadra Horizons, success is measured not only by transactions, but by the rel
 
 <!-- Team section  -->
 <section class="team-hero-section">
-    
+
     <div class="team-hero-bg">
         <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=1920&q=80" alt="Our Team">
     </div>
 
     <div class="team-hero-container">
-        
+
         <div class="team-hero-content anim-fade-up scroll-anim">
             <h2 class="rent-pg-section-title">Our Team</h2>
-            
+
             <p class="rent-pg-description">
                 Meet our dynamic team of real estate professionals who bring a wealth of experience and expertise to help you achieve your property goals.
             </p>
-            
+
             <a href="#meet-the-team" class="team-hero-btn">
-                <span>Meet the Team</span> 
-                <i class="fas fa-arrow-right"></i>  
+                <span>Meet the Team</span>
+                <i class="fas fa-arrow-right"></i>
             </a>
         </div>
 
@@ -112,7 +112,7 @@ At Quadra Horizons, success is measured not only by transactions, but by the rel
 
 <!-- Award section start  -->
 <section class="awards-recognition-section">
-    
+
     <video class="awards-video-bg" autoplay="autoplay" loop="loop" muted="muted" playsinline="playsinline" preload="auto">
         <source src="video/background (2).mp4" type="video/mp4">
     </video>
@@ -120,11 +120,11 @@ At Quadra Horizons, success is measured not only by transactions, but by the rel
     <div class="awards-video-overlay"></div>
 
     <div class="awards-container">
-        
+
         <h2 class="awards-heading anim-slide-down scroll-anim">Awards & Recognitions</h2>
 
         <div class="awards-grid">
-            
+
             <div class="award-logo-item anim-fade-up delay-100 scroll-anim">
                 <img src="image/award-logo-1.png" alt="Award 1">
             </div>
@@ -160,16 +160,16 @@ At Quadra Horizons, success is measured not only by transactions, but by the rel
 <!-- why section  -->
 <section class="invest-dubai-section" id="invest-section">
     <div class="invest-container">
-        
+
         <div class="invest-image-wrapper">
             <img src="image/WhatsApp Image 2026-02-12 at 3.03.48 PM (1).jpeg" alt="Burj Al Arab, Dubai" class="invest-image">
         </div>
 
         <div class="invest-content">
             <span class="invest-subtitle invest-anim">Why Invest In</span>
-            
+
             <h2 class="invest-title invest-anim delay-1">DUBAI?</h2>
-            
+
             <div class="invest-text">
                 <p class="invest-anim delay-2">
                     Dubai is a fast-growing cosmopolitan city with a thriving economy. It is a prominent tourist destination and a major hub for international investors.
@@ -183,14 +183,14 @@ At Quadra Horizons, success is measured not only by transactions, but by the rel
     </div>
 </section>
 <!-- new section the story  -->
- <section class="story-scroll-section" id="storyScrollSection">
-    
+<section class="story-scroll-section" id="storyScrollSection">
+
     <div class="story-sticky-container">
-        
+
         <div class="story-track" id="storyTrack">
-            
+
             <div class="story-slide">
-                
+
                 <div class="story-left">
                     <div class="story-content">
                         <span class="story-subtitle">A Globally Awarded</span>
@@ -201,7 +201,7 @@ At Quadra Horizons, success is measured not only by transactions, but by the rel
                 </div>
                 <div class="story-right">
                     <video autoplay loop muted playsinline class="story-video">
-                        <source src="video/Dubai_Real_Estate_Video_Generated.mp4" type="video/mp4">
+                        <source src="" type="video/mp4">
                     </video>
                 </div>
             </div>
@@ -216,9 +216,7 @@ At Quadra Horizons, success is measured not only by transactions, but by the rel
                     <div class="story-year">2022</div>
                 </div>
                 <div class="story-right">
-                    <video autoplay loop muted playsinline class="story-video">
-                        <source src="video/Dubai_Real_Estate_Video_Generated.mp4" type="video/mp4">
-                    </video>
+                    <img src="image/Aboutvision.png" alt="Visionary Image" class="story-video">
                 </div>
             </div>
 
@@ -232,9 +230,8 @@ At Quadra Horizons, success is measured not only by transactions, but by the rel
                     <div class="story-year">2024</div>
                 </div>
                 <div class="story-right">
-                    <video autoplay loop muted playsinline class="story-video">
-                        <source src="video/Dubai_Real_Estate_Video_Generated.mp4" type="video/mp4">
-                    </video>
+                    <img src="image/About (2).png" alt="Visionary Image" class="story-video">
+
                 </div>
             </div>
 
@@ -259,7 +256,7 @@ At Quadra Horizons, success is measured not only by transactions, but by the rel
         </div>
 
         <div class="invest-sticky-right">
-            
+
             <div class="invest-glass-card anim-slide-right scroll-anim">
                 <div class="card-watermark">01</div>
                 <div class="invest-card-header">
@@ -346,14 +343,14 @@ At Quadra Horizons, success is measured not only by transactions, but by the rel
 
 <!-- career -->
 <section class="careers-premium-section" id="careers-section">
-    
+
     <div class="careers-bg"></div>
-    
+
     <div class="careers-glass-card">
         <span class="careers-label">CAREERS AT QUADRA</span>
         <h2 class="careers-title">Define the Exceptional</h2>
         <p class="careers-desc">
-            We seek individuals who transcend the ordinary. 
+            We seek individuals who transcend the ordinary.
             If you have the vision to elevate Dubai's luxury real estate landscape, we provide the ultimate platform for your success.
         </p>
         <a href="contact-us.php" class="btn-luxury-apply">INQUIRE TODAY</a>
@@ -362,18 +359,18 @@ At Quadra Horizons, success is measured not only by transactions, but by the rel
 </section>
 
 <section class="dubai-horizontal-section">
-    
+
     <div class="horizontal-bg-glow"></div>
 
     <div class="horizontal-container">
-        
+
         <div class="horizontal-header-top anim-fade-up scroll-anim">
             <div class="header-text-col">
                 <span class="horizontal-pre">Discover the Potential</span>
                 <h2 class="horizontal-title">Why Invest In <span class="accent-text">DUBAI?</span></h2>
                 <div class="horizontal-divider"></div>
             </div>
-            
+
             <div class="slider-controls">
                 <button class="slide-btn prev-slide" aria-label="Previous"><i class="fas fa-arrow-left"></i></button>
                 <button class="slide-btn next-slide" aria-label="Next"><i class="fas fa-arrow-right"></i></button>
@@ -382,7 +379,7 @@ At Quadra Horizons, success is measured not only by transactions, but by the rel
 
         <div class="horizontal-track-wrapper anim-fade-up delay-200 scroll-anim">
             <div class="horizontal-track" id="investSliderTrack">
-                
+
                 <div class="h-card">
                     <div class="card-watermark">01</div>
                     <i class="fas fa-chart-line h-card-icon"></i>
@@ -441,7 +438,7 @@ At Quadra Horizons, success is measured not only by transactions, but by the rel
 
 
 <script>
-/* =========================================
+    /* =========================================
        3. HORIZONTAL INVEST SLIDER LOGIC (AUTO-ROTATE)
        ========================================= */
     const track = document.getElementById('investSliderTrack');
@@ -459,9 +456,15 @@ At Quadra Horizons, success is measured not only by transactions, but by the rel
         const scrollNext = () => {
             // If we have reached the end of the scrollable area, go back to the start
             if (track.scrollLeft + track.clientWidth >= track.scrollWidth - 10) {
-                track.scrollTo({ left: 0, behavior: 'smooth' });
+                track.scrollTo({
+                    left: 0,
+                    behavior: 'smooth'
+                });
             } else {
-                track.scrollBy({ left: getScrollAmount(), behavior: 'smooth' });
+                track.scrollBy({
+                    left: getScrollAmount(),
+                    behavior: 'smooth'
+                });
             }
         };
 
@@ -487,7 +490,10 @@ At Quadra Horizons, success is measured not only by transactions, but by the rel
         if (btnPrev) {
             btnPrev.addEventListener('click', () => {
                 stopAutoScroll();
-                track.scrollBy({ left: -getScrollAmount(), behavior: 'smooth' });
+                track.scrollBy({
+                    left: -getScrollAmount(),
+                    behavior: 'smooth'
+                });
                 startAutoScroll();
             });
         }
@@ -496,9 +502,11 @@ At Quadra Horizons, success is measured not only by transactions, but by the rel
         // Desktop Hover
         track.addEventListener('mouseenter', stopAutoScroll);
         track.addEventListener('mouseleave', startAutoScroll);
-        
+
         // Mobile Touch
-        track.addEventListener('touchstart', stopAutoScroll, { passive: true });
+        track.addEventListener('touchstart', stopAutoScroll, {
+            passive: true
+        });
         track.addEventListener('touchend', startAutoScroll);
 
         // Start the auto-scroll when the page loads
@@ -509,43 +517,43 @@ At Quadra Horizons, success is measured not only by transactions, but by the rel
     /* =========================================
    4. HORIZONTAL SCROLL ON VERTICAL SCROLL LOGIC
    ========================================= */
-document.addEventListener("DOMContentLoaded", function() {
-    
-    const scrollSection = document.getElementById('storyScrollSection');
-    const track = document.getElementById('storyTrack');
+    document.addEventListener("DOMContentLoaded", function() {
 
-    if (scrollSection && track) {
-        let isScrolling = false;
+        const scrollSection = document.getElementById('storyScrollSection');
+        const track = document.getElementById('storyTrack');
 
-        window.addEventListener('scroll', () => {
-            if (!isScrolling) {
-                window.requestAnimationFrame(() => {
-                    
-                    // Get the position of the section relative to the window
-                    const offsetTop = scrollSection.offsetTop;
-                    const scrollY = window.scrollY;
-                    const sectionHeight = scrollSection.offsetHeight;
-                    const windowHeight = window.innerHeight;
+        if (scrollSection && track) {
+            let isScrolling = false;
 
-                    // Calculate how far down the user has scrolled within this specific section
-                    let progress = (scrollY - offsetTop) / (sectionHeight - windowHeight);
-                    
-                    // Lock the progress between 0 (start) and 1 (end)
-                    progress = Math.max(0, Math.min(1, progress));
+            window.addEventListener('scroll', () => {
+                if (!isScrolling) {
+                    window.requestAnimationFrame(() => {
 
-                    // Calculate how far left the track needs to slide
-                    const maxScroll = track.scrollWidth - window.innerWidth;
-                    
-                    // Apply the translation
-                    track.style.transform = `translateX(-${progress * maxScroll}px)`;
+                        // Get the position of the section relative to the window
+                        const offsetTop = scrollSection.offsetTop;
+                        const scrollY = window.scrollY;
+                        const sectionHeight = scrollSection.offsetHeight;
+                        const windowHeight = window.innerHeight;
 
-                    isScrolling = false;
-                });
-                isScrolling = true;
-            }
-        });
-    }
-});
+                        // Calculate how far down the user has scrolled within this specific section
+                        let progress = (scrollY - offsetTop) / (sectionHeight - windowHeight);
+
+                        // Lock the progress between 0 (start) and 1 (end)
+                        progress = Math.max(0, Math.min(1, progress));
+
+                        // Calculate how far left the track needs to slide
+                        const maxScroll = track.scrollWidth - window.innerWidth;
+
+                        // Apply the translation
+                        track.style.transform = `translateX(-${progress * maxScroll}px)`;
+
+                        isScrolling = false;
+                    });
+                    isScrolling = true;
+                }
+            });
+        }
+    });
 </script>
 
 <?php include 'footer.php'; ?>

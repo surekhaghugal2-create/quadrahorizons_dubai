@@ -620,3 +620,14 @@
 .location-row {
     margin-top: 10px;
 }
+
+/* =======================================================
+   FORM DROPDOWN FIX (Forces black text in options)
+   ======================================================= */
+.modern-form select option,
+#split-country-select option,
+select[name="meeting_time"] option,
+select[name="country"] option {
+    color: #000000 !important;
+    background-color: #ffffff !important;
+}
