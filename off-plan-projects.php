@@ -12,222 +12,222 @@
     <div class="grid-container">
         <div class="project-card reveal">
             <a href="image/mbp-bc-hero-banner.webp" download class="prop-btn outline download-btn">
-                <span class="exclusive-tag">Exclusive</span>
-                <div class="card-img-wrap">
-                    <img src="image/mbp-bc-hero-banner.webp">
-                </div>
-                <div class="card-content">
-                    <h3>Mercedes-Benz Places Binghatti City</h3>
-                    <span class="location"><i class="fas fa-map-marker-alt"></i> Nad al sheba</span>
-                    <div class="price-row">
-                        <div>
-                            <span class="price-label">FROM</span>
-                            <div class="price-value">AED 1M</div>
-                        </div>
-                        <i class="fas fa-arrow-circle-down arrow-icon"></i>
-
+            <span class="exclusive-tag">Exclusive</span>
+            <div class="card-img-wrap">
+                <img src="image/mbp-bc-hero-banner.webp">
+            </div>
+            <div class="card-content">
+                <h3>Mercedes-Benz Places Binghatti City</h3>
+                <span class="location"><i class="fas fa-map-marker-alt"></i> Nad al sheba</span>
+                <div class="price-row">
+                    <div>
+                        <span class="price-label">FROM</span>
+                        <div class="price-value">AED 1M</div>
                     </div>
+                    <i class="fas fa-arrow-circle-down arrow-icon"></i>
+                    
                 </div>
+            </div>
             </a>
         </div>
 
         <div class="project-card reveal" style="transition-delay: 0.1s">
             <a href="image/binghatti-etheria-hero-banner.avif" download class="prop-btn outline download-btn">
-                <span class="exclusive-tag">Exclusive</span>
-                <div class="card-img-wrap">
-                    <img src="image/binghatti-etheria-hero-banner.avif" alt="Project">
-                </div>
-                <div class="card-content">
-                    <h3>Binghatti Etherea</h3>
-                    <span class="location"><i class="fas fa-map-marker-alt"></i> Jumeirah Village Circle</span>
-                    <div class="price-row">
-                        <div>
-                            <span class="price-label">FROM</span>
-                            <div class="price-value">AED 2.5M</div>
-                        </div>
-                        <i class="fas fa-arrow-circle-down arrow-icon"></i>
+            <span class="exclusive-tag">Exclusive</span>
+            <div class="card-img-wrap">
+                <img src="image/binghatti-etheria-hero-banner.avif" alt="Project">
+            </div>
+            <div class="card-content">
+                <h3>Binghatti Etherea</h3>
+                <span class="location"><i class="fas fa-map-marker-alt"></i> Jumeirah Village Circle</span>
+                <div class="price-row">
+                    <div>
+                        <span class="price-label">FROM</span>
+                        <div class="price-value">AED 2.5M</div>
                     </div>
+                    <i class="fas fa-arrow-circle-down arrow-icon"></i>
                 </div>
+            </div>
             </a>
         </div>
 
         <div class="project-card reveal" style="transition-delay: 0.2s">
             <a href="image/binghatti-skyterraces-hero-banner.avif" download class="prop-btn outline download-btn">
-                <span class="exclusive-tag">New Launch</span>
-                <div class="card-img-wrap">
-                    <img src="image/binghatti-skyterraces-hero-banner.avif">
-                </div>
-                <div class="card-content">
-                    <h3>Binghatti Skyterraces</h3>
-                    <span class="location"><i class="fas fa-map-marker-alt"></i> Motor City</span>
-                    <div class="price-row">
-                        <div>
-                            <span class="price-label">FROM</span>
-                            <div class="price-value">AED 2M</div>
-                        </div>
-                        <i class="fas fa-arrow-circle-down arrow-icon"></i>
+            <span class="exclusive-tag">New Launch</span>
+            <div class="card-img-wrap">
+                <img src="image/binghatti-skyterraces-hero-banner.avif">
+            </div>
+            <div class="card-content">
+                <h3>Binghatti Skyterraces</h3>
+                <span class="location"><i class="fas fa-map-marker-alt"></i> Motor City</span>
+                <div class="price-row">
+                    <div>
+                        <span class="price-label">FROM</span>
+                        <div class="price-value">AED 2M</div>
                     </div>
+                    <i class="fas fa-arrow-circle-down arrow-icon"></i>
                 </div>
+            </div>
             </a>
         </div>
 
         <div class="project-card reveal">
             <a href="image/binghatti-luxuria-hero-banner.avif" download class="prop-btn outline download-btn">
-                <span class="exclusive-tag">Exclusive</span>
-                <div class="card-img-wrap">
-                    <img src="image/binghatti-luxuria-hero-banner.avif">
-                </div>
-                <div class="card-content">
-                    <h3>Binghatti Luxuria</h3>
-                    <span class="location"><i class="fas fa-map-marker-alt"></i> Jumeirah Village Triangle</span>
-                    <div class="price-row">
-                        <div>
-                            <span class="price-label">FROM</span>
-                            <div class="price-value">AED 2.5M</div>
-                        </div>
-                        <i class="fas fa-arrow-circle-down arrow-icon"></i>
+            <span class="exclusive-tag">Exclusive</span>
+            <div class="card-img-wrap">
+                <img src="image/binghatti-luxuria-hero-banner.avif">
+            </div>
+            <div class="card-content">
+                <h3>Binghatti Luxuria</h3>
+                <span class="location"><i class="fas fa-map-marker-alt"></i> Jumeirah Village Triangle</span>
+                <div class="price-row">
+                    <div>
+                        <span class="price-label">FROM</span>
+                        <div class="price-value">AED 2.5M</div>
                     </div>
+                    <i class="fas fa-arrow-circle-down arrow-icon"></i>
                 </div>
+            </div>
             </a>
         </div>
 
         <div class="project-card reveal" style="transition-delay: 0.1s">
             <a href="image/binghatti-cullinan-hero-banner.avif" download class="prop-btn outline download-btn">
-                <span class="exclusive-tag">Selling Fast</span>
-                <div class="card-img-wrap">
-                    <img src="image/binghatti-cullinan-hero-banner.avif" alt="Project">
-                </div>
-                <div class="card-content">
-                    <h3>Binghatti Cullinan</h3>
-                    <span class="location"><i class="fas fa-map-marker-alt"></i> Al Jaddaf</span>
-                    <div class="price-row">
-                        <div>
-                            <span class="price-label">FROM</span>
-                            <div class="price-value">AED 1.5M</div>
-                        </div>
-                        <i class="fas fa-arrow-circle-down arrow-icon"></i>
+            <span class="exclusive-tag">Selling Fast</span>
+            <div class="card-img-wrap">
+                <img src="image/binghatti-cullinan-hero-banner.avif" alt="Project">
+            </div>
+            <div class="card-content">
+                <h3>Binghatti Cullinan</h3>
+                <span class="location"><i class="fas fa-map-marker-alt"></i> Al Jaddaf</span>
+                <div class="price-row">
+                    <div>
+                        <span class="price-label">FROM</span>
+                        <div class="price-value">AED 1.5M</div>
                     </div>
+                    <i class="fas fa-arrow-circle-down arrow-icon"></i>
                 </div>
+            </div>
             </a>
         </div>
 
         <div class="project-card reveal" style="transition-delay: 0.2s">
             <a href="image/binghatti-hillcrest-hero-banner.avif" download class="prop-btn outline download-btn">
-                <span class="exclusive-tag">Exclusive</span>
-                <div class="card-img-wrap">
-                    <img src="image/binghatti-hillcrest-hero-banner.avif" alt="Project">
-                </div>
-                <div class="card-content">
-                    <h3>Binghatti Hillcrest</h3>
-                    <span class="location"><i class="fas fa-map-marker-alt"></i> Arjan</span>
-                    <div class="price-row">
-                        <div>
-                            <span class="price-label">FROM</span>
-                            <div class="price-value">AED 1.3M</div>
-                        </div>
-                        <i class="fas fa-arrow-circle-down arrow-icon"></i>
+            <span class="exclusive-tag">Exclusive</span>
+            <div class="card-img-wrap">
+                <img src="image/binghatti-hillcrest-hero-banner.avif" alt="Project">
+            </div>
+            <div class="card-content">
+                <h3>Binghatti Hillcrest</h3>
+                <span class="location"><i class="fas fa-map-marker-alt"></i> Arjan</span>
+                <div class="price-row">
+                    <div>
+                        <span class="price-label">FROM</span>
+                        <div class="price-value">AED 1.3M</div>
                     </div>
+                    <i class="fas fa-arrow-circle-down arrow-icon"></i>
                 </div>
+            </div>
             </a>
         </div>
 
         <div class="project-card reveal" style="transition-delay: 0.2s">
             <a href="image/binghatti-titania-hero-banner-1.avif" download class="prop-btn outline download-btn">
-                <span class="exclusive-tag">Exclusive</span>
-                <div class="card-img-wrap">
-                    <img src="image/binghatti-titania-hero-banner-1.avif" alt="Project">
-                </div>
-                <div class="card-content">
-                    <h3>Binghatti Titania</h3>
-                    <span class="location"><i class="fas fa-map-marker-alt"></i> Majan</span>
-                    <div class="price-row">
-                        <div>
-                            <span class="price-label">FROM</span>
-                            <div class="price-value">AED 1.7M</div>
-                        </div>
-                        <i class="fas fa-arrow-circle-down arrow-icon"></i>
+            <span class="exclusive-tag">Exclusive</span>
+            <div class="card-img-wrap">
+                <img src="image/binghatti-titania-hero-banner-1.avif" alt="Project">
+            </div>
+            <div class="card-content">
+                <h3>Binghatti Titania</h3>
+                <span class="location"><i class="fas fa-map-marker-alt"></i> Majan</span>
+                <div class="price-row">
+                    <div>
+                        <span class="price-label">FROM</span>
+                        <div class="price-value">AED 1.7M</div>
                     </div>
+                    <i class="fas fa-arrow-circle-down arrow-icon"></i>
                 </div>
+            </div>
             </a>
         </div>
 
         <div class="project-card reveal" style="transition-delay: 0.2s">
             <a href="image/binghatti-vintage-hero-banner.avif" download class="prop-btn outline download-btn">
-                <span class="exclusive-tag">Exclusive</span>
-                <div class="card-img-wrap">
-                    <img src="image/binghatti-vintage-hero-banner.avif" alt="Project">
-                </div>
-                <div class="card-content">
-                    <h3>Binghatti Vintage</h3>
-                    <span class="location"><i class="fas fa-map-marker-alt"></i> Majan</span>
-                    <div class="price-row">
-                        <div>
-                            <span class="price-label">FROM</span>
-                            <div class="price-value">AED 3M</div>
-                        </div>
-                        <i class="fas fa-arrow-circle-down arrow-icon"></i>
+            <span class="exclusive-tag">Exclusive</span>
+            <div class="card-img-wrap">
+                <img src="image/binghatti-vintage-hero-banner.avif" alt="Project">
+            </div>
+            <div class="card-content">
+                <h3>Binghatti Vintage</h3>
+                <span class="location"><i class="fas fa-map-marker-alt"></i> Majan</span>
+                <div class="price-row">
+                    <div>
+                        <span class="price-label">FROM</span>
+                        <div class="price-value">AED 3M</div>
                     </div>
+                    <i class="fas fa-arrow-circle-down arrow-icon"></i>
                 </div>
+            </div>
             </a>
         </div>
 
         <div class="project-card reveal" style="transition-delay: 0.2s">
             <a href="image/binghatti-pinnacle-hero-banner.avif" download class="prop-btn outline download-btn">
-                <span class="exclusive-tag">Exclusive</span>
-                <div class="card-img-wrap">
-                    <img src="image/binghatti-pinnacle-hero-banner.avif" alt="Project">
-                </div>
-                <div class="card-content">
-                    <h3>Binghatti Pinnacle</h3>
-                    <span class="location"><i class="fas fa-map-marker-alt"></i> Al Jaddaf</span>
-                    <div class="price-row">
-                        <div>
-                            <span class="price-label">FROM</span>
-                            <div class="price-value">AED 1.5M</div>
-                        </div>
-                        <i class="fas fa-arrow-circle-down arrow-icon"></i>
+            <span class="exclusive-tag">Exclusive</span>
+            <div class="card-img-wrap">
+                <img src="image/binghatti-pinnacle-hero-banner.avif" alt="Project">
+            </div>
+            <div class="card-content">
+                <h3>Binghatti Pinnacle</h3>
+                <span class="location"><i class="fas fa-map-marker-alt"></i> Al Jaddaf</span>
+                <div class="price-row">
+                    <div>
+                        <span class="price-label">FROM</span>
+                        <div class="price-value">AED 1.5M</div>
                     </div>
+                    <i class="fas fa-arrow-circle-down arrow-icon"></i>
                 </div>
+            </div>
             </a>
         </div>
 
         <div class="project-card reveal" style="transition-delay: 0.2s">
             <a href="image/Mercedes-Benz Places Binghatti City.png" download class="prop-btn outline download-btn">
-                <span class="exclusive-tag">Exclusive</span>
-                <div class="card-img-wrap">
-                    <img src="image/Mercedes-Benz Places Binghatti City.png" alt="Project">
-                </div>
-                <div class="card-content">
-                    <h3>Mercedes-Benz Places | By Binghatti</h3>
-                    <span class="location"><i class="fas fa-map-marker-alt"></i> Business Bay</span>
-                    <div class="price-row">
-                        <div>
-                            <span class="price-label">FROM</span>
-                            <div class="price-value">AED 2.2M</div>
-                        </div>
-                        <i class="fas fa-arrow-circle-down arrow-icon"></i>
+            <span class="exclusive-tag">Exclusive</span>
+            <div class="card-img-wrap">
+                <img src="image/Mercedes-Benz Places Binghatti City.png" alt="Project">
+            </div>
+            <div class="card-content">
+                <h3>Mercedes-Benz Places | By Binghatti</h3>
+                <span class="location"><i class="fas fa-map-marker-alt"></i> Business Bay</span>
+                <div class="price-row">
+                    <div>
+                        <span class="price-label">FROM</span>
+                        <div class="price-value">AED 2.2M</div>
                     </div>
+                    <i class="fas fa-arrow-circle-down arrow-icon"></i>
                 </div>
+            </div>
             </a>
         </div>
 
         <div class="project-card reveal" style="transition-delay: 0.2s">
             <a href="image/binghatti-amberhall-hero-banner.webp" download class="prop-btn outline download-btn">
-                <span class="exclusive-tag">Exclusive</span>
-                <div class="card-img-wrap">
-                    <img src="image/binghatti-amberhall-hero-banner.webp" alt="Project">
-                </div>
-                <div class="card-content">
-                    <h3>Binghatti Amberhall</h3>
-                    <span class="location"><i class="fas fa-map-marker-alt"></i> JVC</span>
-                    <div class="price-row">
-                        <div>
-                            <span class="price-label">FROM</span>
-                            <div class="price-value">AED 2M</div>
-                        </div>
-                        <i class="fas fa-arrow-circle-down arrow-icon"></i>
+            <span class="exclusive-tag">Exclusive</span>
+            <div class="card-img-wrap">
+                <img src="image/binghatti-amberhall-hero-banner.webp" alt="Project">
+            </div>
+            <div class="card-content">
+                <h3>Binghatti Amberhall</h3>
+                <span class="location"><i class="fas fa-map-marker-alt"></i> JVC</span>
+                <div class="price-row">
+                    <div>
+                        <span class="price-label">FROM</span>
+                        <div class="price-value">AED 2M</div>
                     </div>
+                    <i class="fas fa-arrow-circle-down arrow-icon"></i>
                 </div>
+            </div>
             </a>
         </div>
     </div>
@@ -237,15 +237,10 @@
 
     <div class="content-block reveal">
         <div class="text-side">
-            <h2 class="block-title">What Are Off-Plan Properties</h2>
+            <h2 class="block-title">What Are Off-Plan Properties?</h2>
             <p class="block-text">
                 An off-plan property in Dubai refers to a residential or commercial unit purchased directly from a developer before construction is completed. Investors typically buy based on architectural designs, floor plans, master plans, and computer-generated imagery (CGIs).
-                Buying off-plan in Dubai allows investors to secure premium properties at competitive prices with structured payment plans spread across construction milestones. This makes off-plan real estate one of the most attractive investment strategies in Dubai’s rapidly growing property market.
-
-            </p>
-=======
                 Buying off-plan in Dubai allows investors to secure premium properties at competitive prices with structured payment plans spread across construction milestones. This makes off-plan real estate one of the most attractive investment strategies in Dubai’s rapidly growing property market.</p>
->>>>>>> 74fe833cc4e22b9cbb50d417d4d5263d1210dc09
         </div>
         <div class="img-side">
             <img src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=800&q=80" alt="Blueprint">
@@ -322,11 +317,6 @@
 </div>
 
 
-<<<<<<< HEAD
-<!-- FAQ SECTION -->
-<section class="rent-pg-faq">
-    <video class="faq-bg-media" autoplay loop muted playsinline>
-=======
 <section class="rera-section">
     <div class="rera-container">
         <div class="rera-header">
@@ -354,32 +344,17 @@
     <!-- FAQ SECTION -->
     <section class="rent-pg-faq">
             <video class="faq-bg-media" autoplay loop muted playsinline>
->>>>>>> 74fe833cc4e22b9cbb50d417d4d5263d1210dc09
         <source src="video/GettyImages-1309566975.mp4" type="video/mp4">
-    </video>
-
+    </video> 
+    
     <div class="faq-bg-overlay"></div>
-    <div class="rent-pg-faq-container">
-        <header class="rent-pg-faq-header js-reveal">
-            <span class="rent-pg-pre-title">REFINEMENT & DETAIL</span>
-            <h2 class="rent-pg-section-title">Frequently Asked Questions</h2>
-            <div class="rent-pg-gold-divider"></div>
-        </header>
+        <div class="rent-pg-faq-container">
+            <header class="rent-pg-faq-header js-reveal">
+                <span class="rent-pg-pre-title">REFINEMENT & DETAIL</span>
+                <h2 class="rent-pg-section-title">Frequently Asked Questions</h2>
+                <div class="rent-pg-gold-divider"></div>
+            </header>
 
-<<<<<<< HEAD
-        <div class="rent-pg-faq-accordion">
-            <div class="rent-pg-faq-item js-reveal">
-                <button class="rent-pg-faq-btn">
-                    <span class="rent-pg-faq-q">Is it a good time to buy off-plan property in Dubai in 2026?</span>
-                    <div class="rent-pg-faq-icon">
-                        <span class="line vertical"></span>
-                        <span class="line horizontal"></span>
-                    </div>
-                </button>
-                <div class="rent-pg-faq-panel">
-                    <div class="rent-pg-faq-content">
-                        <p>Yes. Dubai’s strong economic growth, increasing foreign investment, and new infrastructure developments make off-plan projects a strategic long-term investment opportunity.</p>
-=======
             <div class="rent-pg-faq-accordion">
                 <div class="rent-pg-faq-item js-reveal">
                     <button class="rent-pg-faq-btn">
@@ -393,24 +368,9 @@
                         <div class="rent-pg-faq-content">
                             <p>Yes. Dubai’s strong economic growth, increasing foreign investment, and new infrastructure developments make off-plan projects a strategic long-term investment opportunity.</p>
                         </div>
->>>>>>> 74fe833cc4e22b9cbb50d417d4d5263d1210dc09
                     </div>
                 </div>
-            </div>
 
-<<<<<<< HEAD
-            <div class="rent-pg-faq-item js-reveal">
-                <button class="rent-pg-faq-btn">
-                    <span class="rent-pg-faq-q">Are off-plan properties in Dubai safe?</span>
-                    <div class="rent-pg-faq-icon">
-                        <span class="line vertical"></span>
-                        <span class="line horizontal"></span>
-                    </div>
-                </button>
-                <div class="rent-pg-faq-panel">
-                    <div class="rent-pg-faq-content">
-                        <p>Yes. RERA regulations, escrow accounts, and strict developer compliance frameworks protect buyers throughout the investment process.</p>
-=======
                 <div class="rent-pg-faq-item js-reveal">
                     <button class="rent-pg-faq-btn">
                         <span class="rent-pg-faq-q">Are off-plan properties in Dubai safe?</span>
@@ -423,24 +383,9 @@
                         <div class="rent-pg-faq-content">
                             <p>Yes. RERA regulations, escrow accounts, and strict developer compliance frameworks protect buyers throughout the investment process.</p>
                         </div>
->>>>>>> 74fe833cc4e22b9cbb50d417d4d5263d1210dc09
                     </div>
                 </div>
-            </div>
 
-<<<<<<< HEAD
-            <div class="rent-pg-faq-item js-reveal">
-                <button class="rent-pg-faq-btn">
-                    <span class="rent-pg-faq-q">What are the payment plans for off-plan projects in Dubai?</span>
-                    <div class="rent-pg-faq-icon">
-                        <span class="line vertical"></span>
-                        <span class="line horizontal"></span>
-                    </div>
-                </button>
-                <div class="rent-pg-faq-panel">
-                    <div class="rent-pg-faq-content">
-                        <p>Most developers offer flexible payment plans, including construction-linked schedules and post-handover options.</p>
-=======
                 <div class="rent-pg-faq-item js-reveal">
                     <button class="rent-pg-faq-btn">
                         <span class="rent-pg-faq-q">What are the payment plans for off-plan projects in Dubai?</span>
@@ -453,26 +398,9 @@
                         <div class="rent-pg-faq-content">
                             <p>Most developers offer flexible payment plans, including construction-linked schedules and post-handover options.</p>
                         </div>
->>>>>>> 74fe833cc4e22b9cbb50d417d4d5263d1210dc09
                     </div>
                 </div>
-            </div>
 
-<<<<<<< HEAD
-            <div class="rent-pg-faq-item js-reveal">
-                <button class="rent-pg-faq-btn">
-                    <span class="rent-pg-faq-q">Can international investors buy off-plan property in Dubai?</span>
-                    <div class="rent-pg-faq-icon">
-                        <span class="line vertical"></span>
-                        <span class="line horizontal"></span>
-                    </div>
-                </button>
-                <div class="rent-pg-faq-panel">
-                    <div class="rent-pg-faq-content">
-                        <p>Absolutely. Dubai allows foreign ownership in designated freehold areas, making it accessible to global investors.</p>
-                    </div>
-                </div>
-=======
                   <div class="rent-pg-faq-item js-reveal">
                     <button class="rent-pg-faq-btn">
                         <span class="rent-pg-faq-q">Can international investors buy off-plan property in Dubai?</span>
@@ -502,40 +430,36 @@
                         </div>
                     </div>
                 </div> -->
->>>>>>> 74fe833cc4e22b9cbb50d417d4d5263d1210dc09
             </div>
         </div>
-    </div>
-</section>
+    </section>
 
 
-<script>
-    document.addEventListener('DOMContentLoaded', () => {
-        // 1. FAQ Accordion Logic
-        const faqItems = document.querySelectorAll('.rent-pg-faq-item');
-        faqItems.forEach(item => {
-            const btn = item.querySelector('.rent-pg-faq-btn');
-            btn.addEventListener('click', () => {
-                const isActive = item.classList.contains('active');
-                faqItems.forEach(i => i.classList.remove('active')); // Close others
-                if (!isActive) item.classList.add('active');
-            });
+    <script>
+document.addEventListener('DOMContentLoaded', () => {
+    // 1. FAQ Accordion Logic
+    const faqItems = document.querySelectorAll('.rent-pg-faq-item');
+    faqItems.forEach(item => {
+        const btn = item.querySelector('.rent-pg-faq-btn');
+        btn.addEventListener('click', () => {
+            const isActive = item.classList.contains('active');
+            faqItems.forEach(i => i.classList.remove('active')); // Close others
+            if (!isActive) item.classList.add('active');
         });
-
-        // 2. Intersection Observer for Scroll Animations
-        const observerOptions = {
-            threshold: 0.15
-        };
-        const revealObserver = new IntersectionObserver((entries) => {
-            entries.forEach((entry) => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add('is-visible');
-                }
-            });
-        }, observerOptions);
-
-
     });
+
+    // 2. Intersection Observer for Scroll Animations
+    const observerOptions = { threshold: 0.15 };
+    const revealObserver = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('is-visible');
+            }
+        });
+    }, observerOptions);
+
+   
+});
 </script>
 
 <?php include 'footer.php'; ?>

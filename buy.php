@@ -274,7 +274,7 @@
         <div class="invest-content">
             <span class="invest-subtitle invest-anim">Strategic Buying Approach</span>
             
-            <h2 class="invest-title invest-anim delay-1">Our Locations</h2>
+            <h2 class="invest-title invest-anim delay-1">Exclusive Luxury Listings</h2>
             <div class="invest-text">
                 <!-- <p class="invest-anim delay-2">
                     The Dubai real estate market continues to attract global investors, high-net-worth individuals, and institutional buyers. To stand out in a competitive landscape, your property requires more than a listing — it requires presence.
