@@ -644,3 +644,46 @@ ul.luxury-list li::before {
     .rent-pg-faq-item { border-radius: 8px; }
     .rent-pg-faq-btn { padding: 20px; }
 }
+
+
+/* =========================================
+   RERA SAFETY SECTION
+========================================= */
+.rera-section {
+    background-color: var(--rent-card-bg); /* Changed so it contrasts against the black */
+    padding: 0px 5% 80px;
+    color: var(--rent-white);
+}
+
+.rera-container {
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.rera-header {
+    padding-top: 100px;
+    text-align: center;
+    max-width: 900px;
+    margin: 0 auto 80px;
+}
+
+.rera-subtitle {
+    display: block;
+    font-size: 12px;
+    letter-spacing: 4px;
+    color: var(--rent-gold);
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+.rera-header h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 50px;
+    margin-bottom: 25px;
+}
+
+.rera-header p {
+    color: var(--rent-grey);
+    font-size: 18px;
+    line-height: 1.8;
+}

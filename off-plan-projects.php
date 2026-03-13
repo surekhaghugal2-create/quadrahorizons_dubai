@@ -237,12 +237,10 @@
 
     <div class="content-block reveal">
         <div class="text-side">
-            <h2 class="block-title">What Are Off-Plan Properties</h2>
+            <h2 class="block-title">What Are Off-Plan Properties?</h2>
             <p class="block-text">
-                An off-plan property is a building or a construction project that hasn't been built or completed yet.
-                To be able to visualize what the finished product will look like, developers use floor plans,
-                computer-generated imagery (CGIs), and working drawings.
-            </p>
+                An off-plan property in Dubai refers to a residential or commercial unit purchased directly from a developer before construction is completed. Investors typically buy based on architectural designs, floor plans, master plans, and computer-generated imagery (CGIs).
+Buying off-plan in Dubai allows investors to secure premium properties at competitive prices with structured payment plans spread across construction milestones. This makes off-plan real estate one of the most attractive investment strategies in Dubai’s rapidly growing property market.</p>
         </div>
         <div class="img-side">
             <img src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=800&q=80" alt="Blueprint">
@@ -252,13 +250,15 @@
     <div class="content-block reverse reveal">
         <div class="text-side">
             <h2 class="block-title">Types of Off-Plan Properties in Dubai</h2>
-            <p class="block-text">Those who are looking to buy off-plan property in Dubai have a wide variety of options:</p>
+            <p class="block-text">Dubai offers a diverse range of off-plan investment opportunities designed to meet varying lifestyle and financial goals:</p>
             <ul class="luxury-list">
-                <li>Apartments & Penthouses</li>
-                <li>Luxury Villas</li>
-                <li>Townhouses & Duplexes</li>
-                <li>Commercial Spaces</li>
+                <li>Luxury off-plan apartments in prime districts</li>
+                <li>Branded residences and high-rise towers</li>
+                <li>Waterfront villas and gated communitiesl</li>
+                <li>Mixed-use developments</li>
+                <li>Commercial off-plan projects</li>
             </ul>
+            <p class="block-text">Whether you are looking to buy a luxury apartment in Dubai or invest in a high-yield villa project, QH Properties provides tailored solutions aligned with your investment strategy.</p>
         </div>
         <div class="img-side">
             <img src="https://images.unsplash.com/photo-1546412414-e1885259563a?auto=format&fit=crop&w=800&q=80" alt="Skyline">
@@ -267,18 +267,41 @@
 
     <div class="content-block full reveal">
         <h2 class="block-title">Risks and Safety Regulations (RERA)</h2>
-        <p class="block-text">
-            When looking at a Dubai off-plan property for sale, buyers often weigh the attractive pricing against potential risks.
-            To reduce these concerns, the Real Estate Regulatory Authority (RERA) has introduced strict frameworks.
-        </p>
+        <p class="block-text">While off-plan property investment in Dubai offers significant growth potential, it is important to work with experienced advisors and RERA-certified brokers to minimize risks.<br/>Dubai’s Real Estate Regulatory Agency (RERA) protects investors through strict compliance frameworks:</p>
         <ul class="luxury-list" style="text-align: left; display: inline-block;">
-            <li><strong>Escrow Protection:</strong> All payments must be deposited into escrow accounts monitored by RERA.</li>
-            <li><strong>Developer Checks:</strong> RERA requires developers to own the land and complete 20% construction before selling.</li>
-            <li><strong>Delivery Assurance:</strong> Developers are obligated to give realistic timelines.</li>
+            <li><strong>Escrow Accounts:</strong> Developer payments are secured in government-regulated escrow accounts</li>
+            <li><strong>Developer Registration:</strong> All developers must be registered and approved before selling off-plan properties.</li>
+            <li><strong>Construction-Linked Payment Plans:</strong> Payments are tied to verified construction milestones.</li>
+            <li><strong>Delivery Compliance:</strong> Developers must adhere to agreed timelines and quality standards.</li>
         </ul>
+        <p class="block-text">At QH Properties, we conduct detailed due diligence on every off-plan project to ensure your investment is secure and strategically positioned.</p>
     </div>
 </div>
 
+
+<section class="rera-section">
+    <div class="rera-container">
+        <div class="rera-header">
+            <span class="rera-subtitle">INVESTOR PROTECTION</span>
+            <h2>Why Invest in Dubai Off-Plan Real Estate?</h2>
+            <p>
+                At QH Properties, we curate strategic sales journeys for luxury apartments, waterfront villas, penthouses, and high-value investment assets across Dubai’s prime communities. Whether you are selling in Downtown Dubai, Dubai Marina, Palm Jumeirah, Business Bay, or Dubai Hills Estate, we ensure your property achieves maximum exposure, premium positioning, and optimal return.
+            </p><br/>
+            <p>
+                Selling real estate in Dubai is not simply a transaction — it is a calculated release of capital, opportunity, and legacy. Our RERA-certified brokers combine market intelligence, buyer networks, and precision negotiation to deliver exceptional results.
+            </p>
+            <p class="block-text">Dubai remains one of the world’s most attractive property investment destinations due to:</p>
+            <ul class="luxury-list" style="text-align: left; display: inline-block;">
+                <li>Tax-free property ownership</li>
+                <li>High rental yields compared to global cities</li>
+                <li>Investor-friendly regulations</li>
+                <li>Strong population growth and tourism</li>
+                <li>Golden Visa eligibility for qualifying investments</li>
+            </ul>
+            <p class="block-text">Off-plan projects in Dubai provide lower entry prices, higher appreciation potential, and flexible payment structures — making them ideal for both first-time investors and seasoned global buyers.</p>
+        </div>
+    </div>
+</section>
 
     <!-- FAQ SECTION -->
     <section class="rent-pg-faq">
@@ -297,7 +320,7 @@
             <div class="rent-pg-faq-accordion">
                 <div class="rent-pg-faq-item js-reveal">
                     <button class="rent-pg-faq-btn">
-                        <span class="rent-pg-faq-q">How is the architectural integrity verified?</span>
+                        <span class="rent-pg-faq-q">Is it a good time to buy off-plan property in Dubai in 2026?</span>
                         <div class="rent-pg-faq-icon">
                             <span class="line vertical"></span>
                             <span class="line horizontal"></span>
@@ -305,14 +328,14 @@
                     </button>
                     <div class="rent-pg-faq-panel">
                         <div class="rent-pg-faq-content">
-                            <p>Our structural engineers utilize aerospace-grade simulations to stress-test every cantilever and foundation. We ensure that your silhouette remains timeless against seismic and environmental shifts.</p>
+                            <p>Yes. Dubai’s strong economic growth, increasing foreign investment, and new infrastructure developments make off-plan projects a strategic long-term investment opportunity.</p>
                         </div>
                     </div>
                 </div>
 
                 <div class="rent-pg-faq-item js-reveal">
                     <button class="rent-pg-faq-btn">
-                        <span class="rent-pg-faq-q">What is the timeline for bespoke commissions?</span>
+                        <span class="rent-pg-faq-q">Are off-plan properties in Dubai safe?</span>
                         <div class="rent-pg-faq-icon">
                             <span class="line vertical"></span>
                             <span class="line horizontal"></span>
@@ -320,14 +343,14 @@
                     </button>
                     <div class="rent-pg-faq-panel">
                         <div class="rent-pg-faq-content">
-                            <p>A typical architectural masterpiece requires 12 to 18 months from initial conceptualization to final handover. This allows for meticulous sourcing of rare materials and artisan-level finishing.</p>
+                            <p>Yes. RERA regulations, escrow accounts, and strict developer compliance frameworks protect buyers throughout the investment process.</p>
                         </div>
                     </div>
                 </div>
 
                 <div class="rent-pg-faq-item js-reveal">
                     <button class="rent-pg-faq-btn">
-                        <span class="rent-pg-faq-q">Do you offer smart-home architectural integration?</span>
+                        <span class="rent-pg-faq-q">What are the payment plans for off-plan projects in Dubai?</span>
                         <div class="rent-pg-faq-icon">
                             <span class="line vertical"></span>
                             <span class="line horizontal"></span>
@@ -335,12 +358,27 @@
                     </button>
                     <div class="rent-pg-faq-panel">
                         <div class="rent-pg-faq-content">
-                            <p>We treat technology as invisible luxury. Automation is embedded into the walls themselves, allowing for biometric access, circadian lighting, and climate control that anticipates your arrival.</p>
+                            <p>Most developers offer flexible payment plans, including construction-linked schedules and post-handover options.</p>
                         </div>
                     </div>
                 </div>
 
                   <div class="rent-pg-faq-item js-reveal">
+                    <button class="rent-pg-faq-btn">
+                        <span class="rent-pg-faq-q">Can international investors buy off-plan property in Dubai?</span>
+                        <div class="rent-pg-faq-icon">
+                            <span class="line vertical"></span>
+                            <span class="line horizontal"></span>
+                        </div>
+                    </button>
+                    <div class="rent-pg-faq-panel">
+                        <div class="rent-pg-faq-content">
+                            <p>Absolutely. Dubai allows foreign ownership in designated freehold areas, making it accessible to global investors.</p>
+                        </div>
+                    </div>
+                </div>
+
+                  <!-- <div class="rent-pg-faq-item js-reveal">
                     <button class="rent-pg-faq-btn">
                         <span class="rent-pg-faq-q">Do you offer smart-home architectural integration?</span>
                         <div class="rent-pg-faq-icon">
@@ -353,22 +391,7 @@
                             <p>We treat technology as invisible luxury. Automation is embedded into the walls themselves, allowing for biometric access, circadian lighting, and climate control that anticipates your arrival.</p>
                         </div>
                     </div>
-                </div>
-
-                  <div class="rent-pg-faq-item js-reveal">
-                    <button class="rent-pg-faq-btn">
-                        <span class="rent-pg-faq-q">Do you offer smart-home architectural integration?</span>
-                        <div class="rent-pg-faq-icon">
-                            <span class="line vertical"></span>
-                            <span class="line horizontal"></span>
-                        </div>
-                    </button>
-                    <div class="rent-pg-faq-panel">
-                        <div class="rent-pg-faq-content">
-                            <p>We treat technology as invisible luxury. Automation is embedded into the walls themselves, allowing for biometric access, circadian lighting, and climate control that anticipates your arrival.</p>
-                        </div>
-                    </div>
-                </div>
+                </div> -->
             </div>
         </div>
     </section>
