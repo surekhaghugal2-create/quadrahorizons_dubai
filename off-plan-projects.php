@@ -316,28 +316,39 @@
     </div>
 </div>
 
-
-<section class="rera-section">
-    <div class="rera-container">
-        <div class="rera-header">
-            <span class="rera-subtitle">INVESTOR PROTECTION</span>
-            <h2>Why Invest in Dubai Off-Plan Real Estate?</h2>
-            <p>
+<!-- Why Invest in Dubai Off-Plan Real Estate? -->
+<section class="dubai-invest-benefits">
+    <div class="benefits-container">
+        
+        <div class="benefits-text-col">
+            <span class="benefits-subtitle">INVESTOR PROTECTION</span>
+            <h2 class="benefits-heading">Why Invest in Dubai Off-Plan Real Estate?</h2>
+            <div class="benefits-divider"></div>
+            
+            <p class="benefits-text">
                 At QH Properties, we curate strategic sales journeys for luxury apartments, waterfront villas, penthouses, and high-value investment assets across Dubai’s prime communities. Whether you are selling in Downtown Dubai, Dubai Marina, Palm Jumeirah, Business Bay, or Dubai Hills Estate, we ensure your property achieves maximum exposure, premium positioning, and optimal return.
-            </p><br/>
-            <p>
+            </p>
+            <p class="benefits-text">
                 Selling real estate in Dubai is not simply a transaction — it is a calculated release of capital, opportunity, and legacy. Our RERA-certified brokers combine market intelligence, buyer networks, and precision negotiation to deliver exceptional results.
             </p>
-            <p class="block-text">Dubai remains one of the world’s most attractive property investment destinations due to:</p>
-            <ul class="luxury-list" style="text-align: left; display: inline-block;">
-                <li>Tax-free property ownership</li>
-                <li>High rental yields compared to global cities</li>
-                <li>Investor-friendly regulations</li>
-                <li>Strong population growth and tourism</li>
-                <li>Golden Visa eligibility for qualifying investments</li>
-            </ul>
-            <p class="block-text">Off-plan projects in Dubai provide lower entry prices, higher appreciation potential, and flexible payment structures — making them ideal for both first-time investors and seasoned global buyers.</p>
+            <p class="benefits-text highlight-text">
+                Off-plan projects in Dubai provide lower entry prices, higher appreciation potential, and flexible payment structures — making them ideal for both first-time investors and seasoned global buyers.
+            </p>
         </div>
+
+        <div class="benefits-list-col">
+            <div class="benefits-glass-card">
+                <h3 class="card-title">Dubai Market Advantages</h3>
+                <ul class="benefits-list">
+                    <li><i class="fas fa-check"></i> Tax-free property ownership</li>
+                    <li><i class="fas fa-check"></i> High rental yields globally</li>
+                    <li><i class="fas fa-check"></i> Investor-friendly regulations</li>
+                    <li><i class="fas fa-check"></i> Strong population & tourism growth</li>
+                    <li><i class="fas fa-check"></i> Golden Visa eligibility</li>
+                </ul>
+            </div>
+        </div>
+
     </div>
 </section>
 

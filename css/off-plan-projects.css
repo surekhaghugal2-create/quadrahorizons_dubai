@@ -11,7 +11,6 @@
     --rent-glass-border: rgba(255, 255, 255, 0.1);
 }
 
-* { box-sizing: border-box; margin: 0; padding: 0; }
 
 body {
     background-color: var(--rent-dark); /* Fixed variable name */
@@ -212,6 +211,8 @@ img { max-width: 100%; display: block; }
     color: var(--rent-grey);
     margin-bottom: 25px;
     font-size: 18px;
+        font-family: 'work sans', sans-serif;
+
 }
 
 /* List Styling */
@@ -225,7 +226,9 @@ ul.luxury-list li {
     padding-left: 25px;
     margin-bottom: 15px;
     color: var(--rent-grey);
-    font-size: 14px;
+    font-size: 18px;
+    font-family: 'work sans', sans-serif;
+
 }
 
 ul.luxury-list li::before {
@@ -556,7 +559,7 @@ ul.luxury-list li::before {
     .hero-title p,
     ul.luxury-list li,
     ul.selling-strategy li {
-        font-size: 16px !important;
+        font-size: 18px !important;
         line-height: 1.6 !important;
     }
 
@@ -686,4 +689,177 @@ ul.luxury-list li::before {
     color: var(--rent-grey);
     font-size: 18px;
     line-height: 1.8;
+}
+/* =======================================================
+   DUBAI INVESTMENT BENEFITS SECTION
+   ======================================================= */
+.dubai-invest-benefits {
+    background-color: var(--soft-black, #0A0A0A);
+    padding: 120px 5%;
+    position: relative;
+    overflow: hidden;
+}
+
+.benefits-container {
+    max-width: 1400px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1.2fr 1fr; /* Text gets slightly more room than the card */
+    gap: 80px;
+    align-items: center;
+}
+
+/* --- Left Side Typography --- */
+.benefits-subtitle {
+    display: block;
+    font-family: var(--font-body);
+    font-size: 14px;
+    letter-spacing: 6px;
+    text-transform: uppercase;
+    color: var(--luxury-gold, #D4AF37);
+    margin-bottom: 20px;
+}
+
+/* STRICT DESKTOP: Heading 50px */
+.benefits-heading {
+    font-family: var(--font-heading) !important;
+    font-size: 50px !important; 
+    line-height: 1.2 !important;
+    color: var(--white, #ffffff);
+    margin: 0 0 30px 0;
+}
+
+.benefits-divider {
+    width: 60px;
+    height: 2px;
+    background-color: var(--luxury-gold, #D4AF37);
+    margin-bottom: 30px;
+}
+
+/* STRICT DESKTOP: Paragraph 18px */
+.benefits-text {
+    font-family: var(--font-body) !important;
+    font-size: 18px !important; 
+    line-height: 1.6 !important;
+    color: var(--text-grey, #cfcfcf);
+    margin-bottom: 25px;
+    text-align: justify; 
+}
+
+.highlight-text {
+    color: var(--white);
+    font-style: italic;
+    border-left: 2px solid var(--luxury-gold, #D4AF37);
+    padding-left: 20px;
+    margin-top: 30px;
+}
+
+/* --- Right Side Glass Card --- */
+.benefits-glass-card {
+    background: rgba(20, 20, 20, 0.6);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    border-top: 3px solid var(--luxury-gold, #D4AF37);
+    padding: 50px 40px;
+    border-radius: 8px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
+}
+
+.card-title {
+    font-family: var(--font-heading);
+    font-size: 28px !important;
+    color: var(--white);
+    margin: 0 0 30px 0;
+    font-weight: 400;
+}
+
+.benefits-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* STRICT DESKTOP: List Items 18px */
+.benefits-list li {
+    font-family: var(--font-body) !important;
+    font-size: 18px !important; 
+    line-height: 1.6 !important;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 20px;
+    color: var(--text-grey);
+}
+
+.benefits-list li i {
+    position: absolute;
+    left: 0;
+    top: 6px;
+    color: var(--luxury-gold, #D4AF37);
+    font-size: 16px;
+}
+
+/* =======================================================
+   RESPONSIVE LAYOUT (TABLET & MOBILE)
+   ======================================================= */
+
+/* --- TABLET VIEW (Max 1024px) --- */
+@media (max-width: 1024px) {
+    .benefits-container {
+        grid-template-columns: 1fr; /* Stacks text on top of the card */
+        gap: 60px;
+    }
+    .benefits-text {
+        text-align: left; /* Removes justify so words don't stretch weirdly */
+    }
+}
+
+/* --- MOBILE/SMALL TABLET VIEW (Max 724px) --- */
+@media (max-width: 724px) {
+    
+    /* STRICT MOBILE: Heading 36px */
+    .benefits-heading {
+        font-size: 36px !important;
+        margin-bottom: 20px !important;
+    }
+
+    /* STRICT MOBILE: Paragraphs & List Items 14px */
+    .benefits-text,
+    .benefits-list li {
+        font-size: 14px !important;
+        line-height: 1.6 !important;
+    }
+
+    .card-title {
+        font-size: 24px !important;
+    }
+}
+
+/* --- STRICT MOBILE PHONE VIEW (Max 425px) --- */
+@media (max-width: 425px) {
+    .dubai-invest-benefits {
+        padding: 60px 20px !important; /* Forces clean edges on small phones */
+    }
+    
+    .benefits-subtitle {
+        font-size: 12px;
+        margin-bottom: 15px;
+    }
+
+    .benefits-divider {
+        margin-bottom: 25px;
+    }
+
+    .benefits-glass-card {
+        padding: 40px 20px; /* Tighter internal padding for the card */
+    }
+
+    .benefits-list li {
+        margin-bottom: 15px;
+    }
+    
+    .highlight-text {
+        padding-left: 15px;
+        margin-top: 20px;
+    }
 }
