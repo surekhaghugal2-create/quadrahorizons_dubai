@@ -26,7 +26,9 @@
  }
 
  /* --- 1. SHARED BACKGROUND (CONTINUOUS ZOOM) --- */
-
+ #select{
+    background-color: #000;
+ }
  .split-bg {
      position: absolute;
      inset: 0;
@@ -274,6 +276,7 @@
 
  .split-btn {
      padding: 18px;
+     /* background-color: #000; */
      background: rgba(255, 255, 255, 0.1);
      border: 1px solid rgba(255, 255, 255, 0.4);
      color: var(--split-white);
