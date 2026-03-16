@@ -2,9 +2,18 @@
 <link rel="stylesheet" href="css/buy.css">
 
 <!-- HERO -->
-<section class="hero">
-  <img src="image/binghatti-hillside-hero-banner-new.avif" alt="Dubai Skyline">
-</section>
+
+    <section class="rent-pg-hero">
+        <video id="rent-pg-hero-video" autoplay muted loop playsinline class="rent-pg-hero-vid-element">
+            <source src="video/Final_V04.mp4" type="video/mp4">
+        </video>
+        <div class="rent-pg-hero-gradient"></div>
+        
+        <div class="rent-pg-hero-content js-reveal">
+            <h1 class="rent-pg-main-title">Properties <span class="rent-pg-accent">for Buy</span></h1>
+            <p class="rent-pg-subtitle">Experience Dubai's Finest Living</p>
+        </div>
+    </section>
 
 <!-- RERA SAFETY SECTION -->
 <section class="rera-section">
@@ -265,7 +274,7 @@
         <div class="invest-content">
             <span class="invest-subtitle invest-anim">Strategic Buying Approach</span>
             
-            <h2 class="invest-title invest-anim delay-1">Our Locations</h2>
+            <h2 class="invest-title invest-anim delay-1">Exclusive Luxury Listings</h2>
             <div class="invest-text">
                 <!-- <p class="invest-anim delay-2">
                     The Dubai real estate market continues to attract global investors, high-net-worth individuals, and institutional buyers. To stand out in a competitive landscape, your property requires more than a listing — it requires presence.
@@ -329,54 +338,17 @@
     </div>
 </section>
 
-<!-- FAQ SECTION -->
- <!-- <section class="faq-section reveal">
-    <div class="section-header-Sell">
-        <h2>Frequently Asked Questions</h2>
+<div class="content-block full reveal">
+        <h2 class="block-title">Risks and Safety Regulations (RERA)</h2>
+        <p class="block-text">While off-plan property investment in Dubai offers significant growth potential, it is important to work with experienced advisors and RERA-certified brokers to minimize risks.<br/>Dubai’s Real Estate Regulatory Agency (RERA) protects investors through strict compliance frameworks:</p>
+        <ul class="luxury-list" style="text-align: left; display: inline-block;">
+            <li><strong>Escrow Accounts:</strong> Developer payments are secured in government-regulated escrow accounts</li>
+            <li><strong>Developer Registration:</strong> All developers must be registered and approved before selling off-plan properties.</li>
+            <li><strong>Construction-Linked Payment Plans:</strong> Payments are tied to verified construction milestones.</li>
+            <li><strong>Delivery Compliance:</strong> Developers must adhere to agreed timelines and quality standards.</li>
+        </ul>
+        <p class="block-text">At QH Properties, we conduct detailed due diligence on every off-plan project to ensure your investment is secure and strategically positioned.</p>
     </div>
-    
-    <div class="faq-container">
-        <div class="faq-item">
-            <div class="faq-question">
-                <h3>Is it a good time to Sell a property in Dubai in 2024?</h3>
-                <span class="faq-icon">+</span>
-            </div>
-            <div class="faq-answer">
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-            </div>
-        </div>
-
-        <div class="faq-item">
-            <div class="faq-question">
-                <h3>How is the current real estate market in Dubai in 2024?</h3>
-                <span class="faq-icon">+</span>
-            </div>
-            <div class="faq-answer">
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-            </div>
-        </div>
-
-        <div class="faq-item">
-            <div class="faq-question">
-                <h3>Have there been shifts in sale prices for Dubai properties in 2024?</h3>
-                <span class="faq-icon">+</span>
-            </div>
-            <div class="faq-answer">
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-            </div>
-        </div>
-
-        <div class="faq-item">
-            <div class="faq-question">
-                <h3>Can an expat Sell Property in Dubai and live permanently?</h3>
-                <span class="faq-icon">+</span>
-            </div>
-            <div class="faq-answer">
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-            </div>
-        </div>
-    </div>
-</section> -->
 
 <!-- FAQ SECTION -->
 <section class="rent-pg-faq">
