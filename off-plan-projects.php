@@ -264,57 +264,64 @@
             <img src="https://images.unsplash.com/photo-1546412414-e1885259563a?auto=format&fit=crop&w=800&q=80" alt="Skyline">
         </div>
     </div>
-
-    <div class="content-block reveal">
-        <div class="text-side">
-            <h2 class="block-title">Why Invest in Dubai Off-Plan Real Estate?</h2>
-            <p class="block-text">
-                Dubai remains one of the world’s most attractive property investment destinations due to:</p>
-            <ul class="luxury-list">
-                <li>Tax-free property ownership</li>
-                <li>High rental yields compared to global cities</li>
-                <li>Investor-friendly regulations</li>
-                <li>Strong population growth and tourism</li>
-                <li>Golden Visa eligibility for qualifying investments</li>
-            </ul>
-            <p class="block-text">
-                Off-plan projects in Dubai provide lower entry prices, higher appreciation potential, and flexible payment structures — making them ideal for both first-time investors and seasoned global buyers.</p>
-        </div>
-        <div class="img-side">
-            <img src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=800&q=80" alt="Blueprint">
-        </div>
-    </div>
-
-    <div class="content-block reverse reveal">
-        <div class="text-side">
-            <h2 class="block-title">Premium Off-Plan Properties in Dubai</h2>
-            <p class="block-text">Explore a curated portfolio of luxury off-plan apartments, villas, and branded residences located in Dubai’s most sought-after communities, including Downtown Dubai, Business Bay, Dubai Marina, Palm Jumeirah, and emerging investment hubs.<br/>Our off-plan developments offer:</p>
-            <ul class="luxury-list">
-                <li>Attractive pre-launch prices</li>
-                <li>Flexible post-handover payment plans</li>
-                <li>High ROI potential</li>
-                <li>Strong capital appreciation</li>
-                <li>Developer-backed guarantees</li>
-            </ul>
-            <p class="block-text">Through strong partnerships with leading Dubai developers, QH Properties ensures priority allocation and exclusive inventory access for our clients.</p>
-        </div>
-        <div class="img-side">
-            <img src="https://images.unsplash.com/photo-1546412414-e1885259563a?auto=format&fit=crop&w=800&q=80" alt="Skyline">
-        </div>
-    </div>
-
-    <div class="content-block full reveal">
-        <h2 class="block-title">Risks and Safety Regulations (RERA)</h2>
-        <p class="block-text">While off-plan property investment in Dubai offers significant growth potential, it is important to work with experienced advisors and RERA-certified brokers to minimize risks.<br/>Dubai’s Real Estate Regulatory Agency (RERA) protects investors through strict compliance frameworks:</p>
-        <ul class="luxury-list" style="text-align: left; display: inline-block;">
-            <li><strong>Escrow Accounts:</strong> Developer payments are secured in government-regulated escrow accounts</li>
-            <li><strong>Developer Registration:</strong> All developers must be registered and approved before selling off-plan properties.</li>
-            <li><strong>Construction-Linked Payment Plans:</strong> Payments are tied to verified construction milestones.</li>
-            <li><strong>Delivery Compliance:</strong> Developers must adhere to agreed timelines and quality standards.</li>
-        </ul>
-        <p class="block-text">At QH Properties, we conduct detailed due diligence on every off-plan project to ensure your investment is secure and strategically positioned.</p>
-    </div>
 </div>
+
+<!-- Premium Off-Plan Properties in Dubai -->
+<section class="offplan-section">
+  <div class="offplan-container">
+
+    <div class="offplan-content">
+
+      <span class="section-tag">OFF PLAN INVESTMENT</span>
+
+      <h2>Premium Off-Plan Properties in Dubai</h2>
+
+      <p class="section-desc">
+        Discover exclusive off-plan apartments, waterfront villas, and branded
+        residences located in Dubai’s most prestigious communities including
+        Downtown Dubai, Business Bay, Dubai Marina and Palm Jumeirah.
+      </p>
+
+      <div class="offplan-features">
+
+        <div class="feature-box">
+          <i class="fas fa-coins"></i>
+          <div>
+            <h4>Pre-Launch Prices</h4>
+            <p>Secure units at lower entry prices before market release.</p>
+          </div>
+        </div>
+
+        <div class="feature-box">
+          <i class="fas fa-chart-line"></i>
+          <div>
+            <h4>High ROI Potential</h4>
+            <p>Dubai offers some of the world’s strongest rental yields.</p>
+          </div>
+        </div>
+
+        <div class="feature-box">
+          <i class="fas fa-calendar-alt"></i>
+          <div>
+            <h4>Flexible Payment Plans</h4>
+            <p>Investor-friendly payment structures from top developers.</p>
+          </div>
+        </div>
+
+        <div class="feature-box">
+          <i class="fas fa-building"></i>
+          <div>
+            <h4>Trusted Developers</h4>
+            <p>Projects backed by leading and reputable Dubai developers.</p>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+</section>
 
 <!-- Why Invest in Dubai Off-Plan Real Estate? -->
 <section class="dubai-invest-benefits">
@@ -350,6 +357,40 @@
         </div>
 
     </div>
+</section>
+
+<!-- Risks and Safety Regulations (RERA) -->
+<!-- <div class="content-block full reveal">
+        <h2 class="block-title">Risks and Safety Regulations (RERA)</h2>
+        <p class="block-text">While off-plan property investment in Dubai offers significant growth potential, it is important to work with experienced advisors and RERA-certified brokers to minimize risks.<br/>Dubai’s Real Estate Regulatory Agency (RERA) protects investors through strict compliance frameworks:</p>
+        <ul class="luxury-list" style="text-align: left; display: inline-block;">
+            <li><strong>Escrow Accounts:</strong> Developer payments are secured in government-regulated escrow accounts</li>
+            <li><strong>Developer Registration:</strong> All developers must be registered and approved before selling off-plan properties.</li>
+            <li><strong>Construction-Linked Payment Plans:</strong> Payments are tied to verified construction milestones.</li>
+            <li><strong>Delivery Compliance:</strong> Developers must adhere to agreed timelines and quality standards.</li>
+        </ul>
+        <p class="block-text">At QH Properties, we conduct detailed due diligence on every off-plan project to ensure your investment is secure and strategically positioned.</p>
+</div> -->
+<section class="rera-safety-section reveal">
+
+    <h2 class="rera-heading">Risks and Safety Regulations (RERA)</h2>
+
+    <p class="rera-intro">
+        While off-plan property investment in Dubai offers significant growth potential, it is important to work with experienced advisors and RERA-certified brokers to minimize risks.<br/>
+        Dubai’s Real Estate Regulatory Agency (RERA) protects investors through strict compliance frameworks:
+    </p>
+
+    <ul class="rera-protection-list">
+        <li><strong>Escrow Accounts:</strong> Developer payments are secured in government-regulated escrow accounts</li>
+        <li><strong>Developer Registration:</strong> All developers must be registered and approved before selling off-plan properties.</li>
+        <li><strong>Construction-Linked Payment Plans:</strong> Payments are tied to verified construction milestones.</li>
+        <li><strong>Delivery Compliance:</strong> Developers must adhere to agreed timelines and quality standards.</li>
+    </ul>
+
+    <p class="rera-closing">
+        At QH Properties, we conduct detailed due diligence on every off-plan project to ensure your investment is secure and strategically positioned.
+    </p>
+
 </section>
 
     <!-- FAQ SECTION -->
@@ -445,6 +486,61 @@
         </div>
     </section>
 
+<section class="offplan-section">
+  <div class="offplan-container">
+
+    <div class="offplan-content">
+
+      <span class="section-tag">OFF PLAN INVESTMENT</span>
+
+      <h2>Premium Off-Plan Properties in Dubai</h2>
+
+      <p class="section-desc">
+        Discover exclusive off-plan apartments, waterfront villas, and branded
+        residences located in Dubai’s most prestigious communities including
+        Downtown Dubai, Business Bay, Dubai Marina and Palm Jumeirah.
+      </p>
+
+      <div class="offplan-features">
+
+        <div class="feature-box">
+          <i class="fas fa-coins"></i>
+          <div>
+            <h4>Pre-Launch Prices</h4>
+            <p>Secure units at lower entry prices before market release.</p>
+          </div>
+        </div>
+
+        <div class="feature-box">
+          <i class="fas fa-chart-line"></i>
+          <div>
+            <h4>High ROI Potential</h4>
+            <p>Dubai offers some of the world’s strongest rental yields.</p>
+          </div>
+        </div>
+
+        <div class="feature-box">
+          <i class="fas fa-calendar-alt"></i>
+          <div>
+            <h4>Flexible Payment Plans</h4>
+            <p>Investor-friendly payment structures from top developers.</p>
+          </div>
+        </div>
+
+        <div class="feature-box">
+          <i class="fas fa-building"></i>
+          <div>
+            <h4>Trusted Developers</h4>
+            <p>Projects backed by leading and reputable Dubai developers.</p>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+</section>
 
     <script>
 document.addEventListener('DOMContentLoaded', () => {
