@@ -42,7 +42,7 @@
                 <img src="image/mbp-bc-hero-banner.webp">
             </div>
             <div class="card-content">
-                <h3>Mercedes-Benz Places Binghatti City</h3>
+                <h3>Mercedes-Benz Places City</h3>
                 <span class="location"><i class="fas fa-map-marker-alt"></i> Nad al sheba</span>
                 <div class="price-row">
                     <div>
@@ -62,7 +62,7 @@
                 <img src="image/binghatti-etheria-hero-banner.avif" alt="Project">
             </div>
             <div class="card-content">
-                <h3>Binghatti Etherea</h3>
+                <h3>Etherea</h3>
                 <span class="location"><i class="fas fa-map-marker-alt"></i> Jumeirah Village Circle</span>
                 <div class="price-row">
                     <div>
@@ -82,7 +82,7 @@
                 <img src="image/binghatti-skyterraces-hero-banner.avif">
             </div>
             <div class="card-content">
-                <h3>Binghatti Skyterraces</h3>
+                <h3>Skyterraces</h3>
                 <span class="location"><i class="fas fa-map-marker-alt"></i> Motor City</span>
                 <div class="price-row">
                     <div>
@@ -102,7 +102,7 @@
                 <img src="image/binghatti-luxuria-hero-banner.avif">
             </div>
             <div class="card-content">
-                <h3>Binghatti Luxuria</h3>
+                <h3>Luxuria</h3>
                 <span class="location"><i class="fas fa-map-marker-alt"></i> Jumeirah Village Triangle</span>
                 <div class="price-row">
                     <div>
@@ -122,7 +122,7 @@
                 <img src="image/binghatti-cullinan-hero-banner.avif" alt="Project">
             </div>
             <div class="card-content">
-                <h3>Binghatti Cullinan</h3>
+                <h3>Cullinan</h3>
                 <span class="location"><i class="fas fa-map-marker-alt"></i> Al Jaddaf</span>
                 <div class="price-row">
                     <div>
@@ -142,7 +142,7 @@
                 <img src="image/binghatti-hillcrest-hero-banner.avif" alt="Project">
             </div>
             <div class="card-content">
-                <h3>Binghatti Hillcrest</h3>
+                <h3>Hillcrest</h3>
                 <span class="location"><i class="fas fa-map-marker-alt"></i> Arjan</span>
                 <div class="price-row">
                     <div>
@@ -162,7 +162,7 @@
                 <img src="image/binghatti-titania-hero-banner-1.avif" alt="Project">
             </div>
             <div class="card-content">
-                <h3>Binghatti Titania</h3>
+                <h3>Titania</h3>
                 <span class="location"><i class="fas fa-map-marker-alt"></i> Majan</span>
                 <div class="price-row">
                     <div>
@@ -182,7 +182,7 @@
                 <img src="image/binghatti-vintage-hero-banner.avif" alt="Project">
             </div>
             <div class="card-content">
-                <h3>Binghatti Vintage</h3>
+                <h3>Vintage</h3>
                 <span class="location"><i class="fas fa-map-marker-alt"></i> Majan</span>
                 <div class="price-row">
                     <div>
@@ -202,7 +202,7 @@
                 <img src="image/binghatti-pinnacle-hero-banner.avif" alt="Project">
             </div>
             <div class="card-content">
-                <h3>Binghatti Pinnacle</h3>
+                <h3>Pinnacle</h3>
                 <span class="location"><i class="fas fa-map-marker-alt"></i> Al Jaddaf</span>
                 <div class="price-row">
                     <div>
@@ -222,7 +222,7 @@
                 <img src="image/Mercedes-Benz Places Binghatti City.png" alt="Project">
             </div>
             <div class="card-content">
-                <h3>Mercedes-Benz Places | By Binghatti</h3>
+                <h3>Mercedes-Benz Places</h3>
                 <span class="location"><i class="fas fa-map-marker-alt"></i> Business Bay</span>
                 <div class="price-row">
                     <div>
@@ -242,7 +242,7 @@
                 <img src="image/binghatti-amberhall-hero-banner.webp" alt="Project">
             </div>
             <div class="card-content">
-                <h3>Binghatti Amberhall</h3>
+                <h3>Amberhall</h3>
                 <span class="location"><i class="fas fa-map-marker-alt"></i> JVC</span>
                 <div class="price-row">
                     <div>
@@ -338,17 +338,19 @@
     </div>
 </section>
 
-<div class="content-block full reveal">
-        <h2 class="block-title">Risks and Safety Regulations (RERA)</h2>
-        <p class="block-text">While off-plan property investment in Dubai offers significant growth potential, it is important to work with experienced advisors and RERA-certified brokers to minimize risks.<br/>Dubai’s Real Estate Regulatory Agency (RERA) protects investors through strict compliance frameworks:</p>
-        <ul class="luxury-list" style="text-align: left; display: inline-block;">
-            <li><strong>Escrow Accounts:</strong> Developer payments are secured in government-regulated escrow accounts</li>
-            <li><strong>Developer Registration:</strong> All developers must be registered and approved before selling off-plan properties.</li>
-            <li><strong>Construction-Linked Payment Plans:</strong> Payments are tied to verified construction milestones.</li>
-            <li><strong>Delivery Compliance:</strong> Developers must adhere to agreed timelines and quality standards.</li>
-        </ul>
-        <p class="block-text">At QH Properties, we conduct detailed due diligence on every off-plan project to ensure your investment is secure and strategically positioned.</p>
-    </div>
+<!-- Premium Properties from Leading Developers -->
+<section class="rera-safety-section reveal">
+
+    <h2 class="rera-heading">Premium Properties from Leading Developers</h2>
+
+    <p class="rera-intro">
+        QH Properties collaborates with some of Dubai’s most respected developers to bring you high-demand residential and investment opportunities. From luxury waterfront residences to branded architectural landmarks, our portfolio includes ready-to-move properties and off-plan projects designed for appreciation and rental performance.
+    </p>
+    <p class="rera-closing">
+        Our team ensures due diligence, transparent pricing, and strategic advisory for every property purchase in Dubai.
+    </p>
+
+</section>
 
 <!-- FAQ SECTION -->
 <section class="rent-pg-faq">
@@ -367,7 +369,7 @@
         <div class="rent-pg-faq-accordion">
             <div class="rent-pg-faq-item js-reveal">
                 <button class="rent-pg-faq-btn">
-                    <span class="rent-pg-faq-q">How is the architectural integrity verified?</span>
+                    <span class="rent-pg-faq-q">Is it a good time to buy property in Dubai in 2026?</span>
                     <div class="rent-pg-faq-icon">
                         <span class="line vertical"></span>
                         <span class="line horizontal"></span>
@@ -375,14 +377,14 @@
                 </button>
                 <div class="rent-pg-faq-panel">
                     <div class="rent-pg-faq-content">
-                        <p>Our structural engineers utilize aerospace-grade simulations to stress-test every cantilever and foundation. We ensure that your silhouette remains timeless against seismic and environmental shifts.</p>
+                        <p>Yes. Dubai’s strong economic growth, increasing foreign investment, and expanding infrastructure make it a strategic time to invest in Dubai real estate.</p>
                     </div>
                 </div>
             </div>
 
             <div class="rent-pg-faq-item js-reveal">
                 <button class="rent-pg-faq-btn">
-                    <span class="rent-pg-faq-q">What is the timeline for bespoke commissions?</span>
+                    <span class="rent-pg-faq-q">How is the current Dubai real estate market?</span>
                     <div class="rent-pg-faq-icon">
                         <span class="line vertical"></span>
                         <span class="line horizontal"></span>
@@ -390,14 +392,14 @@
                 </button>
                 <div class="rent-pg-faq-panel">
                     <div class="rent-pg-faq-content">
-                        <p>A typical architectural masterpiece requires 12 to 18 months from initial conceptualization to final handover. This allows for meticulous sourcing of rare materials and artisan-level finishing.</p>
+                        <p>The Dubai property market continues to show resilience with high transaction volumes, strong rental demand, and growing international buyer interest.</p>
                     </div>
                 </div>
             </div>
 
             <div class="rent-pg-faq-item js-reveal">
                 <button class="rent-pg-faq-btn">
-                    <span class="rent-pg-faq-q">Do you offer smart-home architectural integration?</span>
+                    <span class="rent-pg-faq-q">Have property prices increased in Dubai?</span>
                     <div class="rent-pg-faq-icon">
                         <span class="line vertical"></span>
                         <span class="line horizontal"></span>
@@ -405,14 +407,14 @@
                 </button>
                 <div class="rent-pg-faq-panel">
                     <div class="rent-pg-faq-content">
-                        <p>We treat technology as invisible luxury. Automation is embedded into the walls themselves, allowing for biometric access, circadian lighting, and climate control that anticipates your arrival.</p>
+                        <p>Prime communities have experienced steady appreciation due to limited supply and strong demand, particularly for luxury villas and waterfront apartments.</p>
                     </div>
                 </div>
             </div>
 
             <div class="rent-pg-faq-item js-reveal">
                 <button class="rent-pg-faq-btn">
-                    <span class="rent-pg-faq-q">Do you offer smart-home architectural integration?</span>
+                    <span class="rent-pg-faq-q">Can expatriates buy property in Dubai?</span>
                     <div class="rent-pg-faq-icon">
                         <span class="line vertical"></span>
                         <span class="line horizontal"></span>
@@ -420,22 +422,7 @@
                 </button>
                 <div class="rent-pg-faq-panel">
                     <div class="rent-pg-faq-content">
-                        <p>We treat technology as invisible luxury. Automation is embedded into the walls themselves, allowing for biometric access, circadian lighting, and climate control that anticipates your arrival.</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="rent-pg-faq-item js-reveal">
-                <button class="rent-pg-faq-btn">
-                    <span class="rent-pg-faq-q">Do you offer smart-home architectural integration?</span>
-                    <div class="rent-pg-faq-icon">
-                        <span class="line vertical"></span>
-                        <span class="line horizontal"></span>
-                    </div>
-                </button>
-                <div class="rent-pg-faq-panel">
-                    <div class="rent-pg-faq-content">
-                        <p>We treat technology as invisible luxury. Automation is embedded into the walls themselves, allowing for biometric access, circadian lighting, and climate control that anticipates your arrival.</p>
+                        <p>Yes. Foreign nationals can purchase freehold property in designated areas, making Dubai one of the most accessible global real estate markets.</p>
                     </div>
                 </div>
             </div>

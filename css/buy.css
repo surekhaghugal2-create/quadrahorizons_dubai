@@ -890,3 +890,86 @@ ul.luxury-list li::before {
 .client-name span {
     display: block; font-weight: 400; color: #666; margin-top: 5px;
 }
+
+/* Risks and Safety Regulations (RERA) */
+/* Section Wrapper */
+.rera-safety-section{
+    max-width: 950px;
+    margin: 0 auto;
+    padding: 100px 20px;
+    text-align: center;
+    color: #cfcfcf;
+}
+
+/* Heading */
+.rera-heading{
+    font-family: "Playfair Display", serif;
+    font-size: 48px;
+    color: #ffffff;
+    margin-bottom: 25px;
+    line-height: 1.2;
+}
+
+/* Intro text */
+.rera-intro{
+    font-size: 16px;
+    line-height: 1.8;
+    color: #bfbfbf;
+    max-width: 820px;
+    margin: 0 auto 30px;
+}
+
+/* List container */
+.rera-protection-list{
+    list-style: none;
+    padding: 0;
+    margin: 0px auto;
+    text-align: left;
+    display: inline-block;
+}
+
+/* List items */
+.rera-protection-list li{
+    position: relative;
+    padding-left: 22px;
+    margin-bottom: 16px;
+    font-size: 16px;
+    line-height: 1.7;
+    color: #d4d4d4;
+}
+
+/* Gold bullet */
+.rera-protection-list li::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 10px;
+    width: 6px;
+    height: 6px;
+    background: #d4a74f;
+    border-radius: 50%;
+}
+
+/* Bold labels */
+.rera-protection-list li strong{
+    color: #ffffff;
+}
+
+/* Closing paragraph */
+.rera-closing{
+    font-size: 16px;
+    line-height: 1.8;
+    color: #bfbfbf;
+    max-width: 820px;
+    margin: 30px auto 0;
+}
+
+/* Optional luxury divider */
+.rera-heading::after{
+    content:"";
+    display:block;
+    width:60px;
+    height:2px;
+    background:#d4a74f;
+    margin:18px auto 0;
+}

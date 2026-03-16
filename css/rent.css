@@ -133,7 +133,7 @@
 /* =========================================
    4. INTRO SECTION
    ========================================= */
-.rent-pg-intro { padding: 100px 5%; text-align: center; }
+.rent-pg-intro { padding: 150px 5% 20px; text-align: center; }
 .rent-pg-section-title { margin-bottom: 30px; }
 .rent-pg-description { color: var(--rent-grey); max-width: 900px; margin: 0 auto; }
 
@@ -412,7 +412,7 @@
 @media (max-width: 425px) {
     
     /* Strict Padding for Mobile */
-    .rent-pg-intro, .projects-section, .rent-pg-faq { padding: 60px 20px !important; }
+    .rent-pg-intro, .projects-section, .rent-pg-faq { padding: 60px 20px 0px !important; }
     
     /* STRICT MOBILE HEADINGS (36px) */
     .rent-pg-main-title, .rent-pg-section-title {

@@ -37,7 +37,7 @@
                 <img src="image/mbp-bc-hero-banner.webp">
             </div>
             <div class="card-content">
-                <h3>Mercedes-Benz Places Binghatti City</h3>
+                <h3>Mercedes-Benz Places City</h3>
                 <span class="location"><i class="fas fa-map-marker-alt"></i> Nad al sheba</span>
                 <div class="price-row">
                     <div>
@@ -57,7 +57,7 @@
                 <img src="image/binghatti-etheria-hero-banner.avif" alt="Project">
             </div>
             <div class="card-content">
-                <h3>Binghatti Etherea</h3>
+                <h3>Etherea</h3>
                 <span class="location"><i class="fas fa-map-marker-alt"></i> Jumeirah Village Circle</span>
                 <div class="price-row">
                     <div>
@@ -77,7 +77,7 @@
                 <img src="image/binghatti-skyterraces-hero-banner.avif">
             </div>
             <div class="card-content">
-                <h3>Binghatti Skyterraces</h3>
+                <h3>Skyterraces</h3>
                 <span class="location"><i class="fas fa-map-marker-alt"></i> Motor City</span>
                 <div class="price-row">
                     <div>
@@ -97,7 +97,7 @@
                 <img src="image/binghatti-luxuria-hero-banner.avif">
             </div>
             <div class="card-content">
-                <h3>Binghatti Luxuria</h3>
+                <h3>Luxuria</h3>
                 <span class="location"><i class="fas fa-map-marker-alt"></i> Jumeirah Village Triangle</span>
                 <div class="price-row">
                     <div>
@@ -117,7 +117,7 @@
                 <img src="image/binghatti-cullinan-hero-banner.avif" alt="Project">
             </div>
             <div class="card-content">
-                <h3>Binghatti Cullinan</h3>
+                <h3>Cullinan</h3>
                 <span class="location"><i class="fas fa-map-marker-alt"></i> Al Jaddaf</span>
                 <div class="price-row">
                     <div>
@@ -137,7 +137,7 @@
                 <img src="image/binghatti-hillcrest-hero-banner.avif" alt="Project">
             </div>
             <div class="card-content">
-                <h3>Binghatti Hillcrest</h3>
+                <h3>Hillcrest</h3>
                 <span class="location"><i class="fas fa-map-marker-alt"></i> Arjan</span>
                 <div class="price-row">
                     <div>
@@ -157,7 +157,7 @@
                 <img src="image/binghatti-titania-hero-banner-1.avif" alt="Project">
             </div>
             <div class="card-content">
-                <h3>Binghatti Titania</h3>
+                <h3>Titania</h3>
                 <span class="location"><i class="fas fa-map-marker-alt"></i> Majan</span>
                 <div class="price-row">
                     <div>
@@ -177,7 +177,7 @@
                 <img src="image/binghatti-vintage-hero-banner.avif" alt="Project">
             </div>
             <div class="card-content">
-                <h3>Binghatti Vintage</h3>
+                <h3>Vintage</h3>
                 <span class="location"><i class="fas fa-map-marker-alt"></i> Majan</span>
                 <div class="price-row">
                     <div>
@@ -197,7 +197,7 @@
                 <img src="image/binghatti-pinnacle-hero-banner.avif" alt="Project">
             </div>
             <div class="card-content">
-                <h3>Binghatti Pinnacle</h3>
+                <h3>Pinnacle</h3>
                 <span class="location"><i class="fas fa-map-marker-alt"></i> Al Jaddaf</span>
                 <div class="price-row">
                     <div>
@@ -217,7 +217,7 @@
                 <img src="image/Mercedes-Benz Places Binghatti City.png" alt="Project">
             </div>
             <div class="card-content">
-                <h3>Mercedes-Benz Places | By Binghatti</h3>
+                <h3>Mercedes-Benz Places</h3>
                 <span class="location"><i class="fas fa-map-marker-alt"></i> Business Bay</span>
                 <div class="price-row">
                     <div>
@@ -237,7 +237,7 @@
                 <img src="image/binghatti-amberhall-hero-banner.webp" alt="Project">
             </div>
             <div class="card-content">
-                <h3>Binghatti Amberhall</h3>
+                <h3>Amberhall</h3>
                 <span class="location"><i class="fas fa-map-marker-alt"></i> JVC</span>
                 <div class="price-row">
                     <div>
@@ -252,8 +252,8 @@
     </div>
 </section>
  
-    <!-- FAQ SECTION -->
-    <section class="rent-pg-faq">
+<!-- FAQ SECTION -->
+<section class="rent-pg-faq">
             <video class="faq-bg-media" autoplay loop muted playsinline>
         <source src="video/GettyImages-1309566975.mp4" type="video/mp4">
     </video> 
@@ -343,7 +343,7 @@
                 </div>
             </div>
         </div>
-    </section>
+</section>
 
 <script>
 document.addEventListener('DOMContentLoaded', () => {
