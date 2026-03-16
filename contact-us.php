@@ -13,7 +13,7 @@
     </div>
 </section>
 
-<section class="contact-main-wrapper">
+<section class="contact-main-wrapper" id="#story-section">
 
     <div class="contact-details slide-in-left scroll-anim delay-100">
         <h2 class="heading-line">Get In <span>Touch</span></h2>
