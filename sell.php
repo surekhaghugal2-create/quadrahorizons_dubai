@@ -34,7 +34,7 @@
                 <p class="invest-anim delay-2">
                     The Dubai real estate market continues to attract global investors, high-net-worth individuals, and institutional buyers. To stand out in a competitive landscape, your property requires more than a listing — it requires presence.
                 </p>
-                <!-- <p class="invest-anim delay-2">
+                <p class="invest-anim delay-2">
                     Our selling strategy includes:
                 </p>
                 <ul class="selling-strategy">
@@ -47,7 +47,7 @@
                 </ul><br/>
                 <p class="invest-anim delay-3">
                     Whether you are selling a luxury apartment in Dubai Marina or a signature villa in Palm Jumeirah, we position your asset to command attention and achieve premium value.
-                </p> -->
+                </p>
             </div>
         </div>
     </div>
@@ -73,7 +73,6 @@
                     <li>Strong liquidity in off-plan resale market</li>
                     <li>Attractive foreign investor activity</li>
                     <li>Stable regulatory framework</li>
-                    <li>Expert negotiation and transaction management</li>
                 </ul><br/>
                 <p class="invest-anim delay-3">
                     If you are considering selling your property in Dubai, timing and strategy are essential. Our advisors provide confidential consultation to determine the optimal market entry point.
@@ -86,6 +85,64 @@
         </div>
 
     </div>
+</section>
+
+<!-- Free Property Valuation in Dubai & Our Luxury Marketing Advantage -->
+<section class="vm-journey-section">
+
+  <div class="vm-wrapper">
+
+    <h2 class="vm-heading">Sell Smarter with Data & Luxury Marketing</h2>
+
+    <!-- STEP 1 -->
+    <div class="vm-step">
+      <div class="vm-step-number">01</div>
+
+      <div class="vm-step-content">
+        <h3>Free Property Valuation in Dubai</h3>
+        <p>
+          Understanding your property’s true market value is the foundation of a successful sale.
+          Our data-driven valuation ensures accurate and strategic pricing.
+        </p>
+
+        <div class="vm-tags">
+          <span>Comparable Sales</span>
+          <span>Demand Trends</span>
+          <span>Supply Levels</span>
+          <span>Property Condition</span>
+          <span>Rental Yield</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- STEP 2 -->
+    <div class="vm-step">
+      <div class="vm-step-number">02</div>
+
+      <div class="vm-step-content">
+        <h3>Luxury Marketing Advantage</h3>
+        <p>
+          In Dubai’s premium real estate market, presentation defines value.
+          We elevate your property through high-impact global exposure.
+        </p>
+
+        <div class="vm-tags">
+          <span>Editorial Showcases</span>
+          <span>Drone Cinematography</span>
+          <span>Global Portals</span>
+          <span>HNI Targeting</span>
+          <span>Private Database</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- CTA -->
+    <!-- <div class="vm-cta">
+      <a href="#">Get Free Property Valuation</a>
+    </div> -->
+
+  </div>
+
 </section>
 
 <section class="rent-pg-faq">
@@ -104,7 +161,7 @@
         <div class="rent-pg-faq-accordion">
             <div class="rent-pg-faq-item js-reveal">
                 <button class="rent-pg-faq-btn">
-                    <span class="rent-pg-faq-q">How is the architectural integrity verified?</span>
+                    <span class="rent-pg-faq-q">Is it a good time to sell a property in Dubai in 2026?</span>
                     <div class="rent-pg-faq-icon">
                         <span class="line vertical"></span>
                         <span class="line horizontal"></span>
@@ -112,14 +169,14 @@
                 </button>
                 <div class="rent-pg-faq-panel">
                     <div class="rent-pg-faq-content">
-                        <p>Our structural engineers utilize aerospace-grade simulations to stress-test every cantilever and foundation. We ensure that your silhouette remains timeless against seismic and environmental shifts.</p>
+                        <p>Yes. With strong demand from international buyers and limited premium inventory, many sellers are achieving competitive prices, particularly in luxury villa and waterfront segments.</p>
                     </div>
                 </div>
             </div>
 
             <div class="rent-pg-faq-item js-reveal">
                 <button class="rent-pg-faq-btn">
-                    <span class="rent-pg-faq-q">What is the timeline for bespoke commissions?</span>
+                    <span class="rent-pg-faq-q">How long does it take to sell property in Dubai?</span>
                     <div class="rent-pg-faq-icon">
                         <span class="line vertical"></span>
                         <span class="line horizontal"></span>
@@ -127,14 +184,14 @@
                 </button>
                 <div class="rent-pg-faq-panel">
                     <div class="rent-pg-faq-content">
-                        <p>A typical architectural masterpiece requires 12 to 18 months from initial conceptualization to final handover. This allows for meticulous sourcing of rare materials and artisan-level finishing.</p>
+                        <p>Depending on pricing strategy, location, and presentation, properties in prime areas can attract serious offers within weeks. Accurate valuation and marketing significantly reduce time on market.</p>
                     </div>
                 </div>
             </div>
 
             <div class="rent-pg-faq-item js-reveal">
                 <button class="rent-pg-faq-btn">
-                    <span class="rent-pg-faq-q">Do you offer smart-home architectural integration?</span>
+                    <span class="rent-pg-faq-q">Are there fees involved when selling property in Dubai?</span>
                     <div class="rent-pg-faq-icon">
                         <span class="line vertical"></span>
                         <span class="line horizontal"></span>
@@ -142,7 +199,22 @@
                 </button>
                 <div class="rent-pg-faq-panel">
                     <div class="rent-pg-faq-content">
-                        <p>We treat technology as invisible luxury. Automation is embedded into the walls themselves, allowing for biometric access, circadian lighting, and climate control that anticipates your arrival.</p>
+                        <p>Yes. Sellers typically pay agency commission and applicable transfer fees as per Dubai Land Department regulations. Our team provides full transparency on costs before listing.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="rent-pg-faq-item js-reveal">
+                <button class="rent-pg-faq-btn">
+                    <span class="rent-pg-faq-q">Can expatriates sell property in Dubai?</span>
+                    <div class="rent-pg-faq-icon">
+                        <span class="line vertical"></span>
+                        <span class="line horizontal"></span>
+                    </div>
+                </button>
+                <div class="rent-pg-faq-panel">
+                    <div class="rent-pg-faq-content">
+                        <p>Yes. Foreign property owners can freely sell their property within designated freehold areas in Dubai.</p>
                     </div>
                 </div>
             </div>
@@ -158,8 +230,8 @@
   <div class="testimonials-scroll reveal">
     <div class="testi-card">
         <div class="quote-icon">“</div>
-        <p>"The team found me a penthouse that wasn't even on the market yet. Incredible access."</p>
-        <div class="client-name">Michael R. <span>Investor, UK</span></div>
+        <p>"Exceptional strategy and seamless execution. My villa was sold above asking within weeks."</p>
+        <div class="client-name">International Investor <span>Entrepreneur, UAE</span></div>
     </div>
     <div class="testi-card">
         <div class="quote-icon">“</div>

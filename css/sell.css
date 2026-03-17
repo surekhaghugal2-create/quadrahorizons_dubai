@@ -201,7 +201,7 @@ ul.selling-strategy li::before {
 ========================================= */
 .rera-section {
     background-color: var(--rent-card-bg); /* Changed so it contrasts against the black */
-    padding: 80px 5%;
+    padding: 0px 5% 30px;
     color: var(--rent-white);
 }
 
@@ -609,4 +609,109 @@ ul.selling-strategy li::before {
 .slide-right.show {
     opacity: 1;
     transform: translateX(0);
+}
+
+/* Free Property Valuation in Dubai & Our Luxury Marketing Advantage */
+.vm-journey-section{
+    padding:80px 5%;
+    background:#0b0b0b;
+    color:#fff;
+}
+
+/* Container */
+.vm-wrapper{
+    max-width:1100px;
+    margin:auto;
+}
+
+/* Heading */
+.vm-heading{
+    text-align:center;
+    font-family:"Playfair Display", serif;
+    font-size:50px;
+    margin-bottom:80px;
+}
+
+/* STEP */
+.vm-step{
+    display:flex;
+    gap:30px;
+    margin-bottom:70px;
+    align-items:flex-start;
+}
+
+/* NUMBER */
+.vm-step-number{
+    font-size:60px;
+    font-weight:600;
+    color:transparent;
+    -webkit-text-stroke:1px #d4a74f;
+    min-width:80px;
+}
+
+/* CONTENT */
+.vm-step-content h3{
+    font-size:26px;
+    margin-bottom:15px;
+}
+
+.vm-step-content p{
+    color:#bfbfbf;
+    line-height:1.7;
+    margin-bottom:20px;
+}
+
+/* TAGS */
+.vm-tags{
+    display:flex;
+    flex-wrap:wrap;
+    gap:10px;
+}
+
+.vm-tags span{
+    padding:8px 14px;
+    border:1px solid rgba(255,255,255,0.1);
+    border-radius:30px;
+    font-size:13px;
+    color:#d4d4d4;
+    transition:0.3s;
+}
+
+.vm-tags span:hover{
+    border-color:#d4a74f;
+    color:#fff;
+}
+
+/* CTA */
+.vm-cta{
+    text-align:center;
+    margin-top:40px;
+}
+
+.vm-cta a{
+    padding:14px 30px;
+    border:1px solid #d4a74f;
+    color:#fff;
+    text-decoration:none;
+    transition:0.3s;
+}
+
+.vm-cta a:hover{
+    background:#d4a74f;
+    color:#000;
+}
+
+/* RESPONSIVE */
+@media(max-width:768px){
+    .vm-step{
+        flex-direction:column;
+    }
+
+    .vm-step-number{
+        font-size:40px;
+    }
+
+    .vm-heading{
+        font-size:32px;
+    }
 }
