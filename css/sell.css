@@ -344,6 +344,31 @@ ul.selling-strategy li::before {
     background: radial-gradient(circle at center, rgba(20, 20, 20, 0.253) 0%, rgba(5, 8, 15, 0.85) 100%);
 }
 
+.rent-pg-main-title, .rent-pg-section-title {
+    font-family: var(--font-heading) !important;
+    font-size: 50px !important; /* STRICT DESKTOP HEADING */
+    font-weight: 500;
+    line-height: 1.2;
+   
+    /* THE FIX: Layered Text Shadow for perfect readability */
+    text-shadow:
+        2px 2px 5px rgba(0, 0, 0, 0.9),  /* Crisp dark edge */
+        0px 10px 30px rgba(0, 0, 0, 0.7); /* Wide soft dark glow */
+}
+
+/* --- STRICT MOBILE VIEW (Max 425px) --- */
+@media (max-width: 425px) {
+    
+    /* Strict Padding for Mobile */
+    /* .rent-pg-intro, .projects-section, .rent-pg-faq { padding: 60px 20px !important; } */
+    
+    /* STRICT MOBILE HEADINGS (36px) */
+    .rent-pg-main-title, .rent-pg-section-title {
+        font-size: 36px !important;
+        margin-bottom: 20px !important;
+    }
+}
+
 .rent-pg-faq-container {
     position: relative;
     z-index: 2; 

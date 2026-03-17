@@ -113,7 +113,7 @@
    ========================================= */
 .rent-pg-main-title, .rent-pg-section-title {
     font-family: var(--font-heading) !important;
-    font-size: 80px !important; /* STRICT DESKTOP HEADING */
+    font-size: 50px !important; /* STRICT DESKTOP HEADING */
     font-weight: 500;
     line-height: 1.2;
     

@@ -456,6 +456,17 @@ ul.luxury-list li::before {
     margin: 0;
 }
 
+.rent-pg-main-title, .rent-pg-section-title {
+    font-family: var(--font-heading) !important;
+    font-size: 50px !important; /* STRICT DESKTOP HEADING */
+    font-weight: 500;
+    line-height: 1.2;
+    
+    /* THE FIX: Layered Text Shadow for perfect readability */
+    text-shadow: 
+        2px 2px 5px rgba(0, 0, 0, 0.9),  /* Crisp dark edge */
+        0px 10px 30px rgba(0, 0, 0, 0.7); /* Wide soft dark glow */
+}
 
 /* =======================================================
    RESPONSIVE LAYOUTS (TABLET & MOBILE)
@@ -904,6 +915,8 @@ ul.luxury-list li::before {
     font-size:42px;
     margin:15px 0;
     line-height:1.3;
+    font-family: 'Playfair Display', serif;
+    font-size: 50px;
 }
 
 .section-desc{
@@ -961,6 +974,15 @@ ul.luxury-list li::before {
     color:#000;
 }
 
+/* --- MOBILE/SMALL TABLET VIEW (Max 724px) --- */
+@media (max-width: 724px) {
+    
+    /* STRICT MOBILE: Heading 36px */
+    .offplan-content h2{
+    font-size:36px;
+}
+}
+
 /* Risks and Safety Regulations (RERA) */
 /* Section Wrapper */
 .rera-safety-section{
@@ -974,7 +996,7 @@ ul.luxury-list li::before {
 /* Heading */
 .rera-heading{
     font-family: "Playfair Display", serif;
-    font-size: 48px;
+    font-size: 50px;
     color: #ffffff;
     margin-bottom: 25px;
     line-height: 1.2;
@@ -1042,4 +1064,13 @@ ul.luxury-list li::before {
     height:2px;
     background:#d4a74f;
     margin:18px auto 0;
+}
+
+/* --- MOBILE/SMALL TABLET VIEW (Max 724px) --- */
+@media (max-width: 724px) {
+    
+    /* STRICT MOBILE: Heading 36px */
+    .rera-heading {
+    font-size:36px;
+}
 }
