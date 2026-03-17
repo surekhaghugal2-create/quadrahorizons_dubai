@@ -52,7 +52,7 @@
                         <div class="form-group country-code-wrapper number-background">
 
                             <select id="split-country-select"></select>
-                              <label>Code</label>
+                             
                         </div>
                         <div class="form-group mobile-wrapper">
                             <input type="tel" required placeholder=" " name="contact">
@@ -103,7 +103,7 @@
                         </div>
 
                         <div class="form-group">
-                            <select name="country" required>
+                            <select name="country" id="main-country-select" required>
                                 <option value="" disabled selected></option>
                                 <option value="United Arab Emirates">United Arab Emirates</option>
                                 <option value="India">India</option>
@@ -386,5 +386,66 @@ document.addEventListener("DOMContentLoaded", function () {
         countrySelect.appendChild(option);
     });
 
+});
+</script>
+<!-- codecountrywise select -->
+ <script>
+document.addEventListener('DOMContentLoaded', function() {
+    const countryToCode = {
+        "United Arab Emirates": "+971",
+        "India": "+91",
+        "United States": "+1",
+        "United Kingdom": "+44",
+        "Saudi Arabia": "+966",
+        "Qatar": "+974",
+        "Kuwait": "+965",
+        "Oman": "+968",
+        "Bahrain": "+973",
+        "Australia": "+61",
+        "Canada": "+1",
+        "Germany": "+49",
+        "France": "+33",
+        "Italy": "+39",
+        "Russia": "+7",
+        "China": "+86",
+        "Singapore": "+65",
+        "Malaysia": "+60",
+        "South Africa": "+27",
+        "Egypt": "+20",
+        "Pakistan": "+92",
+        "Bangladesh": "+880",
+        "Philippines": "+63",
+        "Brazil": "+55",
+        "Netherlands": "+31"
+    };
+
+    const countrySelect = document.getElementById('main-country-select');
+    const codeSelect = document.getElementById('split-country-select');
+
+    // 1. Populate the Code Select based on the data object
+    function populateCodes() {
+        codeSelect.innerHTML = '<option value="" disabled selected>Code</option>';
+        Object.values(countryToCode).forEach(code => {
+            // Avoid duplicate codes in the dropdown list if multiple countries share one
+            if (!Array.from(codeSelect.options).some(opt => opt.value === code)) {
+                const option = document.createElement('option');
+                option.value = code;
+                option.textContent = code;
+                codeSelect.appendChild(option);
+            }
+        });
+    }
+
+    // 2. Sync Logic
+    countrySelect.addEventListener('change', function() {
+        const selectedCountry = this.value;
+        const matchingCode = countryToCode[selectedCountry];
+        
+        if (matchingCode) {
+            codeSelect.value = matchingCode;
+        }
+    });
+
+    populateCodes();
 });
 </script>
