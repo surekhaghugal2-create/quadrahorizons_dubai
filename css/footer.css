@@ -634,3 +634,20 @@ select[name="country"] option {
     color: #000000 !important;
     background-color: #ffffff !important;
 }
+
+
+/* country select code mobile autoselect css */
+/* Fix for the country code select appearance */
+#split-country-select {
+    cursor: pointer;
+    appearance: none; /* Removes default arrow to keep it clean */
+    -webkit-appearance: none;
+    padding-left: 5px;
+}
+
+/* Ensure labels stay up if a value is auto-selected by JS */
+.form-group select:not([value=""]):valid ~ label {
+    top: -15px;
+    font-size: 10px;
+    color: var(--split-gold);
+}
