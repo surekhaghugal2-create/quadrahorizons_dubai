@@ -164,7 +164,7 @@ body {
 .invest-container {
   max-width: 1400px;
   margin: auto;
-  padding: 60px 0px 100px;
+  padding: 60px 0px 10px;
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 80px;
@@ -204,7 +204,7 @@ body {
 
 .invest-title {
   font-family: "Playfair Display", serif;
-  font-size: 70px;
+  font-size: 50px;
   line-height: 1.1;
   margin-bottom: 30px;
 }
@@ -214,6 +214,12 @@ body {
   line-height: 1.8;
   color: #ccc;
   margin-bottom: 25px;
+}
+
+@media(max-width: 768px){
+  .invest-text p {
+    font-size: 16px;
+}
 }
 
 /* LIST */
@@ -276,6 +282,12 @@ body {
   color: var(--text-grey);
 }
 
+@media(max-width: 768px){
+  .rera-header p {
+    font-size: 16px;
+}
+
+}
 .rera-cards {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -378,6 +390,31 @@ body {
     position: relative; /* Essential for background positioning */
     overflow: hidden;
     background: #000; /* Fallback */
+}
+
+.rent-pg-main-title, .rent-pg-section-title {
+    font-family: var(--font-heading) !important;
+    font-size: 50px !important; /* STRICT DESKTOP HEADING */
+    font-weight: 500;
+    line-height: 1.2;
+   
+    /* THE FIX: Layered Text Shadow for perfect readability */
+    text-shadow:
+        2px 2px 5px rgba(0, 0, 0, 0.9),  /* Crisp dark edge */
+        0px 10px 30px rgba(0, 0, 0, 0.7); /* Wide soft dark glow */
+}
+
+/* --- STRICT MOBILE VIEW (Max 425px) --- */
+@media (max-width: 425px) {
+    
+    /* Strict Padding for Mobile */
+    /* .rent-pg-intro, .projects-section, .rent-pg-faq { padding: 60px 20px !important; } */
+    
+    /* STRICT MOBILE HEADINGS (36px) */
+    .rent-pg-main-title, .rent-pg-section-title {
+        font-size: 36px !important;
+        margin-bottom: 20px !important;
+    }
 }
 
 /* Background Media Fixed */
@@ -563,7 +600,7 @@ body {
 
 /* Mobile Smoothing */
 @media (max-width: 768px) {
-    .rent-pg-faq { padding: 80px 20px; }
+    .rent-pg-faq { padding: 50px 20px; }
     .rent-pg-faq-btn { padding: 25px; }
     .rent-pg-faq-content { padding: 0 25px 30px 25px; }
     
@@ -763,12 +800,12 @@ body {
 
  
   .invest-title {
-    font-size: 38px;
+    font-size: 36px;
   }
 
   .page-title h1,
   .rera-header h2 {
-    font-size: 32px;
+    font-size: 36px;
   }
 }
 
@@ -856,7 +893,7 @@ ul.luxury-list li::before {
     /* Adjust font size for mobile specific */
     .section-header h2 {
         font-size: 36px; 
-        padding-top: 40px;
+        padding-top: 0px;
     }
     .section-header-Sell h2 {
         font-size: 36px;
@@ -901,6 +938,11 @@ ul.luxury-list li::before {
     color: #cfcfcf;
 }
 
+@media(max-width: 768px){
+  .rera-safety-section{
+    padding: 20px 5% 50px;
+}
+}
 /* Heading */
 .rera-heading{
     font-family: "Playfair Display", serif;
@@ -972,4 +1014,10 @@ ul.luxury-list li::before {
     height:2px;
     background:#d4a74f;
     margin:18px auto 0;
+}
+
+@media (max-width: 768px){
+  .rera-heading{
+    font-size: 36px;
+  }
 }

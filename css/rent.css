@@ -111,7 +111,19 @@
 /* =========================================
    STRICT DESKTOP TYPOGRAPHY (LAPTOP/DESKTOP)
    ========================================= */
-.rent-pg-main-title, .rent-pg-section-title {
+.rent-pg-main-title {
+    font-family: var(--font-heading) !important;
+    font-size: 70px !important; /* STRICT DESKTOP HEADING */
+    font-weight: 500;
+    line-height: 1.2;
+    
+    /* THE FIX: Layered Text Shadow for perfect readability */
+    text-shadow: 
+        2px 2px 5px rgba(0, 0, 0, 0.9),  /* Crisp dark edge */
+        0px 10px 30px rgba(0, 0, 0, 0.7); /* Wide soft dark glow */
+}
+
+.rent-pg-section-title {
     font-family: var(--font-heading) !important;
     font-size: 50px !important; /* STRICT DESKTOP HEADING */
     font-weight: 500;
@@ -133,7 +145,7 @@
 /* =========================================
    4. INTRO SECTION
    ========================================= */
-.rent-pg-intro { padding: 150px 5% 20px; text-align: center; }
+.rent-pg-intro { padding: 100px 5% 20px; text-align: center; }
 .rent-pg-section-title { margin-bottom: 30px; }
 .rent-pg-description { color: var(--rent-grey); max-width: 900px; margin: 0 auto; }
 

@@ -120,6 +120,11 @@ body {
     padding-right: 40px;
 }
 
+@media(max-width:768px){
+    .invest-content{
+        padding-top: 10px;
+    }
+}
 .invest-subtitle {
     display: block;
     font-size: 14px;
@@ -179,7 +184,7 @@ ul.selling-strategy li::before {
         height: 350px;
     }
     .invest-dubai-section {
-        padding: 0px 5%;
+        padding: 60px 5% 20px;
     }
     .invest-title {
         font-size: 36px;
@@ -284,6 +289,7 @@ ul.selling-strategy li::before {
 }
 
 @media (max-width: 768px) {
+    .rera-header{ padding: 50px 0px 20px; margin: 0 auto 0px;; }
     .rera-header h2 { font-size: 36px; }
     .rera-header p { font-size: 16px; }
     .rera-cards { grid-template-columns: 1fr; gap: 30px; }
@@ -546,6 +552,13 @@ ul.selling-strategy li::before {
     scrollbar-width: none;
     background-color: var(--rent-dark);
 }
+
+@media(max-width: 768px){
+    .testimonials-scroll{
+        padding: 0 5% 50px; 
+    }
+}
+
 .testimonials-scroll::-webkit-scrollbar { display: none; }
 
 .testi-card {
@@ -638,9 +651,15 @@ ul.selling-strategy li::before {
 
 /* Free Property Valuation in Dubai & Our Luxury Marketing Advantage */
 .vm-journey-section{
-    padding:80px 5%;
+    padding:80px 5% 30px;
     background:#0b0b0b;
     color:#fff;
+}
+
+@media(max-width: 768px){
+    .vm-journey-section{
+        padding: 50px 5%;   
+    }
 }
 
 /* Container */
@@ -737,6 +756,11 @@ ul.selling-strategy li::before {
     }
 
     .vm-heading{
-        font-size:32px;
+        font-size:36px;
+        margin-bottom:0px;
+    }
+    .vm-step{
+        padding-top: 30px;
+        margin-bottom: 0px;
     }
 }

@@ -121,11 +121,12 @@ scroll-margin-top:100px;
 
     .legacy-section {
         background: none !important;
-        height: 700px;
-        padding: 30px 20px;
+        height: 850px;
+        padding: 50px 20px;
     }
 
     .legacy-content h2 {
+        /* padding-top: 80px; */
         font-size: 36px;
     }
 
@@ -776,7 +777,7 @@ scroll-margin-top:100px;
         grid-template-columns: 1fr;
     }
     .section-header {
-        text-align: center; padding: 50px 20px 20px; position: relative;
+        text-align: center; padding: 20px 20px 20px; position: relative;
     }
     .section-header h2, .partners-title, .sell-text h2 {
         font-size: 36px; /* Scaled down for mobile */
@@ -1019,6 +1020,7 @@ scroll-margin-top:100px;
     position: relative; z-index: 2; font-family: 'Playfair Display', serif;
     font-size: 40px; letter-spacing: 20px; color: rgba(255, 255, 255, 0.8);
     display: flex; flex-direction: column; align-items: center; line-height: 1;
+    text-align: center;
 }
 }
 
@@ -1919,3 +1921,27 @@ scroll-margin-top:100px;
     }
 }
 
+.rent-pg-main-title, .rent-pg-section-title {
+    font-family: var(--font-heading) !important;
+    font-size: 50px !important; /* STRICT DESKTOP HEADING */
+    font-weight: 500;
+    line-height: 1.2;
+   
+    /* THE FIX: Layered Text Shadow for perfect readability */
+    text-shadow:
+        2px 2px 5px rgba(0, 0, 0, 0.9),  /* Crisp dark edge */
+        0px 10px 30px rgba(0, 0, 0, 0.7); /* Wide soft dark glow */
+}
+
+/* --- STRICT MOBILE VIEW (Max 425px) --- */
+@media (max-width: 425px) {
+    
+    /* Strict Padding for Mobile */
+    /* .rent-pg-intro, .projects-section, .rent-pg-faq { padding: 60px 20px !important; } */
+    
+    /* STRICT MOBILE HEADINGS (36px) */
+    .rent-pg-main-title, .rent-pg-section-title {
+        font-size: 36px !important;
+        margin-bottom: 20px !important;
+    }
+}
