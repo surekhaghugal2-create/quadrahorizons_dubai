@@ -2,17 +2,28 @@
 <div class="rent-pg-wrapper">
     <link rel="stylesheet" href="css/rent.css">
 
-    <section class="rent-pg-hero">
-        <video id="rent-pg-hero-video" autoplay muted loop playsinline class="rent-pg-hero-vid-element">
-            <source src="video/Final_V04.mp4" type="video/mp4">
-        </video>
-        <div class="rent-pg-hero-gradient"></div>
-        
-        <div class="rent-pg-hero-content js-reveal">
-            <h1 class="rent-pg-main-title">Properties <span class="rent-pg-accent">for Rent</span></h1>
-            <p class="rent-pg-subtitle">Experience Dubai's Finest Living</p>
-        </div>
-    </section>
+<section class="rent-pg-hero">
+
+    <!-- Desktop Video -->
+    <video autoplay muted loop playsinline class="hero-video desktop-video">
+        <source src="video/Final_V04.mp4" type="video/mp4">
+    </video>
+
+    <!-- Mobile Video -->
+    <video autoplay muted loop playsinline class="hero-video mobile-video">
+        <source src="video/Final_V04_vertical_.mp4" type="video/mp4">
+    </video>
+
+    <div class="rent-pg-hero-gradient"></div>
+    
+    <div class="rent-pg-hero-content js-reveal">
+        <h1 class="rent-pg-main-title">
+            Properties <span class="rent-pg-accent">for Rent</span>
+        </h1>
+        <p class="rent-pg-subtitle">Experience Dubai's Finest Living</p>
+    </div>
+
+</section>
 
     <section class="rent-pg-intro">
         <div class="rent-pg-container js-reveal">

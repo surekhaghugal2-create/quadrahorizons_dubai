@@ -74,62 +74,87 @@ body {
     /* filter: brightness(0.85); */
 }
 
+/* Hide mobile video by default */
+.mobile-video {
+    display: none;
+}
+
+/* Mobile View */
+@media (max-width: 768px) {
+
+    .desktop-video {
+        display: none;
+    }
+
+    .mobile-video {
+        display: block;
+    }
+}
+
 /* --- THE FIX: Bottom-Only Fade to Black --- */
 .rent-pg-hero-gradient {
-    position: absolute;
+   position: absolute;
     inset: 0;
     z-index: 1;
-    pointer-events: none; /* Allows clicking through the gradient */
-    
-    /* Transparent at the top (0% to 60%), smoothly fading to solid black at the bottom (100%) */
-    background: linear-gradient(
-        to bottom, 
-        transparent 0%, 
-        transparent 60%, 
-        rgba(0, 0, 0, 0.8) 85%, 
-        var(--black, #000000) 100%
-    );
+
+    background: 
+        /* Bottom dark fade */
+        linear-gradient(to top, rgba(0,0,0,0.85), rgba(0,0,0,0) 50%),
+
+        /* Top slight dark */
+        linear-gradient(to bottom, rgba(0,0,0,0.4), rgba(0,0,0,0) 30%),
+
+        /* Side vignette (left & right) */
+        radial-gradient(circle at left, rgba(0,0,0,0.4), transparent 40%),
+        radial-gradient(circle at right, rgba(0,0,0,0.4), transparent 40%);
 }
 
 /* --- Hero Content Container --- */
 .rent-pg-hero-content {
-    position: relative;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Perfect center */
+
     z-index: 2;
     text-align: center;
-    padding: 0 20px;
+    color: #fff;
+
     width: 100%;
+    padding: 0 20px;
 }
 
-/* --- THE FIX: Premium Text Shadows --- */
+/* ===== TEXT STYLING ===== */
 .rent-pg-main-title {
-    font-family: var(--font-heading, 'Playfair Display', serif);
-    font-size: 70px; /* Adjust based on your desktop preference */
-    color: var(--white, #ffffff);
-    margin: 0 0 15px 0;
-    line-height: 1.1;
-    font-weight: 400;
-    
-    /* Double-layered shadow: tight crisp edge + soft dark glow */
-    text-shadow: 
-        2px 2px 5px rgba(0, 0, 0, 0.9), 
-        0px 10px 30px rgba(0, 0, 0, 0.7);
+    font-size: 64px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    margin: 0;
 }
 
 .rent-pg-accent {
-    color: var(--luxury-gold, #D4AF37);
+    color: #d4af37; /* Gold color */
     font-style: italic;
 }
 
 .rent-pg-subtitle {
-    font-family: var(--font-body, 'Work Sans', sans-serif);
-    font-size: 20px;
-    color: var(--text-grey, #cfcfcf);
-    letter-spacing: 4px;
-    text-transform: uppercase;
-    margin: 0;
-    
-    /* Slightly softer shadow for the subtitle */
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+    font-size: 14px;
+    align-items: center;
+    letter-spacing: 3px;
+    margin-top: 15px;
+    opacity: 0.9;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+    .rent-pg-main-title {
+        font-size: 36px;
+    }
+
+    .rent-pg-subtitle {
+        font-size: 12px;
+        letter-spacing: 2px;
+    }
 }
 
 /* ===============================
@@ -394,7 +419,7 @@ body {
 
 .rent-pg-main-title, .rent-pg-section-title {
     font-family: var(--font-heading) !important;
-    font-size: 50px !important; /* STRICT DESKTOP HEADING */
+    font-size: 70px !important; /* STRICT DESKTOP HEADING */
     font-weight: 500;
     line-height: 1.2;
    
@@ -731,7 +756,7 @@ body {
     grid-template-columns: 1fr;
   }
   .rera-section {
-    padding: 0px 5%;
+    padding: 60px 5%;
   }
   .projects-section {
     padding: 0px 5%;

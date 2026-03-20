@@ -4,9 +4,19 @@
 <!-- HERO -->
 
     <section class="rent-pg-hero">
-        <video id="rent-pg-hero-video" autoplay muted loop playsinline class="rent-pg-hero-vid-element">
+        <!-- <video id="rent-pg-hero-video" autoplay muted loop playsinline class="rent-pg-hero-vid-element">
             <source src="video/Final_V04.mp4" type="video/mp4">
-        </video>
+        </video> -->
+        <!-- Desktop Video -->
+    <video autoplay muted loop playsinline class="hero-video desktop-video">
+        <source src="video/Final_V04.mp4" type="video/mp4">
+    </video>
+
+    <!-- Mobile Video -->
+    <video autoplay muted loop playsinline class="hero-video mobile-video">
+        <source src="video/Final_V04_vertical_.mp4" type="video/mp4">
+    </video>
+
         <div class="rent-pg-hero-gradient"></div>
         
         <div class="rent-pg-hero-content js-reveal">

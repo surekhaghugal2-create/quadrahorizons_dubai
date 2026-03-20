@@ -1,8 +1,33 @@
 <?php include 'header.php'; ?>
 <link rel="stylesheet" href="css/sell.css">
 
-<section class="hero">
+<!-- <section class="hero">
   <img src="image/1.jpg" alt="Dubai Skyline">
+</section> -->
+
+<section class="rent-pg-hero">
+
+    <!-- Desktop Video -->
+    <video autoplay muted loop playsinline class="hero-video desktop-video">
+        <source src="video/Final_V04.mp4" type="video/mp4">
+    </video>
+
+    <!-- Mobile Video -->
+    <video autoplay muted loop playsinline class="hero-video mobile-video">
+        <source src="video/Final_V04_vertical_.mp4" type="video/mp4">
+    </video>
+
+    <!-- Overlay Gradient -->
+    <div class="rent-pg-hero-gradient"></div>
+    
+    <!-- Center Content -->
+    <div class="rent-pg-hero-content">
+        <h1 class="rent-pg-main-title">
+            Sell Property in <span class="rent-pg-accent">Dubai</span>
+        </h1>
+        <p class="rent-pg-subtitle">POSITION YOUR PROPERTY WHERE IT BELONGS — AT THE FOREFRONT OF DUBAI’s MOST DISCERNING BUYERS.</p>
+    </div>
+
 </section>
 
 <section class="rera-section">
@@ -244,6 +269,110 @@
         <div class="client-name">David L. <span>CEO, USA</span></div>
     </div>
   </div>
+</section>
+
+<section class="valuation-section">
+
+    <div class="valuation-container">
+
+        <!-- LEFT CONTENT -->
+        <div class="valuation-content">
+            <h2>Free Property <span>Valuation</span> in Dubai</h2>
+            
+            <p class="valuation-desc">
+                Understanding your property’s true market value is the foundation of a successful sale.
+            </p>
+
+            <p class="valuation-desc">
+                We provide a complimentary, data-driven property valuation based on:
+            </p>
+
+            <ul class="valuation-list">
+                <li>Recent comparable sales</li>
+                <li>Community demand trends</li>
+                <li>Current supply levels</li>
+                <li>Property condition and upgrades</li>
+                <li>Rental yield performance</li>
+            </ul>
+
+            <p class="valuation-note">
+                Our valuation process ensures your property is competitively priced to attract serious buyers while protecting your asset’s premium positioning.
+            </p>
+
+            <a href="#" class="valuation-btn">Get Free Valuation</a>
+        </div>
+
+        <!-- RIGHT CARD -->
+        <div class="valuation-card">
+            <h3>Why Choose Our Valuation?</h3>
+
+            <div class="card-item">
+                <span>✔</span>
+                <p>Accurate & data-driven insights</p>
+            </div>
+
+            <div class="card-item">
+                <span>✔</span>
+                <p>Expert local market knowledge</p>
+            </div>
+
+            <div class="card-item">
+                <span>✔</span>
+                <p>No obligation, completely free</p>
+            </div>
+
+            <div class="card-item">
+                <span>✔</span>
+                <p>Fast turnaround time</p>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+<section class="luxury-marketing-2">
+
+    <div class="luxury-container">
+
+        <!-- Heading -->
+        <div class="luxury-header">
+            <h2>Our Luxury <span>Marketing Advantage</span></h2>
+            <p>In Dubai’s high-end real estate sector, perception defines value.</p>
+        </div>
+
+        <!-- Cards Grid -->
+        <div class="luxury-grid">
+
+            <div class="luxury-box box1">
+                <p>Editorial-style property showcases</p>
+            </div>
+
+            <div class="luxury-box box2">
+                <p>Drone cinematography and immersive walkthroughs</p>
+            </div>
+
+            <div class="luxury-box box3">
+                <p>Global property portal exposure</p>
+            </div>
+
+            <div class="luxury-box box4">
+                <p>Social media targeting of high-net-worth audiences</p>
+            </div>
+
+            <div class="luxury-box box5">
+                <p>Private client database outreach</p>
+            </div>
+
+        </div>
+
+        <!-- Footer Line -->
+        <div class="luxury-footer">
+            <p>We do not merely list properties — we craft desirability.</p>
+        </div>
+
+    </div>
+
 </section>
 
 <script>
