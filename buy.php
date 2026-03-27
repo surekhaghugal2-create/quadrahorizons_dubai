@@ -276,7 +276,7 @@
         </div> -->
 
         <div class="invest-image-wrapper slide-left">
-        <img src="image/WhatsApp Image 2026-02-12 at 3.03.48 PM (1).jpeg"
+        <img src="image/e.png"
             alt="Burj Al Arab, Dubai"
             class="invest-image">
         </div>
@@ -340,7 +340,7 @@
         </div>
 
     <div class="invest-image-wrapper slide-right">
-        <img src="image/WhatsApp Image 2026-02-12 at 3.03.48 PM (1).jpeg"
+        <img src="image/f.png"
             alt="Burj Al Arab, Dubai"
             class="invest-image">
     </div>

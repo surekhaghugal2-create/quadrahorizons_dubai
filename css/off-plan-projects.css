@@ -185,7 +185,7 @@ img { max-width: 100%; display: block; }
 }
 
 .content-block {
-    max-width: 1200px;
+    max-width: 1400px;
     margin: 0 auto 120px;
     display: flex;
     gap: 80px;
@@ -227,6 +227,7 @@ ul.luxury-list li {
     margin-bottom: 15px;
     color: var(--rent-grey);
     font-size: 18px;
+    line-height: 1.2;
     font-family: 'work sans', sans-serif;
 
 }
@@ -342,9 +343,9 @@ ul.luxury-list li::before {
     overflow: hidden;
     /* Premium Box Shadow */
      box-shadow: 
-        0 40px 100px rgba(46, 46, 46, 0.6), 
-        0 10px 40px rgba(22, 22, 22, 0.4),
-        0 0 100px rgba(14, 13, 13, 0.03); 
+        0 1px 1px rgba(46, 46, 46, 0.6), 
+        0 1px 1px rgba(22, 22, 22, 0.4),
+        0 0 1px rgba(14, 13, 13, 0.03); 
         
     border: 1px solid rgba(43, 43, 43, 0.03); /* Ghost border */
 }
@@ -881,7 +882,7 @@ ul.luxury-list li::before {
 .offplan-section{
     padding:100px 0 20px;
     background:#0b0b0b;
-    color:#fff;
+    color:#fff;     
 }
 
 @media(max-width: 768px){
@@ -929,8 +930,10 @@ ul.luxury-list li::before {
 
 .section-desc{
     color:#bdbdbd;
-    margin-bottom:35px;
-}
+    margin-bottom:35px; 
+    font-size: 18px;
+    line-height: 1.4;
+}   
 
 .offplan-features{
     display:grid;
@@ -955,12 +958,14 @@ ul.luxury-list li::before {
 
 .feature-box h4{
     margin:0;
-    font-size:16px;
+    font-size:20px !important;
+    font-weight: 500 !important;
 }
 
 .feature-box p{
-    font-size:13px;
+    font-size:18px;
     color:#bdbdbd;
+    padding: 10px 0px 0px 0px !important;
 }
 
 .feature-box:hover{
@@ -994,7 +999,7 @@ ul.luxury-list li::before {
 /* Risks and Safety Regulations (RERA) */
 /* Section Wrapper */
 .rera-safety-section{
-    max-width: 950px;
+    max-width: 1400px;
     margin: 0 auto;
     padding: 100px 20px;
     text-align: center;

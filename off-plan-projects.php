@@ -243,7 +243,7 @@
                 Buying off-plan in Dubai allows investors to secure premium properties at competitive prices with structured payment plans spread across construction milestones. This makes off-plan real estate one of the most attractive investment strategies in Dubai’s rapidly growing property market.</p>
         </div>
         <div class="img-side">
-            <img src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=800&q=80" alt="Blueprint">
+            <img src="image/A.png" alt="Blueprint">
         </div>
     </div>
 
@@ -261,7 +261,7 @@
             <p class="block-text">Whether you are looking to buy a luxury apartment in Dubai or invest in a high-yield villa project, QH Properties provides tailored solutions aligned with your investment strategy.</p>
         </div>
         <div class="img-side">
-            <img src="https://images.unsplash.com/photo-1546412414-e1885259563a?auto=format&fit=crop&w=800&q=80" alt="Skyline">
+            <img src="image/B.png" alt="Skyline">
         </div>
     </div>
 </div>

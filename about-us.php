@@ -10,7 +10,9 @@
         <video autoplay muted loop playsinline>
             <source src="video/Final_V03.mp4" type="video/mp4">
         </video>
+
     </div>
+
     <div class="hero-overlay"></div>
     <div class="hero-content fade-in">
         <p class="hero-subtitle">The Quadra Standard</p>
@@ -83,7 +85,6 @@
         </div>
     </div>
 </section>
-
 
 <!-- Team section  -->
 <section class="team-hero-section">
@@ -162,7 +163,7 @@
     <div class="invest-container">
 
         <div class="invest-image-wrapper">
-            <img src="image/WhatsApp Image 2026-02-12 at 3.03.48 PM (1).jpeg" alt="Burj Al Arab, Dubai" class="invest-image">
+            <img src="image/d.png" alt="Burj Al Arab, Dubai" class="invest-image">
         </div>
 
         <div class="invest-content">
@@ -201,7 +202,7 @@
                 </div>
                 <div class="story-right">
                     <video autoplay loop muted playsinline class="story-video">
-                        <source src="" type="video/mp4">
+                        <source src="video/Final_V02_vertical_.mp4" type="video/mp4">
                     </video>
                 </div>
             </div>
@@ -251,7 +252,7 @@
                 Why Invest In <br><span class="accent-text">DUBAI?</span>
             </h2>
             <div class="invest-sticky-image anim-zoom-in scroll-anim delay-200">
-                <img src="image/WhatsApp Image 2026-02-12 at 3.03.50 PM (1).jpeg" alt="Museum of the Future, Dubai">
+                <img src="image/c.png" alt="Museum of the Future, Dubai">
             </div>
         </div>
 
